@@ -3,18 +3,18 @@
 
       <!-- content -->
 
-      <div class="container jobs-container">
+      <div class="container-fluid jobs-container">
           <div class="row">
               <div class="col-xs-12 content-wrapper edit-mode ">
 
                   <div class="m-t-20 m-b-10 white-bg-border">
                       <div class="row">
-                          <div class="col-xs-12 col-sm-3">
+                          <div class="col-xs-12 col-sm-3 col-lg-2">
 
                               {{ partial "sidebar.html" .}}
 
                           </div>
-                          <div class="col-xs-12 col-sm-9">
+                          <div class="col-xs-12 col-sm-9 col-lg-10">
                               <div class="pos-fixed fly-out no-transition slide-bg ">
                                   <div class="mobile-back desk-hide mobile-flex  p-v-10   ">
                                       <div class="left mobile-flex">
@@ -81,14 +81,34 @@
   											    <!-- <h5 class="no-m-t fly-out-heading-size main-heading white m-t-0 margin-btm ">Job Information</h5> -->
   											    <h5 class="nno-m-t main-heading  white m-t-0 margin-btm">Summary</h5>
 
-  											    <!-- Job title/category -->
-  											    <div class="m-t-40 c-gap">
-
-  											    </div>
   										    </div>
 
                                           	<a href="#" class="preview-header__link white btn fnb-btn white-border mini"> View Listing on Goomo</a>
                                           </div>
+
+										    <div class="c-gap">
+										    	<div class="alert alert-success alert-dismissible fnb-alert" role="alert">
+										    	  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+										    	  <div class="flex-row">
+										    	  	<i class="fa fa-check-square-o fa-2x " aria-hidden="true"></i>
+										    	  	<div>
+											    	  <strong>Success</strong>
+											    	  <div>You have created a new listing</div>
+										    	  	</div>
+										    	  </div>
+										    	</div>
+
+										    	<div class="row">
+										    		<div class="col-sm-9">
+												    	<h3 class="no-m-t fly-out-heading-size  ">Let us help you complete your listing</h3>
+												    	<h5 class="no-m-t fly-out-heading-size text-lighter ">Here is a checklist to get you started!</h5>
+										    		</div>
+										    		<div class="col-sm-3">
+										    			<img src="{{"img/mrkt-manager.png" | absURL}}" class="img-responsive pull-right">
+										    			<img src="{{"img/page_score.png" | absURL}}" class="img-responsive pull-right">
+										    		</div>
+										    	</div>
+										    </div>
                                       </div>
                                   </div>
                               </div>
