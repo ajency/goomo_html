@@ -24,6 +24,11 @@
 	}
 	&-nav{
 		padding-top: 8px;
+		@media (min-width: 768px){
+			&.navbar-right {
+			    margin-right: 0;
+			}
+		}
 	}
 	li{
 		padding: 0 0.5em;
@@ -61,6 +66,7 @@
 		}
 		option{
 			color: #444;
+			font-size: 0.9em;
 		}
 	}
 	.login{

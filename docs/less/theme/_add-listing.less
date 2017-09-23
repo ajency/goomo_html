@@ -91,8 +91,15 @@
     }
     &__link{
     	padding-left: 0.5em;
+    	border-radius: 0;
+    	font-weight: 600;
+    	font-size: 1.2em;
     	&.white{
     		color: #fff;
+    		&:hover{
+    			color: @accent-primary;
+    			background-color: #fff;
+    		}
     	}
     }
     @media screen and (max-width: @mobile){
@@ -273,7 +280,7 @@
 }
 
 .gs-form{
-	padding: 15px;
+	// padding: 15px;
 	position: relative;
 	.verified{
 		.c-title{
@@ -2340,7 +2347,7 @@ input[type='checkbox'].remove-addr{
 	padding: 0;
 	border: 1px solid #e4e4e4;
 	.summary-info{
-		padding: 1.5em 1em 0;
+		padding: 1em 1em 0;
 	}
 	.premium-info{
 		padding: 2em 1em;
@@ -2370,7 +2377,7 @@ input[type='checkbox'].remove-addr{
 		display: flex;
 		justify-content: space-between;
 		align-items: flex-end;
-		font-size: 1.2em;
+		font-size: 1.1em;
 		font-weight: 600;
 		a{
 			font-size: 0.65em;
@@ -2380,15 +2387,15 @@ input[type='checkbox'].remove-addr{
 	}
 	@media(min-width: @mobile){
 		.rating{
-			transform: scale(0.8);
-			left: -12px;
-			top: -2px;
+			transform: scale(0.6);
+			left: -24px;
+			top: 0;
 		}
 	}
 	.listing-status{
 		margin-top: 20px;
 		// margin-bottom: 10px;
-		padding: 5px 14px 10px;
+		padding: 5px 14px 15px;
 		font-size: 1.2em;
 		background: #fff9e8;
 		margin-left: -14px;
