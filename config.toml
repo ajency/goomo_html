@@ -1,5 +1,5 @@
 publishDir = "docs"
-baseURL = "http://example.org/"
+baseURL = "https://ajency.github.io/goomo_html/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Goomo by Ajency"
 theme = "goomo"
