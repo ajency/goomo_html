@@ -100,11 +100,11 @@
     			color: @accent-primary;
     			background-color: #fff;
     		}
+		    @media screen and (max-width: @mobile){
+		    	// font-size: 0.95em;
+		    	display: none;
+		    }
     	}
-    }
-    @media screen and (max-width: @mobile){
-    	font-size: 0.95em;
-    	display: block;
     }
 }
 
@@ -1182,7 +1182,7 @@
 	.gs-form{
 		background-color: #fff;
     	margin: 15px;
-    	border: 1px solid #eee;
+    	// border: 1px solid #eee;
 	}
 	.c-gap{
 		margin-top: 2em;
@@ -2477,6 +2477,12 @@ input[type='checkbox'].remove-addr{
 @media screen and (max-width: @mobile){
 	.listing-review{
 		box-shadow: rgba(0, 0, 0, 0.83) 0 0 0 500px inset;
+	}
+	.content-wrapper{
+		margin-top: -145px;
+		&.edit-mode{
+			// margin-top: -100px;
+		}
 	}
 }
 
