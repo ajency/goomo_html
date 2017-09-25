@@ -3,3 +3,91 @@ baseURL = "https://ajency.github.io/goomo_html/"
 languageCode = "en-us"
 title = "Goomo by Ajency"
 theme = "goomo"
+
+[menu]
+[[menu.main]]
+    name = "Dashboard"
+    pre = "<i class='fa fa-bars'></i>"
+    weight = -110
+    identifier = "dashboard"
+    url = "/"
+[[menu.main]]
+    name = "Booking"
+    pre = "<i class='fa fa-calendar-check-o'></i>"
+    weight = -100
+    identifier = "booking"
+    url = "/booking/"
+[[menu.main]]
+    name = "Review"
+    pre = "<i class='fa fa-comments-o'></i>"
+    weight = -99
+    identifier = "review"
+    url = "/review/"
+[[menu.main]]
+    name = "Your Listing"
+    pre = "<i class='fa fa-list'></i>"
+    weight = -98
+    identifier = "listing"
+    url = "/listing/"
+
+[[menu.main]]
+    name = "Summary"
+    parent = "listing"
+    weight = -100
+    identifier = "summary"
+    url = "/listing/summary/"
+[[menu.main]]
+    name = "Property Details"
+    parent = "listing"
+    weight = -95
+    identifier = "property-details"
+    url = "/listing/property-details/"
+[[menu.main]]
+    name = "Amenities & Services"
+    parent = "property-details"
+    weight = -100
+    identifier = "services"
+    url = "/listing/services/"
+[[menu.main]]
+    name = "Contact & Address"
+    parent = "property-details"
+    weight = -95
+    identifier = "contact"
+    url = "/listing/contact/"
+[[menu.main]]
+    name = "Booking Policy"
+    parent = "property-details"
+    weight = -90
+    identifier = "booking-policy"
+    url = "/listing/booking-policy/"
+
+[[menu.main]]
+    name = "Gallery"
+    parent = "listing"
+    weight = -90
+    identifier = "gallery"
+    url = "/listing/gallery/"
+[[menu.main]]
+    name = "Business Details"
+    parent = "listing"
+    weight = -85
+    identifier = "business-details"
+    url = "/listing/business-details/"
+[[menu.main]]
+    name = "Rates & Availability"
+    parent = "listing"
+    weight = -80
+    identifier = "rates-availability"
+    url = "/listing/rates-availability/"
+[[menu.main]]
+    name = "Promotions"
+    parent = "listing"
+    weight = -75
+    identifier = "promotions"
+    url = "/listing/promotions/"
+[[menu.main]]
+    name = "Finance"
+    parent = "listing"
+    weight = -70
+    identifier = "finance"
+    url = "/listing/finance/"
