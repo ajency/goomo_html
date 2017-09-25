@@ -3,12 +3,23 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://ajency.github.io/goomo_html/listing/</loc>
+    <lastmod>2017-09-23T15:38:19+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ajency.github.io/goomo_html/listing/summary/</loc>
+    <lastmod>2017-09-23T15:30:08+05:30</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ajency.github.io/goomo_html/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://ajency.github.io/goomo_html/</loc>
+    <lastmod>2017-09-23T15:30:08+05:30</lastmod>
     <priority>0</priority>
   </url>
   
