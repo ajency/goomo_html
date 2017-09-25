@@ -6,9 +6,10 @@
 			<div class="navbar-header mobile-head mobile-flex">
 				<div class="mobile-head__left mobile-flex">
 					<i class="fa fa-bars sideMenu" aria-hidden="true"></i>
+					<img src="{{"img/goomo_logo.png" | absURL}}" class="img-responsive desk-hide" width="80">
 				</div>
 				<div class="mobile-head__right mobile-flex">
-					<button class="btn fnb-btn outline mini quote-btn half-border">Get Multiple quotes</button>
+					<button class="btn fnb-btn outline mini quote-btn half-border">Preview</button>
 					<a href="" class="login">
 						<i class="fa fa-user-circle user-icon" aria-hidden="true"></i>
 					</a>
@@ -21,12 +22,12 @@
 						<p class="mobile-top__text">Sign in to get a personalised feed!</p>
 					</li>
 					<li>
-						<button type="button" class="fnb-btn outline bnw">Login</button>
+						<button type="button" class="fnb-btn outline">Login</button>
 					</li>
 				</ul>
 				<ul class="nav navbar-nav city-select">
 					<li>
-						<select class="form-control fnb-select">
+						<select class="form-control fnb-select white-select">
 							<option>--Change Resort--</option>
 							<option selected="">The Upper Deck Resort</option>
 							<option>The Upper Deck</option>
@@ -34,7 +35,7 @@
 						</select>
 					</li>
 				</ul>
-				<p class="mobile-side-title">Browse</p>
+
 				<ul class="nav navbar-nav navbar-right side-section">
 
 					<li class="mobile-hide">
@@ -54,24 +55,60 @@
 					</li>
 
 				</ul>
-				<p class="mobile-side-title">Explore</p>
-				<ul class="nav navbar-nav explore side-section">
-					<li>
-						<a href="" class="nav-title-size">About us</a>
-					</li>
-					<li>
-						<a href="" class="nav-title-size">Blogs</a>
-					</li>
-					<li>
-						<a href="" class="nav-title-size">How it works</a>
-					</li>
-					<li>
-						<a href="" class="nav-title-size">Terms of use</a>
-					</li>
-					<li>
-						<a href="" class="nav-title-size">FAQ</a>
-					</li>
-				</ul>
+
+				<div class="desk-hide">
+
+					<ul class="gs-steps" role="tablist">
+							<li class="">
+									<a href=" # " class=" form-toggle " id=""><i class="fa fa-bars"></i> Dashboard </a>
+							</li>
+						 <li class="">
+									<a href="#" class=" form-toggle " id=""><i class="fa fa-calendar-check-o"></i> Booking</a>
+							</li>
+							<li class="">
+									<a href="#" class=" form-toggle " id=""><i class="fa fa-comments-o"></i> Review </a>
+							</li>
+							<li class="active">
+									<a href="#listingSubMenu" class=" form-toggle " id="" role="button" data-toggle="collapse"><i class="fa fa-list"></i> Your Listing </a>
+							</li>
+					</ul>
+
+					<ul class="gs-steps collapse in edit-mode sub-steps" role="tablist" id="listingSubMenu" >
+							<li class="active">
+									<a href="/goomo_html/listing/summary/" class="" id="">Summary</a>
+							</li>
+						 	<li class="">
+									<a href="#detailsSubMenu" class="" id="" role="button" data-toggle="collapse">Property Details </a>
+									<ul class="sub-menu collapse in" id="detailsSubMenu">
+										<li>
+											<a href="/goomo_html/listing/services/" class="" id="">- Amenities &amp; Services </a>
+										</li>
+										<li>
+											<a href="/goomo_html/listing/services/" class="" id="">- Contact &amp; Address </a>
+										</li>
+										<li>
+											<a href="/goomo_html/listing/services/" class="" id="">- Booking Policy </a>
+										</li>
+									</ul>
+							</li>
+							<li class="">
+									<a href="#" class="" id="">Gallery </a>
+							</li>
+							<li class="">
+									<a href="#" class="" id="">Business Details </a>
+							</li>
+							<li class="">
+									<a href="#" class="" id="">Rates &amp; Availability </a>
+							</li>
+							<li class="">
+									<a href="#" class="" id="">Promotions </a>
+							</li>
+							<li class="">
+									<a href="#" class="" id="">Finance </a>
+							</li>
+					</ul>
+				</div>
+
 			</div>
 			<!-- /.navbar-collapse -->
 		</div>

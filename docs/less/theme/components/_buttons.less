@@ -42,17 +42,26 @@
 	&.mini{
 		padding: 6px 20px;
 	}
-	&.primary-btn{
-		background-color: @accent-primary;
+    &.primary-btn{
+        background-color: @accent-primary;
+        color: #fff;
+        &:hover{
+            background-color: #fff;
+            color: @accent-primary;
+            border: 2px solid;
+        }
+    }
+	&.secondary-btn{
+		background-color: @accent-secondary;
     	color: #fff;
     	&:hover{
     		background-color: #fff;
-    		color: @accent-primary;
+    		color: @accent-secondary;
     		border: 2px solid;
     	}
 	}
 	&.full{
-    	padding: 0.85em 1.8em;
+    	padding: 0.5em 2.5em;
 	}
     &:active,&:focus{
     	box-shadow: none;
@@ -99,6 +108,9 @@
         border: 1px solid #fff;
         color: #fff;
         background-color: transparent;
+    }
+    &.bold-btn{
+        font-weight: 600;
     }
 }
 
