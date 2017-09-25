@@ -39,7 +39,7 @@
 
 																<div class="flex-row space-between align-top">
 																	<div class="business-info tab-pane fade in active" id="">
-																		<ul class="fnb-breadcrums flex-row">
+																		<!-- <ul class="fnb-breadcrums flex-row">
 																			<li class="fnb-breadcrums__section">
 																				<a href="">
 																					<p class="fnb-breadcrums__title">Dashboard</p>
@@ -50,8 +50,7 @@
 																			</li>
 																			<li class="fnb-breadcrums__section">
 																				<a href="#">
-																					<p class="fnb-breadcrums__title">Listing</p>
-																				</a>
+																					<p class="fnb-breadcrums__title">{{ .Title }}</p>																			</a>
 																			</li>
 																			<li class="fnb-breadcrums__section">
 																				<p class="fnb-breadcrums__title">></p>
@@ -61,7 +60,10 @@
 																					<p class="fnb-breadcrums__title">{{ .Title }}</p>
 																				</a>
 																			</li>
-																		</ul>
+																		</ul> -->
+
+																		{{ partial "breadcrumb.html" .}}
+																		
 
 																		<!-- <h5 class="no-m-t fly-out-heading-size main-heading white m-t-0 margin-btm ">Job Information</h5> -->
 																		<h5 class="nno-m-t main-heading  white m-t-0 margin-btm">{{ .Title }}</h5>
