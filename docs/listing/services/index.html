@@ -43,7 +43,7 @@
 				</ul>
 				<ul class="nav navbar-nav city-select">
 					<li>
-						<select class="form-control fnb-select">
+						<select class="form-control fnb-select white-select">
 							<option>--Change Resort--</option>
 							<option selected="">The Upper Deck Resort</option>
 							<option>The Upper Deck</option>
@@ -246,7 +246,100 @@
 	<div class="c-gap">
 		<div class="row">
 			<div class="col-sm-12">
-				<h3 class="no-m-t fly-out-heading-size  ">Do you have any restaurants?</h3>
+
+
+				<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+				  <div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="headingOne">
+				      <h3 class=" no-m-t fly-out-heading-size">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" data-step="1" data-step-of="1 of 8">
+				          Do you have any restaurants?
+				        </a>
+				      </h3>
+				    </div>
+				    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+				      	<div class="panel-body">
+
+					        <div class="row">
+					        	<div class="col-sm-4">
+					        		<div class="m-b-40">
+						        		<label class="radio-inline">
+						        		  <input type="radio" name="haveRestaurants" id="haveRestaurantsYes" value="yes" class="fnb-radio" checked=""> Yes
+						        		</label>
+						        		<label class="radio-inline">
+						        		  <input type="radio" name="haveRestaurants" id="haveRestaurantsNo" value="yes" class="fnb-radio"> No
+						        		</label>
+					        		</div>
+
+					        		<div class="m-b-30">
+						        		<label class="fnb-label">How many restaurants do you have?</label>
+								        <select class="form-control fnb-select border-bottom">
+								        	<option>One</option>
+								        	<option>Two</option>
+								        	<option>Three</option>
+								        </select>
+					        		</div>
+
+							        <button class="btn fnb-btn secondary-btn bold-btn full">Continue</button>
+					        	</div>
+					        </div>
+
+				      	</div>
+				    </div>
+				  </div>
+				  <div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="headingTwo">
+				      <h3 class="no-m-t fly-out-heading-size">
+				        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" data-step="2" data-step-of="2 of 8">
+				          Do you provide Food &amp; Beverages?
+				        </a>
+				      </h3>
+				    </div>
+				    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+				      	<div class="panel-body">
+			                <div class="row">
+			                	<div class="col-sm-4">
+			                		<div class="m-b-40">
+			        	        		<label class="radio-inline">
+			        	        		  <input type="radio" name="haveFnB" id="haveFnBYes" value="yes" class="fnb-radio" checked=""> Yes
+			        	        		</label>
+			        	        		<label class="radio-inline">
+			        	        		  <input type="radio" name="haveFnB" id="haveFnBNo" value="yes" class="fnb-radio"> No
+			        	        		</label>
+			                		</div>
+
+			                		<div class="m-b-30">
+			        	        		<div>
+			        	        			<label>
+			        	        			    <input type="checkbox" value="" class="">
+			        	        			    Select All
+		        	        			  	</label>
+			        	        		</div>
+			                		</div>
+
+			        		        <button class="btn fnb-btn secondary-btn bold-btn full">Continue</button>
+			                	</div>
+			                </div>
+				      	</div>
+				    </div>
+				  </div>
+				  <div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="headingThree">
+				      <h3 class="no-m-t fly-out-heading-size">
+				        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree" data-step="3" data-step-of="3 of 8">
+				          Fitness &amp; Spa
+				        </a>
+				      </h3>
+				    </div>
+				    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+				      <div class="panel-body">
+				        Good Spa?
+				      </div>
+				    </div>
+				  </div>
+				</div>
+
+
 			</div>
 		</div>
 	</div>
