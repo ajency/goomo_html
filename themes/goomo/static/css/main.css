@@ -193,8 +193,17 @@ span {
   color: #378f9e;
   border: 2px solid;
 }
+.fnb-btn.secondary-btn {
+  background-color: #f59d30;
+  color: #fff;
+}
+.fnb-btn.secondary-btn:hover {
+  background-color: #fff;
+  color: #f59d30;
+  border: 2px solid;
+}
 .fnb-btn.full {
-  padding: 0.85em 1.8em;
+  padding: 0.5em 2.5em;
 }
 .fnb-btn:active,
 .fnb-btn:focus {
@@ -244,6 +253,9 @@ span {
   border: 1px solid #fff;
   color: #fff;
   background-color: transparent;
+}
+.fnb-btn.bold-btn {
+  font-weight: 600;
 }
 .social-btn {
   padding: 0.8em 2em;
@@ -524,13 +536,9 @@ span {
   transform: translateX(-8px);
 }
 .fnb-label {
-  padding: 0.3em 1em;
-  border: 1px solid;
-  border-radius: 4px;
-  font-size: 0.95em;
-  font-weight: 400;
-  line-height: 1.2;
+  font-size: 1.1em;
   margin-bottom: 0;
+  color: #55727f;
 }
 .fnb-label.wholesaler {
   color: #f59d30;
@@ -709,7 +717,7 @@ input[type=checkbox]:before {
   color: #dcdcdc;
   font-size: 1.35em;
   cursor: pointer;
-  top: -10px;
+  top: -14px;
   width: 20px;
   text-align: center;
 }
@@ -740,19 +748,18 @@ input[type=radio].fnb-radio {
   position: relative;
 }
 input[type=radio].fnb-radio:before {
-  content: "\f10c";
+  content: "\f058";
   font-family: 'FontAwesome';
   background-color: #fff;
   padding: 0;
   position: absolute;
-  top: -4px;
+  top: -6px;
   left: -1px;
   color: #dcdcdc;
-  font-size: 1.5em;
+  font-size: 1.8em;
   cursor: pointer;
 }
 input[type=radio].fnb-radio:checked:before {
-  content: "\f192";
   color: #f59d30;
 }
 input[type=radio].fnb-radio.disabled {
@@ -1122,6 +1129,77 @@ input[type=radio].fnb-radio.disabled:before {
     background-color: #ffffff;
   }
 }
+.panel-default > .panel-heading {
+  background-color: transparent;
+  border-color: transparent;
+}
+.panel-default > .panel-heading .fly-out-heading-size {
+  margin: 0;
+  font-weight: 600;
+}
+.panel-default > .panel-heading a {
+  color: #000;
+  text-decoration: none;
+  display: block;
+  margin-top: 20px;
+}
+.panel-default > .panel-heading a:before {
+  position: absolute;
+  top: 10px;
+  left: -90px;
+  content: attr(data-step-of);
+  border: 2px solid #378f9e;
+  border-radius: 50%;
+  text-align: center;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  font-size: 0.6em;
+  font-weight: normal;
+  color: #4a4a4a;
+}
+.panel-default > .panel-heading a.collapsed {
+  margin-top: 10px;
+  font-size: 0.6em;
+  font-weight: normal;
+  color: #adadad;
+}
+.panel-default > .panel-heading a.collapsed:before {
+  content: attr(data-step);
+  top: 15px;
+  left: -65px;
+  border: 2px solid #adadad;
+  width: 30px;
+  height: 30px;
+  font-size: 0.9em;
+  color: #adadad;
+}
+.panel-group .panel-heading + .panel-collapse > .list-group,
+.panel-group .panel-heading + .panel-collapse > .panel-body {
+  border: none;
+}
+.panel-group {
+  padding-left: 80px;
+  position: relative;
+}
+.panel-group:before {
+  content: '';
+  position: absolute;
+  border-left: 2px solid #adadad;
+  top: -25px;
+  left: 30px;
+  height: 100%;
+}
+.panel-group .panel {
+  border: none;
+  box-shadow: none;
+}
+.panel-group .panel-heading {
+  position: relative;
+}
 .fnb-header .navbar {
   padding: 0.6em 0;
   border: 0;
@@ -1306,7 +1384,7 @@ input[type=radio].fnb-radio.disabled:before {
   white-space: normal;
   -webkit-appearance: none;
   -webkit-border-radius: 0px;
-  background: url("data:image/svg+xml;utf8,<svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='24' height='24' viewBox='0 0 24 24'><path fill='#fff' d='M7.406 7.828l4.594 4.594 4.594-4.594 1.406 1.406-6 6-6-6z'></path></svg>");
+  background: url("data:image/svg+xml;utf8,<svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='24' height='24' viewBox='0 0 24 24'><path fill='#6b6b6b' d='M7.406 7.828l4.594 4.594 4.594-4.594 1.406 1.406-6 6-6-6z'></path></svg>");
   background-position: 100% 50%;
   background-repeat: no-repeat;
   outline: 0;
@@ -1326,6 +1404,9 @@ input[type=radio].fnb-radio.disabled:before {
   padding-bottom: 0.3em;
 }
 .fnb-select.nav-color {
+  background-image: url("data:image/svg+xml;utf8,<svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='24' height='24' viewBox='0 0 24 24'><path fill='#fff' d='M7.406 7.828l4.594 4.594 4.594-4.594 1.406 1.406-6 6-6-6z'></path></svg>");
+}
+.fnb-select.white-select {
   background-image: url("data:image/svg+xml;utf8,<svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='24' height='24' viewBox='0 0 24 24'><path fill='#fff' d='M7.406 7.828l4.594 4.594 4.594-4.594 1.406 1.406-6 6-6-6z'></path></svg>");
 }
 .fnb-input,
@@ -1539,6 +1620,10 @@ input[type="checkbox"].toggle__check {
 }
 .has-error .form-control:focus {
   box-shadow: none;
+}
+.checkbox-inline,
+.radio-inline {
+  margin-right: 10px;
 }
 .fnb-banner {
   background-image: url('../img/list-banner.jpg');
@@ -7999,9 +8084,6 @@ dl dd {
 .panel-group .panel-title a i {
   color: #f59d30;
   width: 30px;
-}
-.panel-group .panel-collapse {
-  padding: 15px;
 }
 .enquiry-made-by {
   padding: 0.8em 0.4em;
