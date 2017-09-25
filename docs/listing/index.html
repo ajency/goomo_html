@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-		<title>Listing Dashboard :: Goomo by Ajency</title>
+		<title>Your Listing :: Goomo by Ajency</title>
 
 		
 		<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,500,700" rel="stylesheet">
@@ -150,16 +150,27 @@
 					<a href="#" class=" form-toggle " id=""><i class="fa fa-comments-o"></i> Review </a>
 			</li>
 			<li class="active">
-					<a href="#" class=" form-toggle " id=""><i class="fa fa-list"></i> Your Listing </a>
+					<a href="#listingSubMenu" class=" form-toggle " id="" role="button" data-toggle="collapse"><i class="fa fa-list"></i> Your Listing </a>
 			</li>
 	</ul>
 
-	<ul class="gs-steps collapse in edit-mode sub-steps" role="tablist" >
+	<ul class="gs-steps collapse in edit-mode sub-steps" role="tablist" id="listingSubMenu" >
 			<li class="active">
-					<a href="#" class="" id="">Summary</a>
+					<a href="/goomo_html/listing/summary/" class="" id="">Summary</a>
 			</li>
-		 <li class="">
-					<a href="#" class="" id="">Property Details </a>
+		 	<li class="">
+					<a href="#detailsSubMenu" class="" id="" role="button" data-toggle="collapse">Property Details </a>
+					<ul class="sub-menu collapse in" id="detailsSubMenu">
+						<li>
+							<a href="/goomo_html/listing/services/" class="" id="">- Amenities &amp; Services </a>
+						</li>
+						<li>
+							<a href="/goomo_html/listing/services/" class="" id="">- Contact &amp; Address </a>
+						</li>
+						<li>
+							<a href="/goomo_html/listing/services/" class="" id="">- Booking Policy </a>
+						</li>
+					</ul>
 			</li>
 			<li class="">
 					<a href="#" class="" id="">Gallery </a>
@@ -219,13 +230,13 @@
 																			</li>
 																			<li class="fnb-breadcrums__section">
 																				<a href="#">
-																					<p class="fnb-breadcrums__title">Summary</p>
+																					<p class="fnb-breadcrums__title">Your Listing</p>
 																				</a>
 																			</li>
 																		</ul>
 
 																		
-																		<h5 class="nno-m-t main-heading  white m-t-0 margin-btm">Summary</h5>
+																		<h5 class="nno-m-t main-heading  white m-t-0 margin-btm">Your Listing</h5>
 																	</div>
 
 																	<a href="#" class="preview-header__link white btn fnb-btn white-border mini"> View Listing on Goomo</a>

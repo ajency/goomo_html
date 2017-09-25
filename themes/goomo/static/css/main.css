@@ -5978,6 +5978,10 @@ input[type="checkbox"].toggle__check {
 .gs-steps.sub-steps li.active a {
   color: #f59d30;
 }
+.gs-steps.sub-steps .sub-menu {
+  font-size: 0.85em;
+  padding-left: 10px;
+}
 .edit-steps {
   padding: 0 10px;
 }
