@@ -1,111 +1,93 @@
-<!DOCTYPE html>
-<html lang="" class="">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>{{ .Title }} :: {{ .Site.Title }}</title>
+<!-- header -->
+<header class="fnb-header">
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header mobile-head mobile-flex">
+				<div class="mobile-head__left mobile-flex">
+					<i class="fa fa-bars sideMenu" aria-hidden="true"></i>
+				</div>
+				<div class="mobile-head__right mobile-flex">
+					<button class="btn fnb-btn outline mini quote-btn half-border">Get Multiple quotes</button>
+					<a href="" class="login">
+						<i class="fa fa-user-circle user-icon" aria-hidden="true"></i>
+					</a>
+				</div>
+			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse m-side-bar" id="bs-example-navbar-collapse-1">
+				<ul class="mobile-top mobile-flex">
+					<li>
+						<p class="mobile-top__text">Sign in to get a personalised feed!</p>
+					</li>
+					<li>
+						<button type="button" class="fnb-btn outline bnw">Login</button>
+					</li>
+				</ul>
+				<ul class="nav navbar-nav city-select">
+					<li>
+						<select class="form-control fnb-select">
+							<option>--Change Resort--</option>
+							<option selected="">The Upper Deck Resort</option>
+							<option>The Upper Deck</option>
+							<option>The Upper Resort</option>
+						</select>
+					</li>
+				</ul>
+				<p class="mobile-side-title">Browse</p>
+				<ul class="nav navbar-nav navbar-right side-section">
 
-    <!-- Google font cdn -->
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,500,700" rel="stylesheet">
-    <!-- Font awesome -->
-    <link rel="stylesheet" type="text/css" href="{{"css/font-awesome/css/font-awesome.min.css" | absURL}}">
-    <link rel="shortcut icon" href="{{"images/favicon.png" | absURL}}" type="image/x-icon" />
-    <link rel="stylesheet" href="{{"css/bootstrap.min.css" | absURL}}">
-    <link href="{{"css/main.css" | absURL}}" rel="stylesheet">
-  </head>
-  <body class="">
+					<li class="mobile-hide">
+						<div class="dropdown login user-logged">
+							<i class="fa fa-user-circle user-icon" aria-hidden="true"></i>
+							<button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="drop-trigger">
+								<span class="ellipsis userName">Krish Dsouza</span>
+								<i class="fa fa-angle-down" aria-hidden="true"></i>
+							</button>
+							<ul class="dropdown-menu" aria-labelledby="dLabel">
+								<li>Test</li>
+								<li>test</li>
+								<li>test</li>
+							</ul>
+						</div>
 
+					</li>
 
-      <!-- header -->
-      <header class="fnb-header">
-            <nav class="navbar navbar-default">
-                <div class="container-fluid">
-                    <!-- Brand and toggle get grouped for better mobile display -->
-                    <div class="navbar-header mobile-head mobile-flex">
-                        <div class="mobile-head__left mobile-flex">
-                            <i class="fa fa-bars sideMenu" aria-hidden="true"></i>
-                        </div>
-                        <div class="mobile-head__right mobile-flex">
-                            <button class="btn fnb-btn outline mini quote-btn half-border">Get Multiple quotes</button>
-                            <a href="" class="login">
-                                <i class="fa fa-user-circle user-icon" aria-hidden="true"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse m-side-bar" id="bs-example-navbar-collapse-1">
-                        <ul class="mobile-top mobile-flex">
-                            <li>
-                                <p class="mobile-top__text">Sign in to get a personalised feed!</p>
-                            </li>
-                            <li>
-                                <button type="button" class="fnb-btn outline bnw">Login</button>
-                            </li>
-                        </ul>
-                        <ul class="nav navbar-nav city-select">
-                            <li>
-                                <select class="form-control fnb-select">
-                                    <option>--Change Resort--</option>
-                                    <option selected="">The Upper Deck Resort</option>
-                                    <option>The Upper Deck</option>
-                                    <option>The Upper Resort</option>
-                                </select>
-                            </li>
-                        </ul>
-                        <p class="mobile-side-title">Browse</p>
-                        <ul class="nav navbar-nav navbar-right side-section">
+				</ul>
+				<p class="mobile-side-title">Explore</p>
+				<ul class="nav navbar-nav explore side-section">
+					<li>
+						<a href="" class="nav-title-size">About us</a>
+					</li>
+					<li>
+						<a href="" class="nav-title-size">Blogs</a>
+					</li>
+					<li>
+						<a href="" class="nav-title-size">How it works</a>
+					</li>
+					<li>
+						<a href="" class="nav-title-size">Terms of use</a>
+					</li>
+					<li>
+						<a href="" class="nav-title-size">FAQ</a>
+					</li>
+				</ul>
+			</div>
+			<!-- /.navbar-collapse -->
+		</div>
+		<!-- /.container-fluid -->
+	</nav>
+</header>
 
-                            <li class="mobile-hide">
-                                <div class="dropdown login user-logged">
-                                    <i class="fa fa-user-circle user-icon" aria-hidden="true"></i>
-                                    <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="drop-trigger">
-                                        <span class="ellipsis userName">Krish Dsouza</span>
-                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
-                                    </button>
-                                    <ul class="dropdown-menu" aria-labelledby="dLabel">
-                                        <li>Test</li>
-                                        <li>test</li>
-                                        <li>test</li>
-                                    </ul>
-                                </div>
-
-                            </li>
-
-                        </ul>
-                        <p class="mobile-side-title">Explore</p>
-                        <ul class="nav navbar-nav explore side-section">
-                            <li>
-                                <a href="" class="nav-title-size">About us</a>
-                            </li>
-                            <li>
-                                <a href="" class="nav-title-size">Blogs</a>
-                            </li>
-                            <li>
-                                <a href="" class="nav-title-size">How it works</a>
-                            </li>
-                            <li>
-                                <a href="" class="nav-title-size">Terms of use</a>
-                            </li>
-                            <li>
-                                <a href="" class="nav-title-size">FAQ</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- /.navbar-collapse -->
-                </div>
-                <!-- /.container-fluid -->
-            </nav>
-      </header>
-
-      <div class="profile-stats breadcrums-row no-shadow">
-          <div class="container">
-              <div class="row p-t-30 p-b-30 mobile-flex jobs-listing edit-mode preview-holder ">
-                  <div class="col-sm-8 flex-col">
-                  </div>
-                  <div class="col-sm-4 flex-col text-right mobile-hide">
-                      <!-- <a href="#" class="preview-header__link white btn fnb-btn white-border mini"> View Listing on Goomo</a> -->
-                  </div>
-              </div>
-          </div>
-      </div>
-      <!-- header ends -->
+<div class="profile-stats breadcrums-row no-shadow">
+  <div class="container">
+	  <div class="row p-t-30 p-b-30 mobile-flex jobs-listing edit-mode preview-holder ">
+		  <div class="col-sm-8 flex-col">
+		  </div>
+		  <div class="col-sm-4 flex-col text-right mobile-hide">
+			  <!-- <a href="#" class="preview-header__link white btn fnb-btn white-border mini"> View Listing on Goomo</a> -->
+		  </div>
+	  </div>
+  </div>
+</div>
+<!-- header ends -->
