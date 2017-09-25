@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://ajency.github.io/goomo_html/extranet/</loc>
+    <lastmod>2017-09-25T19:43:27+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ajency.github.io/goomo_html/extranet/create/</loc>
+    <lastmod>2017-09-25T19:40:59+05:30</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ajency.github.io/goomo_html/listing/services/</loc>
     <lastmod>2017-09-25T11:31:18+05:30</lastmod>
   </url>
@@ -24,7 +34,7 @@
   
   <url>
     <loc>https://ajency.github.io/goomo_html/</loc>
-    <lastmod>2017-09-25T11:31:18+05:30</lastmod>
+    <lastmod>2017-09-25T19:40:59+05:30</lastmod>
     <priority>0</priority>
   </url>
   

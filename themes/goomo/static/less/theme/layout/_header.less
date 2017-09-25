@@ -14,6 +14,12 @@
     	background: linear-gradient(to right, @accent-primary 0%,@accent-alternate 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     	box-shadow: @shadow-2;
     	margin-bottom: 0;
+
+    	&.nav-extranet{
+    		background: -moz-linear-gradient(left, @accent-primary 0%, @accent-secondary 100%); /* FF3.6-15 */
+    		background: -webkit-linear-gradient(left, @accent-primary 0%,@accent-secondary 100%); /* Chrome10-25,Safari5.1-6 */
+    		background: linear-gradient(to right, @accent-primary 0%,@accent-secondary 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    	}
 	}
 	.nav-gap{
 		padding: 0 30px;
@@ -172,6 +178,13 @@
     		}
 		}
 	}
+
+	.fnb-breadcrums{
+		margin-top: 5px;
+		.fnb-breadcrums__title{
+			font-weight: 400;
+		}
+	}
 }
 
 @media screen and (max-width: @mobile){
@@ -206,3 +219,9 @@
 	}
 }
 
+
+.dash-title{
+	color: #fff;
+	font-weight: 600;
+	margin-top: 0;
+}
