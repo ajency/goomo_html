@@ -713,11 +713,11 @@ input[type=checkbox]:before {
   padding: 0;
   position: absolute;
   top: -2px;
-  left: 0;
+  left: -4px;
   color: #dcdcdc;
   font-size: 1.35em;
   cursor: pointer;
-  top: -14px;
+  top: -4px;
   width: 20px;
   text-align: center;
 }
@@ -5956,12 +5956,10 @@ input[type="checkbox"].toggle__check {
   color: #f59d30;
   padding-right: 0.5em;
 }
-@media screen and (min-width: 1024px) {
-  .dsk-separator {
-    background-color: #fff;
-    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
-    padding: 0.5em;
-  }
+.dsk-separator {
+  background-color: #fff;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+  padding: 0.5em;
 }
 @media screen and (max-width: 768px) {
   .white-bg-border {
@@ -7952,6 +7950,9 @@ input[type='checkbox'].remove-addr {
 .addArea:active,
 .addArea:focus {
   text-decoration: underline;
+}
+.fnb-services .checkbox {
+  margin-bottom: 20px;
 }
 .profile-stats {
   color: #fff;
