@@ -9129,6 +9129,27 @@ input[type='checkbox'].remove-addr {
 .dataTable.no-wrap thead th {
   white-space: nowrap;
 }
+.field-gap {
+  margin-top: 3em;
+}
+.listing-fields .fnb-select {
+  padding-left: 0;
+  font-size: 1.05em;
+}
+.contract {
+  margin-top: 2em;
+  background-color: #fef4e4;
+  padding: 2em 0;
+}
+.contract .fnb-btn {
+  padding: 0.5em 1.8em;
+}
+.contract input[type='radio'].fnb-radio:before {
+  background-color: #fef4e4;
+}
+.contract input[type='radio'].fnb-radio:checked + span {
+  font-weight: 600;
+}
 .profile-stats {
   color: #fff;
   background: #378f9e;
