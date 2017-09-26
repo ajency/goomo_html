@@ -13,39 +13,9 @@
 					</div>
 				</div>
 			</div>
-			<!-- stats -->
-			<!-- <div class="col-sm-12">
-				<div class="stats-row flex-row flex-wrap">
-					<div class="total-listing stats-cols">
-						<div class="total-listing__count flex-row">
-							<div>
-								<h5 class="bolder">140</h5>
-								<h6 class="m-b-0 text-lighter">Total Listings</h6>
-							</div>
-							<img src="{{"img/listing-count.png" | absURL}}" class="img-responsive">
-						</div>
-						<div class="total-listing__count unclaimed flex-row">
-							<div>
-								<h5 class="bolder">2</h5>
-								<h6 class="m-b-0 text-lighter">Unclaimed</h6>
-							</div>
-							<i class="fa fa-info-circle sub-title text-muted" aria-hidden="true"></i>
-						</div>
-					</div>
-					<div class="status-bucket stats-cols dsk-separator">
-						<p class="m-b-0 bolder">Status buckets</p>
-						<div class="status-bucket__row">
-							<div class="bucket-1">
-								<p class="m-b-0">03</p>
-							</div>
-						</div>
-					</div>
-					<div class="star-bucket stats-cols  dsk-separator"></div>					
-				</div>
-			</div> -->
 			<!-- filter -->
-			<div class="col-sm-12 m-t-25">
-				<div class="flex-row space-between">
+			<div class="col-sm-12 m-t-35">
+				<div class="flex-row space-between search-row">
 					<div class="filter-search flex-row align-reset">
 						<div class="filter-search__field">
 							<i class="fa fa-search text-lighter element-title" aria-hidden="true"></i>
@@ -53,106 +23,184 @@
 						</div>
 						<button class="btn fnb-btn transparent bold-btn full flex-row"><img src="{{"img/filter-bars.png" | absURL}}" class="img-responsive p-r-5" width="30"> <span>Filter</span></button>
 					</div>
-					<button class="btn fnb-btn secondary-btn bold-btn full">Add listing</button>
+					<button class="btn fnb-btn secondary-btn bold-btn full add-list">Add listing</button>
 				</div>
 			</div>
 
-			<div class="col-sm-12 m-t-25">
-				<table id="listings-table" class="table table-striped dataTable" cellspacing="0" width="100%">
-                  <thead>
-                    <tr>
-                      <th style="min-width: 12%;">Name</th>
-                      <th class="">
-                        Country/State/City/Location
-                      </th>
-                      <th class="">
-                        Business manager
-                      </th>
-                      <th class="" style="min-width: 10%;">
-                        Claimed/Unclaimed
-                        <br><small class="text-muted">Mail Sent</small>
-                      </th>
-                      <th class="" style="min-width: 10%;">
-                          Status
-                      </th>
-                      <th class="" data-col="6" style="min-width: 10%;">
-                        Star Category
-                      </th>
-                      <th class="" data-col="8" style="min-width: 10%;">
-                        Created on (By:)
-                      </th>
-                    </tr>
-                  </thead>
+      <!-- stats -->
+      <div class="col-sm-12 m-t-50 stats-container">
+        <div class="stats-row flex-row flex-wrap">
+          <div class="total-listing">
+            <div class="total-listing__count flex-row space-between">
+              <div>
+                <h5 class="bolder m-b-5 titles">140</h5>
+                <p class="m-b-0 text-lighter">Total Listings</p>
+              </div>
+              <img src="{{"img/listing-count.png" | absURL}}" class="img-responsive" width="35">
+            </div>
+            <div class="total-listing__count unclaimed flex-row space-between">
+              <div>
+                <h5 class="bolder m-b-5 titles">2</h5>
+                <p class="m-b-0 text-lighter">Unclaimed</p>
+              </div>
+              <i class="fa fa-info-circle sub-title infoIcon" aria-hidden="true"></i>
+            </div>
+          </div>
 
-                  <tbody>
-                    <tr>
-                      <td><a href="#">AVK Suppliers</a></td>
-                      <td>Panjim</td>
-                      <td>
-                        <div class="m-b-5">
-                          Meat > Pork > Pork Ham, Pork Meat, Pork Chops
-                          <!-- Pork Ham, Pork Meat, Pork Chops -->
-                          <!-- <i class="fa fa-info-circle small text-color" data-toggle="tooltip" data-placement="right" title="Meat > Pork > Pork Ham, Pork Meat, Pork Chops"></i> -->
-                        </div>
-                      </td>
-                      <td>2017/06/05</td>
-                      <td>2017/06/05</td>
-                      <td>External User</td>
-                      <td>1,2,1</td>
-                    </tr>
-                    <tr>
-                      <td><a href="#">AVK Suppliers</a></td>
-                      <td>Panjim</td>
-                      <td>
-                        <div class="m-b-5">
-                          Meat > Pork > Pork Ham, Pork Meat, Pork Chops
-                          <!-- Pork Ham, Pork Meat, Pork Chops -->
-                          <!-- <i class="fa fa-info-circle small text-color" data-toggle="tooltip" data-placement="right" title="Meat > Pork > Pork Ham, Pork Meat, Pork Chops"></i> -->
-                        </div>
-                      </td>
-                      <td>2017/06/05</td>
-                      <td>2017/06/05</td>
-                      <td>External User</td>
-                      <td>1,2,1</td>
-                    </tr>
-                    <tr>
-                      <td><a href="#">AVK Suppliers</a></td>
-                      <td>Panjim</td>
-                      <td>
-                        <div class="m-b-5">
-                          Meat > Pork > Pork Ham, Pork Meat, Pork Chops
-                          <!-- Pork Ham, Pork Meat, Pork Chops -->
-                          <!-- <i class="fa fa-info-circle small text-color" data-toggle="tooltip" data-placement="right" title="Meat > Pork > Pork Ham, Pork Meat, Pork Chops"></i> -->
-                        </div>
-                      </td>
-                      <td>2017/06/05</td>
-                      <td>2017/06/05</td>
-                      <td>External User</td>
-                      <td>1,2,1</td>
-                    </tr>
-                    <tr>
-                      <td><a href="#">AVK Suppliers</a></td>
-                      <td>Panjim</td>
-                      <td>
-                        <div class="m-b-5">
-                          Meat > Pork > Pork Ham, Pork Meat, Pork Chops
-                          <!-- Pork Ham, Pork Meat, Pork Chops -->
-                          <!-- <i class="fa fa-info-circle small text-color" data-toggle="tooltip" data-placement="right" title="Meat > Pork > Pork Ham, Pork Meat, Pork Chops"></i> -->
-                        </div>
-                      </td>
-                      <td>2017/06/05</td>
-                      <td>2017/06/05</td>
-                      <td>External User</td>
-                      <td>1,2,1</td>
-                    </tr>
+          <div class="status-bucket stats-cols dsk-separator">
+            <p class="bolder">Status buckets</p>
+            <div class="flex-row align-reset space-between">
+              <div class="status-bucket__row">
+                <div class="buckets bucket-1">
+                  <p class="m-b-0 text-secondary sub-title">03</p>
+                  <p class="m-b-0 text-secondary default-size">Leads</p>
+                </div>
+                <div class="buckets bucket-2">
+                  <p class="m-b-0 text-success sub-title">22</p>
+                  <p class="m-b-0 text-success default-size">Published</p>
+                </div>
+              </div>
+              <div class="status-bucket__row">
+                <div class="buckets bucket-1">
+                  <p class="m-b-0 text-info sub-title">11</p>
+                  <p class="m-b-0 text-info default-size">Drafts</p>
+                </div>
+                <div class="buckets bucket-2">
+                  <p class="m-b-0 text-danger sub-title">54</p>
+                  <p class="m-b-0 text-danger default-size">Inactive</p>
+                </div>
+              </div>
+              <div class="status-bucket__row">
+                <div class="buckets bucket-1">
+                  <p class="m-b-0 text-primary sub-title">23</p>
+                  <p class="m-b-0 text-primary default-size">Under Review</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="star-bucket status-bucket stats-cols  dsk-separator">
+            <p class="bolder">Star category buckets</p>
+            <div class="flex-row align-reset space-between">
+              <div class="status-bucket__row">
+                <div class="buckets bucket-1">
+                  <p class="m-b-0 text sub-title">15</p>
+                  <p class="m-b-0 text default-size text-lighter">One Star</p>
+                </div>
+                <div class="buckets bucket-2">
+                  <p class="m-b-0 te sub-title">10</p>
+                  <p class="m-b-0 te default-size text-lighter">Four Star</p>
+                </div>
+              </div>
+              <div class="status-bucket__row">
+                <div class="buckets bucket-1">
+                  <p class="m-b-0 sub-title">30</p>
+                  <p class="m-b-0 default-size text-lighter">Five Star</p>
+                </div>
+                <div class="buckets bucket-2">
+                  <p class="m-b-0 t sub-title">15</p>
+                  <p class="m-b-0 t default-size text-lighter">Two Star</p>
+                </div>
+              </div>
+              <div class="status-bucket__row">
+                <div class="buckets bucket-1">
+                  <p class="m-b-0 te sub-title">70</p>
+                  <p class="m-b-0 te default-size text-lighter">Three Star</p>
+                </div>
+              </div>               
+            </div>
+    
+          </div>          
+        </div>
+      </div>
 
-                  </tbody>
-                </table>	
+			<div class="col-sm-12 m-t-40">
+				<table id="listings-table" class="table table-striped dataTable listing-table" cellspacing="0" width="100%">
+          <thead>
+            <tr>
+              <th style="min-width: 12%;" >Name</th>
+              <th class="" style="min-width: 25%;">
+                Country/State/City/Location
+              </th>
+              <th style="min-width: 15%;">
+                Business manager
+              </th>
+              <th class="" style="min-width: 10%;">
+                Claimed/Unclaimed
+                <br><small class="text-muted">Mail Sent</small>
+              </th>
+              <th class="" style="min-width: 10%;" rowspan="1">
+                  Status
+              </th>
+              <th class="" style="min-width: 10%;" rowspan="1">
+                Star Category
+              </th>
+              <th class="" style="minwidth: 10%;" rowspan="1">
+                Created on (By:)
+              </th>
+            </tr>
+          </thead>
+
+          <tbody>
+
+            <tr>
+              <td><a href="#" class="text-info bolder">Chalston Beach Resort</a></td>
+              <td>Badem, Salvador-Do-Mundo, Bardez, Panaji, India</td>
+              <td>
+                <div class="m-b-5">
+                  Sujata patil
+                </div>
+              </td>
+              <td>Yes</td>
+              <td><span class="text-secondary">Lead</span></td>
+              <td>Three star, Five star</td>
+              <td>21 Aug 2016 - Ram Sharma</td>
+            </tr>
+
+            <tr>
+              <td><a href="#" class="text-info bolder">Casa Amora</a></td>
+              <td>Khobra Vaddo, Goa, Calangute, India</td>
+              <td>
+                <div class="m-b-5">
+                  Allen Walker
+                </div>
+              </td>
+              <td>Yes</td>
+              <td><span class="text-primary">Under Review</span></td>
+              <td>Three star, Five star</td>
+              <td>21 Aug 2016 - Ram Sharma</td>
+            </tr>
+
+            <tr>
+              <td><a href="#" class="text-info bolder">Casa Bella</a></td>
+              <td>Badem, Salvador-Do-Mundo, Bardez, Panaji, India</td>
+              <td>
+                <div class="m-b-5">
+                  Bruce Wayne
+                </div>
+              </td>
+              <td>Yes</td>
+              <td><span class="text-info">Drafts</span></td>
+              <td>Three star, Five star</td>
+              <td>21 Aug 2016 - Ram Sharma</td>
+            </tr>
+
+            <tr>
+              <td><a href="#" class="text-info bolder">Casa Britona</a></td>
+              <td>Khobra Vaddo, Goa, Calangute, India</td>
+              <td>
+                <div class="m-b-5">
+                  Oliver Queen
+                </div>
+              </td>
+              <td>Yes</td>
+              <td><span class="text-secondary">Lead</span></td>
+              <td>Three star, Five star</td>
+              <td>21 Aug 2016 - Ram Sharma</td>
+            </tr>
+
+          </tbody>
+        </table>	
 			</div>
-
-
-
-
 
 
 		</div>

@@ -8433,9 +8433,6 @@ i.w-border {
   font-weight: normal;
   padding: 5px 0px;
 }
-.stats-row .stats-cols {
-  flex: 1 0 33.33%;
-}
 .filter-search__field {
   padding: 0.5em;
   border: 1px solid #ddd;
@@ -8556,6 +8553,127 @@ i.w-border {
   }
   .user-icon {
     margin-left: 1.5em;
+  }
+}
+.stats-row .stats-cols {
+  flex: 1 0 calc(33.33% - 2em);
+  padding: 0.8em 1em 0 1em;
+}
+.total-listing {
+  flex-basis: 20%;
+  margin-right: 1em;
+}
+.total-listing__count {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.5em;
+  align-items: flex-end;
+  margin-bottom: 0.8em;
+}
+.infoIcon {
+  font-size: 1.8em;
+  color: #d2d2d2;
+}
+.status-bucket {
+  margin: 0 1em;
+}
+.status-bucket__row {
+  flex: 1 0 33.33%;
+}
+.status-bucket__row:nth-child(2n) {
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
+}
+.status-bucket .buckets {
+  padding: 0.5em;
+  margin: 0.5em;
+  margin-top: 0;
+}
+.status-bucket .buckets:first-child {
+  border-bottom: 1px solid #eee;
+}
+.star-bucket {
+  margin-right: 0;
+}
+.listing-table.dataTable thead .sorting,
+.listing-table.dataTable thead .sorting_asc,
+.listing-table.dataTable thead .sorting_desc {
+  background-image: none;
+}
+.dataTables_info {
+  display: none;
+}
+.pagination > .active > a,
+.pagination > .active > a:focus,
+.pagination > .active > a:hover,
+.pagination > .active > span,
+.pagination > .active > span:focus,
+.pagination > .active > span:hover {
+  background-color: #378f9e;
+  border-color: #378f9e;
+}
+.listing-table.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: #f7f8f8;
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.07);
+}
+.dataTables_paginate {
+  text-align: right;
+}
+.table > tbody > tr > td,
+.table > tbody > tr > th,
+.table > tfoot > tr > td,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > thead > tr > th {
+  padding: 15px 8px;
+  outline: 0;
+  cursor: pointer;
+  border: 0;
+}
+.dataTables_wrapper .dataTables_length,
+.dataTables_wrapper .dataTables_filter {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .search-row {
+    flex-direction: column;
+  }
+  .filter-search__field {
+    display: flex;
+    align-items: center;
+  }
+  .filter-search__field i {
+    font-size: 1em;
+  }
+  .filter-search .fnb-input {
+    min-width: auto;
+  }
+  .add-list {
+    margin-top: 1.5em;
+  }
+  .stats-container {
+    margin-top: 2em;
+  }
+  .stats-row {
+    flex-direction: column;
+  }
+  .stats-row .stats-cols {
+    flex: 1;
+    width: 100%;
+    margin: 1em;
+  }
+  .total-listing {
+    flex: 1;
+    width: 100%;
+    margin: 0 1em;
+  }
+  .total-listing .titles {
+    font-size: 1.3em;
+  }
+  .total-listing p {
+    font-size: 1em;
+  }
+  .main-table {
+    overflow-x: auto;
   }
 }
 .profile-stats {

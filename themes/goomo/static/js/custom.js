@@ -25,7 +25,12 @@ $(document).ready(function() {
 	  }
 	});
 
-	$('#listings-table').DataTable();
+	var registered = $('#listings-table').DataTable();
 
+    registered.columns().iterator('column', function(ctx, idx) {
+        $(registered.column(idx).header()).append('<span class="sort-icon"/>');
+    });
+
+    $('#listings-table').closest('.row').addClass('main-table');
 
 });
