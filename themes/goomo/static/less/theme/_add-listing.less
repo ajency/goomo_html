@@ -184,7 +184,7 @@
 		align-items: center;
 		// justify-content: space-between;
 		font-weight: 600;
-		font-size: 1.1em;
+		font-size: 1em;
 		color: lighten(@grey-darker, 20%);
 		text-decoration: none;
 		i{
@@ -2524,7 +2524,7 @@ input[type='checkbox'].remove-addr{
 }
 
 .property-status-box{
-	border: 1px solid @accent-primary;
+	border: 1px solid #c3bf8f;
 	background-color: #fffdeb;
 	align-items: stretch;
 	margin-top: 20px;
@@ -2565,6 +2565,7 @@ i.w-border{
 }
 
 .checklist-table{
+	position: relative;
 	i.text-muted{
 		opacity: 0.4;
 	}
@@ -2573,6 +2574,91 @@ i.w-border{
 	}
 }
 
+.qc-overlay{
+	position: absolute;
+	width: 125px;
+	background-color: #f9f9f9;
+	border-left: 2px solid #ececec;
+	height: 100%;
+	right: 0;
+	top: 0;
+	z-index: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding: 0 5px;
+	@media(min-width: 1600px){
+		width: 135px;
+	}
+	@media(min-width: 1900px){
+		width: 150px;
+	}
+}
+
+.market-manager-block{
+	// display: flex;
+	justify-content: center;
+	margin-top: 35px;
+	padding: 30px 25px 15px;
+	background-color: #70c8be;
+	border-radius: 5px;
+	position: relative;
+	text-align: center;
+	color: #35716b;
+	font-weight: 600;
+	font-size: 0.9em;
+	.market-manager-name{
+		color: #fff;
+		font-size: 1.3em;
+		margin: 10px 0;
+		line-height: 1.1;
+		small{
+			font-weight: normal;
+		}
+	}
+	.market-manager-number{
+		color: #fff;
+		font-size: 1.3em;
+		margin: 10px 0 20px;
+		line-height: 1.1;
+	}
+	.market-manager-img{
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: -35px;
+		margin: auto;
+		border-radius: 50%;
+		height: 70px;
+		width: 70px;
+		border: 2px solid #70c8be;
+		overflow: hidden;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+.content-score-block{
+	background-color: #f7f7f6;
+	padding: 10px;
+	border-radius: 5px;
+	font-size: 0.8em;
+	.progress{
+		height: 6px;
+		margin-bottom: 15px;
+		background-color: #e3e3e3;
+		box-shadow: none;
+	}
+	.progress-bar-info{
+		background-color: #70c8be;
+	}
+	button{
+		font-size: 1.2em;
+
+	}
+}
 
 
 // Extranet
@@ -2745,14 +2831,14 @@ i.w-border{
 	padding: 1em 1em 2.5em 1em;
 	background-color: #f5f7f9;
 	.no-label{
-		font-size: 1.1em;    	
+		font-size: 1.1em;
 		color: #31708f;
 		&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
 	      color: #31708f;
 	    }
 	    &::-moz-placeholder { /* Firefox 19+ */
 	      color: #31708f;
-	  	}		
+	  	}
 	}
 }
 
