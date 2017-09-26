@@ -6237,9 +6237,8 @@ input[type="checkbox"].toggle__check {
   }
 }
 .gs-steps.sub-steps {
-  padding-left: 40px;
+  padding-left: 30px;
   font-size: 0.9em;
-  margin-bottom: 10px;
 }
 .gs-steps.sub-steps li.active a {
   color: #ff8500;

@@ -24,70 +24,58 @@ theme = "goomo"
     identifier = "review"
     url = "/review/"
 [[menu.main]]
-    name = "Your Listing"
+    name = "Property Details"
     pre = "<i class='fa fa-list'></i>"
     weight = -98
-    identifier = "listing"
-    url = "/listing/"
+    identifier = "property-details"
+    url = "/property/"
 
 [[menu.main]]
     name = "Summary"
-    parent = "listing"
+    parent = "property-details"
     weight = -100
     identifier = "summary"
-    url = "/listing/summary/"
-[[menu.main]]
-    name = "Property Details"
-    parent = "listing"
-    weight = -95
-    identifier = "property-details"
-    url = "/listing/property-details/"
+    url = "/property/summary/"
 [[menu.main]]
     name = "Amenities & Services"
     parent = "property-details"
-    weight = -100
+    weight = -98
     identifier = "services"
-    url = "/listing/services/"
+    url = "/property/services/"
 [[menu.main]]
     name = "Contact & Address"
     parent = "property-details"
     weight = -95
     identifier = "contact"
-    url = "/listing/contact/"
+    url = "/property/contact/"
 [[menu.main]]
-    name = "Booking Policy"
+    name = "Images"
     parent = "property-details"
     weight = -90
+    identifier = "images"
+    url = "/property/images/"
+[[menu.main]]
+    name = "Rooms"
+    parent = "property-details"
+    weight = -80
+    identifier = "rooms"
+    url = "/property/rooms/"
+[[menu.main]]
+    name = "Policies"
+    parent = "property-details"
+    weight = -75
     identifier = "booking-policy"
-    url = "/listing/booking-policy/"
+    url = "/property/booking-policy/"
 
 [[menu.main]]
-    name = "Gallery"
-    parent = "listing"
-    weight = -90
-    identifier = "gallery"
-    url = "/listing/gallery/"
-[[menu.main]]
-    name = "Business Details"
-    parent = "listing"
-    weight = -85
-    identifier = "business-details"
-    url = "/listing/business-details/"
-[[menu.main]]
     name = "Rates & Availability"
-    parent = "listing"
+    pre = "<i class='fa fa-money'></i>"
     weight = -80
     identifier = "rates-availability"
-    url = "/listing/rates-availability/"
+    url = "/property/rates-availability/"
 [[menu.main]]
-    name = "Promotions"
-    parent = "listing"
-    weight = -75
-    identifier = "promotions"
-    url = "/listing/promotions/"
-[[menu.main]]
-    name = "Finance"
-    parent = "listing"
+    name = "Contract & Finance"
+    pre = "<i class='fa fa-address-card-o'></i>"
     weight = -70
     identifier = "finance"
-    url = "/listing/finance/"
+    url = "/property/finance/"
