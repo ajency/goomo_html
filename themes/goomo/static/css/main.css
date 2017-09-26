@@ -2432,6 +2432,9 @@ input[type="checkbox"].toggle__check {
     display: flex;
     justify-content: center;
   }
+  .mobile-center {
+    text-align: center;
+  }
 }
 .rating.rating-small {
   width: 86px;
@@ -8369,8 +8372,10 @@ i.w-border {
 .dataTable.no-wrap thead th {
   white-space: nowrap;
 }
-.field-gap {
-  margin-top: 2.4em;
+@media screen and (min-width: 769px) {
+  .field-gap {
+    margin-top: 2.4em;
+  }
 }
 .listing-fields .fnb-select {
   padding-left: 0;
@@ -8416,6 +8421,21 @@ i.w-border {
 }
 .location-row .flexdatalist-multiple.flexdatalist-multiple li.value {
   border-color: #ff8500;
+}
+@media screen and (max-width: 768px) {
+  .prop-title {
+    font-size: 1.2em;
+  }
+  .add-user .no-label {
+    font-size: 1em;
+  }
+  .listing-create-btn {
+    float: none !important;
+    text-align: center;
+  }
+  .user-icon {
+    margin-left: 1.5em;
+  }
 }
 .profile-stats {
   color: #fff;
