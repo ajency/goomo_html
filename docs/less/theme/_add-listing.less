@@ -2975,3 +2975,56 @@ i.w-border{
 	}
 }
 
+
+@media screen and (max-width: @mobile){
+	.search-row{
+		flex-direction: column;
+	}
+	.filter-search{
+		&__field{
+			display: flex;
+    		align-items: center;
+    		i{
+    			font-size: 1em;
+    		}
+		}
+		.fnb-input{
+			min-width: auto;
+		}
+	}
+	.add-list{
+		margin-top: 1.5em;
+	}
+	.stats-container{
+		margin-top: 2em;
+	}
+	.stats-row{
+		flex-direction: column;
+		.stats-cols{
+			flex: 1;
+    		width: 100%;
+    		margin: 1em;
+		}
+	}
+	.total-listing{
+		flex: 1;
+    	width: 100%;
+    	margin: 0 1em;
+    	.titles{
+    		font-size: 1.3em;
+    	}
+    	p{
+    		font-size: 1em;
+    	}
+	}
+	.main-table{
+		overflow-x: auto;
+	}
+}
+
+
+
+
+
+
+

@@ -9588,6 +9588,69 @@ i.w-border {
 .dataTables_wrapper .dataTables_filter {
   display: none;
 }
+@media screen and (max-width: 768px) {
+  .search-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .filter-search__field {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .filter-search__field i {
+    font-size: 1em;
+  }
+  .filter-search .fnb-input {
+    min-width: auto;
+  }
+  .add-list {
+    margin-top: 1.5em;
+  }
+  .stats-container {
+    margin-top: 2em;
+  }
+  .stats-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .stats-row .stats-cols {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    width: 100%;
+    margin: 1em;
+  }
+  .total-listing {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    width: 100%;
+    margin: 0 1em;
+  }
+  .total-listing .titles {
+    font-size: 1.3em;
+  }
+  .total-listing p {
+    font-size: 1em;
+  }
+  .main-table {
+    overflow-x: auto;
+  }
+}
 .profile-stats {
   color: #fff;
   background: #378f9e;

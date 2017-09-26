@@ -15,25 +15,11 @@ $(document).ready(function() {
 	});
 
 	var registered = $('#listings-table').DataTable();
- // var registered = $('#datatable-registered').DataTable({
- //        "columnDefs": [{
- //                "targets": 'no-sort',
- //                "orderable": false
- //            }
- //        ],
- //        dom: 'lBrtip',
- //        buttons: [
- //            {
- //                extend: 'csv',
- //                text: 'Export as CSV',
- //                className: 'btn primary-btn border-btn fnb-btn'
- //            }
- //        ]
-        
- //    });
 
     registered.columns().iterator('column', function(ctx, idx) {
         $(registered.column(idx).header()).append('<span class="sort-icon"/>');
     });
+
+    $('#listings-table').closest('.row').addClass('main-table');
 
 });
