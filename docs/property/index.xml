@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Properties on Goomo by Ajency</title>
+    <title>Your Listing on Goomo by Ajency</title>
     <link>https://ajency.github.io/goomo_html/property/</link>
-    <description>Recent content in Properties on Goomo by Ajency</description>
+    <description>Recent content in Your Listing on Goomo by Ajency</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 26 Sep 2017 12:57:20 +0530</lastBuildDate>
+    <lastBuildDate>Tue, 26 Sep 2017 13:29:21 +0530</lastBuildDate>
     
 	<atom:link href="https://ajency.github.io/goomo_html/property/index.xml" rel="self" type="application/rss+xml" />
     
@@ -17,7 +17,7 @@
       <pubDate>Tue, 26 Sep 2017 12:57:20 +0530</pubDate>
       
       <guid>https://ajency.github.io/goomo_html/property/summary/</guid>
-      <description></description>
+      <description>Test content</description>
     </item>
     
     <item>
