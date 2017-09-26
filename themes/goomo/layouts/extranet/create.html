@@ -13,15 +13,16 @@
 					</div>
 				</div>
 			</div>
+			<!-- Form elements -->
 			<div class="col-sm-12">
-				<h5 class="bolder m-t-25">Property Information</h5>
+				<h5 class="bolder m-t-35">Property Information</h5>
 				<div class="row field-gap">
 		            <div class="col-sm-6">
-		                <label class="label-size text-info">Business Name</label>
+		                <label class="label-size text-info">Business Name <i class="fa fa-question-circle p-l-5 text-info" aria-hidden="true"></i></label>
 		                <input type="text" class="form-control fnb-input" placeholder="Lorem ipsum dolar sit amet">
 		            </div>
 		            <div class="col-sm-6 c-gap">
-		                <label class="label-size text-info">Display Name?</label>
+		                <label class="label-size text-info">Display Name <i class="fa fa-question-circle p-l-5 text-info" aria-hidden="true"></i></label>
 		                <input type="text" class="form-control fnb-input" placeholder="Lorem ipsum dolar sit amet">
 		            </div>
 		        </div>
@@ -51,11 +52,15 @@
 				            </div>
 				        </div>
 				        <div class="row field-gap">
-				            <div class="col-sm-12">
+				            <div class="col-sm-12 location-row">
 				                <label class="label-size text-info">Location</label>
-				                 <input type="text" class="form-control fnb-input payment-add flexdatalist" multiple="multiple" placeholder="Type for suggestions &amp; hit enter" list="payment-modes" value="">
-						        <datalist id="payment-modes">
-						            <option value="visa">Visa cards</option><option value="debit">Debit Card</option><option value="money_order">Money Order</option><option value="cheque">Cheque</option><option value="credit">Credit Card</option><option value="travelers">Travelers Cheque</option><option value="cash">Cash</option><option value="masters">Master Card</option><option value="diners">Diner's Club</option>
+				                 <input type="text" class="form-control fnb-input payment-add flexdatalist" multiple="multiple" placeholder="Type for suggestions &amp; hit enter" list="locations" value="">
+						        <datalist id="locations">
+						            <option value="goa">Goa</option>
+						            <option value="mumbai">Mumbai</option>
+						            <option value="delhi">Delhi</option>
+						            <option value="gujarat">Gujarat</option>
+						            <option value="bangalore">Bangalore</option>
 						        </datalist>
 				            </div>
 				        </div>
@@ -110,6 +115,69 @@
 		            	</div>
 		            </div>
 		        </div>
+			</div>
+			<!-- Assign Manager -->
+			<div class="col-sm-12 m-t-40 listing-fields">
+				<h5 class="bolder m-t-35">Assign a Market Manager <i class="fa fa-question-circle p-l-5 text-info" aria-hidden="true"></i></h5>
+				<div class="row field-gap flex-row flex-wrap">
+		            <div class="col-sm-4">
+		                <label class="label-size text-info">Market Manager</label>
+		                <select class="fnb-select select-variant form-control text-lighter" name="">
+		                    <option value="">None</option>
+		                    <option selected="">Vikas Khanna</option>
+		                </select>
+		            </div>
+		            <div class="col-sm-4 flex-row">
+		                <img src="{{"img/bulb.png" | absURL}}" class="img-responsive">
+		                <p class="m-b-0 text-muted p-l-5">The Listing you are about to create will be associated with the selected Market Manager</p>
+		            </div>
+		        </div>
+		        <div class="row m-t-15">
+		        	<div class="col-sm-4">
+		            	<button class="btn fnb-btn s-outline bold-btn full m-t-10"><span>Continue</span></button>
+		            </div>	
+		        </div>
+			</div>
+			<!-- Add a user -->
+			<div class="col-sm-12 m-t-40 listing-fields m-b-50">
+				<img src="{{"img/user.png" | absURL}}" class="img-responsive user-icon">
+				<div class="add-user">
+					<h5 class="bolder m-t-25">Add a User</h5>
+					<div class="row field-gap">
+			            <div class="col-sm-6">
+			                <input type="text" class="form-control fnb-input no-label" placeholder="First Name">
+			            </div>
+			            <div class="col-sm-6">
+			                <input type="text" class="form-control fnb-input no-label" placeholder="Last Name">
+			            </div>
+			            <div class="col-sm-6 field-gap">
+			                <input type="email" class="form-control fnb-input no-label" placeholder="Email Address">
+			            </div>
+			            <div class="col-sm-6 field-gap">
+			                <input type="tel" class="form-control fnb-input no-label" placeholder="Contact Number">
+			            </div>
+			        </div>
+			        <div class="row field-gap">
+			            <div class="col-sm-4">
+			            	<label class="label-size text-info">Role</label>
+			                <select class="fnb-select select-variant form-control text-lighter" name="">
+			                    <option value="">None</option>
+			                    <option selected="">General Manager</option>
+			                </select>
+			            </div>
+			            <div class="col-sm-8">
+			                <p class="m-b-0 text-color m-r-40 m-t-10"><span class="text-danger">Note:</span> This user will have full access to manage the listing he/she can edit the information for this listing. This user can add and remove other user and also control the access each of the other users get.</p>
+			            </div>
+			        </div>
+				</div>
+				<div class="row m-t-30">
+				    <div class="col-sm-12">
+		            	<div class="pull-right">
+		            		<button class="btn fnb-btn secondary-btn bold-btn full">Create Listing</button>
+		            	</div>
+		            </div>
+				</div>
+			    
 			</div>
 		</div>
 	</div>
