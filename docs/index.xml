@@ -12,7 +12,7 @@
     
     
     <item>
-      <title>All Listing</title>
+      <title>All Listings</title>
       <link>https://ajency.github.io/goomo_html/extranet/listings/</link>
       <pubDate>Mon, 25 Sep 2017 19:40:59 +0530</pubDate>
       
@@ -35,6 +35,15 @@
       <pubDate>Mon, 25 Sep 2017 11:31:18 +0530</pubDate>
       
       <guid>https://ajency.github.io/goomo_html/listing/services/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Amenities &amp; Services</title>
+      <link>https://ajency.github.io/goomo_html/property/services/</link>
+      <pubDate>Mon, 25 Sep 2017 11:31:18 +0530</pubDate>
+      
+      <guid>https://ajency.github.io/goomo_html/property/services/</guid>
       <description></description>
     </item>
     
