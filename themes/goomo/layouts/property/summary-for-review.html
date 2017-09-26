@@ -4,11 +4,11 @@
 		<div class="row">
 			<div class="col-sm-9">
 				<div class="flex-row space-between">
-					<div class="flex-row align-top">
+					<div class="flex-row">
 						<img src="{{"img/hotel_icon.png" | absURL}}" class="img-responsive m-r-10">
 						<div>
 							<h6 class="m-b-5 bolder property-name">
-								The Upper Deck Resort
+								{{ .Params.property }}
 								<div class="rating">
 									<div class="bg"></div>
 									<div class="value" style="width: 50%;"></div>
@@ -35,7 +35,7 @@
 					</div>
 				</div>
 
-				<button class="btn btn-white outline fnb-btn desktop-hide">Request Change</button>
+				<button class="btn btn-white outline fnb-btn desk-hide">Request Change</button>
 
 				<div class="listing-details m-t-50">
 					<h4 class="no-m-t fly-out-heading-size bat-color bolder">Your Property Details</h4>

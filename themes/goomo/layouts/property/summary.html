@@ -18,11 +18,11 @@
 				<h5 class="no-m-t fly-out-heading-size text-lighter ">Here is a checklist to get you started!</h5> -->
 
 				<div class="flex-row space-between">
-					<div class="flex-row align-top">
+					<div class="flex-row ">
 						<img src="{{"img/hotel_icon.png" | absURL}}" class="img-responsive m-r-10">
 						<div>
 							<h6 class="m-b-5 bolder property-name">
-								The Upper Deck Resort
+								{{ .Params.property }}
 								<div class="rating">
 									<div class="bg"></div>
 									<div class="value" style="width: 50%;"></div>
@@ -49,13 +49,13 @@
 					</div>
 				</div>
 
-				<button class="btn btn-white outline fnb-btn desktop-hide">Request Change</button>
+				<button class="btn btn-white outline fnb-btn desk-hide">Request Change</button>
 
 				<div class="listing-details m-t-50">
 					<h4 class="no-m-t fly-out-heading-size bat-color bolder">Your Property Details</h4>
 					<div class="flex-row property-status-box">
 						<div class="status-info">
-							Your property <strong>The Upper Deck Resort</strong> is currently in <strong>draft</strong> mode because some property information is not filled in. Please see below Property Info Checklist to understand the sections that you need to complete.
+							Your property <strong>{{ .Params.property }}</strong> is currently in <strong>draft</strong> mode because some property information is not filled in. Please see below Property Info Checklist to understand the sections that you need to complete.
 						</div>
 						<div class="check-status">
 							Checklist Status:<br>
