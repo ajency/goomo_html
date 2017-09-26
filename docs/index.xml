@@ -6,10 +6,19 @@
     <description>Recent content on Goomo by Ajency</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 26 Sep 2017 12:57:20 +0530</lastBuildDate>
+    <lastBuildDate>Tue, 26 Sep 2017 13:44:12 +0530</lastBuildDate>
     
 	<atom:link href="https://ajency.github.io/goomo_html/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Summary</title>
+      <link>https://ajency.github.io/goomo_html/property/summary-for-review/</link>
+      <pubDate>Tue, 26 Sep 2017 13:44:12 +0530</pubDate>
+      
+      <guid>https://ajency.github.io/goomo_html/property/summary-for-review/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Summary</title>
@@ -40,29 +49,11 @@
     
     <item>
       <title>Amenities &amp; Services</title>
-      <link>https://ajency.github.io/goomo_html/listing/services/</link>
-      <pubDate>Mon, 25 Sep 2017 11:31:18 +0530</pubDate>
-      
-      <guid>https://ajency.github.io/goomo_html/listing/services/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Amenities &amp; Services</title>
       <link>https://ajency.github.io/goomo_html/property/services/</link>
       <pubDate>Mon, 25 Sep 2017 11:31:18 +0530</pubDate>
       
       <guid>https://ajency.github.io/goomo_html/property/services/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Summary</title>
-      <link>https://ajency.github.io/goomo_html/listing/summary/</link>
-      <pubDate>Sat, 23 Sep 2017 15:30:08 +0530</pubDate>
-      
-      <guid>https://ajency.github.io/goomo_html/listing/summary/</guid>
-      <description>Test content</description>
     </item>
     
   </channel>

@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://ajency.github.io/goomo_html/property/summary-for-review/</loc>
+    <lastmod>2017-09-26T13:44:12+05:30</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ajency.github.io/goomo_html/property/</loc>
     <lastmod>2017-09-26T13:29:21+05:30</lastmod>
   </url>
@@ -28,23 +33,8 @@
   </url>
   
   <url>
-    <loc>https://ajency.github.io/goomo_html/listing/services/</loc>
-    <lastmod>2017-09-25T11:31:18+05:30</lastmod>
-  </url>
-  
-  <url>
     <loc>https://ajency.github.io/goomo_html/property/services/</loc>
     <lastmod>2017-09-25T11:31:18+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ajency.github.io/goomo_html/listing/</loc>
-    <lastmod>2017-09-23T15:38:19+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ajency.github.io/goomo_html/listing/summary/</loc>
-    <lastmod>2017-09-23T15:30:08+05:30</lastmod>
   </url>
   
   <url>
@@ -54,7 +44,7 @@
   
   <url>
     <loc>https://ajency.github.io/goomo_html/</loc>
-    <lastmod>2017-09-26T12:57:20+05:30</lastmod>
+    <lastmod>2017-09-26T13:44:12+05:30</lastmod>
     <priority>0</priority>
   </url>
   
