@@ -5,6 +5,17 @@ $(document).ready(function() {
 		$('body').addClass('blocked');
 	});
 
+	$('.market-manager-img.mobile-btn').click(function(){
+		$('.right-sidebar').addClass('active');
+		$('.site-overlay').addClass('active');
+		// $('body').addClass('blocked');
+	});
+	$('.back-btn').click(function(){
+		$('.right-sidebar').removeClass('active');
+		$('.site-overlay').removeClass('active');
+		// $('body').addClass('blocked');
+	});
+
 	$(document).mouseup(function(e) {
 	  var Click_todo;
 	  Click_todo = jQuery('.m-side-bar');
