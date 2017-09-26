@@ -8229,6 +8229,9 @@ i.w-border {
     margin-left: 15%;
   }
 }
+.t-product a {
+  text-decoration: none;
+}
 .qc-overlay {
   position: absolute;
   width: 125px;

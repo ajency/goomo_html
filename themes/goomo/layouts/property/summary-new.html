@@ -1,10 +1,22 @@
 {{ define "main" }}
-	<div class="c-gap">
+	<div class="">
+		<!-- Alert Message -->
+		<div class="alert alert-success alert-dismissible fnb-alert" role="alert">
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			<div class="flex-row">
+				<i class="fa fa-check-square-o fa-2x " aria-hidden="true"></i>
+				<div>
+				<strong>Success</strong>
+				<div>You have created a new listing</div>
+				</div>
+			</div>
+		</div>
 
 		<div class="row">
 			<div class="col-sm-9">
+
 				<div class="flex-row space-between">
-					<div class="flex-row">
+					<div class="flex-row ">
 						<img src="{{"img/hotel_icon.png" | absURL}}" class="img-responsive m-r-10">
 						<div>
 							<h6 class="m-b-5 bolder property-name">
@@ -41,24 +53,23 @@
 					<h4 class="no-m-t fly-out-heading-size bat-color bolder">Your Property Details</h4>
 					<div class="flex-row property-status-box">
 						<div class="status-info">
-							Now that you have filled in all your property details, please submit your listing for review. Once our QC team approves it, your listing will be Active. <img src="{{"img/finger.png" | absURL}}" class="" width="">
+							Your property <strong>{{ .Params.property }}</strong> is currently in <strong>draft</strong> mode because some property information is not filled in. Please see below Property Info Checklist to understand the sections that you need to complete.
 						</div>
 						<div class="check-status">
 							Checklist Status:<br>
-							<img src="{{"img/green-check-circle.png" | absURL}}" class="img-responsive m-t-15 center-block" width="">
+							<i class="fa fa-circle w-border m-t-15"></i>
 						</div>
 						<div class="qc-status">
-							QC Status:<br>
-							<button class="btn btn-white outline fnb-btn m-t-15">Submit for Review</button>
+							QC Status:
+							<h6 class="text-secondary">Info Needed</h6>
 						</div>
 					</div>
 				</div>
 
-				<div class="tabular m-t-30 checklist-table">
-					<div class="qc-overlay">
-						<a href="#" class="text-primary bolder">Submit for Review</a>
-					</div>
+				<!-- <h3 class="no-m-t fly-out-heading-size  ">Let us help you complete your listing</h3> -->
+				<h5 class="no-m-t fly-out-heading-size text-lighter m-t-20">Here is a checklist to get you started!</h5>
 
+				<div class="tabular m-t-20 checklist-table">
 					<div class="tabular__header flex-row hidden-xs">
 						<div class="tabular__cell cell-2"></div>
 						<div class="tabular__cell cell-full t-product"></div>
@@ -83,8 +94,8 @@
 							<div class="tabular__cell cell-full t-product">
 								<h6 class="text-muted m-t-0 m-b-0">Address &amp; Contact</h6>
 							</div>
-							<div class="tabular__cell cell-6 t-listing text-center">
-								<img src="{{"img/green-check.png" | absURL}}" class="img-responsive center-block" width="">
+							<div class="tabular__cell cell-6 t-listing text-center ">
+								<i class="fa fa-circle text-muted"></i>
 							</div>
 							<div class="tabular__cell cell-6 t-seller text-center mobile-qc">
 								<span class="desk-hide">QC Status</span> --
@@ -95,9 +106,12 @@
 							</div>
 							<div class="tabular__cell cell-full t-product">
 								<h6 class="text-muted m-t-0 m-b-5">Amenities &amp; Services</h6>
+								<p class="text-danger  m-b-0">
+									Please add: Entertainment, Recreation
+								</p>
 							</div>
-							<div class="tabular__cell cell-6 t-listing text-center">
-								<img src="{{"img/green-check.png" | absURL}}" class="img-responsive center-block" width="">
+							<div class="tabular__cell cell-6 t-listing text-center ">
+								<i class="fa fa-circle text-muted"></i>
 							</div>
 							<div class="tabular__cell cell-6 t-seller text-center mobile-qc">
 								<span class="desk-hide">QC Status</span> --
@@ -108,9 +122,12 @@
 							</div>
 							<div class="tabular__cell cell-full t-product">
 								<h6 class="text-muted m-t-0 m-b-5">Images</h6>
+								<p class="text-danger  m-b-0">
+									Please add: Hotel images, Room images
+								</p>
 							</div>
-							<div class="tabular__cell cell-6 t-listing text-center">
-								<img src="{{"img/green-check.png" | absURL}}" class="img-responsive center-block" width="">
+							<div class="tabular__cell cell-6 t-listing text-center ">
+								<i class="fa fa-circle text-muted"></i>
 							</div>
 							<div class="tabular__cell cell-6 t-seller text-center mobile-qc">
 								<span class="desk-hide">QC Status</span> --
@@ -121,9 +138,12 @@
 							</div>
 							<div class="tabular__cell cell-full t-product">
 								<h6 class="text-muted m-t-0 m-b-5">Policies</h6>
+								<p class="text-danger  m-b-0">
+									Please add: Check in time, Check out time
+								</p>
 							</div>
-							<div class="tabular__cell cell-6 t-listing text-center">
-								<img src="{{"img/green-check.png" | absURL}}" class="img-responsive center-block" width="">
+							<div class="tabular__cell cell-6 t-listing text-center ">
+								<i class="fa fa-circle text-muted"></i>
 							</div>
 							<div class="tabular__cell cell-6 t-seller text-center mobile-qc">
 								<span class="desk-hide">QC Status</span> --
@@ -150,8 +170,8 @@
 							<div class="tabular__cell cell-full t-product">
 								<h6 class="text-muted m-t-0 m-b-0">Bank Details</h6>
 							</div>
-							<div class="tabular__cell cell-6 t-listing text-center">
-								<img src="{{"img/green-check.png" | absURL}}" class="img-responsive center-block" width="">
+							<div class="tabular__cell cell-6 t-listing text-center ">
+								<i class="fa fa-circle text-muted"></i>
 							</div>
 							<div class="tabular__cell cell-6 t-seller text-center mobile-qc">
 								<span class="desk-hide">QC Status</span> --
@@ -162,9 +182,12 @@
 							</div>
 							<div class="tabular__cell cell-full t-product">
 								<h6 class="text-muted m-t-0 m-b-5">Taxes</h6>
+								<p class="text-danger  m-b-0">
+									Please Add: Minimum 1 rule
+								</p>
 							</div>
-							<div class="tabular__cell cell-6 t-listing text-center">
-								<img src="{{"img/green-check.png" | absURL}}" class="img-responsive center-block" width="">
+							<div class="tabular__cell cell-6 t-listing text-center ">
+								<i class="fa fa-circle text-muted"></i>
 							</div>
 							<div class="tabular__cell cell-6 t-seller text-center mobile-qc">
 								<span class="desk-hide">QC Status</span> --
@@ -176,8 +199,8 @@
 							<div class="tabular__cell cell-full t-product">
 								<h6 class="text-muted m-t-0 m-b-5">Approve Digital Contract</h6>
 							</div>
-							<div class="tabular__cell cell-6 t-listing text-center">
-								<img src="{{"img/green-check.png" | absURL}}" class="img-responsive center-block" width="">
+							<div class="tabular__cell cell-6 t-listing text-center ">
+								<i class="fa fa-circle text-muted"></i>
 							</div>
 							<div class="tabular__cell cell-6 t-seller text-center mobile-qc">
 								<span class="desk-hide">QC Status</span> --
@@ -189,14 +212,33 @@
 
 					<div class="checklist-section">
 						<div class="tabular__row flex-row ch-head-row">
-							<div class="tabular__cell cell-2 mobile-hide">
+							<div class="tabular__cell cell-2">
 								<i class="fa fa-circle w-border text-muted"></i>
 							</div>
-							<div class="tabular__cell cell-full w-order t-product">
+							<div class="tabular__cell cell-full t-product">
 								<h5 class="m-t-0 m-b-0">Rooms</h5>
 							</div>
-							<div class="tabular__cell cell-6 t-listing text-center">
-								<img src="{{"img/green-check.png" | absURL}}" class="img-responsive center-block" width="">
+							<div class="tabular__cell cell-6 t-listing text-center mobile-hide">
+								<i class="fa fa-circle text-muted"></i>
+							</div>
+							<div class="tabular__cell cell-6 t-seller text-center mobile-qc">
+								<span class="desk-hide">QC Status</span> --
+							</div>
+						</div>
+					</div>
+
+					<hr class="mobile-hide">
+
+					<div class="checklist-section">
+						<div class="tabular__row flex-row ch-head-row">
+							<div class="tabular__cell cell-2">
+								<i class="fa fa-circle w-border text-muted"></i>
+							</div>
+							<div class="tabular__cell cell-full t-product">
+								<h5 class="m-t-0 m-b-0">Rate Plan</h5>
+							</div>
+							<div class="tabular__cell cell-6 t-listing text-center mobile-hide">
+								<i class="fa fa-circle text-muted"></i>
 							</div>
 							<div class="tabular__cell cell-6 t-seller text-center mobile-qc">
 								<span class="desk-hide">QC Status</span> --
@@ -210,31 +252,12 @@
 						<div class="tabular__row flex-row ch-head-row">
 							<div class="tabular__cell cell-2 mobile-hide">
 								<i class="fa fa-circle w-border text-muted"></i>
-							</div>
-							<div class="tabular__cell cell-full w-order t-product">
-								<h5 class="m-t-0 m-b-0">Rate Plan</h5>
-							</div>
-							<div class="tabular__cell cell-6 t-listing text-center">
-								<img src="{{"img/green-check.png" | absURL}}" class="img-responsive center-block" width="">
-							</div>
-							<div class="tabular__cell cell-6 t-seller text-center mobile-qc">
-								<span class="desk-hide">QC Status</span> --
-							</div>
-						</div>
-					</div>
-
-					<hr class="mobile-hide">
-
-					<div class="checklist-section">
-						<div class="tabular__row flex-row ch-head-row">
-							<div class="tabular__cell cell-2 mobile-hide">
-								<img src="{{"img/green-check-circle.png" | absURL}}" class="img-responsive" width="">
 							</div>
 							<div class="tabular__cell cell-full w-order t-product">
 								<h5 class="m-t-0 m-b-0">Cancellation Policy</h5>
 							</div>
-							<div class="tabular__cell cell-6 t-listing text-center ">
-								<img src="{{"img/green-check.png" | absURL}}" class="img-responsive center-block" width="">
+							<div class="tabular__cell cell-6 t-listing text-center">
+								<i class="fa fa-circle text-muted"></i>
 							</div>
 							<div class="tabular__cell cell-6 t-seller text-center mobile-qc">
 								<span class="desk-hide">QC Status</span> --
@@ -253,8 +276,8 @@
 								<h5 class="m-t-0 m-b-0">Users</h5>
 								<p class="text-muted">If you are the owner, confirm your account and claim this listing.</p>
 							</div>
-							<div class="tabular__cell cell-6 t-listing text-center ">
-								<img src="{{"img/green-check.png" | absURL}}" class="img-responsive center-block" width="">
+							<div class="tabular__cell cell-6 t-listing text-center">
+								<i class="fa fa-circle text-muted"></i>
 							</div>
 							<div class="tabular__cell cell-6 t-seller text-center mobile-qc">
 								<span class="desk-hide">QC Status</span> --
@@ -262,9 +285,10 @@
 						</div>
 					</div>
 
+
 				</div>
 			</div>
-			<div class="col-sm-3 mobile-hide">
+			<div class="col-sm-3 right-sidebar">
 				{{ partial "right-sidebar.html" .}}
 			</div>
 			<div class="market-manager-img mobile-btn desk-hide	">
