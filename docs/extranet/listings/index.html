@@ -9,8 +9,12 @@
 		<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,500,700" rel="stylesheet">
 		
 		<link rel="stylesheet" type="text/css" href="https://ajency.github.io/goomo_html/css/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="https://ajency.github.io/goomo_html/js/datatables/media/css/jquery.dataTables.min.css">
+		<link rel="stylesheet" type="text/css" href="https://ajency.github.io/goomo_html/js/datatables.net-select-dt/css/select.dataTables.css">
+		
 		<link rel="shortcut icon" href="https://ajency.github.io/goomo_html/images/favicon.png" type="image/x-icon" />
 		<link rel="stylesheet" href="https://ajency.github.io/goomo_html/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://ajency.github.io/goomo_html/css/jquery.flexdatalist.min.css">
 		<link href="https://ajency.github.io/goomo_html/css/main.css" rel="stylesheet">
 	</head>
 	<body class="">
@@ -195,6 +199,120 @@
 					</div>
 				</div>
 			</div>
+			
+			
+			
+			<div class="col-sm-12 m-t-25">
+				<div class="flex-row space-between">
+					<div class="filter-search flex-row align-reset">
+						<div class="filter-search__field">
+							<i class="fa fa-search text-lighter element-title" aria-hidden="true"></i>
+							<input type="search" class="fnb-input" placeholder="Search by">
+						</div>
+						<button class="btn fnb-btn transparent bold-btn full flex-row"><img src="https://ajency.github.io/goomo_html/img/filter-bars.png" class="img-responsive p-r-5" width="30"> <span>Filter</span></button>
+					</div>
+					<button class="btn fnb-btn secondary-btn bold-btn full">Add listing</button>
+				</div>
+			</div>
+
+			<div class="col-sm-12 m-t-25">
+				<table id="listings-table" class="table table-striped dataTable" cellspacing="0" width="100%">
+                  <thead>
+                    <tr>
+                      <th style="min-width: 12%;">Name</th>
+                      <th class="">
+                        Country/State/City/Location
+                      </th>
+                      <th class="">
+                        Business manager
+                      </th>
+                      <th class="" style="min-width: 10%;">
+                        Claimed/Unclaimed
+                        <br><small class="text-muted">Mail Sent</small>
+                      </th>
+                      <th class="" style="min-width: 10%;">
+                          Status
+                      </th>
+                      <th class="" data-col="6" style="min-width: 10%;">
+                        Star Category
+                      </th>
+                      <th class="" data-col="8" style="min-width: 10%;">
+                        Created on (By:)
+                      </th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr>
+                      <td><a href="#">AVK Suppliers</a></td>
+                      <td>Panjim</td>
+                      <td>
+                        <div class="m-b-5">
+                          Meat > Pork > Pork Ham, Pork Meat, Pork Chops
+                          
+                          
+                        </div>
+                      </td>
+                      <td>2017/06/05</td>
+                      <td>2017/06/05</td>
+                      <td>External User</td>
+                      <td>1,2,1</td>
+                    </tr>
+                    <tr>
+                      <td><a href="#">AVK Suppliers</a></td>
+                      <td>Panjim</td>
+                      <td>
+                        <div class="m-b-5">
+                          Meat > Pork > Pork Ham, Pork Meat, Pork Chops
+                          
+                          
+                        </div>
+                      </td>
+                      <td>2017/06/05</td>
+                      <td>2017/06/05</td>
+                      <td>External User</td>
+                      <td>1,2,1</td>
+                    </tr>
+                    <tr>
+                      <td><a href="#">AVK Suppliers</a></td>
+                      <td>Panjim</td>
+                      <td>
+                        <div class="m-b-5">
+                          Meat > Pork > Pork Ham, Pork Meat, Pork Chops
+                          
+                          
+                        </div>
+                      </td>
+                      <td>2017/06/05</td>
+                      <td>2017/06/05</td>
+                      <td>External User</td>
+                      <td>1,2,1</td>
+                    </tr>
+                    <tr>
+                      <td><a href="#">AVK Suppliers</a></td>
+                      <td>Panjim</td>
+                      <td>
+                        <div class="m-b-5">
+                          Meat > Pork > Pork Ham, Pork Meat, Pork Chops
+                          
+                          
+                        </div>
+                      </td>
+                      <td>2017/06/05</td>
+                      <td>2017/06/05</td>
+                      <td>External User</td>
+                      <td>1,2,1</td>
+                    </tr>
+
+                  </tbody>
+                </table>	
+			</div>
+
+
+
+
+
+
 		</div>
 	</div>
 
@@ -220,6 +338,14 @@
 		<script type="text/javascript" src="/goomo_html/js/jquery.min.js"></script>
 		
 		<script type="text/javascript" src="/goomo_html/js/bootstrap.min.js"></script>
+
+		
+		<script type="text/javascript" src="/goomo_html/js/datatables.net/js/jquery.dataTables.min.js"></script>
+		<script type="text/javascript" src="/goomo_html/js/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+		<script type="text/javascript" src="/goomo_html/js/datatables.net-select/js/dataTables.select.min.js"></script>
+
+		
+		<script type="text/javascript" src="/goomo_html/js/flex-datalist/jquery.flexdatalist.min.js"></script>
 
 		<script type="text/javascript" src="/goomo_html/js/custom.js"></script>
 	</body>

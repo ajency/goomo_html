@@ -2620,3 +2620,160 @@ i.w-border{
 		}
 	}
 }
+
+
+
+// All listing section
+
+.stats-row{
+	.stats-cols{
+		flex: 1 0 33.33%;
+	}
+}
+
+.filter-search{
+	&__field{
+		padding: 0.5em;
+    	border: 1px solid #ddd;
+    	margin-right: 1.5em;
+    	i{
+    		padding-right: 0.5em;
+    	}
+	}
+	.fnb-input{
+		border-bottom: 0;
+    	min-width: 200px;
+    	outline: 0;
+    	// font-weight: 300;
+    	color: @text-lighter;
+    	&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	      color: @text-lighter;
+	    }
+	    &::-moz-placeholder { /* Firefox 19+ */
+	      color: @text-lighter;
+	    }
+	}
+	.transparent{
+		padding: 0.5em 1.5em;
+	}
+}
+
+
+.dataTable{
+	.sorting, .sorting_asc, .sorting_desc{
+		padding-right: 0 !important;
+		&:after{
+			content: '';
+			display: none !important;
+		}
+	}
+	.sorting{
+		.sort-icon{
+			&:before{
+				content: "\f0dc";
+				opacity: 0.5;
+			}
+		}
+	}
+	.sorting_asc{
+		.sort-icon{
+			&:before{
+				content: "\f0de";
+			}
+		}
+	}
+	.sorting_desc{
+		.sort-icon{
+			&:before{
+				content: "\f0dd";
+			}
+		}
+	}
+	.sort-icon{
+		display: inline-block;
+		padding-left: 5px;
+		// width: 16px;
+		// height: 16px;
+		font: normal normal normal 14px/1 FontAwesome;
+	}
+	select.form-control.multi-dd{
+		display: none;
+	}
+
+	&.no-wrap{
+		thead{
+			th{
+				white-space: nowrap;
+			}
+		}
+	}
+}
+
+
+.field-gap{
+	margin-top: 2.4em;
+}
+
+
+.listing-fields{
+	.fnb-select{
+		padding-left: 0;
+		font-size: 1.05em;
+	}
+}
+
+.contract{
+	margin-top: 2em;
+    background-color: #fef4e4;
+    padding: 2em 0;
+    .fnb-btn{
+    	padding: 0.5em 1.8em;
+    }
+    input[type='radio'].fnb-radio{
+    	&:before{
+    		background-color: #fef4e4;
+    	}
+    	&:checked{
+    		& + span{
+    			font-weight: 600;
+    		}
+    	}
+    }
+}
+
+.add-user{
+	padding: 1em 1em 2.5em 1em;
+	background-color: #f5f7f9;
+	.no-label{
+		font-size: 1.1em;    	
+		color: #31708f;
+		&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	      color: #31708f;
+	    }
+	    &::-moz-placeholder { /* Firefox 19+ */
+	      color: #31708f;
+	  	}		
+	}
+}
+
+
+.user-icon{
+	margin-left: auto;
+}
+
+.location-row{
+	.flexdatalist-multiple.flexdatalist-multiple{
+		.input-container{
+			margin-top: 5px;
+			margin-left: 0;
+			padding-left: 0;
+		}
+		li{
+			&.value{
+				border-color: @accent-secondary;
+			}
+		}
+	}
+}
+
+

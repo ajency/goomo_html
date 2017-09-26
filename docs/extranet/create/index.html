@@ -9,8 +9,12 @@
 		<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,500,700" rel="stylesheet">
 		
 		<link rel="stylesheet" type="text/css" href="https://ajency.github.io/goomo_html/css/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="https://ajency.github.io/goomo_html/js/datatables/media/css/jquery.dataTables.min.css">
+		<link rel="stylesheet" type="text/css" href="https://ajency.github.io/goomo_html/js/datatables.net-select-dt/css/select.dataTables.css">
+		
 		<link rel="shortcut icon" href="https://ajency.github.io/goomo_html/images/favicon.png" type="image/x-icon" />
 		<link rel="stylesheet" href="https://ajency.github.io/goomo_html/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://ajency.github.io/goomo_html/css/jquery.flexdatalist.min.css">
 		<link href="https://ajency.github.io/goomo_html/css/main.css" rel="stylesheet">
 	</head>
 	<body class="">
@@ -185,9 +189,181 @@
 
 		<div class="row">
 			<div class="col-sm-12">
-				<h3 class="no-m-t fly-out-heading-size text-info ">Create New Listing</h3>
-				<p class="text-muted">Please complete the fields below. All fields are required</p>
-
+				<div class="flex-row space-between">
+					<div class="main-title">
+						<h3 class="no-m-t fly-out-heading-size text-info ">Create New Listing</h3>
+						<p class="text-muted">Please complete the fields below. All fields are required</p>
+					</div>
+					<div class="section-icon">
+						<img src="https://ajency.github.io/goomo_html/img/create-listing.png" class="img-responsive">
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-sm-12">
+				<h5 class="bolder m-t-35">Property Information</h5>
+				<div class="row field-gap">
+		            <div class="col-sm-6">
+		                <label class="label-size text-info">Business Name <i class="fa fa-question-circle p-l-5 text-info" aria-hidden="true"></i></label>
+		                <input type="text" class="form-control fnb-input" placeholder="Lorem ipsum dolar sit amet">
+		            </div>
+		            <div class="col-sm-6 c-gap">
+		                <label class="label-size text-info">Display Name <i class="fa fa-question-circle p-l-5 text-info" aria-hidden="true"></i></label>
+		                <input type="text" class="form-control fnb-input" placeholder="Lorem ipsum dolar sit amet">
+		            </div>
+		        </div>
+		        <div class="row listing-fields">
+		        	<div class="col-sm-9">
+		        		<div class="row field-gap">
+			        		<div class="col-sm-4">
+				                <label class="label-size text-info">Country</label>
+				                <select class="fnb-select select-variant form-control text-lighter" name="">
+				                    <option value="">None</option>
+				                    <option selected="">Three Star</option>
+				                </select>
+				            </div>
+				            <div class="col-sm-4">
+				                <label class="label-size text-info">State</label>
+				                <select class="fnb-select select-variant form-control text-lighter" name="">
+				                    <option value="">None</option>
+				                    <option selected="">Three Star</option>
+				                </select>
+				            </div>
+				            <div class="col-sm-4">
+				                <label class="label-size text-info">City</label>
+				                <select class="fnb-select select-variant form-control text-lighter" name="">
+				                    <option value="">None</option>
+				                    <option selected="">Three Star</option>
+				                </select>
+				            </div>
+				        </div>
+				        <div class="row field-gap">
+				            <div class="col-sm-12 location-row">
+				                <label class="label-size text-info">Location</label>
+				                 <input type="text" class="form-control fnb-input payment-add flexdatalist" multiple="multiple" placeholder="Type for suggestions &amp; hit enter" list="locations" value="">
+						        <datalist id="locations">
+						            <option value="goa">Goa</option>
+						            <option value="mumbai">Mumbai</option>
+						            <option value="delhi">Delhi</option>
+						            <option value="gujarat">Gujarat</option>
+						            <option value="bangalore">Bangalore</option>
+						        </datalist>
+				            </div>
+				        </div>
+				        <div class="row flex-row flex-wrap field-gap">
+				            <div class="col-sm-4">
+				                <label class="label-size text-info">Chain Name</label>
+				                <select class="fnb-select select-variant form-control text-lighter" name="">
+				                    <option value="">None</option>
+				                    <option>Test</option>
+				                </select>
+				            </div>
+				            <div class="col-sm-4">
+				                <label class="label-size text-info">Hotel Type</label>
+				                <select class="fnb-select select-variant form-control text-lighter" name="">
+				                    <option value="">None</option>
+				                    <option>Test</option>
+				                </select>
+				            </div>
+				            <div class="col-sm-4">
+				                <label class="label-size text-info">Property Theme</label>
+				                <select class="fnb-select select-variant form-control text-lighter" name="">
+				                    <option value="">None</option>
+				                    <option>Test</option>
+				                </select>
+				            </div>
+				            <div class="col-sm-4 field-gap">
+				                <label class="label-size text-info">Star Rating</label>
+				                <select class="fnb-select select-variant form-control text-lighter" name="">
+				                    <option value="">None</option>
+				                    <option selected="">Three Star</option>
+				                </select>
+				            </div>	
+				        </div>
+		        	</div>        		
+		            <div class="col-sm-3">
+		            	<div class="contract text-center">
+		            		<img src="https://ajency.github.io/goomo_html/img/contract.png" class="img-responsive center-block">
+		            		<h6>Contract Signed ?</h6>
+		            		<div class="radio-group m-t-15 m-b-15">
+		            			<label for="yes" class="m-r-15">
+		            				<input value="" type="radio" class="fnb-radio" name="contract" id="yes" 
+		            				checked="">	
+		            				<span class="p-l-5 text-medium">Yes</span>
+		            			</label>
+		            			<label for="no">
+		            				<input value="" type="radio" class="fnb-radio" name="contract" id="no">	
+		            				<span class="p-l-5 text-medium">No</span>
+		            			</label>
+		            		</div>
+		            		<p class="text-muted">Uplaod a picture of the signed page</p>
+		            		<button class="btn fnb-btn s-outline bold-btn full m-t-10"><i class="fa fa-camera p-r-5" aria-hidden="true"></i> <span>Upload</span></button>
+		            	</div>
+		            </div>
+		        </div>
+			</div>
+			
+			<div class="col-sm-12 m-t-40 listing-fields">
+				<h5 class="bolder m-t-35">Assign a Market Manager <i class="fa fa-question-circle p-l-5 text-info" aria-hidden="true"></i></h5>
+				<div class="row field-gap flex-row flex-wrap">
+		            <div class="col-sm-4">
+		                <label class="label-size text-info">Market Manager</label>
+		                <select class="fnb-select select-variant form-control text-lighter" name="">
+		                    <option value="">None</option>
+		                    <option selected="">Vikas Khanna</option>
+		                </select>
+		            </div>
+		            <div class="col-sm-4 flex-row">
+		                <img src="https://ajency.github.io/goomo_html/img/bulb.png" class="img-responsive">
+		                <p class="m-b-0 text-muted p-l-5">The Listing you are about to create will be associated with the selected Market Manager</p>
+		            </div>
+		        </div>
+		        <div class="row m-t-15">
+		        	<div class="col-sm-4">
+		            	<button class="btn fnb-btn s-outline bold-btn full m-t-10"><span>Continue</span></button>
+		            </div>	
+		        </div>
+			</div>
+			
+			<div class="col-sm-12 m-t-40 listing-fields m-b-50">
+				<img src="https://ajency.github.io/goomo_html/img/user.png" class="img-responsive user-icon">
+				<div class="add-user">
+					<h5 class="bolder m-t-25">Add a User</h5>
+					<div class="row field-gap">
+			            <div class="col-sm-6">
+			                <input type="text" class="form-control fnb-input no-label" placeholder="First Name">
+			            </div>
+			            <div class="col-sm-6">
+			                <input type="text" class="form-control fnb-input no-label" placeholder="Last Name">
+			            </div>
+			            <div class="col-sm-6 field-gap">
+			                <input type="email" class="form-control fnb-input no-label" placeholder="Email Address">
+			            </div>
+			            <div class="col-sm-6 field-gap">
+			                <input type="tel" class="form-control fnb-input no-label" placeholder="Contact Number">
+			            </div>
+			        </div>
+			        <div class="row field-gap">
+			            <div class="col-sm-4">
+			            	<label class="label-size text-info">Role</label>
+			                <select class="fnb-select select-variant form-control text-lighter" name="">
+			                    <option value="">None</option>
+			                    <option selected="">General Manager</option>
+			                </select>
+			            </div>
+			            <div class="col-sm-8">
+			                <p class="m-b-0 text-color m-r-40 m-t-10"><span class="text-danger">Note:</span> This user will have full access to manage the listing he/she can edit the information for this listing. This user can add and remove other user and also control the access each of the other users get.</p>
+			            </div>
+			        </div>
+				</div>
+				<div class="row m-t-30">
+				    <div class="col-sm-12">
+		            	<div class="pull-right">
+		            		<button class="btn fnb-btn secondary-btn bold-btn full">Create Listing</button>
+		            	</div>
+		            </div>
+				</div>
+			    
 			</div>
 		</div>
 	</div>
@@ -214,6 +390,14 @@
 		<script type="text/javascript" src="/goomo_html/js/jquery.min.js"></script>
 		
 		<script type="text/javascript" src="/goomo_html/js/bootstrap.min.js"></script>
+
+		
+		<script type="text/javascript" src="/goomo_html/js/datatables.net/js/jquery.dataTables.min.js"></script>
+		<script type="text/javascript" src="/goomo_html/js/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+		<script type="text/javascript" src="/goomo_html/js/datatables.net-select/js/dataTables.select.min.js"></script>
+
+		
+		<script type="text/javascript" src="/goomo_html/js/flex-datalist/jquery.flexdatalist.min.js"></script>
 
 		<script type="text/javascript" src="/goomo_html/js/custom.js"></script>
 	</body>

@@ -13,4 +13,8 @@ $(document).ready(function() {
 	    jQuery('body').removeClass('blocked');
 	  }
 	});
+
+	$('#listings-table').DataTable();
+
+
 });
