@@ -13,9 +13,10 @@
 		<link rel="stylesheet" href="{{"css/bootstrap.min.css" | absURL}}">
 		<link href="{{"css/main.css" | absURL}}" rel="stylesheet">
 	</head>
-	<body class="">
+	<body class="overflow-section">
+		<div class="page-shifter animate-row">
 
-		{{ partial "header.html" .}}
+			{{ partial "header.html" .}}
 
 		<!-- content -->
 		<div class="container-fluid jobs-container">
@@ -90,8 +91,14 @@
 				<div class="site-overlay"></div>
 		</div>
 		<!-- content ends -->
+		
+
+		{{ partial "finance-flyout.html" .}}
+
 
 		{{ partial "footer.html" .}}
+		
+		</div>
 
 		<script type="text/javascript" src="{{"js/jquery.min.js" | relURL}}"></script>
 		<!-- BS Script -->

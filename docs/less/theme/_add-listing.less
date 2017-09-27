@@ -3186,6 +3186,84 @@ i.w-border{
 }
 
 
+// Contact-Finance
+
+.finance-col{
+	.form-control[readonly]{
+		background-color: #fff;
+	}
+}
+
+.vendor-code{
+	padding: 1em;
+	background-color: #ffeccd;
+}
+
+.financeCols{
+	.dataTables_paginate{
+		display: none;
+	}
+}
+
+.captionStyle{
+	font-size: 1.05em;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 6px;
+}
+
+.declaration{
+	&-row{
+		padding: 1.5em;
+		background-color: #f6f8f8;
+	}
+}
+
+.suggestion-select{
+	@media screen and (min-width: 769px){
+		width: 50%;
+    	margin: 0.5em auto;
+	}
+}
+
+
+@media screen and (max-width: @mobile){
+	.qc-section{
+		flex-direction: column;
+		align-items: center;
+		.open-sidebar{
+			margin-top: 1em;
+			font-size: 1em;
+		}
+	}
+	.finance-inputs{
+		display: flex;
+		flex-wrap: wrap;
+		.target-col{
+			flex: 1 0 50%;
+			margin-bottom: 1em;
+		}
+	}
+	.declaration-row{
+		flex-direction: column;
+		text-align: center;
+		p{
+			margin: 0.3em 0;
+		}
+	}
+	.vendor-code{
+		h6{
+			font-size: 1.05em;
+		}
+	}
+	.leave-com{
+		&.label-size{
+			font-size: 1em;
+			margin-top: 0.5em;
+			display: block;
+		}
+	}
+}
+
 
 
 

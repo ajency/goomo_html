@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Contract &amp; Finance on Goomo by Ajency</title>
+    <link>https://ajency.github.io/goomo_html/contract-finance/</link>
+    <description>Recent content in Contract &amp; Finance on Goomo by Ajency</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 25 Sep 2017 19:43:27 +0530</lastBuildDate>
+    
+	<atom:link href="https://ajency.github.io/goomo_html/contract-finance/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Contract &amp; Finance</title>
+      <link>https://ajency.github.io/goomo_html/contract-finance/contract-finance-qc/</link>
+      <pubDate>Mon, 25 Sep 2017 11:31:18 +0530</pubDate>
+      
+      <guid>https://ajency.github.io/goomo_html/contract-finance/contract-finance-qc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Contract &amp; Finance</title>
+      <link>https://ajency.github.io/goomo_html/contract-finance/contract-finance/</link>
+      <pubDate>Mon, 25 Sep 2017 11:31:18 +0530</pubDate>
+      
+      <guid>https://ajency.github.io/goomo_html/contract-finance/contract-finance/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

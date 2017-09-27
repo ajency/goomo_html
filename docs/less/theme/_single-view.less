@@ -2732,20 +2732,28 @@ and (max-device-width: 650px) {
 
 // page sidebar
 
+.overflow-section{
+	overflow-x: hidden;
+}
+
 .page-sidebar{
 	position: absolute;
 	top: 0;
 	background-color: #fff;
 	right: 0;
-	width: 50vw;
+	width: 40vw;
 	height: 100vh;
 	// overflow: auto;
 	box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.17);
     padding: 1.5em;
+    padding-top: 1em;
     transform: translate3d(100%, 0, 0);
     &__header{
-    	border-bottom: 1px solid #ddd;
-    	padding-bottom: 1.5em;
+    	padding-bottom: 1em;
+    	margin: 0 -1.5em;
+	    padding-left: 1em;
+	    padding-right: 1em;
+	    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.11);
     	.fnb-select{
     		border: 1px solid #ddd;
     		padding: 0.5em;
@@ -2754,11 +2762,11 @@ and (max-device-width: 650px) {
     	}
     }
     &__body{
-    	overflow: auto;
-    	height: 100%;
-    	margin: 0 -15px;
-    	padding: 0 15px;
-    	padding-bottom: 4em;
+    	// overflow: auto;
+    	// height: 100%;
+    	// margin: 0 -15px;
+    	// padding: 0 15px;
+    	// padding-bottom: 4em;
     }
     @media screen and (max-width: @mobile){
     	padding: 0;
@@ -2793,31 +2801,37 @@ and (max-device-width: 650px) {
 
 .sidebar-article{
 	box-shadow: none;
+	padding: 0 2em;
 	.update-sec__body{
-		border-top: 1px solid #ddd;
+		// border-top: 1px solid #ddd;
 		margin: 1em 0;
+
 	}
 	.posted-date{
 		margin-top: 1.2em;
 	}
-	&:first-child{
-		.update-sec__body{
-			margin-top: 0;
-			border-top: none;
-		}
-	}
-	&:last-child{
-		.update-sec__body{
-			margin-bottom: 0;
-			padding-bottom: 0;
-		}
+	// &:first-child{
+	// 	.update-sec__body{
+	// 		margin-top: 0;
+	// 		border-top: none;
+	// 	}
+	// }
+	// &:last-child{
+	// 	.update-sec__body{
+	// 		margin-bottom: 0;
+	// 		padding-bottom: 0;
+	// 	}
+	// }
+}
+
+.post-comment{
+	.fnb-btn{
+		padding: 0.5em 3em;
 	}
 }
 
-
-
 .body-slide{
-	transform: translate3d(-50%, 0, 0);
+	transform: translate3d(-40%, 0, 0);
 	position: fixed;
     width: 100%;
 	&:after{
@@ -3114,6 +3128,11 @@ and (max-device-width: 650px) {
 	.browse-cat__list{
 		p{
 			font-size: 1em;
+		}
+	}
+	.sidebar-article{
+		.update-sec__body{
+			margin-top: 0;
 		}
 	}
 }
