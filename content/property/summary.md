@@ -4,6 +4,7 @@ date: 2017-09-26T12:57:20+05:30
 draft: false
 layout: summary
 property: "Chalston Beach Resort"
+status: "In Process"
 
 propertyinfo:
  done: false
@@ -11,6 +12,8 @@ propertyinfo:
 address:
  url: "/goomo_html/property/contact/"
  checklist: true
+ pending: true
+ pendingtext: ""
  qc: "--"
 
 amenities:
@@ -23,7 +26,7 @@ amenities:
 images:
  url: "/goomo_html/property/images/"
  pending: false
- pendingtext: "New edits: 2 property images"
+ pendingtext: ""
  checklist: true
  qc: "--"
 
@@ -39,6 +42,8 @@ contract:
 
 bank:
  url: "/goomo_html/contract-finance/"
+ pending: true
+ pendingtext: ""
  checklist: false
  qc: "--"
 
@@ -51,30 +56,40 @@ tax:
 
 digital:
  url: "/goomo_html/contract-finance/"
+ pending: true
+ pendingtext: ""
  checklist: false
  qc: "--"
 
 rooms:
  done: false
  url: "/goomo_html/property/rooms/"
+ pending: true
+ pendingtext: ""
  checklist: false
  qc: "--"
 
 rate:
  done: false
  url: "/goomo_html/property/rate/"
+ pending: true
+ pendingtext: ""
  checklist: false
  qc: "--"
 
 cancel:
  done: true
  url: "/goomo_html/property/cancel/"
+ pending: true
+ pendingtext: ""
  checklist: true
  qc: "--"
 
 users:
  done: false
  url: "/goomo_html/property/users/"
+ pending: true
+ pendingtext: ""
  checklist: true
  qc: "--"
 ---

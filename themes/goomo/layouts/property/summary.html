@@ -31,7 +31,7 @@
 							<p class="text-muted">Britona, Goa, India</p>
 						</div>
 					</div>
-					<button class="btn btn-white outline fnb-btn mobile-hide">Request Change</button>
+					<button class="btn btn-white no-border outline fnb-btn mobile-hide">Request Change</button>
 				</div>
 				<hr class="m-t-0 m-b-10">
 				<div class="flex-row property-meta">
@@ -55,7 +55,7 @@
 					<h4 class="no-m-t fly-out-heading-size bat-color bolder">Your Property Details</h4>
 					<div class="flex-row property-status-box">
 						<div class="status-info">
-							Your property <strong>{{ .Params.property }}</strong> is currently in <strong>draft</strong> mode because some property information is not filled in. Please see below Property Info Checklist to understand the sections that you need to complete.
+							Your property <strong>{{ .Params.property }}</strong> is currently in <strong>{{ .Params.status | lower }}</strong> mode because some property information is not filled in. Please see below Property Info Checklist to understand the sections that you need to complete.
 						</div>
 						<div class="check-status">
 							Checklist Status:<br>
@@ -63,6 +63,7 @@
 						</div>
 						<div class="qc-status">
 							QC Status:
+							<!-- <h6 class="text-secondary">{{ .Params.status }}</h6> -->
 							<h6 class="text-secondary">Info Needed</h6>
 						</div>
 					</div>

@@ -4,12 +4,15 @@ date: 2017-09-26T19:22:18+05:30
 draft: false
 layout: summary-new
 property: "Casa Bella"
+status: "In Process"
 
 propertyinfo:
  done: false
 
 address:
  url: "/goomo_html/property/contact/"
+ pending: true
+ pendingtext: ""
  checklist: false
  qc: "--"
 
@@ -39,6 +42,8 @@ contract:
 
 bank:
  url: "/goomo_html/contract-finance/"
+ pending: true
+ pendingtext: ""
  checklist: false
  qc: "--"
 
@@ -51,30 +56,40 @@ tax:
 
 digital:
  url: "/goomo_html/contract-finance/"
+ pending: true
+ pendingtext: ""
  checklist: false
  qc: "--"
 
 rooms:
  done: false
  url: "/goomo_html/property/rooms/"
+ pending: true
+ pendingtext: ""
  checklist: false
  qc: "--"
 
 rate:
  done: false
  url: "/goomo_html/property/rate/"
+ pending: true
+ pendingtext: ""
  checklist: false
  qc: "--"
 
 cancel:
  done: false
  url: "/goomo_html/property/cancel/"
+ pending: true
+ pendingtext: ""
  checklist: false
  qc: "--"
 
 users:
  done: false
  url: "/goomo_html/property/users/"
+ pending: true
+ pendingtext: ""
  checklist: false
  qc: "--"
 ---

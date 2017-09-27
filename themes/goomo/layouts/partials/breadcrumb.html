@@ -11,24 +11,24 @@
   {{ $len := (len (split $url "/")) }}
   {{ $last_index := sub $len 2 }}
 
-  {{ range $index, $element := split $url "/" }}  
+  {{ range $index, $element := split $url "/" }}
     {{ $.Scratch.Add "path" $element }}
       {{ if ne $element "" }}
       {{ $title := title ( replace . "-" " ") }}
 
       {{ if lt $index $last_index }}
-      	<li><a href='{{ $.Scratch.Get "path" }}'><p class="fnb-breadcrums__title">{{ $title }}</p></a></li>
+      	<li><a href='/goomo_html/property/summary/'><p class="fnb-breadcrums__title">{{ $title }}</p></a></li>
       	<li class="fnb-breadcrums__section">
   			<p class="fnb-breadcrums__title"> &nbsp;></p>
   		</li>
       {{ else }}
-      	<li class="breadcrump_active"><p class="fnb-breadcrums__title">{{ $title }}</p></li>      	
+      	<li class="breadcrump_active"><p class="fnb-breadcrums__title">{{ $title }}</p></li>
   	  {{ end }}
 
       {{ $.Scratch.Add "path" "/" }}
 
       {{ end }}
-      
+
   {{ end }}
 </ul>
 

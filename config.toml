@@ -10,69 +10,76 @@ theme = "goomo"
     pre = "<i class='fa fa-bars'></i>"
     weight = -110
     identifier = "dashboard"
-    url = "/"
+    url = "#"
 [[menu.main]]
-    name = "Booking"
+    name = "Bookings"
     pre = "<i class='fa fa-calendar-check-o'></i>"
     weight = -100
     identifier = "booking"
-    url = "/booking/"
+    url = "#"
 [[menu.main]]
-    name = "Review"
+    name = "Reviews"
     pre = "<i class='fa fa-comments-o'></i>"
     weight = -99
     identifier = "review"
-    url = "/review/"
+    url = "#"
 [[menu.main]]
     name = "Property Details"
     pre = "<i class='fa fa-list'></i>"
     weight = -98
     identifier = "property-details"
-    url = "/property/"
+    url = "#"
 
 [[menu.main]]
     name = "Summary"
     parent = "property-details"
     weight = -100
     identifier = "summary"
-    url = "/property/summary/"
+    url = "#"
+    active = true
 [[menu.main]]
     name = "Amenities & Services"
     parent = "property-details"
     weight = -98
     identifier = "services"
-    url = "/property/services/"
+    url = "#"
 [[menu.main]]
     name = "Contact & Address"
     parent = "property-details"
     weight = -95
     identifier = "contact"
-    url = "/property/contact/"
+    url = "#"
 [[menu.main]]
     name = "Images"
     parent = "property-details"
     weight = -90
     identifier = "images"
-    url = "/property/images/"
+    url = "#"
 [[menu.main]]
     name = "Rooms"
     parent = "property-details"
     weight = -80
     identifier = "rooms"
-    url = "/property/rooms/"
+    url = "#"
 [[menu.main]]
     name = "Policies"
     parent = "property-details"
     weight = -75
     identifier = "booking-policy"
-    url = "/property/booking-policy/"
+    url = "#"
+[[menu.main]]
+    name = "Audit logs"
+    parent = "property-details"
+    weight = -70
+    identifier = "audit-logs"
+    url = "#"
 
 [[menu.main]]
     name = "Rates & Availability"
     pre = "<i class='fa fa-money'></i>"
     weight = -80
     identifier = "rates-availability"
-    url = "/property/rates-availability/"
+    url = "#"
 [[menu.main]]
     name = "Contract & Finance"
     pre = "<i class='fa fa-address-card-o'></i>"
