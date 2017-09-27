@@ -17,6 +17,13 @@ casabritona:
 chalston:
  url: "/goomo_html/property/summary/"
 
+createnew:
+ url: "/goomo_html/extranet/create/"
 
+createproperty:
+ url: "/goomo_html/extranet/create/"
+
+allproperty:
+ url: "/goomo_html/extranet/properties/"
 
 ---
