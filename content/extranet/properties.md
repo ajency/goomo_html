@@ -4,6 +4,7 @@ date: 2017-09-25T19:40:59+05:30
 draft: false
 layout: properties
 
+active: true
 
 casabella:
  url: "/goomo_html/property/summary-new/"
