@@ -1,4 +1,11 @@
 <div class="tabular m-t-30 checklist-table">
+
+  {{ if $.Params.qc.submit }}
+  <div class="qc-overlay">
+    <a href="#" class="text-primary bolder">Submit for Review</a>
+  </div>
+  {{ end }}
+
   <div class="tabular__header flex-row hidden-xs">
     <div class="tabular__cell cell-2"></div>
     <div class="tabular__cell cell-full t-product"></div>
@@ -228,7 +235,7 @@
   <div class="checklist-section">
     <div class="tabular__row flex-row ch-head-row">
       <div class="tabular__cell cell-2">
-        {{ if $.Params.rates.done }}
+        {{ if $.Params.rate.done }}
           <img src="{{"img/green-check-circle.png" | absURL}}" class="img-responsive" width="">
         {{ else }}
           <i class="fa fa-circle w-border text-muted"></i>
