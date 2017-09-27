@@ -1,4 +1,4 @@
-		
+
 <div class="pos-fixed fly-out side-toggle">
     <div class="mobile-back desk-hide mobile-flex">
         <div class="left mobile-flex">
@@ -21,6 +21,18 @@
                     <div class="update-sec__body update-space">
                         <img src="{{"img/comment-pic.png" | absURL}}" class="img-responsive center-block">
                     </div>
+
+                    {{ if $.Params.owner }}
+                    <div class="post-comment m-t-40">
+                        <div class="form-group m-b-30">
+                            <label class="label-size text-info">Comments by owner</label>
+                            <input type="text" class="form-control fnb-input" placeholder="Write a review">
+                        </div>
+                        <div class="form-group">
+                            <button class="btn fnb-btn secondary-btn bold-btn full">Post</button>
+                        </div>
+                    </div>
+                    {{ else }}
                     <div class="comment-box">
                         <div>
                             <span class="default-size p-r-10">Rylan Almeda (QC Team)</span>
@@ -31,15 +43,16 @@
                     </div>
                     <div class="post-comment m-t-40">
                         <div class="form-group m-b-30">
-                            <label class="label-size text-info">Comments by owner</label>
+                            <label class="label-size text-info">Comments by QC</label>
                             <input type="text" class="form-control fnb-input" placeholder="Write a review">
                         </div>
                         <div class="form-group">
                             <button class="btn fnb-btn secondary-btn bold-btn full">Post</button>
                         </div>
                     </div>
+                    {{ end }}
                 </div>
             </div>
-        </div>  
+        </div>
     </div>
 </div>
