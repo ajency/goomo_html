@@ -14,7 +14,7 @@ address:
  qc: "--"
 
 amenities:
- url: "/goomo_html/property/services/"
+ url: "/goomo_html/property/services-new/"
  pending: true
  pendingtext: "Please add: Entertainment, Recreation"
  checklist: false

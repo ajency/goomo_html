@@ -3,7 +3,7 @@ title: "Summary"
 date: 2017-09-26T12:57:20+05:30
 draft: false
 layout: summary
-property: "The Upper Deck Resort"
+property: "Chalston Beach Resort"
 
 propertyinfo:
  done: false

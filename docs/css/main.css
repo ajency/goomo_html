@@ -1191,6 +1191,9 @@ input[type=radio].fnb-radio.disabled:before {
   font-size: 0.9em;
   color: #adadad;
 }
+.panel-default > .panel-heading a.done:before {
+  content: url(/goomo_html/img/green-check-circle.png);
+}
 .panel-group .panel-heading + .panel-collapse > .list-group,
 .panel-group .panel-heading + .panel-collapse > .panel-body {
   border: none;
@@ -1203,13 +1206,15 @@ input[type=radio].fnb-radio.disabled:before {
   content: '';
   position: absolute;
   border-left: 2px solid #adadad;
-  top: -25px;
+  top: 15px;
   left: 30px;
   height: 100%;
 }
 .panel-group .panel {
   border: none;
   box-shadow: none;
+  border-bottom: 1px solid #e4e4e4;
+  padding-bottom: 10px;
 }
 .panel-group .panel-heading {
   position: relative;
@@ -8321,6 +8326,21 @@ i.w-border {
 }
 .content-score-block button {
   font-size: 1.2em;
+}
+.logs-block {
+  font-size: 0.8em;
+  margin-top: 10px;
+}
+.logs-block .single-log {
+  background-color: #f8f7f7;
+  padding: 10px;
+  border-bottom: 1px solid #d8d8d8;
+  font-size: 1.2em;
+}
+.logs-block .single-log p {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 90%;
 }
 .property-name .rating {
   width: 148px;
