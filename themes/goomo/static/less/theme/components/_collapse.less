@@ -9,12 +9,16 @@
 	.fly-out-heading-size{
 		margin: 0;
 		font-weight: 600;
+		overflow: hidden;
 	}
 	a{
 		color: #000;
 		text-decoration: none;
 		display: block;
 		margin-top: 20px;
+		white-space: nowrap;
+	    overflow: hidden;
+	    text-overflow: ellipsis;
 		&:before{
 			position: absolute;
 			top: 10px;
@@ -51,8 +55,36 @@
 		}
 
 		&.done{
+			font-size: 0.6em;
+			margin-top: 10px;
 			&:before{
 				content: url(/goomo_html/img/green-check-circle.png);
+			}
+		}
+
+		&.na{
+			font-size: 0.6em;
+			margin-top: 10px;
+			&:before{
+				content: "\f111";
+				font-family: FontAwesome;
+				border-color: #adadad;
+				color: #adadad;
+				font-size: 1em;
+			}
+			&.collapsed{
+				&:before{
+					font-size: 0.6em;
+				}
+			}
+		}
+
+		&.pending{
+			&:before{
+				content: "\f00d";
+				font-family: FontAwesome;
+				border-color: #de0f00;
+				color: #de0f00;
 			}
 		}
 	}

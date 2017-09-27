@@ -1150,12 +1150,16 @@ input[type=radio].fnb-radio.disabled:before {
 .panel-default > .panel-heading .fly-out-heading-size {
   margin: 0;
   font-weight: 600;
+  overflow: hidden;
 }
 .panel-default > .panel-heading a {
   color: #000;
   text-decoration: none;
   display: block;
   margin-top: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .panel-default > .panel-heading a:before {
   position: absolute;
@@ -1191,8 +1195,32 @@ input[type=radio].fnb-radio.disabled:before {
   font-size: 0.9em;
   color: #adadad;
 }
+.panel-default > .panel-heading a.done {
+  font-size: 0.6em;
+  margin-top: 10px;
+}
 .panel-default > .panel-heading a.done:before {
   content: url(/goomo_html/img/green-check-circle.png);
+}
+.panel-default > .panel-heading a.na {
+  font-size: 0.6em;
+  margin-top: 10px;
+}
+.panel-default > .panel-heading a.na:before {
+  content: "\f111";
+  font-family: FontAwesome;
+  border-color: #adadad;
+  color: #adadad;
+  font-size: 1em;
+}
+.panel-default > .panel-heading a.na.collapsed:before {
+  font-size: 0.6em;
+}
+.panel-default > .panel-heading a.pending:before {
+  content: "\f00d";
+  font-family: FontAwesome;
+  border-color: #de0f00;
+  color: #de0f00;
 }
 .panel-group .panel-heading + .panel-collapse > .list-group,
 .panel-group .panel-heading + .panel-collapse > .panel-body {
