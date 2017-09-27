@@ -8786,6 +8786,9 @@ i.w-border {
     display: block;
   }
 }
+.sidebar-row {
+  display: flex;
+}
 .profile-stats {
   color: #fff;
   background: #378f9e;
