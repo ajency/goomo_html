@@ -17,6 +17,9 @@ casabritona:
 chalston:
  url: "/goomo_html/property/summary/"
 
+riverfront:
+ url: "/goomo_html/property/summary-submitted/"
+
 createnew:
  url: "/goomo_html/extranet/create/"
 
@@ -25,5 +28,7 @@ createproperty:
 
 allproperty:
  url: "/goomo_html/extranet/properties/"
+
+
 
 ---
