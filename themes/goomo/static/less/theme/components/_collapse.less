@@ -49,6 +49,12 @@
 				color: #adadad;
 			}
 		}
+
+		&.done{
+			&:before{
+				content: url(/goomo_html/img/green-check-circle.png);
+			}
+		}
 	}
 }
 
@@ -63,13 +69,16 @@
 		content: '';
 		position: absolute;
 		border-left: 2px solid #adadad;
-		top: -25px;
+		// top: -25px;
+		top: 15px;
 		left: 30px;
 		height: 100%;
 	}
 	.panel{
 		border: none;
 		box-shadow: none;
+		border-bottom: 1px solid #e4e4e4;
+		padding-bottom: 10px;
 	}
 	.panel-heading{
 		position: relative;
