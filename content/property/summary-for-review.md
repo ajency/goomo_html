@@ -8,6 +8,9 @@ property: "Casa Amora"
 propertyinfo:
  done: false
 
+allproperty:
+ url: "/goomo_html/extranet/properties/"
+
 address:
  url: "/goomo_html/property/contact/"
  checklist: true

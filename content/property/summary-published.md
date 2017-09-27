@@ -8,6 +8,9 @@ property: "Casa Britona"
 propertyinfo:
  done: true
 
+allproperty:
+ url: "/goomo_html/extranet/properties/"
+
 address:
  url: "/goomo_html/property/contact/"
  checklist: true

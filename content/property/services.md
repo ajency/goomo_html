@@ -5,5 +5,8 @@ draft: false
 layout: services
 property: "Chalston Beach Resort"
 
+allproperty:
+ url: "/goomo_html/extranet/properties/"
+
 ---
 
