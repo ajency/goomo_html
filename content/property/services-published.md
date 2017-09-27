@@ -5,5 +5,8 @@ draft: false
 layout: services-published
 property: "Casa Britona"
 
+allproperty:
+ url: "/goomo_html/extranet/properties/"
+
 ---
 

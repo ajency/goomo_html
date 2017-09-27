@@ -5,5 +5,8 @@ draft: false
 layout: services-for-review
 property: "Casa Amora"
 
+allproperty:
+ url: "/goomo_html/extranet/properties/"
+
 ---
 

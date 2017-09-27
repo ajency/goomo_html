@@ -2634,6 +2634,11 @@ i.w-border{
 .t-product{
 	a{
 		text-decoration: none;
+		&:hover{
+			h6{
+				color: @accent-secondary;
+			}
+		}
 	}
 }
 
@@ -3269,5 +3274,20 @@ i.w-border{
 	display: flex;
 }
 
+.links-click{
+	color: #143c38;
+}
 
+.navbar-default .fnb-btn.viewDashboard{
+	color: #fff;
+    border-radius: 0;
+    padding: 0.5em 1.5em;
+    font-size: 0.9em;
+    line-height: unset;
+    font-weight: 500;
+    &:hover{
+    	background-color: #fff;
+    	color: @accent-primary;
+    }
+}
 

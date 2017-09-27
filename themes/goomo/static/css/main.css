@@ -2577,11 +2577,6 @@ input[type="checkbox"].toggle__check {
     border: 1px solid;
   }
 }
-.alert-success {
-  background-color: #e0f0ec;
-  border-color: #409175;
-  color: #409175;
-}
 @media screen and (max-width: 650px) {
   .alert-success .close {
     background-color: #4dbb77;
@@ -8803,6 +8798,21 @@ i.w-border {
 }
 .sidebar-row {
   display: flex;
+}
+.links-click {
+  color: #143c38;
+}
+.navbar-default .fnb-btn.viewDashboard {
+  color: #fff;
+  border-radius: 0;
+  padding: 0.5em 1.5em;
+  font-size: 0.9em;
+  line-height: unset;
+  font-weight: 500;
+}
+.navbar-default .fnb-btn.viewDashboard:hover {
+  background-color: #fff;
+  color: #378f9e;
 }
 .profile-stats {
   color: #fff;

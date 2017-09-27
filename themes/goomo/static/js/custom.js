@@ -25,7 +25,9 @@ $(document).ready(function() {
 	  }
 	});
 
-	var registered = $('#listings-table').DataTable();
+	var registered = $('#listings-table').DataTable({
+		"ordering": false
+	});
 
     registered.columns().iterator('column', function(ctx, idx) {
         $(registered.column(idx).header()).append('<span class="sort-icon"/>');
