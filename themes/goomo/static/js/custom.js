@@ -31,6 +31,12 @@ $(document).ready(function() {
         $(registered.column(idx).header()).append('<span class="sort-icon"/>');
     });
 
-    $('#listings-table').closest('.row').addClass('main-table');
+    var tax = $('#tax-table').DataTable();
+
+    tax.columns().iterator('column', function(ctx, idx) {
+        $(tax.column(idx).header()).append('<span class="sort-icon"/>');
+    });
+
+    $('.listing-table').closest('.row').addClass('main-table');
 
 });
