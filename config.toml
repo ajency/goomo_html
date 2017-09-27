@@ -78,4 +78,4 @@ theme = "goomo"
     pre = "<i class='fa fa-address-card-o'></i>"
     weight = -70
     identifier = "finance"
-    url = "/property/finance/"
+    url = "/contract-finance/"
