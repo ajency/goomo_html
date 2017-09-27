@@ -8322,6 +8322,21 @@ i.w-border {
 .content-score-block button {
   font-size: 1.2em;
 }
+.logs-block {
+  font-size: 0.8em;
+  margin-top: 10px;
+}
+.logs-block .single-log {
+  background-color: #f8f7f7;
+  padding: 10px;
+  border-bottom: 1px solid #d8d8d8;
+  font-size: 1.2em;
+}
+.logs-block .single-log p {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 90%;
+}
 .property-name .rating {
   width: 148px;
   display: inline-block;
