@@ -14,7 +14,7 @@ address:
  qc: "--"
 
 amenities:
- url: "/goomo_html/property/services/"
+ url: "/goomo_html/property/services-for-review/"
  pending: false
  pendingtext: ""
  checklist: true
@@ -38,19 +38,19 @@ contract:
  done: false
 
 bank:
- url: "/goomo_html/property/bank/"
+ url: "/goomo_html/contract-finance-qc/"
  checklist: true
  qc: "--"
 
 tax:
- url: "/goomo_html/property/tax/"
+ url: "/goomo_html/contract-finance-qc/"
  pending: false
  pendingtext: ""
  checklist: true
  qc: "--"
 
 digital:
- url: "/goomo_html/property/digital/"
+ url: "/goomo_html/contract-finance-qc/"
  checklist: true
  qc: "--"
 

@@ -1,17 +1,16 @@
 {{ define "main" }}
 	<div class="c-gap">
-		<div class="flex-row property-status-box m-b-30">
+		<div class="flex-row property-status-box">
 			<div class="status-info">
-				Please see below Amenities &amp; Services Checklist to understand the sections that you need to complete.
-				<div>Please add: Entertainment facilities</div>
+				Now that you have filled in all your property details, please submit your property for review. Once our QC team approves it, your property will be Active. <img src="{{"img/finger.png" | absURL}}" class="" width="">
 			</div>
 			<div class="check-status">
 				Checklist Status:<br>
-				<i class="fa fa-circle w-border m-t-15"></i>
+				<img src="{{"img/green-check-circle.png" | absURL}}" class="img-responsive m-t-15 center-block" width="">
 			</div>
 			<div class="qc-status">
-				QC Status:
-				<h6 class="text-secondary">Info Needed</h6>
+				QC Status:<br>
+				<button class="btn btn-white outline fnb-btn m-t-15">Submit for Review</button>
 			</div>
 		</div>
 
@@ -232,13 +231,13 @@
 				  	<div class="panel panel-default">
 					    <div class="panel-heading flex-row space-between" role="tab" id="headingFour">
 					      <h3 class="no-m-t fly-out-heading-size">
-					        <a class="pending" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour" data-step="4" data-step-of="4 of 8">
-					          Entertainment facilities: Not yet filled
+					        <a class="done collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour" data-step="4" data-step-of="4 of 8">
+					          Entertainment facilities: <span class="bat-color">Games Room</span>
 					        </a>
 					      </h3>
 					      <button type="button" class="btn btn-link fnb-btn no-border text-primary bolder" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">Edit</button>
 					    </div>
-					    <div id="collapseFour" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingFour">
+					    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
 					      	<div class="panel-body">
 		    	                <div class="row">
 		    	                	<div class="col-sm-12">
@@ -290,8 +289,8 @@
 				  	<div class="panel panel-default">
 					    <div class="panel-heading flex-row space-between" role="tab" id="headingSix">
 					      <h3 class="no-m-t fly-out-heading-size">
-					        <a class="collapsed na" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix" data-step="6" data-step-of="6 of 8">
-					          Miscellaneous not available
+					        <a class="collapsed done" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix" data-step="6" data-step-of="6 of 8">
+					          Miscellaneous: <span class="bat-color">Airport Pickup</span>
 					        </a>
 					      </h3>
 					      <button type="button" class="btn btn-link fnb-btn no-border text-primary bolder" data-toggle="collapse" data-parent="#accordion" href="#collapseSix">Edit</button>
@@ -348,8 +347,8 @@
 				  	<div class="panel panel-default">
 					    <div class="panel-heading flex-row space-between" role="tab" id="headingEight">
 					      <h3 class="no-m-t fly-out-heading-size">
-					        <a class="collapsed pending" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="false" aria-controls="collapseEight" data-step="8" data-step-of="8 of 8">
-					          Recreation facilities: <span class="bat-color">Not yet filled</span>
+					        <a class="collapsed done" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="false" aria-controls="collapseEight" data-step="8" data-step-of="8 of 8">
+					          Recreation facilities: <span class="bat-color">Swimming Pool</span>
 					        </a>
 					      </h3>
 					      <button type="button" class="btn btn-link fnb-btn no-border text-primary bolder" data-toggle="collapse" data-parent="#accordion" href="#collapseEight">Edit</button>

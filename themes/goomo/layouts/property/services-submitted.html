@@ -1,17 +1,16 @@
 {{ define "main" }}
 	<div class="c-gap">
-		<div class="flex-row property-status-box m-b-30">
+		<div class="flex-row property-status-box">
 			<div class="status-info">
-				Please see below Amenities &amp; Services Checklist to understand the sections that you need to complete.
-				<div>Please add: Entertainment facilities</div>
+				Now that you have filled in all your property details and submitted it for review, once our QC team approves it, your property will be Active.
 			</div>
 			<div class="check-status">
 				Checklist Status:<br>
-				<i class="fa fa-circle w-border m-t-15"></i>
+				<img src="{{"img/green-check-circle.png" | absURL}}" class="img-responsive m-t-15 center-block" width="">
 			</div>
 			<div class="qc-status">
-				QC Status:
-				<h6 class="text-secondary">Info Needed</h6>
+				QC Status:<br>
+				<h6 class="text-secondary">Pending Review</h6>
 			</div>
 		</div>
 
@@ -27,7 +26,7 @@
 					          Total Restaurants: <span class="bat-color">1</span>
 					        </a>
 					      </h3>
-					      <button type="button" class="btn btn-link fnb-btn no-border text-primary bolder" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Edit</button>
+					      <!-- <button type="button" class="btn btn-link fnb-btn no-border text-primary bolder" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Edit</button> -->
 					    </div>
 					    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
 					      	<div class="panel-body">
@@ -67,7 +66,7 @@
 					          Food &amp; Beverages: <span class="bat-color">Kid-friendly Buffet, Snack Bar,  Breakfast in the Room, Bar</span>
 					        </a>
 					      </h3>
-					      <button type="button" class="btn btn-link fnb-btn no-border text-primary bolder" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Edit</button>
+					      <!-- <button type="button" class="btn btn-link fnb-btn no-border text-primary bolder" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Edit</button> -->
 					    </div>
 					    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
 					      	<div class="panel-body">
@@ -207,7 +206,7 @@
 					          Fitness &amp; spa: <span class="bat-color">Yes</span>
 					        </a>
 					      </h3>
-					      <button type="button" class="btn btn-link fnb-btn no-border text-primary bolder" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Edit</button>
+					      <!-- <button type="button" class="btn btn-link fnb-btn no-border text-primary bolder" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Edit</button> -->
 					    </div>
 					    <div id="collapseThree" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingThree">
 					      	<div class="panel-body">
@@ -232,13 +231,13 @@
 				  	<div class="panel panel-default">
 					    <div class="panel-heading flex-row space-between" role="tab" id="headingFour">
 					      <h3 class="no-m-t fly-out-heading-size">
-					        <a class="pending" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour" data-step="4" data-step-of="4 of 8">
-					          Entertainment facilities: Not yet filled
+					        <a class="done collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour" data-step="4" data-step-of="4 of 8">
+					          Entertainment facilities: <span class="bat-color">Games Room</span>
 					        </a>
 					      </h3>
-					      <button type="button" class="btn btn-link fnb-btn no-border text-primary bolder" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">Edit</button>
+					      <!-- <button type="button" class="btn btn-link fnb-btn no-border text-primary bolder" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">Edit</button> -->
 					    </div>
-					    <div id="collapseFour" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingFour">
+					    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
 					      	<div class="panel-body">
 		    	                <div class="row">
 		    	                	<div class="col-sm-12">
@@ -265,7 +264,7 @@
 					          Business services: <span class="bat-color">Executive Lounge Access, Executive Meeting Room</span>
 					        </a>
 					      </h3>
-					      <button type="button" class="btn btn-link fnb-btn no-border text-primary bolder" data-toggle="collapse" data-parent="#accordion" href="#collapseFive">Edit</button>
+					      <!-- <button type="button" class="btn btn-link fnb-btn no-border text-primary bolder" data-toggle="collapse" data-parent="#accordion" href="#collapseFive">Edit</button> -->
 					    </div>
 					    <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
 					      	<div class="panel-body">
@@ -290,11 +289,11 @@
 				  	<div class="panel panel-default">
 					    <div class="panel-heading flex-row space-between" role="tab" id="headingSix">
 					      <h3 class="no-m-t fly-out-heading-size">
-					        <a class="collapsed na" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix" data-step="6" data-step-of="6 of 8">
-					          Miscellaneous not available
+					        <a class="collapsed done" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix" data-step="6" data-step-of="6 of 8">
+					          Miscellaneous: <span class="bat-color">Airport Pickup</span>
 					        </a>
 					      </h3>
-					      <button type="button" class="btn btn-link fnb-btn no-border text-primary bolder" data-toggle="collapse" data-parent="#accordion" href="#collapseSix">Edit</button>
+					      <!-- <button type="button" class="btn btn-link fnb-btn no-border text-primary bolder" data-toggle="collapse" data-parent="#accordion" href="#collapseSix">Edit</button> -->
 					    </div>
 					    <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
 					      	<div class="panel-body">
@@ -323,7 +322,7 @@
 					          Complimentary services: <span class="bat-color">Free Newspaper</span>
 					        </a>
 					      </h3>
-					      <button type="button" class="btn btn-link fnb-btn no-border text-primary bolder" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven">Edit</button>
+					      <!-- <button type="button" class="btn btn-link fnb-btn no-border text-primary bolder" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven">Edit</button> -->
 					    </div>
 					    <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
 					      	<div class="panel-body">
@@ -348,11 +347,11 @@
 				  	<div class="panel panel-default">
 					    <div class="panel-heading flex-row space-between" role="tab" id="headingEight">
 					      <h3 class="no-m-t fly-out-heading-size">
-					        <a class="collapsed pending" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="false" aria-controls="collapseEight" data-step="8" data-step-of="8 of 8">
-					          Recreation facilities: <span class="bat-color">Not yet filled</span>
+					        <a class="collapsed done" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="false" aria-controls="collapseEight" data-step="8" data-step-of="8 of 8">
+					          Recreation facilities: <span class="bat-color">Swimming Pool</span>
 					        </a>
 					      </h3>
-					      <button type="button" class="btn btn-link fnb-btn no-border text-primary bolder" data-toggle="collapse" data-parent="#accordion" href="#collapseEight">Edit</button>
+					      <!-- <button type="button" class="btn btn-link fnb-btn no-border text-primary bolder" data-toggle="collapse" data-parent="#accordion" href="#collapseEight">Edit</button> -->
 					    </div>
 					    <div id="collapseEight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEight">
 					      	<div class="panel-body">

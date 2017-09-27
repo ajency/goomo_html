@@ -1,81 +1,84 @@
 ---
 title: "Summary"
-date: 2017-09-27T11:22:04+05:30
+date: 2017-09-26T13:44:12+05:30
 draft: false
-layout: summary-published
-property: "Casa Britona"
+layout: summary-submitted
+property: "Riverfront"
 
 propertyinfo:
- done: true
+ done: false
 
 address:
  url: "/goomo_html/property/contact/"
  checklist: true
- qc: "Approved"
+ qc: "Pending Review"
 
 amenities:
- url: "/goomo_html/property/services-published/"
+ url: "/goomo_html/property/services-submitted/"
  pending: false
  pendingtext: ""
  checklist: true
- qc: "Approved"
+ qc: "Pending Review"
 
 images:
  url: "/goomo_html/property/images/"
  pending: false
  pendingtext: ""
  checklist: true
- qc: "Approved"
+ qc: "Pending Review"
 
 policies:
  url: "/goomo_html/property/policies/"
  pending: false
  pendingtext: ""
  checklist: true
- qc: "Approved"
+ qc: "Pending Review"
 
 contract:
- done: true
+ done: false
 
 bank:
- url: "/contract-finance/"
+ url: "/goomo_html/contract-finance/"
  checklist: true
- qc: "Approved"
+ qc: "Pending Review"
 
 tax:
- url: "/contract-finance/"
+ url: "/goomo_html/contract-finance/"
  pending: false
  pendingtext: ""
  checklist: true
- qc: "Approved"
+ qc: "Pending Review"
 
 digital:
- url: "/contract-finance/"
+ url: "/goomo_html/contract-finance/"
  checklist: true
- qc: "Approved"
+ qc: "Pending Review"
 
 rooms:
- done: true
+ done: false
  url: "/goomo_html/property/rooms/"
  checklist: true
- qc: "Approved"
+ qc: "Pending Review"
 
 rate:
- done: true
+ done: false
  url: "/goomo_html/property/rate/"
  checklist: true
- qc: "Approved"
+ qc: "Pending Review"
 
 cancel:
- done: true
+ done: false
  url: "/goomo_html/property/cancel/"
  checklist: true
- qc: "Approved"
+ qc: "Pending Review"
 
 users:
- done: true
+ done: false
  url: "/goomo_html/property/users/"
  checklist: true
- qc: "Approved"
+ qc: "Pending Review"
+
+qc:
+ submit: false
 ---
 
