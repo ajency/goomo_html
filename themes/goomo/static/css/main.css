@@ -9836,6 +9836,15 @@ i.w-border {
 .financeCols .dataTables_paginate {
   display: none;
 }
+.captionStyle {
+  font-size: 1.05em;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 6px;
+}
+.declaration-row {
+  padding: 1.5em;
+  background-color: #f6f8f8;
+}
 .profile-stats {
   color: #fff;
   background: #378f9e;
