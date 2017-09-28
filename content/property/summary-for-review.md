@@ -40,19 +40,19 @@ contract:
  done: false
 
 bank:
- url: "/goomo_html/property/contract-finance-qc/"
+ url: "/goomo_html/property/qc-for-review/"
  checklist: true
  qc: "--"
 
 tax:
- url: "/goomo_html/property/contract-finance-qc/"
+ url: "/goomo_html/property/qc-for-review/"
  pending: false
  pendingtext: ""
  checklist: true
  qc: "--"
 
 digital:
- url: "/goomo_html/property/contract-finance-qc/"
+ url: "/goomo_html/property/qc-for-review/"
  checklist: true
  qc: "--"
 
