@@ -23,10 +23,16 @@ theme = "goomo"
     weight = -99
     identifier = "review"
     url = "#"
+ [[menu.main]]
+     name = "Rates & Availability"
+     pre = "<i class='fa fa-money'></i>"
+     weight = -98
+     identifier = "rates-availability"
+     url = "#"
 [[menu.main]]
     name = "Property Details"
     pre = "<i class='fa fa-list'></i>"
-    weight = -98
+    weight = -97
     identifier = "property-details"
     url = "#"
 
@@ -68,21 +74,16 @@ theme = "goomo"
     identifier = "booking-policy"
     url = "#"
 [[menu.main]]
-    name = "Audit logs"
+    name = "Audit Logs"
     parent = "property-details"
     weight = -70
     identifier = "audit-logs"
     url = "#"
 
 [[menu.main]]
-    name = "Rates & Availability"
-    pre = "<i class='fa fa-money'></i>"
-    weight = -80
-    identifier = "rates-availability"
-    url = "#"
-[[menu.main]]
     name = "Contract & Finance"
+    parent = "property-details"
     pre = "<i class='fa fa-address-card-o'></i>"
-    weight = -70
+    weight = -97
     identifier = "finance"
-    url = "/contract-finance/"
+    url = "#"
