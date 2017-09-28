@@ -13,7 +13,7 @@ propertyinfo:
 
 
 address:
- url: "/goomo_html/property/contact/"
+ url: "#"
  checklist: true
  qc: "Pending Review"
 
@@ -32,7 +32,7 @@ images:
  qc: "Pending Review"
 
 policies:
- url: "/goomo_html/property/policies/"
+ url: "#"
  pending: false
  pendingtext: ""
  checklist: true
@@ -60,25 +60,25 @@ digital:
 
 rooms:
  done: false
- url: "/goomo_html/property/rooms/"
+ url: "#"
  checklist: true
  qc: "Pending Review"
 
 rate:
  done: false
- url: "/goomo_html/property/rate/"
+ url: "#"
  checklist: true
  qc: "Pending Review"
 
 cancel:
  done: false
- url: "/goomo_html/property/cancel/"
+ url: "#"
  checklist: true
  qc: "Pending Review"
 
 users:
  done: false
- url: "/goomo_html/property/users/"
+ url: "#"
  checklist: true
  qc: "Pending Review"
 
