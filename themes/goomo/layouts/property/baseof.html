@@ -13,85 +13,90 @@
 		<link rel="stylesheet" href="{{"css/bootstrap.min.css" | absURL}}">
 		<link href="{{"css/main.css" | absURL}}" rel="stylesheet">
 	</head>
-	<body class="">
+	<body class="overflow-section">
+		<div class="page-shifter animate-row">
 
-		{{ partial "header.html" .}}
+			{{ partial "header.html" .}}
 
-		<!-- content -->
-		<div class="container-fluid jobs-container">
-				<div class="row">
-						<div class="col-xs-12 content-wrapper edit-mode ">
+			<!-- content -->
+			<div class="container-fluid jobs-container">
+					<div class="row">
+							<div class="col-xs-12 content-wrapper edit-mode ">
 
-								<div class="m-t-20 m-b-10">
-										<div class="row">
-												<div class="col-xs-12 col-sm-3 col-lg-2">
+									<div class="m-t-20 m-b-10">
+											<div class="row">
+													<div class="col-xs-12 col-sm-3 col-lg-2">
 
-													{{ partial "sidebar.html" .}}
+														{{ partial "sidebar.html" .}}
 
-												</div>
-												<div class="col-xs-12 col-sm-9 col-lg-10">
+													</div>
+													<div class="col-xs-12 col-sm-9 col-lg-10">
 
-													<div class="">
 														<div class="">
-															<div class="preview-header text-color desk-hide"> Do you want to see a preview of your listing? <a href="" class="secondary-link preview-header__link">Preview</a>
-															</div>
-															<div class="gs-form tab-content p-t-0  ">
+															<div class="">
+																<div class="preview-header text-color desk-hide"> Do you want to see a preview of your listing? <a href="" class="secondary-link preview-header__link">Preview</a>
+																</div>
+																<div class="gs-form tab-content p-t-0  ">
 
-																<div class="flex-row space-between align-top mobile-hide">
-																	<div class="business-info tab-pane fade in active" id="">
-																		<!-- <ul class="fnb-breadcrums flex-row">
-																			<li class="fnb-breadcrums__section">
-																				<a href="">
-																					<p class="fnb-breadcrums__title">Dashboard</p>
-																				</a>
-																			</li>
-																			<li class="fnb-breadcrums__section">
-																				<p class="fnb-breadcrums__title">></p>
-																			</li>
-																			<li class="fnb-breadcrums__section">
-																				<a href="#">
-																					<p class="fnb-breadcrums__title">{{ .Title }}</p>																			</a>
-																			</li>
-																			<li class="fnb-breadcrums__section">
-																				<p class="fnb-breadcrums__title">></p>
-																			</li>
-																			<li class="fnb-breadcrums__section">
-																				<a href="#">
-																					<p class="fnb-breadcrums__title">{{ .Title }}</p>
-																				</a>
-																			</li>
-																		</ul> -->
+																	<div class="flex-row space-between align-top mobile-hide">
+																		<div class="business-info tab-pane fade in active" id="">
+																			<!-- <ul class="fnb-breadcrums flex-row">
+																				<li class="fnb-breadcrums__section">
+																					<a href="">
+																						<p class="fnb-breadcrums__title">Dashboard</p>
+																					</a>
+																				</li>
+																				<li class="fnb-breadcrums__section">
+																					<p class="fnb-breadcrums__title">></p>
+																				</li>
+																				<li class="fnb-breadcrums__section">
+																					<a href="#">
+																						<p class="fnb-breadcrums__title">{{ .Title }}</p>																			</a>
+																				</li>
+																				<li class="fnb-breadcrums__section">
+																					<p class="fnb-breadcrums__title">></p>
+																				</li>
+																				<li class="fnb-breadcrums__section">
+																					<a href="#">
+																						<p class="fnb-breadcrums__title">{{ .Title }}</p>
+																					</a>
+																				</li>
+																			</ul> -->
 
-																		{{ partial "breadcrumb.html" .}}
+																			{{ partial "breadcrumb.html" .}}
 
 
-																		<!-- <h5 class="no-m-t fly-out-heading-size main-heading white m-t-0 margin-btm ">Job Information</h5> -->
-																		<h5 class="nno-m-t main-heading  white m-t-0 margin-btm">{{ .Title }}</h5>
+																			<!-- <h5 class="no-m-t fly-out-heading-size main-heading white m-t-0 margin-btm ">Job Information</h5> -->
+																			<h5 class="nno-m-t main-heading  white m-t-0 margin-btm">{{ .Title }}</h5>
+																		</div>
+
+																		<a href="#" class="preview-header__link white btn fnb-btn white-border mini mobile-hide"> View Property on Goomo.com</a>
 																	</div>
 
-																	<a href="#" class="preview-header__link white btn fnb-btn white-border mini mobile-hide"> View Property on Goomo.com</a>
+																	{{ block "main" . }}
+																		<!-- The part of the page that begins to differ between templates -->
+																	{{ end }}
+
+
 																</div>
-
-																{{ block "main" . }}
-																	<!-- The part of the page that begins to differ between templates -->
-																{{ end }}
-
-
 															</div>
 														</div>
+
 													</div>
+											</div>
+									</div>
 
-												</div>
-										</div>
-								</div>
+							</div>
+					</div>
+					<div class="site-overlay"></div>
+			</div>
+			<!-- content ends -->
 
-						</div>
-				</div>
-				<div class="site-overlay"></div>
-		</div>
-		<!-- content ends -->
+		{{ partial "finance-flyout.html" .}}
 
 		{{ partial "footer.html" .}}
+
+		</div>
 
 		<script type="text/javascript" src="{{"js/jquery.min.js" | relURL}}"></script>
 		<!-- BS Script -->

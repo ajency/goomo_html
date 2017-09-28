@@ -1,6 +1,6 @@
 {{ define "main" }}
 	<div class="c-gap">
-		<div class="flex-row property-status-box">
+		<!-- <div class="flex-row property-status-box">
 			<div class="status-info">
 				Now that you have filled in all your property details and submitted it for review, once our QC team approves it, your property will be Active.
 			</div>
@@ -11,6 +11,23 @@
 			<div class="qc-status">
 				QC Status:<br>
 				<h6 class="text-secondary">Pending Review</h6>
+			</div>
+		</div> -->
+		<div class="flex-row property-status-box">
+			<div class="status-info">
+				Now that you have filled in all your property details and submitted it for review, once our QC team approves it, your property will be Active.
+			</div>
+			<div class="check-status">
+				Checklist Status:<br>
+				<img src="{{"img/green-check-circle.png" | absURL}}" class="img-responsive m-t-15 center-block" width="">
+			</div>
+			<div class="qc-status">
+				QC Status:<br>
+				<select class="fnb-select select-variant form-control suggestion-select bat-color">
+                    <option value="">--Select--</option>
+                    <option selected="">Edit Suggested</option>
+                </select>
+                <a href="#" class="secondary-link open-sidebar form-toggle text-decor label-size leave-com">Leave a comment</a>
 			</div>
 		</div>
 
