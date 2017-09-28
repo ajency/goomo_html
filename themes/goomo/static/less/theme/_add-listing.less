@@ -3321,3 +3321,159 @@ i.w-border{
     }
 }
 
+
+
+// Gallery
+
+.gallery-stat{
+	&__row{
+		padding: 1em 1.5em;
+    	min-width: 200px;
+	}
+	.property-image{
+    	background-color: #70c8be;
+    	color: #fff;
+    	border-radius: 3px;
+    	min-width: 230px;
+    	box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.22);
+	}
+	.subRow{
+		padding: 0.2em 1.5em;
+    	border-right: 2px solid #e8e8e8;
+	}
+}
+
+
+.property-image{
+	.titleRow{
+		border-bottom: 1px solid #ddd;
+    	padding-bottom: 0.8em;
+    	.add-pic{
+    		padding: 0.5em 1.5em;
+    		border-radius: 2px;
+    		i{
+    			position: relative;
+    			top: 1px;
+    		}
+    	}
+	}
+	.fnb-select{
+		margin: 0 1.5em;
+    	min-width: 150px;
+	}
+	.fnb-btn{
+		background-color: transparent;
+		min-width: 35px;
+    	padding: 0.3em;
+    	margin: 0 0.5em;
+		&.check-btn{
+			border: 1px solid @accent-primary;
+    		color: @accent-primary;
+		}
+		&.delete-btn{
+			border: 1px solid #ff353b;
+    		color: #ff353b;
+		}
+	}
+	.property-pics{
+		margin: 0.8em;
+	}
+}
+
+.close.g-close{
+	height: 22px;
+    width: 22px;
+    line-height: 22px;
+    border: 1px solid #ff353b;
+    opacity: 1;
+    color: #ff353b;
+    border-radius: 50px;
+    font-size: 0.8em;
+    outline: 0;
+}
+
+
+.warning-bar{
+	padding: 1em;
+    margin: 1em;
+    background-color: #fffdeb;
+}
+
+
+.fnb-modal.edit-photos{
+	.modal-content{
+		padding: 0;
+    	position: relative;
+	}
+	.modal-header{
+		position: absolute;
+    	right: 10px;
+    	z-index: 2;
+    	top: 10px;
+    	.g-close{
+    		background-color: #fff;
+    		color: #000;
+    		border-color: #000;
+    	}
+	}
+	.modal-body{
+		padding: 0;
+	}
+	.tags{
+		flex: 0.4;
+    	padding: 1em;
+	}
+	.pic-gal{
+		flex: 1;
+    	padding: 1em 2em 0.1em 2em;
+    	background-color: #20201f;
+	}
+	.fnb-btn{
+		padding-left: 0.5em;
+	}
+	@media (min-width: 992px){
+		.modal-lg {
+	    	width: 1000px;
+		}
+	}
+}
+
+
+@media screen and (max-width: @mobile){
+	.gallery-stat{
+		display: initial;
+		.subRow{
+			width: 49%;
+    		display: inline-flex;
+    		flex-direction: column;
+    		padding: 0.2em 0.5em;
+    		min-width: auto;
+    		p{
+    			font-size: 1em;
+    		}
+    		&:last-child{
+    			border-right: 0;
+    		}
+		}
+	}
+	.property-image{
+		margin-top: 1.5em;
+		.titleRow{
+			flex-direction: column;
+			.add-pic{
+				margin-top: 1.3em;
+			}
+		}
+		.subrow{
+			flex-direction: column;
+		}
+		.property-pics{
+			flex: 1 0 calc(~'50% - 1.6em');
+			max-width: calc(~'50% - 1.6em');
+		}
+	}
+}
+
+
+
+
