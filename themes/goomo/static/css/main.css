@@ -812,6 +812,7 @@ input[type=radio].fnb-radio.disabled:before {
 }
 .fnb-modal .modal-header {
   border: 0;
+  padding: 0;
 }
 .fnb-modal .modal-body {
   padding: 1em 0;
@@ -9979,6 +9980,70 @@ i.w-border {
 .navbar-default .fnb-btn.viewDashboard:hover {
   background-color: #fff;
   color: #378f9e;
+}
+.gallery-stat__row {
+  padding: 1em 1.5em;
+  min-width: 200px;
+}
+.gallery-stat .property-image {
+  background-color: #70c8be;
+  color: #fff;
+  border-radius: 3px;
+  min-width: 230px;
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.22);
+}
+.gallery-stat .subRow {
+  padding: 0.2em 1.5em;
+  border-right: 2px solid #e8e8e8;
+}
+.property-image .titleRow {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.8em;
+}
+.property-image .titleRow .add-pic {
+  padding: 0.5em 1.5em;
+  border-radius: 2px;
+}
+.property-image .titleRow .add-pic i {
+  position: relative;
+  top: 1px;
+}
+.property-image .fnb-select {
+  margin: 0 1.5em;
+  min-width: 150px;
+}
+.property-image .fnb-btn {
+  background-color: transparent;
+  min-width: 35px;
+  padding: 0.3em;
+  margin: 0 0.5em;
+}
+.property-image .fnb-btn.check-btn {
+  border: 1px solid #378f9e;
+  color: #378f9e;
+}
+.property-image .fnb-btn.delete-btn {
+  border: 1px solid #ff353b;
+  color: #ff353b;
+}
+.property-image .property-pics {
+  margin: 0.8em;
+}
+.close.g-close {
+  height: 22px;
+  width: 22px;
+  line-height: 22px;
+  border: 1px solid #ff353b;
+  opacity: 1;
+  color: #ff353b;
+  border-radius: 50px;
+  font-size: 0.8em;
+  outline: 0;
+}
+.warning-bar {
+  padding: 1em;
+  margin: 1em;
+  background-color: #fffdeb;
 }
 .profile-stats {
   color: #fff;
