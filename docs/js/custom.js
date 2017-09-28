@@ -75,4 +75,13 @@ $(document).ready(function() {
 		$('.panel-group').removeClass('disabled');
 	});
 
+	$('.notification [data-toggle="popover"]').popover({
+		html : true, 
+	    content: function() {
+	       return $('.popoverContent').html();
+	    }
+	})
+
+
+
 });
