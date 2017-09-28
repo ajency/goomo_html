@@ -1,8 +1,10 @@
 {{ define "main" }}
 	<div class="c-gap">
 		<div class="flex-row property-status-box">
-			<div class="status-info">
-				Now that you have filled in all your property details, please submit your property for review. You can do so from the Property Summary page. Once our QC team approves it, your property will be Active.
+			<div class="status-info flex-row">
+				<div>
+					Now that you have filled in all your property details, please submit your property for review. You can do so from the <a href="/goomo_html/property/summary-for-review/">Property Summary page</a>. Once our QC team approves it, your property will be Active.
+				</div>
 			</div>
 			<div class="check-status">
 				Checklist Status:<br>
@@ -10,7 +12,8 @@
 			</div>
 			<div class="qc-status">
 				QC Status:<br>
-				<button class="btn btn-white outline fnb-btn m-t-15">Submit for Review</button>
+				<!-- <h6 class="text-secondary">Pending Review</h6> -->
+				<p class="bat-color m-t-10">To be submitted for review on <a href="/goomo_html/property/summary-for-review/">Summary page</a></p>
 			</div>
 		</div>
 

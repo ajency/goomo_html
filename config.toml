@@ -84,6 +84,6 @@ theme = "goomo"
     name = "Contract & Finance"
     parent = "property-details"
     pre = "<i class='fa fa-address-card-o'></i>"
-    weight = -97
+    weight = -72
     identifier = "finance"
     url = "#"

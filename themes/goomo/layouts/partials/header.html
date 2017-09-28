@@ -37,9 +37,11 @@
 				</ul>
 
 				<ul class="nav navbar-nav navbar-right side-section">
+					{{ if $.Params.viewdash }}
 					<li>
 						<a href="/goomo_html/extranet/properties/" class="white btn fnb-btn white-border mini viewDashboard"> View Dashboard</a>
 					</li>
+					{{ end }}
 					<li class="mobile-hide">
 						<div class="dropdown login user-logged">
 							<i class="fa fa-user-circle user-icon" aria-hidden="true"></i>

@@ -49,7 +49,7 @@
 						</div>
 						<div class="qc-status">
 							QC Status:<br>
-							<button class="btn btn-white outline fnb-btn m-t-15">Submit for Review</button>
+							<button class="btn btn-white outline fnb-btn m-t-15" data-target="#forReview" data-toggle="modal">Submit for Review</button>
 						</div>
 					</div>
 				</div>
@@ -64,5 +64,29 @@
 				<img src="{{"img/manager.jpg" | absURL}}" class="img-responsive">
 			</div>
 		</div>
+	</div>
+
+	<div class="modal fade fnb-modal" id="forReview" tabindex="-1" role="dialog">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content text-center">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title text-secondary">Submit Property for Review</h4>
+	      </div>
+	      <hr>
+	      <div class="modal-body">
+	        <p class="p-t-20">
+	        	You're about to submit <span class="text-primary bolder">{{ .Params.property }}</span> to the Goomo QC team for review. <br>
+	        	Please make sure all the details you've entered are correct.<br><br>
+	        	Are you sure you want to proceed?
+	        </p>
+	      </div>
+	      <hr>
+	      <div class="modal-footer flex-row justify-center">
+	        <button type="button" class="btn fnb-btn outline" data-dismiss="modal">No, take me back</button>
+	        <button type="button" class="btn fnb-btn primary-btn">Yes, I'm done</button>
+	      </div>
+	    </div><!-- /.modal-content -->
+	  </div><!-- /.modal-dialog -->
 	</div>
 {{ end }}

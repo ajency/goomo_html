@@ -4,7 +4,7 @@ date: 2017-09-27T11:22:04+05:30
 draft: false
 layout: summary-published
 property: "Casa Britona"
-status: "Approved"
+status: "Active"
 
 propertyinfo:
  done: true
