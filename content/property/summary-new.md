@@ -11,7 +11,7 @@ propertyinfo:
 
 
 address:
- url: "/goomo_html/property/contact/"
+ url: "#"
  pending: true
  pendingtext: ""
  checklist: false
@@ -32,7 +32,7 @@ images:
  qc: "--"
 
 policies:
- url: "/goomo_html/property/policies/"
+ url: "#"
  pending: true
  pendingtext: "Please add: Check in time, Check out time"
  checklist: false
@@ -64,7 +64,7 @@ digital:
 
 rooms:
  done: false
- url: "/goomo_html/property/rooms/"
+ url: "#"
  pending: true
  pendingtext: "Please Add: Minimum 1 room for each room type"
  checklist: false
@@ -72,7 +72,7 @@ rooms:
 
 rate:
  done: false
- url: "/goomo_html/property/rate/"
+ url: "#"
  pending: true
  pendingtext: "Please Add: Minimum 1 rate plan"
  checklist: false
@@ -80,7 +80,7 @@ rate:
 
 cancel:
  done: false
- url: "/goomo_html/property/cancel/"
+ url: "#"
  pending: true
  pendingtext: "Please Add: Cancellation Policy"
  checklist: false
@@ -88,7 +88,7 @@ cancel:
 
 users:
  done: false
- url: "/goomo_html/property/users/"
+ url: "#"
  pending: true
  pendingtext: ""
  checklist: false

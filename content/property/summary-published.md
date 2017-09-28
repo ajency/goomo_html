@@ -11,7 +11,7 @@ propertyinfo:
 
 
 address:
- url: "/goomo_html/property/contact/"
+ url: "#"
  checklist: true
  qc: "Approved"
 
@@ -30,7 +30,7 @@ images:
  qc: "Approved"
 
 policies:
- url: "/goomo_html/property/policies/"
+ url: "#"
  pending: false
  pendingtext: ""
  checklist: true
@@ -58,25 +58,25 @@ digital:
 
 rooms:
  done: true
- url: "/goomo_html/property/rooms/"
+ url: "#"
  checklist: true
  qc: "Approved"
 
 rate:
  done: true
- url: "/goomo_html/property/rate/"
+ url: "#"
  checklist: true
  qc: "Approved"
 
 cancel:
  done: true
- url: "/goomo_html/property/cancel/"
+ url: "#"
  checklist: true
  qc: "Approved"
 
 users:
  done: true
- url: "/goomo_html/property/users/"
+ url: "#"
  checklist: true
  qc: "Approved"
 ---
