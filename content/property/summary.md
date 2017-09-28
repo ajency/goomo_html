@@ -87,7 +87,7 @@ cancel:
  qc: "--"
 
 users:
- done: false
+ done: true
  url: "/goomo_html/property/users/"
  pending: true
  pendingtext: ""
