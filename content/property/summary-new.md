@@ -20,14 +20,14 @@ address:
 amenities:
  url: "/goomo_html/property/services-new/"
  pending: true
- pendingtext: "Please add: Entertainment, Recreation"
+ pendingtext: "Please add: F&B, Fitness & Spa, Entertainment, Business services, Miscellaneous, Complimentary services, Recreation"
  checklist: false
  qc: "--"
 
 images:
  url: "/goomo_html/property/images/"
  pending: true
- pendingtext: "Please add: Hotel images, Room images"
+ pendingtext: "Please add: Property images, Room images"
  checklist: false
  qc: "--"
 
@@ -66,7 +66,7 @@ rooms:
  done: false
  url: "/goomo_html/property/rooms/"
  pending: true
- pendingtext: ""
+ pendingtext: "Please Add: Minimum 1 room for each room type"
  checklist: false
  qc: "--"
 
@@ -74,7 +74,7 @@ rate:
  done: false
  url: "/goomo_html/property/rate/"
  pending: true
- pendingtext: ""
+ pendingtext: "Please Add: Minimum 1 rate plan"
  checklist: false
  qc: "--"
 
@@ -82,7 +82,7 @@ cancel:
  done: false
  url: "/goomo_html/property/cancel/"
  pending: true
- pendingtext: ""
+ pendingtext: "Please Add: Cancellation Policy"
  checklist: false
  qc: "--"
 
