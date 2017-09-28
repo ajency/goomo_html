@@ -47,7 +47,7 @@
 					<li>
 						<select class="form-control fnb-select white-select">
 							<option>--Change Resort--</option>
-							<option selected="">Riverfront</option>
+							<option selected="">Hotel Eden</option>
 							<option>Casa Amora</option>
 							<option>Casa Bella</option>
 						</select>
@@ -55,10 +55,6 @@
 				</ul>
 
 				<ul class="nav navbar-nav navbar-right side-section">
-					
-					<li>
-						<a href="/goomo_html/extranet/properties/" class="white btn fnb-btn white-border mini viewDashboard"> View Dashboard</a>
-					</li>
 					
 					
 					<li class="notification">
@@ -282,7 +278,7 @@
       
 
       
-      	<li class="breadcrump_active"><p class="fnb-breadcrums__title">Services Submitted</p></li>
+      	<li class="breadcrump_active"><p class="fnb-breadcrums__title">Services Published Review</p></li>
   	  
 
       
@@ -325,7 +321,7 @@
 						<img src="https://ajency.github.io/goomo_html/img/hotel_icon.png" class="img-responsive m-r-5" width="40">
 						<div>
 							<h6 class="m-b-5 bolder property-name m-t-5">
-								Riverfront
+								Hotel Eden
 							</h6>
 							<p class="text-muted">Britona, Goa, India</p>
 						</div>
@@ -333,7 +329,7 @@
 			<div class="listing-status">
 					<div class="label">Property Status</div>
 					<div class="flex-row space-between status-msg">
-							<div class="statusMsg">Pending Review
+							<div class="statusMsg">Active
 								
 							</div>
 							<a href="#" class="review-submit-link"><i class="fa fa-pencil"></i></a>
@@ -525,7 +521,7 @@
       
 
       
-      	<li class="breadcrump_active"><p class="fnb-breadcrums__title">Services Submitted</p></li>
+      	<li class="breadcrump_active"><p class="fnb-breadcrums__title">Services Published Review</p></li>
   	  
 
       
@@ -551,10 +547,25 @@
 
 																	
 	<div class="c-gap">
-		
-		<div class="flex-row property-status-box">
-			<div class="status-info">
-				Now that you have filled in all your property details and submitted it for review, once our QC team approves it, your property will be Active.
+		<div class="flex-row property-status-box default-status disabled">
+			<div class="status-info flex-row">
+				All done! Your property is now Approved.
+			</div>
+			<div class="check-status">
+				<div class="status-label">Checklist Status:<br></div>
+				<img src="https://ajency.github.io/goomo_html/img/green-check-circle.png" class="img-responsive m-t-15 center-block" width="">
+			</div>
+			<div class="qc-status">
+				<div class="status-label">QC Status:<br></div>
+				<h6 class="text-primary">Approved</h6>
+			</div>
+		</div>
+
+		<div class="flex-row property-status-box editing-status m-t-20 m-b-20">
+			<div class="status-info flex-row">
+				<div>
+					When you are done making edits to the information below, please submit for review. When our QC team approves, these changes will be seen on your property page on Goomo.com <img src="https://ajency.github.io/goomo_html/img/finger.png" class="" width="">
+				</div>
 			</div>
 			<div class="check-status">
 				Checklist Status:<br>
@@ -562,17 +573,21 @@
 			</div>
 			<div class="qc-status">
 				QC Status:<br>
+				<h6 class="text-secondary">Edits Pending Review</h6>
+				
 				<select class="fnb-select select-variant form-control suggestion-select bat-color">
                     <option value="">--Select--</option>
                     <option selected="">Edit Suggested</option>
                 </select>
                 <a href="#" class="secondary-link open-sidebar form-toggle text-decor label-size leave-com">Leave a comment</a>
+				
 			</div>
 		</div>
 
+		
+
 		<div class="row">
 			<div class="col-sm-9">
-
 
 				<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 				  	<div class="panel panel-default">
@@ -929,7 +944,6 @@
 					    </div>
 				  	</div>
 				</div>
-
 
 			</div>
 

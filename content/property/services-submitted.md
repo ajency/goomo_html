@@ -6,6 +6,7 @@ layout: services-submitted
 property: "Riverfront"
 status: "Pending Review"
 
+viewdash: true
 
 ---
 

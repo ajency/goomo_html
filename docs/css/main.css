@@ -1280,6 +1280,12 @@ input[type=radio].fnb-radio.disabled:before {
   border-color: #de0f00;
   color: #de0f00;
 }
+.panel-default > .panel-heading button.collapsed .fa-chevron-up {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+  color: #bdbdbd;
+}
 .panel-group .panel-heading + .panel-collapse > .list-group,
 .panel-group .panel-heading + .panel-collapse > .panel-body {
   border: none;
