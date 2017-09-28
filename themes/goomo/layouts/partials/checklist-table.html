@@ -47,7 +47,7 @@
         {{ end }}
       </div>
       <div class="tabular__cell cell-6 t-seller text-center mobile-qc">
-        <span class="desk-hide">QC Status</span> {{ .Params.address.qc }}
+        <span class="desk-hide">QC Status: </span> {{ .Params.address.qc }}
       </div>
     </div>
     <div class="tabular__row flex-row">
@@ -73,8 +73,8 @@
           <i class="fa fa-circle text-muted"></i>
         {{ end }}
       </div>
-      <div class="tabular__cell cell-6 t-seller text-center mobile-qc">
-        <span class="desk-hide">QC Status</span> {{ .Params.amenities.qc }}
+      <div class="tabular__cell cell-6 t-seller text-center mobile-qc {{ if $.Params.amenities.qcorange }}text-secondary{{ end }}">
+        <span class="desk-hide">QC Status: </span> {{ .Params.amenities.qc }}
       </div>
     </div>
     <div class="tabular__row flex-row">
@@ -96,7 +96,7 @@
         {{ end }}
       </div>
       <div class="tabular__cell cell-6 t-seller text-center mobile-qc">
-        <span class="desk-hide">QC Status</span> {{ .Params.images.qc }}
+        <span class="desk-hide">QC Status: </span> {{ .Params.images.qc }}
       </div>
     </div>
     <div class="tabular__row flex-row">
@@ -118,7 +118,7 @@
         {{ end }}
       </div>
       <div class="tabular__cell cell-6 t-seller text-center mobile-qc">
-        <span class="desk-hide">QC Status</span> {{ .Params.policies.qc }}
+        <span class="desk-hide">QC Status: </span> {{ .Params.policies.qc }}
       </div>
     </div>
   </div>
@@ -148,7 +148,7 @@
         {{ end }}
       </div>
       <div class="tabular__cell cell-6 t-seller text-center mobile-qc">
-        <span class="desk-hide">QC Status</span> {{ .Params.rooms.qc }}
+        <span class="desk-hide">QC Status: </span> {{ .Params.rooms.qc }}
       </div>
     </div>
   </div>
@@ -178,7 +178,7 @@
         {{ end }}
       </div>
       <div class="tabular__cell cell-6 t-seller text-center mobile-qc">
-        <span class="desk-hide">QC Status</span> {{ .Params.rate.qc }}
+        <span class="desk-hide">QC Status: </span> {{ .Params.rate.qc }}
       </div>
     </div>
   </div>
@@ -208,7 +208,7 @@
         {{ end }}
       </div>
       <div class="tabular__cell cell-6 t-seller text-center mobile-qc">
-        <span class="desk-hide">QC Status</span> {{ .Params.cancel.qc }}
+        <span class="desk-hide">QC Status: </span> {{ .Params.cancel.qc }}
       </div>
     </div>
   </div>
@@ -239,7 +239,7 @@
         {{ end }}
       </div>
       <div class="tabular__cell cell-6 t-seller text-center mobile-qc">
-        <span class="desk-hide">QC Status</span> {{ .Params.users.qc }}
+        <span class="desk-hide">QC Status: </span> {{ .Params.users.qc }}
       </div>
     </div>
   </div>
@@ -280,7 +280,7 @@
         {{ end }}
       </div>
       <div class="tabular__cell cell-6 t-seller text-center mobile-qc">
-        <span class="desk-hide">QC Status</span> {{ .Params.bank.qc }}
+        <span class="desk-hide">QC Status: </span> {{ .Params.bank.qc }}
       </div>
     </div>
     <div class="tabular__row flex-row">
@@ -302,7 +302,7 @@
         {{ end }}
       </div>
       <div class="tabular__cell cell-6 t-seller text-center mobile-qc">
-        <span class="desk-hide">QC Status</span> {{ .Params.tax.qc }}
+        <span class="desk-hide">QC Status: </span> {{ .Params.tax.qc }}
       </div>
     </div>
     <div class="tabular__row flex-row">
@@ -324,7 +324,7 @@
         {{ end }}
       </div>
       <div class="tabular__cell cell-6 t-seller text-center mobile-qc">
-        <span class="desk-hide">QC Status</span> {{ .Params.digital.qc }}
+        <span class="desk-hide">QC Status: </span> {{ .Params.digital.qc }}
       </div>
     </div>
   </div>

@@ -22,6 +22,7 @@ amenities:
  hasedits: true
  checklist: true
  qc: "Edits Pending Review"
+ qcorange: true
 
 images:
  url: "/goomo_html/property/images-published-review/"

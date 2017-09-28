@@ -22,6 +22,7 @@ amenities:
  hasedits: true
  checklist: true
  qc: "--"
+ qcorange: true
 
 images:
  url: "/goomo_html/property/images-published-edit/"
