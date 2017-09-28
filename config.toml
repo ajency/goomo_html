@@ -50,7 +50,7 @@ theme = "goomo"
     identifier = "services"
     url = "#"
 [[menu.main]]
-    name = "Contact & Address"
+    name = "Address & Contact"
     parent = "property-details"
     weight = -95
     identifier = "contact"
