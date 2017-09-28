@@ -3475,5 +3475,25 @@ i.w-border{
 }
 
 
-
+.custom-radio{
+	label{
+		cursor: pointer;
+		position: relative;
+	}
+	input[type=checkbox]:before{
+		background-color: #f5f7f9;
+		left: 0;
+    	top: 2px;
+	}
+	.fnb-checkbox{
+		position: static;
+		width: initial;
+    	margin-right: 1.3em;
+		&:checked{
+			& + span{
+				font-weight: 800;
+			}
+		}
+	}
+}
 
