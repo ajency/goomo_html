@@ -1,9 +1,23 @@
 {{ define "main" }}
 	<div class="c-gap">
-		<div class="flex-row property-status-box">
+		<div class="flex-row property-status-box default-status disabled">
+			<div class="status-info flex-row">
+				All done! Your property is now Approved.
+			</div>
+			<div class="check-status">
+				<div class="status-label">Checklist Status:<br></div>
+				<img src="{{"img/green-check-circle.png" | absURL}}" class="img-responsive m-t-15 center-block" width="">
+			</div>
+			<div class="qc-status">
+				<div class="status-label">QC Status:<br></div>
+				<h6 class="text-primary">Approved</h6>
+			</div>
+		</div>
+
+		<div class="flex-row property-status-box editing-status m-t-20 m-b-20">
 			<div class="status-info flex-row">
 				<div>
-					Now that you have filled in all your property details, please submit your property for review. You can do so from the <a href="/goomo_html/property/summary-for-review/">Property Summary page</a>. Once our QC team approves it, your property will be Active.
+					When you are done making edits to the information below, please submit for review. When our QC team approves, these changes will be seen on your property page on Goomo.com <img src="{{"img/finger.png" | absURL}}" class="" width="">
 				</div>
 			</div>
 			<div class="check-status">
@@ -12,14 +26,28 @@
 			</div>
 			<div class="qc-status">
 				QC Status:<br>
-				<!-- <h6 class="text-secondary">Pending Review</h6> -->
-				<p class="bat-color m-t-10">To be submitted for review on <a href="/goomo_html/property/summary-for-review/">Summary page</a></p>
+				<h6 class="text-secondary">Edits Pending Review</h6>
+				<!-- <p class="bat-color m-t-10">New Edits</p> -->
+				<select class="fnb-select select-variant form-control suggestion-select bat-color">
+                    <option value="">--Select--</option>
+                    <option selected="">Edit Suggested</option>
+                </select>
+                <a href="#" class="secondary-link open-sidebar form-toggle text-decor label-size leave-com">Leave a comment</a>
+				<!-- <button class="btn btn-white outline fnb-btn m-t-15">Submit for Review</button> -->
 			</div>
 		</div>
 
+		<!-- <div class="row m-t-20 m-b-20 edit-action-box">
+			<div class="col-sm-9">
+				<h6 class="bolder">The details below are QC approved. If you make edits to this information, do remember to submit for review again.</h6>
+			</div>
+			<div class="col-sm-3">
+				<button class="btn fnb-btn secondary-btn pull-right bolder make-edits-btn">Make Edits</button>
+			</div>
+		</div> -->
+
 		<div class="row">
 			<div class="col-sm-9">
-
 
 				<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 				  	<div class="panel panel-default">
@@ -29,7 +57,7 @@
 					          Total Restaurants: <span class="bat-color">1</span>
 					        </a>
 					      </h3>
-					      <button type="button" class="btn collapsed btn-link fnb-btn no-border text-primary bolder" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><i class="fa fa-chevron-up"></i></button>
+					      <!-- <button type="button" class="btn btn-link fnb-btn no-border text-primary bolder" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Edit</button> -->
 					    </div>
 					    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
 					      	<div class="panel-body">
@@ -69,7 +97,7 @@
 					          Food &amp; Beverages: <span class="bat-color">Kid-friendly Buffet, Snack Bar,  Breakfast in the Room, Bar</span>
 					        </a>
 					      </h3>
-					      <button type="button" class="btn collapsed btn-link fnb-btn no-border text-primary bolder" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"><i class="fa fa-chevron-up"></i></button>
+					      <!-- <button type="button" class="btn btn-link fnb-btn no-border text-primary bolder" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Edit</button> -->
 					    </div>
 					    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
 					      	<div class="panel-body">
@@ -209,7 +237,7 @@
 					          Fitness &amp; spa: <span class="bat-color">Yes</span>
 					        </a>
 					      </h3>
-					      <button type="button" class="btn collapsed btn-link fnb-btn no-border text-primary bolder" data-toggle="collapse" data-parent="#accordion" href="#collapseThree"><i class="fa fa-chevron-up"></i></button>
+					      <!-- <button type="button" class="btn btn-link fnb-btn no-border text-primary bolder" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Edit</button> -->
 					    </div>
 					    <div id="collapseThree" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingThree">
 					      	<div class="panel-body">
@@ -238,7 +266,7 @@
 					          Entertainment facilities: <span class="bat-color">Games Room</span>
 					        </a>
 					      </h3>
-					      <button type="button" class="btn collapsed btn-link fnb-btn no-border text-primary bolder" data-toggle="collapse" data-parent="#accordion" href="#collapseFour"><i class="fa fa-chevron-up"></i></button>
+					      <!-- <button type="button" class="btn btn-link fnb-btn no-border text-primary bolder" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">Edit</button> -->
 					    </div>
 					    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
 					      	<div class="panel-body">
@@ -267,7 +295,7 @@
 					          Business services: <span class="bat-color">Executive Lounge Access, Executive Meeting Room</span>
 					        </a>
 					      </h3>
-					      <button type="button" class="btn collapsed btn-link fnb-btn no-border text-primary bolder" data-toggle="collapse" data-parent="#accordion" href="#collapseFive"><i class="fa fa-chevron-up"></i></button>
+					      <!-- <button type="button" class="btn btn-link fnb-btn no-border text-primary bolder" data-toggle="collapse" data-parent="#accordion" href="#collapseFive">Edit</button> -->
 					    </div>
 					    <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
 					      	<div class="panel-body">
@@ -296,7 +324,7 @@
 					          Miscellaneous: <span class="bat-color">Airport Pickup</span>
 					        </a>
 					      </h3>
-					      <button type="button" class="btn collapsed btn-link fnb-btn no-border text-primary bolder" data-toggle="collapse" data-parent="#accordion" href="#collapseSix"><i class="fa fa-chevron-up"></i></button>
+					      <!-- <button type="button" class="btn btn-link fnb-btn no-border text-primary bolder" data-toggle="collapse" data-parent="#accordion" href="#collapseSix">Edit</button> -->
 					    </div>
 					    <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
 					      	<div class="panel-body">
@@ -325,7 +353,7 @@
 					          Complimentary services: <span class="bat-color">Free Newspaper</span>
 					        </a>
 					      </h3>
-					      <button type="button" class="btn collapsed btn-link fnb-btn no-border text-primary bolder" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven"><i class="fa fa-chevron-up"></i></button>
+					      <!-- <button type="button" class="btn btn-link fnb-btn no-border text-primary bolder" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven">Edit</button> -->
 					    </div>
 					    <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
 					      	<div class="panel-body">
@@ -354,7 +382,7 @@
 					          Recreation facilities: <span class="bat-color">Swimming Pool</span>
 					        </a>
 					      </h3>
-					      <button type="button" class="btn collapsed btn-link fnb-btn no-border text-primary bolder" data-toggle="collapse" data-parent="#accordion" href="#collapseEight"><i class="fa fa-chevron-up"></i></button>
+					      <!-- <button type="button" class="btn btn-link fnb-btn no-border text-primary bolder" data-toggle="collapse" data-parent="#accordion" href="#collapseEight">Edit</button> -->
 					    </div>
 					    <div id="collapseEight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEight">
 					      	<div class="panel-body">
@@ -376,7 +404,6 @@
 					    </div>
 				  	</div>
 				</div>
-
 
 			</div>
 

@@ -55,7 +55,12 @@
       </div>
       <div class="tabular__cell cell-full t-product">
         <a href="{{ $.Params.amenities.url }}">
-          <h6 class="text-muted m-t-0 m-b-5">Amenities &amp; Services</h6>
+          <h6 class="text-muted m-t-0 m-b-5">
+            Amenities &amp; Services
+            {{ if $.Params.amenities.hasedits }}
+              <i class="fa fa-exclamation-circle text-secondary"></i>
+            {{ end }}
+          </h6>
         </a>
         <p class="{{ if $.Params.amenities.pending }} text-danger {{ else }} text-primary {{ end }} m-b-0">
           {{ $.Params.amenities.pendingtext }}
