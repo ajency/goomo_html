@@ -25,7 +25,7 @@ amenities:
  qc: "--"
 
 images:
- url: "/goomo_html/property/images/"
+ url: "/goomo_html/property/images-new/"
  pending: true
  pendingtext: "Please add: Property images, Room images"
  checklist: false

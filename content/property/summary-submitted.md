@@ -25,7 +25,7 @@ amenities:
  qc: "Pending Review"
 
 images:
- url: "/goomo_html/property/images/"
+ url: "/goomo_html/property/images-submitted/"
  pending: false
  pendingtext: ""
  checklist: true
