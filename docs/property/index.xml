@@ -120,11 +120,47 @@
     </item>
     
     <item>
-      <title>Gallery</title>
-      <link>https://ajency.github.io/goomo_html/property/gallery/</link>
+      <title>Images</title>
+      <link>https://ajency.github.io/goomo_html/property/images-for-review/</link>
       <pubDate>Mon, 25 Sep 2017 11:31:18 +0530</pubDate>
       
-      <guid>https://ajency.github.io/goomo_html/property/gallery/</guid>
+      <guid>https://ajency.github.io/goomo_html/property/images-for-review/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Images</title>
+      <link>https://ajency.github.io/goomo_html/property/images-new/</link>
+      <pubDate>Mon, 25 Sep 2017 11:31:18 +0530</pubDate>
+      
+      <guid>https://ajency.github.io/goomo_html/property/images-new/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Images</title>
+      <link>https://ajency.github.io/goomo_html/property/images-published/</link>
+      <pubDate>Mon, 25 Sep 2017 11:31:18 +0530</pubDate>
+      
+      <guid>https://ajency.github.io/goomo_html/property/images-published/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Images</title>
+      <link>https://ajency.github.io/goomo_html/property/images-submitted/</link>
+      <pubDate>Mon, 25 Sep 2017 11:31:18 +0530</pubDate>
+      
+      <guid>https://ajency.github.io/goomo_html/property/images-submitted/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Images</title>
+      <link>https://ajency.github.io/goomo_html/property/images/</link>
+      <pubDate>Mon, 25 Sep 2017 11:31:18 +0530</pubDate>
+      
+      <guid>https://ajency.github.io/goomo_html/property/images/</guid>
       <description></description>
     </item>
     
