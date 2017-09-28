@@ -21,7 +21,7 @@ amenities:
  pendingtext: "New Edits: Coffee shop added in Food & Beverages"
  hasedits: true
  checklist: true
- qc: "Pending Approval"
+ qc: "Edits Pending Review"
 
 images:
  url: "/goomo_html/property/images-published-review/"
