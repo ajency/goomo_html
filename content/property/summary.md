@@ -42,21 +42,21 @@ contract:
  done: false
 
 bank:
- url: "/goomo_html/contract-finance/"
+ url: "/goomo_html/property/contract-finance-qc/"
  pending: true
  pendingtext: ""
  checklist: false
  qc: "--"
 
 tax:
- url: "/goomo_html/contract-finance/"
+ url: "/goomo_html/property/contract-finance-qc/"
  pending: true
  pendingtext: "Please Add: Minimum 1 rule"
  checklist: false
  qc: "--"
 
 digital:
- url: "/goomo_html/contract-finance/"
+ url: "/goomo_html/property/contract-finance-qc/"
  pending: true
  pendingtext: ""
  checklist: false
@@ -87,7 +87,7 @@ cancel:
  qc: "--"
 
 users:
- done: false
+ done: true
  url: "/goomo_html/property/users/"
  pending: true
  pendingtext: ""

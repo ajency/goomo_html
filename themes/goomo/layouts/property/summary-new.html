@@ -53,7 +53,7 @@
 					<h4 class="no-m-t fly-out-heading-size bat-color bolder">Your Property Details</h4>
 					<div class="flex-row property-status-box">
 						<div class="status-info">
-							Your property <strong>{{ .Params.property }}</strong> is currently in <strong>{{ .Params.status }}</strong> mode because some property information is not filled in. Please see below Property Info Checklist to understand the sections that you need to complete.
+							Your property <strong>{{ .Params.property }}</strong> is currently in <strong>{{ .Params.status | lower }}</strong> mode because some property information is not filled in. Please see below Property Info Checklist to understand the sections that you need to complete.
 						</div>
 						<div class="check-status">
 							Checklist Status:<br>

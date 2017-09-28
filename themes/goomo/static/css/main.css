@@ -149,7 +149,6 @@ span {
   -webkit-transition: all 0.6s ease;
           transition: all 0.6s ease;
   font-weight: 500;
-  text-transform: capitalize;
   border-radius: 4px;
 }
 .fnb-btn.outline {
@@ -1979,6 +1978,14 @@ input[type="checkbox"].toggle__check {
   .fnb-banner:after {
     display: none;
   }
+}
+footer {
+  background-color: #002d3a;
+  padding: 1.5em;
+  text-align: center;
+  color: #fff;
+  font-size: 0.9em;
+  margin-top: 20px;
 }
 .arrow_box {
   position: relative;
@@ -9220,6 +9227,8 @@ input[type='checkbox'].remove-addr {
       -ms-flex-preferred-size: 55%;
           flex-basis: 55%;
   border-right: 1px solid #c5c5c5;
+  -webkit-transition: all 0.5s ease;
+          transition: all 0.5s ease;
 }
 .property-status-box .status-info strong {
   color: #378f9e;
@@ -9233,6 +9242,8 @@ input[type='checkbox'].remove-addr {
   text-align: center;
   color: #9b9b9b;
   font-size: 0.85em;
+  -webkit-transition: all 0.5s ease;
+          transition: all 0.5s ease;
 }
 .property-status-box .qc-status {
   padding: 15px;
@@ -9242,6 +9253,8 @@ input[type='checkbox'].remove-addr {
   text-align: center;
   color: #9b9b9b;
   font-size: 0.85em;
+  -webkit-transition: all 0.5s ease;
+          transition: all 0.5s ease;
 }
 .property-status-box .qc-status h6 {
   font-size: 1.5em;
@@ -9268,6 +9281,35 @@ input[type='checkbox'].remove-addr {
         -ms-flex-preferred-size: 50%;
             flex-basis: 50%;
   }
+}
+.property-status-box.disabled {
+  position: relative;
+}
+.property-status-box.disabled .status-info,
+.property-status-box.disabled .check-status,
+.property-status-box.disabled .qc-status {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.property-status-box.disabled .status-info img,
+.property-status-box.disabled .check-status img,
+.property-status-box.disabled .qc-status img {
+  margin-top: 0px;
+}
+.property-status-box.disabled .status-label {
+  display: none;
+}
+.property-status-box.disabled:after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-image: url(/goomo_html/img/repeating-bg.png);
+  content: '';
+  opacity: 0.4;
 }
 i.w-border {
   font-size: 1em;

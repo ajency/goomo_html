@@ -1,8 +1,24 @@
 {{ define "main" }}
 	<div class="c-gap">
-		<div class="flex-row property-status-box">
-			<div class="status-info">
+		<div class="flex-row property-status-box default-status">
+			<div class="status-info flex-row">
 				All done! Your property is now Approved.
+			</div>
+			<div class="check-status">
+				<div class="status-label">Checklist Status:<br></div>
+				<img src="{{"img/green-check-circle.png" | absURL}}" class="img-responsive m-t-15 center-block" width="">
+			</div>
+			<div class="qc-status">
+				<div class="status-label">QC Status:<br></div>
+				<h6 class="text-primary">Approved</h6>
+			</div>
+		</div>
+
+		<div class="flex-row property-status-box editing-status m-t-20 m-b-20 hidden">
+			<div class="status-info flex-row">
+				<div>
+					When you are done making edits to the information below, please submit for review. When our QC team approves, these changes will be seen on your property page on Goomo.com <img src="{{"img/finger.png" | absURL}}" class="" width="">
+				</div>
 			</div>
 			<div class="check-status">
 				Checklist Status:<br>
@@ -10,22 +26,21 @@
 			</div>
 			<div class="qc-status">
 				QC Status:<br>
-				<h6 class="text-primary">Approved</h6>
+				<button class="btn btn-white outline fnb-btn m-t-15">Submit for Review</button>
 			</div>
 		</div>
 
-		<div class="row m-t-20 m-b-20">
+		<div class="row m-t-20 m-b-20 edit-action-box">
 			<div class="col-sm-9">
-				<h6 class="">The details below are QC approved. If you make edits to this information, do remember to submit for review again.</h6>
+				<h6 class="bolder">The details below are QC approved. If you make edits to this information, do remember to submit for review again.</h6>
 			</div>
 			<div class="col-sm-3">
-				<button class="btn fnb-btn secondary-btn pull-right bolder">Make Edits</button>
+				<button class="btn fnb-btn secondary-btn pull-right bolder make-edits-btn">Make Edits</button>
 			</div>
 		</div>
 
 		<div class="row">
 			<div class="col-sm-9">
-
 
 				<div class="panel-group disabled" id="accordion" role="tablist" aria-multiselectable="true">
 				  	<div class="panel panel-default">
@@ -382,7 +397,6 @@
 					    </div>
 				  	</div>
 				</div>
-
 
 			</div>
 

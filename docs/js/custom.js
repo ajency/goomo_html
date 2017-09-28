@@ -68,4 +68,11 @@ $(document).ready(function() {
 		});
 	}
 
+	$('body').on('click', '.make-edits-btn', function(){
+		$('.default-status').addClass('disabled');
+		$('.edit-action-box').addClass('hidden');
+		$('.editing-status').removeClass('hidden');
+		$('.panel-group').removeClass('disabled');
+	});
+
 });
