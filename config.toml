@@ -20,13 +20,13 @@ theme = "goomo"
 [[menu.main]]
     name = "Reviews"
     pre = "<i class='fa fa-comments-o'></i>"
-    weight = -99
+    weight = -98
     identifier = "review"
     url = "#"
  [[menu.main]]
      name = "Rates & Availability"
      pre = "<i class='fa fa-money'></i>"
-     weight = -98
+     weight = -99
      identifier = "rates-availability"
      url = "#"
 [[menu.main]]
@@ -84,6 +84,6 @@ theme = "goomo"
     name = "Contract & Finance"
     parent = "property-details"
     pre = "<i class='fa fa-address-card-o'></i>"
-    weight = -97
+    weight = -72
     identifier = "finance"
     url = "#"

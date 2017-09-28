@@ -6,6 +6,8 @@ layout: summary-submitted
 property: "Riverfront"
 status: "Pending Review"
 
+viewdash: true
+
 propertyinfo:
  done: false
 

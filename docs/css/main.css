@@ -9397,7 +9397,7 @@ i.w-border {
   text-decoration: none;
 }
 .t-product a:hover h6 {
-  color: #ff8500;
+  text-decoration: underline;
 }
 .qc-overlay {
   position: absolute;
