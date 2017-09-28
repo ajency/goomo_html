@@ -10177,6 +10177,7 @@ i.w-border {
     -webkit-flex: 1 0 calc(50% - 1.6em);
         -ms-flex: 1 0 calc(50% - 1.6em);
             flex: 1 0 calc(50% - 1.6em);
+    max-width: calc(50% - 1.6em);
   }
 }
 .profile-stats {
