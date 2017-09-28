@@ -5,8 +5,6 @@ draft: false
 layout: services-submitted
 property: "Riverfront"
 
-allproperty:
- url: "/goomo_html/extranet/properties/"
 
 ---
 

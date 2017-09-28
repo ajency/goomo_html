@@ -5,8 +5,6 @@ draft: false
 layout: services-new
 property: "Casa Bella"
 
-allproperty:
- url: "/goomo_html/extranet/properties/"
 
 ---
 
