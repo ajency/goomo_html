@@ -157,7 +157,7 @@ span {
 .fnb-btn.outline:active {
   background-color: #378f9e;
   color: #fff;
-  border: 2px solid;
+  border: 1px solid;
 }
 .fnb-btn.s-outline {
   background-color: #fff;
@@ -168,7 +168,7 @@ span {
 .fnb-btn.s-outline:active {
   background-color: #ff8500;
   color: #fff;
-  border: 2px solid;
+  border: 1px solid;
 }
 .fnb-btn.half-border {
   border-bottom: 2px solid;
@@ -190,7 +190,7 @@ span {
 .fnb-btn.primary-btn:hover {
   background-color: #fff;
   color: #378f9e;
-  border: 2px solid;
+  border: 1px solid;
 }
 .fnb-btn.secondary-btn {
   background-color: #ff8500;
@@ -199,7 +199,7 @@ span {
 .fnb-btn.secondary-btn:hover {
   background-color: #fff;
   color: #ff8500;
-  border: 2px solid;
+  border: 1px solid;
 }
 .fnb-btn.transparent {
   border-color: #000;

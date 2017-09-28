@@ -6,6 +6,7 @@ layout: services-published-review
 property: "Hotel Eden"
 status: "Active"
 
+hashistory: true
 
 ---
 

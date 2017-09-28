@@ -28,12 +28,16 @@
 				QC Status:<br>
 				<h6 class="text-secondary">Edits Pending Review</h6>
 				<!-- <p class="bat-color m-t-10">New Edits</p> -->
-				<select class="fnb-select select-variant form-control suggestion-select bat-color">
-                    <option value="">--Select--</option>
-                    <option selected="">Edit Suggested</option>
-                </select>
-                <a href="#" class="secondary-link open-sidebar form-toggle text-decor label-size leave-com">Leave a comment</a>
-				<!-- <button class="btn btn-white outline fnb-btn m-t-15">Submit for Review</button> -->
+				<div class="flex-row justify-center">
+					<!-- <select class="fnb-select select-variant form-control suggestion-select bat-color">
+	                    <option value="">--Select--</option>
+	                    <option value="suggest">Suggest Edits</option>
+	                    <option >Approve</option>
+	                </select> -->
+					<button class="btn btn-white s-outline outline fnb-btn small open-sidebar ">Suggest Edits</button>
+					<button class="btn btn-white secondary-btn outline fnb-btn small  ">Approve</button>
+				</div>
+                <!-- <a href="#" class="secondary-link open-sidebar form-toggle text-decor label-size leave-com">Leave a comment</a> -->
 			</div>
 		</div>
 
@@ -93,13 +97,13 @@
 				  	<div class="panel panel-default">
 					    <div class="panel-heading flex-row space-between" role="tab" id="headingTwo">
 					      <h3 class="no-m-t fly-out-heading-size">
-					        <a class="collapsed done" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" data-step="2" data-step-of="2 of 8">
-					          Food &amp; Beverages: <span class="bat-color">Kid-friendly Buffet, Snack Bar,  Breakfast in the Room, Bar</span>
+					        <a class="na done" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" data-step="2" data-step-of="2 of 8">
+					          Food &amp; Beverages: <span class="bat-color">Kid-friendly Buffet, Snack Bar,  Breakfast in the Room, Bar, Coffee Shop</span>
 					        </a>
 					      </h3>
 					      <!-- <button type="button" class="btn btn-link fnb-btn no-border text-primary bolder" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Edit</button> -->
 					    </div>
-					    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+					    <div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingTwo">
 					      	<div class="panel-body">
 				                <div class="row">
 				                	<div class="col-sm-12">
@@ -157,7 +161,7 @@
 			        	        			  			<div class="col-sm-4">
 			        	        			  				<div class="checkbox">
 			  					        	        			<label>
-			  					        	        			    <input type="checkbox" value="" class="">
+			  					        	        			    <input type="checkbox" value="" class="" checked="">
 			  					        	        			    Coffee Shop
 			  				        	        			  	</label>
 			        	        			  				</div>

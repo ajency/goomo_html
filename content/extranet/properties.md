@@ -21,6 +21,12 @@ chalston:
 riverfront:
  url: "/goomo_html/property/summary-submitted/"
 
+panjiminn:
+ url: "/goomo_html/property/summary-published-edit/"
+
+eden:
+ url: "/goomo_html/property/summary-published-review/"
+
 createnew:
  url: "/goomo_html/extranet/create/"
 

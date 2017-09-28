@@ -4,7 +4,7 @@ date: 2017-09-27T11:22:04+05:30
 draft: false
 layout: summary-published-review
 property: "Hotel Eden"
-status: "Active"
+status: "Active (Pending Review)"
 
 propertyinfo:
  done: true
