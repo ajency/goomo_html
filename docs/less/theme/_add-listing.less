@@ -2532,6 +2532,7 @@ input[type='checkbox'].remove-addr{
 		padding: 15px;
 		flex-basis: 55%;
 		border-right: 1px solid #c5c5c5;
+		transition: all 0.5s ease;
 		strong{
 			color: @accent-primary;
 		}
@@ -2543,6 +2544,7 @@ input[type='checkbox'].remove-addr{
 		text-align: center;
 		color: #9b9b9b;
 		font-size: 0.85em;
+		transition: all 0.5s ease;
 	}
 	.qc-status{
 		padding: 15px;
@@ -2550,6 +2552,7 @@ input[type='checkbox'].remove-addr{
 		text-align: center;
 		color: #9b9b9b;
 		font-size: 0.85em;
+		transition: all 0.5s ease;
 		h6{
 			font-size: 1.5em;
 			font-weight: 600;
@@ -2567,6 +2570,32 @@ input[type='checkbox'].remove-addr{
 		}
 		.check-status, .qc-status{
 			flex-basis: 50%;
+		}
+	}
+
+	&.disabled{
+		position: relative;
+		.status-info, .check-status, .qc-status{
+			padding-top: 5px;
+			padding-bottom: 5px;
+			img{
+				margin-top: 0px;
+			}
+		}
+		.status-label{
+			display: none;
+		}
+		&:after{
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			background-image: url(/goomo_html/img/repeating-bg.png);
+			content: '';
+			opacity: 0.4;
 		}
 	}
 }
