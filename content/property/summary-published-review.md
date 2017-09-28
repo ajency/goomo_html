@@ -24,7 +24,7 @@ amenities:
  qc: "Pending Approval"
 
 images:
- url: "/goomo_html/property/images-published/"
+ url: "/goomo_html/property/images-published-review/"
  pending: false
  pendingtext: ""
  checklist: true
@@ -41,19 +41,19 @@ contract:
  done: true
 
 bank:
- url: "/goomo_html/property/contract-finance-qc/"
+ url: "/goomo_html/property/qc-published-review/"
  checklist: true
  qc: "Approved"
 
 tax:
- url: "/goomo_html/property/contract-finance-qc/"
+ url: "/goomo_html/property/qc-published-review/"
  pending: false
  pendingtext: ""
  checklist: true
  qc: "Approved"
 
 digital:
- url: "/goomo_html/property/contract-finance-qc/"
+ url: "/goomo_html/property/qc-published-review/"
  checklist: true
  qc: "Approved"
 
