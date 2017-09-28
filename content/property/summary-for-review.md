@@ -23,7 +23,7 @@ amenities:
  qc: "--"
 
 images:
- url: "/goomo_html/property/images/"
+ url: "/goomo_html/property/images-for-review/"
  pending: false
  pendingtext: ""
  checklist: true

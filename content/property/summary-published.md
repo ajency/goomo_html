@@ -23,7 +23,7 @@ amenities:
  qc: "Approved"
 
 images:
- url: "/goomo_html/property/images/"
+ url: "/goomo_html/property/images-published/"
  pending: false
  pendingtext: ""
  checklist: true
