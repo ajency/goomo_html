@@ -10077,6 +10077,23 @@ i.w-border {
 .property-image .property-pics {
   margin: 0.8em;
 }
+.property-image .external-pic {
+  margin: 0.8em;
+  cursor: pointer;
+}
+.property-image .external-pic > div {
+  background-repeat: no-repeat;
+  display: block;
+  height: 150px;
+  width: 200px;
+  background-position: center;
+  border: 4px solid #e9eff4;
+  border-radius: 4px;
+  background-size: cover;
+}
+.edit-img {
+  width: 100%;
+}
 .close.g-close {
   height: 22px;
   width: 22px;
