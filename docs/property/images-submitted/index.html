@@ -11,6 +11,7 @@
 		<link rel="stylesheet" type="text/css" href="https://ajency.github.io/goomo_html/css/font-awesome/css/font-awesome.min.css">
 		<link rel="shortcut icon" href="https://ajency.github.io/goomo_html/img/favicon.ico" type="image/x-icon" />
 		<link rel="stylesheet" href="https://ajency.github.io/goomo_html/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://ajency.github.io/goomo_html/css/jquery.flexdatalist.min.css">
 		<link href="https://ajency.github.io/goomo_html/css/main.css" rel="stylesheet">
 	</head>
 	<body class="overflow-section">
@@ -593,45 +594,30 @@
 					<button class="btn fnb-btn s-outline border-btn bold-btn full m-t-10 flex-row add-pic" data-toggle="modal" data-target="#add-photos"><i class="fa fa-picture-o p-r-10" aria-hidden="true"></i> Add Images</button>
 				</div>
 				<div class="flex-row flex-wrap m-t-15">
-					<div class="property-pics">
-						<a href="#" data-toggle="modal" data-target="#edit-photos">
-							<img src="https://ajency.github.io/goomo_html/img/property-pic.png" class="img-responsive">
-						</a>
+					<div class="property-pics external-pic pic-1" data-toggle="modal" data-target="#edit-photos">
+						<div style="background-image: url(https://ajency.github.io/goomo_html/img/hotel-1.PNG)">
+						</div>
+						<img src="https://ajency.github.io/goomo_html/img/image-edit.png" class="img-responsive edit-img">
 					</div>
-					<div class="property-pics">
-						<a href="#" data-toggle="modal" data-target="#edit-photos">
-							<img src="https://ajency.github.io/goomo_html/img/property-pic.png" class="img-responsive">
-						</a>
+					<div class="property-pics external-pic pic-2" data-toggle="modal" data-target="#edit-photos">
+						<div style="background-image: url(https://ajency.github.io/goomo_html/img/hotel-2.PNG)">
+						</div>
+						<img src="https://ajency.github.io/goomo_html/img/image-edit.png" class="img-responsive edit-img">
 					</div>
-					<div class="property-pics">
-						<a href="#" data-toggle="modal" data-target="#edit-photos">
-							<img src="https://ajency.github.io/goomo_html/img/property-pic.png" class="img-responsive">
-						</a>
+					<div class="property-pics external-pic pic-3" data-toggle="modal" data-target="#edit-photos">
+						<div style="background-image: url(https://ajency.github.io/goomo_html/img/hotel-3.png)">
+						</div>
+						<img src="https://ajency.github.io/goomo_html/img/image-edit.png" class="img-responsive edit-img">
 					</div>
-					<div class="property-pics">
-						<a href="#" data-toggle="modal" data-target="#edit-photos">
-							<img src="https://ajency.github.io/goomo_html/img/property-pic.png" class="img-responsive">
-						</a>
+					<div class="property-pics external-pic pic-4" data-toggle="modal" data-target="#edit-photos">
+						<div style="background-image: url(https://ajency.github.io/goomo_html/img/hotel-4.jpg)">
+						</div>
+						<img src="https://ajency.github.io/goomo_html/img/image-edit.png" class="img-responsive edit-img">
 					</div>
-					<div class="property-pics">
-						<a href="#" data-toggle="modal" data-target="#edit-photos">
-							<img src="https://ajency.github.io/goomo_html/img/property-pic.png" class="img-responsive">
-						</a>
-					</div>
-					<div class="property-pics">
-						<a href="#" data-toggle="modal" data-target="#edit-photos">
-							<img src="https://ajency.github.io/goomo_html/img/property-pic.png" class="img-responsive">
-						</a>
-					</div>
-					<div class="property-pics">
-						<a href="#" data-toggle="modal" data-target="#edit-photos">
-							<img src="https://ajency.github.io/goomo_html/img/property-pic.png" class="img-responsive">
-						</a>
-					</div>
-					<div class="property-pics">
-						<a href="#" data-toggle="modal" data-target="#edit-photos">
-							<img src="https://ajency.github.io/goomo_html/img/property-pic.png" class="img-responsive">
-						</a>
+					<div class="property-pics external-pic pic-2" data-toggle="modal" data-target="#edit-photos">
+						<div style="background-image: url(https://ajency.github.io/goomo_html/img/hotel-2.PNG)">
+						</div>
+						<img src="https://ajency.github.io/goomo_html/img/image-edit.png" class="img-responsive edit-img">
 					</div>
 				</div>
 			</div>
@@ -764,8 +750,13 @@
                             <span>Tell us what's in this photo by adding tags - tags helps us assist guest with their search &amp; connect them to your property.</span>
                         </div>
                         <button class="m-t-20 m-b-20 btn fnb-btn secondary-btn border-btn bold-btn m-t-10 flex-row space-between add-pic"><span><i class="fa fa-tag p-r-10" aria-hidden="true"></i> Swimming Pool</span> <span class="p-l-5">&#10005;</span></button>
-                        
-                        <button class="btn fnb-btn primary-btn border-btn bold-btn full m-t-10 flex-row add-pic"><i class="fa fa-tag p-r-10" aria-hidden="true"></i> Add Tags</button>
+                     
+
+                        <input type="text" class="form-control fnb-input payment-add flexdatalist" multiple="multiple" placeholder="+Add Tags" list="locations" value="Deluxe Room">
+                            <datalist id="locations">
+                                <option value="premier">Premier Room</option>
+                                <option value="deluxe">Deluxe Room</option>
+                            </datalist>
 
                         <div class="m-t-20">
                             <p class="label-size">Indicate if this is a Rooms photo:</p>
@@ -882,6 +873,9 @@
 		<script type="text/javascript" src="/goomo_html/js/datatables.net/js/jquery.dataTables.min.js"></script>
 
 		<script type="text/javascript" src="/goomo_html/js/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+
+		
+		<script type="text/javascript" src="/goomo_html/js/flex-datalist/jquery.flexdatalist.min.js"></script>
 
 		<script type="text/javascript" src="/goomo_html/js/custom.js"></script>
 	</body>

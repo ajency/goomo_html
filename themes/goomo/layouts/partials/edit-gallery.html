@@ -12,8 +12,14 @@
                             <span>Tell us what's in this photo by adding tags - tags helps us assist guest with their search &amp; connect them to your property.</span>
                         </div>
                         <button class="m-t-20 m-b-20 btn fnb-btn secondary-btn border-btn bold-btn m-t-10 flex-row space-between add-pic"><span><i class="fa fa-tag p-r-10" aria-hidden="true"></i> Swimming Pool</span> <span class="p-l-5">&#10005;</span></button>
-                        
-                        <button class="btn fnb-btn primary-btn border-btn bold-btn full m-t-10 flex-row add-pic"><i class="fa fa-tag p-r-10" aria-hidden="true"></i> Add Tags</button>
+                     <!--    
+                        <button class="btn fnb-btn primary-btn border-btn bold-btn full m-t-10 flex-row add-pic"><i class="fa fa-tag p-r-10" aria-hidden="true"></i> Add Tags</button> -->
+
+                        <input type="text" class="form-control fnb-input payment-add flexdatalist" multiple="multiple" placeholder="+Add Tags" list="locations" value="Deluxe Room">
+                            <datalist id="locations">
+                                <option value="premier">Premier Room</option>
+                                <option value="deluxe">Deluxe Room</option>
+                            </datalist>
 
                         <div class="m-t-20">
                             <p class="label-size">Indicate if this is a Rooms photo:</p>
