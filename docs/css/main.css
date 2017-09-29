@@ -10091,6 +10091,11 @@ i.w-border {
   border-radius: 4px;
   background-size: cover;
 }
+@media screen and (max-width: 768px) {
+  .property-image .external-pic > div {
+    width: 100%;
+  }
+}
 .edit-img {
   width: 100%;
 }
@@ -10109,6 +10114,15 @@ i.w-border {
   padding: 1em;
   margin: 1em;
   background-color: #fffdeb;
+}
+@media screen and (max-width: 768px) {
+  .edit-gallery {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
 }
 .fnb-modal.edit-photos .modal-content {
   padding: 0;

@@ -3390,6 +3390,9 @@ i.w-border{
     		border: 4px solid #e9eff4;
     		border-radius: 4px;
     		background-size: cover;
+    		@media screen and (max-width: @mobile){
+    			width: 100%;
+    		}
 		}
 	}
 }
@@ -3417,6 +3420,12 @@ i.w-border{
     background-color: #fffdeb;
 }
 
+
+.edit-gallery{
+	@media screen and (max-width: @mobile){
+		flex-direction: column-reverse;
+	}
+}
 
 .fnb-modal.edit-photos{
 	.modal-content{
