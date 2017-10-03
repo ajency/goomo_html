@@ -126,6 +126,28 @@
         <!-- <span class="desk-hide">QC Status: </span> {{ .Params.policies.qc }} -->
       </div>
     </div>
+    <div class="tabular__row flex-row">
+      <div class="tabular__cell cell-2">
+      </div>
+      <div class="tabular__cell cell-full t-product">
+        <a href="{{ $.Params.desc.url }}">
+          <h6 class="text-muted m-t-0 m-b-5">Description</h6>
+        </a>
+        <p class="{{ if $.Params.desc.pending }} text-danger {{ else }} text-primary {{ end }} m-b-0">
+          {{ $.Params.desc.pendingtext }}
+        </p>
+      </div>
+      <div class="tabular__cell cell-6 t-listing text-center ">
+        {{ if $.Params.desc.checklist }}
+          <img src="{{"img/green-check.png" | absURL}}" class="img-responsive center-block" width="">
+        {{ else }}
+          <i class="fa fa-circle text-muted"></i>
+        {{ end }}
+      </div>
+      <div class="tabular__cell cell-6 t-seller text-center mobile-qc">
+        <!-- <span class="desk-hide">QC Status: </span> {{ .Params.desc.qc }} -->
+      </div>
+    </div>
   </div>
 
   <hr class="mobile-hide">

@@ -38,6 +38,13 @@ policies:
  checklist: false
  qc: "--"
 
+desc:
+ url: "#"
+ pending: true
+ pendingtext: "To be added by Goomo Content team"
+ checklist: false
+ qc: "--"
+
 contract:
  done: false
 

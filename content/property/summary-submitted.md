@@ -38,6 +38,13 @@ policies:
  checklist: true
  qc: "Pending Review"
 
+desc:
+ url: "#"
+ pending: false
+ pendingtext: ""
+ checklist: true
+ qc: "--"
+
 contract:
  done: false
 

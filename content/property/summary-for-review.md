@@ -36,6 +36,13 @@ policies:
  checklist: true
  qc: "--"
 
+desc:
+  url: "#"
+  pending: true
+  pendingtext: ""
+  checklist: true
+  qc: "--"
+
 contract:
  done: false
 

@@ -82,6 +82,10 @@ $(document).ready(function() {
 	    }
 	})
 
-
+	$('.overview-text').readmore({
+	  speed: 75,
+	  collapsedHeight: 40,
+	  lessLink: '<a href="#">Less</a>'
+	});
 
 });
