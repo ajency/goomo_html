@@ -554,12 +554,28 @@
 																	
 	<div class="">
 
-		<div class="row">
+		
+			<div class="flex-row property-status-box m-b-30">
+				<div class="status-info flex-row">
+					Please add images of your property. To make it easy for you, we have sections for property and room images.
+				</div>
+				<div class="check-status">
+					Checklist Status:<br>
+					<i class="fa fa-circle w-border m-t-15"></i>
+				</div>
+				<div class="qc-status">
+					QC Status:
+					<h6 class="text-secondary">Info Needed</h6>
+				</div>
+			</div>
+		
+
+		<div class="row m-t-20">
 			<div class="col-sm-12">
 				<h6 class="no-m-t fly-out-heading-size bat-color bolder m-b-20">Summary</h6>
 				<div class="gallery-stat flex-row">
 					<div class="property-image gallery-stat__row">
-						<h5 class="number bolder">30 <i class="fa fa-picture-o x-small text-lighter p-l-5" aria-hidden="true"></i></h5>
+						<h5 class="number bolder">30 <i class="fa fa-picture-o x-small p-l-5" aria-hidden="true"></i></h5>
 						<p class="m-b-0 lighter">Property Images</p>
 					</div>
 					<div class="room-bar subRow gallery-stat__row">
@@ -571,144 +587,149 @@
 						<p class="m-b-0">Grand Deluxe Room</p>
 					</div>
 				</div>
-	
-			<div class="property-image m-t-40 p-t-20">
-				<div class="flex-row space-between titleRow">
-					<div class="flex-row subrow">
-						<h6 class="no-m-t fly-out-heading-size bat-color bolder m-b-15 flex-row">
-							Summary
-						</h6>
-						<div class="flex-row">
-							<select class="fnb-select select-variant form-control text-lighter">
-			                    <option value="">-Select Room-</option>
-			                    <option value="">Deluxe Room</option>
-			                </select>
-			                <button class="fnb-btn check-btn">
-			                	<i class="fa fa-check" aria-hidden="true"></i>
-			                </button>
-			                <button class="fnb-btn delete-btn">
-			                	<i class="fa fa-trash" aria-hidden="true"></i>
-			                </button>
-						</div>
-					</div>
-					<button class="btn fnb-btn s-outline border-btn bold-btn full m-t-10 flex-row add-pic" data-toggle="modal" data-target="#add-photos"><i class="fa fa-picture-o p-r-10" aria-hidden="true"></i> Add Images</button>
-				</div>
-				<div class="flex-row flex-wrap m-t-15">
-					<div class="property-pics external-pic pic-1" data-toggle="modal" data-target="#edit-photos">
-						<div style="background-image: url(https://ajency.github.io/goomo_html/img/hotel-1.PNG)">
-						</div>
-						<img src="https://ajency.github.io/goomo_html/img/image-edit.png" class="img-responsive edit-img">
-					</div>
-					<div class="property-pics external-pic pic-2" data-toggle="modal" data-target="#edit-photos">
-						<div style="background-image: url(https://ajency.github.io/goomo_html/img/hotel-2.PNG)">
-						</div>
-						<img src="https://ajency.github.io/goomo_html/img/image-edit.png" class="img-responsive edit-img">
-					</div>
-					<div class="property-pics external-pic pic-3" data-toggle="modal" data-target="#edit-photos">
-						<div style="background-image: url(https://ajency.github.io/goomo_html/img/hotel-3.png)">
-						</div>
-						<img src="https://ajency.github.io/goomo_html/img/image-edit.png" class="img-responsive edit-img">
-					</div>
-					<div class="property-pics external-pic pic-4" data-toggle="modal" data-target="#edit-photos">
-						<div style="background-image: url(https://ajency.github.io/goomo_html/img/hotel-4.jpg)">
-						</div>
-						<img src="https://ajency.github.io/goomo_html/img/image-edit.png" class="img-responsive edit-img">
-					</div>
-					<div class="property-pics external-pic pic-2" data-toggle="modal" data-target="#edit-photos">
-						<div style="background-image: url(https://ajency.github.io/goomo_html/img/hotel-2.PNG)">
-						</div>
-						<img src="https://ajency.github.io/goomo_html/img/image-edit.png" class="img-responsive edit-img">
-					</div>
-				</div>
-			</div>
 
-			<div class="property-image premier-room m-t-40 p-t-20">
-				<div class="flex-row space-between titleRow">
-					<div class="flex-row">
-						<h6 class="no-m-t fly-out-heading-size bat-color bolder m-b-5 flex-row">
-							Premier Room + BAR
-						</h6>
+				<div class="actions-wrapper ">
+					<div class="alert alert-info m-b-0 m-t-25 flex-row">
+						<i class="fa fa-info-circle p-r-10 text-info" aria-hidden="true"></i>
+						<span>Once you upload images, you can click and drag to reorder them.</span>
 					</div>
-					<button class="btn fnb-btn s-outline border-btn bold-btn full m-t-10 flex-row add-pic" data-toggle="modal" data-target="#add-photos"><i class="fa fa-picture-o p-r-10" aria-hidden="true"></i> Add Photos</button>
-				</div>
-				<div class="warning-bar flex-row">
-					<i class="fa fa-info-circle p-r-10 text-secondary" aria-hidden="true"></i>
-					<span>You have not uploaded any images for this room yet. Add atleast <span class="text-secondary"> 5 images </span> or assign images from property images gallery above.</span>
-				</div>
-				<div class="flex-row flex-wrap m-t-15">
-					<div class="property-pics">
-						<a href="#">
-							<img src="https://ajency.github.io/goomo_html/img/placeholder.png" class="img-responsive">
-						</a>
-					</div>
-					<div class="property-pics">
-						<a href="#">
-							<img src="https://ajency.github.io/goomo_html/img/placeholder.png" class="img-responsive">
-						</a>
-					</div>
-					<div class="property-pics">
-						<a href="#">
-							<img src="https://ajency.github.io/goomo_html/img/placeholder.png" class="img-responsive">
-						</a>
-					</div>
-					<div class="property-pics">
-						<a href="#">
-							<img src="https://ajency.github.io/goomo_html/img/placeholder.png" class="img-responsive">
-						</a>
-					</div>
-					<div class="property-pics">
-						<a href="#">
-							<img src="https://ajency.github.io/goomo_html/img/placeholder.png" class="img-responsive">
-						</a>
-					</div>
-				</div>
-			</div>
 
-			<div class="property-image premier-room m-t-40 p-t-20">
-				<div class="flex-row space-between titleRow">
-					<div class="flex-row">
-						<h6 class="no-m-t fly-out-heading-size bat-color bolder m-b-5 flex-row">
-							Grand Deluxe Room
-						</h6>
+					<div class="property-image m-t-10 p-t-20">
+						<div class="flex-row space-between titleRow">
+							<div class="flex-row subrow">
+								<h6 class="no-m-t fly-out-heading-size bat-color bolder m-b-15 flex-row">
+									Property Images
+								</h6>
+								<div class="flex-row">
+									<select class="fnb-select select-variant form-control text-lighter">
+					                    <option value="">-Select Room-</option>
+					                    <option value="">Deluxe Room</option>
+					                </select>
+					                <button class="fnb-btn check-btn">
+					                	<i class="fa fa-check" aria-hidden="true"></i>
+					                </button>
+					                <button class="fnb-btn delete-btn">
+					                	<i class="fa fa-trash" aria-hidden="true"></i>
+					                </button>
+								</div>
+							</div>
+							<button class="btn fnb-btn s-outline border-btn bold-btn full m-t-10 flex-row add-pic" data-toggle="modal" data-target="#add-photos"><i class="fa fa-picture-o p-r-10" aria-hidden="true"></i> Add Images</button>
+						</div>
+						<div class="flex-row flex-wrap m-t-15">
+							<div class="property-pics external-pic pic-1" data-toggle="modal" data-target="#edit-photos">
+								<div style="background-image: url(https://ajency.github.io/goomo_html/img/hotel-1.PNG)">
+								</div>
+								<img src="https://ajency.github.io/goomo_html/img/image-edit.png" class="img-responsive edit-img">
+							</div>
+							<div class="property-pics external-pic pic-2" data-toggle="modal" data-target="#edit-photos">
+								<div style="background-image: url(https://ajency.github.io/goomo_html/img/hotel-2.PNG)">
+								</div>
+								<img src="https://ajency.github.io/goomo_html/img/image-edit.png" class="img-responsive edit-img">
+							</div>
+							<div class="property-pics external-pic pic-3" data-toggle="modal" data-target="#edit-photos">
+								<div style="background-image: url(https://ajency.github.io/goomo_html/img/hotel-3.png)">
+								</div>
+								<img src="https://ajency.github.io/goomo_html/img/image-edit.png" class="img-responsive edit-img">
+							</div>
+							<div class="property-pics external-pic pic-4" data-toggle="modal" data-target="#edit-photos">
+								<div style="background-image: url(https://ajency.github.io/goomo_html/img/hotel-4.jpg)">
+								</div>
+								<img src="https://ajency.github.io/goomo_html/img/image-edit.png" class="img-responsive edit-img">
+							</div>
+							<div class="property-pics external-pic pic-2" data-toggle="modal" data-target="#edit-photos">
+								<div style="background-image: url(https://ajency.github.io/goomo_html/img/hotel-2.PNG)">
+								</div>
+								<img src="https://ajency.github.io/goomo_html/img/image-edit.png" class="img-responsive edit-img">
+							</div>
+						</div>
 					</div>
-					<button class="btn fnb-btn s-outline border-btn bold-btn full m-t-10 flex-row add-pic" data-toggle="modal" data-target="#add-photos"><i class="fa fa-picture-o p-r-10" aria-hidden="true"></i> Add Photos</button>
+
+					<div class="property-image premier-room m-t-40 p-t-20">
+						<div class="flex-row space-between titleRow">
+							<div class="flex-row">
+								<h6 class="no-m-t fly-out-heading-size bat-color bolder m-b-5 flex-row">
+									Premier Room + BAR
+								</h6>
+							</div>
+							<button class="btn fnb-btn s-outline border-btn bold-btn full m-t-10 flex-row add-pic" data-toggle="modal" data-target="#add-photos"><i class="fa fa-picture-o p-r-10" aria-hidden="true"></i> Add Photos</button>
+						</div>
+						<div class="warning-bar flex-row">
+							<i class="fa fa-info-circle p-r-10 text-secondary" aria-hidden="true"></i>
+							<span>You have not uploaded any images for this room yet. Add atleast <span class="text-secondary"> 5 images </span> or assign images from property images gallery above.</span>
+						</div>
+						<div class="flex-row flex-wrap m-t-15">
+							<div class="property-pics">
+								<a href="#">
+									<img src="https://ajency.github.io/goomo_html/img/placeholder.png" class="img-responsive">
+								</a>
+							</div>
+							<div class="property-pics">
+								<a href="#">
+									<img src="https://ajency.github.io/goomo_html/img/placeholder.png" class="img-responsive">
+								</a>
+							</div>
+							<div class="property-pics">
+								<a href="#">
+									<img src="https://ajency.github.io/goomo_html/img/placeholder.png" class="img-responsive">
+								</a>
+							</div>
+							<div class="property-pics">
+								<a href="#">
+									<img src="https://ajency.github.io/goomo_html/img/placeholder.png" class="img-responsive">
+								</a>
+							</div>
+							<div class="property-pics">
+								<a href="#">
+									<img src="https://ajency.github.io/goomo_html/img/placeholder.png" class="img-responsive">
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="property-image premier-room m-t-40 p-t-20">
+						<div class="flex-row space-between titleRow">
+							<div class="flex-row">
+								<h6 class="no-m-t fly-out-heading-size bat-color bolder m-b-5 flex-row">
+									Grand Deluxe Room
+								</h6>
+							</div>
+							<button class="btn fnb-btn s-outline border-btn bold-btn full m-t-10 flex-row add-pic" data-toggle="modal" data-target="#add-photos"><i class="fa fa-picture-o p-r-10" aria-hidden="true"></i> Add Photos</button>
+						</div>
+						<div class="warning-bar flex-row">
+							<i class="fa fa-info-circle p-r-10 text-secondary" aria-hidden="true"></i>
+							<span>You have not uploaded any images for this room yet. Add atleast <span class="text-secondary"> 5 images </span> or assign images from the property images gallery above.</span>
+						</div>
+						<div class="flex-row flex-wrap m-t-15">
+							<div class="property-pics">
+								<a href="#">
+									<img src="https://ajency.github.io/goomo_html/img/placeholder.png" class="img-responsive">
+								</a>
+							</div>
+							<div class="property-pics">
+								<a href="#">
+									<img src="https://ajency.github.io/goomo_html/img/placeholder.png" class="img-responsive">
+								</a>
+							</div>
+							<div class="property-pics">
+								<a href="#">
+									<img src="https://ajency.github.io/goomo_html/img/placeholder.png" class="img-responsive">
+								</a>
+							</div>
+							<div class="property-pics">
+								<a href="#">
+									<img src="https://ajency.github.io/goomo_html/img/placeholder.png" class="img-responsive">
+								</a>
+							</div>
+							<div class="property-pics">
+								<a href="#">
+									<img src="https://ajency.github.io/goomo_html/img/placeholder.png" class="img-responsive">
+								</a>
+							</div>
+						</div>
+					</div>
 				</div>
-				<div class="warning-bar flex-row">
-					<i class="fa fa-info-circle p-r-10 text-secondary" aria-hidden="true"></i>
-					<span>You have not uploaded any images for this room yet. Add atleast <span class="text-secondary"> 5 images </span> or assign images from the property images gallery above.</span>
-				</div>
-				<div class="flex-row flex-wrap m-t-15">
-					<div class="property-pics">
-						<a href="#">
-							<img src="https://ajency.github.io/goomo_html/img/placeholder.png" class="img-responsive">
-						</a>
-					</div>
-					<div class="property-pics">
-						<a href="#">
-							<img src="https://ajency.github.io/goomo_html/img/placeholder.png" class="img-responsive">
-						</a>
-					</div>
-					<div class="property-pics">
-						<a href="#">
-							<img src="https://ajency.github.io/goomo_html/img/placeholder.png" class="img-responsive">
-						</a>
-					</div>
-					<div class="property-pics">
-						<a href="#">
-							<img src="https://ajency.github.io/goomo_html/img/placeholder.png" class="img-responsive">
-						</a>
-					</div>
-					<div class="property-pics">
-						<a href="#">
-							<img src="https://ajency.github.io/goomo_html/img/placeholder.png" class="img-responsive">
-						</a>
-					</div>
-				</div>
-			</div>
 
 			</div>
-
-	
 		</div>
 	</div>
 

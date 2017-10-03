@@ -3390,6 +3390,10 @@ i.w-border{
     		border: 4px solid #e9eff4;
     		border-radius: 4px;
     		background-size: cover;
+    		cursor: move;
+    		&:hover{
+    			box-shadow: 0 0 5px 2px #e8e8e8;
+    		}
     		@media screen and (max-width: @mobile){
     			width: 100%;
     		}
@@ -3602,4 +3606,20 @@ i.w-border{
     // }
 }
 
-
+.actions-wrapper{
+	position: relative;
+	&.disabled{
+		&:after{
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			background-image: url(/goomo_html/img/repeating-bg.png);
+			content: '';
+			opacity: 0.4;
+		}
+	}
+}

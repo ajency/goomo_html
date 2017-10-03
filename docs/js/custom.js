@@ -72,11 +72,11 @@ $(document).ready(function() {
 		$('.default-status').addClass('disabled');
 		$('.edit-action-box').addClass('hidden');
 		$('.editing-status').removeClass('hidden');
-		$('.panel-group').removeClass('disabled');
+		$('.panel-group, .actions-wrapper').removeClass('disabled');
 	});
 
 	$('.notification [data-toggle="popover"]').popover({
-		html : true, 
+		html : true,
 	    content: function() {
 	       return $('.popoverContent').html();
 	    }
