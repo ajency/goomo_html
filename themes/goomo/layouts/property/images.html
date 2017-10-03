@@ -1,12 +1,179 @@
 {{ define "main" }}
 	<div class="">
 
-		<div class="row">
+		{{ if $.Params.qcstatus.forreview }}
+			<div class="flex-row property-status-box">
+				<div class="status-info flex-row">
+					<div>
+						Now that you have uploaded your property images, please submit your property for review. You can do so from the <a href="/goomo_html/property/summary-for-review/">Property Summary page</a>.
+					</div>
+				</div>
+				<div class="check-status">
+					Checklist Status:<br>
+					<img src="{{"img/green-check-circle.png" | absURL}}" class="img-responsive m-t-15 center-block" width="">
+				</div>
+				<div class="qc-status">
+					QC Status:<br>
+					<!-- <h6 class="text-secondary">Pending Review</h6> -->
+					<p class="bat-color m-t-10">To be submitted for review on <a href="/goomo_html/property/summary-for-review/">Summary page</a></p>
+				</div>
+			</div>
+		{{ else if $.Params.qcstatus.new }}
+			<div class="flex-row property-status-box m-b-30">
+				<div class="status-info flex-row">
+					Please upload images of your property. To make it easy for you, we have sections for property and room images.
+				</div>
+				<div class="check-status">
+					Checklist Status:<br>
+					<i class="fa fa-circle w-border m-t-15"></i>
+				</div>
+				<div class="qc-status">
+					QC Status:
+					<h6 class="text-secondary">Info Needed</h6>
+				</div>
+			</div>
+		{{ else if $.Params.qcstatus.publishededit }}
+			<div class="flex-row property-status-box default-status disabled">
+				<div class="status-info flex-row">
+					All done! Your property is now Approved.
+				</div>
+				<div class="check-status">
+					<div class="status-label">Checklist Status:<br></div>
+					<img src="{{"img/green-check-circle.png" | absURL}}" class="img-responsive m-t-15 center-block" width="">
+				</div>
+				<div class="qc-status">
+					<div class="status-label">QC Status:<br></div>
+					<h6 class="text-primary">Approved</h6>
+				</div>
+			</div>
+
+			<div class="flex-row property-status-box editing-status m-t-20 m-b-20">
+				<div class="status-info flex-row">
+					<div>
+						When you are done making edits to the images below, please submit for review. When our QC team approves, these changes will be seen on your property page on Goomo.com <img src="{{"img/finger.png" | absURL}}" class="" width="">
+					</div>
+				</div>
+				<div class="check-status">
+					Checklist Status:<br>
+					<img src="{{"img/green-check-circle.png" | absURL}}" class="img-responsive m-t-15 center-block" width="">
+				</div>
+				<div class="qc-status">
+					QC Status:<br>
+					<p class="bat-color m-t-10">New Edits</p>
+					<button class="btn btn-white outline fnb-btn m-t-0">Submit for Review</button>
+				</div>
+			</div>
+		{{ else if $.Params.qcstatus.publishedreview }}
+			<div class="flex-row property-status-box default-status disabled">
+				<div class="status-info flex-row">
+					All done! The Images section is approved.
+				</div>
+				<div class="check-status">
+					<div class="status-label">Checklist Status:<br></div>
+					<img src="{{"img/green-check-circle.png" | absURL}}" class="img-responsive m-t-15 center-block" width="">
+				</div>
+				<div class="qc-status">
+					<div class="status-label">QC Status:<br></div>
+					<h6 class="text-primary">Approved</h6>
+				</div>
+			</div>
+
+			<div class="flex-row property-status-box editing-status m-t-20 m-b-20">
+				<div class="status-info flex-row">
+					<div>
+						You have submitted your edits for QC Review. You will be able to make changes to this section only after the QC Review.
+					</div>
+				</div>
+				<div class="check-status">
+					Checklist Status:<br>
+					<img src="{{"img/green-check-circle.png" | absURL}}" class="img-responsive m-t-15 center-block" width="">
+				</div>
+				<div class="qc-status">
+					QC Status:<br>
+					<h6 class="text-secondary">Edits Pending Review</h6>
+					<div class="flex-row justify-center">
+						<button class="btn btn-white s-outline outline fnb-btn small open-sidebar ">Suggest Edits</button>
+						<button class="btn btn-white secondary-btn outline fnb-btn small  ">Approve</button>
+					</div>
+				</div>
+			</div>
+		{{ else if $.Params.qcstatus.published }}
+			<div class="flex-row property-status-box default-status">
+				<div class="status-info flex-row">
+					All done! The Images section is approved.
+				</div>
+				<div class="check-status">
+					<div class="status-label">Checklist Status:<br></div>
+					<img src="{{"img/green-check-circle.png" | absURL}}" class="img-responsive m-t-15 center-block" width="">
+				</div>
+				<div class="qc-status">
+					<div class="status-label">QC Status:<br></div>
+					<h6 class="text-primary">Approved</h6>
+				</div>
+			</div>
+
+			<div class="flex-row property-status-box editing-status m-t-20 m-b-20 hidden">
+				<div class="status-info flex-row">
+					<div>
+						When you are done making edits to the images below, please submit for review. When our QC team approves, these changes will be seen on your property page on Goomo.com <img src="{{"img/finger.png" | absURL}}" class="" width="">
+					</div>
+				</div>
+				<div class="check-status">
+					Checklist Status:<br>
+					<img src="{{"img/green-check-circle.png" | absURL}}" class="img-responsive m-t-15 center-block" width="">
+				</div>
+				<div class="qc-status">
+					QC Status:<br>
+					<button class="btn btn-white outline fnb-btn m-t-15">Submit for Review</button>
+				</div>
+			</div>
+
+			<div class="row m-t-20 m-b-20 edit-action-box">
+				<div class="col-sm-9">
+					<h6 class="bolder">The details below are QC approved. If you make edits to the images, do remember to submit for review again.</h6>
+				</div>
+				<div class="col-sm-3">
+					<button class="btn fnb-btn secondary-btn pull-right bolder make-edits-btn">Make Edits</button>
+				</div>
+			</div>
+		{{ else if $.Params.qcstatus.submitted }}
+			<div class="flex-row property-status-box">
+				<div class="status-info">
+					You have submitted your listing for QC Review. You will be able to make changes to this section only after the QC Review.
+				</div>
+				<div class="check-status">
+					Checklist Status:<br>
+					<img src="{{"img/green-check-circle.png" | absURL}}" class="img-responsive m-t-15 center-block" width="">
+				</div>
+				<div class="qc-status">
+					QC Status:<br>
+	                <h6 class="text-secondary">Pending Review</h6>
+	                <button class="btn btn-white s-outline outline fnb-btn small open-sidebar ">Suggest Edits</button>
+					<button class="btn btn-white secondary-btn outline fnb-btn small ">Approve</button>
+				</div>
+			</div>
+		{{ else }}
+			<div class="flex-row property-status-box m-b-30">
+				<div class="status-info flex-row">
+					Please add images of your property. To make it easy for you, we have sections for property and room images.
+				</div>
+				<div class="check-status">
+					Checklist Status:<br>
+					<i class="fa fa-circle w-border m-t-15"></i>
+				</div>
+				<div class="qc-status">
+					QC Status:
+					<h6 class="text-secondary">Info Needed</h6>
+				</div>
+			</div>
+		{{ end }}
+
+		<div class="row m-t-20">
 			<div class="col-sm-12">
 				<h6 class="no-m-t fly-out-heading-size bat-color bolder m-b-20">Summary</h6>
 				<div class="gallery-stat flex-row">
 					<div class="property-image gallery-stat__row">
-						<h5 class="number bolder">30 <i class="fa fa-picture-o x-small text-lighter p-l-5" aria-hidden="true"></i></h5>
+						<h5 class="number bolder">30 <i class="fa fa-picture-o x-small p-l-5" aria-hidden="true"></i></h5>
 						<p class="m-b-0 lighter">Property Images</p>
 					</div>
 					<div class="room-bar subRow gallery-stat__row">
@@ -18,144 +185,149 @@
 						<p class="m-b-0">Grand Deluxe Room</p>
 					</div>
 				</div>
-	
-			<div class="property-image m-t-40 p-t-20">
-				<div class="flex-row space-between titleRow">
-					<div class="flex-row subrow">
-						<h6 class="no-m-t fly-out-heading-size bat-color bolder m-b-15 flex-row">
-							Summary
-						</h6>
-						<div class="flex-row">
-							<select class="fnb-select select-variant form-control text-lighter">
-			                    <option value="">-Select Room-</option>
-			                    <option value="">Deluxe Room</option>
-			                </select>
-			                <button class="fnb-btn check-btn">
-			                	<i class="fa fa-check" aria-hidden="true"></i>
-			                </button>
-			                <button class="fnb-btn delete-btn">
-			                	<i class="fa fa-trash" aria-hidden="true"></i>
-			                </button>
-						</div>
-					</div>
-					<button class="btn fnb-btn s-outline border-btn bold-btn full m-t-10 flex-row add-pic" data-toggle="modal" data-target="#add-photos"><i class="fa fa-picture-o p-r-10" aria-hidden="true"></i> Add Images</button>
-				</div>
-				<div class="flex-row flex-wrap m-t-15">
-					<div class="property-pics external-pic pic-1" data-toggle="modal" data-target="#edit-photos">
-						<div style="background-image: url({{"img/hotel-1.PNG" | absURL}})">
-						</div>
-						<img src="{{"img/image-edit.png" | absURL}}" class="img-responsive edit-img">
-					</div>
-					<div class="property-pics external-pic pic-2" data-toggle="modal" data-target="#edit-photos">
-						<div style="background-image: url({{"img/hotel-2.PNG" | absURL}})">
-						</div>
-						<img src="{{"img/image-edit.png" | absURL}}" class="img-responsive edit-img">
-					</div>
-					<div class="property-pics external-pic pic-3" data-toggle="modal" data-target="#edit-photos">
-						<div style="background-image: url({{"img/hotel-3.png" | absURL}})">
-						</div>
-						<img src="{{"img/image-edit.png" | absURL}}" class="img-responsive edit-img">
-					</div>
-					<div class="property-pics external-pic pic-4" data-toggle="modal" data-target="#edit-photos">
-						<div style="background-image: url({{"img/hotel-4.jpg" | absURL}})">
-						</div>
-						<img src="{{"img/image-edit.png" | absURL}}" class="img-responsive edit-img">
-					</div>
-					<div class="property-pics external-pic pic-2" data-toggle="modal" data-target="#edit-photos">
-						<div style="background-image: url({{"img/hotel-2.PNG" | absURL}})">
-						</div>
-						<img src="{{"img/image-edit.png" | absURL}}" class="img-responsive edit-img">
-					</div>
-				</div>
-			</div>
 
-			<div class="property-image premier-room m-t-40 p-t-20">
-				<div class="flex-row space-between titleRow">
-					<div class="flex-row">
-						<h6 class="no-m-t fly-out-heading-size bat-color bolder m-b-5 flex-row">
-							Premier Room + BAR
-						</h6>
+				<div class="actions-wrapper {{ if $.Params.qcstatus.published }} disabled {{ end }}">
+					<div class="alert alert-info m-b-0 m-t-25 flex-row">
+						<i class="fa fa-info-circle p-r-10 text-info" aria-hidden="true"></i>
+						<span>Once you upload images, you can click and drag to reorder them.</span>
 					</div>
-					<button class="btn fnb-btn s-outline border-btn bold-btn full m-t-10 flex-row add-pic" data-toggle="modal" data-target="#add-photos"><i class="fa fa-picture-o p-r-10" aria-hidden="true"></i> Add Photos</button>
-				</div>
-				<div class="warning-bar flex-row">
-					<i class="fa fa-info-circle p-r-10 text-secondary" aria-hidden="true"></i>
-					<span>You have not uploaded any images for this room yet. Add atleast <span class="text-secondary"> 5 images </span> or assign images from property images gallery above.</span>
-				</div>
-				<div class="flex-row flex-wrap m-t-15">
-					<div class="property-pics">
-						<a href="#">
-							<img src="{{"img/placeholder.png" | absURL}}" class="img-responsive">
-						</a>
-					</div>
-					<div class="property-pics">
-						<a href="#">
-							<img src="{{"img/placeholder.png" | absURL}}" class="img-responsive">
-						</a>
-					</div>
-					<div class="property-pics">
-						<a href="#">
-							<img src="{{"img/placeholder.png" | absURL}}" class="img-responsive">
-						</a>
-					</div>
-					<div class="property-pics">
-						<a href="#">
-							<img src="{{"img/placeholder.png" | absURL}}" class="img-responsive">
-						</a>
-					</div>
-					<div class="property-pics">
-						<a href="#">
-							<img src="{{"img/placeholder.png" | absURL}}" class="img-responsive">
-						</a>
-					</div>
-				</div>
-			</div>
 
-			<div class="property-image premier-room m-t-40 p-t-20">
-				<div class="flex-row space-between titleRow">
-					<div class="flex-row">
-						<h6 class="no-m-t fly-out-heading-size bat-color bolder m-b-5 flex-row">
-							Grand Deluxe Room
-						</h6>
+					<div class="property-image m-t-10 p-t-20">
+						<div class="flex-row space-between titleRow">
+							<div class="flex-row subrow">
+								<h6 class="no-m-t fly-out-heading-size bat-color bolder m-b-15 flex-row">
+									Property Images
+								</h6>
+								<div class="flex-row">
+									<select class="fnb-select select-variant form-control text-lighter">
+					                    <option value="">-Select Room-</option>
+					                    <option value="">Deluxe Room</option>
+					                </select>
+					                <button class="fnb-btn check-btn">
+					                	<i class="fa fa-check" aria-hidden="true"></i>
+					                </button>
+					                <button class="fnb-btn delete-btn">
+					                	<i class="fa fa-trash" aria-hidden="true"></i>
+					                </button>
+								</div>
+							</div>
+							<button class="btn fnb-btn s-outline border-btn bold-btn full m-t-10 flex-row add-pic" data-toggle="modal" data-target="#add-photos"><i class="fa fa-picture-o p-r-10" aria-hidden="true"></i> Add Images</button>
+						</div>
+						<div class="flex-row flex-wrap m-t-15">
+							<div class="property-pics external-pic pic-1" data-toggle="modal" data-target="#edit-photos">
+								<div style="background-image: url({{"img/hotel-1.PNG" | absURL}})">
+								</div>
+								<img src="{{"img/image-edit.png" | absURL}}" class="img-responsive edit-img">
+							</div>
+							<div class="property-pics external-pic pic-2" data-toggle="modal" data-target="#edit-photos">
+								<div style="background-image: url({{"img/hotel-2.PNG" | absURL}})">
+								</div>
+								<img src="{{"img/image-edit.png" | absURL}}" class="img-responsive edit-img">
+							</div>
+							<div class="property-pics external-pic pic-3" data-toggle="modal" data-target="#edit-photos">
+								<div style="background-image: url({{"img/hotel-3.png" | absURL}})">
+								</div>
+								<img src="{{"img/image-edit.png" | absURL}}" class="img-responsive edit-img">
+							</div>
+							<div class="property-pics external-pic pic-4" data-toggle="modal" data-target="#edit-photos">
+								<div style="background-image: url({{"img/hotel-4.jpg" | absURL}})">
+								</div>
+								<img src="{{"img/image-edit.png" | absURL}}" class="img-responsive edit-img">
+							</div>
+							<div class="property-pics external-pic pic-2" data-toggle="modal" data-target="#edit-photos">
+								<div style="background-image: url({{"img/hotel-2.PNG" | absURL}})">
+								</div>
+								<img src="{{"img/image-edit.png" | absURL}}" class="img-responsive edit-img">
+							</div>
+						</div>
 					</div>
-					<button class="btn fnb-btn s-outline border-btn bold-btn full m-t-10 flex-row add-pic" data-toggle="modal" data-target="#add-photos"><i class="fa fa-picture-o p-r-10" aria-hidden="true"></i> Add Photos</button>
+
+					<div class="property-image premier-room m-t-40 p-t-20">
+						<div class="flex-row space-between titleRow">
+							<div class="flex-row">
+								<h6 class="no-m-t fly-out-heading-size bat-color bolder m-b-5 flex-row">
+									Premier Room + BAR
+								</h6>
+							</div>
+							<button class="btn fnb-btn s-outline border-btn bold-btn full m-t-10 flex-row add-pic" data-toggle="modal" data-target="#add-photos"><i class="fa fa-picture-o p-r-10" aria-hidden="true"></i> Add Photos</button>
+						</div>
+						<div class="warning-bar flex-row">
+							<i class="fa fa-info-circle p-r-10 text-secondary" aria-hidden="true"></i>
+							<span>You have not uploaded any images for this room yet. Add atleast <span class="text-secondary"> 5 images </span> or assign images from property images gallery above.</span>
+						</div>
+						<div class="flex-row flex-wrap m-t-15">
+							<div class="property-pics">
+								<a href="#">
+									<img src="{{"img/placeholder.png" | absURL}}" class="img-responsive">
+								</a>
+							</div>
+							<div class="property-pics">
+								<a href="#">
+									<img src="{{"img/placeholder.png" | absURL}}" class="img-responsive">
+								</a>
+							</div>
+							<div class="property-pics">
+								<a href="#">
+									<img src="{{"img/placeholder.png" | absURL}}" class="img-responsive">
+								</a>
+							</div>
+							<div class="property-pics">
+								<a href="#">
+									<img src="{{"img/placeholder.png" | absURL}}" class="img-responsive">
+								</a>
+							</div>
+							<div class="property-pics">
+								<a href="#">
+									<img src="{{"img/placeholder.png" | absURL}}" class="img-responsive">
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="property-image premier-room m-t-40 p-t-20">
+						<div class="flex-row space-between titleRow">
+							<div class="flex-row">
+								<h6 class="no-m-t fly-out-heading-size bat-color bolder m-b-5 flex-row">
+									Grand Deluxe Room
+								</h6>
+							</div>
+							<button class="btn fnb-btn s-outline border-btn bold-btn full m-t-10 flex-row add-pic" data-toggle="modal" data-target="#add-photos"><i class="fa fa-picture-o p-r-10" aria-hidden="true"></i> Add Photos</button>
+						</div>
+						<div class="warning-bar flex-row">
+							<i class="fa fa-info-circle p-r-10 text-secondary" aria-hidden="true"></i>
+							<span>You have not uploaded any images for this room yet. Add atleast <span class="text-secondary"> 5 images </span> or assign images from the property images gallery above.</span>
+						</div>
+						<div class="flex-row flex-wrap m-t-15">
+							<div class="property-pics">
+								<a href="#">
+									<img src="{{"img/placeholder.png" | absURL}}" class="img-responsive">
+								</a>
+							</div>
+							<div class="property-pics">
+								<a href="#">
+									<img src="{{"img/placeholder.png" | absURL}}" class="img-responsive">
+								</a>
+							</div>
+							<div class="property-pics">
+								<a href="#">
+									<img src="{{"img/placeholder.png" | absURL}}" class="img-responsive">
+								</a>
+							</div>
+							<div class="property-pics">
+								<a href="#">
+									<img src="{{"img/placeholder.png" | absURL}}" class="img-responsive">
+								</a>
+							</div>
+							<div class="property-pics">
+								<a href="#">
+									<img src="{{"img/placeholder.png" | absURL}}" class="img-responsive">
+								</a>
+							</div>
+						</div>
+					</div>
 				</div>
-				<div class="warning-bar flex-row">
-					<i class="fa fa-info-circle p-r-10 text-secondary" aria-hidden="true"></i>
-					<span>You have not uploaded any images for this room yet. Add atleast <span class="text-secondary"> 5 images </span> or assign images from the property images gallery above.</span>
-				</div>
-				<div class="flex-row flex-wrap m-t-15">
-					<div class="property-pics">
-						<a href="#">
-							<img src="{{"img/placeholder.png" | absURL}}" class="img-responsive">
-						</a>
-					</div>
-					<div class="property-pics">
-						<a href="#">
-							<img src="{{"img/placeholder.png" | absURL}}" class="img-responsive">
-						</a>
-					</div>
-					<div class="property-pics">
-						<a href="#">
-							<img src="{{"img/placeholder.png" | absURL}}" class="img-responsive">
-						</a>
-					</div>
-					<div class="property-pics">
-						<a href="#">
-							<img src="{{"img/placeholder.png" | absURL}}" class="img-responsive">
-						</a>
-					</div>
-					<div class="property-pics">
-						<a href="#">
-							<img src="{{"img/placeholder.png" | absURL}}" class="img-responsive">
-						</a>
-					</div>
-				</div>
-			</div>
 
 			</div>
-
-	
 		</div>
 	</div>
 
