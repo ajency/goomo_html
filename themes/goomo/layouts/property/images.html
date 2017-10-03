@@ -93,7 +93,7 @@
 					<h6 class="text-secondary">Edits Pending Review</h6>
 					<div class="flex-row justify-center">
 						<button class="btn btn-white s-outline outline fnb-btn small open-sidebar ">Suggest Edits</button>
-						<button class="btn btn-white secondary-btn outline fnb-btn small  ">Approve</button>
+						<button class="btn btn-white secondary-btn outline fnb-btn small" data-toggle="modal" data-target="#approveModal" >Approve</button>
 					</div>
 				</div>
 			</div>
@@ -149,7 +149,7 @@
 					QC Status:<br>
 	                <h6 class="text-secondary">Pending Review</h6>
 	                <button class="btn btn-white s-outline outline fnb-btn small open-sidebar ">Suggest Edits</button>
-					<button class="btn btn-white secondary-btn outline fnb-btn small ">Approve</button>
+					<button class="btn btn-white secondary-btn outline fnb-btn small " data-toggle="modal" data-target="#approveModal">Approve</button>
 				</div>
 			</div>
 		{{ else }}
@@ -332,12 +332,13 @@
 	</div>
 
 <!-- Add photos modal -->
-
 {{ partial "add-photos.html" .}}
 
 <!-- Edit photos modal -->
-
 {{ partial "edit-gallery.html" .}}
+
+<!-- Approve changes modal -->
+{{ partial "approve-modal.html" .}}
 
 
 {{ end }}
