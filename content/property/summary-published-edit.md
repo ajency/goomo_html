@@ -18,18 +18,17 @@ address:
 amenities:
  url: "/goomo_html/property/services-published-edit/"
  pending: false
- pendingtext: "New Edits: Coffee shop added in Food & Beverages"
- hasedits: true
+ pendingtext: ""
  checklist: true
  qc: "--"
- qcorange: true
 
 images:
  url: "/goomo_html/property/images-published-edit/"
  pending: false
- pendingtext: ""
+ pendingtext: "New Edits: Room Images updated"
+ hasedits: true
  checklist: true
- qc: "Approved"
+ qc: "--"
 
 policies:
  url: "#"

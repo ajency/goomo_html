@@ -19,16 +19,16 @@ address:
 
 amenities:
  url: "/goomo_html/property/services/"
- pending: true
- pendingtext: "Please add: Entertainment, Recreation"
- checklist: false
+ pending: false
+ pendingtext: ""
+ checklist: true
  qc: "--"
 
 images:
  url: "/goomo_html/property/images/"
- pending: false
- pendingtext: ""
- checklist: true
+ pending: true
+ pendingtext: "Please add: Room Images"
+ checklist: false
  qc: "--"
 
 policies:
@@ -45,7 +45,7 @@ bank:
  url: "/goomo_html/property/contract-finance-qc/"
  pending: true
  pendingtext: ""
- checklist: false
+ checklist: true
  qc: "--"
 
 tax:
@@ -59,7 +59,7 @@ digital:
  url: "/goomo_html/property/contract-finance-qc/"
  pending: true
  pendingtext: ""
- checklist: false
+ checklist: true
  qc: "--"
 
 rooms:
