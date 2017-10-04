@@ -9,7 +9,7 @@
 			<a href="#listingSubMenu" class=" form-toggle " id="" role="button" data-toggle="collapse"><i class="fa fa-list"></i> Properties</a>
 			<ul class="gs-steps collapse in edit-mode sub-steps" role="tablist" id="listingSubMenu" >
 				<li class="{{ if $.Params.active }} active {{ end }}">
-					<a href="{{ $.Params.allproperty.url }}" class="" id="">All</a>
+					<a href="/goomo_html/extranet/properties" class="" id="">All</a>
 				</li>
 				<li>
 					<a href="#" class="" id="">My Properties</a>
@@ -21,15 +21,15 @@
 					<a href="#" class="" id="">Under Review Properties </a>
 				</li>
 				<li class="{{ if $.Params.create }} active {{ end }}">
-					<a href="{{ $.Params.createproperty.url }}" class="" id="">Create New </a>
+					<a href="/goomo_html/extranet/create" class="" id="">Create New </a>
 				</li>
 			</ul>
 		</li>
 		<li class="active">
 			<a href=" # " class=" form-toggle " id=""><i class="fa fa-cog"></i> Configurations </a>
 			<ul class="gs-steps collapse in edit-mode sub-steps" role="tablist" id="" >
-				<li class="">
-					<a href="" class="" id="">Regions</a>
+				<li class="{{ if $.Params.region }} active {{ end }}">
+					<a href="/goomo_html/extranet/regions" class="" id="">Regions</a>
 				</li>
 				<li>
 					<a href="#" class="" id="">Location Tags</a>
