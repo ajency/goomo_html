@@ -33,6 +33,30 @@ $(document).ready(function() {
         $(registered.column(idx).header()).append('<span class="sort-icon"/>');
     });
 
+
+	var regions = $('#region-table').DataTable({
+		"columnDefs": [{
+                "targets": 'no-sort',
+                "orderable": false
+            }
+        ]
+	});
+
+    regions.columns().iterator('column', function(ctx, idx) {
+        $(regions.column(idx).header()).append('<span class="sort-icon"/>');
+    });
+
+
+$('.multi-dd').multiselect({
+        buttonContainer: '<span></span>',
+        buttonClass: '',
+        maxHeight: 200,
+        templates: {
+            button: '<span class="multiselect dropdown-toggle" data-toggle="dropdown"><i class="fa fa-filter"></i></span>'
+        },
+    });
+
+
     var tax = $('#tax-table').DataTable();
 
     tax.columns().iterator('column', function(ctx, idx) {
@@ -82,10 +106,29 @@ $(document).ready(function() {
 	    }
 	})
 
-	$('.overview-text').readmore({
-	  speed: 75,
-	  collapsedHeight: 40,
-	  lessLink: '<a href="#">Less</a>'
+	if($('.overview-text').length){
+		$('.overview-text').readmore({
+		  speed: 75,
+		  collapsedHeight: 40,
+		  lessLink: '<a href="#">Less</a>'
+		});
+	}
+
+
+	$('body').on("change", "input[type=radio][name=categoryType]", function() {
+	    if (this.value == 'parent_cat') {
+	        $('.select-parent-cat, .select-branch-cat').addClass('hidden')
+	        $('.parent_cat_icon').removeClass('hidden')
+	    } else if (this.value == 'branch_cat') {
+	        $('.select-parent-cat').removeClass('hidden')
+	        $('.select-branch-cat, .parent_cat_icon').addClass('hidden')
+	    } else if (this.value == 'node_cat') {
+	        $('.select-parent-cat, .select-branch-cat').removeClass('hidden')
+	        $('.parent_cat_icon').addClass('hidden')
+	    }
 	});
+
+
+
 
 });
