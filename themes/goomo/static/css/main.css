@@ -10324,6 +10324,14 @@ i.w-border {
 .regions-container .dataTables_filter {
   text-align: right;
 }
+.regions-container .dataTables_filter .input-sm {
+  border: 0;
+  box-shadow: none;
+  border-bottom: 1px solid #ddd;
+  border-radius: 0;
+  font-size: 1.05em;
+  font-weight: 400;
+}
 .regions-container .multiselect-container {
   padding: 0.5em;
 }
