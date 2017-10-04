@@ -29,5 +29,23 @@
       <description></description>
     </item>
     
+    <item>
+      <title>Location Tags</title>
+      <link>https://ajency.github.io/goomo_html/extranet/location/</link>
+      <pubDate>Mon, 25 Sep 2017 19:40:59 +0530</pubDate>
+      
+      <guid>https://ajency.github.io/goomo_html/extranet/location/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Regions</title>
+      <link>https://ajency.github.io/goomo_html/extranet/regions/</link>
+      <pubDate>Mon, 25 Sep 2017 19:40:59 +0530</pubDate>
+      
+      <guid>https://ajency.github.io/goomo_html/extranet/regions/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
