@@ -63,7 +63,7 @@ $('.multi-dd').multiselect({
         $(tax.column(idx).header()).append('<span class="sort-icon"/>');
     });
 
-    $('.listing-table').closest('.row').addClass('main-table');
+    $('.listing-table,.region-table').closest('.row').addClass('main-table');
 
 	if ($(window).width() < 769){
 		$('.form-toggle').click(function(){
