@@ -10398,6 +10398,18 @@ i.w-border {
   padding-left: 0;
   font-size: 1em;
 }
+.overflow-table {
+  overflow: auto;
+}
+.active-drop {
+  font-size: 0.8em;
+}
+.active-dropdown .dropdown-menu {
+  left: -5.5em;
+}
+.main-title {
+  border-bottom: 2px solid #ddd !important;
+}
 .profile-stats {
   color: #fff;
   background: #378f9e;

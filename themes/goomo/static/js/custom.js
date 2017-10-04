@@ -47,6 +47,21 @@ $(document).ready(function() {
     });
 
 
+var internal = $('#internal-table').DataTable({
+		"columnDefs": [{
+                "targets": 'no-sort',
+                "orderable": false
+            }
+        ]
+	});
+
+    internal.columns().iterator('column', function(ctx, idx) {
+        $(internal.column(idx).header()).append('<span class="sort-icon"/>');
+    });
+
+
+
+
 $('.multi-dd').multiselect({
         buttonContainer: '<span></span>',
         buttonClass: '',
@@ -64,6 +79,8 @@ $('.multi-dd').multiselect({
     });
 
     $('.listing-table,.region-table').closest('.row').addClass('main-table');
+
+	$('.internal-table').closest('.row').addClass('overflow-table');
 
 	if ($(window).width() < 769){
 		$('.form-toggle').click(function(){
