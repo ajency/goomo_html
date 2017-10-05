@@ -3742,6 +3742,85 @@ i.w-border{
 	border-bottom: 2px solid #ddd !important;
 }
 
+.roles-box{
+	@media screen and (min-width: 769px){
+		label{
+			margin-right: 0.5em;
+    		margin-bottom: 0.8em;
+		}
+	}
+	&.custom-radio input[type=checkbox]:before{
+		background-color: #fff;
+	}
+}
+
+.limited-tag{
+	&__label{
+		position: absolute;
+    	bottom: 0;
+    	padding: 0.3em 0.5em;
+    	border: 1px solid @accent-secondary;
+    	border-radius: 4px;
+    	font-size: 0.85em;
+	}
+	a{
+		position: absolute;
+	    bottom: 0;
+	    right: 0;
+	    padding: 0.5em;
+	    font-size: 1.05em;
+	}
+}
+
+.flex-list{
+	.flexdatalist-multiple.flexdatalist-multiple li.value{
+		border-color: @accent-secondary;
+	    background-color: #fff;
+	    color: #000;
+	}
+	.flexdatalist-multiple.flexdatalist-multiple{
+		display: flex;
+		.input-container{
+			margin: 0;
+    		padding-left: 0;
+    		padding-top: 4px;
+		}
+	}
+}
+
+.status-label.select-variant{
+	font-size: 1em;
+}
+
+.access-fields{
+	.form-group{
+		@media screen and (min-width: 769px){
+			margin-bottom: 25px;
+		}
+	}
+}
 
 
-
+@media screen and (max-width: @mobile){
+	.userTitle{
+		line-height: 1.6;
+    	margin-top: 1em;
+	}
+	.access-fields{
+		margin-top: 0;
+	}
+	.limited-tag{
+		.flexdatalist-multiple li.input-container input{
+			width: 52%;
+		}
+		a{
+			font-size: 1em;
+		}
+	}
+	.roles-box{
+		label{
+			margin-right: 1em;
+			margin-bottom: 1em;
+		}
+	}
+}
