@@ -9250,9 +9250,6 @@ i.w-border {
   color: #000;
 }
 .flex-list .flexdatalist-multiple.flexdatalist-multiple {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
 }
 .flex-list .flexdatalist-multiple.flexdatalist-multiple .input-container {
