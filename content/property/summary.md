@@ -49,21 +49,21 @@ contract:
  done: false
 
 bank:
- url: "/goomo_html/property/owner/"
+ url: "/goomo_html/property/contract-qc/"
  pending: true
  pendingtext: ""
  checklist: true
  qc: "--"
 
 tax:
- url: "/goomo_html/property/owner/"
+ url: "/goomo_html/property/contract-qc/"
  pending: true
  pendingtext: "Please Add: Minimum 1 rule"
  checklist: false
  qc: "--"
 
 digital:
- url: "/goomo_html/property/owner/"
+ url: "/goomo_html/property/contract-qc/"
  pending: true
  pendingtext: ""
  checklist: false
