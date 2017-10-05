@@ -6,6 +6,11 @@
             <p class="element-title heavier m-b-0">Back</p>
         </div>
         <div class="right">
+            {{ if $.Params.users }}
+                <div class="flex-row users-row header-row">
+                    <button class="btn fnb-btn secondary-btn full">Save</button>
+                </div>
+            {{ end }}
         </div>
     </div>
     <div class="fly-out__content">
@@ -84,8 +89,8 @@
                             <p class="flex-row"><div class="text-danger">Note: </div>Use a strong password of at least 6 characters, perferably an alphanumeric combination.</p>
                         </div>
                         <div class="col-sm-12 c-gap form-group flex-row users-row">
-                            <button class="btn fnb-btn grey  full">Cancel</button>
                             <button class="btn fnb-btn secondary-btn full">Save</button>
+                            <button class="btn fnb-btn grey  full">Cancel</button>
                         </div>
                     </div>
           

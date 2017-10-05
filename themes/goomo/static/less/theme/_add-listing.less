@@ -3881,3 +3881,41 @@ i.w-border{
 	width: 20%;
     min-width: auto;
 }
+
+@media screen and  (max-width: @mobile){
+	.user-col-table{
+		overflow: auto;
+		margin-top: 15px;
+	}
+	.user-cols{
+		i{
+			font-size: 2em;
+		}
+		h5{
+			font-size: 1.2em;
+		}
+		p{
+			font-size: 1em;
+		}
+	}
+	.add-user-col{
+		flex-direction: column;
+		margin: 1em 0;
+		.open-sidebar{
+			margin-top: 1em;
+    		align-self: flex-end;
+		}
+	}
+	.fnb-select.code-box,.sidebar-article .fnb-select{
+		margin-left: 0;
+    	border: 0;
+    	border-bottom: 1px solid #ddd;
+	}
+	.fnb-select.code-box{
+		width: 25%;
+	}
+	.users-row{
+		justify-content: center;
+	}
+}
+
