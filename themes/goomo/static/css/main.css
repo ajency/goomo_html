@@ -9284,6 +9284,10 @@ i.w-border {
     margin-bottom: 1em;
   }
 }
+.contract-full {
+  white-space: pre-line;
+  text-align: left;
+}
 .profile-stats {
   color: #fff;
   background: #378f9e;
