@@ -49,25 +49,26 @@ contract:
  done: false
 
 bank:
- url: "/goomo_html/property/owner-new/"
+ url: "/goomo_html/property/contract-qc-new/"
  pending: true
  pendingtext: ""
  checklist: false
  qc: "--"
 
 tax:
- url: "/goomo_html/property/owner-new/"
+ url: "/goomo_html/property/contract-qc-new/"
  pending: true
  pendingtext: "Please Add: Minimum 1 rule"
  checklist: false
  qc: "--"
 
 digital:
- url: "/goomo_html/property/owner-new/"
+ url: "/goomo_html/property/contract-qc-new/"
  pending: true
  pendingtext: ""
  checklist: false
  qc: "--"
+ disabled: true
 
 rooms:
  done: false
@@ -90,6 +91,14 @@ cancel:
  url: "#"
  pending: true
  pendingtext: "Please Add: Cancellation Policy"
+ checklist: false
+ qc: "--"
+
+ratesavail:
+ done: false
+ url: "#"
+ pending: true
+ pendingtext: "Please Add: Updated Rates and Inventory"
  checklist: false
  qc: "--"
 

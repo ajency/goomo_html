@@ -56,22 +56,29 @@
 					</p>
 				</div>
 
-				<div class="alert alert-danger m-b-0 m-t-25 flex-row">
+				<!-- <div class="alert alert-danger m-b-0 m-t-25 flex-row">
 					<i class="fa fa-exclamation-circle p-r-10 text-danger" aria-hidden="true"></i>
 					<span>You must update your Rates and Availability information in order for your property to be Active.</span>
-				</div>
+				</div> -->
 
 				<a href="#" class=" desk-hide">Request Change</a>
 
 				<div class="listing-details m-t-40">
-					<h4 class="no-m-t fly-out-heading-size bat-color bolder">Your Property Details</h4>
+					<h4 class="no-m-t fly-out-heading-size bat-color bolder">Property Checklist</h4>
 					<div class="flex-row property-status-box">
-						<div class="status-info">
-							Your property <strong>{{ .Params.property }}</strong> is currently in <strong>{{ .Params.status | lower }}</strong> mode because some property information is not filled in. Please see below Property Info Checklist to understand the sections that you need to complete.
+						<div class="status-info flex-row">
+							<div>
+								<strong>{{ .Params.property }}</strong> is currently in <strong>{{ .Params.status | lower }}</strong> mode because some property information is not filled in. Please see below Property Info Checklist to understand the sections that you need to complete.
+							</div>
 						</div>
 						<div class="check-status">
 							Checklist Status:<br>
-							<i class="fa fa-circle w-border m-t-15"></i>
+							<i class="fa fa-circle w-border m-t-10"></i>
+							<div>
+								<label class="m-t-10">
+									Assigneee: <br><span class="text-darker">Loading Team</span>
+								</label>
+							</div>
 						</div>
 						<div class="qc-status">
 							QC Status:

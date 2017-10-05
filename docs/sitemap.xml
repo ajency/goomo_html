@@ -18,12 +18,27 @@
   </url>
   
   <url>
+    <loc>https://ajency.github.io/goomo_html/property/summary-new-owner/</loc>
+    <lastmod>2017-09-26T19:22:18+05:30</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ajency.github.io/goomo_html/property/summary-new/</loc>
     <lastmod>2017-09-26T19:22:18+05:30</lastmod>
   </url>
   
   <url>
+    <loc>https://ajency.github.io/goomo_html/property/summary-contract-pending/</loc>
+    <lastmod>2017-09-26T13:44:12+05:30</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ajency.github.io/goomo_html/property/summary-for-review/</loc>
+    <lastmod>2017-09-26T13:44:12+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ajency.github.io/goomo_html/property/summary-lt-done/</loc>
     <lastmod>2017-09-26T13:44:12+05:30</lastmod>
   </url>
   
@@ -123,12 +138,17 @@
   </url>
   
   <url>
-    <loc>https://ajency.github.io/goomo_html/property/contract-finance-qc/</loc>
+    <loc>https://ajency.github.io/goomo_html/property/contract-finance/</loc>
     <lastmod>2017-09-25T11:31:18+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://ajency.github.io/goomo_html/property/contract-finance/</loc>
+    <loc>https://ajency.github.io/goomo_html/property/contract-qc-new/</loc>
+    <lastmod>2017-09-25T11:31:18+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ajency.github.io/goomo_html/property/contract-qc/</loc>
     <lastmod>2017-09-25T11:31:18+05:30</lastmod>
   </url>
   

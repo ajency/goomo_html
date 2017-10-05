@@ -20,26 +20,32 @@ theme = "goomo"
 [[menu.main]]
     name = "Reviews"
     pre = "<i class='fa fa-comments-o'></i>"
-    weight = -98
+    weight = -99
     identifier = "review"
     url = "#"
  [[menu.main]]
      name = "Rates & Availability"
      pre = "<i class='fa fa-money'></i>"
-     weight = -99
+     weight = -98
      identifier = "rates-availability"
      url = "#"
 [[menu.main]]
+    name = "Offers"
+    pre = "<i class='fa fa-certificate'></i>"
+    weight = -95
+    identifier = "offers"
+    url = "#"
+[[menu.main]]
     name = "Property Details"
-    pre = "<i class='fa fa-list'></i>"
-    weight = -97
+    pre = "<i class='fa fa-file-text-o'></i>"
+    weight = -94
     identifier = "property-details"
     url = "#"
 
 [[menu.main]]
-    name = "Summary"
-    parent = "property-details"
-    weight = -100
+    name = "Property Checklist"
+    pre = "<i class='fa fa-list'></i>"
+    weight = -97
     identifier = "summary"
     url = "#"
     active = true

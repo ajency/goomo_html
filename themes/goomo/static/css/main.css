@@ -1406,6 +1406,21 @@ input[type=radio].fnb-radio.disabled:before {
 .tabular__row.no-border {
   border-bottom-color: transparent;
 }
+.tabular__row.disabled {
+  position: relative;
+}
+.tabular__row.disabled:after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-image: url(/goomo_html/img/repeating-bg.png);
+  content: '';
+  opacity: 0.4;
+}
 @media (max-width: 767px) {
   .tabular .cell-1,
   .tabular .cell-2,
