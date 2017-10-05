@@ -2,8 +2,8 @@
 title: "Summary"
 date: 2017-09-26T13:44:12+05:30
 draft: false
-layout: summary-for-review
-property: "Casa Amora"
+layout: summary-contract-pending
+property: "Casa Baga"
 status: "In Process"
 
 propertyinfo:
@@ -60,8 +60,10 @@ tax:
 
 digital:
  url: "/goomo_html/property/owner-for-review/"
- checklist: true
+ checklist: false
  qc: "--"
+ disabled: false
+ haslink: false
 
 rooms:
  done: false
@@ -96,6 +98,6 @@ users:
  qc: "--"
 
 qc:
- submit: true
+ submit: false
 ---
 

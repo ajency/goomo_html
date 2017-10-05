@@ -2,8 +2,8 @@
 title: "Summary"
 date: 2017-09-26T13:44:12+05:30
 draft: false
-layout: summary-for-review
-property: "Casa Amora"
+layout: summary-lt-done
+property: "Casa Colvale"
 status: "In Process"
 
 propertyinfo:
@@ -60,8 +60,10 @@ tax:
 
 digital:
  url: "/goomo_html/property/owner-for-review/"
- checklist: true
+ checklist: false
  qc: "--"
+ disabled: false
+ haslink: true
 
 rooms:
  done: false
@@ -92,10 +94,10 @@ ratesavail:
 users:
  done: false
  url: "#"
- checklist: true
+ checklist: false
  qc: "--"
 
 qc:
- submit: true
+ submit: false
 ---
 

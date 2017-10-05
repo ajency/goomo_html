@@ -81,6 +81,14 @@ cancel:
  checklist: true
  qc: "Approved"
 
+ratesavail:
+   done: true
+   url: "#"
+   pending: true
+   pendingtext: ""
+   checklist: true
+   qc: "--"
+
 users:
  done: true
  url: "#"
