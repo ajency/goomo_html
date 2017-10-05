@@ -159,7 +159,7 @@ var internal = $('#internal-table').DataTable({
 	$('.user-col-table [data-toggle="popover"]').popover({
 		html : true,
 	    content: function() {
-	       return $('.content-pop').html();
+	       return $(this).siblings('.content-pop').html();
 	    }
 	})
 
