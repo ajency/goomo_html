@@ -9177,19 +9177,23 @@ i.w-border {
   top: -8px;
 }
 @media screen and (max-width: 768px) {
-  #region-table_wrapper > .row:first-child {
+  #region-table_wrapper > .row:first-child,
+  .dataTables_wrapper > .row:first-child {
     display: flex;
     align-items: center;
   }
-  #region-table_wrapper .dataTables_length label {
+  #region-table_wrapper .dataTables_length label,
+  .dataTables_wrapper .dataTables_length label {
     display: flex;
     align-items: center;
     font-size: 0.85em;
   }
-  #region-table_wrapper .dataTables_length select {
+  #region-table_wrapper .dataTables_length select,
+  .dataTables_wrapper .dataTables_length select {
     margin: 0 10px;
   }
-  #region-table_wrapper .dataTables_filter label {
+  #region-table_wrapper .dataTables_filter label,
+  .dataTables_wrapper .dataTables_filter label {
     text-align: left;
     font-size: 0.85em;
   }
@@ -9197,6 +9201,24 @@ i.w-border {
 .region-add-modal .fnb-select {
   padding-left: 0;
   font-size: 1em;
+}
+.overflow-table {
+  overflow: auto;
+}
+.active-drop {
+  font-size: 0.8em;
+}
+.active-dropdown .dropdown-menu {
+  left: -5.5em;
+}
+.internal-table {
+  margin-top: 1.5em;
+}
+.internal-table.dataTable.no-wrap thead th {
+  border-bottom: 2px solid #ddd;
+}
+.mainTitle {
+  border-bottom: 2px solid #ddd !important;
 }
 .profile-stats {
   color: #fff;

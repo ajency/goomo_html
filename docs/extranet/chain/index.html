@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-		<title>Regions :: Goomo by Ajency</title>
+		<title>Chain :: Goomo by Ajency</title>
 
 		
 		<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,500,700" rel="stylesheet">
@@ -86,7 +86,7 @@
       
 
       
-      	<li class="breadcrump_active"><p class="fnb-breadcrums__title">Regions</p></li>
+      	<li class="breadcrump_active"><p class="fnb-breadcrums__title">Chain</p></li>
   	  
 
       
@@ -153,13 +153,13 @@
 		<li class="active">
 			<a href=" # " class=" form-toggle " id=""><i class="fa fa-cog"></i> Configurations </a>
 			<ul class="gs-steps collapse in edit-mode sub-steps" role="tablist" id="" >
-				<li class=" active ">
+				<li class="">
 					<a href="/goomo_html/extranet/regions" class="" id="">Regions</a>
 				</li>
 				<li class="">
 					<a href="/goomo_html/extranet/location/" class="" id="">Location Tags</a>
 				</li>
-				<li class="">
+				<li class=" active ">
 					<a href="/goomo_html/extranet/chain/" class="" id="">Chain</a>
 				</li>
 			</ul>
@@ -225,13 +225,13 @@
 		<li class="active">
 			<a href=" # " class=" form-toggle " id=""><i class="fa fa-cog"></i> Configurations </a>
 			<ul class="gs-steps collapse in edit-mode sub-steps" role="tablist" id="" >
-				<li class=" active ">
+				<li class="">
 					<a href="/goomo_html/extranet/regions" class="" id="">Regions</a>
 				</li>
 				<li class="">
 					<a href="/goomo_html/extranet/location/" class="" id="">Location Tags</a>
 				</li>
-				<li class="">
+				<li class=" active ">
 					<a href="/goomo_html/extranet/chain/" class="" id="">Chain</a>
 				</li>
 			</ul>
@@ -259,64 +259,30 @@
 	<div class="m-t-25">
 
 		<div class="row">
-			<div class="col-sm-12">
-				<div class="page-title">
+
+      <div class="col-sm-12">
+        <div class="page-title">
           <div class="title_left">
-          <h3 class="no-m-t fly-out-heading-size text-info">Regions <button class="btn fnb-btn secondary-btn btn-sm x-small add-modal" data-toggle="modal" data-target="#add_category_modal">+ Add a Region</button> <button class="btn btn-link text-decor">Reset All Filters</button></h3>
+          <h3 class="no-m-t fly-out-heading-size text-info">Chain <button class="btn fnb-btn secondary-btn btn-sm x-small add-modal" data-toggle="modal" data-target="#add_location_modal">+ Add a Chain</button> <button class="btn btn-link text-decor">Reset All Filters</button></h3>
           </div>
         </div>
-			</div>
+      </div>
 
 			<div class="col-sm-12 m-t-40 regions-container">
-				<table id="region-table" class="table table-striped dataTable region-table" cellspacing="0" width="100%">
+				<table id="listings-table" class="table table-striped dataTable listing-table" cellspacing="0" width="100%">
           <thead>
             <tr>
-              <th class="text-center" style="min-width: 10%;" >Name</th>
-              <th class="no-sort text-center" style="min-width: 15%;">
-                IsCountry
-                <select multiple class="form-control multi-dd">
-                  <option value="Yes">Yes</option>
-                  <option value="No">No</option>
-                </select>
-              </th>
-              <th class="no-sort text-center" style="min-width: 10%;">
-                IsState
-                <select multiple class="form-control multi-dd">
-                  <option value="Yes">Yes</option>
-                  <option value="No">No</option>
-                </select>
-              </th>
-              <th class="no-sort text-center" style="min-width: 15%;">
-               IsCity
-               <select multiple class="form-control multi-dd">
-                  <option value="Yes">Yes</option>
-                  <option value="No">No</option>
-                </select>
-              </th>
-              <th class="no-sort text-center" style="min-width: 10%;" rowspan="1">
-                Country
-                <select multiple class="form-control multi-dd">
-                  <option value="Yes">India</option>
-                  <option value="No">Others</option>
-                </select>
-              </th>
-              <th class="no-sort text-center" style="min-width: 10%;" rowspan="1">
-                State
-                <select multiple class="form-control multi-dd">
-                  <option value="Yes">Goa</option>
-                  <option value="No">Others</option>
-                </select>
-              </th>
+              <th class="text-left" style="min-width: 10%;" >Name</th>
               <th class="text-center" style="min-width: 10%;" rowspan="1">
                 Sort Order
               </th>
-              <th class="text-center" style="minwidth: 10%;" rowspan="1">
+              <th class="text-center" style="min-width: 10%;" rowspan="1">
                 Published Date
               </th>
-              <th class="text-center" style="minwidth: 10%;" rowspan="1">
+              <th class="text-center" style="min-width: 10%;" rowspan="1">
                 Last Updated On
               </th>
-              <th class="no-sort text-center" style="minwidth: 10%;" rowspan="1">
+              <th class="no-sort text-center" style="min-width: 10%;" rowspan="1">
                 Status
                 <select multiple class="form-control multi-dd">
                   <option value="Yes">Published</option>
@@ -329,87 +295,41 @@
 
           <tbody>
 
-
             <tr>
-              <td class="text-center"><a href="" class="text-info bolder" target="_blank">Panjim</a></td>
-              <td class="text-center"><i class="fa fa-times text-danger"></i></td>
-              <td class="text-center"><i class="fa fa-times text-danger"></i></td>
-              <td class="text-center"><i class="fa fa-check text-success"></i></td>
-              <td class="text-center">India</td>
-              <td class="text-center">Goa</td>
+              <td class="text-left"><a href="#" class="text-info bolder" target="_blank">Taj Hotels</a></td>
               <td class="text-center">1</td>
               <td class="text-center">15/9/2016<br>10:23:15</td>
               <td class="text-center">15/9/2016<br>10:23:15</td>
               <td class="text-center">Published <i class="fa fa-pencil text-decor p-l-5 text-secondary" data-toggle="modal" data-target="#edit_category_modal"></i></td>
             </tr>
-
             <tr>
-              <td class="text-center"><a href="" class="text-info bolder" target="_blank">Goa</a></td>
-              <td class="text-center"><i class="fa fa-check text-success"></i></td>
-              <td class="text-center"><i class="fa fa-times text-danger"></i></td>
-              <td class="text-center"><i class="fa fa-times text-danger"></i></td>
-              <td class="text-center">India</td>
-              <td class="text-center">---</td>
+              <td class="text-left"><a href="#" class="text-info bolder" target="_blank">Oberoi Hotels</a></td>
+              <td class="text-center">1</td>
+              <td class="text-center">15/9/2016<br>10:23:15</td>
+              <td class="text-center">15/9/2016<br>10:23:15</td>
+              <td class="text-center">Published <i class="fa fa-pencil text-decor p-l-5 text-secondary" data-toggle="modal" data-target="#edit_category_modal"></i></td>
+            </tr>
+            <tr>
+              <td class="text-left"><a href="#" class="text-info bolder" target="_blank">Le Meridien</a></td>
+              <td class="text-center">2</td>
+              <td class="text-center">15/9/2016<br>10:23:15</td>
+              <td class="text-center">15/9/2016<br>10:23:15</td>
+              <td class="text-center">Inactive <i class="fa fa-pencil text-decor p-l-5 text-secondary" data-toggle="modal" data-target="#edit_category_modal"></i></td>
+            </tr>
+            <tr>
+              <td class="text-left"><a href="#" class="text-info bolder" target="_blank">Hilton Group</a></td>
+              <td class="text-center">2</td>
+              <td class="text-center">15/9/2016<br>10:23:15</td>
+              <td class="text-center">15/9/2016<br>10:23:15</td>
+              <td class="text-center">Inactive <i class="fa fa-pencil text-decor p-l-5 text-secondary" data-toggle="modal" data-target="#edit_category_modal"></i></td>
+            </tr>
+            <tr>
+              <td class="text-left"><a href="#" class="text-info bolder" target="_blank">Triden Hotels</a></td>
               <td class="text-center">2</td>
               <td class="text-center">15/9/2016<br>10:23:15</td>
               <td class="text-center">15/9/2016<br>10:23:15</td>
               <td class="text-center">Published <i class="fa fa-pencil text-decor p-l-5 text-secondary" data-toggle="modal" data-target="#edit_category_modal"></i></td>
             </tr>
-
-            <tr>
-              <td class="text-center"><a href="" class="text-info bolder" target="_blank">Calangute</a></td>
-              <td class="text-center"><i class="fa fa-times text-danger"></i></td>
-              <td class="text-center"><i class="fa fa-check text-success"></i></td>
-              <td class="text-center"><i class="fa fa-times text-danger"></i></td>
-              <td class="text-center">---</td>
-              <td class="text-center">Goa</td>
-              <td class="text-center">3</td>
-              <td class="text-center">15/9/2016<br>10:23:15</td>
-              <td class="text-center">15/9/2016<br>10:23:15</td>
-              <td class="text-center">Published <i class="fa fa-pencil text-secondary p-l-5 text-decor" data-toggle="modal" data-target="#edit_category_modal"></i></td>
-            </tr>
-
-
-            <tr>
-              <td class="text-center"><a href="" class="text-info bolder" target="_blank">Margao</a></td>
-              <td class="text-center"><i class="fa fa-times text-danger"></i></td>
-              <td class="text-center"><i class="fa fa-times text-danger"></i></td>
-              <td class="text-center"><i class="fa fa-check text-success"></i></td>
-              <td class="text-center">India</td>
-              <td class="text-center">Goa</td>
-              <td class="text-center">1</td>
-              <td class="text-center">15/9/2016<br>10:23:15</td>
-              <td class="text-center">15/9/2016<br>10:23:15</td>
-              <td class="text-center">Published <i class="fa fa-pencil text-decor p-l-5 text-secondary" data-toggle="modal" data-target="#edit_category_modal"></i></td>
-            </tr>
-
-
-            <tr>
-              <td class="text-center"><a href="" class="text-info bolder" target="_blank">Maharashtra</a></td>
-              <td class="text-center"><i class="fa fa-check text-success"></i></td>
-              <td class="text-center"><i class="fa fa-times text-danger"></i></td>
-              <td class="text-center"><i class="fa fa-times text-danger"></i></td>
-              <td class="text-center">India</td>
-              <td class="text-center">---</td>
-              <td class="text-center">1</td>
-              <td class="text-center">15/9/2016<br>10:23:15</td>
-              <td class="text-center">15/9/2016<br>10:23:15</td>
-              <td class="text-center">Published <i class="fa fa-pencil text-decor p-l-5 text-secondary" data-toggle="modal" data-target="#edit_category_modal"></i></td>
-            </tr>
-
-            <tr>
-              <td class="text-center"><a href="" class="text-info bolder" target="_blank">Mumbai</a></td>
-              <td class="text-center"><i class="fa fa-check text-success"></i></td>
-              <td class="text-center"><i class="fa fa-times text-danger"></i></td>
-              <td class="text-center"><i class="fa fa-times text-danger"></i></td>
-              <td class="text-center">India</td>
-              <td class="text-center">Maharashtra</td>
-              <td class="text-center">2</td>
-              <td class="text-center">15/9/2016<br>10:23:15</td>
-              <td class="text-center">15/9/2016<br>10:23:15</td>
-              <td class="text-center">Published <i class="fa fa-pencil text-decor p-l-5 text-secondary" data-toggle="modal" data-target="#edit_category_modal"></i></td>
-            </tr>
-
 
           </tbody>
         </table>
@@ -419,159 +339,37 @@
 		</div>
 	</div>
 
-
-
-  <div class="modal fade region-add-modal" id="add_category_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal fade region-add-modal" id="add_location_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <form>
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h6 class="modal-title">Add New Region</h6>
+            <h6 class="modal-title">Add New Chain</h6>
           </div>
           <div class="modal-body">
-            <label>Type of Region <span class="text-danger">*</span></label>
-            <div class="form-group flex flex-space-between m-b-20 m-t-5">
-              <label class="radio-inline m-r-20">
-                <input type="radio" name="categoryType" id="parent_cat" value="parent_cat" class="fnb-radio" checked> <span class="p-l-5">Country</span>
-              </label>
-              <label class="radio-inline m-r-20">
-                <input type="radio" name="categoryType" id="branch_cat" value="branch_cat" class="fnb-radio"> <span class="p-l-5">State</span>
-              </label>
-              <label class="radio-inline m-r-20">
-                <input type="radio" name="categoryType" id="node_cat" value="node_cat" class="fnb-radio"> <span class="p-l-5">City</span>
-              </label>
-            </div>
-
-            <div class="row m-b-5 select-parent-cat hidden">
-              <div class="col-sm-6">
-                <div class="form-group">
-                  <label>Select Country  <span class="text-danger">*</span></label>
-                   <select class="form-control fnb-select border-bottom">
-                      <option selected="">India</option>
-                      <option>Russia</option>
-                      <option>Germany</option>
-                    </select>
-                </div>
-              </div>
-              <div class="col-sm-6 select-branch-cat">
-                <div class="form-group">
-                <label>Select State </label>
-                <select class="form-control fnb-select border-bottom">
-                    <option selected="">Goa</option>
-                    <option>Maharashtra</option>
-                </select>
-              </div>
-              </div>
-            </div>
 
 
             <div class="form-group m-b-20">
-              <label>Region Name  <span class="text-danger">*</span></label>
-               <input type="text" class="form-control fnb-input" name="" placeholder="Enter Region Name">
+              <label>Chain Name  <span class="text-danger">*</span></label>
+               <input type="text" class="form-control fnb-input" name="" value="" placeholder="Enter Chain Name">
             </div>
 
             <div class="form-group m-b-20">
-              <label>Region Slug  <span class="text-danger">*</span></label>
-               <input type="text" class="form-control fnb-input" name="" placeholder="Enter Region Slug">
+              <label>Chain Slug  <span class="text-danger">*</span></label>
+               <input type="text" class="form-control fnb-input" name="" value="" placeholder="Enter Chain Slug">
             </div>
 
 
             <div class="row m-b-10">
               <div class="col-sm-6">
-                <div class="form-group m-b-0">
-                  <label>Sort Order  <span class="text-danger">*</span></label>
-                  <input type="number" class="form-control fnb-input" name="" value="1" min="1" placeholder="Enter a Sort value">
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="form-group m-b-0">
-                  <label>Status <span class="text-danger">*</span></label>
-                  <select class="form-control fnb-select border-bottom">
-                    <option value="">Published</option>
-                    <option value="">Draft</option>
-                    <option value="">Archived</option>
-                  </select>
-                </div>
-              </div>
-            </div>
-
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn fnb-btn outline no-border" data-dismiss="modal">Cancel</button>
-            <button type="submit" class="btn primary-btn fnb-btn no-radius">Save</button>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-
-
-  <div class="modal fade region-add-modal" id="edit_category_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <form>
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h6 class="modal-title">Edit Region</h6>
-          </div>
-          <div class="modal-body">
-            <label>Type of Region <span class="text-danger">*</span></label>
-            <div class="form-group flex flex-space-between m-b-20 m-t-5">
-              <label class="radio-inline m-r-20">
-                <input type="radio" name="categoryType" id="parent_cat" value="parent_cat" class="fnb-radio" checked> <span class="p-l-5">Country</span>
-              </label>
-              <label class="radio-inline m-r-20">
-                <input type="radio" name="categoryType" id="branch_cat" value="branch_cat" class="fnb-radio"> <span class="p-l-5">State</span>
-              </label>
-              <label class="radio-inline m-r-20">
-                <input type="radio" name="categoryType" id="node_cat" value="node_cat" class="fnb-radio"> <span class="p-l-5">City</span>
-              </label>
-            </div>
-
-            <div class="row m-b-5 select-parent-cat hidden">
-              <div class="col-sm-6">
                 <div class="form-group">
-                  <label>Select Country  <span class="text-danger">*</span></label>
-                   <select class="form-control fnb-select border-bottom">
-                      <option selected="">India</option>
-                      <option>Russia</option>
-                      <option>Germany</option>
-                    </select>
-                </div>
-              </div>
-              <div class="col-sm-6 select-branch-cat">
-                <div class="form-group">
-                <label>Select State </label>
-                <select class="form-control fnb-select border-bottom">
-                    <option selected="">Goa</option>
-                    <option>Maharashtra</option>
-                </select>
-              </div>
-              </div>
-            </div>
-
-
-            <div class="form-group m-b-20">
-              <label>Region Name  <span class="text-danger">*</span></label>
-               <input type="text" class="form-control fnb-input" name="" value="India" placeholder="Enter Region Name">
-            </div>
-
-            <div class="form-group m-b-20">
-              <label>Region Slug  <span class="text-danger">*</span></label>
-               <input type="text" class="form-control fnb-input" name="" value="India" placeholder="Enter Region Slug">
-            </div>
-
-
-            <div class="row m-b-10">
-              <div class="col-sm-6">
-                <div class="form-group m-b-0">
                   <label>Sort Order  <span class="text-danger">*</span></label>
                   <input type="number" class="form-control fnb-input" name="" value="3" min="1" placeholder="Enter a Sort value">
                 </div>
               </div>
               <div class="col-sm-6">
-                <div class="form-group m-b-0">
+                <div class="form-group">
                   <label>Status <span class="text-danger">*</span></label>
                   <select class="form-control fnb-select border-bottom">
                     <option value="" selected="">Published</option>
@@ -591,9 +389,6 @@
       </div>
     </div>
   </div>
-
-
-
 
 
 															</div>
