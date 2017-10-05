@@ -96,6 +96,6 @@ users:
  qc: "--"
 
 qc:
- submit: true
+ submit: false
 ---
 
