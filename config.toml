@@ -87,3 +87,10 @@ theme = "goomo"
     weight = -72
     identifier = "finance"
     url = "#"
+
+[[menu.main]]
+    name = "Users"
+    parent = "property-details"
+    weight = -70
+    identifier = "users"
+    url = "#"    
