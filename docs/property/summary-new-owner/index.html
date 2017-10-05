@@ -237,6 +237,15 @@
           	
           </li>
           
+
+          <li>
+            
+            	<a href="#"> Users </a>
+            
+
+          	
+          </li>
+          
       </ul>
   
     </li>
@@ -483,6 +492,15 @@
           <li>
             
             	<a href="#"> Audit Logs </a>
+            
+
+          	
+          </li>
+          
+
+          <li>
+            
+            	<a href="#"> Users </a>
             
 
           	
@@ -1104,36 +1122,99 @@
             <p class="element-title heavier m-b-0">Back</p>
         </div>
         <div class="right">
+            
+                <div class="flex-row users-row header-row">
+                    <button class="btn fnb-btn secondary-btn full">Save</button>
+                </div>
+            
         </div>
     </div>
     <div class="fly-out__content">
         <div class="sidebar-updates page-sidebar">
-            <div class="page-sidebar__header flex-row space-between mobile-hide">
+        
+        
+
+           <div class="page-sidebar__header flex-row space-between mobile-hide">
                 <div class="backLink flex-row">
                     <a href="" class="primary-link p-r-10 element-title article-back"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
-                    <div class="sub-title bolder">Back to Amenities &amp; Services</div>
+                    <div class="sub-title bolder">Add User</div>
+                </div>
+                <div class="flex-row users-row">
+                    <button class="btn fnb-btn grey  full">Cancel</button>
+                    <button class="btn fnb-btn secondary-btn full">Save</button>
                 </div>
             </div>
-            <div class="page-sidebar__body">
-                <div class="update-sec sidebar-article">
-                    <div class="update-sec__body update-space">
-                        <img src="https://ajency.github.io/goomo_html/img/comment-pic.png" class="img-responsive center-block">
-                    </div>
 
-                    
-                    
-                    <div class="post-comment m-t-40">
-                        <div class="form-group m-b-30">
-                            <label class="label-size text-info">Comments by QC</label>
-                            <textarea class="form-control fnb-input" placeholder="Leave a comment"></textarea>
+            <div class="page-sidebar__body">
+                <div class="update-sec sidebar-article user-overflow">
+                   <h5 class="bolder m-t-35 prop-title">Reservations</h5>
+                   <p>These users will have access to Bookings and Rates and Availability sections only.</p>
+
+                    <div class="row field-gap c-gap">
+                        <div class="col-sm-12 form-group m-b-20">
+                            <label class="text-info required">Name </label>
+                            <div class="flex-row">
+                                <select class="fnb-select select-variant form-control text-lighter p-l-0 m-r-10 code-box" name="">
+                                    <option value="">Mr</option>
+                                    <option>Mrs</option>
+                                </select>
+                                <input type="text" class="form-control fnb-input" placeholder="Name of Business Entity">
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <button class="btn fnb-btn secondary-btn bold-btn full">Post</button>
+                        <div class="col-sm-6 c-gap form-group m-b-20">
+                            <label class="text-info required">Designation </label>
+                            <select class="fnb-select select-variant form-control text-lighter p-l-0" name="">
+                                <option value="">Select Designation</option>
+                                <option>General Manager</option>
+                                <option>Revenue Manager</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-6 c-gap form-group m-b-20">
+                            <label class="text-info required">Email </label>
+                            <input type="email" class="form-control fnb-input" placeholder="eg. xyz@gmail.com">
+                        </div>
+                        <div class="col-sm-12 c-gap form-group m-b-20">
+                            <label class="text-info required">Mobile Number </label>
+                            <div class="flex-row">
+                                <select class="fnb-select select-variant form-control text-lighter p-l-0 m-r-10 code-box" name="">
+                                    <option value="">+91</option>
+                                    <option>+94</option>
+                                </select>
+                                <input type="email" class="form-control fnb-input" placeholder="eg. xyz@gmail.com">
+                            </div>
+                        </div>
+                        <div class="col-sm-12 c-gap form-group m-b-20">
+                            <label class="text-info required">Landline Number </label>
+                            <div class="flex-row">
+                                <select class="fnb-select select-variant form-control text-lighter p-l-0 m-r-10 code-box" name="">
+                                    <option value="">0831</option>
+                                    <option>+94</option>
+                                </select>
+                                <input type="email" class="form-control fnb-input" placeholder="eg. xyz@gmail.com">
+                            </div>
+                        </div>
+                        <div class="col-sm-6 c-gap form-group">
+                            <label class="text-info required">Password </label>
+                            <input type="email" class="form-control fnb-input" placeholder="">
+                        </div>
+                        <div class="col-sm-6 c-gap form-group">
+                            <label class="text-info required">Confirm Password </label>
+                            <input type="email" class="form-control fnb-input" placeholder="">
+                        </div>
+                        <div class="col-sm-12 c-gap form-group">
+                            <p class="flex-row"><div class="text-danger">Note: </div>Use a strong password of at least 6 characters, perferably an alphanumeric combination.</p>
+                        </div>
+                        <div class="col-sm-12 c-gap form-group flex-row users-row">
+                            <button class="btn fnb-btn secondary-btn full">Save</button>
+                            <button class="btn fnb-btn grey  full">Cancel</button>
                         </div>
                     </div>
-                    
+          
                 </div>
             </div>
+
+         
+
         </div>
     </div>
 </div>
