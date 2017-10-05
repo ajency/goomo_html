@@ -138,8 +138,8 @@
 			</div>
 		{{ else if $.Params.qcstatus.submitted }}
 			<div class="flex-row property-status-box">
-				<div class="status-info flex-row">
-					You have submitted your property for QC Review. You will be able to make changes to this section only after the QC Review.
+				<div class="status-info">
+					You have submitted your listing for QC Review. You will be able to make changes to this section only after the QC Review.
 				</div>
 				<div class="check-status">
 					Checklist Status:<br>
@@ -148,14 +148,14 @@
 				<div class="qc-status">
 					QC Status:<br>
 	                <h6 class="text-secondary">Pending Review</h6>
-	                <!-- <button class="btn btn-white s-outline outline fnb-btn small open-sidebar ">Suggest Edits</button>
-					<button class="btn btn-white secondary-btn outline fnb-btn small " data-toggle="modal" data-target="#approveModal">Approve</button> -->
+	                <button class="btn btn-white s-outline outline fnb-btn small open-sidebar ">Suggest Edits</button>
+					<button class="btn btn-white secondary-btn outline fnb-btn small " data-toggle="modal" data-target="#approveModal">Approve</button>
 				</div>
 			</div>
 		{{ else }}
 			<div class="flex-row property-status-box m-b-30">
 				<div class="status-info flex-row">
-					Please add Contract and Finance details. To make it easy for you, we have different sections for different information.
+					Please add images of your property. To make it easy for you, we have sections for property and room images.
 				</div>
 				<div class="check-status">
 					Checklist Status:<br>
@@ -169,23 +169,54 @@
 		{{ end }}
 
 
+
 		<div class="row">
 			<div class="col-sm-12">
+
+			<!-- 	<div class="listing-details m-t-30">
+
+					<div class="flex-row property-status-box">
+						<div class="status-info">
+							The Qc team has a few suggestions. Please make below suggested changes and resubmit for review.
+						</div>
+						<div class="check-status">
+							Checklist Status:<br>
+							<img src="{{"img/green-check-circle.png" | absURL}}" class="img-responsive m-t-15 center-block" width="">
+						</div>
+						<div class="qc-status">
+							QC Status:<br>
+							<select class="fnb-select select-variant form-control suggestion-select bat-color">
+			                    <option value="">--Select--</option>
+			                    <option selected="">Edit Suggested</option>
+			                </select>
+			                <a href="#" class="secondary-link open-sidebar form-toggle text-decor label-size leave-com">Leave a comment</a>
+						</div>
+					</div>
+				</div> -->
 
 				<div class="finance-col financeCols m-t-40">
 					<h5 class="no-m-t fly-out-heading-size bat-color bolder m-b-20">Finance Inputs</h5>
 					<div class="row finance-inputs">
 						<div class="col-sm-3 target-col">
-							<label class="label-size m-b-0"><h6 class="dis-inline m-b-0">[INR]</h6> Indian Rupee</label>
+							<div class="flex-row space-between align-end">
+								<label class="label-size m-b-0"><h6 class="dis-inline m-b-0">[INR]</h6> Indian Rupee</label>
+								<!-- <a href="#" class="secondary-link"><i class="fa fa-pencil text-decor" aria-hidden="true"></i></a> -->
+							</div>
 		                	<input type="text" class="form-control fnb-input" readonly="" placeholder="Currency">
 						</div>
 						<div class="col-sm-3 target-col">
-							<label class="label-size m-b-0"><h6 class="dis-inline m-b-0">30</h6> %</label>
+							<div class="flex-row space-between align-end">
+								<label class="label-size m-b-0"><h6 class="dis-inline m-b-0">30</h6> %</label>
+								<!-- <a href="#" class="secondary-link"><i class="fa fa-pencil text-decor" aria-hidden="true"></i></a> -->
+							</div>
 		                	<input type="text" class="form-control fnb-input" readonly="" placeholder="Commission">
 						</div>
 						<div class="col-sm-6">
 							<!-- <div class="vendor-code">
-								<p class="sub-title text-secondary">ABCD 204550600000</p>
+								<div class="flex-row space-between">
+									<p class="sub-title text-secondary m-b-0">ABCD 204550600000</p>
+									<a href="#" class="secondary-link"><i class="fa fa-pencil text-decor" aria-hidden="true"></i></a>
+								</div>
 								<h6 class="text-medium text-muted m-b-0">NAV vendor code</h6>
 							</div> -->
 						</div>
@@ -193,7 +224,10 @@
 				</div>
 
 				<div class="bank-details financeCols m-t-40">
-					<h5 class="no-m-t fly-out-heading-size bat-color bolder m-b-20">Bank details</h5>
+					<div class="flex-row space-between">
+						<h5 class="no-m-t fly-out-heading-size bat-color bolder m-b-20">Bank details</h5>
+						<button class="btn fnb-btn s-outline bold-btn full m-t-10"><span>Add Bank Details</span></button>
+					</div>
 					<table id="listings-table" class="table table-striped dataTable listing-table" cellspacing="0" width="100%">
 			        	<thead>
 				            <tr>
@@ -208,7 +242,7 @@
 				            </tr>
 			          	</thead>
 			         	<tbody>
-				            <tr>
+				           <!--  <tr>
 				              <td class=""><a href="#" class="text-info bolder">FC1123333445</a></td>
 				              <td class="">Sujata Patil</td>
 				              <td class="">HDFC BANK</td>
@@ -216,8 +250,8 @@
 				              <td class="">AWCET1234</td>
 				              <td class=""><a href="#" class="secondary-link"><i class="fa fa-download" aria-hidden="true"></i> Download</a></td>
 				              <td class=""><span class="text-info">Active</span></td>
-				              <td class="text-center"><!-- <a href="#" class="secondary-link"><i class="fa fa-pencil text-decor" aria-hidden="true"></i></a> --></td>
-				            </tr>
+				              <td class="text-center"><a href="#" class="secondary-link"><i class="fa fa-pencil text-decor" aria-hidden="true"></i></a></td>
+				            </tr> -->
 			          	</tbody>
 		       		</table>
 				</div>
@@ -225,7 +259,7 @@
 				<div class="tax-rules financeCols m-t-40">
 					<div class="flex-row space-between">
 						<h5 class="no-m-t fly-out-heading-size bat-color bolder m-b-20">Tax Rules</h5>
-						<button class="btn fnb-btn s-outline bold-btn full m-t-10" disabled=""><span>Add Tax Rule</span></button>
+						<button class="btn fnb-btn s-outline bold-btn full m-t-10"><span>Add Tax Rule</span></button>
 					</div>
 
 					<table id="tax-table" class="table table-striped dataTable listing-table" cellspacing="0" width="100%">
@@ -240,14 +274,14 @@
 				            </tr>
 			          	</thead>
 			         	<tbody>
-				            <tr>
+				            <!-- <tr>
 				              <td class=""><span class="text-color bolder">30 May 2017</span></td>
 				              <td class=""><span class="text-color bolder">31 May 2017</span></td>
 				              <td class=""><span class="text-color bolder">Hotel</span></td>
 				              <td class="">--</td>
 				              <td class=""><span class="text-color bolder">Other Tax on Rack Rat</span><br> Type: Percentage | Value: 10.0</td>
-				              <td class="text-center"><!-- <a href="#" class="secondary-link"><i class="fa fa-pencil text-decor" aria-hidden="true"></i></a> --></td>
-				            </tr>
+				              <td class="text-center"><a href="#" class="secondary-link"><i class="fa fa-pencil text-decor" aria-hidden="true"></i></a></td>
+				            </tr> -->
 			          	</tbody>
 		       		</table>
 				</div>
@@ -265,26 +299,27 @@
 		            <div class="row m-t-40">
 		            	<div class="col-sm-2">
 				    	<label class="sub-title text-info  m-b-10 signed-label ">Signed Contract</label><br>
-				            <div class="text-center dis-inline">
+				            <!-- <div class="text-center dis-inline">
 				            	<img src="{{"img/signed.png" | absURL}}" class="img-responsive">
 								<a href="#" class="text-decor secondary-link">View</a>
-				            </div>
+				            </div> -->
+		            		<button class="btn btn-sm primary-btn fnb-btn ">Generate Contract</button>
 		            	</div>
 		            	<div class="col-sm-10">
 		            		<div>
 
 		            		  <!-- Nav tabs -->
 		            		  <ul class="nav nav-tabs" role="tablist">
-		            		    <li role="presentation"><a href="#uploadContract" aria-controls="home" role="tab" data-toggle="tab">Upload</a></li>
-		            		    <li role="presentation" class="active"><a href="#history" aria-controls="profile" role="tab" data-toggle="tab">History</a></li>
+		            		    <li role="presentation" class="active"><a href="#uploadContract" aria-controls="home" role="tab" data-toggle="tab">Upload</a></li>
+		            		    <li role="presentation"><a href="#history" aria-controls="profile" role="tab" data-toggle="tab">History</a></li>
 		            		  </ul>
 
 		            		  <!-- Tab panes -->
 		            		  <div class="tab-content p-t-20">
-		            		    <div role="tabpanel" class="tab-pane " id="uploadContract">
+		            		    <div role="tabpanel" class="tab-pane active" id="uploadContract">
 		            		    	<button class="btn btn-sm outline fnb-btn ">Upload Contract</button>
 		            		    </div>
-		            		    <div role="tabpanel" class="tab-pane active" id="history">
+		            		    <div role="tabpanel" class="tab-pane " id="history">
 		            				<!-- <h6>History</h6> -->
 				            		<div class="history-wrap">
 				            			<!-- <div class="flex-row m-b-5">
@@ -298,7 +333,7 @@
 				            					<a href="#">Download</a>
 				            				</div>
 				            			</div> -->
-				            			<div class="flex-row">
+				            			<!-- <div class="flex-row">
 				            				<div class="m-r-40">
 				            					Uploaded on 29/08/2017
 				            				</div>
@@ -308,7 +343,8 @@
 				            				<div>
 				            					<a href="#">Download</a>
 				            				</div>
-				            			</div>
+				            			</div> -->
+				            			N/A
 				            		</div>
 		            		    </div>
 		            		  </div>
@@ -319,11 +355,14 @@
 		            </div>
 				</div>
 
-
 				<div class="declaration financeCols m-t-40">
+					<div class="alert alert-warning">
+						You need to enter all the required details before you can accept the contract.
+					</div>
 					<div class="declaration-row flex-row space-between">
 						<p class="m-b-0 sub-title text-info bolder">I hereby declare that the details furnished above are true and correct</p>
-						<p class="m-b-0 text-primary bolder"><i class="fa fa-check" aria-hidden="true"></i> Confirmed</p>
+						<!-- <p class="m-b-0 text-secondary bolder"><i class="fa fa-check" aria-hidden="true"></i> Confirmed</p> -->
+						<button class="btn fnb-btn secondary-btn bolder" disabled="" data-target="#acceptmodal" data-toggle="modal">Accept</button>
 					</div>
 				</div>
 

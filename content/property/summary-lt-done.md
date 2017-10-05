@@ -47,19 +47,19 @@ contract:
  done: false
 
 bank:
- url: "/goomo_html/property/owner-for-review/"
+ url: "#"
  checklist: true
  qc: "--"
 
 tax:
- url: "/goomo_html/property/owner-for-review/"
+ url: "#"
  pending: false
  pendingtext: ""
  checklist: true
  qc: "--"
 
 digital:
- url: "/goomo_html/property/owner-for-review/"
+ url: "#"
  checklist: false
  qc: "--"
  disabled: false
