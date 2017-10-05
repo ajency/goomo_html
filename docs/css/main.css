@@ -10413,7 +10413,7 @@ i.w-border {
 .internal-table.dataTable.no-wrap thead th {
   border-bottom: 2px solid #ddd;
 }
-.main-title {
+.mainTitle {
   border-bottom: 2px solid #ddd !important;
 }
 .profile-stats {
