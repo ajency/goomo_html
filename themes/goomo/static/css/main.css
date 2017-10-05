@@ -9220,6 +9220,70 @@ i.w-border {
 .mainTitle {
   border-bottom: 2px solid #ddd !important;
 }
+@media screen and (min-width: 769px) {
+  .roles-box label {
+    margin-right: 0.5em;
+    margin-bottom: 0.8em;
+  }
+}
+.roles-box.custom-radio input[type=checkbox]:before {
+  background-color: #fff;
+}
+.limited-tag__label {
+  position: absolute;
+  bottom: 0;
+  padding: 0.3em 0.5em;
+  border: 1px solid #ff8500;
+  border-radius: 4px;
+  font-size: 0.85em;
+}
+.limited-tag a {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 0.5em;
+  font-size: 1.05em;
+}
+.flex-list .flexdatalist-multiple.flexdatalist-multiple li.value {
+  border-color: #ff8500;
+  background-color: #fff;
+  color: #000;
+}
+.flex-list .flexdatalist-multiple.flexdatalist-multiple {
+  display: flex;
+}
+.flex-list .flexdatalist-multiple.flexdatalist-multiple .input-container {
+  margin: 0;
+  padding-left: 0;
+  padding-top: 4px;
+}
+.status-label.select-variant {
+  font-size: 1em;
+}
+@media screen and (min-width: 769px) {
+  .access-fields .form-group {
+    margin-bottom: 25px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .userTitle {
+    line-height: 1.6;
+    margin-top: 1em;
+  }
+  .access-fields {
+    margin-top: 0;
+  }
+  .limited-tag .flexdatalist-multiple li.input-container input {
+    width: 52%;
+  }
+  .limited-tag a {
+    font-size: 1em;
+  }
+  .roles-box label {
+    margin-right: 1em;
+    margin-bottom: 1em;
+  }
+}
 .profile-stats {
   color: #fff;
   background: #378f9e;
