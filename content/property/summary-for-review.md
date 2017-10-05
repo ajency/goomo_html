@@ -27,7 +27,7 @@ images:
  pending: false
  pendingtext: ""
  checklist: true
- qc: "--"
+ qc: "Pending Review"
 
 policies:
  url: "#"
@@ -49,19 +49,19 @@ contract:
 bank:
  url: "/goomo_html/property/owner-for-review/"
  checklist: true
- qc: "--"
+ qc: "Pending Review"
 
 tax:
  url: "/goomo_html/property/owner-for-review/"
  pending: false
  pendingtext: ""
  checklist: true
- qc: "--"
+ qc: "Pending Review"
 
 digital:
  url: "/goomo_html/property/owner-for-review/"
  checklist: true
- qc: "--"
+ qc: "Pending Review"
 
 rooms:
  done: false
@@ -79,7 +79,7 @@ cancel:
  done: false
  url: "#"
  checklist: true
- qc: "--"
+ qc: "Pending Review"
 
 ratesavail:
    done: false
