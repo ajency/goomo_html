@@ -10502,6 +10502,10 @@ i.w-border {
     margin-bottom: 1em;
   }
 }
+.contract-full {
+  white-space: pre-line;
+  text-align: left;
+}
 .user-cols i {
   font-size: 2.5em;
   color: #3d938d;

@@ -5,17 +5,18 @@
 			<div class="flex-row property-status-box">
 				<div class="status-info flex-row">
 					<div>
-						Now that you have uploaded your property images, please submit your property for review. You can do so from the <a href="/goomo_html/property/summary-for-review/">Property Summary page</a>.
+						All the required details have been filled in. Please review all the details entered and approve the contract. Once you approve the contract, your property will be submitted for review.
 					</div>
 				</div>
 				<div class="check-status">
 					Checklist Status:<br>
-					<img src="{{"img/green-check-circle.png" | absURL}}" class="img-responsive m-t-15 center-block" width="">
+					<!-- <img src="{{"img/green-check-circle.png" | absURL}}" class="img-responsive m-t-15 center-block" width=""> -->
+					<i class="fa fa-circle w-border m-t-15"></i>
 				</div>
 				<div class="qc-status">
 					QC Status:<br>
-					<!-- <h6 class="text-secondary">Pending Review</h6> -->
-					<p class="bat-color m-t-10">To be submitted for review on <a href="/goomo_html/property/summary-for-review/">Summary page</a></p>
+					<h6 class="text-secondary">Info Needed</h6>
+					<!-- <p class="bat-color m-t-10">To be submitted for review on <a href="/goomo_html/property/summary-for-review/">Summary page</a></p> -->
 				</div>
 			</div>
 		{{ else if $.Params.qcstatus.new }}
@@ -138,8 +139,8 @@
 			</div>
 		{{ else if $.Params.qcstatus.submitted }}
 			<div class="flex-row property-status-box">
-				<div class="status-info">
-					You have submitted your listing for QC Review. You will be able to make changes to this section only after the QC Review.
+				<div class="status-info flex-row">
+					You have submitted your property for QC Review. You will be able to make changes to this section only after the QC Review.
 				</div>
 				<div class="check-status">
 					Checklist Status:<br>
@@ -148,8 +149,8 @@
 				<div class="qc-status">
 					QC Status:<br>
 	                <h6 class="text-secondary">Pending Review</h6>
-	                <button class="btn btn-white s-outline outline fnb-btn small open-sidebar ">Suggest Edits</button>
-					<button class="btn btn-white secondary-btn outline fnb-btn small " data-toggle="modal" data-target="#approveModal">Approve</button>
+	                <!-- <button class="btn btn-white s-outline outline fnb-btn small open-sidebar ">Suggest Edits</button>
+					<button class="btn btn-white secondary-btn outline fnb-btn small " data-toggle="modal" data-target="#approveModal">Approve</button> -->
 				</div>
 			</div>
 		{{ else }}
@@ -169,56 +170,25 @@
 		{{ end }}
 
 
-
 		<div class="row">
 			<div class="col-sm-12">
-
-			<!-- 	<div class="listing-details m-t-30">
-
-					<div class="flex-row property-status-box">
-						<div class="status-info">
-							The Qc team has a few suggestions. Please make below suggested changes and resubmit for review.
-						</div>
-						<div class="check-status">
-							Checklist Status:<br>
-							<img src="{{"img/green-check-circle.png" | absURL}}" class="img-responsive m-t-15 center-block" width="">
-						</div>
-						<div class="qc-status">
-							QC Status:<br>
-							<select class="fnb-select select-variant form-control suggestion-select bat-color">
-			                    <option value="">--Select--</option>
-			                    <option selected="">Edit Suggested</option>
-			                </select>
-			                <a href="#" class="secondary-link open-sidebar form-toggle text-decor label-size leave-com">Leave a comment</a>
-						</div>
-					</div>
-				</div> -->
 
 				<div class="finance-col financeCols m-t-40">
 					<h5 class="no-m-t fly-out-heading-size bat-color bolder m-b-20">Finance Inputs</h5>
 					<div class="row finance-inputs">
 						<div class="col-sm-3 target-col">
-							<div class="flex-row space-between align-end">
-								<label class="label-size m-b-0"><h6 class="dis-inline m-b-0">[INR]</h6> Indian Rupee</label>
-								<a href="#" class="secondary-link"><i class="fa fa-pencil text-decor" aria-hidden="true"></i></a>
-							</div>
+							<label class="label-size m-b-0"><h6 class="dis-inline m-b-0">[INR]</h6> Indian Rupee</label>
 		                	<input type="text" class="form-control fnb-input" readonly="" placeholder="Currency">
 						</div>
 						<div class="col-sm-3 target-col">
-							<div class="flex-row space-between align-end">
-								<label class="label-size m-b-0"><h6 class="dis-inline m-b-0">30</h6> %</label>
-								<a href="#" class="secondary-link"><i class="fa fa-pencil text-decor" aria-hidden="true"></i></a>
-							</div>
+							<label class="label-size m-b-0"><h6 class="dis-inline m-b-0">30</h6> %</label>
 		                	<input type="text" class="form-control fnb-input" readonly="" placeholder="Commission">
 						</div>
 						<div class="col-sm-6">
-							<div class="vendor-code">
-								<div class="flex-row space-between">
-									<p class="sub-title text-secondary m-b-0">ABCD 204550600000</p>
-									<a href="#" class="secondary-link"><i class="fa fa-pencil text-decor" aria-hidden="true"></i></a>
-								</div>
+							<!-- <div class="vendor-code">
+								<p class="sub-title text-secondary">ABCD 204550600000</p>
 								<h6 class="text-medium text-muted m-b-0">NAV vendor code</h6>
-							</div>
+							</div> -->
 						</div>
 					</div>
 				</div>
@@ -286,7 +256,8 @@
 				<div class="contract-col financeCols m-t-40">
 					<h5 class="no-m-t fly-out-heading-size bat-color bolder m-b-20">Contract</h5>
 
-					<label class="sub-title text-info m-t-20 m-b-10">Terms &amp; Conditions </label> <a href="#" class="secondary-link"><i class="fa fa-pencil text-decor" aria-hidden="true"></i></a>
+					<label class="sub-title text-info m-t-20 m-b-10">Terms &amp; Conditions </label>
+					<!-- <a href="#" class="secondary-link"><i class="fa fa-pencil text-decor" aria-hidden="true"></i></a> -->
 		            <p class="text-lighter captionStyle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit inventore ut autem et nostrum eius quae aspernatur doloremque nesciunt officia? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit inventore ut autem et nostrum eius quae aspernatur doloremque nesciunt officia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit inventore ut autem et nostrum eius quae aspernatur doloremque nesciunt officia?</p>
 
 		            <div class="flex-row space-between">
@@ -349,11 +320,12 @@
 		            </div>
 				</div>
 
+
 				<div class="declaration financeCols m-t-40">
 					<div class="declaration-row flex-row space-between">
 						<p class="m-b-0 sub-title text-info bolder">I hereby declare that the details furnished above are true and correct</p>
-						<!-- <p class="m-b-0 text-secondary bolder"><i class="fa fa-check" aria-hidden="true"></i> Confirmed</p> -->
-						<p class="m-b-0 text-warning bolder"><i class="fa fa-exclamation" aria-hidden="true"></i> Pending</p>
+						<!-- <p class="m-b-0 text-primary bolder"><i class="fa fa-check" aria-hidden="true"></i> Confirmed</p> -->
+						<button class="btn fnb-btn secondary-btn bolder" data-target="#acceptmodal" data-toggle="modal">Accept</button>
 					</div>
 				</div>
 
@@ -363,7 +335,7 @@
 
 
 
-
+{{ partial "accept-modal.html" .}}
 
 
 {{ end }}

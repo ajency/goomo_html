@@ -47,19 +47,19 @@ contract:
  done: true
 
 bank:
- url: "/goomo_html/property/qc-published/"
+ url: "/goomo_html/property/contract-owner-published/"
  checklist: true
  qc: "Approved"
 
 tax:
- url: "/goomo_html/property/qc-published/"
+ url: "/goomo_html/property/contract-owner-published/"
  pending: false
  pendingtext: ""
  checklist: true
  qc: "Approved"
 
 digital:
- url: "/goomo_html/property/qc-published/"
+ url: "/goomo_html/property/contract-owner-published/"
  checklist: true
  qc: "Approved"
 
