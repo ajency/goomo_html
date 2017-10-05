@@ -10375,6 +10375,10 @@ i.w-border {
 .regions-container .form-inline .multiselect-container li a label.checkbox input[type=checkbox]:before {
   top: -8px;
 }
+.all-properties .dataTables_wrapper .dataTables_length,
+.all-properties .dataTables_wrapper .dataTables_filter {
+  display: none;
+}
 @media screen and (max-width: 768px) {
   #region-table_wrapper > .row:first-child,
   .dataTables_wrapper > .row:first-child {
@@ -10581,6 +10585,38 @@ i.w-border {
         -ms-flex-pack: center;
             justify-content: center;
   }
+}
+.all-properties .stats-row .stats-cols {
+  -webkit-box-flex: inherit;
+  -webkit-flex: inherit;
+      -ms-flex: inherit;
+          flex: inherit;
+}
+.all-properties .status-bucket .buckets {
+  margin-bottom: 1em;
+}
+.all-properties .status-bucket .buckets:first-child {
+  border-bottom: 0;
+}
+.all-properties .status-bucket__row {
+  -webkit-box-flex: inherit;
+  -webkit-flex: inherit;
+      -ms-flex: inherit;
+          flex: inherit;
+}
+@media screen and (min-width: 769px) {
+  .all-properties .status-bucket__row {
+    min-width: 130px;
+  }
+}
+.filter-by .flexdatalist-multiple.flexdatalist-multiple .input-container {
+  margin: 0;
+  padding-left: 0;
+  margin-top: 10px;
+}
+.filter-by .flexdatalist-multiple.flexdatalist-multiple li.value {
+  margin-top: 10px;
+  font-size: 0.9em;
 }
 .profile-stats {
   color: #fff;

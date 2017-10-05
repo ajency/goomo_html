@@ -1,0 +1,329 @@
+{{ define "main" }}
+	<div class="m-t-25">
+
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="flex-row space-between">
+					<div class="main-title">
+						<h3 class="no-m-t fly-out-heading-size text-info ">{{ .Title }}</h3>
+						<p class="text-muted">Manage in-process properties</p>
+					</div>
+					<div class="section-icon">
+						<img src="{{"img/all-listings.png" | absURL}}" class="img-responsive">
+					</div>
+				</div>
+			</div>
+
+      <!-- stats -->
+      <div class="col-sm-12 m-t-50 stats-container all-properties">
+        <div class="stats-row flex-row flex-wrap">
+          <div class="total-listing">
+            <div class="total-listing__count flex-row space-between">
+              <div>
+                <h5 class="bolder m-b-5 titles">50</h5>
+                <p class="m-b-0 text-lighter">Total Properties</p>
+              </div>
+              <img src="{{"img/listing-count.png" | absURL}}" class="img-responsive" width="35">
+            </div>
+          </div>
+
+          <div class="status-bucket stats-cols dsk-separator">
+            <p class="bolder">Status buckets</p>
+            <div class="flex-row align-reset space-between">
+              <div class="status-bucket__row">
+                <div class="buckets bucket-1">
+                  <p class="m-b-0 text-muted sub-title">11</p>
+                  <p class="m-b-0 text-muted default-size">In Process</p>
+                </div>
+              </div>
+              <div class="status-bucket__row">
+                <div class="buckets bucket-2">
+                  <p class="m-b-0 text-success sub-title">20</p>
+                  <p class="m-b-0 text-success default-size">Ac Pending</p>
+                </div>
+              </div>
+              <div class="status-bucket__row">
+                <div class="buckets bucket-1">
+                  <p class="m-b-0 text-primary sub-title">15</p>
+                  <p class="m-b-0 text-primary default-size">Info Needed</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+			<!-- filter -->
+			<div class="col-sm-12 m-t-35">
+				<div class="flex-row space-between search-row">
+					<div class="filter-search flex-row align-reset">
+						<!-- <div class="filter-search__field">
+							<i class="fa fa-search text-lighter element-title" aria-hidden="true"></i>
+							<input type="search" class="fnb-input" placeholder="Search by">
+						</div> -->
+						<button class="btn fnb-btn transparent bold-btn full flex-row"  data-toggle="collapse" data-target="#moreFiltersWrap"><img src="{{"img/filter-bars.png" | absURL}}" class="img-responsive p-r-5" width="30"> <span>Filter</span></button>
+					</div>
+					<!-- <a href="{{ $.Params.createnew.url }}" class="btn fnb-btn secondary-btn bold-btn border-btn full add-list flex-row"><span>Add property</span></a> -->
+				</div>
+			</div>
+
+      <!-- Filters -->
+      <div class="col-sm-12">
+        <div class="more-filters-wrapper m-t-25 collapse" id="moreFiltersWrap">
+          <div class="card">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-sm-6">
+                <h6 class="m-b-0 m-t-0">Filter by</h6>
+                </div>
+                <div class="col-sm-6 text-right">
+                  <button type="button" class="close" data-toggle="collapse" data-target="#moreFiltersWrap">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-sm-12 col-md-3">
+                 
+
+                  <div class="filter-section filter-by m-t-30">
+
+                    <label class="label-size text-info">Country</label>
+                    
+                    <div>
+                      <input type="text" class="form-control fnb-input payment-add flexdatalist" multiple="multiple" placeholder="Type for suggestions &amp; select" list="locations" value="India">
+                      <datalist id="locations">
+                          <option value="Russia">Russia</option>
+                          <option value="USA">USA</option>
+                      </datalist>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="col-sm-12 col-md-3">
+                  
+
+                  <div class="filter-section filter-by m-t-30">
+
+                    <label class="label-size text-info">State</label>
+                    
+                    <div>
+                      <input type="text" class="form-control fnb-input payment-add flexdatalist" multiple="multiple" placeholder="Type for suggestions &amp; select" list="locations" value="Goa">
+                      <datalist id="locations">
+                          <option value="Goa">Goa</option>
+                          <option value="Maharashtra">Maharashtra</option>
+                          <option value="Rajasthan">Rajasthan</option>
+                      </datalist>
+                    </div>
+                  </div>
+
+
+                </div>
+
+                <div class="col-sm-12 col-md-3">
+                  <div class="filter-section filter-by m-t-30">
+
+                    <label class="label-size text-info">City</label>
+                    
+                    <div>
+                      <input type="text" class="form-control fnb-input payment-add flexdatalist" multiple="multiple" placeholder="Type for suggestions &amp; select" list="locations" value="Panjim">
+                      <datalist id="locations">
+                          <option value="panjim">Panjim</option>
+                          <option value="mapusa">Mapusa</option>
+                      </datalist>
+                    </div>
+                  </div>
+
+                </div>
+
+               <div class="col-sm-12 col-md-3">
+                  
+                  <div class="filter-section filter-by m-t-30">
+
+                    <label class="label-size text-info">Location</label>
+                    
+                    <div>
+                      <input type="text" class="form-control fnb-input payment-add flexdatalist" multiple="multiple" placeholder="Type for suggestions &amp; select" list="locations" value="All">
+                      <datalist id="locations">
+                          <option value="all">All</option>
+                          <option value="north goa">North Goa</option>
+                          <option value="south goa">South Goa</option>
+                      </datalist>
+                    </div>
+                  </div>
+
+                </div>
+
+
+              </div>
+
+              <div class="row m-t-30">
+                <div class="col-sm-6">
+                 <div class="radio-group m-t-10 custom-radio">
+                      <label for="wel" class="m-b-25">
+                        <input value="" type="checkbox" class="fnb-checkbox" name="contract" id="wel"
+                        checked="">
+                        <span class="p-l-5 text-medium text-color default-size">Display all the listings with status "In Process"</span>
+                      </label>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="pull-right">
+                    <button class="btn outline fnb-btn btn-sm">
+                      Reset Filters
+                    </button>
+                    <button class="btn fnb-btn secondary-btn btn-sm" data-toggle="collapse" data-target="#moreFiltersWrap">
+                      Apply Filters
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+			<div class="col-sm-12 m-t-40 regions-container all-properties">
+				<table id="listings-table" class="table table-striped dataTable listing-table" cellspacing="0" width="100%">
+          <thead>
+            <tr>
+              <th style="min-width: 12%;" >Name</th>
+              <th class="" style="min-width: 25%;">
+                Country/State/City/Location
+              </th>
+              <th class="no-sort" style="min-width: 15%;">
+                Market manager
+                <select multiple class="form-control multi-dd">
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                </select>
+              </th>
+              <th class="" style="min-width: 10%;">
+                General Manager
+              </th>
+              <th class="no-sort" style="min-width: 10%;" rowspan="1">
+                  Status
+                  <select multiple class="form-control multi-dd">
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                  </select>
+              </th>
+              <th class="no-sort" style="min-width: 10%;" rowspan="1">
+                  Contract with all property details uploaded
+                  <select multiple class="form-control multi-dd">
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                  </select>
+              </th>
+              <th class="no-sort" style="min-width: 10%;" rowspan="1">
+                  Assigned To
+                  <select multiple class="form-control multi-dd">
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                  </select>
+              </th>
+              <th class="" style="minwidth: 15%;" rowspan="1">
+                Checklist
+              </th>
+               <th class="no-sort" style="min-width: 10%;" rowspan="1">
+                  QC Status
+                  <select multiple class="form-control multi-dd">
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                  </select>
+              </th>
+            </tr>
+          </thead>
+
+          <tbody>
+
+
+            <tr>
+              <td><a href="" class="text-info bolder" target="_blank">Rivasa Comfort</a></td>
+              <td>India - Goa - Calangute</td>
+              <td>Alka Tar</td>
+              <td>Akhil Desai - <br><a href="tel:+919988446622" class="text-decor links-click">+91 9988446622</a><br><a href="mailto:ak@gmail.com" class="text-decor links-click">ak@gmail.com</a></td>
+              <td><span class="text-muted bolder">In Process</span></td>
+              <td class="text-center">Yes</td>
+              <td>Loading Team</td>
+              <td>Property Information <i class="fa fa-check text-success"></i> <br>
+              Rooms <i class="fa fa-check text-success"></i> <br>
+              Rate Plans <i class="fa fa-check text-success"></i> <br>
+              Cancellation Policy <i class="fa fa-check text-success"></i> <br>
+              Users <i class="fa fa-times text-danger"></i><br>
+              Contract &amp; Finance <i class="fa fa-times text-danger"></i>
+              </td>
+              <td>Info Needed</td>
+            </tr>
+
+
+             <tr>
+              <td><a href="" class="text-info bolder" target="_blank">Rustic Village</a></td>
+              <td>India - Goa - Calangute</td>
+              <td>Saee Shaikh</td>
+              <td>Akansha Desai - <br><a href="tel:+919988446622" class="text-decor links-click">+91 9988446622</a><br><a href="mailto:ak@gmail.com" class="text-decor links-click">ak@gmail.com</a></td>
+              <td><span class="text-muted bolder">In Process</span></td>
+              <td class="text-center">Yes</td>
+              <td>Loading Team</td>
+              <td>Property Information <i class="fa fa-check text-success"></i> <br>
+              Rooms <i class="fa fa-check text-success"></i> <br>
+              Rate Plans <i class="fa fa-check text-success"></i> <br>
+              Cancellation Policy <i class="fa fa-check text-success"></i> <br>
+              Users <i class="fa fa-times text-danger"></i><br>
+              Contract &amp; Finance <i class="fa fa-times text-danger"></i>
+              </td>
+              <td>Info Needed</td>
+            </tr>
+
+
+            <tr>
+              <td><a href="" class="text-info bolder" target="_blank">Palm Resort</a></td>
+              <td>India - Goa - Calangute</td>
+              <td>Saee Shaikh</td>
+              <td>Archana Singh - <br><a href="tel:+919988446622" class="text-decor links-click">+91 9988446622</a><br><a href="mailto:asingh@gmail.com" class="text-decor links-click">asingh@gmail.com</a></td>
+              <td><span class="text-muted bolder">In Process</span></td>
+              <td class="text-center">No</td>
+              <td>Property Owner</td>
+              <td>Property Information <i class="fa fa-check text-success"></i> <br>
+              Rooms <i class="fa fa-check text-success"></i> <br>
+              Rate Plans <i class="fa fa-check text-success"></i> <br>
+              Cancellation Policy <i class="fa fa-check text-success"></i> <br>
+              Users <i class="fa fa-times text-danger"></i><br>
+              Contract &amp; Finance <i class="fa fa-times text-danger"></i>
+              </td>
+              <td>Info Needed</td>
+            </tr>
+
+            <tr>
+              <td><a href="" class="text-info bolder" target="_blank">Palmerina Resort</a></td>
+              <td>India - Goa - Calangute</td>
+              <td>Saee Shaikh</td>
+              <td>Akansha Desai - <br><a href="tel:+919988446622" class="text-decor links-click">+91 9988446622</a><br><a href="mailto:ak@gmail.com" class="text-decor links-click">ak@gmail.com</a></td>
+              <td><span class="text-muted bolder">In Process</span></td>
+              <td class="text-center">Yes</td>
+              <td>Property Owner</td>
+              <td>Property Information <i class="fa fa-check text-success"></i> <br>
+              Rooms <i class="fa fa-check text-success"></i> <br>
+              Rate Plans <i class="fa fa-check text-success"></i> <br>
+              Cancellation Policy <i class="fa fa-check text-success"></i> <br>
+              Users <i class="fa fa-times text-danger"></i><br>
+              Contract &amp; Finance <i class="fa fa-times text-danger"></i>
+              </td>
+              <td>Info Needed</td>
+            </tr>
+
+
+          </tbody>
+        </table>
+			</div>
+
+
+		</div>
+	</div>
+{{ end }}
