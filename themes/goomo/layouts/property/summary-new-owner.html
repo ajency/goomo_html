@@ -64,21 +64,14 @@
 				<a href="#" class=" desk-hide">Request Change</a>
 
 				<div class="listing-details m-t-40">
-					<h4 class="no-m-t fly-out-heading-size bat-color bolder">Property Checklist</h4>
+					<h4 class="no-m-t fly-out-heading-size bat-color bolder">Your Property Details</h4>
 					<div class="flex-row property-status-box">
-						<div class="status-info flex-row">
-							<div>
-								<strong>{{ .Params.property }}</strong> is currently in <strong>{{ .Params.status | lower }}</strong> mode because some property information is not filled in. Please see below Property Info Checklist to understand the sections that you need to complete.
-							</div>
+						<div class="status-info">
+							Your property <strong>{{ .Params.property }}</strong> is currently in <strong>{{ .Params.status | lower }}</strong> mode because some property information is not filled in. Please see below Property Info Checklist to understand the sections that you need to complete.
 						</div>
 						<div class="check-status">
 							Checklist Status:<br>
-							<i class="fa fa-circle w-border m-t-10"></i>
-							<div>
-								<label class="m-t-10">
-									Assigneee: <br><span class="text-darker">Loading Team</span>
-								</label>
-							</div>
+							<i class="fa fa-circle w-border m-t-15"></i>
 						</div>
 						<div class="qc-status">
 							QC Status:

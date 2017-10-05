@@ -60,8 +60,10 @@ tax:
 
 digital:
  url: "/goomo_html/property/owner-for-review/"
- checklist: true
+ checklist: false
  qc: "--"
+ disabled: false
+ haslink: true
 
 rooms:
  done: false
@@ -81,13 +83,21 @@ cancel:
  checklist: true
  qc: "--"
 
+ratesavail:
+   done: false
+   url: "#"
+   pending: true
+   pendingtext: ""
+   checklist: true
+   qc: "--"
+
 users:
  done: false
  url: "#"
- checklist: true
+ checklist: false
  qc: "--"
 
 qc:
- submit: true
+ submit: false
 ---
 

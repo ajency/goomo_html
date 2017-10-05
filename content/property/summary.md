@@ -66,8 +66,9 @@ digital:
  url: "/goomo_html/property/owner/"
  pending: true
  pendingtext: ""
- checklist: true
+ checklist: false
  qc: "--"
+ disabled: true
 
 rooms:
  done: false
@@ -93,11 +94,19 @@ cancel:
  checklist: true
  qc: "--"
 
+ratesavail:
+  done: false
+  url: "#"
+  pending: true
+  pendingtext: "Please Add: Updated Rates and Inventory"
+  checklist: false
+  qc: "--"
+
 users:
- done: true
+ done: false
  url: "#"
  pending: true
  pendingtext: ""
- checklist: true
+ checklist: false
  qc: "--"
 ---

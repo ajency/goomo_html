@@ -2,7 +2,7 @@
 title: "Summary"
 date: 2017-09-26T19:22:18+05:30
 draft: false
-layout: summary-new
+layout: summary-new-owner
 property: "Casa Bella"
 status: "In Process"
 
@@ -68,7 +68,6 @@ digital:
  pendingtext: ""
  checklist: false
  qc: "--"
- disabled: true
 
 rooms:
  done: false
