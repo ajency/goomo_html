@@ -61,15 +61,16 @@ var internal = $('#internal-table').DataTable({
 
 
 
-
-$('.multi-dd').multiselect({
-        buttonContainer: '<span></span>',
-        buttonClass: '',
-        maxHeight: 200,
-        templates: {
-            button: '<span class="multiselect dropdown-toggle" data-toggle="dropdown"><i class="fa fa-filter"></i></span>'
-        },
-    });
+	if($('.multi-dd').length){
+		$('.multi-dd').multiselect({
+	        buttonContainer: '<span></span>',
+	        buttonClass: '',
+	        maxHeight: 200,
+	        templates: {
+	            button: '<span class="multiselect dropdown-toggle" data-toggle="dropdown"><i class="fa fa-filter"></i></span>'
+	        },
+	    });
+	}
 
 
     var tax = $('#tax-table').DataTable();
@@ -93,6 +94,7 @@ $('.multi-dd').multiselect({
 	else{
 		$('.open-sidebar').click(function(){
 			event.preventDefault();
+			console.log('test');
 			$('.animate-row').addClass('body-slide');
 		});
 		$('.article-back').click(function(){
@@ -107,6 +109,14 @@ $('.multi-dd').multiselect({
 		    $('.animate-row').removeClass('body-slide');
 		  }
 		});
+
+		$('.user-col-table [data-toggle="popover"]').on('shown.bs.popover', function () {
+			 $('.open-sidebar').click(function(){
+				event.preventDefault();
+				console.log('test');
+				$('.animate-row').addClass('body-slide');
+			});
+		})
 	}
 
 	$('body').on('click', '.make-edits-btn', function(){
@@ -144,6 +154,14 @@ $('.multi-dd').multiselect({
 	        $('.parent_cat_icon').addClass('hidden')
 	    }
 	});
+
+
+	$('.user-col-table [data-toggle="popover"]').popover({
+		html : true,
+	    content: function() {
+	       return $('.content-pop').html();
+	    }
+	})
 
 
 
