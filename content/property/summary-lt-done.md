@@ -38,7 +38,7 @@ policies:
  qc: "--"
 
 desc:
-  url: "#"
+  url: "#descriptionModal"
   pending: true
   pendingtext: ""
   checklist: true
