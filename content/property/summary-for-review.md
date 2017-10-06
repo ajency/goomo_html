@@ -4,7 +4,7 @@ date: 2017-09-26T13:44:12+05:30
 draft: false
 layout: summary-for-review
 property: "Casa Amora"
-status: "In Process"
+status: "Pending Review"
 url: /checklist/casa-amora/
 
 propertyinfo:
