@@ -6,8 +6,13 @@ layout: services-submitted
 property: "Riverfront"
 status: "Pending Review"
 url: /details/amenities/riverfront/
+slug: "riverfront/"
 
 viewdash: true
+
+mainmenu:
+ details: true
+ amenities: true
 
 ---
 

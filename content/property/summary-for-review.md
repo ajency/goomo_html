@@ -6,10 +6,13 @@ layout: summary-for-review
 property: "Casa Amora"
 status: "Pending Review"
 url: /checklist/casa-amora/
+slug: "casa-amora/"
 
 propertyinfo:
  done: false
 
+mainmenu:
+ checklist: true
 
 address:
  url: "#"

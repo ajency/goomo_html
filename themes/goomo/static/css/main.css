@@ -7010,10 +7010,10 @@ footer {
 .gs-steps a:hover {
   color: #ff8500;
 }
-.gs-steps li.active a {
+.gs-steps li.active > a {
   color: black;
 }
-.gs-steps li.active a i {
+.gs-steps li.active > a i {
   display: block;
   color: #ff8500;
 }

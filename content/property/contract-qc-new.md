@@ -6,7 +6,14 @@ layout: contract-qc-new
 property: "Casa Bella"
 status: "In Process"
 url: /details/contract/casa-bella/
+slug: "casa-bella/"
 
 qcstatus:
  new: true
+
+mainmenu:
+ details: true
+ contract: true
+
+
 ---

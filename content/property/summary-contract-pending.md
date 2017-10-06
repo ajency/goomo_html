@@ -6,10 +6,13 @@ layout: summary-contract-pending
 property: "Casa Baga"
 status: "In Process"
 url: /checklist/casa-baga/
+slug: "casa-baga/"
 
 propertyinfo:
  done: false
 
+mainmenu:
+ checklist: true
 
 address:
  url: "#"

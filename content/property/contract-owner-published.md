@@ -6,10 +6,16 @@ layout: contract-owner-published
 property: "Casa Britona"
 status: "Active"
 url: /details/contract/casa-britona/
+slug: "casa-britona/"
 
 owner: true
 
 qcstatus:
  published: true
+
+mainmenu:
+ details: true
+ contract: true
+
 
 ---

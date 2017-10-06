@@ -6,10 +6,13 @@ layout: summary-published-review
 property: "Hotel Eden"
 status: "Active (Pending Review)"
 url: /checklist/hotel-eden/
+slug: "hotel-eden/"
 
 propertyinfo:
  done: true
 
+mainmenu:
+ checklist: true
 
 address:
  url: "#"

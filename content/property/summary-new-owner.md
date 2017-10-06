@@ -6,10 +6,13 @@ layout: summary-new-owner
 property: "Casa Anjuna"
 status: "In Process"
 url: /checklist/casa-anjuna/
+slug: "casa-anjuna/"
 
 propertyinfo:
  done: false
 
+mainmenu:
+ checklist: true
 
 address:
  url: "#"

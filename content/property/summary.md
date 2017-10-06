@@ -6,10 +6,13 @@ layout: summary
 property: "Chalston Beach Resort"
 status: "In Process"
 url: /checklist/chalston-beach-resort/
+slug: "chalston-beach-resort/"
 
 propertyinfo:
  done: false
 
+mainmenu:
+ checklist: true
 
 address:
  url: "#"

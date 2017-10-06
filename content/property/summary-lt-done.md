@@ -6,10 +6,13 @@ layout: summary-lt-done
 property: "Casa Colvale"
 status: "In Process"
 url: /checklist/casa-colvale/
+slug: "casa-colvale/"
 
 propertyinfo:
  done: false
 
+mainmenu:
+ checklist: true
 
 address:
  url: "#"

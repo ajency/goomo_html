@@ -6,10 +6,13 @@ layout: summary-published
 property: "Casa Britona"
 status: "Active"
 url: /checklist/casa-britona/
+slug: "casa-britona/"
 
 propertyinfo:
  done: true
 
+mainmenu:
+ checklist: true
 
 address:
  url: "#"

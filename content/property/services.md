@@ -6,6 +6,11 @@ layout: services
 property: "Chalston Beach Resort"
 status: "In Process"
 url: /details/amenities/chalston-beach-resort/
+slug: "chalston-beach-resort/"
+
+mainmenu:
+ details: true
+ amenities: true
 
 
 ---

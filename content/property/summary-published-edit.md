@@ -6,10 +6,13 @@ layout: summary-published-edit
 property: "Panjim Inn"
 status: "Active"
 url: /checklist/panjim-inn/
+slug: "panjim-inn/"
 
 propertyinfo:
  done: true
 
+mainmenu:
+ checklist: true
 
 address:
  url: "#"

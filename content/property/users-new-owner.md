@@ -6,5 +6,10 @@ layout: users
 property: "Casa Anjuna"
 status: "In Process"
 url: /details/users/casa-anjuna/
+slug: "casa-anjuna/"
+
+mainmenu:
+ details: true
+ user: true
 
 ---
