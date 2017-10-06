@@ -6,5 +6,7 @@ layout: chain
 
 chain: true
 
+sideConfig : true
+
 ---
 

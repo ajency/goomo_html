@@ -5,13 +5,13 @@
 		<li class="">
 			<a href=" # " class=" form-toggle " id=""><i class="fa fa-bars"></i> Dashboard </a>
 		</li>
-		<li class="">
+		<li class="{{ if $.Params.sideproperty }} active {{ end }}">
 			<a href="#listingSubMenu" class=" form-toggle " id="" role="button" data-toggle="collapse"><i class="fa fa-list"></i> Properties</a>
 			<ul class="gs-steps collapse in edit-mode sub-steps" role="tablist" id="listingSubMenu" >
-				<li class="{{ if $.Params.active }} active {{ end }}">
+				<li class="{{ if $.Params.activeproperty }} active {{ end }}">
 					<a href="/goomo_html/extranet/properties" class="" id="">All</a>
 				</li>
-				<li class="{{ if $.Params.allproperty }} active {{ end }}">
+				<li class="{{ if $.Params.alproperty }} active {{ end }}">
 					<a href="/goomo_html/extranet/all-properties" class="" id="">All (In Process)</a>
 				</li>
 				<li>
@@ -28,7 +28,7 @@
 				</li>
 			</ul>
 		</li>
-		<li class="active">
+		<li class="{{ if $.Params.sideConfig }} active {{ end }}">
 			<a href=" # " class=" form-toggle " id=""><i class="fa fa-cog"></i> Configurations </a>
 			<ul class="gs-steps collapse in edit-mode sub-steps" role="tablist" id="" >
 				<li class="{{ if $.Params.region }} active {{ end }}">
@@ -42,7 +42,7 @@
 				</li>
 			</ul>
 		</li>
-		<li class="">
+		<li class="{{ if $.Params.sideUser }} active {{ end }}">
 			<a href="#" class=" form-toggle " id=""><i class="fa fa-user"></i> Users</a>
 			<ul class="gs-steps collapse in edit-mode sub-steps" role="tablist" id="" >
 				<li class="{{ if $.Params.internal }} active {{ end }}">

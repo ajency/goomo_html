@@ -6,4 +6,6 @@ layout: regions
 
 region : true
 
+sideConfig : true
+
 ---

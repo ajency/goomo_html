@@ -6,5 +6,7 @@ layout: add-internal
 
 addInternal: true
 
+sideUser : true
+
 ---
 
