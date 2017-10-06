@@ -252,7 +252,7 @@
         {{ end }}
       </div>
       <div class="tabular__cell cell-full w-order t-product">
-        <h5 class="m-t-0 m-b-0">Users</h5>
+        <a href="{{ $.Params.users.url }}" class="dark-link"><h5 class="m-t-0 m-b-0">Users</h5></a>
         <p class="{{ if $.Params.users.pending }} text-danger {{ else }} text-primary {{ end }} m-b-0">
           {{ $.Params.users.pendingtext }}
         </p>

@@ -105,7 +105,7 @@ ratesavail:
 
 users:
  done: false
- url: "#"
+ url: "/goomo_html/details/users/casa-bella/"
  pending: true
  pendingtext: ""
  checklist: false

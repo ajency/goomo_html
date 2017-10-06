@@ -87,7 +87,7 @@ cancel:
 
 users:
  done: true
- url: "#"
+ url: "/goomo_html/details/users/hotel-eden/"
  checklist: true
  qc: "Approved"
 ---

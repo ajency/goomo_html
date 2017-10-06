@@ -104,7 +104,7 @@ ratesavail:
 
 users:
  done: false
- url: "#"
+ url: "/goomo_html/details/users/casa-anjuna/"
  pending: true
  pendingtext: ""
  checklist: true

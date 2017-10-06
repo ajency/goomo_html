@@ -94,7 +94,7 @@ ratesavail:
 
 users:
  done: false
- url: "#"
+ url: "/goomo_html/details/users/casa-baga/"
  checklist: true
  qc: "--"
 
