@@ -5,6 +5,7 @@ draft: false
 layout: summary-published-edit
 property: "Panjim Inn"
 status: "Active"
+url: /checklist/panjim-inn/
 
 propertyinfo:
  done: true
@@ -16,14 +17,14 @@ address:
  qc: "Approved"
 
 amenities:
- url: "/goomo_html/property/services-published-edit/"
+ url: "/goomo_html/details/amenities/panjim-inn/"
  pending: false
  pendingtext: ""
  checklist: true
  qc: "--"
 
 images:
- url: "/goomo_html/property/images-published-edit/"
+ url: "/goomo_html/details/images/panjim-inn/"
  pending: false
  pendingtext: "New Edits: Room Images updated"
  hasedits: true
@@ -48,19 +49,19 @@ contract:
  done: true
 
 bank:
- url: "/goomo_html/property/qc-published-edit/"
+ url: "/goomo_html/details/contract/panjim-inn/"
  checklist: true
  qc: "Approved"
 
 tax:
- url: "/goomo_html/property/qc-published-edit/"
+ url: "/goomo_html/details/contract/panjim-inn/"
  pending: false
  pendingtext: ""
  checklist: true
  qc: "Approved"
 
 digital:
- url: "/goomo_html/property/qc-published-edit/"
+ url: "/goomo_html/details/contract/panjim-inn/"
  checklist: true
  qc: "Approved"
 

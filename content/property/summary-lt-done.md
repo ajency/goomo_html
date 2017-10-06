@@ -5,6 +5,7 @@ draft: false
 layout: summary-lt-done
 property: "Casa Colvale"
 status: "In Process"
+url: /checklist/casa-colvale/
 
 propertyinfo:
  done: false
@@ -16,14 +17,14 @@ address:
  qc: "--"
 
 amenities:
- url: "/goomo_html/property/services-for-review/"
+ url: "/goomo_html/details/amenities/casa-colvale/"
  pending: false
  pendingtext: ""
  checklist: true
  qc: "--"
 
 images:
- url: "/goomo_html/property/images-for-review/"
+ url: "/goomo_html/details/images/casa-colvale/"
  pending: false
  pendingtext: ""
  checklist: true

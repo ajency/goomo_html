@@ -5,7 +5,7 @@ draft: false
 layout: services-published
 property: "Casa Britona"
 status: "Active"
-
+url: /details/amenities/casa-britona/
 
 ---
 

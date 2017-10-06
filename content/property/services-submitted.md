@@ -5,6 +5,7 @@ draft: false
 layout: services-submitted
 property: "Riverfront"
 status: "Pending Review"
+url: /details/amenities/riverfront/
 
 viewdash: true
 

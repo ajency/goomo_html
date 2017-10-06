@@ -5,6 +5,7 @@ draft: false
 layout: contract-owner-for-review
 property: "Casa Amora"
 status: "In Process"
+url: /details/contract/casa-amora/
 
 owner: true
 

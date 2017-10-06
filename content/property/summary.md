@@ -5,6 +5,7 @@ draft: false
 layout: summary
 property: "Chalston Beach Resort"
 status: "In Process"
+url: /checklist/chalston-beach-resort/
 
 propertyinfo:
  done: false
@@ -18,14 +19,14 @@ address:
  qc: "--"
 
 amenities:
- url: "/goomo_html/property/services/"
+ url: "/goomo_html/details/amenities/chalston-beach-resort/"
  pending: false
  pendingtext: ""
  checklist: true
  qc: "--"
 
 images:
- url: "/goomo_html/property/images/"
+ url: "/goomo_html/details/images/chalston-beach-resort/"
  pending: true
  pendingtext: "Please add: Room Images"
  checklist: false
@@ -49,21 +50,21 @@ contract:
  done: false
 
 bank:
- url: "/goomo_html/property/contract-qc/"
+ url: "/goomo_html/details/contract/chalston-beach-resort/"
  pending: true
  pendingtext: ""
  checklist: true
  qc: "--"
 
 tax:
- url: "/goomo_html/property/contract-qc/"
+ url: "/goomo_html/details/contract/chalston-beach-resort/"
  pending: true
  pendingtext: "Please Add: Minimum 1 rule"
  checklist: false
  qc: "--"
 
 digital:
- url: "/goomo_html/property/contract-qc/"
+ url: "/goomo_html/details/contract/chalston-beach-resort/"
  pending: true
  pendingtext: ""
  checklist: false

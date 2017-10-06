@@ -5,6 +5,7 @@ draft: false
 layout: summary-submitted
 property: "Riverfront"
 status: "Pending Review"
+url: /checklist/riverfront/
 
 viewdash: true
 
@@ -18,14 +19,14 @@ address:
  qc: "Pending Review"
 
 amenities:
- url: "/goomo_html/property/services-submitted/"
+ url: "/goomo_html/details/amenities/riverfront/"
  pending: false
  pendingtext: ""
  checklist: true
  qc: "Pending Review"
 
 images:
- url: "/goomo_html/property/images-submitted/"
+ url: "/goomo_html//details/images/riverfront/"
  pending: false
  pendingtext: ""
  checklist: true
@@ -49,19 +50,19 @@ contract:
  done: false
 
 bank:
- url: "/goomo_html/property/qc-submitted/"
+ url: "/goomo_html/details/contract/riverfront/"
  checklist: true
  qc: "Pending Review"
 
 tax:
- url: "/goomo_html/property/qc-submitted/"
+ url: "/goomo_html/details/contract/riverfront/"
  pending: false
  pendingtext: ""
  checklist: true
  qc: "Pending Review"
 
 digital:
- url: "/goomo_html/property/qc-submitted/"
+ url: "/goomo_html/details/contract/riverfront/"
  checklist: true
  qc: "Pending Review"
 

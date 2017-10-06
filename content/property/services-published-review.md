@@ -5,6 +5,7 @@ draft: false
 layout: services-published-review
 property: "Hotel Eden"
 status: "Active (Pending Review)"
+url: /details/amenities/hotel-eden/
 
 hashistory: true
 

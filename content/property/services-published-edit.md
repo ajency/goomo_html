@@ -5,6 +5,7 @@ draft: false
 layout: services-published-edit
 property: "Panjim Inn"
 status: "Active"
+url: /details/amenities/panjim-inn/
 
 
 ---

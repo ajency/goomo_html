@@ -5,6 +5,7 @@ draft: false
 layout: summary-for-review
 property: "Casa Amora"
 status: "In Process"
+url: /checklist/casa-amora/
 
 propertyinfo:
  done: false
@@ -16,14 +17,14 @@ address:
  qc: "--"
 
 amenities:
- url: "/goomo_html/property/services-for-review/"
+ url: "/goomo_html/details/amenities/casa-amora/"
  pending: false
  pendingtext: ""
  checklist: true
  qc: "--"
 
 images:
- url: "/goomo_html/property/images-for-review/"
+ url: "/goomo_html/details/images/casa-amora/"
  pending: false
  pendingtext: ""
  checklist: true
@@ -47,19 +48,19 @@ contract:
  done: false
 
 bank:
- url: "/goomo_html/property/contract-owner-for-review/"
+ url: "/goomo_html/details/contract/casa-amora/"
  checklist: true
  qc: "Pending Review"
 
 tax:
- url: "/goomo_html/property/contract-owner-for-review/"
+ url: "/goomo_html/details/contract/casa-amora/"
  pending: false
  pendingtext: ""
  checklist: true
  qc: "Pending Review"
 
 digital:
- url: "/goomo_html/property/contract-owner-for-review/"
+ url: "/goomo_html/details/contract/casa-amora/"
  checklist: true
  qc: "Pending Review"
 

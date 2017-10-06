@@ -5,6 +5,7 @@ draft: false
 layout: summary-published
 property: "Casa Britona"
 status: "Active"
+url: /checklist/casa-britona/
 
 propertyinfo:
  done: true
@@ -16,14 +17,14 @@ address:
  qc: "Approved"
 
 amenities:
- url: "/goomo_html/property/services-published/"
+ url: "/goomo_html/details/amenities/casa-britona/"
  pending: false
  pendingtext: ""
  checklist: true
  qc: "Approved"
 
 images:
- url: "/goomo_html/property/images-published/"
+ url: "/goomo_html/details/images/casa-britona/"
  pending: false
  pendingtext: ""
  checklist: true
@@ -47,19 +48,19 @@ contract:
  done: true
 
 bank:
- url: "/goomo_html/property/contract-owner-published/"
+ url: "/goomo_html/details/contract/casa-britona/"
  checklist: true
  qc: "Approved"
 
 tax:
- url: "/goomo_html/property/contract-owner-published/"
+ url: "/goomo_html/details/contract/casa-britona/"
  pending: false
  pendingtext: ""
  checklist: true
  qc: "Approved"
 
 digital:
- url: "/goomo_html/property/contract-owner-published/"
+ url: "/goomo_html/details/contract/casa-britona/"
  checklist: true
  qc: "Approved"
 
