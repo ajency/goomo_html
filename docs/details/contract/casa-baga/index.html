@@ -1692,11 +1692,41 @@ Dist. From Hotel (KMS)
 
         </div>
 
+        <div class="bank-deets">
+          <div class="well">
+            <table id="" class="table table-striped dataTable listing-table no-footer" cellspacing="0" width="100%" role="grid" aria-describedby="listings-table_info" style="width: 100%;">
+              <thead>
+                  <tr role="row">
+                    <th class="sorting_disabled text-center" rowspan="1" colspan="1" style="width: 149px;">Account No<span class="sort-icon"></span></th>
+                    <th class="sorting_disabled text-center" rowspan="1" colspan="1" style="width: 123px;">Holder name<span class="sort-icon"></span></th>
+                    <th class="sorting_disabled text-center" rowspan="1" colspan="1" style="width: 123px;">Bank Name<span class="sort-icon"></span></th>
+                    <th class="sorting_disabled text-center" rowspan="1" colspan="1" style="width: 146px;">IFSC Code<span class="sort-icon"></span></th>
+                    <th class="sorting_disabled text-center" rowspan="1" colspan="1" style="width: 124px;">PAN No<span class="sort-icon"></span></th>
+                  </tr>
+                </thead>
+              <tbody>
+
+                <tr role="row" class="odd">
+                    <td class=""><span class="text-info bolder">FC1123333445</span></td>
+                    <td class="">Sujata Patil</td>
+                    <td class="">HDFC BANK</td>
+                    <td class="">HDFCC129399</td>
+                    <td class="">AWCET1234</td>
+                  </tr>
+                </tbody>
+            </table>
+          </div>
+          <label for="bankdeets" class="">
+            <input value="" type="checkbox" class="fnb-checkbox" name="bankdeets" id="bankdeets">
+            <span class=" default-size" style="position: relative; top: 10px;">I confirm that the bank details mentioned above are correct.</span>
+          </label>
+        </div>
+
       </div>
       <hr>
       <div class="modal-footer flex-row justify-center">
         <button type="button" class="btn fnb-btn outline" data-dismiss="modal">No</button>
-        <button type="button" class="btn fnb-btn primary-btn" data-dismiss="modal">Yes, I Accept</button>
+        <button type="button" class="btn fnb-btn primary-btn contract-accept" data-dismiss="modal" disabled="">Yes, I Accept</button>
       </div>
     </div>
   </div>
