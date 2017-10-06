@@ -6,5 +6,10 @@ layout: users
 property: "Hotel Eden"
 status: "In Process"
 url: /details/users/hotel-eden/
+slug: "hotel-eden/"
+
+mainmenu:
+ details: true
+ user: true
 
 ---

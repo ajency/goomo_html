@@ -6,5 +6,10 @@ layout: users
 property: "Casa Baga"
 status: "In Process"
 url: /details/users/casa-baga/
+slug: "casa-baga/"
+
+mainmenu:
+ details: true
+ user: true
 
 ---
