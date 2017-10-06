@@ -89,7 +89,7 @@ cancel:
 
 users:
  done: false
- url: "/goomo_html//details/users/riverfront/"
+ url: "/goomo_html/details/users/riverfront/"
  checklist: true
  qc: "Pending Review"
 

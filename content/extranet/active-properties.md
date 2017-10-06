@@ -9,25 +9,25 @@ activeproperty: true
 sideproperty : true
 
 casabella:
- url: "/goomo_html/property/summary-new/"
+ url: "/goomo_html/checklist/casa-bella/"
 
 casamora:
- url: "/goomo_html/property/summary-for-review/"
+ url: "/goomo_html/checklist/casa-amora/"
 
 casabritona:
- url: "/goomo_html/property/summary-published/"
+ url: "/goomo_html/checklist/casa-britona/"
 
 chalston:
- url: "/goomo_html/property/summary/"
+ url: "/goomo_html/checklist/chalston-beach-resort/"
 
 riverfront:
- url: "/goomo_html/property/summary-submitted/"
+ url: "/goomo_html/checklist/riverfront/"
 
 panjiminn:
- url: "/goomo_html/property/summary-published-edit/"
+ url: "/goomo_html/checklist/panjim-inn/"
 
 eden:
- url: "/goomo_html/property/summary-published-review/"
+ url: "/goomo_html/checklist/hotel-eden/"
 
 createnew:
  url: "/goomo_html/extranet/create/"
@@ -36,7 +36,7 @@ createproperty:
  url: "/goomo_html/extranet/create/"
 
 allproperty:
- url: "/goomo_html/extranet/properties/"
+ url: "/goomo_html/extranet/active-properties/"
 
 
 
