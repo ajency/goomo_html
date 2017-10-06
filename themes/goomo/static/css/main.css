@@ -8718,6 +8718,17 @@ i.w-border {
 .star-bucket {
   margin-right: 0;
 }
+.active-status.status-bucket .status-bucket__row {
+  margin-bottom: 0.8em;
+  text-align: center;
+}
+.active-status.status-bucket .status-bucket__row:nth-child(2n) {
+  border-left: 1px solid #eee;
+  border-right: 0;
+}
+.active-status.status-bucket .buckets:first-child {
+  border-bottom: 0;
+}
 .listing-table.dataTable thead .sorting,
 .listing-table.dataTable thead .sorting_asc,
 .listing-table.dataTable thead .sorting_desc {
