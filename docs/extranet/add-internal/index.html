@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-		<title>Add Internal Users :: Goomo by Ajency</title>
+		<title>Add Internal User :: Goomo by Ajency</title>
 
 		
 		<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,500,700" rel="stylesheet">
@@ -153,7 +153,7 @@
 				</li>
 			</ul>
 		</li>
-		<li class="active">
+		<li class="">
 			<a href=" # " class=" form-toggle " id=""><i class="fa fa-cog"></i> Configurations </a>
 			<ul class="gs-steps collapse in edit-mode sub-steps" role="tablist" id="" >
 				<li class="">
@@ -167,7 +167,7 @@
 				</li>
 			</ul>
 		</li>
-		<li class="">
+		<li class=" active ">
 			<a href="#" class=" form-toggle " id=""><i class="fa fa-user"></i> Users</a>
 			<ul class="gs-steps collapse in edit-mode sub-steps" role="tablist" id="" >
 				<li class="">
@@ -231,7 +231,7 @@
 				</li>
 			</ul>
 		</li>
-		<li class="active">
+		<li class="">
 			<a href=" # " class=" form-toggle " id=""><i class="fa fa-cog"></i> Configurations </a>
 			<ul class="gs-steps collapse in edit-mode sub-steps" role="tablist" id="" >
 				<li class="">
@@ -245,7 +245,7 @@
 				</li>
 			</ul>
 		</li>
-		<li class="">
+		<li class=" active ">
 			<a href="#" class=" form-toggle " id=""><i class="fa fa-user"></i> Users</a>
 			<ul class="gs-steps collapse in edit-mode sub-steps" role="tablist" id="" >
 				<li class="">
@@ -274,7 +274,7 @@
 			<div class="col-sm-12">
 				<div class="flex-row space-between">
 					<div class="main-title">
-						<h3 class="no-m-t fly-out-heading-size text-info ">Add Internal Users</h3>
+						<h3 class="no-m-t fly-out-heading-size text-info ">Add Internal User</h3>
 						<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 					</div>
 					<div class="section-icon">
@@ -327,41 +327,70 @@
 		        </div>
 		        <br clear="mobile-hide">
 		        <h5 class="bolder m-t-45 prop-title userTitle">User has access to the following listings (limited based on)</h5>
-		        <div class="row listing-fields access-fields m-t-30">
-		        	<div class="col-sm-6 form-group c-gap">
+		        <div class="row listing-fields access-fields m-t-30 flex-row flex-wrap">
+		        	<div class="col-sm-6 form-group c-gap flex-list">
 		        		<label class="label-size text-info required">Chain Name </label>
-		        		<div class="relative limited-tag">
+		        		<div class="relative limited-tag simple-tag">
 		        			<input type="Email" class="form-control fnb-input" placeholder="" value="">
 		        			<label class="limited-tag__label">All</label>
-		        			<a href="#" class="secondary-link text-decor">Limited</a>
+		        			<a href="#" class="secondary-link text-decor limited">Limited</a>
 		        		</div>
+		        		<div class="relative limited-tag flex-tag-row hidden">
+		        			<input type="Email" class="form-control fnb-input flexdatalist" multiple="multiple" list="chain-name" value="Booking.com" placeholder="Type for suggestions & hit enter">
+		        			<datalist id="chain-name">
+                            	<option value="booking">Booking.com</option>
+                            	<option value="test">test</option>
+                        	</datalist>
+                        	<a href="#" class="secondary-link text-decor restricted">Restricted</a>
+                        </div>
 		        	</div>
-		        	<div class="col-sm-6 form-group c-gap">
+		        	<div class="col-sm-6 form-group c-gap flex-list">
 		        		<label class="label-size text-info required">Country </label>
-		        		<div class="relative limited-tag">
+		        		<div class="relative limited-tag simple-tag">
 		        			<input type="Email" class="form-control fnb-input" placeholder="" value="">
 		        			<label class="limited-tag__label">All</label>
-		        			<a href="#" class="secondary-link text-decor">Limited</a>
+		        			<a href="#" class="secondary-link text-decor limited">Limited</a>
 		        		</div>
+		        		<div class="relative limited-tag flex-tag-row hidden">
+		        			<input type="Email" class="form-control fnb-input flexdatalist" multiple="multiple" list="country" value="India" placeholder="Type for suggestions & hit enter">
+		        			<datalist id="country">
+                            	<option value="india">India</option>
+                            	<option value="russia">Russia</option>
+                        	</datalist>
+                        	<a href="#" class="secondary-link text-decor restricted">Restricted</a>
+                        </div>
 		        	</div>
 		        	<div class="col-sm-6 form-group c-gap flex-list">
 		        		<label class="label-size text-info required">State </label>
-		        		<div class="relative limited-tag">
-		        			<input type="Email" class="form-control fnb-input flexdatalist" multiple="multiple" id="state" value="Goa" placeholder="Type for suggestions & hit enter">
+		        		<div class="relative limited-tag simple-tag hidden">
+		        			<input type="Email" class="form-control fnb-input" placeholder="" value="">
+		        			<label class="limited-tag__label">All</label>
+		        			<a href="#" class="secondary-link text-decor limited">Limited</a>
+		        		</div>
+		        		<div class="relative limited-tag flex-tag-row">
+		        			<input type="Email" class="form-control fnb-input flexdatalist" multiple="multiple" list="state" value="Goa" placeholder="Type for suggestions & hit enter">
 		        			<datalist id="state">
                             	<option value="premier">Goa</option>
                             	<option value="deluxe">Maharashtra</option>
                         	</datalist>
-                        	<a href="#" class="secondary-link text-decor">Restricted</a>
+                        	<a href="#" class="secondary-link text-decor restricted">Restricted</a>
                         </div>
 		        	</div>
-		        	<div class="col-sm-6 form-group c-gap">
+		        	<div class="col-sm-6 form-group c-gap flex-list">
 		        		<label class="label-size text-info required">City </label>
-		        		<div class="relative limited-tag">
+		        		<div class="relative limited-tag simple-tag">
 		        			<input type="Email" class="form-control fnb-input" placeholder="" value="">
 		        			<label class="limited-tag__label">All</label>
-		        			<a href="#" class="secondary-link text-decor">Limited</a>
+		        			<a href="#" class="secondary-link text-decor limited">Limited</a>
 		        		</div>
+		        		<div class="relative limited-tag flex-tag-row hidden">
+		        			<input type="Email" class="form-control fnb-input flexdatalist" multiple="multiple" list="city" value="Panjim" placeholder="Type for suggestions & hit enter">
+		        			<datalist id="city">
+                            	<option value="panjim">Panjim</option>
+                            	<option value="mapusa">Mapusa</option>
+                        	</datalist>
+                        	<a href="#" class="secondary-link text-decor restricted">Restricted</a>
+                        </div>
 		        	</div>
 		        	<div class="col-sm-6 form-group c-gap flex-list">
 		        		<label class="label-size text-info required">Location </label>
@@ -382,7 +411,7 @@
 		        	<div class="col-sm-6 form-group c-gap flex-list">
 		        		<label class="label-size text-info required">Star Rating </label>
 		        		<div class="relative limited-tag">
-		        			<input type="Email" class="form-control fnb-input flexdatalist" multiple="multiple" id="star" value="Three Star" placeholder="Type for suggestions & hit enter">
+		        			<input type="Email" class="form-control fnb-input flexdatalist" multiple="multiple" list="star" value="Three Star" placeholder="Type for suggestions & hit enter">
 		        			<datalist id="star">
                             	<option value="premier">Four Star</option>
                             	<option value="deluxe">Five Star</option>
