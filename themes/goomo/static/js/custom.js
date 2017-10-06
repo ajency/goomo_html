@@ -175,5 +175,12 @@ var internal = $('#internal-table').DataTable({
 		$(this).closest('.flex-list').find('.simple-tag').removeClass('hidden');
 	});
 
+	$('body').on("change", "input[type=checkbox][name=bankdeets]", function() {
+	    if ($(this).is(':checked')) {
+	        $('.contract-accept').attr('disabled', false)
+	    } else  {
+	       $('.contract-accept').attr('disabled', true)
+	    }
+	});
 
 });
