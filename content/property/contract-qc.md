@@ -5,5 +5,6 @@ draft: false
 layout: contract-qc
 property: "Chalston Beach Resort"
 status: "In Process"
+url: /details/contract/chalston-beach-resort/
 
 ---

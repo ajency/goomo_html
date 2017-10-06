@@ -5,6 +5,7 @@ draft: false
 layout: contract-qc-new
 property: "Casa Bella"
 status: "In Process"
+url: /details/contract/casa-bella/
 
 qcstatus:
  new: true

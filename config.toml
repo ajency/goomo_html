@@ -38,14 +38,14 @@ theme = "goomo"
 [[menu.main]]
     name = "Property Details"
     pre = "<i class='fa fa-file-text-o'></i>"
-    weight = -94
+    weight = -93
     identifier = "property-details"
     url = "#"
 
 [[menu.main]]
     name = "Property Checklist"
     pre = "<i class='fa fa-list'></i>"
-    weight = -97
+    weight = -94
     identifier = "summary"
     url = "#"
     active = true
@@ -99,4 +99,4 @@ theme = "goomo"
     parent = "property-details"
     weight = -70
     identifier = "users"
-    url = "#"    
+    url = "#"

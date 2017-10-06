@@ -5,6 +5,7 @@ draft: false
 layout: contract-owner-pending
 property: "Casa Baga"
 status: "In Process"
+url: /details/contract/casa-baga/
 
 owner: true
 

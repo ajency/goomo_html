@@ -5,6 +5,7 @@ draft: false
 layout: services-for-review
 property: "Casa Amora"
 status: "In Process"
+url: /details/amenities/casa-amora/
 
 ---
 

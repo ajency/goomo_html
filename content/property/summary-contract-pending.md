@@ -5,6 +5,7 @@ draft: false
 layout: summary-contract-pending
 property: "Casa Baga"
 status: "In Process"
+url: /checklist/casa-baga/
 
 propertyinfo:
  done: false
@@ -16,14 +17,14 @@ address:
  qc: "--"
 
 amenities:
- url: "/goomo_html/property/services-for-review/"
+ url: "/goomo_html/details/amenities/casa-baga/"
  pending: false
  pendingtext: ""
  checklist: true
  qc: "--"
 
 images:
- url: "/goomo_html/property/images-for-review/"
+ url: "/goomo_html/details/images/casa-baga/"
  pending: false
  pendingtext: ""
  checklist: true
@@ -47,19 +48,19 @@ contract:
  done: false
 
 bank:
- url: "/goomo_html/property/contract-owner-pending/"
+ url: "/goomo_html/details/contract/casa-baga/"
  checklist: true
  qc: "--"
 
 tax:
- url: "/goomo_html/property/contract-owner-pending/"
+ url: "/goomo_html/details/contract/casa-baga/"
  pending: false
  pendingtext: ""
  checklist: true
  qc: "--"
 
 digital:
- url: "/goomo_html/property/contract-owner-pending/"
+ url: "/goomo_html/details/contract/casa-baga/"
  checklist: false
  qc: "--"
  disabled: false

@@ -5,6 +5,7 @@ draft: false
 layout: summary-new-owner
 property: "Casa Anjuna"
 status: "In Process"
+url: /checklist/casa-anjuna/
 
 propertyinfo:
  done: false
@@ -18,14 +19,14 @@ address:
  qc: "--"
 
 amenities:
- url: "/goomo_html/property/services-new/"
+ url: "/goomo_html/details/amenities/casa-anjuna/"
  pending: true
  pendingtext: "Please add: F&B, Fitness & Spa, Entertainment, Business services, Miscellaneous, Complimentary services, Recreation"
  checklist: false
  qc: "--"
 
 images:
- url: "/goomo_html/property/images-new/"
+ url: "/goomo_html/details/images/casa-anjuna/"
  pending: true
  pendingtext: "Please add: Property images, Room images"
  checklist: false
@@ -49,21 +50,21 @@ contract:
  done: false
 
 bank:
- url: "/goomo_html/property/contract-owner-new/"
+ url: "/goomo_html/details/contract/casa-anjuna/"
  pending: true
  pendingtext: ""
  checklist: false
  qc: "--"
 
 tax:
- url: "/goomo_html/property/contract-owner-new/"
+ url: "/goomo_html/details/contract/casa-anjuna/"
  pending: true
  pendingtext: "Please Add: Minimum 1 rule"
  checklist: false
  qc: "--"
 
 digital:
- url: "/goomo_html/property/contract-owner-new/"
+ url: "/goomo_html/details/contract/casa-anjuna/"
  pending: true
  pendingtext: ""
  checklist: false

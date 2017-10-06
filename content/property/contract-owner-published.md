@@ -5,6 +5,7 @@ draft: false
 layout: contract-owner-published
 property: "Casa Britona"
 status: "Active"
+url: /details/contract/casa-britona/
 
 owner: true
 

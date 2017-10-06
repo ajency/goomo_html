@@ -5,6 +5,7 @@ draft: false
 layout: summary-published-review
 property: "Hotel Eden"
 status: "Active (Pending Review)"
+url: /checklist/hotel-eden/
 
 propertyinfo:
  done: true
@@ -16,7 +17,7 @@ address:
  qc: "Approved"
 
 amenities:
- url: "/goomo_html/property/services-published-review/"
+ url: "/goomo_html/details/contract/hotel-eden/"
  pending: false
  pendingtext: ""
  hasedits: false
@@ -24,7 +25,7 @@ amenities:
  qc: ""
 
 images:
- url: "/goomo_html/property/images-published-review/"
+ url: "/goomo_html/details/contract/hotel-eden/"
  pending: false
  pendingtext: "New Edits: Room Images updated"
  hasedits: true
@@ -50,19 +51,19 @@ contract:
  done: true
 
 bank:
- url: "/goomo_html/property/contract-qc-published-review/"
+ url: "/goomo_html/details/contract/hotel-eden/"
  checklist: true
  qc: "Approved"
 
 tax:
- url: "/goomo_html/property/contract-qc-published-review/"
+ url: "/goomo_html/details/contract/hotel-eden/"
  pending: false
  pendingtext: ""
  checklist: true
  qc: "Approved"
 
 digital:
- url: "/goomo_html/property/contract-qc-published-review/"
+ url: "/goomo_html/details/contract/hotel-eden/"
  checklist: true
  qc: "Approved"
 
