@@ -159,11 +159,21 @@ var internal = $('#internal-table').DataTable({
 	$('.user-col-table [data-toggle="popover"]').popover({
 		html : true,
 	    content: function() {
-	       return $('.content-pop').html();
+	       return $(this).siblings('.content-pop').html();
 	    }
 	})
 
+	$('body').on("click", ".limited", function(event) {
+		event.preventDefault();
+		$(this).parent('.limited-tag').addClass('hidden');
+		$(this).closest('.flex-list').find('.flex-tag-row').removeClass('hidden');
+	});
 
+	$('body').on("click", ".restricted", function(event) {
+		event.preventDefault();
+		$(this).parent('.limited-tag').addClass('hidden');
+		$(this).closest('.flex-list').find('.simple-tag').removeClass('hidden');
+	});
 
 
 });

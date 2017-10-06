@@ -6,5 +6,7 @@ layout: internal
 
 internal: true
 
+sideUser : true
+
 ---
 

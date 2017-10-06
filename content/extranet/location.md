@@ -6,5 +6,7 @@ layout: location
 
 location: true
 
+sideConfig : true
+
 ---
 

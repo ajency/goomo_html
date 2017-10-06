@@ -6,6 +6,8 @@ layout: create
 
 create: true
 
+sideproperty : true
+
 summary:
  url: "/goomo_html/property/summary-new/"
 
