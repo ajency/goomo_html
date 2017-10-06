@@ -3126,6 +3126,24 @@ i.w-border{
 }
 
 
+.active-status{
+	&.status-bucket{
+		.status-bucket__row{
+			margin-bottom: 0.8em;
+			text-align: center;
+			&:nth-child(2n){
+				border-left: 1px solid #eee;
+				border-right: 0;
+			}
+		}
+		.buckets{
+			&:first-child{
+				border-bottom: 0;
+			}
+		}
+	}
+}
+
 
 .listing-table{
 	&.dataTable thead{
