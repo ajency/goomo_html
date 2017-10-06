@@ -93,6 +93,14 @@ users:
  checklist: true
  qc: "Pending Review"
 
+ratesavail:
+ done: false
+ url: "#"
+ pending: true
+ pendingtext: ""
+ checklist: true
+ qc: "--"
+
 qc:
  submit: false
 ---
