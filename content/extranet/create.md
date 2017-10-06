@@ -9,14 +9,14 @@ create: true
 sideproperty : true
 
 summary:
- url: "/goomo_html/property/summary-new/"
+ url: "/goomo_html/checklist/casa-bella/"
 
 
 createproperty:
  url: "/goomo_html/extranet/create/"
 
 allproperty:
- url: "/goomo_html/extranet/properties/"
+ url: "/goomo_html/extranet/active-properties/"
 
 ---
 
