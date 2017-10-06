@@ -1,0 +1,467 @@
+{{ define "main" }}
+	<div class="m-t-25">
+
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="flex-row space-between">
+					<div class="main-title">
+						<h3 class="no-m-t fly-out-heading-size text-info ">{{ .Title }}</h3>
+						<p class="text-muted">Manage all properties</p>
+					</div>
+					<div class="section-icon">
+						<img src="{{"img/all-listings.png" | absURL}}" class="img-responsive">
+					</div>
+				</div>
+			</div>
+			<!-- filter -->
+			<div class="col-sm-12 m-t-35">
+				<div class="flex-row space-between search-row">
+					<div class="filter-search flex-row align-reset">
+						<div class="filter-search__field">
+							<i class="fa fa-search text-lighter element-title" aria-hidden="true"></i>
+							<input type="search" class="fnb-input" placeholder="Search by">
+						</div>
+						<button class="btn fnb-btn transparent bold-btn full flex-row"  data-toggle="collapse" data-target="#moreFiltersWrap"><img src="{{"img/filter-bars.png" | absURL}}" class="img-responsive p-r-5" width="30"> <span>Filter</span></button>
+					</div>
+					<a href="{{ $.Params.createnew.url }}" class="btn fnb-btn secondary-btn bold-btn border-btn full add-list flex-row"><span>Add property</span></a>
+				</div>
+			</div>
+
+      <!-- Filters -->
+      <div class="col-sm-12">
+        <div class="more-filters-wrapper m-t-25 collapse" id="moreFiltersWrap">
+          <div class="card">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-sm-6">
+                <h5 class="mb-3">Filter by</h5>
+                </div>
+                <div class="col-sm-6 text-right">
+                  <button type="button" class="close" data-toggle="collapse" data-target="#moreFiltersWrap">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-12 col-md-4">
+                  <div class="filter-section mb-4">
+                    <h6>Location</h6>
+                    <hr class="m-t-0 m-b-5">
+                    <div>
+                      <select class="fnb-select select-variant form-control text-lighter m-b-25" name="">
+                          <option selected="" value="">--Select Country--</option>
+                          <option >India</option>
+                          <option>Singapore</option>
+                          <option>China</option>
+                          <option>Russia</option>
+                      </select>
+
+                      <select class="fnb-select select-variant form-control text-lighter m-b-25" name="">
+                          <option selected="" value="">--Select State--</option>
+                          <option>Delhi</option>
+                          <option >Goa</option>
+                          <option>Gujarat</option>
+                          <option>Bangalore</option>
+                      </select>
+
+                      <select class="fnb-select select-variant form-control text-lighter m-b-25" name="">
+                          <option selected="" value="">--Select City--</option>
+                          <option >Panjim</option>
+                          <option>Mapusa</option>
+                          <option>Madgaon</option>
+                          <option>Shivajinagar</option>
+                      </select>
+
+                      <select class="fnb-select select-variant form-control text-lighter m-b-25" name="">
+                          <option selected="" value="">--Select Location--</option>
+                          <option >Panjim</option>
+                          <option>Mapusa</option>
+                          <option>Madgaon</option>
+                          <option>Shivajinagar</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-12 col-md-4">
+                  <div class="filter-section mb-4">
+                    <h6 >Star Category</h6>
+                    <hr class="m-t-0 m-b-5">
+                    <div class="row">
+                      <div class="col-sm-6">
+                          <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="" class="" checked="">
+                                One Star
+                              </label>
+                          </div>
+                      </div>
+                      <div class="col-sm-6">
+                          <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="" class="">
+                                Two Star
+                              </label>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-6">
+                          <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="" class="">
+                                Three Star
+                              </label>
+                          </div>
+                        </div>
+                      <div class="col-sm-6">
+                          <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="" class="">
+                                Four Star
+                              </label>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <div class="checkbox">
+                          <label>
+                              <input type="checkbox" value="" class="">
+                              Five Star
+                            </label>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <h6 class="m-t-10">Status</h6>
+                    <hr class="m-t-0 m-b-5">
+                    <div class="row">
+                      <div class="col-sm-6">
+                          <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="" class="" checked="">
+                                In Process
+                              </label>
+                          </div>
+                      </div>
+                      <div class="col-sm-6">
+                          <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="" class="">
+                                Pending Review
+                              </label>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-6">
+                          <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="" class="">
+                                Active
+                              </label>
+                          </div>
+                        </div>
+                      <div class="col-sm-6">
+                          <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="" class="">
+                                Active (Pending Review)
+                              </label>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-12 col-md-4">
+                  <div class="filter-section mb-4">
+                    <h6>Market Manager</h6>
+                    <hr class="m-t-0 m-b-5">
+                    <div >
+                      <input type="text" class="form-control fnb-input payment-add flexdatalist" multiple="multiple" placeholder="Type for suggestions &amp; select" list="locations" value="Sujata Patil">
+                      <datalist id="locations">
+                          <option value="goa">Sujata Patil</option>
+                          <option value="mumbai">Allen Walker</option>
+                          <option value="delhi">Delhi</option>
+                          <option value="gujarat">Gujarat</option>
+                          <option value="bangalore">Bangalore</option>
+                      </datalist>
+                    </div>
+                  </div>
+
+                  <div class="filter-section m-t-50">
+                    <h6>Created by</h6>
+                    <hr class="m-t-0 m-b-5">
+                    <div >
+                      <input type="text" class="form-control fnb-input payment-add flexdatalist" multiple="multiple" placeholder="Type for suggestions &amp; select" list="locations" value="Sujata Patil">
+                      <datalist id="locations">
+                          <option value="Sujata Patil">Goa</option>
+                          <option value="Allen Walker">Allen Walker</option>
+                          <option value="delhi">Delhi</option>
+                          <option value="gujarat">Gujarat</option>
+                          <option value="bangalore">Bangalore</option>
+                      </datalist>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col">
+                  <div class="pull-right">
+                    <button class="btn outline fnb-btn btn-sm">
+                      Reset Filters
+                    </button>
+                    <button class="btn fnb-btn secondary-btn btn-sm" data-toggle="collapse" data-target="#moreFiltersWrap">
+                      Apply Filters
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- stats -->
+      <div class="col-sm-12 m-t-50 stats-container">
+        <div class="stats-row flex-row flex-wrap">
+          <div class="total-listing">
+            <div class="total-listing__count flex-row space-between">
+              <div>
+                <h5 class="bolder m-b-5 titles">140</h5>
+                <p class="m-b-0 text-lighter">Total Properties</p>
+              </div>
+              <img src="{{"img/listing-count.png" | absURL}}" class="img-responsive" width="35">
+            </div>
+            <div class="total-listing__count unclaimed flex-row space-between">
+              <div>
+                <h5 class="bolder m-b-5 titles">2</h5>
+                <p class="m-b-0 text-lighter">Unclaimed</p>
+              </div>
+              <i class="fa fa-info-circle sub-title infoIcon" aria-hidden="true"></i>
+            </div>
+          </div>
+
+          <div class="status-bucket stats-cols dsk-separator">
+            <p class="bolder">Status buckets</p>
+            <div class="flex-row align-reset space-between">
+              <div class="status-bucket__row">
+                <div class="buckets bucket-1">
+                  <p class="m-b-0 text-muted sub-title">11</p>
+                  <p class="m-b-0 text-muted default-size">In Process</p>
+                </div>
+                <div class="buckets bucket-1">
+                  <p class="m-b-0 text-secondary sub-title">03</p>
+                  <p class="m-b-0 text-secondary default-size">Pending Review</p>
+                </div>
+              </div>
+              <div class="status-bucket__row">
+                <div class="buckets bucket-2">
+                  <p class="m-b-0 text-success sub-title">22</p>
+                  <p class="m-b-0 text-success default-size">Active</p>
+                </div>
+                <!-- <div class="buckets bucket-2">
+                  <p class="m-b-0 text-danger sub-title">54</p>
+                  <p class="m-b-0 text-danger default-size">Inactive</p>
+                </div> -->
+              </div>
+              <div class="status-bucket__row">
+                <div class="buckets bucket-1">
+                  <p class="m-b-0 text-primary sub-title">23</p>
+                  <p class="m-b-0 text-primary default-size">Active (Pending Review)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="star-bucket status-bucket stats-cols  dsk-separator">
+            <p class="bolder">Star category buckets</p>
+            <div class="flex-row align-reset space-between">
+              <div class="status-bucket__row">
+                <div class="buckets bucket-1">
+                  <p class="m-b-0 text sub-title">15</p>
+                  <p class="m-b-0 text default-size text-lighter">One Star</p>
+                </div>
+                <div class="buckets bucket-2">
+                  <p class="m-b-0 te sub-title">10</p>
+                  <p class="m-b-0 te default-size text-lighter">Four Star</p>
+                </div>
+              </div>
+              <div class="status-bucket__row">
+                <div class="buckets bucket-1">
+                  <p class="m-b-0 sub-title">30</p>
+                  <p class="m-b-0 default-size text-lighter">Five Star</p>
+                </div>
+                <div class="buckets bucket-2">
+                  <p class="m-b-0 t sub-title">15</p>
+                  <p class="m-b-0 t default-size text-lighter">Two Star</p>
+                </div>
+              </div>
+              <div class="status-bucket__row">
+                <div class="buckets bucket-1">
+                  <p class="m-b-0 te sub-title">70</p>
+                  <p class="m-b-0 te default-size text-lighter">Three Star</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+			<div class="col-sm-12 m-t-40">
+				<table id="listings-table" class="table table-striped dataTable listing-table" cellspacing="0" width="100%">
+          <thead>
+            <tr>
+              <th style="min-width: 12%;" >Name</th>
+              <th class="" style="min-width: 25%;">
+                Country/State/City/Location
+              </th>
+              <th style="min-width: 15%;">
+                Market manager
+              </th>
+              <th class="" style="min-width: 10%;">
+                General Manager
+              </th>
+              <th class="" style="min-width: 10%;" rowspan="1">
+                  Status
+              </th>
+              <th class="" style="min-width: 10%;" rowspan="1">
+                Star Category
+              </th>
+              <th class="" style="min-width: 10%;" rowspan="1">
+                Property Type
+              </th>
+              <th class="" style="minwidth: 10%;" rowspan="1">
+                Created on (By:)
+              </th>
+            </tr>
+          </thead>
+
+          <tbody>
+
+
+            <tr>
+              <td><a href="{{ $.Params.casabella.url }}" class="text-info bolder" target="_blank">Casa Bella</a></td>
+              <td>Badem, Salvador-Do-Mundo, Bardez, Panaji, India</td>
+              <td>
+                <div class="m-b-5">
+                  Bruce Wayne
+                </div>
+              </td>
+              <td>Bary Allen - <br><a href="tel:+919988446622" class="text-decor links-click">+91 9988446622</a><br><a href="mailto:barryallen@goomo.com" class="text-decor links-click">barryallen@goomo.com</a></td>
+              <td><span class="text-muted bolder"><span class="text-success bolder">Active <i class="fa fa-check" aria-hidden="true"></i></span></span></td>
+              <td>Three star</td>
+              <td>Villa</td>
+              <td>21 Aug 2016 - Ram Sharma</td>
+            </tr>
+
+
+            <tr>
+              <td><a href="{{ $.Params.chalston.url }}" class="text-info bolder" target="_blank">Chalston Beach Resort</a></td>
+              <td>Badem, Salvador-Do-Mundo, Bardez, Panaji, India</td>
+              <td>
+                <div class="m-b-5">
+                  Sujata patil
+                </div>
+              </td>
+              <td>Amit Adav - <br><a href="tel:+919988446622" class="text-decor links-click">+91 9988446622</a><br><a href="mailto:amitadav@goomo.com" class="text-decor links-click">amitadav@goomo.com</a></td>
+              <td><span class="text-success bolder">Active <i class="fa fa-check" aria-hidden="true"></i></span><br><span class="text-secondary xx-small">(Pending Review)</span></td>
+              <td>Three star</td>
+              <td>Resort</td>
+              <td>21 Aug 2016 - Ram Sharma</td>
+            </tr>
+
+
+
+            <tr>
+              <td><a href="{{ $.Params.casamora.url }}" class="text-info bolder" target="_blank">Casa Amora</a></td>
+              <td>Khobra Vaddo, Goa, Calangute, India</td>
+              <td>
+                <div class="m-b-5">
+                  Allen Walker
+                </div>
+              </td>
+              <td>Frank Castle - <br><a href="tel:+919988446622" class="text-decor links-click">+91 9988446622</a><br><a href="mailto:frankcastle@goomo.com" class="text-decor links-click">frankcastle@goomo.com</a></td>
+              <td><span class="text-success bolder">Active <i class="fa fa-check" aria-hidden="true"></i></span></td>
+              <td>Three star</td>
+              <td>Villa</td>
+              <td>21 Aug 2016 - Ram Sharma</td>
+            </tr>
+
+
+            <tr>
+              <td><a href="{{ $.Params.riverfront.url }}" class="text-info bolder" target="_blank">Riverfront</a></td>
+              <td>Khobra Vaddo, Goa, Calangute, India</td>
+              <td>
+                <div class="m-b-5">
+                  Oliver Queen
+                </div>
+              </td>
+              <td>Bary Allen - <br><a href="tel:+919988446622" class="text-decor links-click">+91 9988446622</a><br><a href="mailto:barryallen@goomo.com" class="text-decor links-click">barryallen@goomo.com</a></td>
+              <td><span class="text-success bolder">Active <i class="fa fa-check" aria-hidden="true"></i></span></td>
+              <td>Three star</td>
+              <td>Service Apartment</td>
+              <td>21 Aug 2016 - Ram Sharma</td>
+            </tr>
+
+
+            <tr>
+              <td><a href="{{ $.Params.casabritona.url }}" class="text-info bolder" target="_blank">Casa Britona</a></td>
+              <td>Khobra Vaddo, Goa, Calangute, India</td>
+              <td>
+                <div class="m-b-5">
+                  Oliver Queen
+                </div>
+              </td>
+              <td>Amit Adav - <br><a href="tel:+919988446622" class="text-decor links-click">+91 9988446622</a><br><a href="mailto:amitadav@goomo.com" class="text-decor links-click">amitadav@goomo.com</a></td>
+              <td><span class="text-success bolder">Active <i class="fa fa-check" aria-hidden="true"></i></span></td>
+              <td>Three star</td>
+              <td>Villa</td>
+              <td>21 Aug 2016 - Ram Sharma</td>
+            </tr>
+
+
+            <tr>
+              <td><a href="{{ $.Params.panjiminn.url }}" class="text-info bolder" target="_blank">Panjim Inn</a></td>
+              <td>Khobra Vaddo, Goa, Calangute, India</td>
+              <td>
+                <div class="m-b-5">
+                  Allen Walker
+                </div>
+              </td>
+              <td>Slade Wilson - <br><a href="tel:+919988446622" class="text-decor links-click">+91 9988446622</a><br><a href="mailto:sladewilson@goomo.com" class="text-decor links-click">sladewilson@goomo.com</a></td>
+              <td><span class="text-success bolder">Active <i class="fa fa-check" aria-hidden="true"></i></span></td>
+              <td>Three star</td>
+              <td>Hotel</td>
+              <td>21 Aug 2016 - Ram Sharma</td>
+            </tr>
+
+            <tr>
+              <td><a href="{{ $.Params.eden.url }}" class="text-info bolder" target="_blank">Hotel Eden</a></td>
+              <td>Khobra Vaddo, Goa, Calangute, India</td>
+              <td>
+                <div class="m-b-5">
+                  Oliver Queen
+                </div>
+              </td>
+              <td>Bary Allen - <br><a href="tel:+919988446622" class="text-decor links-click">+91 9988446622</a><br><a href="mailto:barryallen@goomo.com" class="text-decor links-click">barryallen@goomo.com</a></td>
+              <td><span class="text-success bolder">Active <i class="fa fa-check" aria-hidden="true"></i></span><br><span class="text-secondary xx-small">(Pending Review)</span></td>
+              <td>Three star</td>
+              <td>Hotel</td>
+              <td>21 Aug 2016 - Ram Sharma</td>
+            </tr>
+
+
+          </tbody>
+        </table>
+			</div>
+
+
+		</div>
+	</div>
+{{ end }}
