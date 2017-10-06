@@ -95,7 +95,7 @@ ratesavail:
 
 users:
  done: false
- url: "#"
+ url: "/goomo_html/details/users/casa-amora/"
  checklist: true
  qc: "--"
 

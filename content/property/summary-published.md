@@ -95,7 +95,7 @@ ratesavail:
 
 users:
  done: true
- url: "#"
+ url: "/goomo_html/details/users/casa-britona/"
  checklist: true
  qc: "Approved"
 ---

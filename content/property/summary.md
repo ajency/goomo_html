@@ -108,7 +108,7 @@ ratesavail:
 
 users:
  done: false
- url: "#"
+ url: "/goomo_html/details/users/chalston-beach-resort/"
  pending: true
  pendingtext: ""
  checklist: false

@@ -88,7 +88,7 @@ cancel:
 
 users:
  done: true
- url: "#"
+ url: "/goomo_html/details/users/panjim-inn/"
  checklist: true
  qc: "Approved"
 ---

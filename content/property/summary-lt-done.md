@@ -97,7 +97,7 @@ ratesavail:
 
 users:
  done: false
- url: "#"
+ url: "/goomo_html/details/users/casa-colvale/"
  checklist: false
  qc: "--"
 
