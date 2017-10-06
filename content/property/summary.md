@@ -40,7 +40,7 @@ policies:
  qc: "--"
 
 desc:
- url: "#"
+ url: "#descriptionModal"
  pending: true
  pendingtext: "To be added by Goomo Content team"
  checklist: false
