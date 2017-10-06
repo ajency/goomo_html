@@ -6,6 +6,11 @@ layout: services-for-review
 property: "Casa Amora"
 status: "In Process"
 url: /details/amenities/casa-amora/
+slug: "casa-amora/"
+
+mainmenu:
+ details: true
+ amenities: true
 
 ---
 

@@ -6,10 +6,15 @@ layout: contract-owner-pending
 property: "Casa Baga"
 status: "In Process"
 url: /details/contract/casa-baga/
+slug: "casa-baga/"
 
 owner: true
 
 qcstatus:
  forreview: true
+
+mainmenu:
+ details: true
+ contract: true
 
 ---

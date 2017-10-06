@@ -6,6 +6,11 @@ layout: services-published
 property: "Casa Britona"
 status: "Active"
 url: /details/amenities/casa-britona/
+slug: "casa-britona/"
+
+mainmenu:
+ details: true
+ amenities: true
 
 ---
 

@@ -6,6 +6,11 @@ layout: services-new
 property: "Casa Bella"
 status: "In Process"
 url: /details/amenities/casa-bella/
+slug: "casa-bella/"
+
+mainmenu:
+ details: true
+ amenities: true
 
 ---
 

@@ -6,7 +6,13 @@ layout: contract-owner-new
 property: "Casa Anjuna"
 status: "In Process"
 url: /details/contract/casa-anjuna/
+slug: "casa-anjuna/"
 
 qcstatus:
  new: true
+
+mainmenu:
+ details: true
+ contract: true
+
 ---

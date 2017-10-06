@@ -1,44 +1,54 @@
 <!-- menu -->
 
+
 <ul class="gs-steps" role="tablist">
-  {{ $currentPage := . }}
-  {{ range .Site.Menus.main }}
-  {{ if .HasChildren }}
-    <li class="sub-menu{{if $currentPage.HasMenuCurrent "main" . }} active{{end}}">
-      <a href="#{{ .Identifier }}SubMenu" class=" form-toggle " id="" role="button" data-toggle="collapse">
-        {{ .Pre }}
-        <span>{{ .Name }}</span>
-        <span class="menu-arrow arrow_carrot-right"></span>
-      </a>
-      <ul class="gs-steps collapse in edit-mode sub-steps" role="tablist" id="{{ .Identifier }}SubMenu">
-          {{ range .Children }}
-
-          <li{{if $currentPage.HasMenuCurrent "main" . }} class="active"{{end}}>
-            {{ if .HasChildren }}
-            	<a href="#{{ .Identifier }}SubMenu" class="" id="" role="button" data-toggle="collapse"> {{ .Name }} </a>
-            {{ else }}
-            	<a href="{{.URL}}"> {{ .Name }} </a>
-            {{ end }}
-
-          	{{ if .HasChildren }}
-          		<ul class="sub-menu collapse in" id="{{ .Identifier }}SubMenu">
-          			{{ range .Children }}
-          				<li><a href="{{.URL}}">- {{ .Name }}</a></li>
-          			{{ end }}
-          		</ul>
-          	{{ end }}
-          </li>
-          {{ end }}
-      </ul>
-  {{else}}
-    <li>
-      <a href="{{.URL}}">
-        {{ .Pre }}
-        <span>{{ .Name }}</span>
-      </a>
-    {{end}}
-    </li>
-  {{end}}
+  <li class="{{ if $.Params.mainmenu.dash }}active{{end}}">
+    <a href="{{ $.Params.slug }}"><i class="fa fa-bars"></i> <span>Dashboard</span></a>
+  </li>
+  <li class="{{ if $.Params.mainmenu.booking }}active{{end}}">
+    <a href="{{ $.Params.slug }}"><i class="fa fa-calendar-check-o"></i> <span>Bookings</span></a>
+  </li>
+  <li class="{{ if $.Params.mainmenu.review }}active{{end}}">
+    <a href="{{ $.Params.slug }}"><i class="fa fa-comments-o"></i> <span>Reviews</span></a>
+  </li>
+  <li class="{{ if $.Params.mainmenu.rates }}active{{end}}">
+    <a href="/goomo_html/rates/{{ $.Params.slug }}"><i class="fa fa-money"></i> <span>Rates &amp; Availability</span></a>
+  </li>
+  <li class="{{ if $.Params.mainmenu.offer }}active{{end}}">
+    <a href="{{ $.Params.slug }}"><i class="fa fa-certificate"></i> <span>Offers</span></a>
+  </li>
+  <li class="{{ if $.Params.mainmenu.checklist }}active{{end}}">
+    <a href="/goomo_html/checklist/{{ $.Params.slug }}"><i class="fa fa-list"></i> <span>Property Checklist</span></a>
+  </li>
+  <li class="sub-menu {{ if $.Params.mainmenu.details }}active{{end}}">
+    <a class=" form-toggle" data-toggle="collapse" href="#property-detailsSubMenu" id="" role="button"><i class="fa fa-file-text-o"></i> <span>Property Details</span> <span class="menu-arrow arrow_carrot-right"></span></a>
+    <ul class="gs-steps collapse in edit-mode sub-steps" id="property-detailsSubMenu" role="tablist">
+      <li class="{{ if $.Params.mainmenu.amenities }}active{{end}}">
+        <a href="/goomo_html/details/amenities/{{ $.Params.slug }}">Amenities &amp; Services</a>
+      </li>
+      <li class="{{ if $.Params.mainmenu.address }}active{{end}}">
+        <a href="/goomo_html/details/address/{{ $.Params.slug }}">Address &amp; Contact</a>
+      </li>
+      <li class="{{ if $.Params.mainmenu.images }}active{{end}}">
+        <a href="/goomo_html/details/images/{{ $.Params.slug }}">Images</a>
+      </li>
+      <li class="{{ if $.Params.mainmenu.rooms }}active{{end}}">
+        <a href="/goomo_html/details/rooms/{{ $.Params.slug }}">Rooms</a>
+      </li>
+      <li class="{{ if $.Params.mainmenu.policies }}active{{end}}">
+        <a href="/goomo_html/details/policies/{{ $.Params.slug }}">Policies</a>
+      </li>
+      <li class="{{ if $.Params.mainmenu.contract }}active{{end}}">
+        <a href="/goomo_html/details/contract/{{ $.Params.slug }}">Contract &amp; Finance</a>
+      </li>
+      <li class="{{ if $.Params.mainmenu.audit }}active{{end}}">
+        <a href="/goomo_html/details/audit/{{ $.Params.slug }}">Audit Logs</a>
+      </li>
+      <li class="{{ if $.Params.mainmenu.user }}active{{end}}">
+        <a href="/goomo_html/details/user/{{ $.Params.slug }}">Users</a>
+      </li>
+    </ul>
+  </li>
 </ul>
 
 <!-- menu ends -->

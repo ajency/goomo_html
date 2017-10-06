@@ -6,12 +6,15 @@ layout: summary-submitted
 property: "Riverfront"
 status: "Pending Review"
 url: /checklist/riverfront/
+slug: "riverfront/"
 
 viewdash: true
 
 propertyinfo:
  done: false
 
+mainmenu:
+ checklist: true
 
 address:
  url: "#"

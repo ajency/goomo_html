@@ -6,10 +6,13 @@ layout: summary-new
 property: "Casa Bella"
 status: "In Process"
 url: /checklist/casa-bella/
+slug: "casa-bella/"
 
 propertyinfo:
  done: false
 
+mainmenu:
+ checklist: true
 
 address:
  url: "#"

@@ -6,10 +6,15 @@ layout: contract-owner-for-review
 property: "Casa Amora"
 status: "In Process"
 url: /details/contract/casa-amora/
+slug: "casa-amora/"
 
 owner: true
 
 qcstatus:
  submitted: true
+
+mainmenu:
+ details: true
+ contract: true
 
 ---
