@@ -163,7 +163,17 @@ var internal = $('#internal-table').DataTable({
 	    }
 	})
 
+	$('body').on("click", ".limited", function(event) {
+		event.preventDefault();
+		$(this).parent('.limited-tag').addClass('hidden');
+		$(this).closest('.flex-list').find('.flex-tag-row').removeClass('hidden');
+	});
 
+	$('body').on("click", ".restricted", function(event) {
+		event.preventDefault();
+		$(this).parent('.limited-tag').addClass('hidden');
+		$(this).closest('.flex-list').find('.simple-tag').removeClass('hidden');
+	});
 
 
 });
