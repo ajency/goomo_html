@@ -46,7 +46,7 @@ desc:
  url: "#"
  pending: false
  pendingtext: ""
- checklist: true
+ checklist: false
  qc: "--"
 
 contract:

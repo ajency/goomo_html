@@ -16,7 +16,52 @@
     <div class="fly-out__content">
         <div class="sidebar-updates page-sidebar">
 
-        {{ if $.Params.users }}
+        {{ if $.Params.mainmenu.checklist }}
+
+            <div class="page-sidebar__header flex-row space-between mobile-hide">
+                <div class="backLink flex-row">
+                    <a href="" class="primary-link p-r-10 element-title article-back"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+                    <div class="sub-title bolder">Add Description</div>
+                </div>
+            </div>
+
+            <div class="page-sidebar__body">
+                <div class="update-sec sidebar-article user-overflow">
+                   <h6 class="bolder m-t-35 prop-title">Description for {{ .Params.property }}</h6>
+                   <div class="form-group">
+                     <textarea class="fnb-input form-control" rows="5" placeholder="Type your content here..."></textarea>
+                   </div>
+
+                   <button type="button" class="btn fnb-btn secondary-btn mini m-t-30">Add</button>
+                </div>
+            </div>
+
+         {{ else if $.Params.mainmenu.contract }}
+
+            <div class="page-sidebar__header flex-row space-between mobile-hide">
+                <div class="backLink flex-row">
+                    <a href="" class="primary-link p-r-10 element-title article-back"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+                    <div class="sub-title bolder">Add Bank Details</div>
+                </div>
+            </div>
+
+            <div class="page-sidebar__body">
+                <div class="update-sec sidebar-article user-overflow">
+                   <h6 class="bolder m-t-35 prop-title">Account Number</h6>
+                   <div class="form-group">
+                     <input type="text" class="form-control fnb-input" placeholder="Eg: HDCAR9874563210" name="">
+                   </div>
+
+                   <h6 class="bolder m-t-35 prop-title">Re-Enter Account Number</h6>
+                   <div class="form-group">
+                     <input type="password" class="form-control fnb-input" placeholder="Type your a/c number again" name="">
+                   </div>
+
+                   <button type="button" class="btn fnb-btn secondary-btn mini m-t-30" data-dismiss="modal">Add</button>
+                </div>
+            </div>
+
+         {{ else if $.Params.mainmenu.user }}
 
            <div class="page-sidebar__header flex-row space-between mobile-hide">
                 <div class="backLink flex-row">
@@ -145,7 +190,7 @@
                 </div>
             </div>
 
-            {{ end }}
+        {{ end }}
 
         </div>
     </div>

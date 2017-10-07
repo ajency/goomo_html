@@ -7,8 +7,6 @@ property: "Chalston Beach Resort"
 url: /details/users/chalston-beach-resort/
 slug: "chalston-beach-resort/"
 
-users: true
-
 mainmenu:
  details: true
  user: true

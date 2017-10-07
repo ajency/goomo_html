@@ -45,7 +45,7 @@ policies:
 desc:
   url: "#descriptionModal"
   pending: true
-  pendingtext: "To be added by Goomo Content team"
+  pendingtext: "To be added by Goomo Content team after submission for review"
   checklist: false
   qc: "--"
 
