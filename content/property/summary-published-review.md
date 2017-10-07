@@ -20,7 +20,7 @@ address:
  qc: "Approved"
 
 amenities:
- url: "/goomo_html/details/contract/hotel-eden/"
+ url: "/goomo_html/details/amenities/hotel-eden/"
  pending: false
  pendingtext: ""
  hasedits: false
@@ -28,13 +28,13 @@ amenities:
  qc: ""
 
 images:
- url: "/goomo_html/details/contract/hotel-eden/"
+ url: "/goomo_html/details/images/hotel-eden/"
  pending: false
- pendingtext: "New Edits: Room Images updated"
- hasedits: true
+ pendingtext: ""
+ hasedits: false
  checklist: true
- qc: "Edits Pending Review"
- qcorange: true
+ qc: "Approved"
+ qcorange: false
 
 policies:
  url: "#"
@@ -56,7 +56,10 @@ contract:
 bank:
  url: "/goomo_html/details/contract/hotel-eden/"
  checklist: true
- qc: "Approved"
+ hasedits: true
+ pendingtext: "New Edits: Account number changed"
+ qc: "Edits Pending Review"
+ qcorange: true
 
 tax:
  url: "/goomo_html/details/contract/hotel-eden/"
@@ -87,6 +90,14 @@ cancel:
  url: "#"
  checklist: true
  qc: "Approved"
+
+ratesavail:
+   done: true
+   url: "#"
+   pending: true
+   pendingtext: ""
+   checklist: true
+   qc: "--"
 
 users:
  done: true
