@@ -4,7 +4,7 @@
 		<div class="row">
 			<div class="col-sm-9">
 			
-			<h5 class="bolder m-t-35 prop-title">Address</h5>
+			<h5 class="bolder m-t-20 prop-title">Address</h5>
 				
 			<div class="row field-gap c-gap">
 	            <div class="col-sm-12 form-group m-b-30">
@@ -66,7 +66,7 @@
 	                    <div class="col-sm-5 col-xs-8">
 	                        <div class="verified-toggle flex-row">
 	                            <div class="toggle m-l-10 m-r-10">
-	                                <input name="primary_email" type="checkbox" class="toggle__check" data-parsley-errors-container="#toggleError" data-parsley-multiple="contacts" data-parsley-required-message="At least one contact detail either email or phone number should be visible on the listing." data-parsley-mincheck="1" required >
+	                                <input name="primary_email" type="checkbox" class="toggle__check" checked="" >
 	                                <b class="switch"></b>
 	                                <b class="track"></b>
 	                            </div>
@@ -80,13 +80,13 @@
 		        <div class="m-t-15 m-b-30 contact-container contact-group hidden">
 		            <div class="row no-m-b">
 	                    <div class="col-sm-4">
-	                        <input type="email" class="form-control fnb-input p-l-5 contact-input" value="" >
+	                        <input type="email" class="form-control fnb-input p-l-5 contact-input" value="" placeholder="xyz@gmail.com">
 	                    </div>
 	                    <div class="col-sm-1"></div>
 	                    <div class="col-sm-5 col-xs-8">
 	                        <div class="m-t-5 verified-toggle flex-row">
 	                            <div class="toggle m-l-10 m-r-10">
-	                                <input name="primary_email" type="checkbox" class="toggle__check" data-parsley-errors-container="#toggleError" data-parsley-multiple="contacts" data-parsley-required-message="At least one contact detail either email or phone number should be visible on the listing." data-parsley-mincheck="1" required >
+	                                <input name="primary_email" type="checkbox" class="toggle__check" checked="">
 	                                <b class="switch"></b>
 	                                <b class="track"></b>
 	                            </div>
@@ -98,9 +98,8 @@
 		        </div>
 
 
-        </div>
-				
-
+	        </div>
+					
 
 	        <div class="m-t-40 business-email business-contact contact-info contact-info-email" contact-type="email">
 
@@ -111,14 +110,22 @@
 	            <div class="m-t-5">
 	                <div class="row no-m-b">
 	                    <div class="col-sm-4">
-	                        <input type="email" class="form-control fnb-input p-l-5 contact-input" placeholder="xyz@gmail.com" >
-	                        <a href="#" class="dark-link text-medium add-another">+ Add another email</a>
+	                    	<div class="flex-row">
+	                    		<select class="fnb-select select-variant form-control text-lighter small-select" name="">
+			                    	<option value="">+91</option>
+			                    	<option>+1245</option>
+			                    	<option>+97</option>
+				                </select>
+	                    		<input type="email" class="form-control fnb-input p-l-5 contact-input" placeholder="9798999987" >
+	                    	</div>
+	                        
+	                        <a href="#" class="dark-link text-medium add-another">+ Add another mobile</a>
 	                    </div>
 	                    <div class="col-sm-1"></div>
 	                    <div class="col-sm-5 col-xs-8">
 	                        <div class="verified-toggle flex-row">
 	                            <div class="toggle m-l-10 m-r-10">
-	                                <input name="primary_email" type="checkbox" class="toggle__check" data-parsley-errors-container="#toggleError" data-parsley-multiple="contacts" data-parsley-required-message="At least one contact detail either email or phone number should be visible on the listing." data-parsley-mincheck="1" required >
+	                                <input name="primary_email" type="checkbox" class="toggle__check" checked="">
 	                                <b class="switch"></b>
 	                                <b class="track"></b>
 	                            </div>
@@ -132,13 +139,20 @@
 		        <div class="m-t-15 m-b-30 contact-container contact-group hidden">
 		            <div class="row no-m-b">
 	                    <div class="col-sm-4">
-	                        <input type="email" class="form-control fnb-input p-l-5 contact-input" value="" >
+	                       <div class="flex-row">
+	                    		<select class="fnb-select select-variant form-control text-lighter small-select" name="">
+			                    	<option value="">+91</option>
+			                    	<option>+1245</option>
+			                    	<option>+97</option>
+				                </select>
+	                    		<input type="email" class="form-control fnb-input p-l-5 contact-input" placeholder="9798999987" >
+	                    	</div>
 	                    </div>
 	                    <div class="col-sm-1"></div>
 	                    <div class="col-sm-5 col-xs-8">
 	                        <div class="m-t-5 verified-toggle flex-row">
 	                            <div class="toggle m-l-10 m-r-10">
-	                                <input name="primary_email" type="checkbox" class="toggle__check" data-parsley-errors-container="#toggleError" data-parsley-multiple="contacts" data-parsley-required-message="At least one contact detail either email or phone number should be visible on the listing." data-parsley-mincheck="1" required >
+	                                <input name="primary_email" type="checkbox" class="toggle__check" checked="" >
 	                                <b class="switch"></b>
 	                                <b class="track"></b>
 	                            </div>
@@ -149,13 +163,12 @@
 	                </div>
 		        </div>
 
-
-        </div>
-
+	        </div>
 
 
 
-	    <div class="m-t-40 business-email business-contact contact-info contact-info-email" contact-type="email">
+
+		    <div class="m-t-40 business-email business-contact contact-info contact-info-email" contact-type="email">
 
 		        <div class="flex-row space-between mobile-sp-row">
 		            <label class="label-size text-info required">Hotel Phone</label>
@@ -164,14 +177,14 @@
 	            <div class="m-t-5">
 	                <div class="row no-m-b">
 	                    <div class="col-sm-4">
-	                        <input type="email" class="form-control fnb-input p-l-5 contact-input" placeholder="xyz@gmail.com" >
-	                        <a href="#" class="dark-link text-medium add-another">+ Add another email</a>
+	                        <input type="email" class="form-control fnb-input p-l-5 contact-input" placeholder="0234 87878223" >
+	                        <a href="#" class="dark-link text-medium add-another">+ Add another phone</a>
 	                    </div>
 	                    <div class="col-sm-1"></div>
 	                    <div class="col-sm-5 col-xs-8">
 	                        <div class="verified-toggle flex-row">
 	                            <div class="toggle m-l-10 m-r-10">
-	                                <input name="primary_email" type="checkbox" class="toggle__check" data-parsley-errors-container="#toggleError" data-parsley-multiple="contacts" data-parsley-required-message="At least one contact detail either email or phone number should be visible on the listing." data-parsley-mincheck="1" required >
+	                                <input name="primary_email" type="checkbox" class="toggle__check" checked="" >
 	                                <b class="switch"></b>
 	                                <b class="track"></b>
 	                            </div>
@@ -185,13 +198,13 @@
 		        <div class="m-t-15 m-b-30 contact-container contact-group hidden">
 		            <div class="row no-m-b">
 	                    <div class="col-sm-4">
-	                        <input type="email" class="form-control fnb-input p-l-5 contact-input" value="" >
+	                        <input type="email" class="form-control fnb-input p-l-5 contact-input" value="" placeholder="0234 87878223">
 	                    </div>
 	                    <div class="col-sm-1"></div>
 	                    <div class="col-sm-5 col-xs-8">
 	                        <div class="m-t-5 verified-toggle flex-row">
 	                            <div class="toggle m-l-10 m-r-10">
-	                                <input name="primary_email" type="checkbox" class="toggle__check" data-parsley-errors-container="#toggleError" data-parsley-multiple="contacts" data-parsley-required-message="At least one contact detail either email or phone number should be visible on the listing." data-parsley-mincheck="1" required >
+	                                <input name="primary_email" type="checkbox" class="toggle__check" checked="" >
 	                                <b class="switch"></b>
 	                                <b class="track"></b>
 	                            </div>
@@ -202,26 +215,75 @@
 	                </div>
 		        </div>
 
+	        </div>
 
-        </div>
-
-		
-		<div class="row m-t-40">
-			<div class="col-sm-6 form-group m-b-30">
-            	<label class="label-size text-info">Website </label>
-            	<input type="text" class="form-control fnb-input" placeholder="eg: www.xyz.com">
-	           </div>
-		</div>
+			
+			<div class="row m-t-40">
+				<div class="col-sm-6 form-group m-b-30">
+	            	<label class="label-size text-info">Website </label>
+	            	<input type="text" class="form-control fnb-input" placeholder="eg: www.xyz.com">
+		           </div>
+			</div>
 
 
+			<h5 class="bolder m-t-35 prop-title">What's Nearby</h5>
+			
+
+			<div class="flex-list field-gap c-gap nearby">
+				<input type="Email" class="form-control fnb-input flexdatalist" multiple="multiple" list="chain-name" value="Cafe Coffe Day" placeholder="Type for suggestions & hit enter">
+				<datalist id="chain-name">
+	            	<option value="booking">Cafe Coffe Day</option>
+	            	<option value="booking">Hospital</option>
+	            	<option value="booking">ATM</option>
+	        	</datalist>
+	        </div>
+			
 
 
 			</div>
 			<div class="col-sm-3 right-sidebar">
-				{{ partial "right-sidebar.html" .}}
-			</div>
-			<div class="market-manager-img mobile-btn desk-hide	">
-				<img src="{{"img/manager.jpg" | absURL}}" class="img-responsive">
+				<div class="logs-block">
+					<div class="flex-row space-between">
+						<h6 class="bolder">Audit Logs</h6>
+						<a href="#" class="bolder text-secondary">View All</a>
+					</div>
+					<div class="single-log">
+						<div class="flex-row space-between">
+							<div class="bolder">
+
+								Sain Dsouza (Owner)
+							</div>
+							<span class="text-muted small">2 days ago</span>
+						</div>
+						<p class="small">
+							Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.
+						</p>
+					</div>
+					<div class="single-log">
+						<div class="flex-row space-between">
+							<div class="bolder">
+
+								Sain Dsouza (Owner)
+							</div>
+							<span class="text-muted small">2 days ago</span>
+						</div>
+						<p class="small">
+							Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.
+						</p>
+					</div>
+					<div class="single-log">
+						<div class="flex-row space-between">
+							<div class="bolder">
+
+								Sain Dsouza (Owner)
+							</div>
+							<span class="text-muted small">2 days ago</span>
+						</div>
+						<p class="small">
+							Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.
+						</p>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>

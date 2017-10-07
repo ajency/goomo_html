@@ -200,7 +200,13 @@ $('body').on('click', '.removeRow', function() {
   return $(this).closest('.contact-container').remove();
 });
 
-
+$(document).on('change', '.business-contact .toggle__check', function() {
+  if ($(this).is(':checked')) {
+    $(this).closest('.toggle').siblings('.toggle-state').text('Visible on the property');
+  } else {
+    $(this).closest('.toggle').siblings('.toggle-state').text('Not visible on the property');
+  }
+});
 
 
 
