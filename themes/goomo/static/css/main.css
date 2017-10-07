@@ -1662,7 +1662,7 @@ input[type=radio].fnb-radio.disabled:before {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    z-index: 999;
+    z-index: 3;
   }
   .fnb-header.trans-header {
     position: relative;
