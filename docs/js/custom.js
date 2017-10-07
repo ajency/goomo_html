@@ -239,6 +239,15 @@ $(document).on('change', '.business-contact .toggle__check', function() {
   }
 });
 
+$(document).on('click', '.desc-btn', function() {
+	$(this).addClass('hidden');
+	$('.desc-warning').removeClass('hidden');
+});
+$(document).on('click', '.desc-warning button', function() {
+	$('.desc-btn').removeClass('hidden');
+	$('.desc-warning').addClass('hidden');
+});
+
 
 $('.from-date,.to-date').daterangepicker();
 
