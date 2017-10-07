@@ -1584,6 +1584,11 @@ input[type=radio].fnb-radio.disabled:before {
   font-weight: 400;
 }
 @media screen and (max-width: 768px) {
+  .fnb-header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
   .fnb-header.trans-header {
     position: relative;
     z-index: initial;
