@@ -73,6 +73,18 @@ var internal = $('#internal-table').DataTable({
 	}
 
 
+	var inactive = $('#inactive-table').DataTable({
+		"ordering": false
+	});
+
+    inactive.columns().iterator('column', function(ctx, idx) {
+        $(inactive.column(idx).header()).append('<span class="sort-icon"/>');
+    });
+
+
+
+
+
     var tax = $('#tax-table').DataTable();
 
     tax.columns().iterator('column', function(ctx, idx) {

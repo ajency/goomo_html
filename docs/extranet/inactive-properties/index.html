@@ -283,6 +283,276 @@
 				</div>
 			</div>
 
+    <div class="col-sm-12 m-t-35">  
+      <div class="flex-row space-between search-row">
+          <div class="filter-search flex-row align-reset">
+            <div class="filter-search__field">
+              <i class="fa fa-search text-lighter element-title" aria-hidden="true"></i>
+              <input type="search" class="fnb-input" placeholder="Search by">
+            </div>
+            <button class="btn fnb-btn transparent bold-btn full flex-row" data-toggle="collapse" data-target="#moreFiltersWrap"><img src="http://localhost:1313/goomo_html/img/filter-bars.png" class="img-responsive p-r-5" width="30"> <span>Filter</span></button>
+          </div>
+          <a href="/goomo_html/extranet/create/" class="btn fnb-btn secondary-btn bold-btn border-btn full add-list flex-row"><span>Add property</span></a>
+        </div>
+    </div>
+
+    
+      <div class="col-sm-12">
+        <div class="more-filters-wrapper m-t-25 collapse" id="moreFiltersWrap">
+          <div class="card">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-sm-6">
+                <h5 class="mb-3">Filter by</h5>
+                </div>
+                <div class="col-sm-6 text-right">
+                  <button type="button" class="close" data-toggle="collapse" data-target="#moreFiltersWrap">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-12 col-md-4">
+                  <div class="filter-section mb-4">
+                    <h6 class="sub-title bolder">Location</h6>
+                    <hr class="m-t-0 m-b-5">
+                    <div class="loc-filter">
+                      <select class="fnb-select select-variant form-control text-lighter m-b-25 p-l-0" name="">
+                          <option selected="" value="">--Select Country--</option>
+                          <option >India</option>
+                          <option>Singapore</option>
+                          <option>China</option>
+                          <option>Russia</option>
+                      </select>
+
+                      <select class="fnb-select select-variant form-control text-lighter m-b-25 p-l-0" name="">
+                          <option selected="" value="">--Select State--</option>
+                          <option>Delhi</option>
+                          <option >Goa</option>
+                          <option>Gujarat</option>
+                          <option>Bangalore</option>
+                      </select>
+
+                      <select class="fnb-select select-variant form-control text-lighter m-b-25 p-l-0" name="">
+                          <option selected="" value="">--Select City--</option>
+                          <option >Panjim</option>
+                          <option>Mapusa</option>
+                          <option>Madgaon</option>
+                          <option>Shivajinagar</option>
+                      </select>
+
+                      <select class="fnb-select select-variant form-control text-lighter m-b-25 p-l-0" name="">
+                          <option selected="" value="">--Select Location--</option>
+                          <option >Panjim</option>
+                          <option>Mapusa</option>
+                          <option>Madgaon</option>
+                          <option>Shivajinagar</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-12 col-md-4">
+                  <div class="filter-section mb-4">
+                    <h6 class="sub-title bolder">Star Category</h6>
+                    <hr class="m-t-0 m-b-5">
+                    <div class="row">
+                      <div class="col-sm-6">
+                          <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="" class="" checked="">
+                                One Star
+                              </label>
+                          </div>
+                      </div>
+                      <div class="col-sm-6">
+                          <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="" class="">
+                                Two Star
+                              </label>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-6">
+                          <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="" class="">
+                                Three Star
+                              </label>
+                          </div>
+                        </div>
+                      <div class="col-sm-6">
+                          <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="" class="">
+                                Four Star
+                              </label>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <div class="checkbox">
+                          <label>
+                              <input type="checkbox" value="" class="">
+                              Five Star
+                            </label>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <h6 class="m-t-10 sub-title bolder">Status</h6>
+                    <hr class="m-t-0 m-b-5">
+                   
+                    <div class="row">
+                      <div class="col-sm-6">
+                          <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="" class="" checked="">
+                                In Process
+                              </label>
+                          </div>
+                        </div>
+                      <div class="col-sm-6">
+                          <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="" class="">
+                                Pending Review
+                              </label>
+                          </div>
+                      </div>
+                       <div class="col-sm-6">
+                          <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="" class="">
+                                Archived
+                              </label>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-12 col-md-4">
+                  <div class="filter-section mb-4">
+                    <h6 class="sub-title bolder">Market Manager</h6>
+                    <hr class="m-t-0 m-b-5">
+                    <div >
+                      <input type="text" class="form-control fnb-input payment-add flexdatalist" multiple="multiple" placeholder="Type for suggestions &amp; select" list="locations" value="Sujata Patil">
+                      <datalist id="locations">
+                          <option value="goa">Sujata Patil</option>
+                          <option value="mumbai">Allen Walker</option>
+                          <option value="delhi">Delhi</option>
+                          <option value="gujarat">Gujarat</option>
+                          <option value="bangalore">Bangalore</option>
+                      </datalist>
+                    </div>
+                  </div>
+
+                  <div class="filter-section m-t-50">
+                    <h6 class="sub-title bolder">Content Score</h6>
+                    <hr class="m-t-0 m-b-5">
+                    
+                    <div class="loc-filter">
+                      <select class="fnb-select select-variant form-control text-lighter">
+                        <option value="Yes">10 - 30</option>
+                        <option value="No">30 - 70</option>
+                        <option value="No">70 - 90</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+            
+              </div>
+
+              <div class="row m-t-20">
+
+
+                <div class="col-sm-12 col-md-4">
+                  <div class="filter-section mb-4">
+                    <h6 class="sub-title bolder">Contract Uploaded</h6>
+                    <hr class="m-t-0 m-b-5">
+                    <div class="loc-filter">
+                      <select class="fnb-select select-variant form-control text-lighter">
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-12 col-md-4">
+                    <h6 class="m-t-10 sub-title bolder">Assigned To</h6>
+                    <hr class="m-t-0 m-b-5">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="checkbox">
+                              <label>
+                                  <input type="checkbox" value="" class="" checked="">
+                                  Goomo
+                                </label>
+                            </div>
+                          </div>
+                        <div class="col-sm-6">
+                            <div class="checkbox">
+                              <label>
+                                  <input type="checkbox" value="" class="">
+                                  Property
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-4">
+                    <h6 class="m-t-10 sub-title bolder">QC Status</h6>
+                    <hr class="m-t-0 m-b-5">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="checkbox">
+                              <label>
+                                  <input type="checkbox" value="" class="" checked="">
+                                  Info Needed
+                                </label>
+                            </div>
+                          </div>
+                        <div class="col-sm-6">
+                            <div class="checkbox">
+                              <label>
+                                  <input type="checkbox" value="" class="">
+                                  Pending Review
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+              </div>
+
+              <div class="row m-t-20">
+                <div class="col">
+                  <div class="pull-right">
+                    <button class="btn outline fnb-btn btn-sm m-r-10">
+                      Reset Filters
+                    </button>
+                    <button class="btn fnb-btn secondary-btn btn-sm" data-toggle="collapse" data-target="#moreFiltersWrap">
+                      Apply Filters
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
       
       <div class="col-sm-12 m-t-50 stats-container all-properties">
         <div class="stats-row flex-row flex-wrap">
@@ -325,138 +595,14 @@
 
 
 			
-			<div class="col-sm-12 m-t-35">
-				<div class="flex-row space-between search-row">
-					<div class="filter-search flex-row align-reset">
-						
-						<button class="btn fnb-btn transparent bold-btn full flex-row"  data-toggle="collapse" data-target="#moreFiltersWrap"><img src="https://ajency.github.io/goomo_html/img/filter-bars.png" class="img-responsive p-r-5" width="30"> <span>Filter</span></button>
-					</div>
-					
-				</div>
-			</div>
-
-      
-      <div class="col-sm-12">
-        <div class="more-filters-wrapper m-t-25 collapse" id="moreFiltersWrap">
-          <div class="card">
-            <div class="card-body">
-              <div class="row">
-                <div class="col-sm-6">
-                <h6 class="m-b-0 m-t-0">Filter by</h6>
-                </div>
-                <div class="col-sm-6 text-right">
-                  <button type="button" class="close" data-toggle="collapse" data-target="#moreFiltersWrap">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col-sm-12 col-md-3">
-                 
-
-                  <div class="filter-section filter-by m-t-30">
-
-                    <label class="label-size text-info">Country</label>
-                    
-                    <div>
-                      <input type="text" class="form-control fnb-input payment-add flexdatalist" multiple="multiple" placeholder="Type for suggestions &amp; select" list="locations" value="India">
-                      <datalist id="locations">
-                          <option value="Russia">Russia</option>
-                          <option value="USA">USA</option>
-                      </datalist>
-                    </div>
-                  </div>
-
-                </div>
-
-                <div class="col-sm-12 col-md-3">
-                  
-
-                  <div class="filter-section filter-by m-t-30">
-
-                    <label class="label-size text-info">State</label>
-                    
-                    <div>
-                      <input type="text" class="form-control fnb-input payment-add flexdatalist" multiple="multiple" placeholder="Type for suggestions &amp; select" list="locations" value="Goa">
-                      <datalist id="locations">
-                          <option value="Goa">Goa</option>
-                          <option value="Maharashtra">Maharashtra</option>
-                          <option value="Rajasthan">Rajasthan</option>
-                      </datalist>
-                    </div>
-                  </div>
+	
 
 
-                </div>
-
-                <div class="col-sm-12 col-md-3">
-                  <div class="filter-section filter-by m-t-30">
-
-                    <label class="label-size text-info">City</label>
-                    
-                    <div>
-                      <input type="text" class="form-control fnb-input payment-add flexdatalist" multiple="multiple" placeholder="Type for suggestions &amp; select" list="locations" value="Panjim">
-                      <datalist id="locations">
-                          <option value="panjim">Panjim</option>
-                          <option value="mapusa">Mapusa</option>
-                      </datalist>
-                    </div>
-                  </div>
-
-                </div>
-
-               <div class="col-sm-12 col-md-3">
-                  
-                  <div class="filter-section filter-by m-t-30">
-
-                    <label class="label-size text-info">Location</label>
-                    
-                    <div>
-                      <input type="text" class="form-control fnb-input payment-add flexdatalist" multiple="multiple" placeholder="Type for suggestions &amp; select" list="locations" value="All">
-                      <datalist id="locations">
-                          <option value="all">All</option>
-                          <option value="north goa">North Goa</option>
-                          <option value="south goa">South Goa</option>
-                      </datalist>
-                    </div>
-                  </div>
-
-                </div>
-
-
-              </div>
-
-              <div class="row m-t-30">
-                <div class="col-sm-6">
-                 <div class="radio-group m-t-10 custom-radio">
-                      <label for="wel" class="m-b-25">
-                        <input value="" type="checkbox" class="fnb-checkbox" name="contract" id="wel"
-                        checked="">
-                        <span class="p-l-5 text-medium text-color default-size">Display all the listings with status "In Process"</span>
-                      </label>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                  <div class="pull-right">
-                    <button class="btn outline fnb-btn btn-sm">
-                      Reset Filters
-                    </button>
-                    <button class="btn fnb-btn secondary-btn btn-sm" data-toggle="collapse" data-target="#moreFiltersWrap">
-                      Apply Filters
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
 
 
 
 			<div class="col-sm-12 m-t-40 regions-container all-properties">
-				<table id="listings-table" class="table table-striped dataTable listing-table" cellspacing="0" width="100%">
+				<table id="inactive-table" class="table table-striped dataTable listing-table" cellspacing="0" width="100%">
           <thead>
             <tr>
               <th style="min-width: 12%;" >Name</th>
@@ -465,45 +611,29 @@
               </th>
               <th class="no-sort" style="min-width: 15%;">
                 Market manager
-                <select multiple class="form-control multi-dd">
-                  <option value="Yes">Yes</option>
-                  <option value="No">No</option>
-                </select>
+                
               </th>
               <th class="" style="min-width: 10%;">
                 General Manager
               </th>
               <th class="no-sort" style="min-width: 10%;" rowspan="1">
                   Status
-                  <select multiple class="form-control multi-dd">
-                    <option value="Yes">In Process</option>
-                    <option value="Yes">Pending Review</option>
-                    <option value="No">Archived</option>
-                  </select>
+                 
               </th>
               <th class="no-sort" style="min-width: 10%;" rowspan="1">
                   Contract Uploaded
-                  <select multiple class="form-control multi-dd">
-                    <option value="Yes">Yes</option>
-                    <option value="No">No</option>
-                  </select>
+                  
               </th>
               <th class="no-sort" style="min-width: 10%;" rowspan="1">
                   Assigned To
-                  <select multiple class="form-control multi-dd">
-                    <option value="Yes">Goomo</option>
-                    <option value="No">Property</option>
-                  </select>
+                  
               </th>
               <th class="" style="minwidth: 15%;" rowspan="1">
                 Checklist
               </th>
                <th class="no-sort" style="min-width: 10%;" rowspan="1">
                   QC Status
-                  <select multiple class="form-control multi-dd">
-                    <option value="Yes">Info Needed</option>
-                    <option value="No">Pending Review</option>
-                  </select>
+                  
               </th>
               <th>Content Score (%)</th>
             </tr>

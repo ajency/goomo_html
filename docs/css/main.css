@@ -9409,6 +9409,9 @@ i.w-border {
   font-size: 1em;
   margin-right: 1.5em;
 }
+.loc-filter .fnb-select {
+  font-size: 1em;
+}
 @media screen and (max-width: 768px) {
   .nearby.flex-list .flexdatalist-multiple.flexdatalist-multiple {
     display: block;
