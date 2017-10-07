@@ -4031,7 +4031,43 @@ i.w-border{
 }
 
 
+.rooms-section{
+	padding: 1.5em;
+    align-items: inherit;
+    .rooms-col{
+    	display: flex;
+    	flex-direction: column;
+    	justify-content: space-between;
+    }
+    .room-left{
+    	flex: 1;
+    	border-right: 1px dashed #afafaf;
+    	margin-right: 2em;
+    	.fnb-label{
+    		font-size: 0.65em;
+		    margin-left: 0.5em;
+		    padding: 0.5em;
+    		border: 1px solid #32bbb4;
+    		color: #32bbb4;
+    	}
+    }
+    .room-right{
+    	// display: flex;
+    	// flex-direction: column;
+    	justify-content: space-around;
+    	min-width: 150px;
+    }
+    .room-detail{
+    	padding-bottom: 1.5em;
+    }
+    .toggle-state{
+    	color: #32bbb4;
+    }
+}
 
-
-
+.sub-dates{
+	@media screen and (max-width: 1400px){
+		font-size: 0.9em;	
+	}
+}
 

@@ -10734,6 +10734,11 @@ i.w-border {
 .rooms-section .toggle-state {
   color: #32bbb4;
 }
+@media screen and (max-width: 1400px) {
+  .sub-dates {
+    font-size: 0.9em;
+  }
+}
 .profile-stats {
   color: #fff;
   background: #378f9e;
