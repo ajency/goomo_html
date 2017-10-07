@@ -274,25 +274,68 @@
 			<div class="col-sm-12">
 				<div class="flex-row space-between">
 					<div class="main-title">
-						<h3 class="no-m-t fly-out-heading-size text-info ">Inactive Properties</h3>
+						<h3 class="no-m-t fly-out-heading-size text-info ">Inactive Properties <a href="/goomo_html/extranet/create/" class="btn fnb-btn secondary-btn btn-sm x-small add-modal add-prop"><span>+ Add property</span></a></h3>
 						<p class="text-muted">Manage in-active properties</p>
 					</div>
-					<div class="section-icon">
+					<div class="section-icon mobile-hide">
 						<img src="https://ajency.github.io/goomo_html/img/all-listings.png" class="img-responsive">
 					</div>
 				</div>
 			</div>
 
-    <div class="col-sm-12 m-t-35">  
+    
+
+
+      
+      <div class="col-sm-12 m-t-50 stats-container all-properties">
+        <div class="stats-row flex-row flex-wrap">
+          <div class="total-listing">
+            <div class="total-listing__count flex-row space-between">
+              <div>
+                <h5 class="bolder m-b-5 titles">50</h5>
+                <p class="m-b-0 text-lighter">Total Properties</p>
+              </div>
+              <img src="https://ajency.github.io/goomo_html/img/listing-count.png" class="img-responsive" width="35">
+            </div>
+          </div>
+
+          <div class="status-bucket stats-cols dsk-separator">
+            <p class="bolder">Status buckets</p>
+            <div class="flex-row align-reset space-between">
+              <div class="status-bucket__row">
+                <div class="buckets bucket-1">
+                  <p class="m-b-0 text-muted sub-title">11</p>
+                  <p class="m-b-0 text-muted default-size">In Process</p>
+                </div>
+              </div>
+              <div class="status-bucket__row">
+                <div class="buckets bucket-2">
+                  <p class="m-b-0 text-success sub-title">20</p>
+                  <p class="m-b-0 text-success default-size">Pending Review</p>
+                </div>
+              </div>
+              <div class="status-bucket__row">
+                <div class="buckets bucket-1">
+                  <p class="m-b-0 text-primary sub-title">15</p>
+                  <p class="m-b-0 text-primary default-size">Info Needed</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    <div class="col-sm-12 m-t-50">  
       <div class="flex-row space-between search-row">
           <div class="filter-search flex-row align-reset">
             <div class="filter-search__field">
               <i class="fa fa-search text-lighter element-title" aria-hidden="true"></i>
-              <input type="search" class="fnb-input" placeholder="Search by">
+              <input type="search" class="fnb-input" placeholder="Search by" id="catNameSearch">
             </div>
             <button class="btn fnb-btn transparent bold-btn full flex-row" data-toggle="collapse" data-target="#moreFiltersWrap"><img src="http://localhost:1313/goomo_html/img/filter-bars.png" class="img-responsive p-r-5" width="30"> <span>Filter</span></button>
           </div>
-          <a href="/goomo_html/extranet/create/" class="btn fnb-btn secondary-btn bold-btn border-btn full add-list flex-row"><span>Add property</span></a>
         </div>
     </div>
 
@@ -355,9 +398,9 @@
 
                 <div class="col-sm-12 col-md-4">
                   <div class="filter-section mb-4">
-                    <h6 class="sub-title bolder">Star Category</h6>
+                    <h6 class="sub-title bolder">Star Rating</h6>
                     <hr class="m-t-0 m-b-5">
-                    <div class="row">
+                    <div class="row mobile-flex">
                       <div class="col-sm-6">
                           <div class="checkbox">
                             <label>
@@ -375,7 +418,7 @@
                           </div>
                       </div>
                     </div>
-                    <div class="row">
+                    <div class="row mobile-flex">
                       <div class="col-sm-6">
                           <div class="checkbox">
                             <label>
@@ -393,7 +436,7 @@
                           </div>
                       </div>
                     </div>
-                    <div class="row">
+                    <div class="row mobile-flex">
                       <div class="col-sm-6">
                         <div class="checkbox">
                           <label>
@@ -488,7 +531,7 @@
                 <div class="col-sm-12 col-md-4">
                     <h6 class="m-t-10 sub-title bolder">Assigned To</h6>
                     <hr class="m-t-0 m-b-5">
-                    <div class="row">
+                    <div class="row mobile-flex">
                         <div class="col-sm-6">
                             <div class="checkbox">
                               <label>
@@ -511,7 +554,7 @@
                 <div class="col-sm-12 col-md-4">
                     <h6 class="m-t-10 sub-title bolder">QC Status</h6>
                     <hr class="m-t-0 m-b-5">
-                    <div class="row">
+                    <div class="row mobile-flex">
                         <div class="col-sm-6">
                             <div class="checkbox">
                               <label>
@@ -553,44 +596,9 @@
 
 
 
-      
-      <div class="col-sm-12 m-t-50 stats-container all-properties">
-        <div class="stats-row flex-row flex-wrap">
-          <div class="total-listing">
-            <div class="total-listing__count flex-row space-between">
-              <div>
-                <h5 class="bolder m-b-5 titles">50</h5>
-                <p class="m-b-0 text-lighter">Total Properties</p>
-              </div>
-              <img src="https://ajency.github.io/goomo_html/img/listing-count.png" class="img-responsive" width="35">
-            </div>
-          </div>
 
-          <div class="status-bucket stats-cols dsk-separator">
-            <p class="bolder">Status buckets</p>
-            <div class="flex-row align-reset space-between">
-              <div class="status-bucket__row">
-                <div class="buckets bucket-1">
-                  <p class="m-b-0 text-muted sub-title">11</p>
-                  <p class="m-b-0 text-muted default-size">In Process</p>
-                </div>
-              </div>
-              <div class="status-bucket__row">
-                <div class="buckets bucket-2">
-                  <p class="m-b-0 text-success sub-title">20</p>
-                  <p class="m-b-0 text-success default-size">Pending Review</p>
-                </div>
-              </div>
-              <div class="status-bucket__row">
-                <div class="buckets bucket-1">
-                  <p class="m-b-0 text-primary sub-title">15</p>
-                  <p class="m-b-0 text-primary default-size">Info Needed</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+
+
 
 
 
@@ -619,6 +627,9 @@
               <th class="no-sort" style="min-width: 10%;" rowspan="1">
                   Status
                  
+              </th>
+              <th class="no-sort" style="min-width: 10%;" rowspan="1">
+                   Star Rating
               </th>
               <th class="no-sort" style="min-width: 10%;" rowspan="1">
                   Contract Uploaded
@@ -651,6 +662,7 @@
               </td>
               <td>Bary Allen - <br><a href="tel:+919988446622" class="text-decor links-click">+91 9988446622</a><br><a href="mailto:barryallen@goomo.com" class="text-decor links-click">barryallen@goomo.com</a></td>
               <td><span class="text-secondary bolder">In process</span></td>
+              <td>2 Stars</td>
               <td class="text-center">No</td>
               <td><span class="bolder text-info">Goomo</span></td>
               <td>Property Information <i class="fa fa-check text-success"></i> <br>
@@ -675,6 +687,7 @@
               </td>
               <td>Amit Adav - <br><a href="tel:+919988446622" class="text-decor links-click">+91 9988446622</a><br><a href="mailto:amitadav@goomo.com" class="text-decor links-click">amitadav@goomo.com</a></td>
               <td><span class="text-secondary bolder">In process</span></td>
+              <td>3 Stars</td>
               <td class="text-center">No</td>
               <td><span class="bolder text-primary">Property</span></td>
               <td>Property Information <i class="fa fa-check text-success"></i> <br>
@@ -700,6 +713,7 @@
               </td>
               <td>Frank Castle - <br><a href="tel:+919988446622" class="text-decor links-click">+91 9988446622</a><br><a href="mailto:frankcastle@goomo.com" class="text-decor links-click">frankcastle@goomo.com</a></td>
               <td><span class="text-muted bolder">Pending review</span></td>
+              <td>3 Stars</td>
               <td class="text-center">Yes</td>
               <td><span class="bolder text-primary">Property</span></td>
               <td>Property Information <i class="fa fa-check text-success"></i> <br>
@@ -724,6 +738,7 @@
               </td>
               <td>Bary Allen - <br><a href="tel:+919988446622" class="text-decor links-click">+91 9988446622</a><br><a href="mailto:barryallen@goomo.com" class="text-decor links-click">barryallen@goomo.com</a></td>
               <td><span class="text-muted bolder">Pending review</span></td>
+              <td>2 Stars</td>
               <td class="text-center">Yes</td>
               <td><span class="bolder text-primary">Property</span></td>
               <td>Property Information <i class="fa fa-check text-success"></i> <br>
@@ -747,6 +762,7 @@
               <td>Alka Tar</td>
               <td>Akhil Desai - <br><a href="tel:+919988446622" class="text-decor links-click">+91 9988446622</a><br><a href="mailto:ak@gmail.com" class="text-decor links-click">ak@gmail.com</a></td>
               <td><span class="text-secondary bolder">In Process</span></td>
+              <td>5 Stars</td>
               <td class="text-center">Yes</td>
               <td><b class="text-info">Goomo</b></td>
               <td>Property Information <i class="fa fa-check text-success"></i> <br>
@@ -767,6 +783,7 @@
               <td>Saee Shaikh</td>
               <td>Akansha Desai - <br><a href="tel:+919988446622" class="text-decor links-click">+91 9988446622</a><br><a href="mailto:ak@gmail.com" class="text-decor links-click">ak@gmail.com</a></td>
               <td><span class="bat-color bolder">Archived</span></td>
+              <td>2 Stars</td>
               <td class="text-center">Yes</td>
               <td><b class="text-primary">Property</b></td>
               <td>Property Information <i class="fa fa-check text-success"></i> <br>
@@ -787,6 +804,7 @@
               <td>Saee Shaikh</td>
               <td>Archana Singh - <br><a href="tel:+919988446622" class="text-decor links-click">+91 9988446622</a><br><a href="mailto:asingh@gmail.com" class="text-decor links-click">asingh@gmail.com</a></td>
               <td><span class="text-secondary bolder">In Process</span></td>
+              <td>2 Stars</td>
               <td class="text-center">No</td>
               <td><b class="text-primary">Property</b></td>
               <td>Property Information <i class="fa fa-check text-success"></i> <br>
@@ -806,6 +824,7 @@
               <td>Saee Shaikh</td>
               <td>Akansha Desai - <br><a href="tel:+919988446622" class="text-decor links-click">+91 9988446622</a><br><a href="mailto:ak@gmail.com" class="text-decor links-click">ak@gmail.com</a></td>
               <td><span class="text-muted bolder">Pending Review</span></td>
+              <td>4 Stars</td>
               <td class="text-center">Yes</td>
               <td><b class="text-primary">Property</b></td>
               <td>Property Information <i class="fa fa-check text-success"></i> <br>

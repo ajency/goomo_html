@@ -274,27 +274,105 @@
 			<div class="col-sm-12">
 				<div class="flex-row space-between">
 					<div class="main-title">
-						<h3 class="no-m-t fly-out-heading-size text-info ">Active Properties</h3>
+						<h3 class="no-m-t fly-out-heading-size text-info ">Active Properties <a href="/goomo_html/extranet/create/" class="btn fnb-btn secondary-btn btn-sm x-small add-modal add-prop"><span>+ Add property</span></a></h3>
 						<p class="text-muted">Manage active properties</p>
 					</div>
-					<div class="section-icon">
+					<div class="section-icon mobile-hide">
 						<img src="https://ajency.github.io/goomo_html/img/all-listings.png" class="img-responsive">
 					</div>
 				</div>
 			</div>
 			
-			<div class="col-sm-12 m-t-35">
-				<div class="flex-row space-between search-row">
-					<div class="filter-search flex-row align-reset">
-						<div class="filter-search__field">
-							<i class="fa fa-search text-lighter element-title" aria-hidden="true"></i>
-							<input type="search" class="fnb-input" placeholder="Search by">
-						</div>
-						<button class="btn fnb-btn transparent bold-btn full flex-row"  data-toggle="collapse" data-target="#moreFiltersWrap"><img src="https://ajency.github.io/goomo_html/img/filter-bars.png" class="img-responsive p-r-5" width="30"> <span>Filter</span></button>
-					</div>
-					<a href="/goomo_html/extranet/create/" class="btn fnb-btn secondary-btn bold-btn border-btn full add-list flex-row"><span>Add property</span></a>
-				</div>
-			</div>
+
+      
+      <div class="col-sm-12 m-t-50 stats-container">
+        <div class="stats-row flex-row flex-wrap">
+          <div class="total-listing">
+            <div class="total-listing__count flex-row space-between">
+              <div>
+                <h5 class="bolder m-b-5 titles">140</h5>
+                <p class="m-b-0 text-lighter">Total Properties</p>
+              </div>
+              <img src="https://ajency.github.io/goomo_html/img/listing-count.png" class="img-responsive" width="35">
+            </div>
+            <div class="total-listing__count unclaimed flex-row space-between">
+              <div>
+                <h5 class="bolder m-b-5 titles">2</h5>
+                <p class="m-b-0 text-lighter">Unclaimed</p>
+              </div>
+              <i class="fa fa-info-circle sub-title infoIcon" aria-hidden="true"></i>
+            </div>
+          </div>
+
+          <div class="status-bucket stats-cols dsk-separator active-status">
+            <p class="bolder">Status buckets</p>
+            <div class="flex-row align-reset space-between">
+              
+              <div class="status-bucket__row">
+                <div class="buckets bucket-2">
+                  <p class="m-b-0 text-success sub-title">22</p>
+                  <p class="m-b-0 text-success default-size">Active</p>
+                </div>
+                
+              </div>
+              <div class="status-bucket__row">
+                <div class="buckets bucket-1">
+                  <p class="m-b-0 text-primary sub-title">23</p>
+                  <p class="m-b-0 text-primary default-size">Active (Pending Review)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="star-bucket status-bucket stats-cols  dsk-separator">
+            <p class="bolder">Star rating buckets</p>
+            <div class="flex-row align-reset space-between">
+              <div class="status-bucket__row">
+                <div class="buckets bucket-1">
+                  <p class="m-b-0 text sub-title">15</p>
+                  <p class="m-b-0 text default-size text-lighter">1 Star</p>
+                </div>
+                <div class="buckets bucket-2">
+                  <p class="m-b-0 te sub-title">10</p>
+                  <p class="m-b-0 te default-size text-lighter">4 Star</p>
+                </div>
+              </div>
+              <div class="status-bucket__row">
+                <div class="buckets bucket-1">
+                  <p class="m-b-0 sub-title">30</p>
+                  <p class="m-b-0 default-size text-lighter">5 Star</p>
+                </div>
+                <div class="buckets bucket-2">
+                  <p class="m-b-0 t sub-title">15</p>
+                  <p class="m-b-0 t default-size text-lighter">2 Star</p>
+                </div>
+              </div>
+              <div class="status-bucket__row">
+                <div class="buckets bucket-1">
+                  <p class="m-b-0 te sub-title">70</p>
+                  <p class="m-b-0 te default-size text-lighter">3 Star</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="col-sm-12 m-t-50">
+        <div class="flex-row space-between search-row">
+          <div class="filter-search flex-row align-reset">
+            <div class="filter-search__field">
+              <i class="fa fa-search text-lighter element-title" aria-hidden="true"></i>
+              <input type="search" class="fnb-input" placeholder="Search by">
+            </div>
+            <button class="btn fnb-btn transparent bold-btn full flex-row"  data-toggle="collapse" data-target="#moreFiltersWrap"><img src="https://ajency.github.io/goomo_html/img/filter-bars.png" class="img-responsive p-r-5" width="30"> <span>Filter</span></button>
+          </div>
+        </div>
+      </div>
 
       
       <div class="col-sm-12">
@@ -355,9 +433,9 @@
 
                 <div class="col-sm-12 col-md-4">
                   <div class="filter-section mb-4">
-                    <h6 class="sub-title bolder">Star Category</h6>
+                    <h6 class="sub-title bolder">Star Rating</h6>
                     <hr class="m-t-0 m-b-5">
-                    <div class="row">
+                    <div class="row mobile-flex">
                       <div class="col-sm-6">
                           <div class="checkbox">
                             <label>
@@ -375,7 +453,7 @@
                           </div>
                       </div>
                     </div>
-                    <div class="row">
+                    <div class="row mobile-flex">
                       <div class="col-sm-6">
                           <div class="checkbox">
                             <label>
@@ -393,7 +471,7 @@
                           </div>
                       </div>
                     </div>
-                    <div class="row">
+                    <div class="row mobile-flex">
                       <div class="col-sm-6">
                         <div class="checkbox">
                           <label>
@@ -408,7 +486,7 @@
                     <h6 class="m-t-10 sub-title bolder">Status</h6>
                     <hr class="m-t-0 m-b-5">
                    
-                    <div class="row">
+                    <div class="row mobile-flex">
                       <div class="col-sm-6">
                           <div class="checkbox">
                             <label>
@@ -462,6 +540,47 @@
                 </div>
               </div>
 
+              <div class="row">
+                <div class="col-sm-12 col-md-4">
+                  <h6 class="m-t-10 sub-title bolder">Property Type</h6>
+                  <hr class="m-t-0 m-b-5">
+                  <div class="row">
+                      <div class="col-sm-6">
+                          <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="" class="" checked="">
+                                Villa
+                              </label>
+                          </div>
+                        </div>
+                      <div class="col-sm-6">
+                          <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="" class="">
+                                Hotel
+                              </label>
+                          </div>
+                      </div>
+                      <div class="col-sm-6">
+                          <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="" class="" checked="">
+                                Motel
+                              </label>
+                          </div>
+                        </div>
+                      <div class="col-sm-6">
+                          <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="" class="">
+                                Capsule Hotel
+                              </label>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+
               <div class="row m-t-20">
                 <div class="col">
                   <div class="pull-right">
@@ -479,80 +598,9 @@
         </div>
       </div>
 
-      
-      <div class="col-sm-12 m-t-50 stats-container">
-        <div class="stats-row flex-row flex-wrap">
-          <div class="total-listing">
-            <div class="total-listing__count flex-row space-between">
-              <div>
-                <h5 class="bolder m-b-5 titles">140</h5>
-                <p class="m-b-0 text-lighter">Total Properties</p>
-              </div>
-              <img src="https://ajency.github.io/goomo_html/img/listing-count.png" class="img-responsive" width="35">
-            </div>
-            <div class="total-listing__count unclaimed flex-row space-between">
-              <div>
-                <h5 class="bolder m-b-5 titles">2</h5>
-                <p class="m-b-0 text-lighter">Unclaimed</p>
-              </div>
-              <i class="fa fa-info-circle sub-title infoIcon" aria-hidden="true"></i>
-            </div>
-          </div>
 
-          <div class="status-bucket stats-cols dsk-separator active-status">
-            <p class="bolder">Status buckets</p>
-            <div class="flex-row align-reset space-between">
-              
-              <div class="status-bucket__row">
-                <div class="buckets bucket-2">
-                  <p class="m-b-0 text-success sub-title">22</p>
-                  <p class="m-b-0 text-success default-size">Active</p>
-                </div>
-                
-              </div>
-              <div class="status-bucket__row">
-                <div class="buckets bucket-1">
-                  <p class="m-b-0 text-primary sub-title">23</p>
-                  <p class="m-b-0 text-primary default-size">Active (Pending Review)</p>
-                </div>
-              </div>
-            </div>
-          </div>
 
-          <div class="star-bucket status-bucket stats-cols  dsk-separator">
-            <p class="bolder">Star category buckets</p>
-            <div class="flex-row align-reset space-between">
-              <div class="status-bucket__row">
-                <div class="buckets bucket-1">
-                  <p class="m-b-0 text sub-title">15</p>
-                  <p class="m-b-0 text default-size text-lighter">One Star</p>
-                </div>
-                <div class="buckets bucket-2">
-                  <p class="m-b-0 te sub-title">10</p>
-                  <p class="m-b-0 te default-size text-lighter">Four Star</p>
-                </div>
-              </div>
-              <div class="status-bucket__row">
-                <div class="buckets bucket-1">
-                  <p class="m-b-0 sub-title">30</p>
-                  <p class="m-b-0 default-size text-lighter">Five Star</p>
-                </div>
-                <div class="buckets bucket-2">
-                  <p class="m-b-0 t sub-title">15</p>
-                  <p class="m-b-0 t default-size text-lighter">Two Star</p>
-                </div>
-              </div>
-              <div class="status-bucket__row">
-                <div class="buckets bucket-1">
-                  <p class="m-b-0 te sub-title">70</p>
-                  <p class="m-b-0 te default-size text-lighter">Three Star</p>
-                </div>
-              </div>
-            </div>
 
-          </div>
-        </div>
-      </div>
 
 			<div class="col-sm-12 m-t-40">
 				<table id="listings-table" class="table table-striped dataTable listing-table" cellspacing="0" width="100%">
@@ -572,7 +620,7 @@
                   Status
               </th>
               <th class="" style="min-width: 10%;" rowspan="1">
-                Star Category
+                Star Rating
               </th>
               <th class="" style="min-width: 10%;" rowspan="1">
                 Property Type
@@ -599,7 +647,7 @@
               </td>
               <td>Amit Adav - <br><a href="tel:+919988446622" class="text-decor links-click">+91 9988446622</a><br><a href="mailto:amitadav@goomo.com" class="text-decor links-click">amitadav@goomo.com</a></td>
               <td><span class="text-success bolder">Active <i class="fa fa-check" aria-hidden="true"></i></span></td>
-              <td>Three star</td>
+              <td>3 star</td>
               <td>Villa</td>
               <td>21 Aug 2016 - Ram Sharma</td>
             </tr>
@@ -615,7 +663,7 @@
               </td>
               <td>Slade Wilson - <br><a href="tel:+919988446622" class="text-decor links-click">+91 9988446622</a><br><a href="mailto:sladewilson@goomo.com" class="text-decor links-click">sladewilson@goomo.com</a></td>
               <td><span class="text-success bolder">Active <i class="fa fa-check" aria-hidden="true"></i></span></td>
-              <td>Three star</td>
+              <td>3 star</td>
               <td>Hotel</td>
               <td>21 Aug 2016 - Elon Musk</td>
             </tr>
@@ -630,7 +678,7 @@
               </td>
               <td>Bary Allen - <br><a href="tel:+919988446622" class="text-decor links-click">+91 9988446622</a><br><a href="mailto:barryallen@goomo.com" class="text-decor links-click">barryallen@goomo.com</a></td>
               <td><span class="text-success bolder">Active <i class="fa fa-check" aria-hidden="true"></i></span><br><span class="text-secondary xx-small">(Pending Review)</span></td>
-              <td>Three star</td>
+              <td>3 star</td>
               <td>Hotel</td>
               <td>21 Aug 2016 - Ram Sharma</td>
             </tr>
@@ -642,7 +690,7 @@
               <td>Saee Shaikh</td>
               <td>Akansha Desai - <br><a href="tel:+919988446622" class="text-decor links-click">+91 9988446622</a><br><a href="mailto:ak@gmail.com" class="text-decor links-click">ak@gmail.com</a></td>
               <td><span class="text-success bolder">Active <i class="fa fa-check" aria-hidden="true"></i></span></td>
-              <td>Five star</td>
+              <td>5 star</td>
               <td>Hotel</td>
               <td>21 Aug 2016 - Jay Z</td>
             </tr>
@@ -653,7 +701,7 @@
               <td>Kanye West</td>
               <td>Slade Wilson - <br><a href="tel:+919988446622" class="text-decor links-click">+91 9988446622</a><br><a href="mailto:sladewilson@goomo.com" class="text-decor links-click">sladewilson@goomo.com</a></td>
               <td><span class="text-success bolder">Active <i class="fa fa-check" aria-hidden="true"></i></span><br><span class="text-secondary xx-small">(Pending Review)</span></span></td>
-              <td>Four star</td>
+              <td>4 star</td>
               <td>Motel</td>
               <td>21 Aug 2016 - Avanti Hiremath</td>
             </tr>
@@ -665,7 +713,7 @@
               <td>Saee Shaikh</td>
               <td>Amit Adav - <br><a href="tel:+919988446622" class="text-decor links-click">+91 9988446622</a><br><a href="mailto:amitadav@goomo.com" class="text-decor links-click">amitadav@goomo.com</a></td>
               <td><span class="text-success bolder">Active <i class="fa fa-check" aria-hidden="true"></i></span></td>
-              <td>Two star</td>
+              <td>2 star</td>
               <td>Capsule Hotel</td>
               <td>21 Aug 2016 - Amit Sharma</td>
             </tr>
