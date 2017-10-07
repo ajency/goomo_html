@@ -10684,6 +10684,27 @@ i.w-border {
     position: relative;
     right: 0;
   }
+  .sub-dat-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .flex-list .flexdatalist-multiple.flexdatalist-multiple {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .flex-list .flexdatalist-multiple.flexdatalist-multiple li.value {
+    display: table;
+  }
+  .checklist-th {
+    width: 175px !important;
+    display: block;
+  }
 }
 .rooms-section {
   padding: 1.5em;

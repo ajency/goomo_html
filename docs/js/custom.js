@@ -85,7 +85,7 @@ var internal = $('#internal-table').DataTable({
 
 
 	var inactive = $('#inactive-table').DataTable({
-		"ordering": false,
+		"ordering": false
 		// "scrollX": true
 	});
 
