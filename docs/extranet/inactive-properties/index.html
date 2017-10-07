@@ -16,6 +16,7 @@
 		<link rel="stylesheet" href="https://ajency.github.io/goomo_html/css/bootstrap.min.css">
 		<link rel="stylesheet" href="https://ajency.github.io/goomo_html/css/jquery.flexdatalist.min.css">
 		<link rel="stylesheet" href="https://ajency.github.io/goomo_html/css/bootstrap-multiselect.min.css">
+		<link rel="stylesheet" href="https://ajency.github.io/goomo_html/js/bootstrap-daterangepicker/daterangepicker.css">
 		<link href="https://ajency.github.io/goomo_html/css/main.css" rel="stylesheet">
 	</head>
 	<body class="">
@@ -139,6 +140,9 @@
 				<li class=" active ">
 					<a href="/goomo_html/extranet/inactive-properties" class="" id="">Inactive Properties</a>
 				</li>
+				<li class="">
+					<a href="/goomo_html/extranet/inactive-cp-properties" class="" id="">Inactive Properties <br> <span class="text-info">(Content Pending)</span></a>
+				</li>
 				<li>
 					<a href="#" class="" id="">My Properties</a>
 				</li>
@@ -216,6 +220,9 @@
 				</li>
 				<li class=" active ">
 					<a href="/goomo_html/extranet/inactive-properties" class="" id="">Inactive Properties</a>
+				</li>
+				<li class="">
+					<a href="/goomo_html/extranet/inactive-cp-properties" class="" id="">Inactive Properties <br> <span class="text-info">(Content Pending)</span></a>
 				</li>
 				<li>
 					<a href="#" class="" id="">My Properties</a>
@@ -611,8 +618,8 @@
 				<table id="inactive-table" class="table table-striped dataTable listing-table" cellspacing="0" width="100%">
           <thead>
             <tr>
-              <th style="min-width: 10%;" >Name</th>
-              <th class="" style="min-width: 15%;">
+              <th style="min-width: 5%;" >Name</th>
+              <th class="" style="min-width: 5%;">
                 Country/State/City/Location
               </th>
               <th class="no-sort" style="min-width: 10%;">
@@ -634,18 +641,18 @@
                   Contract Uploaded
                   
               </th>
-              <th class="no-sort" style="" rowspan="1">
+              <th class="no-sort" style="min-width:10%;" rowspan="1">
                   Assigned To
                   
               </th>
-              <th class="" style="min-width: 15%;" rowspan="1">
+              <th class="" style="min-width: 20%;" rowspan="1">
                 Checklist
               </th>
                <th class="no-sort" style="min-width: 10%;" rowspan="1">
                   QC Status
                   
               </th>
-              <th>Content Score (%)</th>
+              <th style="min-width: 10%;">Content Score (%)</th>
             </tr>
           </thead>
 
@@ -891,6 +898,10 @@
 		<script type="text/javascript" src="/goomo_html/js/datatables.net-select/js/dataTables.select.min.js"></script>
 
 		<script type="text/javascript" src="/goomo_html/js/bootstrap-multiselect.js"></script>
+
+		<script type="text/javascript" src="/goomo_html/js/moment.min.js"></script>	
+		<script type="text/javascript" src="/goomo_html/js/bootstrap-daterangepicker/daterangepicker.js"></script>	
+		
 
 		
 		<script type="text/javascript" src="/goomo_html/js/flex-datalist/jquery.flexdatalist.min.js"></script>

@@ -231,7 +231,7 @@ $(document).on('change', '.business-contact .toggle__check', function() {
 });
 
 
-
+$('.from-date,.to-date').daterangepicker();
 
 
 
