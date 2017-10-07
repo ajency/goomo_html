@@ -7,5 +7,8 @@ status: "In Process"
 url: /details/users/riverfront/
 slug: "riverfront/"
 
+mainmenu:
+ details: true
+ user: true
 
 ---

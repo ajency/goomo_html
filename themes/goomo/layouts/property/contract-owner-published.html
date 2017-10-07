@@ -206,7 +206,7 @@
 				<div class="bank-details financeCols m-t-40">
 					<div class="flex-row space-between">
 						<h5 class="no-m-t fly-out-heading-size bat-color bolder m-b-20">Bank details</h5>
-						<button class="btn fnb-btn s-outline bold-btn full m-t-10"><span>Add Bank Details</span></button>
+						<button class="btn fnb-btn s-outline bold-btn full m-t-10 form-toggle open-sidebar" ><span>Add Bank Details</span></button>
 					</div>
 					<table id="listings-table" class="table table-striped dataTable listing-table" cellspacing="0" width="100%">
 			        	<thead>
@@ -224,11 +224,11 @@
 			          	</thead>
 			         	<tbody>
 				            <tr>
-				              <td class=""><a href="#" class="text-info bolder">FC1123333445</a></td>
+				              <td class=""><a href="#" class="text-info bolder">F********445</a></td>
 				              <td class="">Sujata Patil</td>
 				              <td class="">HDFC BANK</td>
 				              <td class="">HDFCC129399</td>
-				              <td class="">AWCET1234</td>
+				              <td class="">A*****234</td>
 				              <td class="">AWCET1234</td>
 				              <td class=""><a href="#" class="secondary-link"><i class="fa fa-download" aria-hidden="true"></i> Download</a></td>
 				              <td class=""><span class="text-info">Active</span></td>
@@ -350,9 +350,6 @@
 		</div>
 	</div>
 
-
-
-
-
+	{{ partial "bank-add.html" .}}
 
 {{ end }}
