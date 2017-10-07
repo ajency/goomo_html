@@ -10344,6 +10344,9 @@ i.w-border {
     font-size: 0.6em;
   }
 }
+.add-modal.add-prop {
+  font-size: 0.45em;
+}
 .region-table {
   margin-top: 1.5em;
 }

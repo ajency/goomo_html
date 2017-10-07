@@ -74,7 +74,8 @@ var internal = $('#internal-table').DataTable({
 
 
 	var inactive = $('#inactive-table').DataTable({
-		"ordering": false
+		"ordering": false,
+		// "scrollX": true
 	});
 
     inactive.columns().iterator('column', function(ctx, idx) {
@@ -82,6 +83,10 @@ var internal = $('#internal-table').DataTable({
     });
 
 
+
+	$('#catNameSearch').on('keyup', function() {
+		inactive.columns(0).search(this.value).draw();
+	});
 
 
 
