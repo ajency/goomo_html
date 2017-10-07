@@ -74,6 +74,15 @@ var internal = $('#internal-table').DataTable({
 	    });
 	}
 
+	if($('.prop-theme').length){
+		$('.prop-theme').multiselect({
+			includeSelectAllOption: true,
+	        maxHeight: 250,
+	        numberDisplayed: 2
+	    });
+	}
+
+
 
 	var inactive = $('#inactive-table').DataTable({
 		"ordering": false,
