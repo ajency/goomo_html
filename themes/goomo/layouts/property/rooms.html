@@ -1,0 +1,94 @@
+{{ define "main" }}
+	<div class="c-gap">
+
+				
+			<div class="listing-details m-t-50">
+				<div class="flex-row property-status-box">
+
+					<div class="status-info flex-row">
+						Now that you have filled in all your room details, please submit your listing for review. Once our QC team approves it, your listing will be Approved.
+					</div>
+					<div class="check-status">
+						Checklist Status:<br>
+						<img src="{{"img/green-check-circle.png" | absURL}}" class="img-responsive m-t-15 center-block" width="">
+					</div>
+					<div class="qc-status">
+						QC Status:<br>
+						<!-- <h6 class="text-primary">{{ .Params.status }}</h6> -->
+						<button class="btn btn-white outline fnb-btn m-t-15">Submit for Review</button>
+					</div>
+				</div>
+			</div>
+
+
+		<div class="row m-t-30">
+			<div class="col-sm-9">
+			
+			<div class="row">
+				<div class="col-sm-12 text-right">
+					<a href="#" class="btn fnb-btn secondary-btn btn-sm open-sidebar">Add Rooms</a>
+				</div>
+				
+				<div class="col-sm-12">
+					<div class="rooms-section dsk-separator m-t-20 flex-row">
+						<div class="room-left rooms-col">
+							<div class="room-detail">
+								<h6 class="bolder">Premier Room + BAR <label class="fnb-label">Standard room</label></h6>
+								<p class="text-lighter">Bed Type: <span class="text-color">Double</span></p>
+							</div>
+							<div>
+								<p class="text-lighter">Amenities:</p>
+								<p class="text-color">Air Conditioner, Bathrobe, Bathtub, Blu-ray player</p>
+							</div>
+						</div>
+						<div class="room-right rooms-col">
+							 <div class="verified-toggle text-center">
+	                            <div class="toggle center-block">
+	                                <input name="primary_email" type="checkbox" class="toggle__check" checked="" >
+	                                <b class="switch"></b>
+	                                <b class="track"></b>
+	                            </div>
+	                            <p class="m-b-0 toggle-state m-t-10">Active</p>
+	                        </div>
+	                        <a href="#" class="secondary-link text-center"><i class="fa fa-pencil" aria-hidden="true"></i> Edit Rooms</a>
+						</div>
+					</div>
+					<div class="rooms-section dsk-separator m-t-30 flex-row">
+						<div class="room-left rooms-col">
+							<div class="room-detail">
+								<h6 class="bolder">Grand Deluxe Room <label class="fnb-label">Deluxe room</label></h6>
+								<p class="text-lighter">Bed Type: <span class="text-color">Double</span></p>
+							</div>
+							<div>
+								<p class="text-lighter">Amenities:</p>
+								<p class="text-color">Air Conditioner, Bathrobe, Bathtub, Blu-ray player</p>
+							</div>
+						</div>
+						<div class="room-right rooms-col">
+							 <div class="verified-toggle text-center">
+	                            <div class="toggle center-block">
+	                                <input name="primary_email" type="checkbox" class="toggle__check" checked="" >
+	                                <b class="switch"></b>
+	                                <b class="track"></b>
+	                            </div>
+	                            <p class="m-b-0 toggle-state m-t-10">Active</p>
+	                        </div>
+	                        <a href="#" class="secondary-link text-center"><i class="fa fa-pencil" aria-hidden="true"></i> Edit Rooms</a>
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+			
+
+			</div>
+			<div class="col-sm-3 right-sidebar">
+				{{ partial "right-sidebar.html" .}}
+			</div>
+			<div class="market-manager-img mobile-btn desk-hide	">
+				<img src="{{"img/manager.jpg" | absURL}}" class="img-responsive">
+			</div>
+		</div>
+	</div>
+{{ end }}
