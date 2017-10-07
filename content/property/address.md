@@ -8,4 +8,8 @@ status: "In Process"
 url: /details/address/chalston-beach-resort/
 slug: "chalston-beach-resort/"
 
+mainmenu:
+ details: true
+ address: true
+
 ---

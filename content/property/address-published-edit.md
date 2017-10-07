@@ -8,4 +8,8 @@ status: "In Process"
 url: /details/address/panjim-inn/
 slug: "panjim-inn/"
 
+mainmenu:
+ details: true
+ address: true
+
 ---
