@@ -1,0 +1,228 @@
+{{ define "main" }}
+	<div class="">
+		
+		<div class="row">
+			<div class="col-sm-9">
+			
+			<h5 class="bolder m-t-35 prop-title">Address</h5>
+				
+			<div class="row field-gap c-gap">
+	            <div class="col-sm-12 form-group m-b-30">
+	                <label class="label-size text-info required">Registered Address </label>
+	                <input type="text" class="form-control fnb-input" placeholder="eg: Candolim, Goa, India">
+	            </div>
+	            <div class="col-sm-12 c-gap form-group m-b-30">
+	                <label class="label-size text-info required">Property Address </label>
+	                <input type="text" class="form-control fnb-input" placeholder="eg: Candolim, Goa, India">
+	            </div>
+
+				<div class="col-sm-12 c-gap form-group m-b-30">
+				 <!-- map -->
+				    <div class="">
+				         <label class="label-size text-info required">Please provide the google map address for Your Property</label>
+
+				        <div class="text-lighter">
+				            Note: You can drag the pin on the map to point the address
+				        </div>
+				    </div>
+
+
+				    <div class="m-t-20 c-gap">
+				    	<input id="mapadd" type="text" class="form-control fnb-input location-val m-b-10" name="interview_location" placeholder="Ex: Shop no 4, Aarey Milk Colony, Mumbai" value="">
+
+	                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15380.091383021922!2d73.81245283848914!3d15.483203277923609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbfc0a93361ccd9%3A0xdd98120b24e5be61!2sPanjim%2C+Goa!5e0!3m2!1sen!2sin!4v1498804405360" width="600" height="400" frameborder="0" style="border:0;width:100%;" allowfullscreen></iframe>
+
+				    </div>
+
+				</div>
+
+				<div class="col-sm-6 form-group m-b-30">
+	                <label class="label-size text-info">Latitude </label>
+	                <input type="text" class="form-control fnb-input" placeholder="19.0990962367374">
+	            </div>
+	            <div class="col-sm-6 c-gap form-group m-b-30">
+	                <label class="label-size text-info">Longitude </label>
+	                <input type="text" class="form-control fnb-input" placeholder="19.0990962367374">
+	            </div>
+
+	        </div>
+
+
+	        <div class="m-t-20 business-email business-contact contact-info contact-info-email" contact-type="email">
+
+		        <div class="flex-row space-between mobile-sp-row">
+		            <label class="label-size text-info required bolder">Hotel Email</label>
+		        </div>
+
+	            <div class="m-t-5">
+	                <div class="row no-m-b">
+	                    <div class="col-sm-4">
+	                        <input type="email" class="form-control fnb-input p-l-5 contact-input" placeholder="xyz@gmail.com" >
+	                        <a href="#" class="dark-link text-medium add-another">+ Add another email</a>
+	                    </div>
+	                    <div class="col-sm-1"></div>
+	                    <div class="col-sm-5 col-xs-8">
+	                        <div class="verified-toggle flex-row">
+	                            <div class="toggle m-l-10 m-r-10">
+	                                <input name="primary_email" type="checkbox" class="toggle__check" data-parsley-errors-container="#toggleError" data-parsley-multiple="contacts" data-parsley-required-message="At least one contact detail either email or phone number should be visible on the listing." data-parsley-mincheck="1" required >
+	                                <b class="switch"></b>
+	                                <b class="track"></b>
+	                            </div>
+	                            <p class="m-b-0 text-color toggle-state"> Visible on the listing</p>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+
+            
+		        <div class="m-t-15 m-b-30 contact-container contact-group hidden">
+		            <div class="row no-m-b">
+	                    <div class="col-sm-4">
+	                        <input type="email" class="form-control fnb-input p-l-5 contact-input" value="" >
+	                    </div>
+	                    <div class="col-sm-1"></div>
+	                    <div class="col-sm-5 col-xs-8">
+	                        <div class="m-t-5 verified-toggle flex-row">
+	                            <div class="toggle m-l-10 m-r-10">
+	                                <input name="primary_email" type="checkbox" class="toggle__check" data-parsley-errors-container="#toggleError" data-parsley-multiple="contacts" data-parsley-required-message="At least one contact detail either email or phone number should be visible on the listing." data-parsley-mincheck="1" required >
+	                                <b class="switch"></b>
+	                                <b class="track"></b>
+	                            </div>
+	                            <p class="m-b-0 text-color toggle-state"> Visible on the property</p>
+	                            <i class="fa fa-times removeRow m-l-15 m-b-10"></i>
+	                        </div>
+	                    </div>
+	                </div>
+		        </div>
+
+
+        </div>
+				
+
+
+	        <div class="m-t-40 business-email business-contact contact-info contact-info-email" contact-type="email">
+
+		        <div class="flex-row space-between mobile-sp-row">
+		            <label class="label-size text-info required">Hotel Mobile</label>
+		        </div>
+
+	            <div class="m-t-5">
+	                <div class="row no-m-b">
+	                    <div class="col-sm-4">
+	                        <input type="email" class="form-control fnb-input p-l-5 contact-input" placeholder="xyz@gmail.com" >
+	                        <a href="#" class="dark-link text-medium add-another">+ Add another email</a>
+	                    </div>
+	                    <div class="col-sm-1"></div>
+	                    <div class="col-sm-5 col-xs-8">
+	                        <div class="verified-toggle flex-row">
+	                            <div class="toggle m-l-10 m-r-10">
+	                                <input name="primary_email" type="checkbox" class="toggle__check" data-parsley-errors-container="#toggleError" data-parsley-multiple="contacts" data-parsley-required-message="At least one contact detail either email or phone number should be visible on the listing." data-parsley-mincheck="1" required >
+	                                <b class="switch"></b>
+	                                <b class="track"></b>
+	                            </div>
+	                            <p class="m-b-0 text-color toggle-state"> Visible on the property</p>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+
+            
+		        <div class="m-t-15 m-b-30 contact-container contact-group hidden">
+		            <div class="row no-m-b">
+	                    <div class="col-sm-4">
+	                        <input type="email" class="form-control fnb-input p-l-5 contact-input" value="" >
+	                    </div>
+	                    <div class="col-sm-1"></div>
+	                    <div class="col-sm-5 col-xs-8">
+	                        <div class="m-t-5 verified-toggle flex-row">
+	                            <div class="toggle m-l-10 m-r-10">
+	                                <input name="primary_email" type="checkbox" class="toggle__check" data-parsley-errors-container="#toggleError" data-parsley-multiple="contacts" data-parsley-required-message="At least one contact detail either email or phone number should be visible on the listing." data-parsley-mincheck="1" required >
+	                                <b class="switch"></b>
+	                                <b class="track"></b>
+	                            </div>
+	                            <p class="m-b-0 text-color toggle-state"> Visible on the listing property</p>
+	                            <i class="fa fa-times removeRow m-l-15 m-b-10"></i>
+	                        </div>
+	                    </div>
+	                </div>
+		        </div>
+
+
+        </div>
+
+
+
+
+	    <div class="m-t-40 business-email business-contact contact-info contact-info-email" contact-type="email">
+
+		        <div class="flex-row space-between mobile-sp-row">
+		            <label class="label-size text-info required">Hotel Phone</label>
+		        </div>
+
+	            <div class="m-t-5">
+	                <div class="row no-m-b">
+	                    <div class="col-sm-4">
+	                        <input type="email" class="form-control fnb-input p-l-5 contact-input" placeholder="xyz@gmail.com" >
+	                        <a href="#" class="dark-link text-medium add-another">+ Add another email</a>
+	                    </div>
+	                    <div class="col-sm-1"></div>
+	                    <div class="col-sm-5 col-xs-8">
+	                        <div class="verified-toggle flex-row">
+	                            <div class="toggle m-l-10 m-r-10">
+	                                <input name="primary_email" type="checkbox" class="toggle__check" data-parsley-errors-container="#toggleError" data-parsley-multiple="contacts" data-parsley-required-message="At least one contact detail either email or phone number should be visible on the listing." data-parsley-mincheck="1" required >
+	                                <b class="switch"></b>
+	                                <b class="track"></b>
+	                            </div>
+	                            <p class="m-b-0 text-color toggle-state"> Visible on the property</p>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+
+            
+		        <div class="m-t-15 m-b-30 contact-container contact-group hidden">
+		            <div class="row no-m-b">
+	                    <div class="col-sm-4">
+	                        <input type="email" class="form-control fnb-input p-l-5 contact-input" value="" >
+	                    </div>
+	                    <div class="col-sm-1"></div>
+	                    <div class="col-sm-5 col-xs-8">
+	                        <div class="m-t-5 verified-toggle flex-row">
+	                            <div class="toggle m-l-10 m-r-10">
+	                                <input name="primary_email" type="checkbox" class="toggle__check" data-parsley-errors-container="#toggleError" data-parsley-multiple="contacts" data-parsley-required-message="At least one contact detail either email or phone number should be visible on the listing." data-parsley-mincheck="1" required >
+	                                <b class="switch"></b>
+	                                <b class="track"></b>
+	                            </div>
+	                            <p class="m-b-0 text-color toggle-state"> Visible on the listing property</p>
+	                            <i class="fa fa-times removeRow m-l-15 m-b-10"></i>
+	                        </div>
+	                    </div>
+	                </div>
+		        </div>
+
+
+        </div>
+
+		
+		<div class="row m-t-40">
+			<div class="col-sm-6 form-group m-b-30">
+            	<label class="label-size text-info">Latitude </label>
+            	<input type="text" class="form-control fnb-input" placeholder="19.0990962367374">
+	           </div>
+		</div>
+
+
+
+
+			</div>
+			<div class="col-sm-3 right-sidebar">
+				{{ partial "right-sidebar.html" .}}
+			</div>
+			<div class="market-manager-img mobile-btn desk-hide	">
+				<img src="{{"img/manager.jpg" | absURL}}" class="img-responsive">
+			</div>
+		</div>
+	</div>
+
+	
+{{ end }}

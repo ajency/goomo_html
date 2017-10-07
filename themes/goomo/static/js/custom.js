@@ -183,4 +183,28 @@ var internal = $('#internal-table').DataTable({
 	    }
 	});
 
+
+$('.contact-info').on('click', '.add-another', function(e) {
+  var contact_group, contact_group_clone, input;
+  e.preventDefault();
+  contact_group = $(this).closest('.business-contact').find('.contact-group');
+  contact_group_clone = contact_group.clone();
+  contact_group_clone.removeClass('contact-group hidden');
+  input = contact_group_clone.find('.fnb-input');
+  contact_group_clone.insertBefore(contact_group);
+
+});
+
+
+$('body').on('click', '.removeRow', function() {
+  return $(this).closest('.contact-container').remove();
+});
+
+
+
+
+
+
+
+
 });
