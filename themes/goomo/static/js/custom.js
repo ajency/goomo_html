@@ -46,6 +46,8 @@ $(document).ready(function() {
         $(regions.column(idx).header()).append('<span class="sort-icon"/>');
     });
 
+    registered.draw();
+
 
 var internal = $('#internal-table').DataTable({
 		"columnDefs": [{
@@ -82,7 +84,9 @@ var internal = $('#internal-table').DataTable({
     });
 
 
-
+    setTimeout(function(){
+    	inactive.columns.adjust().draw();
+    }, 1000);
 
 
     var tax = $('#tax-table').DataTable();
