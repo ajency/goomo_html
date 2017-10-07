@@ -10347,6 +10347,11 @@ i.w-border {
 .add-modal.add-prop {
   font-size: 0.45em;
 }
+@media screen and (max-width: 768px) {
+  .add-modal.add-prop {
+    font-size: 0.65em;
+  }
+}
 .region-table {
   margin-top: 1.5em;
 }
