@@ -10,6 +10,8 @@ slug: "casa-amora/"
 
 owner: true
 
+addbank: true
+
 qcstatus:
  submitted: true
 

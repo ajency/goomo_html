@@ -126,7 +126,7 @@
         <!-- <span class="desk-hide">QC Status: </span> {{ .Params.policies.qc }} -->
       </div>
     </div>
-    <div class="tabular__row flex-row">
+    <div class="tabular__row flex-row {{ if $.Params.desc.disabled }} disabled {{ end }}">
       <div class="tabular__cell cell-2">
       </div>
       <div class="tabular__cell cell-full t-product">

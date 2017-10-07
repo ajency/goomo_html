@@ -10,6 +10,8 @@ slug: "casa-britona/"
 
 owner: true
 
+addbank: true
+
 qcstatus:
  published: true
 

@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://ajency.github.io/goomo_html/checklist/hotel-antares/</loc>
+    <lastmod>2017-09-27T11:22:04+05:30</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ajency.github.io/goomo_html/checklist/panjim-inn/</loc>
     <lastmod>2017-09-27T11:22:04+05:30</lastmod>
   </url>
@@ -39,6 +44,11 @@
   
   <url>
     <loc>https://ajency.github.io/goomo_html/checklist/casa-baga/</loc>
+    <lastmod>2017-09-26T13:44:12+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ajency.github.io/goomo_html/checklist/casa-goa/</loc>
     <lastmod>2017-09-26T13:44:12+05:30</lastmod>
   </url>
   
@@ -119,6 +129,11 @@
   
   <url>
     <loc>https://ajency.github.io/goomo_html/details/address/casa-britona/</loc>
+    <lastmod>2017-09-26T12:57:20+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ajency.github.io/goomo_html/details/address/casa-goa/</loc>
     <lastmod>2017-09-26T12:57:20+05:30</lastmod>
   </url>
   
@@ -258,7 +273,17 @@
   </url>
   
   <url>
+    <loc>https://ajency.github.io/goomo_html/details/contract/hotel-antares/</loc>
+    <lastmod>2017-09-25T11:31:18+05:30</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ajency.github.io/goomo_html/details/contract/casa-britona/</loc>
+    <lastmod>2017-09-25T11:31:18+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ajency.github.io/goomo_html/details/contract/casa-goa/</loc>
     <lastmod>2017-09-25T11:31:18+05:30</lastmod>
   </url>
   
@@ -333,6 +358,11 @@
   </url>
   
   <url>
+    <loc>https://ajency.github.io/goomo_html/details/images/hotel-antares/</loc>
+    <lastmod>2017-09-25T11:31:18+05:30</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ajency.github.io/goomo_html/details/images/panjim-inn/</loc>
     <lastmod>2017-09-25T11:31:18+05:30</lastmod>
   </url>
@@ -344,6 +374,11 @@
   
   <url>
     <loc>https://ajency.github.io/goomo_html/details/images/casa-britona/</loc>
+    <lastmod>2017-09-25T11:31:18+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ajency.github.io/goomo_html/details/images/casa-goa/</loc>
     <lastmod>2017-09-25T11:31:18+05:30</lastmod>
   </url>
   
@@ -373,6 +408,11 @@
   </url>
   
   <url>
+    <loc>https://ajency.github.io/goomo_html/details/users/hotel-antares/</loc>
+    <lastmod>2017-09-25T11:31:18+05:30</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ajency.github.io/goomo_html/details/users/panjim-inn/</loc>
     <lastmod>2017-09-25T11:31:18+05:30</lastmod>
   </url>
@@ -384,6 +424,11 @@
   
   <url>
     <loc>https://ajency.github.io/goomo_html/details/users/casa-britona/</loc>
+    <lastmod>2017-09-25T11:31:18+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ajency.github.io/goomo_html/details/users/casa-goa/</loc>
     <lastmod>2017-09-25T11:31:18+05:30</lastmod>
   </url>
   

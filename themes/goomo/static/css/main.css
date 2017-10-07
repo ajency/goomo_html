@@ -1378,7 +1378,7 @@ input[type=radio].fnb-radio.disabled:before {
   margin: 0;
   color: #828282;
   position: relative;
-  z-index: 2;
+  z-index: 1;
 }
 .tabular__header.no-bg {
   background: transparent;
