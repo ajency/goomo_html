@@ -46,6 +46,8 @@ $(document).ready(function() {
         $(regions.column(idx).header()).append('<span class="sort-icon"/>');
     });
 
+    registered.draw();
+
 
 var internal = $('#internal-table').DataTable({
 		"columnDefs": [{
@@ -83,6 +85,9 @@ var internal = $('#internal-table').DataTable({
     });
 
 
+    setTimeout(function(){
+    	inactive.columns.adjust().draw();
+    }, 1000);
 
 	$('#catNameSearch').on('keyup', function() {
 		inactive.columns(0).search(this.value).draw();
@@ -226,7 +231,7 @@ $(document).on('change', '.business-contact .toggle__check', function() {
 });
 
 
-
+$('.from-date,.to-date').daterangepicker();
 
 
 

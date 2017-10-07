@@ -1658,6 +1658,12 @@ input[type=radio].fnb-radio.disabled:before {
   font-weight: 400;
 }
 @media screen and (max-width: 768px) {
+  .fnb-header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
   .fnb-header.trans-header {
     position: relative;
     z-index: initial;
@@ -10630,6 +10636,9 @@ i.w-border {
   .all-properties .status-bucket__row {
     min-width: 130px;
   }
+}
+.all-properties.inactive-cp .status-bucket__row:nth-child(2n) {
+  border-right: 0;
 }
 .filter-by .flexdatalist-multiple.flexdatalist-multiple .input-container {
   margin: 0;
