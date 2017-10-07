@@ -8,4 +8,8 @@ status: "In Process"
 url: /details/address/casa-colvale/
 slug: "casa-colvale/"
 
+mainmenu:
+ details: true
+ address: true
+
 ---

@@ -8,4 +8,8 @@ status: "In Process"
 url: /details/address/riverfront/
 slug: "riverfront/"
 
+mainmenu:
+ details: true
+ address: true
+
 ---

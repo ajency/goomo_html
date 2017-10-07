@@ -55,15 +55,15 @@ contract:
 bank:
  url: "/goomo_html/details/contract/chalston-beach-resort/"
  pending: true
- pendingtext: ""
+ pendingtext: "Please Add: Bank Account Details"
  checklist: true
  qc: "--"
 
 tax:
  url: "/goomo_html/details/contract/chalston-beach-resort/"
  pending: true
- pendingtext: "Please Add: Minimum 1 rule"
- checklist: false
+ pendingtext: ""
+ checklist: true
  qc: "--"
 
 digital:

@@ -8,4 +8,8 @@ status: "In Process"
 url: /details/address/hotel-eden/
 slug: "hotel-eden/"
 
+mainmenu:
+ details: true
+ address: true
+
 ---

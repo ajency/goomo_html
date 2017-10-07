@@ -1,6 +1,17 @@
 {{ define "main" }}
 	<div class="c-gap">
 
+		<div class="flex-row desk-hide">
+			<div class="back-btn">
+				<a href="/goomo_html/checklist/{{ $.Params.slug }}">
+					<i class="fa fa-chevron-left"></i>
+				</a>
+			</div>
+			<div class="back-title m-l-10 h4 bolder">
+				Back to Property Checklist
+			</div>
+		</div>
+
 		<div class="row">
 			<div class="col-sm-12">
 
@@ -20,7 +31,7 @@
 						</div>
 					</div>
 				</div>
-				
+
 
 				<!-- GM -->
 
@@ -31,7 +42,7 @@
 						<p class="m-b-0 text-lighter">This user will have full access to manage the property. This user can add and remove other users and also control the access each of the other users get.</p>
 					</div>
 				</div>
-				
+
 				<div class="user-col-table m-t-30">
 					<table id="listings-table" class="table table-striped dataTable listing-table" cellspacing="0" width="100%">
 			          <thead>
@@ -86,7 +97,7 @@
 			          </tbody>
         			</table>
         		</div>
-		
+
 
 			<!-- Sales -->
 
@@ -99,7 +110,7 @@
 						<p class="m-b-0 text-lighter">These users will have access to all sections of the Extranet.</p>
 					</div>
 				</div>
-				
+
 				<div class="user-col-table m-t-30">
 					<table id="listings-table" class="table table-striped dataTable listing-table" cellspacing="0" width="100%">
 			          <thead>
@@ -157,7 +168,7 @@
 
 
 				<!-- Revenue -->
-			
+
 				<br clear="mobile-hide">
 
         		<div class="user-cols gm flex-row space-between m-t-40 add-user-col">
@@ -170,7 +181,7 @@
 					</div>
 					<button class="btn fnb-btn s-outline bold-btn full open-sidebar form-toggle"><span>Add User</span></button>
 				</div>
-				
+
 				<div class="user-col-table m-t-30">
 					<table id="listings-table" class="table table-striped dataTable listing-table" cellspacing="0" width="100%">
 			          <thead>
@@ -237,7 +248,7 @@
         		</div>
 
 
-				
+
 				<!-- Reservations -->
 
 
@@ -253,7 +264,7 @@
 					</div>
 					<button class="btn fnb-btn s-outline bold-btn full open-sidebar form-toggle"><span>Add User</span></button>
 				</div>
-				
+
 				<div class="user-col-table m-t-30">
 					<div class="no-data text-center">
 						<i class="fa fa-frown-o text-lighter" aria-hidden="true"></i>
@@ -264,7 +275,7 @@
 
 
 				<!-- Finance -->
-			
+
 				<br clear="mobile-hide">
 
         		<div class="user-cols gm flex-row space-between m-t-40 add-user-col">
@@ -277,7 +288,7 @@
 					</div>
 					<button class="btn fnb-btn s-outline bold-btn full open-sidebar form-toggle"><span>Add User</span></button>
 				</div>
-				
+
 				<div class="user-col-table m-t-30">
 					<table id="listings-table" class="table table-striped dataTable listing-table" cellspacing="0" width="100%">
 			          <thead>
@@ -336,7 +347,7 @@
 
 
 			<!-- Photo -->
-			
+
 				<br clear="mobile-hide">
 
         		<div class="user-cols gm flex-row space-between m-t-40 add-user-col">
@@ -349,7 +360,7 @@
 					</div>
 					<button class="btn fnb-btn s-outline bold-btn full open-sidebar form-toggle"><span>Add User</span></button>
 				</div>
-				
+
 				<div class="user-col-table m-t-30">
 					<table id="listings-table" class="table table-striped dataTable listing-table" cellspacing="0" width="100%">
 			          <thead>

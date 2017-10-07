@@ -8,4 +8,8 @@ status: "In Process"
 url: /details/address/casa-britona/
 slug: "casa-britona/"
 
+mainmenu:
+ details: true
+ address: true
+
 ---

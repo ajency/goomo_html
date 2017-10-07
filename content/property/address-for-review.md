@@ -8,4 +8,7 @@ status: "In Process"
 url: /details/address/casa-amora/
 slug: "casa-amora/"
 
+mainmenu:
+ details: true
+ address: true
 ---

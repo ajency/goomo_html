@@ -55,15 +55,15 @@ contract:
 bank:
  url: "/goomo_html/details/contract/casa-bella/"
  pending: true
- pendingtext: ""
+ pendingtext: "Please Add: Bank Account Details"
  checklist: false
  qc: "--"
 
 tax:
  url: "/goomo_html/details/contract/casa-bella/"
  pending: true
- pendingtext: "Please Add: Minimum 1 rule"
- checklist: false
+ pendingtext: ""
+ checklist: true
  qc: "--"
 
 digital:
