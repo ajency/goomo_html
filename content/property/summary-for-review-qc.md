@@ -2,11 +2,11 @@
 title: "Summary"
 date: 2017-09-26T13:44:12+05:30
 draft: false
-layout: summary-contract-pending
-property: "Casa Baga"
-status: "In Process"
-url: /checklist/casa-baga/
-slug: "casa-baga/"
+layout: summary-for-review-qc
+property: "Casa Goa"
+status: "Pending Review"
+url: /checklist/casa-goa/
+slug: "casa-goa/"
 
 propertyinfo:
  done: false
@@ -20,18 +20,18 @@ address:
  qc: "--"
 
 amenities:
- url: "/goomo_html/details/amenities/casa-baga/"
+ url: "/goomo_html/details/amenities/casa-goa/"
  pending: false
  pendingtext: ""
  checklist: true
  qc: "--"
 
 images:
- url: "/goomo_html/details/images/casa-baga/"
+ url: "/goomo_html/details/images/casa-goa/"
  pending: false
  pendingtext: ""
  checklist: true
- qc: "--"
+ qc: "Pending Review"
 
 policies:
  url: "#"
@@ -46,29 +46,27 @@ desc:
   pendingtext: "To be added by Goomo Content team after submission for review"
   checklist: false
   qc: "--"
-  disabled: true
+  disabled: false
 
 contract:
  done: false
 
 bank:
- url: "/goomo_html/details/contract/casa-baga/"
+ url: "/goomo_html/details/contract/casa-goa/"
  checklist: true
- qc: "--"
+ qc: "Pending Review"
 
 tax:
- url: "/goomo_html/details/contract/casa-baga/"
+ url: "/goomo_html/details/contract/casa-goa/"
  pending: false
  pendingtext: ""
  checklist: true
- qc: "--"
+ qc: "Pending Review"
 
 digital:
- url: "/goomo_html/details/contract/casa-baga/"
- checklist: false
- qc: "--"
- disabled: false
- haslink: false
+ url: "/goomo_html/details/contract/casa-goa/"
+ checklist: true
+ qc: "Pending Review"
 
 rooms:
  done: false
@@ -86,7 +84,7 @@ cancel:
  done: false
  url: "#"
  checklist: true
- qc: "--"
+ qc: "Pending Review"
 
 ratesavail:
    done: false
@@ -98,7 +96,7 @@ ratesavail:
 
 users:
  done: false
- url: "/goomo_html/details/users/casa-baga/"
+ url: "/goomo_html/details/users/casa-goa/"
  checklist: true
  qc: "--"
 

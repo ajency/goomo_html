@@ -48,6 +48,7 @@ desc:
   pendingtext: "To be added by Goomo Content team after submission for review"
   checklist: false
   qc: "--"
+  disabled: true
 
 contract:
  done: false

@@ -8,6 +8,8 @@ status: "In Process"
 url: /details/contract/casa-anjuna/
 slug: "casa-anjuna/"
 
+addbank: true
+
 qcstatus:
  new: true
 
