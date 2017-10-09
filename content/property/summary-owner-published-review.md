@@ -49,6 +49,7 @@ desc:
   pendingtext: ""
   checklist: true
   qc: "--"
+  disabled: true
 
 contract:
  done: true
