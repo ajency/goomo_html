@@ -10763,6 +10763,9 @@ i.w-border {
     font-size: 0.9em;
   }
 }
+.gs-steps .sidebar-link-custom {
+  display: block;
+}
 .profile-stats {
   color: #fff;
   background: #378f9e;
