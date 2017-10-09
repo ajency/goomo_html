@@ -1,18 +1,18 @@
 ---
-title: "Rates & Availability"
+title: "Policies"
 date: 2017-09-26T13:44:12+05:30
 draft: false
-layout: rates
+layout: policies
 property: "Casa Goa"
 status: "Pending Review"
-url: /rates/casa-goa/
+url: /policies/casa-goa/
 slug: "casa-goa/"
 
 propertyinfo:
  done: false
 
 mainmenu:
- rates: true
+ policies: true
 
 ---
 

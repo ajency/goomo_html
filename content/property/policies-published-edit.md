@@ -1,18 +1,18 @@
 ---
-title: "Rates & Availability"
+title: "Policies"
 date: 2017-09-27T11:22:04+05:30
 draft: false
-layout: rates
+layout: policies
 property: "Panjim Inn"
 status: "Active"
-url: /rates/panjim-inn/
+url: /policies/panjim-inn/
 slug: "panjim-inn/"
 
 propertyinfo:
  done: true
 
 mainmenu:
- rates: true
+ policies: true
 
 ---
 
