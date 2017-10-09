@@ -123,6 +123,7 @@ var internal = $('#internal-table').DataTable({
 	}
 	if ($(window).width() < 769){
 		$('.form-toggle').click(function(){
+			event.preventDefault();
 			$('.fly-out').addClass('active');
 		});
 		$('.back-icon').click(function(){
