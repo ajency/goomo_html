@@ -10704,8 +10704,13 @@ i.w-border {
     width: 175px !important;
     display: block;
   }
-  .subdate {
+  .sub-dates {
     margin-bottom: 1.5em;
+    margin-right: 0;
+  }
+  .content-stat label {
+    font-size: 0.95em;
+    padding-left: 13px;
   }
 }
 .rooms-section {
