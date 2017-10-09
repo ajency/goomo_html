@@ -256,6 +256,16 @@ $(document).on('change', '.toggle-work .toggle__check', function() {
   }
 });
 
+$(document).on('change', '.toggle-smoking .toggle__check', function() {
+  if ($(this).is(':checked')) {
+    $(this).closest('.toggle').siblings('.toggle-state').text('Yes');
+    $(this).closest('.toggle').siblings('.toggle-state').addClass('active-state');
+  } else {
+    $(this).closest('.toggle').siblings('.toggle-state').text('No');
+    $(this).closest('.toggle').siblings('.toggle-state').removeClass('active-state');
+  }
+});
+
 $(document).on('click', '.desc-btn', function() {
 	$(this).addClass('hidden');
 	$('.desc-warning').removeClass('hidden');
