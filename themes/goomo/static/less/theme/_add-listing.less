@@ -4078,7 +4078,7 @@ i.w-border{
     	min-width: 150px;
     }
     .room-detail{
-    	padding-bottom: 1.5em;
+    	padding-bottom: 1em;
     }
     .toggle-state{
     	color: #32bbb4;
@@ -4100,6 +4100,37 @@ i.w-border{
 }
 
 
+.room-row{
+	padding: 0 1.5em 0 0;
+}
+
+.amenities-row{
+	border: 0;
+	border-bottom: 1px solid #ddd;
+	width: 170px;
+}
 
 
+.search-amenities{
+	.searchRow{
+		flex: 1;
+    	justify-content: flex-end;
+    	input[type=checkbox]{
+    		margin: 0;
+    		&:before{
+    			position: relative;
+    			top: 0;
+    		}
+    	}
+	}
+}
+
+
+.amenities-data{
+	input[type=checkbox]{
+		&:before{
+			background-color: #fff;
+		}
+	}
+}
 

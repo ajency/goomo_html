@@ -156,6 +156,177 @@
                 </div>
             </div>
 
+
+        {{ else if $.Params.mainmenu.rooms }}
+
+           <div class="page-sidebar__header flex-row space-between mobile-hide">
+                <div class="backLink flex-row">
+                    <a href="" class="primary-link p-r-10 element-title article-back"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+                    <div class="sub-title bolder">Add Rooms</div>
+                </div>
+                <div class="flex-row users-row">
+                    <button class="btn fnb-btn grey  full">Cancel</button>
+                    <button class="btn fnb-btn secondary-btn full">Save</button>
+                </div>
+            </div>
+
+            <div class="page-sidebar__body">
+                <div class="update-sec sidebar-article user-overflow room-row">
+                   <h5 class="bolder m-t-35 prop-title">Rooms Details</h5>
+
+                    <div class="row field-gap c-gap">
+                        <div class="col-sm-12 form-group m-b-20">
+                            <label class="text-info required">Room Name </label>
+                            <input type="text" class="form-control fnb-input" placeholder="Enter Room Name">
+                        </div>
+                        <div class="col-sm-12 c-gap form-group m-b-20">
+                            <label class="text-info required">Description </label>
+                            <!-- <select class="fnb-select select-variant form-control text-lighter p-l-0" name="">
+                                <option value="">Select Designation</option>
+                                <option>General Manager</option>
+                                <option>Revenue Manager</option>
+                            </select> -->
+                            <input type="text" class="form-control fnb-input" placeholder="Enter Description">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4 c-gap form-group m-b-20">
+                            <label class="text-info required">Room Type </label>
+                            <select class="fnb-select select-variant form-control text-lighter p-l-0" name="">
+                                <option value="">Select Rooms</option>
+                                <option>Premier Room</option>
+                                <option>Grand Deluxe Room</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-4 c-gap form-group m-b-20">
+                            <label class="text-info">Total Rooms </label>
+                            <input type="text" class="form-control fnb-input" placeholder="Total No of Rooms">
+                        </div>
+                        <div class="col-sm-4 c-gap form-group m-b-20">
+                            <label class="text-info">Rooms Size(Sq. ft.)</label>
+                            <input type="text" class="form-control fnb-input" placeholder="Enter Room size">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4 c-gap form-group m-b-20">
+                            <label class="text-info required">Bed Type</label>
+                            <select class="fnb-select select-variant form-control text-lighter p-l-0" name="">
+                                <option value="">Select Type</option>
+                                <option>Premier Room</option>
+                                <option>Grand Deluxe Room</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-4 c-gap form-group m-b-20">
+                            <label class="text-info">Extra Bed Type</label>
+                            <select class="fnb-select select-variant form-control text-lighter p-l-0" name="">
+                                <option value="">Select Type</option>
+                                <option>Premier Room</option>
+                                <option>Grand Deluxe Room</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-4 c-gap form-group m-b-20">
+                            <div class="verified-toggle text-center m-t-10 x-small">
+                                <div class="toggle center-block">
+                                    <input name="primary_email" type="checkbox" class="toggle__check" checked="" >
+                                    <b class="switch"></b>
+                                    <b class="track"></b>
+                                </div>
+                                <p class="m-b-0 toggle-state m-t-10 x-small">Yes</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 c-gap form-group m-b-20">
+                            <h5 class="bolder m-t-35 prop-title">Rooms Occupancy</h5>
+                        </div>
+                        <div class="col-sm-6 c-gap form-group m-b-20">
+                            <label class="text-info">Total Occupancy</label>
+                            <input type="number" class="form-control fnb-input" value="1">
+                        </div>
+                        <div class="col-sm-6 c-gap form-group m-b-20">
+                            <label class="text-info">Adults (max)</label>
+                            <input type="number" class="form-control fnb-input" value="1">
+                        </div>
+                        <div class="col-sm-6 c-gap form-group m-b-20">
+                            <label class="text-info">Children (max)</label>
+                            <input type="number" class="form-control fnb-input" value="1">
+                        </div>
+                        <div class="col-sm-6 c-gap form-group m-b-20">
+                            <label class="text-info">Infants (max)</label>
+                            <input type="number" class="form-control fnb-input" value="1">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 c-gap form-group m-b-20 filter-search">
+                            <h5 class="bolder m-t-35 prop-title">Amenities</h5>
+                            <div class="flex-row space-between search-amenities">
+                                <div class="filter-search__field m-t-5 flex-row amenities-row">
+                                  <i class="fa fa-search text-lighter element-title" aria-hidden="true"></i>
+                                  <input type="search" class="fnb-input" placeholder="Search Amenities">
+                                </div>
+                                <div class="flex-row searchRow custom-radio">
+                                    <label for="wel" class="flex-row m-r-10 m-t-5">
+                                        <input value="" type="checkbox" class="fnb-checkbox" name="contract" id="wel"
+                                        checked="">
+                                        <span class="p-l-5 text-medium text-color default-size">Select All</span>
+                                    </label>
+                                    <a href="#" class="secondary-link">Clear All</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 c-gap form-group m-b-20">
+                            <div class="amenities-data custom-radio">
+                                <label for="rom-serv" class="flex-row m-r-10 m-t-5 m-b-15">
+                                    <input value="" type="checkbox" class="fnb-checkbox" name="contract" id="rom-serv">
+                                    <span class="p-l-5 text-medium text-color default-size">24 Hours Room Service</span>
+                                </label>
+                                <label for="bat" class="flex-row m-r-10 m-t-5 m-b-15">
+                                    <input value="" type="checkbox" class="fnb-checkbox" name="contract" id="bat">
+                                    <span class="p-l-5 text-medium text-color default-size">Bathtub</span>
+                                </label>
+                                <label for="board" class="flex-row m-r-10 m-t-5 m-b-15">
+                                    <input value="" type="checkbox" class="fnb-checkbox" name="contract" id="board">
+                                    <span class="p-l-5 text-medium text-color default-size">Board games/puzzles</span>
+                                </label>
+                                <label for="vend" class="flex-row m-r-10 m-t-5 m-b-15">
+                                    <input value="" type="checkbox" class="fnb-checkbox" name="contract" id="vend">
+                                    <span class="p-l-5 text-medium text-color default-size">Vending Machine (drinks)</span>
+                                </label>
+                                <label for="child" class="flex-row m-r-10 m-t-5 m-b-15">
+                                    <input value="" type="checkbox" class="fnb-checkbox" name="contract" id="child">
+                                    <span class="p-l-5 text-medium text-color default-size">Children's cribs</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 c-gap form-group m-b-20">
+                            <div class="amenities-data custom-radio">
+                                <label for="rom-serv" class="flex-row m-r-10 m-t-5 m-b-15">
+                                    <input value="" type="checkbox" class="fnb-checkbox" name="contract" id="rom-serv">
+                                    <span class="p-l-5 text-medium text-color default-size">24 Hours Room Service</span>
+                                </label>
+                                <label for="bat" class="flex-row m-r-10 m-t-5 m-b-15">
+                                    <input value="" type="checkbox" class="fnb-checkbox" name="contract" id="bat">
+                                    <span class="p-l-5 text-medium text-color default-size">Bathtub</span>
+                                </label>
+                                <label for="board" class="flex-row m-r-10 m-t-5 m-b-15">
+                                    <input value="" type="checkbox" class="fnb-checkbox" name="contract" id="board">
+                                    <span class="p-l-5 text-medium text-color default-size">Board games/puzzles</span>
+                                </label>
+                                <label for="vend" class="flex-row m-r-10 m-t-5 m-b-15">
+                                    <input value="" type="checkbox" class="fnb-checkbox" name="contract" id="vend">
+                                    <span class="p-l-5 text-medium text-color default-size">Vending Machine (drinks)</span>
+                                </label>
+                                <label for="child" class="flex-row m-r-10 m-t-5 m-b-15">
+                                    <input value="" type="checkbox" class="fnb-checkbox" name="contract" id="child">
+                                    <span class="p-l-5 text-medium text-color default-size">Children's cribs</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>    
+
          {{ else }}
 
             <div class="page-sidebar__header flex-row space-between mobile-hide">

@@ -7,5 +7,8 @@ property: "Casa Baga"
 status: "In Process"
 url: /details/rooms/
 
+mainmenu:
+ details: true
+ rooms: true
 
 ---
