@@ -10767,7 +10767,7 @@ i.w-border {
 .rooms-section .room-detail {
   padding-bottom: 1em;
 }
-.rooms-section .toggle-state {
+.active-state {
   color: #32bbb4;
 }
 @media screen and (max-width: 1400px) {
@@ -10781,7 +10781,8 @@ i.w-border {
   }
 }
 .room-row {
-  padding: 0 1.5em 0 0;
+  padding: 0 1.5em 4em 0;
+  height: 100%;
 }
 .amenities-row {
   border: 0;
@@ -10807,6 +10808,56 @@ i.w-border {
 }
 .amenities-data input[type=checkbox]:before {
   background-color: #fff;
+}
+@media screen and (max-width: 768px) {
+  .rooms-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .rooms-section .room-left {
+    margin: 0;
+    border: 0;
+  }
+  .rooms-section .room-right {
+    margin-top: 1.5em;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    border-top: 1px solid #eee;
+    padding-top: 1.5em;
+  }
+  .rooms-section .room-right .toggle {
+    margin-right: 1em;
+  }
+  .rooms-section .room-right .toggle-state {
+    margin-top: 0;
+  }
+  .room-row {
+    padding: 1em;
+    width: 100%;
+    margin-bottom: 0;
+  }
+  .room-row .prop-title {
+    margin-top: 1em;
+  }
+  .amenities-row {
+    width: 160px;
+  }
+  .searchRow label,
+  .searchRow a {
+    font-size: 0.9em;
+  }
+  .margin-n-b {
+    margin-bottom: 0;
+  }
+  .margin-n-t {
+    margin-top: 0;
+  }
 }
 .profile-stats {
   color: #fff;

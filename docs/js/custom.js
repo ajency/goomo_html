@@ -123,6 +123,7 @@ var internal = $('#internal-table').DataTable({
 	}
 	if ($(window).width() < 769){
 		$('.form-toggle').click(function(){
+			event.preventDefault();
 			$('.fly-out').addClass('active');
 		});
 		$('.back-icon').click(function(){
@@ -243,6 +244,26 @@ $(document).on('change', '.business-contact .toggle__check', function() {
     $(this).closest('.toggle').siblings('.toggle-state').text('Visible on the property');
   } else {
     $(this).closest('.toggle').siblings('.toggle-state').text('Not visible on the property');
+  }
+});
+
+$(document).on('change', '.toggle-work .toggle__check', function() {
+  if ($(this).is(':checked')) {
+    $(this).closest('.toggle').siblings('.toggle-state').text('Active');
+    $(this).closest('.toggle').siblings('.toggle-state').addClass('active-state');
+  } else {
+    $(this).closest('.toggle').siblings('.toggle-state').text('Inactive');
+    $(this).closest('.toggle').siblings('.toggle-state').removeClass('active-state');
+  }
+});
+
+$(document).on('change', '.toggle-smoking .toggle__check', function() {
+  if ($(this).is(':checked')) {
+    $(this).closest('.toggle').siblings('.toggle-state').text('Yes');
+    $(this).closest('.toggle').siblings('.toggle-state').addClass('active-state');
+  } else {
+    $(this).closest('.toggle').siblings('.toggle-state').text('No');
+    $(this).closest('.toggle').siblings('.toggle-state').removeClass('active-state');
   }
 });
 

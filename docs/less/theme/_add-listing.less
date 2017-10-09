@@ -4095,9 +4095,10 @@ i.w-border{
     .room-detail{
     	padding-bottom: 1em;
     }
-    .toggle-state{
-    	color: #32bbb4;
-    }
+}
+
+.active-state{
+	color: #32bbb4;
 }
 
 .sub-dates{
@@ -4116,7 +4117,8 @@ i.w-border{
 
 
 .room-row{
-	padding: 0 1.5em 0 0;
+	padding: 0 1.5em 4em 0;
+	height: 100%;
 }
 
 .amenities-row{
@@ -4148,4 +4150,55 @@ i.w-border{
 		}
 	}
 }
+
+
+
+
+@media screen and (max-width: @mobile){
+	.rooms-section{
+		flex-direction: column;
+		.room-left{
+			margin: 0;
+    		border: 0;
+		}
+		.room-right{
+			margin-top: 1.5em;
+    		flex-direction: row;
+    		border-top: 1px solid #eee;
+    		padding-top: 1.5em;
+    		.toggle{
+    			margin-right: 1em;
+    		}
+    		.toggle-state{
+    			margin-top: 0;
+    		}
+		}
+	}
+	.room-row{
+		padding: 1em;
+    	width: 100%;
+    	margin-bottom: 0;
+    	.prop-title{
+    		margin-top: 1em;
+    	}
+	}
+	.amenities-row{
+		width: 160px;
+	}
+	.searchRow{
+		label,a{
+			font-size: 0.9em;
+		}
+	}
+	.margin-n-b{
+		margin-bottom: 0;
+	}
+	.margin-n-t{
+		margin-top: 0;
+	}
+}
+
+
+
+
 
