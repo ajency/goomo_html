@@ -48,6 +48,10 @@ $(document).ready(function() {
 
     registered.draw();
 
+    $('#propNameSearch').on('keyup', function() {
+		registered.columns(0).search(this.value).draw();
+	});
+
 
 var internal = $('#internal-table').DataTable({
 		"columnDefs": [{
@@ -114,6 +118,9 @@ var internal = $('#internal-table').DataTable({
 
 	$('.internal-table').closest('.row').addClass('overflow-table');
 
+	if ($(window).width() < 769){
+		$('#statsCollapse').removeClass('in');
+	}
 	if ($(window).width() < 769){
 		$('.form-toggle').click(function(){
 			$('.fly-out').addClass('active');
