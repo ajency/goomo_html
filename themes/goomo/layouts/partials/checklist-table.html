@@ -228,7 +228,7 @@
         {{ end }}
       </div>
       <div class="tabular__cell cell-full t-product">
-        <h5 class="m-t-0 m-b-0">Cancellation Policy</h5>
+        <a href="/goomo_html/details/cancel/{{ $.Params.slug }}" class="dark-link"><h5 class="m-t-0 m-b-0">Cancellation Policy</h5></a>
         <p class="{{ if $.Params.cancel.pending }} text-danger {{ else }} text-primary {{ end }} m-b-0">
           {{ $.Params.cancel.pendingtext }}
         </p>

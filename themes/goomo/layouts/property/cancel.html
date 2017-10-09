@@ -1,0 +1,44 @@
+{{ define "main" }}
+	<div class="">
+		<h6 class="">Choose which options you want for your policy. Once it's been created, you'll be able to assign it to the rooms it applies to.</h6>
+
+		<div class=" text-right m-b-20 m-t-15">
+			<a href="#" class="btn fnb-btn secondary-btn btn-sm p-l-15 p-r-15 no-radius ">Add Policy</a>
+		</div>
+
+		<div class="rooms-section dsk-separator m-t-20 flex-row">
+			<div class="room-left">
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="room-detail">
+							<label class="text-lighter text-normal m-b-0">Associated with</label>
+							<p class="bolder">Hotel</p>
+						</div>
+						<div class="">
+							<label class="text-lighter text-normal m-b-0">Check in - Check out</label>
+							<p class="bolder">11 Oct 2017 - 22 Oct 2017</p>
+						</div>
+					</div>
+					<div class="col-sm-8">
+						<label class="text-lighter text-normal m-b-0">Cancellation Policy</label>
+						<ul class="cancel-list">
+							<li>If you cancel your hotel booking within 72 hrs prior to checkin, cancellation charges will be non-refundable</li>
+							<li>If you cancel your hotel booking before 72 hrs i.e. before 3 days of checkin, cancellation charges will not be applicable i.e. FREE cancellation.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="room-right rooms-col toggle-work">
+				 <div class="verified-toggle mobile-flex text-center">
+                    <div class="toggle center-block">
+                        <input name="primary_email" type="checkbox" class="toggle__check" checked="" >
+                        <b class="switch"></b>
+                        <b class="track"></b>
+                    </div>
+                    <p class="m-b-0 toggle-state active-state m-t-10 bolder">Active</p>
+                </div>
+                <a href="#" class="secondary-link text-center"><i class="fa fa-pencil" aria-hidden="true"></i> Edit Policy</a>
+			</div>
+		</div>
+	</div>
+{{ end }}

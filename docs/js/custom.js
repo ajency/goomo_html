@@ -277,7 +277,9 @@ $(document).on('click', '.desc-warning button', function() {
 });
 
 
-$('.from-date,.to-date').daterangepicker();
+$('.from-date,.to-date').daterangepicker({
+	singleDatePicker: true
+});
 
 
 
