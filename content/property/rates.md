@@ -1,15 +1,14 @@
 ---
-title: "Images"
+title: "Rates & Availability"
 date: 2017-09-25T11:31:18+05:30
-layout: images
+layout: rates
 status: "In Process"
 property: "Chalston Beach Resort"
-url: /details/images/chalston-beach-resort/
+url: /rates/chalston-beach-resort/
 slug: "chalston-beach-resort/"
 
 mainmenu:
- details: true
- images: true
+ rates: true
 
 
 ---
