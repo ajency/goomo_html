@@ -10,6 +10,8 @@ slug: "casa-baga/"
 
 owner: true
 
+addbank: true
+
 qcstatus:
  forreview: true
 
