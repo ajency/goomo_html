@@ -10763,8 +10763,10 @@ i.w-border {
     font-size: 0.9em;
   }
 }
-.gs-steps .sidebar-link-custom {
-  display: block;
+@media screen and (max-width: 1400px) {
+  .gs-steps .sidebar-link-custom {
+    display: block;
+  }
 }
 .profile-stats {
   color: #fff;
