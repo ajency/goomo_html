@@ -11,6 +11,8 @@ slug: "casa-bella/"
 qcstatus:
  new: true
 
+addbank: true
+
 mainmenu:
  details: true
  contract: true
