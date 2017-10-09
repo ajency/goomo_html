@@ -289,37 +289,43 @@
 					</div>
 				</div>
 			</div>
-			
 
-      
-      <div class="col-sm-12 m-t-50 stats-container all-properties inactive-cp">
-        <div class="stats-row flex-row flex-wrap">
-          <div class="total-listing">
-            <div class="total-listing__count flex-row space-between">
-              <div>
-                <h5 class="bolder m-b-5 titles">50</h5>
-                <p class="m-b-0 text-lighter">Total Properties</p>
+      <div class="col-sm-12 desk-hide flex-row space-between"  data-toggle="collapse" data-target="#statsCollapse">
+        <h6>Summary Info</h6>
+        <i class="fa fa-plus"></i>
+      </div>
+
+      <div class="collapse in" id="statsCollapse">
+        
+        <div class="col-sm-12 m-t-50 stats-container all-properties inactive-cp">
+          <div class="stats-row flex-row flex-wrap">
+            <div class="total-listing">
+              <div class="total-listing__count flex-row space-between">
+                <div>
+                  <h5 class="bolder m-b-5 titles">50</h5>
+                  <p class="m-b-0 text-lighter">Total Properties</p>
+                </div>
+                <img src="https://ajency.github.io/goomo_html/img/listing-count.png" class="img-responsive" width="35">
               </div>
-              <img src="https://ajency.github.io/goomo_html/img/listing-count.png" class="img-responsive" width="35">
             </div>
-          </div>
 
-          <div class="status-bucket stats-cols dsk-separator">
-            <p class="bolder">Status buckets</p>
-            <div class="flex-row align-reset space-between">
-              <div class="status-bucket__row">
-                <div class="buckets bucket-1">
-                  <p class="m-b-0 text-muted sub-title">35</p>
-                  <p class="m-b-0 text-muted default-size">In Process</p>
+            <div class="status-bucket stats-cols dsk-separator">
+              <p class="bolder">Status buckets</p>
+              <div class="flex-row align-reset space-between">
+                <div class="status-bucket__row">
+                  <div class="buckets bucket-1">
+                    <p class="m-b-0 text-muted sub-title">35</p>
+                    <p class="m-b-0 text-muted default-size">In Process</p>
+                  </div>
                 </div>
-              </div>
-              <div class="status-bucket__row">
-                <div class="buckets bucket-2">
-                  <p class="m-b-0 text-success sub-title">20</p>
-                  <p class="m-b-0 text-success default-size">Pending Review</p>
+                <div class="status-bucket__row">
+                  <div class="buckets bucket-2">
+                    <p class="m-b-0 text-success sub-title">20</p>
+                    <p class="m-b-0 text-success default-size">Pending Review</p>
+                  </div>
                 </div>
+               
               </div>
-             
             </div>
           </div>
         </div>
@@ -328,12 +334,12 @@
 
 
 
-      <div class="col-sm-12 m-t-50">
+      <div class="col-sm-12 m-t-20">
         <div class="flex-row space-between search-row">
           <div class="filter-search flex-row align-reset">
             <div class="filter-search__field">
               <i class="fa fa-search text-lighter element-title" aria-hidden="true"></i>
-              <input type="search" class="fnb-input" placeholder="Search by">
+              <input type="search" class="fnb-input" placeholder="Search by" id="propNameSearch">
             </div>
             <button class="btn fnb-btn transparent bold-btn full flex-row"  data-toggle="collapse" data-target="#moreFiltersWrap"><img src="https://ajency.github.io/goomo_html/img/filter-bars.png" class="img-responsive p-r-5" width="30"> <span>Filter</span></button>
           </div>
@@ -524,15 +530,15 @@
                     <hr class="m-t-0 m-b-5">
                     <div class="row mobile-flex">
                         <div class="col-sm-6">
-                            <div class="checkbox">
+                            <div class="checkbox content-stat">
                               <label>
                                   <input type="checkbox" value="" class="" checked="">
                                   Content Pending
                                 </label>
                             </div>
-                          </div>
+                        </div>
                         <div class="col-sm-6">
-                            <div class="checkbox">
+                            <div class="checkbox content-stat">
                               <label>
                                   <input type="checkbox" value="" class="">
                                   Content Complete

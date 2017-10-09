@@ -2651,6 +2651,13 @@ i.w-border{
 			order: 1;
 			width: 15%;
 			align-self: flex-start;
+			i{
+				margin-right: 10px;
+			}
+			img{
+				margin-right: 10px;
+				margin-top: 5px;
+			}
 		}
 		.mobile-qc{
 			text-align: left;
@@ -3903,8 +3910,9 @@ i.w-border{
 
 .user-overflow{
 	overflow: auto;
+    height: 85%;
     position: absolute;
-    height: 100%;
+    width: 95%;
 }
 
 .users-row{
@@ -4023,7 +4031,7 @@ i.w-border{
     		.toggle{
 				margin-right: 0.8em;
 			}
-		} 
+		}
 		.removeRow{
 			top: 5px;
     		position: relative;
@@ -4045,8 +4053,15 @@ i.w-border{
 		width: 175px !important;
     	display: block;
 	}
-	.subdate{
+	.sub-dates{
 		margin-bottom: 1.5em;
+		margin-right: 0;
+	}
+	.content-stat{
+		label{
+			font-size: 0.95em;	
+    		padding-left: 13px;
+		}
 	}
 }
 
@@ -4078,7 +4093,7 @@ i.w-border{
     	min-width: 150px;
     }
     .room-detail{
-    	padding-bottom: 1.5em;
+    	padding-bottom: 1em;
     }
     .toggle-state{
     	color: #32bbb4;
@@ -4087,7 +4102,7 @@ i.w-border{
 
 .sub-dates{
 	@media screen and (max-width: 1400px){
-		font-size: 0.9em;	
+		font-size: 0.9em;
 	}
 }
 
@@ -4096,10 +4111,41 @@ i.w-border{
 		.sidebar-link-custom{
 			display: block;
 		}
-	}	
+	}
 }
 
 
+.room-row{
+	padding: 0 1.5em 0 0;
+}
+
+.amenities-row{
+	border: 0;
+	border-bottom: 1px solid #ddd;
+	width: 170px;
+}
 
 
+.search-amenities{
+	.searchRow{
+		flex: 1;
+    	justify-content: flex-end;
+    	input[type=checkbox]{
+    		margin: 0;
+    		&:before{
+    			position: relative;
+    			top: 0;
+    		}
+    	}
+	}
+}
+
+
+.amenities-data{
+	input[type=checkbox]{
+		&:before{
+			background-color: #fff;
+		}
+	}
+}
 

@@ -8,7 +8,7 @@ status: "Pending Review"
 url: /details/contract/casa-goa/
 slug: "casa-goa/"
 
-owner: true
+owner: false
 
 qcstatus:
  forqcreview: true
