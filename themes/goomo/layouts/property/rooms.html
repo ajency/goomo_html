@@ -25,7 +25,7 @@
 			<div class="col-sm-9">
 			
 			<div class="row">
-				<div class="col-sm-12 text-right m-b-20">
+				<div class="col-sm-12 text-right m-b-20 m-t-15">
 					<a href="#" class="btn fnb-btn secondary-btn btn-sm open-sidebar p-l-15 p-r-15 no-radius">Add Rooms</a>
 				</div>
 				
@@ -41,16 +41,16 @@
 								<p class="text-color m-b-0">Air Conditioner, Bathrobe, Bathtub, Blu-ray player</p>
 							</div>
 						</div>
-						<div class="room-right rooms-col">
+						<div class="room-right rooms-col toggle-work">
 							 <div class="verified-toggle text-center">
 	                            <div class="toggle center-block">
 	                                <input name="primary_email" type="checkbox" class="toggle__check" checked="" >
 	                                <b class="switch"></b>
 	                                <b class="track"></b>
 	                            </div>
-	                            <p class="m-b-0 toggle-state m-t-10">Active</p>
+	                            <p class="m-b-0 toggle-state active-state m-t-10 bolder">Active</p>
 	                        </div>
-	                        <a href="#" class="secondary-link text-center"><i class="fa fa-pencil" aria-hidden="true"></i> Edit Rooms</a>
+	                        <a href="#" class="secondary-link text-center"><i class="fa fa-pencil" aria-hidden="true"></i> Edit Room</a>
 						</div>
 					</div>
 					<div class="rooms-section dsk-separator m-t-30 flex-row">
@@ -64,16 +64,16 @@
 								<p class="text-color m-b-0">Air Conditioner, Bathrobe, Bathtub, Blu-ray player</p>
 							</div>
 						</div>
-						<div class="room-right rooms-col">
+						<div class="room-right rooms-col toggle-work">
 							 <div class="verified-toggle text-center">
 	                            <div class="toggle center-block">
-	                                <input name="primary_email" type="checkbox" class="toggle__check" checked="" >
+	                                <input name="primary_email" type="checkbox" class="toggle__check" >
 	                                <b class="switch"></b>
 	                                <b class="track"></b>
 	                            </div>
-	                            <p class="m-b-0 toggle-state m-t-10">Active</p>
+	                            <p class="m-b-0 toggle-state m-t-10 bolder">Inactive</p>
 	                        </div>
-	                        <a href="#" class="secondary-link text-center"><i class="fa fa-pencil" aria-hidden="true"></i> Edit Rooms</a>
+	                        <a href="#" class="secondary-link text-center"><i class="fa fa-pencil" aria-hidden="true"></i> Edit Room</a>
 						</div>
 					</div>
 				</div>
@@ -84,7 +84,48 @@
 
 			</div>
 			<div class="col-sm-3 right-sidebar">
-				{{ partial "right-sidebar.html" .}}
+				<div class="logs-block">
+					<div class="flex-row space-between">
+						<h6 class="bolder">Audit Logs</h6>
+						<a href="#" class="bolder text-secondary">View All</a>
+					</div>
+					<div class="single-log">
+						<div class="flex-row space-between">
+							<div class="bolder">
+
+								Sain Dsouza (Owner)
+							</div>
+							<span class="text-muted small">2 days ago</span>
+						</div>
+						<p class="small">
+							Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.
+						</p>
+					</div>
+					<div class="single-log">
+						<div class="flex-row space-between">
+							<div class="bolder">
+
+								Sain Dsouza (Owner)
+							</div>
+							<span class="text-muted small">2 days ago</span>
+						</div>
+						<p class="small">
+							Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.
+						</p>
+					</div>
+					<div class="single-log">
+						<div class="flex-row space-between">
+							<div class="bolder">
+
+								Sain Dsouza (Owner)
+							</div>
+							<span class="text-muted small">2 days ago</span>
+						</div>
+						<p class="small">
+							Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.
+						</p>
+					</div>
+				</div>
 			</div>
 			<div class="market-manager-img mobile-btn desk-hide	">
 				<img src="{{"img/manager.jpg" | absURL}}" class="img-responsive">
