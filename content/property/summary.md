@@ -55,7 +55,7 @@ contract:
 bank:
  url: "/goomo_html/details/contract/chalston-beach-resort/"
  pending: true
- pendingtext: "Please Add: Bank Account Details"
+ pendingtext: ""
  checklist: true
  qc: "--"
 
