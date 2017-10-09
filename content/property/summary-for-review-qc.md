@@ -43,8 +43,8 @@ policies:
 desc:
   url: "#"
   pending: true
-  pendingtext: "To be added by Goomo Content team after submission for review"
-  checklist: false
+  pendingtext: ""
+  checklist: true
   qc: "--"
   disabled: false
 

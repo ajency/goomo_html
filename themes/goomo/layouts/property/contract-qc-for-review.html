@@ -150,10 +150,10 @@
 					<button class="btn fnb-btn secondary-btn pull-right bolder make-edits-btn">Make Edits</button>
 				</div>
 			</div>
-		{{ else if $.Params.qcstatus.submitted }}
+		{{ else if $.Params.qcstatus.editsreview }}
 			<div class="flex-row property-status-box">
 				<div class="status-info flex-row">
-					You have submitted your property for QC Review. You will be able to make changes to this section only after the QC Review.
+					Your Market Manager has reviewed your information and suggested some edits. Please check these and submit for approval again.
 				</div>
 				<div class="check-status">
 					Checklist Status:<br>
@@ -162,8 +162,9 @@
 				<div class="qc-status">
 					QC Status:<br>
 	                <h6 class="text-secondary">Pending Review</h6>
-	                <!-- <button class="btn btn-white s-outline outline fnb-btn small open-sidebar ">Suggest Edits</button>
-					<button class="btn btn-white secondary-btn outline fnb-btn small " data-toggle="modal" data-target="#approveModal">Approve</button> -->
+	                <p class="bat-color">Edits Suggested</p>
+	                <button class="btn btn-white s-outline outline fnb-btn small open-sidebar ">Reply</button>
+					<button class="btn btn-white  outline fnb-btn small ">Submit for Approval</button>
 				</div>
 			</div>
 		{{ else }}
