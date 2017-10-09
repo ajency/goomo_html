@@ -3842,10 +3842,12 @@ i.w-border{
 	}
 	.limited-tag{
 		.flexdatalist-multiple li.input-container input{
-			width: 52%;
+			// width: 52%;
 		}
 		a{
 			font-size: 1em;
+			padding-bottom: 2px;
+    		padding-right: 0;
 		}
 	}
 	.roles-box{
@@ -4032,11 +4034,12 @@ i.w-border{
 		flex-direction: column;
 	}
 	.flex-list .flexdatalist-multiple.flexdatalist-multiple{
-		flex-direction: column;
+		// flex-direction: column;
+		flex-wrap: wrap;
 
 	}
-	.flex-list .flexdatalist-multiple.flexdatalist-multiple li.value{
-		display: table;
+	.flex-list .flexdatalist-multiple.flexdatalist-multiple li:last-child{
+		flex-basis: 100%;
 	}
 	.checklist-th{
 		width: 175px !important;
