@@ -5,7 +5,7 @@ draft: false
 layout: policies
 property: "Panjim Inn"
 status: "Active"
-url: /policies/panjim-inn/
+url: /details/policies/panjim-inn/
 slug: "panjim-inn/"
 
 propertyinfo:

@@ -28,9 +28,19 @@ $(document).ready(function() {
 	var registered = $('#listings-table').DataTable({
 		"ordering": false
 	});
+	var location = $('#location-table').DataTable({
+		"columnDefs": [{
+                "targets": 'no-sort',
+                "orderable": false
+            }
+        ]
+	});
 
     registered.columns().iterator('column', function(ctx, idx) {
         $(registered.column(idx).header()).append('<span class="sort-icon"/>');
+    });
+    location.columns().iterator('column', function(ctx, idx) {
+        $(location.column(idx).header()).append('<span class="sort-icon"/>');
     });
 
 
@@ -45,6 +55,10 @@ $(document).ready(function() {
     regions.columns().iterator('column', function(ctx, idx) {
         $(regions.column(idx).header()).append('<span class="sort-icon"/>');
     });
+
+    setTimeout(function(){
+    	regions.columns.adjust().draw();
+    }, 1000);
 
     registered.draw();
 

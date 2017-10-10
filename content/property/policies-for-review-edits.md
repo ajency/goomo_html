@@ -5,7 +5,7 @@ draft: false
 layout: policies
 property: "Casa Vagator"
 status: "Pending Review"
-url: /policies/casa-vagator/
+url: /details/policies/casa-vagator/
 slug: "casa-vagator/"
 
 propertyinfo:

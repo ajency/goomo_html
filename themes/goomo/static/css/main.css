@@ -1263,6 +1263,9 @@ input[type=radio].fnb-radio.disabled:before {
   content: '';
   opacity: 0.4;
 }
+[data-target="#statsCollapse"][aria-expanded="true"] .fa-plus:before {
+  content: "\f068";
+}
 .tabular .cell-1 {
   width: calc(3.33333333%);
 }
@@ -8792,6 +8795,9 @@ i.w-border {
 .dataTables_wrapper .dataTables_filter {
   display: none;
 }
+.listing-table span.text-success.bolder {
+  white-space: nowrap;
+}
 @media screen and (max-width: 768px) {
   .search-row {
     flex-direction: column;
@@ -8834,6 +8840,9 @@ i.w-border {
   .main-table {
     overflow-x: auto;
   }
+}
+.table > thead > tr > th {
+  vertical-align: top;
 }
 .finance-col .form-control[readonly] {
   background-color: #fff;
@@ -9224,10 +9233,9 @@ i.w-border {
   display: none;
 }
 @media screen and (max-width: 768px) {
-  #region-table_wrapper > .row:first-child,
-  .dataTables_wrapper > .row:first-child {
-    display: flex;
-    align-items: center;
+  #region-table_wrapper > .row:first-child .col-sm-6:first-child,
+  .dataTables_wrapper > .row:first-child .col-sm-6:first-child {
+    width: 50%;
   }
   #region-table_wrapper .dataTables_length label,
   .dataTables_wrapper .dataTables_length label {
@@ -9241,6 +9249,8 @@ i.w-border {
   }
   #region-table_wrapper .dataTables_filter label,
   .dataTables_wrapper .dataTables_filter label {
+    display: block;
+    margin-top: 20px;
     text-align: left;
     font-size: 0.85em;
   }

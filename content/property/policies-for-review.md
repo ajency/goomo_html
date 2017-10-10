@@ -5,7 +5,7 @@ draft: false
 layout: policies
 property: "Casa Amora"
 status: "Pending Review"
-url: /policies/casa-amora/
+url: /details/policies/casa-amora/
 slug: "casa-amora/"
 
 propertyinfo:

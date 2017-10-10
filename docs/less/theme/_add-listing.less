@@ -3218,6 +3218,12 @@ i.w-border{
 	}
 }
 
+.listing-table{
+	span.text-success.bolder {
+	    white-space: nowrap;
+	}
+}
+
 
 @media screen and (max-width: @mobile){
 	.search-row{
@@ -3263,7 +3269,11 @@ i.w-border{
 	.main-table{
 		overflow-x: auto;
 	}
+
 }
+	.table>thead>tr>th {
+	    vertical-align: top;
+	}
 
 
 // Contact-Finance
@@ -3744,8 +3754,11 @@ i.w-border{
 @media screen and (max-width: @mobile){
 	#region-table_wrapper,.dataTables_wrapper{
 		& > .row:first-child{
-			display: flex;
-	    	align-items: center;
+			// display: flex;
+	  //   	align-items: center;
+	  		.col-sm-6:first-child{
+	  			width: 50%;
+	  		}
 		}
 		.dataTables_length{
 			label{
@@ -3759,6 +3772,8 @@ i.w-border{
 		}
 		.dataTables_filter{
 			label{
+				display: block;
+				margin-top: 20px;
 				text-align: left;
 				font-size: 0.85em;
 			}

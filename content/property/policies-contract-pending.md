@@ -5,7 +5,7 @@ draft: false
 layout: policies
 property: "Casa Baga"
 status: "In Process"
-url: /policies/casa-baga/
+url: /details/policies/casa-baga/
 slug: "casa-baga/"
 
 propertyinfo:

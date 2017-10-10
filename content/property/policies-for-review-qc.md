@@ -5,7 +5,7 @@ draft: false
 layout: policies
 property: "Casa Goa"
 status: "Pending Review"
-url: /policies/casa-goa/
+url: /details/policies/casa-goa/
 slug: "casa-goa/"
 
 propertyinfo:

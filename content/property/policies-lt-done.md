@@ -5,7 +5,7 @@ draft: false
 layout: policies
 property: "Casa Colvale"
 status: "In Process"
-url: /policies/casa-colvale/
+url: /details/policies/casa-colvale/
 slug: "casa-colvale/"
 
 propertyinfo:

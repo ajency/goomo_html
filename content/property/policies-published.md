@@ -5,7 +5,7 @@ draft: false
 layout: policies
 property: "Casa Britona"
 status: "Active"
-url: /policies/casa-britona/
+url: /details/policies/casa-britona/
 slug: "casa-britona/"
 
 propertyinfo:

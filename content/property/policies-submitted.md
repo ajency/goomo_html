@@ -5,7 +5,7 @@ draft: false
 layout: policies
 property: "Riverfront"
 status: "Pending Review"
-url: /policies/riverfront/
+url: /details/policies/riverfront/
 slug: "riverfront/"
 
 viewdash: true

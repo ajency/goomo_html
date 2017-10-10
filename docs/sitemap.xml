@@ -3,22 +3,22 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://ajency.github.io/goomo_html/policies/hotel-antares/</loc>
+    <loc>https://ajency.github.io/goomo_html/details/policies/hotel-antares/</loc>
     <lastmod>2017-09-27T11:22:04+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://ajency.github.io/goomo_html/policies/panjim-inn/</loc>
+    <loc>https://ajency.github.io/goomo_html/details/policies/panjim-inn/</loc>
     <lastmod>2017-09-27T11:22:04+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://ajency.github.io/goomo_html/policies/hotel-eden/</loc>
+    <loc>https://ajency.github.io/goomo_html/details/policies/hotel-eden/</loc>
     <lastmod>2017-09-27T11:22:04+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://ajency.github.io/goomo_html/policies/casa-britona/</loc>
+    <loc>https://ajency.github.io/goomo_html/details/policies/casa-britona/</loc>
     <lastmod>2017-09-27T11:22:04+05:30</lastmod>
   </url>
   
@@ -63,12 +63,12 @@
   </url>
   
   <url>
-    <loc>https://ajency.github.io/goomo_html/policies/casa-anjuna/</loc>
+    <loc>https://ajency.github.io/goomo_html/details/policies/casa-anjuna/</loc>
     <lastmod>2017-09-26T19:22:18+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://ajency.github.io/goomo_html/policies/casa-bella/</loc>
+    <loc>https://ajency.github.io/goomo_html/details/policies/casa-bella/</loc>
     <lastmod>2017-09-26T19:22:18+05:30</lastmod>
   </url>
   
@@ -98,37 +98,37 @@
   </url>
   
   <url>
-    <loc>https://ajency.github.io/goomo_html/policies/casa-candolim/</loc>
+    <loc>https://ajency.github.io/goomo_html/details/policies/casa-candolim/</loc>
     <lastmod>2017-09-26T13:44:12+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://ajency.github.io/goomo_html/policies/casa-baga/</loc>
+    <loc>https://ajency.github.io/goomo_html/details/policies/casa-baga/</loc>
     <lastmod>2017-09-26T13:44:12+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://ajency.github.io/goomo_html/policies/casa-vagator/</loc>
+    <loc>https://ajency.github.io/goomo_html/details/policies/casa-vagator/</loc>
     <lastmod>2017-09-26T13:44:12+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://ajency.github.io/goomo_html/policies/casa-goa/</loc>
+    <loc>https://ajency.github.io/goomo_html/details/policies/casa-goa/</loc>
     <lastmod>2017-09-26T13:44:12+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://ajency.github.io/goomo_html/policies/casa-amora/</loc>
+    <loc>https://ajency.github.io/goomo_html/details/policies/casa-amora/</loc>
     <lastmod>2017-09-26T13:44:12+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://ajency.github.io/goomo_html/policies/casa-colvale/</loc>
+    <loc>https://ajency.github.io/goomo_html/details/policies/casa-colvale/</loc>
     <lastmod>2017-09-26T13:44:12+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://ajency.github.io/goomo_html/policies/riverfront/</loc>
+    <loc>https://ajency.github.io/goomo_html/details/policies/riverfront/</loc>
     <lastmod>2017-09-26T13:44:12+05:30</lastmod>
   </url>
   
@@ -164,6 +164,21 @@
   
   <url>
     <loc>https://ajency.github.io/goomo_html/rates/riverfront/</loc>
+    <lastmod>2017-09-26T13:44:12+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ajency.github.io/goomo_html/details/rooms/casa-candolim/</loc>
+    <lastmod>2017-09-26T13:44:12+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ajency.github.io/goomo_html/details/rooms/casa-baga/</loc>
+    <lastmod>2017-09-26T13:44:12+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ajency.github.io/goomo_html/details/rooms/casa-colvale/</loc>
     <lastmod>2017-09-26T13:44:12+05:30</lastmod>
   </url>
   
@@ -303,7 +318,7 @@
   </url>
   
   <url>
-    <loc>https://ajency.github.io/goomo_html/details/rooms/</loc>
+    <loc>https://ajency.github.io/goomo_html/details/rooms/chalston-beach-resort/</loc>
     <lastmod>2017-09-26T12:57:20+05:30</lastmod>
   </url>
   
@@ -564,6 +579,56 @@
   
   <url>
     <loc>https://ajency.github.io/goomo_html/rates/chalston-beach-resort/</loc>
+    <lastmod>2017-09-25T11:31:18+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ajency.github.io/goomo_html/details/rooms/casa-vagator/</loc>
+    <lastmod>2017-09-25T11:31:18+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ajency.github.io/goomo_html/details/rooms/casa-amora/</loc>
+    <lastmod>2017-09-25T11:31:18+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ajency.github.io/goomo_html/details/rooms/casa-anjuna/</loc>
+    <lastmod>2017-09-25T11:31:18+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ajency.github.io/goomo_html/details/rooms/casa-bella/</loc>
+    <lastmod>2017-09-25T11:31:18+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ajency.github.io/goomo_html/details/rooms/hotel-antares/</loc>
+    <lastmod>2017-09-25T11:31:18+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ajency.github.io/goomo_html/details/rooms/panjim-inn/</loc>
+    <lastmod>2017-09-25T11:31:18+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ajency.github.io/goomo_html/details/rooms/hotel-eden/</loc>
+    <lastmod>2017-09-25T11:31:18+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ajency.github.io/goomo_html/details/rooms/casa-britona/</loc>
+    <lastmod>2017-09-25T11:31:18+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ajency.github.io/goomo_html/details/rooms/casa-goa/</loc>
+    <lastmod>2017-09-25T11:31:18+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ajency.github.io/goomo_html/details/rooms/riverfront/</loc>
     <lastmod>2017-09-25T11:31:18+05:30</lastmod>
   </url>
   

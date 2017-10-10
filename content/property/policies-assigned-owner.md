@@ -5,7 +5,7 @@ draft: false
 layout: policies
 property: "Casa Candolim"
 status: "In Process"
-url: /policies/casa-candolim/
+url: /details/policies/casa-candolim/
 slug: "casa-candolim/"
 
 mainmenu:

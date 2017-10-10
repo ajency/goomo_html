@@ -5,7 +5,7 @@ draft: false
 layout: policies
 property: "Casa Anjuna"
 status: "In Process"
-url: /policies/casa-anjuna/
+url: /details/policies/casa-anjuna/
 slug: "casa-anjuna/"
 
 propertyinfo:

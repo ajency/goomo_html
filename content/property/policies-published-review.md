@@ -5,7 +5,7 @@ draft: false
 layout: policies
 property: "Hotel Eden"
 status: "Active (Pending Review)"
-url: /policies/hotel-eden/
+url: /details/policies/hotel-eden/
 slug: "hotel-eden/"
 
 propertyinfo:

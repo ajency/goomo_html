@@ -5,7 +5,7 @@ draft: false
 layout: policies
 property: "Hotel Antares"
 status: "Active (Pending Review)"
-url: /policies/hotel-antares/
+url: /details/policies/hotel-antares/
 slug: "hotel-antares/"
 
 propertyinfo:
