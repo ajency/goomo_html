@@ -27,4 +27,17 @@ input[type=radio].fnb-radio {
             color: #ccc;
         }
     }
+
+    &.bg-blue{
+        &:before{
+            background-color: #d9edf7;
+            color: #bdbdbd;
+        }
+        &:checked {
+            &:before {
+                // content: "\f058";
+                color: @accent-secondary;
+            }
+        }
+    }
 }

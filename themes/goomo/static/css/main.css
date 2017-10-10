@@ -782,6 +782,13 @@ input[type=radio].fnb-radio.disabled:before {
   content: '\f10c';
   color: #ccc;
 }
+input[type=radio].fnb-radio.bg-blue:before {
+  background-color: #d9edf7;
+  color: #bdbdbd;
+}
+input[type=radio].fnb-radio.bg-blue:checked:before {
+  color: #ff8500;
+}
 .fnb-modal .modal-content {
   border-radius: 0px;
   padding: 1.5em;
@@ -9666,6 +9673,12 @@ i.w-border {
 .count-input.count-input-lg input {
   height: 70px;
   border-radius: 3px;
+}
+.cancel-days {
+  width: 50px;
+  margin-left: 5px;
+  color: #31708f;
+  font-weight: 600;
 }
 .profile-stats {
   color: #fff;

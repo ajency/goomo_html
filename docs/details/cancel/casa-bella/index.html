@@ -490,7 +490,7 @@
 		        </div>
 		    </li>
 		    <li>
-		        <input value="12" type="radio" class="radio" name="business_type" data-parsley-multiple="listing_type" data-parsley-required-message="Please select a business type." data-parsley-errors-container="#errorfield">
+		        <input value="12" type="radio" class="radio" name="business_type" data-parsley-multiple="listing_type" data-parsley-required-message="Please select a business type." data-parsley-errors-container="#errorfield" checked="">
 		        <div class="retailer option flex-row col-direction">
 		            <div>
 		                <i class="fa fa-check"></i>
@@ -524,6 +524,42 @@
 		        </div>
 		    </li>
 		</ul>
+
+		<div class="alert alert-info">
+			<label>Free Cancellation on or before</label> <input type="number" class="cancel-days fnb-input" name="" min="0" value="10"> <label>days</label>
+			<br>
+			<div class="radio-group m-t-15">
+			    <label for="norefund" class="m-r-15">
+			        <input value="" type="radio" class="fnb-radio bg-blue" name="cancellation" id="norefund"
+			        checked="">
+			        <span class="p-l-5 text-medium">No refund if cancelled between 10 days prior to check-in and check-in date.</span>
+			    </label>
+			    <br>
+			    <label for="create" class="m-t-10">
+			        <input value="" type="radio" class="fnb-radio bg-blue" name="cancellation" id="create">
+			        <span class="p-l-5 text-medium">Create cancellation charges</span>
+			    </label>
+			</div>
+		</div>
+
+
+		<div class="alert alert-info">
+			<div class="row flex-row align-end">
+				<div class="col-sm-9">
+					<h6 class="bolder">Create Policy</h6>
+					<p>
+						A booking cancelled 48 hours before check-in will be under free cancellation.
+						In case of a no-show or booking gets cancelled within 48 hours, charges will be 100%.
+					</p>
+				</div>
+				<div class="col-sm-3">
+					<div class="users-row">
+					    <button class="pull-right btn fnb-btn grey  full">Cancel</button>
+					    <button class="pull-right btn fnb-btn secondary-btn full">Create</button>
+					</div>
+				</div>
+			</div>
+		</div>
 
 	</div>
 
