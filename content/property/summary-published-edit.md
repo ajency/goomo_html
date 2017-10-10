@@ -29,8 +29,8 @@ amenities:
 images:
  url: "/goomo_html/details/images/panjim-inn/"
  pending: false
- pendingtext: "New Edits: Room Images updated"
- hasedits: true
+ pendingtext: ""
+ hasedits: false
  checklist: true
  qc: "--"
 
@@ -53,8 +53,12 @@ contract:
 
 bank:
  url: "/goomo_html/details/contract/panjim-inn/"
+ hasedits: true
+ pendingtext: "New Edits: Account number changed"
  checklist: true
  qc: "Approved"
+ qc: "Edits Pending Review"
+ qcorange: true
 
 tax:
  url: "/goomo_html/details/contract/panjim-inn/"
@@ -85,6 +89,14 @@ cancel:
  url: "#"
  checklist: true
  qc: "Approved"
+
+ratesavail:
+   done: true
+   url: "#"
+   pending: true
+   pendingtext: ""
+   checklist: true
+   qc: "--"
 
 users:
  done: true
