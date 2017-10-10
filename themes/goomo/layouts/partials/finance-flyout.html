@@ -211,7 +211,7 @@
 
             <div class="page-sidebar__body">
                 <div class="update-sec sidebar-article user-overflow room-row m-b-30">
-                   <h5 class="bolder m-t-35 prop-title">Rooms Details</h5>
+                   <h5 class="bolder m-t-35 prop-title">Room Details</h5>
 
                     <div class="row field-gap c-gap">
                         <div class="col-sm-12 form-group m-b-20">
@@ -281,28 +281,48 @@
                     </div>
                     <div class="row">
                         <div class="col-sm-12 c-gap form-group m-b-20">
-                            <h5 class="bolder m-t-35 prop-title">Rooms Occupancy</h5>
+                            <h5 class="bolder m-t-35 prop-title">Room Occupancy</h5>
                         </div>
-                        <div class="col-sm-6 c-gap form-group m-b-20">
+                        <div class="col-sm-3 col-xs-6 c-gap form-group m-b-20">
                             <label class="text-info">Total Occupancy</label>
-                            <input type="number" class="form-control fnb-input" value="1">
+                            <div class="count-input space-bottom">
+                                <a class="incr-btn" data-action="decrease" href="#">–</a>
+                                <input class="quantity" type="text" name="quantity" value="1"/>
+                                <a class="incr-btn" data-action="increase" href="#">&plus;</a>
+                            </div>
+                            <!-- <input type="number" class="form-control fnb-input" value="1"> -->
                         </div>
-                        <div class="col-sm-6 c-gap form-group m-b-20">
+                        <div class="col-sm-3 col-xs-6 c-gap form-group m-b-20">
                             <label class="text-info">Adults (max)</label>
-                            <input type="number" class="form-control fnb-input" value="1">
+                            <div class="count-input space-bottom">
+                                <a class="incr-btn" data-action="decrease" href="#">–</a>
+                                <input class="quantity" type="text" name="quantity" value="1"/>
+                                <a class="incr-btn" data-action="increase" href="#">&plus;</a>
+                            </div>
+                            <!-- <input type="number" class="form-control fnb-input" value="1"> -->
                         </div>
-                        <div class="col-sm-6 c-gap form-group m-b-20">
+                        <div class="col-sm-3 col-xs-6 c-gap form-group m-b-20">
                             <label class="text-info">Children (max)</label>
-                            <input type="number" class="form-control fnb-input" value="1">
+                            <div class="count-input space-bottom">
+                                <a class="incr-btn" data-action="decrease" href="#">–</a>
+                                <input class="quantity" type="text" name="quantity" value="1"/>
+                                <a class="incr-btn" data-action="increase" href="#">&plus;</a>
+                            </div>
+                            <!-- <input type="number" class="form-control fnb-input" value="1"> -->
                         </div>
-                        <div class="col-sm-6 c-gap form-group m-b-20">
+                        <div class="col-sm-3 col-xs-6 c-gap form-group m-b-20">
                             <label class="text-info">Infants (max)</label>
-                            <input type="number" class="form-control fnb-input" value="1">
+                            <div class="count-input space-bottom">
+                                <a class="incr-btn" data-action="decrease" href="#">–</a>
+                                <input class="quantity" type="text" name="quantity" value="1"/>
+                                <a class="incr-btn" data-action="increase" href="#">&plus;</a>
+                            </div>
+                            <!-- <input type="number" class="form-control fnb-input" value="1"> -->
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-sm-12 c-gap form-group m-b-20 filter-search">
-                            <h5 class="bolder m-t-35 prop-title">Amenities</h5>
+                            <h5 class="bolder m-t-25 prop-title">Amenities</h5>
                             <div class="flex-row space-between search-amenities">
                                 <div class="filter-search__field flex-row amenities-row">
                                   <i class="fa fa-search text-lighter element-title" aria-hidden="true"></i>

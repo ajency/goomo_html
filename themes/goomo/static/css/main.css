@@ -9618,6 +9618,55 @@ i.w-border {
 .cancel-list li {
   margin: 5px 0;
 }
+.count-input {
+  position: relative;
+  width: 100%;
+  max-width: 165px;
+  margin: 10px 0;
+}
+.count-input input {
+  width: 100%;
+  height: 30px;
+  border: 1px solid #9e9e9e;
+  background: none;
+  text-align: center;
+  padding: 0;
+}
+.count-input input:focus {
+  outline: none;
+}
+.count-input .incr-btn {
+  display: block;
+  position: absolute;
+  width: 22px;
+  height: 30px;
+  font-size: 20px;
+  text-align: center;
+  line-height: 28px;
+  top: 50%;
+  right: 0;
+  margin-top: -15px;
+  text-decoration: none;
+  background-color: #4c4c4c;
+  color: #e48c09;
+}
+.count-input .incr-btn:first-child {
+  right: auto;
+  left: 0;
+}
+.count-input.count-input-sm {
+  max-width: 125px;
+}
+.count-input.count-input-sm input {
+  height: 36px;
+}
+.count-input.count-input-lg {
+  max-width: 200px;
+}
+.count-input.count-input-lg input {
+  height: 70px;
+  border-radius: 3px;
+}
 .profile-stats {
   color: #fff;
   background: #378f9e;
