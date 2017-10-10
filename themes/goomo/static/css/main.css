@@ -1226,6 +1226,11 @@ input[type=radio].fnb-radio.disabled:before {
   transform: rotate(180deg);
   color: #bdbdbd;
 }
+@media (max-width: 767px) {
+  .panel-default > .panel-heading a {
+    white-space: normal;
+  }
+}
 .panel-group .panel-heading + .panel-collapse > .list-group,
 .panel-group .panel-heading + .panel-collapse > .panel-body {
   border: none;
@@ -6464,7 +6469,6 @@ footer {
     margin-bottom: 8px;
   }
   .business-contact .mobile-sp-row {
-    flex-direction: column;
     align-items: flex-start;
   }
   .business-contact .mobile-sp-row .add-another {
@@ -8321,6 +8325,7 @@ i.w-border {
   .checklist-section .ch-head-row .cell-2 {
     width: 15%;
     order: inherit;
+    align-self: flex-start;
   }
   .checklist-section .ch-head-row .cell-full {
     width: 85%;
@@ -9379,7 +9384,7 @@ i.w-border {
   padding: 0.4em 1.3em;
   border-radius: 0;
   min-width: 90px;
-  margin-left: 0.8em;
+  margin-right: 0.8em;
 }
 .fnb-select.code-box {
   width: 20%;

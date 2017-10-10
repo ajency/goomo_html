@@ -157,6 +157,9 @@
       <li class="">
         <a href="/goomo_html/details/users/riverfront/">Users</a>
       </li>
+      <li class="">
+        <a href="/goomo_html/details/cancel/riverfront/">Cancellation Policy</a>
+      </li>
     </ul>
   </li>
 </ul>
@@ -470,7 +473,7 @@
 				<div class="col-sm-12 c-gap form-group m-b-30">
 				 
 				    <div class="">
-				         <label class="label-size text-info required">Please provide the google map address for Your Property</label>
+				         <label class="label-size text-info required">Please provide the google map address for your property</label>
 
 				        <div class="text-lighter">
 				            Note: You can drag the pin on the map to point the address
@@ -501,170 +504,199 @@
 
 			<h5 class="bolder m-t-35 prop-title">Contact</h5>
 
-	        <div class="m-t-20 field-gap c-gap business-email business-contact contact-info contact-info-email" contact-type="email">
-
-		        <div class="flex-row space-between mobile-sp-row">
-		            <label class="label-size text-info required bolder">Hotel Email</label>
-		        </div>
-
-	            <div class="m-t-5">
-	                <div class="row no-m-b">
-	                    <div class="col-sm-4">
-	                        <input type="email" class="form-control fnb-input p-l-5 contact-input" placeholder="xyz@gmail.com" >
-	                        <a href="#" class="dark-link text-medium add-another">+ Add another email</a>
-	                    </div>
-	                    <div class="col-sm-1"></div>
-	                    <div class="col-sm-5 col-xs-8">
-	                        <div class="verified-toggle flex-row">
-	                            <div class="toggle m-l-10 m-r-10">
-	                                <input name="primary_email" type="checkbox" class="toggle__check" checked="" >
-	                                <b class="switch"></b>
-	                                <b class="track"></b>
+	        <div class="m-t-40 business-phone business-contact contact-info contact-info-phone" contact-type="mobile">
+	                <div class="flex-row space-between mobile-sp-row">
+	                    <label class="label-size text-info required">Hotel Email</label>
+	                    <a href="#" class="dark-link text-medium add-another">+ Add another email</a>
+	                </div>
+	                        <div class="contact-row m-t-5  contact-container">
+	                    <div class="row phone-row get-val ">
+	                        <div class="col-sm-5">
+                            	<div class="flex-row">
+                            		<input type="email" class="form-control fnb-input p-l-5 contact-input" value="" placeholder="xyz@gmail.com">
+                            	</div>
+	                        </div>
+	                        <div class="col-sm-3 col-xs-4">
+	                            <div class="verified flex-row">
 	                            </div>
-	                            <p class="m-b-0 text-color toggle-state"> Visible on the listing</p>
+	                        </div>
+	                        <div class="col-sm-4 col-xs-8">
+	                            <div class="verified-toggle no-m-t flex-row">
+	                                <div class="toggle m-l-10 m-r-10">
+	                                    <input type="checkbox" class="toggle__check" name="visible_contact" data-parsley-multiple="contacts" data-parsley-errors-container="#toggleError">
+	                                    <b class="switch"></b>
+	                                    <b class="track"></b>
+	                                     <input type="hidden" class="contact-visible" name="visible_mobile_contact[]" value="0">
+	                                </div>
+	                                <p class="m-b-0 text-color toggle-state">Not visible on the property</p>
+	                            </div>
+	                            <div id="toggleError"></div>
 	                        </div>
 	                    </div>
 	                </div>
-	            </div>
 
-
-		        <div class="m-t-15 m-b-30 contact-container contact-group hidden">
-		            <div class="row no-m-b">
-	                    <div class="col-sm-4">
-	                        <input type="email" class="form-control fnb-input p-l-5 contact-input" value="" placeholder="xyz@gmail.com">
-	                    </div>
-	                    <div class="col-sm-1"></div>
-	                    <div class="col-sm-5 col-xs-8">
-	                        <div class="m-t-5 verified-toggle flex-row">
-	                            <div class="toggle m-l-10 m-r-10">
-	                                <input name="primary_email" type="checkbox" class="toggle__check" checked="">
-	                                <b class="switch"></b>
-	                                <b class="track"></b>
+	                <div class="contact-row m-t-5 contact-container contact-group hidden">
+	                    <div class="row no-m-b get-val phone-row ">
+	                        <div class="col-sm-5">
+    	                    	<div class="flex-row">
+    	                    		<input type="email" class="form-control fnb-input p-l-5 contact-input" value="" placeholder="xyz@gmail.com">
+    	                    	</div>
+	                        </div>
+	                        <div class="col-sm-3 col-xs-4">
+	                            <div class="verified flex-row">
 	                            </div>
-	                            <p class="m-b-0 text-color toggle-state"> Visible on the property</p>
-	                            <i class="fa fa-times removeRow m-l-15 m-b-10"></i>
+	                        </div>
+	                        <div class="col-sm-4 col-xs-8">
+	                            <div class="flex-row close-section">
+	                                <div class="verified-toggle flex-row">
+	                                    <div class="toggle m-l-10 m-r-10">
+	                                        <input type="checkbox" class="toggle__check" name="visible_contact" data-parsley-multiple="contacts" data-parsley-errors-container="#toggleError">
+	                                        <b class="switch"></b>
+	                                        <b class="track"></b>
+	                                        <input type="hidden" class="contact-visible" name="visible_mobile_contact[]" value="0">
+	                                    </div>
+	                                    <p class="m-b-0 text-color toggle-state">Not visible on the property</p>
+	                                </div>
+	                                <i class="fa fa-times removeRow"></i>
+	                            </div>
+	                            <div id="toggleError"></div>
 	                        </div>
 	                    </div>
 	                </div>
-		        </div>
-
 
 	        </div>
 
-
-	        <div class="m-t-40 business-email business-contact contact-info contact-info-email" contact-type="email">
-
-		        <div class="flex-row space-between mobile-sp-row">
-		            <label class="label-size text-info required">Hotel Mobile</label>
-		        </div>
-
-	            <div class="m-t-5">
-	                <div class="row no-m-b">
-	                    <div class="col-sm-4">
-	                    	<div class="flex-row">
-	                    		<select class="fnb-select select-variant form-control text-lighter small-select" name="">
-			                    	<option value="">+91</option>
-			                    	<option>+1245</option>
-			                    	<option>+97</option>
-				                </select>
-	                    		<input type="email" class="form-control fnb-input p-l-5 contact-input" placeholder="9798999987" >
-	                    	</div>
-
-	                        <a href="#" class="dark-link text-medium add-another">+ Add another mobile</a>
-	                    </div>
-	                    <div class="col-sm-1"></div>
-	                    <div class="col-sm-5 col-xs-8">
-	                        <div class="verified-toggle flex-row">
-	                            <div class="toggle m-l-10 m-r-10">
-	                                <input name="primary_email" type="checkbox" class="toggle__check" checked="">
-	                                <b class="switch"></b>
-	                                <b class="track"></b>
+	        <div class="m-t-40 business-phone business-contact contact-info contact-info-phone" contact-type="mobile">
+	                <div class="flex-row space-between mobile-sp-row">
+	                    <label class="label-size text-info required">Hotel Mobile</label>
+	                    <a href="#" class="dark-link text-medium add-another">+ Add another mobile</a>
+	                </div>
+	                        <div class="contact-row m-t-5  contact-container">
+	                    <div class="row phone-row get-val ">
+	                        <div class="col-sm-5">
+                            	<div class="flex-row">
+                            		<select class="fnb-select select-variant form-control text-lighter small-select" name="">
+        		                    	<option value="">+91</option>
+        		                    	<option>+1245</option>
+        		                    	<option>+97</option>
+        			                </select>
+                            		<input type="tel" class="form-control fnb-input p-l-5 contact-input" style="" placeholder="9798999987" >
+                            	</div>
+	                        </div>
+	                        <div class="col-sm-3 col-xs-4">
+	                            <div class="verified flex-row">
 	                            </div>
-	                            <p class="m-b-0 text-color toggle-state"> Visible on the property</p>
+	                        </div>
+	                        <div class="col-sm-4 col-xs-8">
+	                            <div class="verified-toggle no-m-t flex-row">
+	                                <div class="toggle m-l-10 m-r-10">
+	                                    <input type="checkbox" class="toggle__check" name="visible_contact" data-parsley-multiple="contacts" data-parsley-errors-container="#toggleError">
+	                                    <b class="switch"></b>
+	                                    <b class="track"></b>
+	                                     <input type="hidden" class="contact-visible" name="visible_mobile_contact[]" value="0">
+	                                </div>
+	                                <p class="m-b-0 text-color toggle-state">Not visible on the property</p>
+	                            </div>
+	                            <div id="toggleError"></div>
 	                        </div>
 	                    </div>
 	                </div>
-	            </div>
 
-
-		        <div class="m-t-15 m-b-30 contact-container contact-group hidden">
-		            <div class="row no-m-b">
-	                    <div class="col-sm-4">
-	                       <div class="flex-row">
-	                    		<select class="fnb-select select-variant form-control text-lighter small-select" name="">
-			                    	<option value="">+91</option>
-			                    	<option>+1245</option>
-			                    	<option>+97</option>
-				                </select>
-	                    		<input type="email" class="form-control fnb-input p-l-5 contact-input" placeholder="9798999987" >
-	                    	</div>
-	                    </div>
-	                    <div class="col-sm-1"></div>
-	                    <div class="col-sm-5 col-xs-8">
-	                        <div class="m-t-5 verified-toggle flex-row">
-	                            <div class="toggle m-l-10 m-r-10">
-	                                <input name="primary_email" type="checkbox" class="toggle__check" checked="" >
-	                                <b class="switch"></b>
-	                                <b class="track"></b>
+	                <div class="contact-row m-t-5 contact-container contact-group hidden">
+	                    <div class="row no-m-b get-val phone-row ">
+	                        <div class="col-sm-5">
+    	                    	<div class="flex-row">
+    	                    		<select class="fnb-select select-variant form-control text-lighter small-select" name="">
+    			                    	<option value="">+91</option>
+    			                    	<option>+1245</option>
+    			                    	<option>+97</option>
+    				                </select>
+    	                    		<input type="tel" class="form-control fnb-input p-l-5 contact-input" placeholder="9798999987" >
+    	                    	</div>
+	                        </div>
+	                        <div class="col-sm-3 col-xs-4">
+	                            <div class="verified flex-row">
 	                            </div>
-	                            <p class="m-b-0 text-color toggle-state"> Visible on the property</p>
-	                            <i class="fa fa-times removeRow m-l-15 m-b-10"></i>
+	                        </div>
+	                        <div class="col-sm-4 col-xs-8">
+	                            <div class="flex-row close-section">
+	                                <div class="verified-toggle flex-row">
+	                                    <div class="toggle m-l-10 m-r-10">
+	                                        <input type="checkbox" class="toggle__check" name="visible_contact" data-parsley-multiple="contacts" data-parsley-errors-container="#toggleError">
+	                                        <b class="switch"></b>
+	                                        <b class="track"></b>
+	                                        <input type="hidden" class="contact-visible" name="visible_mobile_contact[]" value="0">
+	                                    </div>
+	                                    <p class="m-b-0 text-color toggle-state">Not visible on the property</p>
+	                                </div>
+	                                <i class="fa fa-times removeRow"></i>
+	                            </div>
+	                            <div id="toggleError"></div>
 	                        </div>
 	                    </div>
 	                </div>
-		        </div>
 
 	        </div>
 
-
-
-
-		    <div class="m-t-40 business-email business-contact contact-info contact-info-email" contact-type="email">
-
-		        <div class="flex-row space-between mobile-sp-row">
-		            <label class="label-size text-info required">Hotel Phone</label>
-		        </div>
-
-	            <div class="m-t-5">
-	                <div class="row no-m-b">
-	                    <div class="col-sm-4">
-	                        <input type="email" class="form-control fnb-input p-l-5 contact-input" placeholder="0234 87878223" >
-	                        <a href="#" class="dark-link text-medium add-another">+ Add another phone</a>
-	                    </div>
-	                    <div class="col-sm-1"></div>
-	                    <div class="col-sm-5 col-xs-8">
-	                        <div class="verified-toggle flex-row">
-	                            <div class="toggle m-l-10 m-r-10">
-	                                <input name="primary_email" type="checkbox" class="toggle__check" checked="" >
-	                                <b class="switch"></b>
-	                                <b class="track"></b>
+	        <div class="m-t-40 business-phone business-contact contact-info contact-info-phone" contact-type="mobile">
+	                <div class="flex-row space-between mobile-sp-row">
+	                    <label class="label-size text-info required">Hotel Phone</label>
+	                    <a href="#" class="dark-link text-medium add-another">+ Add another phone</a>
+	                </div>
+	                        <div class="contact-row m-t-5  contact-container">
+	                    <div class="row phone-row get-val ">
+	                        <div class="col-sm-5">
+                            	<div class="flex-row">
+                            		<input type="tel" class="form-control fnb-input p-l-5 contact-input" style="" placeholder="0234 8794568" >
+                            	</div>
+	                        </div>
+	                        <div class="col-sm-3 col-xs-4">
+	                            <div class="verified flex-row">
 	                            </div>
-	                            <p class="m-b-0 text-color toggle-state"> Visible on the property</p>
+	                        </div>
+	                        <div class="col-sm-4 col-xs-8">
+	                            <div class="verified-toggle no-m-t flex-row">
+	                                <div class="toggle m-l-10 m-r-10">
+	                                    <input type="checkbox" class="toggle__check" name="visible_contact" data-parsley-multiple="contacts" data-parsley-errors-container="#toggleError">
+	                                    <b class="switch"></b>
+	                                    <b class="track"></b>
+	                                     <input type="hidden" class="contact-visible" name="visible_mobile_contact[]" value="0">
+	                                </div>
+	                                <p class="m-b-0 text-color toggle-state">Not visible on the property</p>
+	                            </div>
+	                            <div id="toggleError"></div>
 	                        </div>
 	                    </div>
 	                </div>
-	            </div>
 
-
-		        <div class="m-t-15 m-b-30 contact-container contact-group hidden">
-		            <div class="row no-m-b">
-	                    <div class="col-sm-4">
-	                        <input type="email" class="form-control fnb-input p-l-5 contact-input" value="" placeholder="0234 87878223">
-	                    </div>
-	                    <div class="col-sm-1"></div>
-	                    <div class="col-sm-5 col-xs-8">
-	                        <div class="m-t-5 verified-toggle flex-row">
-	                            <div class="toggle m-l-10 m-r-10">
-	                                <input name="primary_email" type="checkbox" class="toggle__check" checked="" >
-	                                <b class="switch"></b>
-	                                <b class="track"></b>
+	                <div class="contact-row m-t-5 contact-container contact-group hidden">
+	                    <div class="row no-m-b get-val phone-row ">
+	                        <div class="col-sm-5">
+    	                    	<div class="flex-row">
+    	                    		<input type="tel" class="form-control fnb-input p-l-5 contact-input" placeholder="0234 8794568" >
+    	                    	</div>
+	                        </div>
+	                        <div class="col-sm-3 col-xs-4">
+	                            <div class="verified flex-row">
 	                            </div>
-	                            <p class="m-b-0 text-color toggle-state"> Visible on the property</p>
-	                            <i class="fa fa-times removeRow m-l-15 m-b-10"></i>
+	                        </div>
+	                        <div class="col-sm-4 col-xs-8">
+	                            <div class="flex-row close-section">
+	                                <div class="verified-toggle flex-row">
+	                                    <div class="toggle m-l-10 m-r-10">
+	                                        <input type="checkbox" class="toggle__check" name="visible_contact" data-parsley-multiple="contacts" data-parsley-errors-container="#toggleError">
+	                                        <b class="switch"></b>
+	                                        <b class="track"></b>
+	                                        <input type="hidden" class="contact-visible" name="visible_mobile_contact[]" value="0">
+	                                    </div>
+	                                    <p class="m-b-0 text-color toggle-state">Not visible on the property</p>
+	                                </div>
+	                                <i class="fa fa-times removeRow"></i>
+	                            </div>
+	                            <div id="toggleError"></div>
 	                        </div>
 	                    </div>
 	                </div>
-		        </div>
 
 	        </div>
 
