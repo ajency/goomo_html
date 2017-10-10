@@ -9,7 +9,7 @@ url: /details/cancel/casa-candolim/
 slug: "casa-candolim/"
 
 mainmenu:
+ details: true
  cancel: true
-
 ---
 

@@ -12,6 +12,7 @@ propertyinfo:
  done: false
 
 mainmenu:
+ details: true
  cancel: true
 
 ---
