@@ -9,6 +9,7 @@ url: /details/policies/casa-candolim/
 slug: "casa-candolim/"
 
 mainmenu:
+ details: true
  policies: true
 
 ---

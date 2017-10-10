@@ -14,6 +14,7 @@ propertyinfo:
  done: false
 
 mainmenu:
+ details: true
  policies: true
 
 ---
