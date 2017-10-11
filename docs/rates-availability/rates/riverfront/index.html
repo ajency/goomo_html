@@ -491,8 +491,8 @@
 			</div>
 		</div>
 
+		<h6 class="m-b-20">Bulk Update Rates</h6>
 		<div class="row">
-			
 			<div class="col-sm-2">
 				<p class="text-info bolder">From date:</p>
 				<input type="text" class="from-date form-control fnb-input m-r-10 sub-dates" placeholder="From Date">
@@ -501,9 +501,216 @@
 				<p class="text-info bolder">To date:</p>
 				<input type="text" class="to-date form-control fnb-input m-r-10 sub-dates" placeholder="To Date">
 			</div>
-			<div class="col-sm-2">
+			<div class="col-sm-6">
+				<p class="text-info bolder">Days: <a href="#" class="small text-secondary">Select All</a></p>
+				<div class="flex-row">
+					<label for="mon" class="flex-row m-r-20 ">
+					    <input style="margin-right:5px;" value="" type="checkbox" class="fnb-checkbox" name="contract" id="mon">
+					    <span class="m-t-15 text-medium text-color default-size">Mon</span>
+					</label>
+					<label for="tue" class="flex-row m-r-20 ">
+					    <input style="margin-right:5px;" value="" type="checkbox" class="fnb-checkbox" name="contract" id="tue">
+					    <span class="m-t-15 text-medium text-color default-size">Tue</span>
+					</label>
+					<label for="wed" class="flex-row m-r-20 ">
+					    <input style="margin-right:5px;" value="" type="checkbox" class="fnb-checkbox" name="contract" id="wed">
+					    <span class="m-t-15 text-medium text-color default-size">Wed</span>
+					</label>
+					<label for="thu" class="flex-row m-r-20 ">
+					    <input style="margin-right:5px;" value="" type="checkbox" class="fnb-checkbox" name="contract" id="thu">
+					    <span class="m-t-15 text-medium text-color default-size">Thu</span>
+					</label>
+					<label for="fri" class="flex-row m-r-20 ">
+					    <input style="margin-right:5px;" value="" type="checkbox" class="fnb-checkbox" name="contract" id="fri">
+					    <span class="m-t-15 text-medium text-color default-size">Fri</span>
+					</label>
+					<label for="sat" class="flex-row m-r-20 ">
+					    <input style="margin-right:5px;" value="" type="checkbox" class="fnb-checkbox" name="contract" id="sat">
+					    <span class="m-t-15 text-medium text-color default-size">Sat</span>
+					</label>
+					<label for="sun" class="flex-row m-r-20 ">
+					    <input style="margin-right:5px;" value="" type="checkbox" class="fnb-checkbox" name="contract" id="sun">
+					    <span class="m-t-15 text-medium text-color default-size">Sun</span>
+					</label>
+
+				</div>
 				
 			</div>
+		</div>
+
+		<div class="row m-t-30">
+			<div class="col-sm-4">
+				<p class="text-info bolder">Room Type:</p>
+				<select class="fnb-select select-variant form-control p-l-0" name="">
+				    <option value="">Select Room Type</option>
+				    <option selected="">Premier Room</option>
+				    <option>Grand Deluxe Room</option>
+				</select>
+			</div>
+			<div class="col-sm-4">
+				<p class="text-info bolder">Rate Plan:</p>
+				<select class="fnb-select select-variant form-control  p-l-0" name="">
+				    <option value="">Select Rate Plan</option>
+				    <option selected="">Rate Plan 1</option>
+				    <option>Rate Plan 2</option>
+				</select>
+			</div>
+		</div>
+
+		<div class="row m-t-30">
+			<div class="col-sm-4">
+				<p class="text-info bolder">Contract Type:</p>
+				<label for="norefund" class="m-r-15">
+				    <input value="" type="radio" class="fnb-radio bg-aqua" name="cancellation" id="norefund"
+				    checked="">
+				    <span class="p-l-5 text-medium">B2C</span>
+				</label>
+			</div>
+			<div class="col-sm-4">
+				<p class="text-info bolder">Rate Type:</p>
+				<select class="fnb-select select-variant form-control  p-l-0" name="">
+				    <option value="">Select Rate Type</option>
+				    <option selected="">Sell Rate</option>
+				    <option>Net Rate</option>
+				</select>
+			</div>
+		</div>
+
+		<div class="m-t-50">
+			<div class="row m-b-15">
+				<div class="col-sm-2">
+					<div></div>
+				</div>
+				<div class="col-sm-2">
+					Single Rate
+				</div>
+				<div class="col-sm-2">
+					Double Rate
+				</div>
+				<div class="col-sm-2">
+					Triple Rate
+				</div>
+			</div>
+			<div class="row m-b-15">
+				<div class="col-sm-2">
+					Declared Rate <i class="fa fa-inr"></i>
+				</div>
+				<div class="col-sm-2">
+					<input type="number" class="form-control fnb-input m-r-10 sub-dates" placeholder="Single Rate">
+				</div>
+				<div class="col-sm-2">
+					<input type="number" class="form-control fnb-input m-r-10 sub-dates" placeholder="Double Rate">
+				</div>
+				<div class="col-sm-2">
+					<input type="number" class="form-control fnb-input m-r-10 sub-dates" placeholder="Triple Rate">
+				</div>
+			</div>
+			<div class="row m-b-15">
+				<div class="col-sm-2">
+					Sell Rate <i class="fa fa-inr"></i>
+				</div>
+				<div class="col-sm-2">
+					<input type="number" class="form-control fnb-input m-r-10 sub-dates" placeholder="Single Rate">
+				</div>
+				<div class="col-sm-2">
+					<input type="number" class="form-control fnb-input m-r-10 sub-dates" placeholder="Double Rate">
+				</div>
+				<div class="col-sm-2">
+					<input type="number" class="form-control fnb-input m-r-10 sub-dates" placeholder="Triple Rate">
+				</div>
+				<div class="col-sm-2">
+					<button class="btn fnb-btn outline">Calculate Net Price</button>
+				</div>
+			</div>
+			<div class="row m-b-15">
+				<div class="col-sm-2">
+					Net Rate <i class="fa fa-inr"></i>
+				</div>
+				<div class="col-sm-2">
+					<input type="number" class="form-control fnb-input m-r-10 sub-dates" placeholder="Single Rate">
+				</div>
+				<div class="col-sm-2">
+					<input type="number" class="form-control fnb-input m-r-10 sub-dates" placeholder="Double Rate">
+				</div>
+				<div class="col-sm-2">
+					<input type="number" class="form-control fnb-input m-r-10 sub-dates" placeholder="Triple Rate">
+				</div>
+			</div>
+			<div class="row m-b-15">
+				<div class="col-sm-2">
+					GST <i class="fa fa-percent"></i>
+				</div>
+				<div class="col-sm-2">
+					<input type="number" class="form-control fnb-input m-r-10 sub-dates" placeholder="0">
+				</div>
+				<div class="col-sm-2">
+					<input type="number" class="form-control fnb-input m-r-10 sub-dates" placeholder="0">
+				</div>
+				<div class="col-sm-2">
+					<input type="number" class="form-control fnb-input m-r-10 sub-dates" placeholder="0">
+				</div>
+			</div>
+		</div>
+
+		<div class="m-t-50">
+			<div class="row m-b-15">
+
+				<div class="col-sm-3">
+					Extra Adult Charges
+				</div>
+				<div class="col-sm-3">
+					Extra Child Charges<br>
+					(age range 5-18 yrs)
+				</div>
+				<div class="col-sm-3">
+					Infant Charges if any<br>
+					(age below 5 years)
+				</div>
+			</div>
+			<div class="row m-b-15">
+
+				<div class="col-sm-3">
+					<input type="number" class="form-control fnb-input m-r-10 sub-dates" placeholder="Extra Adult">
+				</div>
+				<div class="col-sm-3">
+					<input type="number" class="form-control fnb-input m-r-10 sub-dates" placeholder="Extra Child">
+				</div>
+				<div class="col-sm-3">
+					<input type="number" class="form-control fnb-input m-r-10 sub-dates" placeholder="Extra Infant">
+				</div>
+			</div>
+		</div>
+		<div class="m-t-30">
+			<div class="row m-b-15">
+
+				<div class="col-sm-3">
+					Net Extra Adult Charges
+				</div>
+				<div class="col-sm-3">
+					Net Extra Child Charges<br>
+					(age range 5-18 yrs)
+				</div>
+				<div class="col-sm-3">
+					Net Infant Charges if any<br>
+					(age below 5 years)
+				</div>
+			</div>
+			<div class="row m-b-15">
+
+				<div class="col-sm-3">
+					<input type="number" class="form-control fnb-input m-r-10 sub-dates" placeholder="Extra Adult">
+				</div>
+				<div class="col-sm-3">
+					<input type="number" class="form-control fnb-input m-r-10 sub-dates" placeholder="Extra Child">
+				</div>
+				<div class="col-sm-3">
+					<input type="number" class="form-control fnb-input m-r-10 sub-dates" placeholder="Extra Infant">
+				</div>
+			</div>
+		</div>
+
+		<div class="text-left">
+			<button class="btn fnb-btn secondary-btn m-t-30">Update Rates</button>
 		</div>
 
 	</div>
