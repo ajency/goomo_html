@@ -1,0 +1,85 @@
+{{ define "main" }}
+	<div class="">
+		<div class="flex-row desk-hide">
+			<div class="back-btn">
+				<a href="/goomo_html/checklist/{{ $.Params.slug }}">
+					<i class="fa fa-chevron-left"></i>
+				</a>
+			</div>
+			<div class="back-title m-l-10 h4 bolder">
+				Back to Property Checklist
+			</div>
+		</div>
+
+		<h6 class="m-b-20">Bulk Update Inventory</h6>
+
+		<div class="row m-t-30">
+			<div class="col-sm-4">
+				<p class="text-info bolder">Room Type:</p>
+				<select class="fnb-select select-variant form-control p-l-0" name="">
+				    <option value="">Select Room Type</option>
+				    <option selected="">Premier Room</option>
+				    <option>Grand Deluxe Room</option>
+				</select>
+			</div>
+		</div>
+
+		<div class="row m-t-30">
+			<div class="col-sm-2">
+				<p class="text-info bolder">From date:</p>
+				<input type="text" class="from-date form-control fnb-input m-r-10 sub-dates" placeholder="From Date">
+			</div>
+			<div class="col-sm-2">
+				<p class="text-info bolder">To date:</p>
+				<input type="text" class="to-date form-control fnb-input m-r-10 sub-dates" placeholder="To Date">
+			</div>
+			<div class="col-sm-6">
+				<p class="text-info bolder">Days: <a href="#" class="small text-secondary">Select All</a></p>
+				<div class="flex-row">
+					<label for="mon" class="flex-row m-r-20 ">
+					    <input style="margin-right:5px;" value="" type="checkbox" class="fnb-checkbox" name="contract" id="mon">
+					    <span class="m-t-15 text-medium text-color default-size">Mon</span>
+					</label>
+					<label for="tue" class="flex-row m-r-20 ">
+					    <input style="margin-right:5px;" value="" type="checkbox" class="fnb-checkbox" name="contract" id="tue">
+					    <span class="m-t-15 text-medium text-color default-size">Tue</span>
+					</label>
+					<label for="wed" class="flex-row m-r-20 ">
+					    <input style="margin-right:5px;" value="" type="checkbox" class="fnb-checkbox" name="contract" id="wed">
+					    <span class="m-t-15 text-medium text-color default-size">Wed</span>
+					</label>
+					<label for="thu" class="flex-row m-r-20 ">
+					    <input style="margin-right:5px;" value="" type="checkbox" class="fnb-checkbox" name="contract" id="thu">
+					    <span class="m-t-15 text-medium text-color default-size">Thu</span>
+					</label>
+					<label for="fri" class="flex-row m-r-20 ">
+					    <input style="margin-right:5px;" value="" type="checkbox" class="fnb-checkbox" name="contract" id="fri">
+					    <span class="m-t-15 text-medium text-color default-size">Fri</span>
+					</label>
+					<label for="sat" class="flex-row m-r-20 ">
+					    <input style="margin-right:5px;" value="" type="checkbox" class="fnb-checkbox" name="contract" id="sat">
+					    <span class="m-t-15 text-medium text-color default-size">Sat</span>
+					</label>
+					<label for="sun" class="flex-row m-r-20 ">
+					    <input style="margin-right:5px;" value="" type="checkbox" class="fnb-checkbox" name="contract" id="sun">
+					    <span class="m-t-15 text-medium text-color default-size">Sun</span>
+					</label>
+
+				</div>
+				<!-- <button class="btn fnb-btn outline m-t-30">Set Period</button> -->
+			</div>
+		</div>
+
+		<div class="row m-t-30">
+			<div class="col-sm-2">
+				<p class="text-info bolder">Available Inventory:</p>
+				<input type="number" class="form-control fnb-input m-r-10 sub-dates" placeholder="2">
+			</div>
+		</div>
+
+		<div class="text-left">
+			<button class="btn fnb-btn secondary-btn m-t-30">Update Inventory</button>
+		</div>
+
+	</div>
+{{ end }}
