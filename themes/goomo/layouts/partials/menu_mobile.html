@@ -51,9 +51,25 @@
   <li class="{{ if $.Params.mainmenu.review }}active{{end}}">
     <a href="{{ $.Params.slug }}"><i class="fa fa-comments-o"></i> <span>Reviews</span></a>
   </li>
-  <li class="{{ if $.Params.mainmenu.rates }}active{{end}}">
-    <a href="/goomo_html/rates/{{ $.Params.slug }}"><i class="fa fa-money"></i> <span>Rates &amp; Availability</span></a>
+
+  <li class="{{ if $.Params.mainmenu.ratesavail }}active{{end}}">
+    <a class=" form-toggle" data-toggle="collapse"  href="#property-ratesSubMenuMobile" role="button"><i class="fa fa-money"></i> <span>Rates &amp; Availability</span></a>
+    <ul class="gs-steps collapse {{ if $.Params.mainmenu.ratesavail }}in{{end}} edit-mode sub-steps" id="property-ratesSubMenuMobile" role="tablist">
+      <li class="{{ if $.Params.mainmenu.calendar }}active{{end}}">
+        <a href="#">Calendar</a>
+      </li>
+      <li class="{{ if $.Params.mainmenu.inventory }}active{{end}}">
+        <a href="#">Add Inventory</a>
+      </li>
+      <li class="{{ if $.Params.mainmenu.rates }}active{{end}}">
+        <a href="/goomo_html/rates-availability/rates/{{ $.Params.slug }}">Rates</a>
+      </li>
+      <li class="{{ if $.Params.mainmenu.plans }}active{{end}}">
+        <a href="#">Add Rate Plans</a>
+      </li>
+    </ul>
   </li>
+
   <li class="{{ if $.Params.mainmenu.offer }}active{{end}}">
     <a href="{{ $.Params.slug }}"><i class="fa fa-certificate"></i> <span>Offers</span></a>
   </li>
