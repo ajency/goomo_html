@@ -50,7 +50,41 @@
                 </div>
             </div>
 
-         {{ else if $.Params.addbank }}
+        {{ else if $.Params.mainmenu.policies }}
+
+            <div class="page-sidebar__header flex-row space-between mobile-hide">
+                <div class="backLink flex-row">
+                    <a href="" class="primary-link p-r-10 element-title article-back"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+                    <div class="sub-title bolder">Add Policy</div>
+                </div>
+            </div>
+
+            <div class="page-sidebar__body">
+                <div class="update-sec sidebar-article user-overflow">
+                   <h6 class="bolder m-t-35 prop-title">Hotel Policy</h6>
+                   <div class="form-group">
+                     <textarea class="fnb-input form-control" rows="5" placeholder="Type your content here..."></textarea>
+                   </div>
+
+                   <button type="button" class="btn fnb-btn secondary-btn mini m-t-30">Add</button>
+
+                   <!-- <div class="alert alert-warning desc-warning hidden">
+                       <div class="">
+                         <p class="p-t-20">
+                           Are you sure you want to proceed?
+                           Once you proceed, the description entered here will be associated with {{ .Params.property }} and will be displayed on the property page on Goomo.com<br><br>
+                         </p>
+                       </div>
+                       <hr>
+                       <div class=" flex-row justify-center">
+                         <button type="button" class="btn fnb-btn outline" data-dismiss="modal">Cancel</button>
+                         <button type="button" class="btn fnb-btn primary-btn m-l-10" data-dismiss="modal">Yes, Add</button>
+                       </div>
+                   </div> -->
+                </div>
+            </div>
+
+        {{ else if $.Params.addbank }}
 
             <div class="page-sidebar__header flex-row space-between mobile-hide">
                 <div class="backLink flex-row">
@@ -113,7 +147,7 @@
                 </div>
             </div>
 
-         {{ else if $.Params.mainmenu.user }}
+        {{ else if $.Params.mainmenu.user }}
 
            <div class="page-sidebar__header flex-row space-between mobile-hide">
                 <div class="backLink flex-row">
@@ -194,7 +228,6 @@
 
                 </div>
             </div>
-
 
         {{ else if $.Params.mainmenu.rooms }}
 
@@ -395,7 +428,7 @@
                 </div>
             </div>
 
-         {{ else }}
+        {{ else }}
 
             <div class="page-sidebar__header flex-row space-between mobile-hide">
                 <div class="backLink flex-row">
