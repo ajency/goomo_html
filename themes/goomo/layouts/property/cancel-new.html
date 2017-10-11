@@ -17,9 +17,13 @@
 		<div class="row m-t-30">
 			<div class="col-sm-4">
 				<h6 class="text-info bolder">Policy level associated with</h6>
-				<div class="btn-group" role="group" aria-label="...">
-				  <button type="button" class="btn btn-default fnb-btn secondary-btn">Hotel</button>
-				  <button type="button" class="btn btn-default">Rate plan</button>
+				<div class="btn-group" data-toggle="buttons" role="group" aria-label="...">
+			  		<label class="btn btn-default fnb-btn toggle-btn active">
+			            <input type="radio" name="policy" id="hotel" checked=""> Hotel
+			        </label>
+			        <label class="btn btn-default fnb-btn toggle-btn">
+			            <input type="radio" name="policy" id="rateplan"> Rate plan
+			        </label>
 				</div>
 			</div>
 			<div class="col-sm-4">
@@ -36,7 +40,7 @@
 
 		<ul class="business-type flex-row m-t-25">
 		    <li>
-		        <input value="11" type="radio" class="radio" name="business_type" data-parsley-multiple="listing_type" data-parsley-required-message="Please select a business type." data-parsley-errors-container="#errorfield">
+		        <input value="11" type="radio" class="radio" name="policy_type" data-parsley-multiple="listing_type" data-parsley-required-message="Please select a business type." data-parsley-errors-container="#errorfield">
 		        <div class="wholesaler option flex-row col-direction">
 		            <div>
 		                <i class="fa fa-check"></i>
@@ -47,7 +51,7 @@
 		        </div>
 		    </li>
 		    <li>
-		        <input value="12" type="radio" class="radio" name="business_type" data-parsley-multiple="listing_type" data-parsley-required-message="Please select a business type." data-parsley-errors-container="#errorfield" checked="">
+		        <input value="12" type="radio" class="radio" name="policy_type" data-parsley-multiple="listing_type" data-parsley-required-message="Please select a business type." data-parsley-errors-container="#errorfield" checked="">
 		        <div class="retailer option flex-row col-direction">
 		            <div>
 		                <i class="fa fa-check"></i>
@@ -58,7 +62,7 @@
 		        </div>
 		    </li>
 		    <li>
-		        <input value="13" type="radio" class="radio" name="business_type" data-parsley-multiple="listing_type" data-parsley-required-message="Please select a business type." data-parsley-required data-parsley-errors-container="#errorfield">
+		        <input value="13" type="radio" class="radio" name="policy_type" data-parsley-multiple="listing_type" data-parsley-required-message="Please select a business type." data-parsley-required data-parsley-errors-container="#errorfield">
 		        <div class="manufacturer option flex-row col-direction">
 		            <div>
 		                <i class="fa fa-check"></i>
@@ -69,7 +73,7 @@
 		        </div>
 		    </li>
 		    <li>
-		        <input value="14" type="radio" class="radio" name="business_type" data-parsley-multiple="listing_type" data-parsley-required-message="Please select a business type." data-parsley-errors-container="#errorfield" >
+		        <input value="14" type="radio" class="radio" name="policy_type" data-parsley-multiple="listing_type" data-parsley-required-message="Please select a business type." data-parsley-errors-container="#errorfield" >
 		        <div class="wholesaler option flex-row col-direction">
 		            <div>
 		                <span class="fnb-icons business-icon wholesaler importer">+</span>
@@ -82,25 +86,57 @@
 		    </li>
 		</ul>
 
-		<div class="alert alert-info">
-			<label>Free Cancellation on or before</label> <input type="number" class="cancel-days fnb-input" name="" min="0" value="10"> <label>days</label>
+		<div class="alert alert-aqua create-own-policy hidden">
+			<label>Free Cancellation on or before</label> <input type="number" class="cancel-days blue-bot-bor fnb-input" name="" min="0" value="10"> <label>days</label>
 			<br>
 			<div class="radio-group m-t-15">
 			    <label for="norefund" class="m-r-15">
-			        <input value="" type="radio" class="fnb-radio bg-blue" name="cancellation" id="norefund"
+			        <input value="" type="radio" class="fnb-radio bg-aqua" name="cancellation" id="norefund"
 			        checked="">
 			        <span class="p-l-5 text-medium">No refund if cancelled between 10 days prior to check-in and check-in date.</span>
 			    </label>
 			    <br>
 			    <label for="create" class="m-t-10">
-			        <input value="" type="radio" class="fnb-radio bg-blue" name="cancellation" id="create">
+			        <input value="" type="radio" class="fnb-radio bg-aqua" name="cancellation" id="create">
 			        <span class="p-l-5 text-medium">Create cancellation charges</span>
 			    </label>
+			</div>
+
+			<div class="flex-row m-t-10">
+				<input type="number" class="blue-bot-bor fnb-input m-r-10" name="" min="0" value="" placeholder="Digits Only">
+				<div class="btn-group m-r-10 small" data-toggle="buttons" role="group" aria-label="...">
+					<label class="btn btn-default fnb-btn toggle-btn active">
+			            <input type="radio" name="options1" id="fixed" checked=""> Fixed
+			        </label>
+			        <label class="btn btn-default fnb-btn toggle-btn">
+			            <input type="radio" name="options1" id="option2"> Percentage
+			        </label>
+				</div>
+				 charges applicable on No-Show
+			</div>
+
+			<div class="flex-row m-t-10">
+				<input type="number" class="blue-bot-bor fnb-input m-r-10" name="" min="0" value="" placeholder="Digits Only">
+				<div class="btn-group m-r-10 small" data-toggle="buttons" role="group" aria-label="...">
+					<label class="btn btn-default fnb-btn toggle-btn active">
+			            <input type="radio" name="options1" id="fixed" checked=""> Fixed
+			        </label>
+			        <label class="btn btn-default fnb-btn toggle-btn">
+			            <input type="radio" name="options1" id="option2"> Percentage
+			        </label>
+				</div>
+				 charges applicable if cancelled from <input type="number" class="cancel-days blue-bot-bor fnb-input" name="" min="0" value="24"> to <input type="number" class="cancel-days blue-bot-bor fnb-input" name="" min="0" value="172"> hours from check-in date
+				 <a href="#"><i class="fa fa-plus-square text-secondary m-l-10"></i></a>
+			</div>
+
+			<div class="users-row m-t-40">
+			    <button class="btn fnb-btn secondary-btn full">Save</button>
+			    <button class="btn fnb-btn grey  full">Cancel</button>
 			</div>
 		</div>
 
 
-		<div class="alert alert-info">
+		<div class="alert alert-aqua set-policy">
 			<div class="row flex-row align-end">
 				<div class="col-sm-9">
 					<h6 class="bolder">Create Policy</h6>

@@ -314,4 +314,14 @@ $(".incr-btn").on("click", function (e) {
     e.preventDefault();
 });
 
+$('body').on("change", "input[type=radio][name=policy_type]", function() {
+    if (this.value == '14') {
+        $('.set-policy').addClass('hidden')
+        $('.create-own-policy').removeClass('hidden')
+    } else {
+        $('.set-policy').removeClass('hidden')
+        $('.create-own-policy').addClass('hidden')
+    }
+});
+
 });
