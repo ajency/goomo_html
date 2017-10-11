@@ -5,7 +5,7 @@ draft: false
 layout: rate-plan
 property: "Casa Goa"
 status: "Pending Review"
-url: /details/rate-plan/casa-goa/
+url: /rates-availability/rate-plan/casa-goa/
 slug: "casa-goa/"
 
 propertyinfo:

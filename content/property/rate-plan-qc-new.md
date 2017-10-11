@@ -5,7 +5,7 @@ draft: false
 layout: rate-plan
 property: "Casa Bella"
 status: "In Process"
-url: /details/rate-plan/casa-bella/
+url: /rates-availability/rate-plan/casa-bella/
 slug: "casa-bella/"
 
 mainmenu:

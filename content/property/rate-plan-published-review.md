@@ -5,7 +5,7 @@ draft: false
 layout: rate-plan
 property: "Hotel Eden"
 status: "Active (Pending Review)"
-url: /details/rate-plan/hotel-eden/
+url: /rates-availability/rate-plan/hotel-eden/
 slug: "hotel-eden/"
 
 propertyinfo:

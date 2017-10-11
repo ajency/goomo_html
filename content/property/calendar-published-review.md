@@ -5,14 +5,14 @@ draft: false
 layout: calendar
 property: "Hotel Eden"
 status: "Active (Pending Review)"
-url: /details/calendar/hotel-eden/
+url: /rates-availability/calendar/hotel-eden/
 slug: "hotel-eden/"
 
 propertyinfo:
  done: true
 
 mainmenu:
- details: true
+ ratesavail: true
  calendar: true
 
 ---

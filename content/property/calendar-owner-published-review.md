@@ -5,14 +5,14 @@ draft: false
 layout: calendar
 property: "Hotel Antares"
 status: "Active (Pending Review)"
-url: /details/calendar/hotel-antares/
+url: /rates-availability/calendar/hotel-antares/
 slug: "hotel-antares/"
 
 propertyinfo:
  done: true
 
 mainmenu:
- details: true
+ ratesavail: true
  calendar: true
 
 ---

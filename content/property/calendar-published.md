@@ -5,14 +5,14 @@ draft: false
 layout: calendar
 property: "Casa Britona"
 status: "Active"
-url: /details/calendar/casa-britona/
+url: /rates-availability/calendar/casa-britona/
 slug: "casa-britona/"
 
 propertyinfo:
  done: true
 
 mainmenu:
- details: true
+ ratesavail: true
  calendar: true
 
 ---

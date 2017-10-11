@@ -5,7 +5,7 @@ draft: false
 layout: rate-plan
 property: "Casa Vagator"
 status: "Pending Review"
-url: /details/rate-plan/casa-vagator/
+url: /rates-availability/rate-plan/casa-vagator/
 slug: "casa-vagator/"
 
 propertyinfo:

@@ -5,14 +5,14 @@ draft: false
 layout: calendar
 property: "Casa Anjuna"
 status: "In Process"
-url: /details/calendar/casa-anjuna/
+url: /rates-availability/calendar/casa-anjuna/
 slug: "casa-anjuna/"
 
 propertyinfo:
  done: false
 
 mainmenu:
- details: true
+ ratesavail: true
  calendar: true
 
 ---

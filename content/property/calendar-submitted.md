@@ -5,7 +5,7 @@ draft: false
 layout: calendar
 property: "Riverfront"
 status: "Pending Review"
-url: /details/calendar/riverfront/
+url: /rates-availability/calendar/riverfront/
 slug: "riverfront/"
 
 viewdash: true
@@ -15,7 +15,7 @@ propertyinfo:
 
 
 mainmenu:
- details: true
+ ratesavail: true
  calendar: true
 
 ---

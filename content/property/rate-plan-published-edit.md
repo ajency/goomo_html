@@ -5,7 +5,7 @@ draft: false
 layout: rate-plan
 property: "Panjim Inn"
 status: "Active"
-url: /details/rate-plan/panjim-inn/
+url: /rates-availability/rate-plan/panjim-inn/
 slug: "panjim-inn/"
 
 propertyinfo:

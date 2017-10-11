@@ -5,14 +5,14 @@ draft: false
 layout: calendar
 property: "Casa Colvale"
 status: "In Process"
-url: /details/calendar/casa-colvale/
+url: /rates-availability/calendar/casa-colvale/
 slug: "casa-colvale/"
 
 propertyinfo:
  done: false
 
 mainmenu:
- details: true
+ ratesavail: true
  calendar: true
 
 ---

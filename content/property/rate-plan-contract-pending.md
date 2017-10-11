@@ -5,7 +5,7 @@ draft: false
 layout: rate-plan
 property: "Casa Baga"
 status: "In Process"
-url: /details/rate-plan/casa-baga/
+url: /rates-availability/rate-plan/casa-baga/
 slug: "casa-baga/"
 
 propertyinfo:

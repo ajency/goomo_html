@@ -5,14 +5,14 @@ draft: false
 layout: calendar
 property: "Casa Baga"
 status: "In Process"
-url: /details/calendar/casa-baga/
+url: /rates-availability/calendar/casa-baga/
 slug: "casa-baga/"
 
 propertyinfo:
  done: false
 
 mainmenu:
- details: true
+ ratesavail: true
  calendar: true
 
 ---

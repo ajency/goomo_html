@@ -5,14 +5,14 @@ draft: false
 layout: calendar
 property: "Panjim Inn"
 status: "Active"
-url: /details/calendar/panjim-inn/
+url: /rates-availability/calendar/panjim-inn/
 slug: "panjim-inn/"
 
 propertyinfo:
  done: true
 
 mainmenu:
- details: true
+ ratesavail: true
  calendar: true
 
 ---

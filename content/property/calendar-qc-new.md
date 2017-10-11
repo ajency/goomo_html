@@ -5,11 +5,11 @@ draft: false
 layout: calendar
 property: "Casa Bella"
 status: "In Process"
-url: /details/calendar/casa-bella/
+url: /rates-availability/calendar/casa-bella/
 slug: "casa-bella/"
 
 mainmenu:
- details: true
+ ratesavail: true
  calendar: true
 
 ---

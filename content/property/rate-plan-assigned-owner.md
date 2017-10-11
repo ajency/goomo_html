@@ -5,7 +5,7 @@ draft: false
 layout: rate-plan
 property: "Casa Candolim"
 status: "In Process"
-url: /details/rate-plan/casa-candolim/
+url: /rates-availability/rate-plan/casa-candolim/
 slug: "casa-candolim/"
 
 mainmenu:

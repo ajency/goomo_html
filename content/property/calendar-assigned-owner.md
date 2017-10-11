@@ -5,11 +5,11 @@ draft: false
 layout: calendar
 property: "Casa Candolim"
 status: "In Process"
-url: /details/calendar/casa-candolim/
+url: /rates-availability/calendar/casa-candolim/
 slug: "casa-candolim/"
 
 mainmenu:
- details: true
+ ratesavail: true
  calendar: true
 ---
 

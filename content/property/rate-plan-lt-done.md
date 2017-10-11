@@ -5,7 +5,7 @@ draft: false
 layout: rate-plan
 property: "Casa Colvale"
 status: "In Process"
-url: /details/rate-plan/casa-colvale/
+url: /rates-availability/rate-plan/casa-colvale/
 slug: "casa-colvale/"
 
 propertyinfo:

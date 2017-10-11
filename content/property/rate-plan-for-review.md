@@ -5,7 +5,7 @@ draft: false
 layout: rate-plan
 property: "Casa Amora"
 status: "Pending Review"
-url: /details/rate-plan/casa-amora/
+url: /rates-availability/rate-plan/casa-amora/
 slug: "casa-amora/"
 
 propertyinfo:

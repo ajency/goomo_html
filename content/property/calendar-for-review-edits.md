@@ -5,14 +5,14 @@ draft: false
 layout: calendar
 property: "Casa Vagator"
 status: "Pending Review"
-url: /details/calendar/casa-vagator/
+url: /rates-availability/calendar/casa-vagator/
 slug: "casa-vagator/"
 
 propertyinfo:
  done: false
 
 mainmenu:
- details: true
+ ratesavail: true
  calendar: true
 
 ---

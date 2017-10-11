@@ -5,7 +5,7 @@ draft: false
 layout: rate-plan
 property: "Riverfront"
 status: "Pending Review"
-url: /details/rate-plan/riverfront/
+url: /rates-availability/rate-plan/riverfront/
 slug: "riverfront/"
 
 viewdash: true

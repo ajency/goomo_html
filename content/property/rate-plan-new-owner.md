@@ -5,7 +5,7 @@ draft: false
 layout: rate-plan
 property: "Casa Anjuna"
 status: "In Process"
-url: /details/rate-plan/casa-anjuna/
+url: /rates-availability/rate-plan/casa-anjuna/
 slug: "casa-anjuna/"
 
 propertyinfo:

@@ -5,14 +5,14 @@ draft: false
 layout: calendar
 property: "Casa Amora"
 status: "Pending Review"
-url: /details/calendar/casa-amora/
+url: /rates-availability/calendar/casa-amora/
 slug: "casa-amora/"
 
 propertyinfo:
  done: false
 
 mainmenu:
- details: true
+ ratesavail: true
  calendar: true
 
 ---

@@ -5,7 +5,7 @@ draft: false
 layout: rate-plan
 property: "Hotel Antares"
 status: "Active (Pending Review)"
-url: /details/rate-plan/hotel-antares/
+url: /rates-availability/rate-plan/hotel-antares/
 slug: "hotel-antares/"
 
 propertyinfo:

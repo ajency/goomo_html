@@ -5,7 +5,7 @@ draft: false
 layout: rate-plan
 property: "Casa Britona"
 status: "Active"
-url: /details/rate-plan/casa-britona/
+url: /rates-availability/rate-plan/casa-britona/
 slug: "casa-britona/"
 
 propertyinfo:

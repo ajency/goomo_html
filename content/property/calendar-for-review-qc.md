@@ -5,14 +5,14 @@ draft: false
 layout: calendar
 property: "Casa Goa"
 status: "Pending Review"
-url: /details/calendar/casa-goa/
+url: /rates-availability/calendar/casa-goa/
 slug: "casa-goa/"
 
 propertyinfo:
  done: false
 
 mainmenu:
- details: true
+ ratesavail: true
  calendar: true
 
 ---
