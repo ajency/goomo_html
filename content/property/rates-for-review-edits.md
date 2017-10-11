@@ -1,11 +1,11 @@
 ---
-title: "Rates & Availability"
+title: "Rates"
 date: 2017-09-26T13:44:12+05:30
 draft: false
 layout: rates
 property: "Casa Vagator"
 status: "Pending Review"
-url: /rates/casa-vagator/
+url: /rates-availability/rates/casa-vagator/
 slug: "casa-vagator/"
 
 propertyinfo:
@@ -13,6 +13,7 @@ propertyinfo:
 
 mainmenu:
  rates: true
+ ratesavail: true
 
 ---
 

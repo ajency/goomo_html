@@ -1,11 +1,11 @@
 ---
-title: "Rates & Availability"
+title: "Rates"
 date: 2017-09-27T11:22:04+05:30
 draft: false
 layout: rates
 property: "Casa Britona"
 status: "Active"
-url: /rates/casa-britona/
+url: /rates-availability/rates/casa-britona/
 slug: "casa-britona/"
 
 propertyinfo:
@@ -13,6 +13,7 @@ propertyinfo:
 
 mainmenu:
  rates: true
+ ratesavail: true
 
 ---
 

@@ -1,11 +1,11 @@
 ---
-title: "Rates & Availability"
+title: "Rates"
 date: 2017-09-27T11:22:04+05:30
 draft: false
 layout: rates
 property: "Hotel Eden"
 status: "Active (Pending Review)"
-url: /rates/hotel-eden/
+url: /rates-availability/rates/hotel-eden/
 slug: "hotel-eden/"
 
 propertyinfo:
@@ -13,6 +13,7 @@ propertyinfo:
 
 mainmenu:
  rates: true
+ ratesavail: true
 
 ---
 
