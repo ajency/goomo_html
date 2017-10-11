@@ -1213,6 +1213,11 @@ input[type=radio].fnb-radio.bg-aqua:checked:before {
 .panel-default > .panel-heading a.done:before {
   content: url(/goomo_html/img/green-check-circle.png);
 }
+@media (max-width: 767px) {
+  .panel-default > .panel-heading a.done {
+    font-size: 0.9em;
+  }
+}
 .panel-default > .panel-heading a.na {
   font-size: 0.6em;
   margin-top: 10px;
@@ -1223,6 +1228,11 @@ input[type=radio].fnb-radio.bg-aqua:checked:before {
   border-color: #adadad;
   color: #adadad;
   font-size: 1em;
+}
+@media (max-width: 767px) {
+  .panel-default > .panel-heading a.na {
+    font-size: 0.9em;
+  }
 }
 .panel-default > .panel-heading a.na.collapsed:before {
   font-size: 0.6em;
