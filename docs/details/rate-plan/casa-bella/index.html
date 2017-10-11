@@ -129,13 +129,13 @@
         <a href="#">Calendar</a>
       </li>
       <li class="">
-        <a href="#">Add Inventory</a>
+        <a href="#">Inventory</a>
       </li>
       <li class="">
         <a href="/goomo_html/rates-availability/rates/casa-bella/">Rates</a>
       </li>
-      <li class="">
-        <a href="#">Add Rate Plans</a>
+      <li class="active">
+        <a href="/goomo_html/rates-availability/rate-plan/casa-bella/">Rate Plans</a>
       </li>
     </ul>
   </li>
@@ -503,12 +503,18 @@
 					<div class="rooms-section dsk-separator m-t-20 flex-row">
 						<div class="room-left rooms-col">
 							<div class="room-detail">
-								<h6 class="bolder m-t-0 m-b-5">EP</h6>
+								<h6 class="bolder m-t-0 m-b-5">Rate Plan 1</h6>
 								<p class="text-lighter">Room Types: <span class="text-color">Premier, Grand Deluxe</span></p>
 							</div>
-							<div>
-								<p class="text-lighter m-b-5">Inclusions:</p>
-								<p class="text-color m-b-0">Room Only</p>
+							<div class="flex-row">
+								<div class="m-r-30">
+									<p class="text-lighter m-b-5">Inclusions:</p>
+									<p class="text-color m-b-0">Room Only</p>
+								</div>
+								<div>
+									<p class="text-lighter m-b-5">Validity:</p>
+									<p class="text-color m-b-0">15/10/17 - 24/12/17</p>
+								</div>
 							</div>
 						</div>
 						<div class="room-right rooms-col toggle-work">
@@ -526,12 +532,19 @@
 					<div class="rooms-section dsk-separator m-t-30 flex-row">
 						<div class="room-left rooms-col">
 							<div class="room-detail">
-								<h6 class="bolder m-t-0 m-b-5">CP </h6>
+								<h6 class="bolder m-t-0 m-b-5">Rate Plan 2 </h6>
 								<p class="text-lighter">Room Types: <span class="text-color">Premier, Grand Deluxe</span></p>
 							</div>
-							<div>
-								<p class="text-lighter m-b-5">Inclusions:</p>
-								<p class="text-color m-b-0">Breakfast</p>
+
+							<div class="flex-row">
+								<div class="m-r-30">
+									<p class="text-lighter m-b-5">Inclusions:</p>
+									<p class="text-color m-b-0">Breakfast</p>
+								</div>
+								<div>
+									<p class="text-lighter m-b-5">Validity:</p>
+									<p class="text-color m-b-0">10/10/17 - 10/12/17</p>
+								</div>
 							</div>
 						</div>
 						<div class="room-right rooms-col toggle-work">
@@ -649,14 +662,26 @@
 
                     <div class="row field-gap c-gap">
                         <div class="col-sm-12 form-group m-b-20">
-                            <label class="text-info required">Plan Name </label>
+                            <label class="text-info ">Plan Name </label>
                             <input type="text" class="form-control fnb-input" placeholder="Enter Plan Name">
                         </div>
-                        
+                        <div class="col-sm-12 c-gap form-group m-b-20">
+                            <label class="text-info ">Validity </label>
+                            <div class="row">
+                              <div class="col-sm-6">
+                                From date:
+                                <input type="text" class="from-date form-control fnb-input m-r-10 sub-dates" placeholder="From Date">
+                              </div>
+                              <div class="col-sm-6">
+                                To date:
+                                <input type="text" class="to-date form-control fnb-input m-r-10 sub-dates" placeholder="To Date">
+                              </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="row">
                         <div class="col-sm-12 c-gap form-group m-b-0">
-                            <label class="text-info required">Room Types </label>
+                            <label class="text-info ">Room Types </label>
                         </div>
                         <div class="col-sm-6 c-gap form-group m-b-0 margin-n-b">
                             <div class="amenities-data custom-radio">
@@ -678,11 +703,20 @@
                     <div class="row">
                         
                         <div class="col-sm-6 c-gap form-group m-b-20">
-                            <label class="text-info required">Plan Type</label>
+                            <label class="text-info ">Meal Plan</label>
                             <select class="fnb-select select-variant form-control text-lighter p-l-0" name="">
                                 <option value="">Select Type</option>
-                                <option>Includes Breakfast</option>
+                                <option selected="">Breakfast Included</option>
                                 <option>Includes All Meals</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-6 c-gap form-group m-b-20">
+                            <label class="text-info ">Payment Method</label>
+                            <select class="fnb-select select-variant form-control text-lighter p-l-0" name="">
+                                <option value="">Select Type</option>
+                                <option selected="">Pay Online</option>
+                                <option>Pay at Hotel</option>
+                                <option>Pay online + Pay at Hotel</option>
                             </select>
                         </div>
 
@@ -705,21 +739,27 @@
                       <div class="col-sm-12 c-gap form-group m-b-20">
                         <label class="text-info">Inclusions</label>
                         <div class="flex-row">
-                          <select class="form-control" multiple="">
-                            <option>Buffet Meals</option>
-                            <option>Club Access</option>
-                          </select>
+                          <div>
+                            All Inclusions
+                            <select class="form-control" multiple="">
+                              <option>Buffet Meals</option>
+                              <option>Club Access</option>
+                            </select>
+                          </div>
 
                           <div>
-                            <button class="btn fnb-btn outline m-r-5 m-l-5 m-b-5">></button>
+                            <button class="btn fnb-btn outline m-r-5 m-l-5 m-b-5 m-t-10">></button><br>
                             <button class="btn fnb-btn outline m-r-5 m-l-5">&lt;</button>
                           </div>
 
-                          <select class="form-control" multiple="">
-                            <option>Breakfast</option>
-                            <option>Lunch</option>
-                            <option>Dinner</option>
-                          </select>
+                          <div>
+                            Chosen Inclusions
+                            <select class="form-control" multiple="">
+                              <option>Breakfast</option>
+                              <option>Lunch</option>
+                              <option>Dinner</option>
+                            </select>
+                          </div>
                         </div>
                       </div>
                     </div>
