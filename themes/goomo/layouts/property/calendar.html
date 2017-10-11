@@ -1,0 +1,89 @@
+{{ define "main" }}
+	<div class="">
+
+		<div class="flex-row desk-hide">
+			<div class="back-btn">
+				<a href="/goomo_html/checklist/{{ $.Params.slug }}">
+					<i class="fa fa-chevron-left"></i>
+				</a>
+			</div>
+			<div class="back-title m-l-10 h4 bolder">
+				Back to Property Checklist
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-2">
+				<p class="text-info bolder">From date:</p>
+				<input type="text" class="from-date form-control fnb-input m-r-10 sub-dates" placeholder="From Date">
+			</div>
+			<div class="col-sm-2">
+				<p class="text-info bolder">To date:</p>
+				<input type="text" class="to-date form-control fnb-input m-r-10 sub-dates" placeholder="To Date">
+			</div>
+			<div class="col-sm-2">
+				<button class="btn fnb-btn outline m-t-30">Set Period</button>
+			</div>
+			<div class="col-sm-6">
+				<div class="pull-right">
+					Showing 12 days result
+					<button class="btn fnb-btn outline m-r-5 m-l-5"><</button>
+					<button class="btn fnb-btn outline m-r-5 m-l-5">></button>
+				</div>
+			</div>
+		</div>
+
+		<hr>
+
+		<div class="flex-row space-between flex-wrap">
+			<div>
+				Occupancy:<br>
+				<div class="btn-group m-b-20" data-toggle="buttons" role="group" aria-label="...">
+			  		<label class="btn btn-default fnb-btn toggle-btn ">
+			            <input type="radio" name="policy" id="hotel"> Single
+			        </label>
+			        <label class="btn btn-default fnb-btn toggle-btn active">
+			            <input type="radio" name="policy" id="rateplan" checked=""> Double
+			        </label>
+	        		<label class="btn btn-default fnb-btn toggle-btn ">
+	                  <input type="radio" name="policy" id="triple"> Triple
+	              	</label>
+	        		<label class="btn btn-default fnb-btn toggle-btn ">
+	                  <input type="radio" name="policy" id="adult"> Extra Adult
+	              	</label>
+	        		<label class="btn btn-default fnb-btn toggle-btn ">
+	                  <input type="radio" name="policy" id="child"> Extra Child
+	              	</label>
+				</div>
+			</div>
+
+			<div>
+				Channel:<br>
+				<div class="btn-group m-b-20" data-toggle="buttons" role="group" aria-label="...">
+			        <label class="btn btn-default fnb-btn toggle-btn active">
+			            <input type="radio" name="policy" id="web" checked=""> Web
+			        </label>
+			  		<label class="btn btn-default fnb-btn toggle-btn ">
+			            <input type="radio" name="policy" id="mob"> Mobile
+			        </label>
+	        		<label class="btn btn-default fnb-btn toggle-btn ">
+	                  <input type="radio" name="policy" id="b2b"> B2B
+	              	</label>
+				</div>
+			</div>
+		</div>
+
+		<div class="calendar-holder m-t-30">
+			<img src="{{"img/premier.png" | absURL}}" class="img-responsive">
+		</div>
+
+		<div class="calendar-holder m-t-50">
+			<img src="{{"img/grand.png" | absURL}}" class="img-responsive">
+		</div>
+
+		<p class="small m-t-50">
+			Please note that Goomo.com is a technology platform provider and only facilitates transactions between hotels who list their inventory and customers desirous of making a hotel booking. Goomo charges commission from hotels on their inventory sold via www.goomo.com, and is not responsible for actual provision of hotel services to the customers.
+		</p>
+
+	</div>
+{{ end }}

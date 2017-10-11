@@ -9710,6 +9710,18 @@ i.w-border {
   border-bottom: 2px solid #8ec7c6;
   outline: none;
 }
+.calendar-holder img {
+  width: 100%;
+}
+@media (max-width: 767px) {
+  .calendar-holder {
+    overflow: auto;
+  }
+  .calendar-holder img {
+    width: 990px;
+    max-width: 990px;
+  }
+}
 .profile-stats {
   color: #fff;
   background: #378f9e;

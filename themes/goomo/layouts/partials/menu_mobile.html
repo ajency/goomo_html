@@ -56,7 +56,7 @@
     <a class=" form-toggle" data-toggle="collapse"  href="#property-ratesSubMenuMobile" role="button"><i class="fa fa-money"></i> <span>Rates &amp; Availability</span></a>
     <ul class="gs-steps collapse {{ if $.Params.mainmenu.ratesavail }}in{{end}} edit-mode sub-steps" id="property-ratesSubMenuMobile" role="tablist">
       <li class="{{ if $.Params.mainmenu.calendar }}active{{end}}">
-        <a href="#">Calendar</a>
+        <a href="/goomo_html/rates-availability/calendar/{{ $.Params.slug }}">Calendar</a>
       </li>
       <li class="{{ if $.Params.mainmenu.inventory }}active{{end}}">
         <a href="#">Inventory</a>
