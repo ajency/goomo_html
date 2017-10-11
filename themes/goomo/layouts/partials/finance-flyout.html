@@ -428,6 +428,115 @@
                 </div>
             </div>
 
+        {{ else if $.Params.mainmenu.rateplan }}
+
+           <div class="page-sidebar__header flex-row space-between mobile-hide">
+                <div class="backLink flex-row">
+                    <a href="" class="primary-link p-r-10 element-title article-back"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+                    <div class="sub-title bolder">Add Rate Plan</div>
+                </div>
+                <div class="flex-row users-row">
+                    <button class="btn fnb-btn grey  full">Cancel</button>
+                    <button class="btn fnb-btn secondary-btn full">Save</button>
+                </div>
+            </div>
+
+            <div class="page-sidebar__body">
+                <div class="update-sec sidebar-article user-overflow room-row m-b-30">
+                   <h5 class="bolder m-t-35 prop-title">Rate Plan Details</h5>
+
+                    <div class="row field-gap c-gap">
+                        <div class="col-sm-12 form-group m-b-20">
+                            <label class="text-info required">Plan Name </label>
+                            <input type="text" class="form-control fnb-input" placeholder="Enter Plan Name">
+                        </div>
+                        <!-- <div class="col-sm-12 c-gap form-group m-b-20">
+                            <label class="text-info required">Description </label>
+                            <input type="text" class="form-control fnb-input" placeholder="Enter Description">
+                        </div> -->
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 c-gap form-group m-b-0">
+                            <label class="text-info required">Room Types </label>
+                        </div>
+                        <div class="col-sm-6 c-gap form-group m-b-0 margin-n-b">
+                            <div class="amenities-data custom-radio">
+                                <label for="rom-serv" class="flex-row m-r-10 m-t-5 m-b-15">
+                                    <input value="" type="checkbox" class="fnb-checkbox" name="contract" id="rom-serv">
+                                    <span class="p-l-5 text-medium text-color default-size">Premier Room</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 c-gap form-group m-b-20 margin-n-t">
+                            <div class="amenities-data custom-radio">
+                                <label for="bal" class="flex-row m-r-10 m-t-5 m-b-15">
+                                    <input value="" type="checkbox" class="fnb-checkbox" name="contract" id="bal">
+                                    <span class="p-l-5 text-medium text-color default-size">Grand Deluxe Room</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!-- <div class="col-sm-6 c-gap form-group m-b-20">
+                            <label class="text-info">Rooms Size(Sq. ft.)</label>
+                            <input type="text" class="form-control fnb-input" placeholder="Enter Room size">
+                        </div> -->
+                        <div class="col-sm-6 c-gap form-group m-b-20">
+                            <label class="text-info required">Plan Type</label>
+                            <select class="fnb-select select-variant form-control text-lighter p-l-0" name="">
+                                <option value="">Select Type</option>
+                                <option>Includes Breakfast</option>
+                                <option>Includes All Meals</option>
+                            </select>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4 c-gap form-group m-b-20 toggle-smoking">
+                            <label class="text-info">Tax Included</label>
+                            <div class="verified-toggle m-t-5 flex-row x-small">
+                                <div class="toggle m-r-15">
+                                    <input name="primary_email" type="checkbox" class="toggle__check" checked="" >
+                                    <b class="switch"></b>
+                                    <b class="track"></b>
+                                </div>
+                                <p class="m-b-0 toggle-state active-state bolder m-t-0">Yes</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-sm-12 c-gap form-group m-b-20">
+                        <label class="text-info">Inclusions</label>
+                        <div class="flex-row">
+                          <select class="form-control" multiple="">
+                            <option>Buffet Meals</option>
+                            <option>Club Access</option>
+                          </select>
+
+                          <div>
+                            <button class="btn fnb-btn outline m-r-5 m-l-5 m-b-5">></button>
+                            <button class="btn fnb-btn outline m-r-5 m-l-5"><</button>
+                          </div>
+
+                          <select class="form-control" multiple="">
+                            <option>Breakfast</option>
+                            <option>Lunch</option>
+                            <option>Dinner</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 c-gap form-group flex-row users-row">
+                            <button class="btn fnb-btn secondary-btn full">Save</button>
+                            <button class="btn fnb-btn grey  full">Cancel</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
         {{ else }}
 
             <div class="page-sidebar__header flex-row space-between mobile-hide">

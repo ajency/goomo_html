@@ -19,13 +19,13 @@
         <a href="#">Calendar</a>
       </li>
       <li class="{{ if $.Params.mainmenu.inventory }}active{{end}}">
-        <a href="#">Add Inventory</a>
+        <a href="#">Inventory</a>
       </li>
       <li class="{{ if $.Params.mainmenu.rates }}active{{end}}">
         <a href="/goomo_html/rates-availability/rates/{{ $.Params.slug }}">Rates</a>
       </li>
-      <li class="{{ if $.Params.mainmenu.plans }}active{{end}}">
-        <a href="#">Add Rate Plans</a>
+      <li class="{{ if $.Params.mainmenu.rateplan }}active{{end}}">
+        <a href="/goomo_html/rates-availability/rate-plan/{{ $.Params.slug }}">Rate Plans</a>
       </li>
     </ul>
   </li>
