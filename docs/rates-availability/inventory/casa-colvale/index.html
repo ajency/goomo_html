@@ -509,8 +509,11 @@
 				<p class="text-info bolder">To date:</p>
 				<input type="text" class="to-date form-control fnb-input m-r-10 sub-dates" placeholder="To Date">
 			</div>
-			<div class="col-sm-6">
-				<p class="text-info bolder">Days: <a href="#" class="small text-secondary">Select All</a></p>
+		</div>
+
+		<div class="row m-t-30">
+			<div class="col-sm-12">
+				<p class="text-info bolder">Days of Week: <a href="#" class="small text-secondary">Select All</a></p>
 				<div class="btn-group small" data-toggle="buttons">
 				  <label class="btn btn-default fnb-btn toggle-btn">
 				    <input type="checkbox" autocomplete="off"> Mon
@@ -535,6 +538,21 @@
 				  </label>
 				</div>
 
+				<br><br>
+
+				<label for="none" class="m-r-15">
+				    <input value="" type="radio" class="fnb-radio" name="cancellation" id="none">
+				    <span class="p-l-5 text-medium">None</span>
+				</label>
+				<label for="none" class="m-r-15">
+				    <input value="" type="radio" class="fnb-radio" name="cancellation" id="none">
+				    <span class="p-l-5 text-medium">Block Inventory</span>
+				</label>
+				<label for="none" class="m-r-15">
+				    <input value="" type="radio" class="fnb-radio" name="cancellation" id="none">
+				    <span class="p-l-5 text-medium">Unblock Inventory</span>
+				</label>
+
 				
 			</div>
 		</div>
@@ -542,6 +560,26 @@
 		<div class="row m-t-30">
 			<div class="col-sm-2">
 				<p class="text-info bolder">Available Inventory:</p>
+				<input type="number" class="form-control fnb-input m-r-10 sub-dates" placeholder="No. of Days">
+			</div>
+		</div>
+
+		<div class="row m-t-30">
+			<div class="col-sm-2">
+				<p class="text-info bolder">MLOS:</p>
+				<input type="number" class="form-control fnb-input m-r-10 sub-dates" placeholder="No. of Days">
+			</div>
+			<div class="col-sm-3">
+				<p class="text-info dis-inline bolder">Cutoff:
+				</p>
+				<div class="btn-group small" data-toggle="buttons" role="group" aria-label="..." style="transform: scale(0.9);">
+			  		<label class="btn btn-default fnb-btn toggle-btn ">
+			            <input type="radio" name="policy" id="hotel"> Hours
+			        </label>
+			        <label class="btn btn-default fnb-btn toggle-btn active">
+			            <input type="radio" name="policy" id="rateplan" checked=""> Days
+			        </label>
+				</div>
 				<input type="number" class="form-control fnb-input m-r-10 sub-dates" placeholder="2">
 			</div>
 		</div>
