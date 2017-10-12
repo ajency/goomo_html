@@ -340,6 +340,7 @@ $(document).ready(function() {
 	    }
 	});
 
+
 	  var SideComments = require('side-comments');
 	  window.sideComments = new SideComments('#commentable-area', currentUser, existingComments);
 	  window.sideComments.on('commentPosted', function( comment ) {
