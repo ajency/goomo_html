@@ -140,10 +140,10 @@
         <a href="/goomo_html/rates-availability/calendar/riverfront/">Calendar</a>
       </li>
       <li class="">
-        <a href="/goomo_html/rates-availability/inventory/riverfront/">Inventory</a>
+        <a href="/goomo_html/rates-availability/inventory/riverfront/">Add Inventory</a>
       </li>
       <li class="active">
-        <a href="/goomo_html/rates-availability/rates/riverfront/">Rates</a>
+        <a href="/goomo_html/rates-availability/rates/riverfront/">Add Rates</a>
       </li>
       <li class="">
         <a href="/goomo_html/rates-availability/rate-plan/riverfront/">Rate Plans</a>
@@ -342,10 +342,10 @@
         <a href="/goomo_html/rates-availability/calendar/riverfront/">Calendar</a>
       </li>
       <li class="">
-        <a href="/goomo_html/rates-availability/inventory/riverfront/">Inventory</a>
+        <a href="/goomo_html/rates-availability/inventory/riverfront/">Add Inventory</a>
       </li>
       <li class="active">
-        <a href="/goomo_html/rates-availability/rates/riverfront/">Rates</a>
+        <a href="/goomo_html/rates-availability/rates/riverfront/">Add Rates</a>
       </li>
       <li class="">
         <a href="/goomo_html/rates-availability/rate-plan/riverfront/">Rate Plans</a>
@@ -561,10 +561,14 @@
 		<div class="row m-t-10">
 			<div class="col-sm-4 m-b-20">
 				<p class="text-info bolder">Contract Type:</p>
-				<label for="norefund" class="m-r-15">
-				    <input value="" type="radio" class="fnb-radio" name="cancellation" id="norefund"
+				<label for="b2c" class="m-r-15">
+				    <input value="" type="radio" class="fnb-radio" name="cancellation" id="b2c"
 				    checked="">
 				    <span class="p-l-5 text-medium">B2C</span>
+				</label>
+				<label for="b2b" class="m-r-15">
+				    <input value="" type="radio" class="fnb-radio" name="cancellation" id="b2b">
+				    <span class="p-l-5 text-medium">B2B</span>
 				</label>
 			</div>
 			<div class="col-sm-4">
@@ -590,29 +594,6 @@
 				</div>
 				<div class="col-sm-2">
 					Triple Rate
-				</div>
-			</div>
-			<div class="row m-b-15">
-				<div class="col-sm-2">
-					Declared Rate <i class="fa fa-inr"></i>
-				</div>
-				<div class="col-sm-2">
-					<label class="desk-hide m-b-0 small">
-						Single Rate
-					</label>
-					<input type="number" class="form-control fnb-input m-r-10 sub-dates" placeholder="Single Rate">
-				</div>
-				<div class="col-sm-2">
-					<label class="desk-hide m-b-0 small">
-						Double Rate
-					</label>
-					<input type="number" class="form-control fnb-input m-r-10 sub-dates" placeholder="Double Rate">
-				</div>
-				<div class="col-sm-2">
-					<label class="desk-hide m-b-0 small">
-						Triple Rate
-					</label>
-					<input type="number" class="form-control fnb-input m-r-10 sub-dates" placeholder="Triple Rate">
 				</div>
 			</div>
 			<div class="row m-b-15">
@@ -649,19 +630,19 @@
 					<label class="desk-hide m-b-0 small">
 						Single Rate
 					</label>
-					<input type="number" class="form-control fnb-input m-r-10 sub-dates" placeholder="Single Rate">
+					<input type="number" disabled="" class="form-control fnb-input m-r-10 sub-dates" placeholder="Single Rate">
 				</div>
 				<div class="col-sm-2">
 					<label class="desk-hide m-b-0 small">
 						Double Rate
 					</label>
-					<input type="number" class="form-control fnb-input m-r-10 sub-dates" placeholder="Double Rate">
+					<input type="number" disabled="" class="form-control fnb-input m-r-10 sub-dates" placeholder="Double Rate">
 				</div>
 				<div class="col-sm-2">
 					<label class="desk-hide m-b-0 small">
 						Triple Rate
 					</label>
-					<input type="number" class="form-control fnb-input m-r-10 sub-dates" placeholder="Triple Rate">
+					<input type="number" disabled="" class="form-control fnb-input m-r-10 sub-dates" placeholder="Triple Rate">
 				</div>
 			</div>
 			<div class="row m-b-15">
@@ -672,19 +653,19 @@
 					<label class="desk-hide m-b-0 small">
 						Single Rate GST
 					</label>
-					<input type="number" class="form-control fnb-input m-r-10 sub-dates" placeholder="0">
+					<input type="number" disabled="" class="form-control fnb-input m-r-10 sub-dates" placeholder="0">
 				</div>
 				<div class="col-sm-2">
 					<label class="desk-hide m-b-0 small">
 						Double Rate GST
 					</label>
-					<input type="number" class="form-control fnb-input m-r-10 sub-dates" placeholder="0">
+					<input type="number" disabled="" class="form-control fnb-input m-r-10 sub-dates" placeholder="0">
 				</div>
 				<div class="col-sm-2">
 					<label class="desk-hide m-b-0 small">
 						Triple Rate GST
 					</label>
-					<input type="number" class="form-control fnb-input m-r-10 sub-dates" placeholder="0">
+					<input type="number" disabled="" class="form-control fnb-input m-r-10 sub-dates" placeholder="0">
 				</div>
 			</div>
 		</div>
