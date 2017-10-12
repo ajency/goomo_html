@@ -43,13 +43,13 @@
 
 <ul class="gs-steps" role="tablist">
   <li class="{{ if $.Params.mainmenu.dash }}active{{end}}">
-    <a href="{{ $.Params.slug }}"><i class="fa fa-bars"></i> <span>Dashboard</span></a>
+    <a href="#"><i class="fa fa-bars"></i> <span>Dashboard</span></a>
   </li>
   <li class="{{ if $.Params.mainmenu.booking }}active{{end}}">
-    <a href="{{ $.Params.slug }}"><i class="fa fa-calendar-check-o"></i> <span>Bookings</span></a>
+    <a href="#"><i class="fa fa-calendar-check-o"></i> <span>Bookings</span></a>
   </li>
   <li class="{{ if $.Params.mainmenu.review }}active{{end}}">
-    <a href="{{ $.Params.slug }}"><i class="fa fa-comments-o"></i> <span>Reviews</span></a>
+    <a href="#"><i class="fa fa-comments-o"></i> <span>Reviews</span></a>
   </li>
 
   <li class="{{ if $.Params.mainmenu.ratesavail }}active{{end}}">
@@ -71,7 +71,7 @@
   </li>
 
   <li class="{{ if $.Params.mainmenu.offer }}active{{end}}">
-    <a href="{{ $.Params.slug }}"><i class="fa fa-certificate"></i> <span>Offers</span></a>
+    <a href="#"><i class="fa fa-certificate"></i> <span>Offers</span></a>
   </li>
   <li class="{{ if $.Params.mainmenu.checklist }}active{{end}}">
     <a href="/goomo_html/checklist/{{ $.Params.slug }}"><i class="fa fa-list"></i> <span>Property Checklist</span></a>
@@ -98,7 +98,7 @@
         <a href="/goomo_html/details/contract/{{ $.Params.slug }}">Contract &amp; Finance</a>
       </li>
       <li class="{{ if $.Params.mainmenu.audit }}active{{end}}">
-        <a href="/goomo_html/details/audit/{{ $.Params.slug }}">Audit Logs</a>
+        <a href="#">Audit Logs</a>
       </li>
       <li class="{{ if $.Params.mainmenu.user }}active{{end}}">
         <a href="/goomo_html/details/users/{{ $.Params.slug }}">Users</a>
