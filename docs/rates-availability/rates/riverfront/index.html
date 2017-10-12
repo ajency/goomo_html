@@ -13,6 +13,8 @@
 		<link rel="stylesheet" href="https://ajency.github.io/goomo_html/css/bootstrap.min.css">
 		<link rel="stylesheet" href="https://ajency.github.io/goomo_html/css/jquery.flexdatalist.min.css">
 		<link rel="stylesheet" href="https://ajency.github.io/goomo_html/js/bootstrap-daterangepicker/daterangepicker.css">
+		<link rel="stylesheet" href="https://ajency.github.io/goomo_html/css/side-comments.css">
+		<link rel="stylesheet" href="https://ajency.github.io/goomo_html/css/default-theme.css">
 		<link href="https://ajency.github.io/goomo_html/css/main.css" rel="stylesheet">
 	</head>
 	<body class="overflow-section">
@@ -278,7 +280,7 @@
 
 
 			
-			<div class="container-fluid jobs-container">
+			<div class="container-fluid jobs-container commentable-container" id="commentable-area">
 					<div class="row">
 							<div class="col-xs-12 content-wrapper edit-mode ">
 
@@ -478,6 +480,7 @@
 																		<a href="https://www.goomo.com/hotels/detail/Hotel-Windsor-Bay-389069?checkin_date=2017-09-28&checkout_date=2017-09-29&hotel_id=389069&locality_id&location_id=12550&place_name=Goa%2C%20India&rooms=%5B%7B%22adults_count%22%3A1%2C%22children_age%22%3A%5B%5D%7D%5D" class="preview-header__link white btn fnb-btn white-border mini mobile-hide" target="_blank"> View Property on Goomo.com</a>
 																	</div>
 
+																	<div class="commentable-section" data-section-id="1">
 																	
 	<div class="">
 		<div class="flex-row desk-hide">
@@ -532,7 +535,7 @@
 		</div>
 
 		<div class="row m-t-30">
-			<div class="col-sm-4">
+			<div class="col-sm-4 m-b-20">
 				<p class="text-info bolder">Room Type:</p>
 				<select class="fnb-select select-variant form-control p-l-0" name="">
 				    <option value="">Select Room Type</option>
@@ -540,7 +543,7 @@
 				    <option>Grand Deluxe Room</option>
 				</select>
 			</div>
-			<div class="col-sm-4">
+			<div class="col-sm-4 m-b-20">
 				<p class="text-info bolder">Rate Plan:</p>
 				<select class="fnb-select select-variant form-control  p-l-0" name="">
 				    <option value="">Select Rate Plan</option>
@@ -550,8 +553,8 @@
 			</div>
 		</div>
 
-		<div class="row m-t-30">
-			<div class="col-sm-4">
+		<div class="row m-t-10">
+			<div class="col-sm-4 m-b-20">
 				<p class="text-info bolder">Contract Type:</p>
 				<label for="norefund" class="m-r-15">
 				    <input value="" type="radio" class="fnb-radio" name="cancellation" id="norefund"
@@ -570,7 +573,7 @@
 		</div>
 
 		<div class="m-t-50">
-			<div class="row m-b-15">
+			<div class="row m-b-15 mobile-hide">
 				<div class="col-sm-2">
 					<div></div>
 				</div>
@@ -589,12 +592,21 @@
 					Declared Rate <i class="fa fa-inr"></i>
 				</div>
 				<div class="col-sm-2">
+					<label class="desk-hide m-b-0 small">
+						Single Rate
+					</label>
 					<input type="number" class="form-control fnb-input m-r-10 sub-dates" placeholder="Single Rate">
 				</div>
 				<div class="col-sm-2">
+					<label class="desk-hide m-b-0 small">
+						Double Rate
+					</label>
 					<input type="number" class="form-control fnb-input m-r-10 sub-dates" placeholder="Double Rate">
 				</div>
 				<div class="col-sm-2">
+					<label class="desk-hide m-b-0 small">
+						Triple Rate
+					</label>
 					<input type="number" class="form-control fnb-input m-r-10 sub-dates" placeholder="Triple Rate">
 				</div>
 			</div>
@@ -603,12 +615,21 @@
 					Sell Rate <i class="fa fa-inr"></i>
 				</div>
 				<div class="col-sm-2">
+					<label class="desk-hide m-b-0 small">
+						Single Rate
+					</label>
 					<input type="number" class="form-control fnb-input m-r-10 sub-dates" placeholder="Single Rate">
 				</div>
 				<div class="col-sm-2">
+					<label class="desk-hide m-b-0 small">
+						Double Rate
+					</label>
 					<input type="number" class="form-control fnb-input m-r-10 sub-dates" placeholder="Double Rate">
 				</div>
 				<div class="col-sm-2">
+					<label class="desk-hide m-b-0 small">
+						Triple Rate
+					</label>
 					<input type="number" class="form-control fnb-input m-r-10 sub-dates" placeholder="Triple Rate">
 				</div>
 				<div class="col-sm-2">
@@ -620,12 +641,21 @@
 					Net Rate <i class="fa fa-inr"></i>
 				</div>
 				<div class="col-sm-2">
+					<label class="desk-hide m-b-0 small">
+						Single Rate
+					</label>
 					<input type="number" class="form-control fnb-input m-r-10 sub-dates" placeholder="Single Rate">
 				</div>
 				<div class="col-sm-2">
+					<label class="desk-hide m-b-0 small">
+						Double Rate
+					</label>
 					<input type="number" class="form-control fnb-input m-r-10 sub-dates" placeholder="Double Rate">
 				</div>
 				<div class="col-sm-2">
+					<label class="desk-hide m-b-0 small">
+						Triple Rate
+					</label>
 					<input type="number" class="form-control fnb-input m-r-10 sub-dates" placeholder="Triple Rate">
 				</div>
 			</div>
@@ -634,19 +664,28 @@
 					GST <i class="fa fa-percent"></i>
 				</div>
 				<div class="col-sm-2">
+					<label class="desk-hide m-b-0 small">
+						Single Rate GST
+					</label>
 					<input type="number" class="form-control fnb-input m-r-10 sub-dates" placeholder="0">
 				</div>
 				<div class="col-sm-2">
+					<label class="desk-hide m-b-0 small">
+						Double Rate GST
+					</label>
 					<input type="number" class="form-control fnb-input m-r-10 sub-dates" placeholder="0">
 				</div>
 				<div class="col-sm-2">
+					<label class="desk-hide m-b-0 small">
+						Triple Rate GST
+					</label>
 					<input type="number" class="form-control fnb-input m-r-10 sub-dates" placeholder="0">
 				</div>
 			</div>
 		</div>
 
 		<div class="m-t-50">
-			<div class="row m-b-15">
+			<div class="row m-b-15 mobile-hide">
 
 				<div class="col-sm-3">
 					Extra Adult Charges
@@ -663,18 +702,27 @@
 			<div class="row m-b-15">
 
 				<div class="col-sm-3">
+					<label class="desk-hide m-b-0 small">
+						Extra Adult Charges
+					</label>
 					<input type="number" class="form-control fnb-input m-r-10 sub-dates" placeholder="Extra Adult">
 				</div>
 				<div class="col-sm-3">
+					<label class="desk-hide m-b-0 small">
+						Extra Child Charges (age range 5-18 yrs)
+					</label>
 					<input type="number" class="form-control fnb-input m-r-10 sub-dates" placeholder="Extra Child">
 				</div>
 				<div class="col-sm-3">
+					<label class="desk-hide m-b-0 small">
+						Infant Charges if any (age below 5 years)
+					</label>
 					<input type="number" class="form-control fnb-input m-r-10 sub-dates" placeholder="Extra Infant">
 				</div>
 			</div>
 		</div>
 		<div class="m-t-30">
-			<div class="row m-b-15">
+			<div class="row m-b-15 mobile-hide">
 
 				<div class="col-sm-3">
 					Net Extra Adult Charges
@@ -691,12 +739,21 @@
 			<div class="row m-b-15">
 
 				<div class="col-sm-3">
+					<label class="desk-hide m-b-0 small">
+						Net Extra Adult Charges
+					</label>
 					<input type="number" class="form-control fnb-input m-r-10 sub-dates" placeholder="Extra Adult">
 				</div>
 				<div class="col-sm-3">
+					<label class="desk-hide m-b-0 small">
+						Net Extra Child Charges (age range 5-18 yrs)
+					</label>
 					<input type="number" class="form-control fnb-input m-r-10 sub-dates" placeholder="Extra Child">
 				</div>
 				<div class="col-sm-3">
+					<label class="desk-hide m-b-0 small">
+						Net Infant Charges if any (age below 5 years)
+					</label>
 					<input type="number" class="form-control fnb-input m-r-10 sub-dates" placeholder="Extra Infant">
 				</div>
 			</div>
@@ -708,6 +765,8 @@
 
 	</div>
 
+
+																	</div>
 
 
 																</div>
@@ -815,6 +874,7 @@
 
 		
 		<script type="text/javascript" src="/goomo_html/js/readmore.min.js"></script>
+		<script type="text/javascript" src="/goomo_html/js/side-comments.js"></script>
 
 		<script type="text/javascript" src="/goomo_html/js/custom.js"></script>
 	</body>

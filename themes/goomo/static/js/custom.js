@@ -67,7 +67,7 @@ $(document).ready(function() {
 	});
 
 
-var internal = $('#internal-table').DataTable({
+	var internal = $('#internal-table').DataTable({
 		"columnDefs": [{
                 "targets": 'no-sort',
                 "orderable": false
@@ -237,107 +237,117 @@ var internal = $('#internal-table').DataTable({
 	});
 
 
-$('.contact-info').on('click', '.add-another', function(e) {
-  var contact_group, contact_group_clone, input;
-  e.preventDefault();
-  contact_group = $(this).closest('.business-contact').find('.contact-group');
-  contact_group_clone = contact_group.clone();
-  contact_group_clone.removeClass('contact-group hidden');
-  input = contact_group_clone.find('.fnb-input');
-  contact_group_clone.insertBefore(contact_group);
+	$('.contact-info').on('click', '.add-another', function(e) {
+	  var contact_group, contact_group_clone, input;
+	  e.preventDefault();
+	  contact_group = $(this).closest('.business-contact').find('.contact-group');
+	  contact_group_clone = contact_group.clone();
+	  contact_group_clone.removeClass('contact-group hidden');
+	  input = contact_group_clone.find('.fnb-input');
+	  contact_group_clone.insertBefore(contact_group);
 
-});
+	});
 
 
-$('body').on('click', '.removeRow', function() {
-  return $(this).closest('.contact-container').remove();
-});
+	$('body').on('click', '.removeRow', function() {
+	  return $(this).closest('.contact-container').remove();
+	});
 
-$(document).on('change', '.business-contact .toggle__check', function() {
-  if ($(this).is(':checked')) {
-    $(this).closest('.toggle').siblings('.toggle-state').text('Visible on the property');
-  } else {
-    $(this).closest('.toggle').siblings('.toggle-state').text('Not visible on the property');
-  }
-});
+	$(document).on('change', '.business-contact .toggle__check', function() {
+	  if ($(this).is(':checked')) {
+	    $(this).closest('.toggle').siblings('.toggle-state').text('Visible on the property');
+	  } else {
+	    $(this).closest('.toggle').siblings('.toggle-state').text('Not visible on the property');
+	  }
+	});
 
-$(document).on('change', '.toggle-work .toggle__check', function() {
-  if ($(this).is(':checked')) {
-    $(this).closest('.toggle').siblings('.toggle-state').text('Active');
-    $(this).closest('.toggle').siblings('.toggle-state').addClass('active-state');
-  } else {
-    $(this).closest('.toggle').siblings('.toggle-state').text('Inactive');
-    $(this).closest('.toggle').siblings('.toggle-state').removeClass('active-state');
-  }
-});
+	$(document).on('change', '.toggle-work .toggle__check', function() {
+	  if ($(this).is(':checked')) {
+	    $(this).closest('.toggle').siblings('.toggle-state').text('Active');
+	    $(this).closest('.toggle').siblings('.toggle-state').addClass('active-state');
+	  } else {
+	    $(this).closest('.toggle').siblings('.toggle-state').text('Inactive');
+	    $(this).closest('.toggle').siblings('.toggle-state').removeClass('active-state');
+	  }
+	});
 
-$(document).on('change', '.toggle-smoking .toggle__check', function() {
-  if ($(this).is(':checked')) {
-    $(this).closest('.toggle').siblings('.toggle-state').text('Yes');
-    $(this).closest('.toggle').siblings('.toggle-state').addClass('active-state');
-  } else {
-    $(this).closest('.toggle').siblings('.toggle-state').text('No');
-    $(this).closest('.toggle').siblings('.toggle-state').removeClass('active-state');
-  }
-});
+	$(document).on('change', '.toggle-smoking .toggle__check', function() {
+	  if ($(this).is(':checked')) {
+	    $(this).closest('.toggle').siblings('.toggle-state').text('Yes');
+	    $(this).closest('.toggle').siblings('.toggle-state').addClass('active-state');
+	  } else {
+	    $(this).closest('.toggle').siblings('.toggle-state').text('No');
+	    $(this).closest('.toggle').siblings('.toggle-state').removeClass('active-state');
+	  }
+	});
 
-$(document).on('click', '.desc-btn', function() {
-	$(this).addClass('hidden');
-	$('.desc-warning').removeClass('hidden');
-});
-$(document).on('click', '.desc-warning button', function() {
-	$('.desc-btn').removeClass('hidden');
-	$('.desc-warning').addClass('hidden');
-});
+	$(document).on('click', '.desc-btn', function() {
+		$(this).addClass('hidden');
+		$('.desc-warning').removeClass('hidden');
+	});
+	$(document).on('click', '.desc-warning button', function() {
+		$('.desc-btn').removeClass('hidden');
+		$('.desc-warning').addClass('hidden');
+	});
 
-$(document).on('click', '.add-policy-btn', function() {
-	// $(this).addClass('hidden');
-	$('.add-policy-wrap').removeClass('hidden');
-});
-$(document).on('click', '.cancel-wrap', function() {
-	// $(this).addClass('hidden');
-	$('.add-policy-wrap').addClass('hidden');
-});
+	$(document).on('click', '.add-policy-btn', function() {
+		// $(this).addClass('hidden');
+		$('.add-policy-wrap').removeClass('hidden');
+	});
+	$(document).on('click', '.cancel-wrap', function() {
+		// $(this).addClass('hidden');
+		$('.add-policy-wrap').addClass('hidden');
+	});
 
-$('.from-date,.to-date').daterangepicker({
-	singleDatePicker: true
-});
+	$('.from-date,.to-date').daterangepicker({
+		singleDatePicker: true
+	});
 
-$(".incr-btn").on("click", function (e) {
-    var $button = $(this);
-    var oldValue = $button.parent().find('.quantity').val();
-    $button.parent().find('.incr-btn[data-action="decrease"]').removeClass('inactive');
-    if ($button.data('action') == "increase") {
-        var newVal = parseFloat(oldValue) + 1;
-    } else {
-        // Don't allow decrementing below 1
-        if (oldValue > 1) {
-            var newVal = parseFloat(oldValue) - 1;
-        } else {
-            newVal = 1;
-            $button.addClass('inactive');
-        }
-    }
-    $button.parent().find('.quantity').val(newVal);
-    e.preventDefault();
-});
+	$(".incr-btn").on("click", function (e) {
+	    var $button = $(this);
+	    var oldValue = $button.parent().find('.quantity').val();
+	    $button.parent().find('.incr-btn[data-action="decrease"]').removeClass('inactive');
+	    if ($button.data('action') == "increase") {
+	        var newVal = parseFloat(oldValue) + 1;
+	    } else {
+	        // Don't allow decrementing below 1
+	        if (oldValue > 1) {
+	            var newVal = parseFloat(oldValue) - 1;
+	        } else {
+	            newVal = 1;
+	            $button.addClass('inactive');
+	        }
+	    }
+	    $button.parent().find('.quantity').val(newVal);
+	    e.preventDefault();
+	});
 
-$('body').on("change", "input[type=radio][name=policy_type]", function() {
-    if (this.value == '14') {
-        $('.set-policy').addClass('hidden')
-        $('.create-own-policy').removeClass('hidden')
-    } else {
-        $('.set-policy').removeClass('hidden')
-        $('.create-own-policy').addClass('hidden')
-    }
-});
+	$('body').on("change", "input[type=radio][name=policy_type]", function() {
+	    if (this.value == '14') {
+	        $('.set-policy').addClass('hidden')
+	        $('.create-own-policy').removeClass('hidden')
+	    } else {
+	        $('.set-policy').removeClass('hidden')
+	        $('.create-own-policy').addClass('hidden')
+	    }
+	});
 
-$('body').on("change", "input[type=radio][name=policy]", function() {
-    if (this.value == 'rateplan') {
-        $('.rateplan-wrap').removeClass('hidden')
-    } else {
-        $('.rateplan-wrap').addClass('hidden')
-    }
-});
+	$('body').on("change", "input[type=radio][name=policy]", function() {
+	    if (this.value == 'rateplan') {
+	        $('.rateplan-wrap').removeClass('hidden')
+	    } else {
+	        $('.rateplan-wrap').addClass('hidden')
+	    }
+	});
+
+	  var SideComments = require('side-comments');
+	  window.sideComments = new SideComments('#commentable-area', currentUser, existingComments);
+	  window.sideComments.on('commentPosted', function( comment ) {
+	    comment.id = parseInt(Math.random() * (100000 - 1) + 1);
+	    sideComments.insertComment(comment);
+	  });
+	  window.sideComments.on('commentDeleted', function( comment ) {
+	    sideComments.removeComment(comment.sectionId, comment.id);
+	  });
 
 });

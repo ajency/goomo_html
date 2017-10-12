@@ -9722,6 +9722,13 @@ i.w-border {
     max-width: 990px;
   }
 }
+.author-avatar,
+.add-comment {
+  display: none !important;
+}
+.side-comment .right-of-avatar {
+  width: auto;
+}
 .profile-stats {
   color: #fff;
   background: #378f9e;

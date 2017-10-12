@@ -13,6 +13,8 @@
 		<link rel="stylesheet" href="https://ajency.github.io/goomo_html/css/bootstrap.min.css">
 		<link rel="stylesheet" href="https://ajency.github.io/goomo_html/css/jquery.flexdatalist.min.css">
 		<link rel="stylesheet" href="https://ajency.github.io/goomo_html/js/bootstrap-daterangepicker/daterangepicker.css">
+		<link rel="stylesheet" href="https://ajency.github.io/goomo_html/css/side-comments.css">
+		<link rel="stylesheet" href="https://ajency.github.io/goomo_html/css/default-theme.css">
 		<link href="https://ajency.github.io/goomo_html/css/main.css" rel="stylesheet">
 	</head>
 	<body class="overflow-section">
@@ -274,7 +276,7 @@
 
 
 			
-			<div class="container-fluid jobs-container">
+			<div class="container-fluid jobs-container commentable-container" id="commentable-area">
 					<div class="row">
 							<div class="col-xs-12 content-wrapper edit-mode ">
 
@@ -474,8 +476,9 @@
 																		<a href="https://www.goomo.com/hotels/detail/Hotel-Windsor-Bay-389069?checkin_date=2017-09-28&checkout_date=2017-09-29&hotel_id=389069&locality_id&location_id=12550&place_name=Goa%2C%20India&rooms=%5B%7B%22adults_count%22%3A1%2C%22children_age%22%3A%5B%5D%7D%5D" class="preview-header__link white btn fnb-btn white-border mini mobile-hide" target="_blank"> View Property on Goomo.com</a>
 																	</div>
 
+																	<div class="commentable-section" data-section-id="1">
 																	
-	<div class="">
+	<div >
 		<div class="flex-row desk-hide">
 			<div class="back-btn">
 				<a href="/goomo_html/checklist/casa-bella/">
@@ -489,7 +492,7 @@
 
 		<h6 class="m-b-20">Bulk Update Inventory</h6>
 
-		<div class="row m-t-30">
+		<div class="row m-t-30 ">
 			<div class="col-sm-4">
 				<p class="text-info bolder">Room Type:</p>
 				<select class="fnb-select select-variant form-control p-l-0" name="">
@@ -590,6 +593,23 @@
 
 	</div>
 
+	<script type="text/javascript">
+		var existingComments = [
+		  {
+		    "sectionId": "1",
+		    "comments": [
+		      {
+		        "comment": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. "
+		      }
+		    ]
+		  }
+		];
+
+		var currentUser
+	</script>
+
+
+																	</div>
 
 
 																</div>
@@ -697,6 +717,7 @@
 
 		
 		<script type="text/javascript" src="/goomo_html/js/readmore.min.js"></script>
+		<script type="text/javascript" src="/goomo_html/js/side-comments.js"></script>
 
 		<script type="text/javascript" src="/goomo_html/js/custom.js"></script>
 	</body>
