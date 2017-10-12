@@ -491,22 +491,30 @@
 		<h6 class="">Choose which options you want for your policy. Once it's been created, you'll be able to assign it to the rooms it applies to.</h6>
 
 		<div class="row m-t-30">
-			<div class="col-sm-4">
+			<div class="col-sm-3">
 				<h6 class="text-info bolder">Policy level associated with</h6>
 				<div class="btn-group" data-toggle="buttons" role="group" aria-label="...">
 			  		<label class="btn btn-default fnb-btn toggle-btn active">
 			            <input type="radio" name="policy" id="hotel" checked=""> Hotel
 			        </label>
 			        <label class="btn btn-default fnb-btn toggle-btn">
-			            <input type="radio" name="policy" id="rateplan"> Rate plan
+			            <input type="radio" name="policy" id="rateplan" value="rateplan"> Rate plan
 			        </label>
 				</div>
 			</div>
-			<div class="col-sm-4">
+			<div class="col-sm-3 rateplan-wrap hidden">
+				<h6 class="text-info bolder">Rate Plan:</h6>
+				<select class="fnb-select select-variant form-control  p-l-0" name="">
+				    <option value="">Select Rate Plan</option>
+				    <option selected="">Rate Plan 1</option>
+				    <option>Rate Plan 2</option>
+				</select>
+			</div>
+			<div class="col-sm-3">
 				<h6 class="text-info bolder">From date:</h6>
 				<input type="text" class="from-date form-control fnb-input m-r-10 sub-dates" placeholder="From Date">
 			</div>
-			<div class="col-sm-4">
+			<div class="col-sm-3">
 				<h6 class="text-info bolder">To date:</h6>
 				<input type="text" class="to-date form-control fnb-input m-r-10 sub-dates" placeholder="To Date">
 			</div>
@@ -577,7 +585,7 @@
 			    </label>
 			</div>
 
-			<div class="flex-row m-t-10">
+			<div class="flex-row flex-wrap m-t-10">
 				<input type="number" class="blue-bot-bor fnb-input m-r-10" name="" min="0" value="" placeholder="Digits Only">
 				<div class="btn-group m-r-10 small" data-toggle="buttons" role="group" aria-label="...">
 					<label class="btn btn-default fnb-btn toggle-btn active">
@@ -590,7 +598,7 @@
 				 charges applicable on No-Show
 			</div>
 
-			<div class="flex-row m-t-10">
+			<div class="flex-row flex-wrap m-t-10">
 				<input type="number" class="blue-bot-bor fnb-input m-r-10" name="" min="0" value="" placeholder="Digits Only">
 				<div class="btn-group m-r-10 small" data-toggle="buttons" role="group" aria-label="...">
 					<label class="btn btn-default fnb-btn toggle-btn active">
@@ -612,7 +620,7 @@
 
 
 		<div class="alert alert-aqua set-policy">
-			<div class="row flex-row align-end">
+			<div class="row flex-row flex-wrap align-end">
 				<div class="col-sm-9">
 					<h6 class="bolder">Create Policy</h6>
 					<p>

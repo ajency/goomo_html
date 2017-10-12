@@ -290,6 +290,14 @@ $(document).on('click', '.desc-warning button', function() {
 	$('.desc-warning').addClass('hidden');
 });
 
+$(document).on('click', '.add-policy-btn', function() {
+	// $(this).addClass('hidden');
+	$('.add-policy-wrap').removeClass('hidden');
+});
+$(document).on('click', '.cancel-wrap', function() {
+	// $(this).addClass('hidden');
+	$('.add-policy-wrap').addClass('hidden');
+});
 
 $('.from-date,.to-date').daterangepicker({
 	singleDatePicker: true
@@ -321,6 +329,14 @@ $('body').on("change", "input[type=radio][name=policy_type]", function() {
     } else {
         $('.set-policy').removeClass('hidden')
         $('.create-own-policy').addClass('hidden')
+    }
+});
+
+$('body').on("change", "input[type=radio][name=policy]", function() {
+    if (this.value == 'rateplan') {
+        $('.rateplan-wrap').removeClass('hidden')
+    } else {
+        $('.rateplan-wrap').addClass('hidden')
     }
 });
 
