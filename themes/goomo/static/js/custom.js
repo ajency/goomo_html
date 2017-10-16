@@ -351,4 +351,11 @@ $(document).ready(function() {
 	    sideComments.removeComment(comment.sectionId, comment.id);
 	  });
 
+	$('.tooltipster').tooltipster({
+		theme: 'tooltipster-borderless',
+		contentCloning: true,
+		side: 'bottom',
+		interactive: true
+	});
+
 });

@@ -9838,6 +9838,12 @@ i.w-border {
 .calender-legend .text-muted {
   color: #afafaf;
 }
+.tooltip_templates {
+  display: none;
+}
+.tooltipster-sidetip.tooltipster-borderless .tooltipster-box {
+  background-color: #000;
+}
 .author-avatar,
 .add-comment {
   display: none !important;

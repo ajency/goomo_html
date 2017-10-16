@@ -15,6 +15,8 @@
 		<link rel="stylesheet" href="https://ajency.github.io/goomo_html/js/bootstrap-daterangepicker/daterangepicker.css">
 		<link rel="stylesheet" href="https://ajency.github.io/goomo_html/css/side-comments.css">
 		<link rel="stylesheet" href="https://ajency.github.io/goomo_html/css/default-theme.css">
+		<link rel="stylesheet" href="https://ajency.github.io/goomo_html/css/tooltipster.bundle.css">
+		<link rel="stylesheet" href="https://ajency.github.io/goomo_html/css/tooltipster-sideTip-borderless.min.css">
 		<link href="https://ajency.github.io/goomo_html/css/main.css" rel="stylesheet">
 
 		<script type="text/javascript">
@@ -563,6 +565,25 @@
 			</div>
 		</div>
 
+		<div class="tooltip_templates">
+		    <span id="tooltip_content">
+		    	<div class="flex-row space-between m-b-10 m-t-5">
+			    	<div>
+			    		Rate Type: Sell Rate
+			    	</div>
+			    	<a href="#" class="text-secondary"><i class="fa fa-pencil"></i> Edit</a>
+		    	</div>
+		        <img src="https://ajency.github.io/goomo_html/img/rate_table.png">
+		    </span>
+
+		    <span id="inventory_content">
+		        <img src="https://ajency.github.io/goomo_html/img/inventory_table.png">
+		    	<div class="text-center m-t-5">
+			    	<a href="#" class="text-secondary"><i class="fa fa-pencil"></i> Edit</a>
+		    	</div>
+		    </span>
+		</div>
+
 		<div class="calendar-holder m-t-30 flex-row">
 			<div class="cal-left-col">
 				<div class="left-header">
@@ -587,17 +608,17 @@
 						<div class="sd-date">05</div>
 					</div>
 					<div class="sd-inventory">
-						<div class="sd-inventory_count">
+						<div class="sd-inventory_count tooltipster" data-tooltip-content="#inventory_content">
 							09
 						</div>
 						<div class="sd-block">
 							Block
 						</div>
 					</div>
-					<div class="sd-rate">
+					<div class="sd-rate tooltipster" data-tooltip-content="#tooltip_content">
 						<i class="fa fa-inr"></i> 3400
 					</div>
-					<div class="sd-rate">
+					<div class="sd-rate tooltipster" data-tooltip-content="#tooltip_content">
 						<i class="fa fa-inr"></i> 3400 <span class="text-danger plan-restrict">*</span>
 					</div>
 				</div>
@@ -608,17 +629,17 @@
 						<div class="sd-date">06</div>
 					</div>
 					<div class="sd-inventory">
-						<div class="sd-inventory_count low">
+						<div class="sd-inventory_count low tooltipster" data-tooltip-content="#inventory_content">
 							02
 						</div>
 						<div class="sd-block">
 							Block
 						</div>
 					</div>
-					<div class="sd-rate">
+					<div class="sd-rate tooltipster" data-tooltip-content="#tooltip_content">
 						<i class="fa fa-inr"></i> 3400
 					</div>
-					<div class="sd-rate">
+					<div class="sd-rate tooltipster" data-tooltip-content="#tooltip_content">
 						<i class="fa fa-inr"></i> 3400
 					</div>
 				</div>
@@ -629,17 +650,17 @@
 						<div class="sd-date">07</div>
 					</div>
 					<div class="sd-inventory">
-						<div class="sd-inventory_count">
+						<div class="sd-inventory_count tooltipster" data-tooltip-content="#inventory_content">
 							09
 						</div>
 						<div class="sd-block">
 							Block
 						</div>
 					</div>
-					<div class="sd-rate">
+					<div class="sd-rate tooltipster" data-tooltip-content="#tooltip_content">
 						<i class="fa fa-inr"></i> 3400
 					</div>
-					<div class="sd-rate">
+					<div class="sd-rate tooltipster" data-tooltip-content="#tooltip_content">
 						<i class="fa fa-inr"></i> 3400
 					</div>
 				</div>
@@ -650,17 +671,17 @@
 						<div class="sd-date">08</div>
 					</div>
 					<div class="sd-inventory">
-						<div class="sd-inventory_count">
+						<div class="sd-inventory_count tooltipster" data-tooltip-content="#inventory_content">
 							09
 						</div>
 						<div class="sd-block">
 							Block
 						</div>
 					</div>
-					<div class="sd-rate">
+					<div class="sd-rate tooltipster" data-tooltip-content="#tooltip_content">
 						<i class="fa fa-inr"></i> 3400
 					</div>
-					<div class="sd-rate">
+					<div class="sd-rate tooltipster" data-tooltip-content="#tooltip_content">
 						<i class="fa fa-inr"></i> 3400
 					</div>
 				</div>
@@ -671,17 +692,17 @@
 						<div class="sd-date">09</div>
 					</div>
 					<div class="sd-inventory">
-						<div class="sd-inventory_count">
+						<div class="sd-inventory_count tooltipster" data-tooltip-content="#inventory_content">
 							09
 						</div>
 						<div class="sd-block">
 							Block
 						</div>
 					</div>
-					<div class="sd-rate">
+					<div class="sd-rate tooltipster" data-tooltip-content="#tooltip_content">
 						<i class="fa fa-inr"></i> 3400
 					</div>
-					<div class="sd-rate">
+					<div class="sd-rate tooltipster" data-tooltip-content="#tooltip_content">
 						<i class="fa fa-inr"></i> 3400
 					</div>
 				</div>
@@ -692,17 +713,17 @@
 						<div class="sd-date">10</div>
 					</div>
 					<div class="sd-inventory">
-						<div class="sd-inventory_count">
+						<div class="sd-inventory_count tooltipster" data-tooltip-content="#inventory_content">
 							09
 						</div>
 						<div class="sd-block text-secondary">
 							Unblock
 						</div>
 					</div>
-					<div class="sd-rate">
+					<div class="sd-rate tooltipster" data-tooltip-content="#tooltip_content">
 						<i class="fa fa-inr"></i> 3400
 					</div>
-					<div class="sd-rate">
+					<div class="sd-rate tooltipster" data-tooltip-content="#tooltip_content">
 						<i class="fa fa-inr"></i> 3400
 					</div>
 				</div>
@@ -713,17 +734,17 @@
 						<div class="sd-date">11</div>
 					</div>
 					<div class="sd-inventory">
-						<div class="sd-inventory_count">
+						<div class="sd-inventory_count tooltipster" data-tooltip-content="#inventory_content">
 							09
 						</div>
 						<div class="sd-block">
 							Block
 						</div>
 					</div>
-					<div class="sd-rate">
+					<div class="sd-rate tooltipster" data-tooltip-content="#tooltip_content">
 						<i class="fa fa-inr"></i> 3400
 					</div>
-					<div class="sd-rate">
+					<div class="sd-rate tooltipster" data-tooltip-content="#tooltip_content">
 						<i class="fa fa-inr"></i> 3400
 					</div>
 				</div>
@@ -734,17 +755,17 @@
 						<div class="sd-date">12</div>
 					</div>
 					<div class="sd-inventory">
-						<div class="sd-inventory_count">
+						<div class="sd-inventory_count tooltipster" data-tooltip-content="#inventory_content">
 							09
 						</div>
 						<div class="sd-block">
 							Block
 						</div>
 					</div>
-					<div class="sd-rate">
+					<div class="sd-rate tooltipster" data-tooltip-content="#tooltip_content">
 						<i class="fa fa-inr"></i> 3400
 					</div>
-					<div class="sd-rate">
+					<div class="sd-rate tooltipster" data-tooltip-content="#tooltip_content">
 						<i class="fa fa-inr"></i> 3400
 					</div>
 				</div>
@@ -755,17 +776,17 @@
 						<div class="sd-date">13</div>
 					</div>
 					<div class="sd-inventory">
-						<div class="sd-inventory_count">
+						<div class="sd-inventory_count tooltipster" data-tooltip-content="#inventory_content">
 							09
 						</div>
 						<div class="sd-block">
 							Block
 						</div>
 					</div>
-					<div class="sd-rate">
+					<div class="sd-rate tooltipster" data-tooltip-content="#tooltip_content">
 						<i class="fa fa-inr"></i> 3400
 					</div>
-					<div class="sd-rate">
+					<div class="sd-rate tooltipster" data-tooltip-content="#tooltip_content">
 						<i class="fa fa-inr"></i> 3400
 					</div>
 				</div>
@@ -776,17 +797,17 @@
 						<div class="sd-date">14</div>
 					</div>
 					<div class="sd-inventory">
-						<div class="sd-inventory_count">
+						<div class="sd-inventory_count tooltipster" data-tooltip-content="#inventory_content">
 							09
 						</div>
 						<div class="sd-block">
 							Block
 						</div>
 					</div>
-					<div class="sd-rate">
+					<div class="sd-rate tooltipster" data-tooltip-content="#tooltip_content">
 						<i class="fa fa-inr"></i> 3400
 					</div>
-					<div class="sd-rate">
+					<div class="sd-rate tooltipster" data-tooltip-content="#tooltip_content">
 						<i class="fa fa-inr"></i> 3400
 					</div>
 				</div>
@@ -797,17 +818,17 @@
 						<div class="sd-date">15</div>
 					</div>
 					<div class="sd-inventory">
-						<div class="sd-inventory_count">
+						<div class="sd-inventory_count tooltipster" data-tooltip-content="#inventory_content">
 							09
 						</div>
 						<div class="sd-block">
 							Block
 						</div>
 					</div>
-					<div class="sd-rate">
+					<div class="sd-rate tooltipster" data-tooltip-content="#tooltip_content">
 						<i class="fa fa-inr"></i> 3400
 					</div>
-					<div class="sd-rate">
+					<div class="sd-rate tooltipster" data-tooltip-content="#tooltip_content">
 						<i class="fa fa-inr"></i> 3400
 					</div>
 				</div>
@@ -818,17 +839,17 @@
 						<div class="sd-date">16</div>
 					</div>
 					<div class="sd-inventory">
-						<div class="sd-inventory_count">
+						<div class="sd-inventory_count tooltipster" data-tooltip-content="#inventory_content">
 							09
 						</div>
 						<div class="sd-block">
 							Block
 						</div>
 					</div>
-					<div class="sd-rate">
+					<div class="sd-rate tooltipster" data-tooltip-content="#tooltip_content">
 						<i class="fa fa-inr"></i> 3400
 					</div>
-					<div class="sd-rate">
+					<div class="sd-rate tooltipster" data-tooltip-content="#tooltip_content">
 						<i class="fa fa-inr"></i> 3400
 					</div>
 				</div>
@@ -839,17 +860,17 @@
 						<div class="sd-date">17</div>
 					</div>
 					<div class="sd-inventory">
-						<div class="sd-inventory_count">
+						<div class="sd-inventory_count tooltipster" data-tooltip-content="#inventory_content">
 							09
 						</div>
 						<div class="sd-block">
 							Block
 						</div>
 					</div>
-					<div class="sd-rate">
+					<div class="sd-rate tooltipster" data-tooltip-content="#tooltip_content">
 						<i class="fa fa-inr"></i> 3400
 					</div>
-					<div class="sd-rate">
+					<div class="sd-rate tooltipster" data-tooltip-content="#tooltip_content">
 						<i class="fa fa-inr"></i> 3400
 					</div>
 				</div>
@@ -860,17 +881,17 @@
 						<div class="sd-date">18</div>
 					</div>
 					<div class="sd-inventory">
-						<div class="sd-inventory_count">
+						<div class="sd-inventory_count tooltipster" data-tooltip-content="#inventory_content">
 							09
 						</div>
 						<div class="sd-block">
 							Block
 						</div>
 					</div>
-					<div class="sd-rate">
+					<div class="sd-rate tooltipster" data-tooltip-content="#tooltip_content">
 						<i class="fa fa-inr"></i> 3400
 					</div>
-					<div class="sd-rate">
+					<div class="sd-rate tooltipster" data-tooltip-content="#tooltip_content">
 						<i class="fa fa-inr"></i> 3400
 					</div>
 				</div>
@@ -881,17 +902,17 @@
 						<div class="sd-date">19</div>
 					</div>
 					<div class="sd-inventory">
-						<div class="sd-inventory_count">
+						<div class="sd-inventory_count tooltipster" data-tooltip-content="#inventory_content">
 							09
 						</div>
 						<div class="sd-block">
 							Block
 						</div>
 					</div>
-					<div class="sd-rate">
+					<div class="sd-rate tooltipster" data-tooltip-content="#tooltip_content">
 						<i class="fa fa-inr"></i> 3400
 					</div>
-					<div class="sd-rate">
+					<div class="sd-rate tooltipster" data-tooltip-content="#tooltip_content">
 						<i class="fa fa-inr"></i> 3400
 					</div>
 				</div>
@@ -902,17 +923,17 @@
 						<div class="sd-date">20</div>
 					</div>
 					<div class="sd-inventory">
-						<div class="sd-inventory_count">
+						<div class="sd-inventory_count tooltipster" data-tooltip-content="#inventory_content">
 							09
 						</div>
 						<div class="sd-block">
 							Block
 						</div>
 					</div>
-					<div class="sd-rate">
+					<div class="sd-rate tooltipster" data-tooltip-content="#tooltip_content">
 						<i class="fa fa-inr"></i> 3400
 					</div>
-					<div class="sd-rate">
+					<div class="sd-rate tooltipster" data-tooltip-content="#tooltip_content">
 						<i class="fa fa-inr"></i> 3400
 					</div>
 				</div>
@@ -944,17 +965,17 @@
 						<div class="sd-date">05</div>
 					</div>
 					<div class="sd-inventory">
-						<div class="sd-inventory_count">
+						<div class="sd-inventory_count tooltipster" data-tooltip-content="#inventory_content">
 							09
 						</div>
 						<div class="sd-block">
 							Block
 						</div>
 					</div>
-					<div class="sd-rate">
+					<div class="sd-rate tooltipster" data-tooltip-content="#tooltip_content">
 						<i class="fa fa-inr"></i> 4500
 					</div>
-					<div class="sd-rate">
+					<div class="sd-rate tooltipster" data-tooltip-content="#tooltip_content">
 						<i class="fa fa-inr"></i> 4500 <span class="text-danger plan-restrict">*</span>
 					</div>
 				</div>
@@ -965,17 +986,17 @@
 						<div class="sd-date">06</div>
 					</div>
 					<div class="sd-inventory">
-						<div class="sd-inventory_count">
+						<div class="sd-inventory_count tooltipster" data-tooltip-content="#inventory_content">
 							02
 						</div>
 						<div class="sd-block text-secondary">
 							Unblock
 						</div>
 					</div>
-					<div class="sd-rate">
+					<div class="sd-rate tooltipster" data-tooltip-content="#tooltip_content">
 						<i class="fa fa-inr"></i> 4500
 					</div>
-					<div class="sd-rate">
+					<div class="sd-rate tooltipster" data-tooltip-content="#tooltip_content">
 						<i class="fa fa-inr"></i> 4500
 					</div>
 				</div>
@@ -986,17 +1007,17 @@
 						<div class="sd-date">07</div>
 					</div>
 					<div class="sd-inventory">
-						<div class="sd-inventory_count">
+						<div class="sd-inventory_count tooltipster" data-tooltip-content="#inventory_content">
 							06
 						</div>
 						<div class="sd-block">
 							Block
 						</div>
 					</div>
-					<div class="sd-rate">
+					<div class="sd-rate tooltipster" data-tooltip-content="#tooltip_content">
 						<i class="fa fa-inr"></i> 4500
 					</div>
-					<div class="sd-rate">
+					<div class="sd-rate tooltipster" data-tooltip-content="#tooltip_content">
 						<i class="fa fa-inr"></i> 4500
 					</div>
 				</div>
@@ -1007,17 +1028,17 @@
 						<div class="sd-date">08</div>
 					</div>
 					<div class="sd-inventory">
-						<div class="sd-inventory_count low">
+						<div class="sd-inventory_count low tooltipster" data-tooltip-content="#inventory_content">
 							01
 						</div>
 						<div class="sd-block">
 							Block
 						</div>
 					</div>
-					<div class="sd-rate">
+					<div class="sd-rate tooltipster" data-tooltip-content="#tooltip_content">
 						<i class="fa fa-inr"></i> 4500
 					</div>
-					<div class="sd-rate">
+					<div class="sd-rate tooltipster" data-tooltip-content="#tooltip_content">
 						<i class="fa fa-inr"></i> 4500
 					</div>
 				</div>
@@ -1028,17 +1049,17 @@
 						<div class="sd-date">09</div>
 					</div>
 					<div class="sd-inventory">
-						<div class="sd-inventory_count low">
+						<div class="sd-inventory_count low tooltipster" data-tooltip-content="#inventory_content">
 							02
 						</div>
 						<div class="sd-block ">
 							Block
 						</div>
 					</div>
-					<div class="sd-rate">
+					<div class="sd-rate tooltipster" data-tooltip-content="#tooltip_content">
 						<i class="fa fa-inr"></i> 4500
 					</div>
-					<div class="sd-rate">
+					<div class="sd-rate tooltipster" data-tooltip-content="#tooltip_content">
 						<i class="fa fa-inr"></i> 4500
 					</div>
 				</div>
@@ -1049,17 +1070,17 @@
 						<div class="sd-date">10</div>
 					</div>
 					<div class="sd-inventory">
-						<div class="sd-inventory_count">
+						<div class="sd-inventory_count tooltipster" data-tooltip-content="#inventory_content">
 							05
 						</div>
 						<div class="sd-block">
 							Block
 						</div>
 					</div>
-					<div class="sd-rate">
+					<div class="sd-rate tooltipster" data-tooltip-content="#tooltip_content">
 						<i class="fa fa-inr"></i> 4500
 					</div>
-					<div class="sd-rate">
+					<div class="sd-rate tooltipster" data-tooltip-content="#tooltip_content">
 						<i class="fa fa-inr"></i> 4500
 					</div>
 				</div>
@@ -1070,17 +1091,17 @@
 						<div class="sd-date">11</div>
 					</div>
 					<div class="sd-inventory">
-						<div class="sd-inventory_count">
+						<div class="sd-inventory_count tooltipster" data-tooltip-content="#inventory_content">
 							06
 						</div>
 						<div class="sd-block">
 							Block
 						</div>
 					</div>
-					<div class="sd-rate">
+					<div class="sd-rate tooltipster" data-tooltip-content="#tooltip_content">
 						<i class="fa fa-inr"></i> 4500
 					</div>
-					<div class="sd-rate">
+					<div class="sd-rate tooltipster" data-tooltip-content="#tooltip_content">
 						<i class="fa fa-inr"></i> 4500
 					</div>
 				</div>
@@ -1091,17 +1112,17 @@
 						<div class="sd-date">12</div>
 					</div>
 					<div class="sd-inventory">
-						<div class="sd-inventory_count">
+						<div class="sd-inventory_count tooltipster" data-tooltip-content="#inventory_content">
 							04
 						</div>
 						<div class="sd-block text-secondary">
 							Unblock
 						</div>
 					</div>
-					<div class="sd-rate">
+					<div class="sd-rate tooltipster" data-tooltip-content="#tooltip_content">
 						<i class="fa fa-inr"></i> 4500
 					</div>
-					<div class="sd-rate">
+					<div class="sd-rate tooltipster" data-tooltip-content="#tooltip_content">
 						<i class="fa fa-inr"></i> 4500
 					</div>
 				</div>
@@ -1112,17 +1133,17 @@
 						<div class="sd-date">13</div>
 					</div>
 					<div class="sd-inventory">
-						<div class="sd-inventory_count">
+						<div class="sd-inventory_count tooltipster" data-tooltip-content="#inventory_content">
 							06
 						</div>
 						<div class="sd-block">
 							Block
 						</div>
 					</div>
-					<div class="sd-rate">
+					<div class="sd-rate tooltipster" data-tooltip-content="#tooltip_content">
 						<i class="fa fa-inr"></i> 4500
 					</div>
-					<div class="sd-rate">
+					<div class="sd-rate tooltipster" data-tooltip-content="#tooltip_content">
 						<i class="fa fa-inr"></i> 4500
 					</div>
 				</div>
@@ -1133,17 +1154,17 @@
 						<div class="sd-date">14</div>
 					</div>
 					<div class="sd-inventory">
-						<div class="sd-inventory_count">
+						<div class="sd-inventory_count tooltipster" data-tooltip-content="#inventory_content">
 							06
 						</div>
 						<div class="sd-block text-secondary">
 							Unblock
 						</div>
 					</div>
-					<div class="sd-rate">
+					<div class="sd-rate tooltipster" data-tooltip-content="#tooltip_content">
 						<i class="fa fa-inr"></i> 4500
 					</div>
-					<div class="sd-rate">
+					<div class="sd-rate tooltipster" data-tooltip-content="#tooltip_content">
 						<i class="fa fa-inr"></i> 4500
 					</div>
 				</div>
@@ -1154,17 +1175,17 @@
 						<div class="sd-date">15</div>
 					</div>
 					<div class="sd-inventory">
-						<div class="sd-inventory_count">
+						<div class="sd-inventory_count tooltipster" data-tooltip-content="#inventory_content">
 							06
 						</div>
 						<div class="sd-block">
 							Block
 						</div>
 					</div>
-					<div class="sd-rate">
+					<div class="sd-rate tooltipster" data-tooltip-content="#tooltip_content">
 						<i class="fa fa-inr"></i> 4500
 					</div>
-					<div class="sd-rate">
+					<div class="sd-rate tooltipster" data-tooltip-content="#tooltip_content">
 						<i class="fa fa-inr"></i> 4500
 					</div>
 				</div>
@@ -1175,17 +1196,17 @@
 						<div class="sd-date">16</div>
 					</div>
 					<div class="sd-inventory">
-						<div class="sd-inventory_count">
+						<div class="sd-inventory_count tooltipster" data-tooltip-content="#inventory_content">
 							06
 						</div>
 						<div class="sd-block">
 							Block
 						</div>
 					</div>
-					<div class="sd-rate">
+					<div class="sd-rate tooltipster" data-tooltip-content="#tooltip_content">
 						<i class="fa fa-inr"></i> 4500
 					</div>
-					<div class="sd-rate">
+					<div class="sd-rate tooltipster" data-tooltip-content="#tooltip_content">
 						<i class="fa fa-inr"></i> 4500
 					</div>
 				</div>
@@ -1196,17 +1217,17 @@
 						<div class="sd-date">17</div>
 					</div>
 					<div class="sd-inventory">
-						<div class="sd-inventory_count">
+						<div class="sd-inventory_count tooltipster" data-tooltip-content="#inventory_content">
 							06
 						</div>
 						<div class="sd-block">
 							Block
 						</div>
 					</div>
-					<div class="sd-rate">
+					<div class="sd-rate tooltipster" data-tooltip-content="#tooltip_content">
 						<i class="fa fa-inr"></i> 4500
 					</div>
-					<div class="sd-rate">
+					<div class="sd-rate tooltipster" data-tooltip-content="#tooltip_content">
 						<i class="fa fa-inr"></i> 4500
 					</div>
 				</div>
@@ -1217,17 +1238,17 @@
 						<div class="sd-date">18</div>
 					</div>
 					<div class="sd-inventory">
-						<div class="sd-inventory_count">
+						<div class="sd-inventory_count tooltipster" data-tooltip-content="#inventory_content">
 							06
 						</div>
 						<div class="sd-block">
 							Block
 						</div>
 					</div>
-					<div class="sd-rate">
+					<div class="sd-rate tooltipster" data-tooltip-content="#tooltip_content">
 						<i class="fa fa-inr"></i> 4500
 					</div>
-					<div class="sd-rate">
+					<div class="sd-rate tooltipster" data-tooltip-content="#tooltip_content">
 						<i class="fa fa-inr"></i> 4500
 					</div>
 				</div>
@@ -1238,17 +1259,17 @@
 						<div class="sd-date">19</div>
 					</div>
 					<div class="sd-inventory">
-						<div class="sd-inventory_count">
+						<div class="sd-inventory_count tooltipster" data-tooltip-content="#inventory_content">
 							06
 						</div>
 						<div class="sd-block">
 							Block
 						</div>
 					</div>
-					<div class="sd-rate">
+					<div class="sd-rate tooltipster" data-tooltip-content="#tooltip_content">
 						<i class="fa fa-inr"></i> 4500
 					</div>
-					<div class="sd-rate">
+					<div class="sd-rate tooltipster" data-tooltip-content="#tooltip_content">
 						<i class="fa fa-inr"></i> 4500
 					</div>
 				</div>
@@ -1259,17 +1280,17 @@
 						<div class="sd-date">20</div>
 					</div>
 					<div class="sd-inventory">
-						<div class="sd-inventory_count">
+						<div class="sd-inventory_count tooltipster" data-tooltip-content="#inventory_content">
 							06
 						</div>
 						<div class="sd-block">
 							Block
 						</div>
 					</div>
-					<div class="sd-rate">
+					<div class="sd-rate tooltipster" data-tooltip-content="#tooltip_content">
 						<i class="fa fa-inr"></i> 4500
 					</div>
-					<div class="sd-rate">
+					<div class="sd-rate tooltipster" data-tooltip-content="#tooltip_content">
 						<i class="fa fa-inr"></i> 4500
 					</div>
 				</div>
@@ -1408,6 +1429,8 @@
 		
 		<script type="text/javascript" src="/goomo_html/js/readmore.min.js"></script>
 		<script type="text/javascript" src="/goomo_html/js/side-comments.js"></script>
+
+		<script type="text/javascript" src="/goomo_html/js/tooltipster.bundle.min.js"></script>
 
 		<script type="text/javascript" src="/goomo_html/js/custom.js"></script>
 	</body>
