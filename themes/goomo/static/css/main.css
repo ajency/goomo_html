@@ -9829,6 +9829,15 @@ i.w-border {
 .single-day .sd-rate .plan-restrict {
   font-size: 1.1em;
 }
+.calender-legend .text-success {
+  color: #469a6e;
+}
+.calender-legend .text-warning {
+  color: #f1b60a;
+}
+.calender-legend .text-muted {
+  color: #afafaf;
+}
 .author-avatar,
 .add-comment {
   display: none !important;
