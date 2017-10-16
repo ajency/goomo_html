@@ -4380,6 +4380,18 @@ i.w-border{
 	min-width: 60px;
 	border-left: 1px solid #e1e1e1;
 	border-right: 1px solid #e1e1e1;
+	&.block{
+		background-color: #efefef;
+		.sd-inventory{
+			&_count{
+				background-color: #afafaf;
+				color: #ececec;
+			}
+		}
+		.sd-rate{
+			color: gray;
+		}
+	}
 	.sd-header{
 		border-top: 1px solid #e1e1e1;
 		font-size: 0.7em;
@@ -4407,15 +4419,24 @@ i.w-border{
 		&_count{
 			padding: 1px 4px;
 			margin-bottom: 6px;
-			background-color: @accent-primary;
+			background-color: @accent-alternate;
 			color: #fff;
 			font-size: 1em;
 			display: inline-block;
 			border-radius: 2px;
+			font-weight: 600;
+			cursor: pointer;
+			&.low{
+				background-color: #f1b60a;
+			}
 		}
 
 		.sd-block{
 			font-size: 0.8em;
+			cursor: pointer;
+			&:hover{
+				color: @accent-secondary;
+			}
 		}
 	}
 
@@ -4424,6 +4445,15 @@ i.w-border{
 		padding: 10px 0;
 		font-size: 0.8em;
 		font-weight: 600;
+		cursor: pointer;
+		transition: all 0.3s ease;
+		&:hover{
+			background-color: #eaeaea;
+		}
+
+		.plan-restrict{
+			font-size: 1.1em;
+		}
 	}
 }
 

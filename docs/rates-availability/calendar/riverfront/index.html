@@ -523,41 +523,25 @@
 
 		<hr>
 
-		<div class="flex-row space-between flex-wrap">
-			<div>
-				Occupancy:<br>
-				<div class="btn-group m-b-20 small" data-toggle="buttons" role="group" aria-label="...">
-			  		<label class="btn btn-default fnb-btn toggle-btn ">
-			            <input type="radio" name="policy" id="hotel"> Single
-			        </label>
-			        <label class="btn btn-default fnb-btn toggle-btn active">
-			            <input type="radio" name="policy" id="rateplan" checked=""> Double
-			        </label>
-	        		<label class="btn btn-default fnb-btn toggle-btn ">
-	                  <input type="radio" name="policy" id="triple"> Triple
-	              	</label>
-	        		<label class="btn btn-default fnb-btn toggle-btn ">
-	                  <input type="radio" name="policy" id="adult"> Extra Adult
-	              	</label>
-	        		<label class="btn btn-default fnb-btn toggle-btn ">
-	                  <input type="radio" name="policy" id="child"> Extra Child
-	              	</label>
-				</div>
+		<div class="flex-row flex-wrap">
+			<div class="m-r-30">
+				<div class="text-info">Occupancy:</div>
+				<select class="form-control fnb-select border-bottom">
+					<option>Single</option>
+					<option selected="">Double</option>
+					<option>Triple</option>
+					<option>Extra Adult</option>
+					<option>Extra Child</option>
+				</select>
 			</div>
 
 			<div>
-				Channel:<br>
-				<div class="btn-group m-b-20 small" data-toggle="buttons" role="group" aria-label="...">
-			        <label class="btn btn-default fnb-btn toggle-btn active">
-			            <input type="radio" name="policy" id="web" checked=""> Web
-			        </label>
-			  		<label class="btn btn-default fnb-btn toggle-btn ">
-			            <input type="radio" name="policy" id="mob"> Mobile
-			        </label>
-	        		<label class="btn btn-default fnb-btn toggle-btn ">
-	                  <input type="radio" name="policy" id="b2b"> B2B
-	              	</label>
-				</div>
+				<div class="text-info">Channel:</div>
+				<select class="form-control fnb-select border-bottom">
+					<option>Mobile</option>
+					<option selected="">Web</option>
+					<option>B2B</option>
+				</select>
 			</div>
 		</div>
 
@@ -596,7 +580,7 @@
 						<i class="fa fa-inr"></i> 3400
 					</div>
 					<div class="sd-rate">
-						<i class="fa fa-inr"></i> 3400
+						<i class="fa fa-inr"></i> 3400 <span class="text-danger plan-restrict">*</span>
 					</div>
 				</div>
 				<div class="single-day">
@@ -606,7 +590,7 @@
 						<div class="sd-date">06</div>
 					</div>
 					<div class="sd-inventory">
-						<div class="sd-inventory_count">
+						<div class="sd-inventory_count low">
 							02
 						</div>
 						<div class="sd-block">
@@ -683,7 +667,7 @@
 						<i class="fa fa-inr"></i> 3400
 					</div>
 				</div>
-				<div class="single-day">
+				<div class="single-day block">
 					<div class="sd-header ">
 						Oct 2017
 						<div class="sd-day">TUE</div>
@@ -693,8 +677,8 @@
 						<div class="sd-inventory_count">
 							02
 						</div>
-						<div class="sd-block">
-							Block
+						<div class="sd-block text-secondary">
+							Unblock
 						</div>
 					</div>
 					<div class="sd-rate">

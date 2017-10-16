@@ -9763,6 +9763,16 @@ i.w-border {
   border-left: 1px solid #e1e1e1;
   border-right: 1px solid #e1e1e1;
 }
+.single-day.block {
+  background-color: #efefef;
+}
+.single-day.block .sd-inventory_count {
+  background-color: #afafaf;
+  color: #ececec;
+}
+.single-day.block .sd-rate {
+  color: gray;
+}
 .single-day .sd-header {
   border-top: 1px solid #e1e1e1;
   font-size: 0.7em;
@@ -9787,20 +9797,37 @@ i.w-border {
 .single-day .sd-inventory_count {
   padding: 1px 4px;
   margin-bottom: 6px;
-  background-color: #378f9e;
+  background-color: #469a6e;
   color: #fff;
   font-size: 1em;
   display: inline-block;
   border-radius: 2px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.single-day .sd-inventory_count.low {
+  background-color: #f1b60a;
 }
 .single-day .sd-inventory .sd-block {
   font-size: 0.8em;
+  cursor: pointer;
+}
+.single-day .sd-inventory .sd-block:hover {
+  color: #ff8500;
 }
 .single-day .sd-rate {
   border-bottom: 1px solid #e1e1e1;
   padding: 10px 0;
   font-size: 0.8em;
   font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.single-day .sd-rate:hover {
+  background-color: #eaeaea;
+}
+.single-day .sd-rate .plan-restrict {
+  font-size: 1.1em;
 }
 .author-avatar,
 .add-comment {
