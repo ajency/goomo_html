@@ -9710,6 +9710,9 @@ i.w-border {
   border-bottom: 2px solid #8ec7c6;
   outline: none;
 }
+.calendar-holder {
+  align-items: flex-start;
+}
 .calendar-holder img {
   width: 100%;
 }
@@ -9721,6 +9724,83 @@ i.w-border {
     width: 990px;
     max-width: 990px;
   }
+}
+.cal-left-col {
+  width: 200px;
+}
+.cal-left-col .left-header {
+  border-bottom: 1px solid #e1e1e1;
+  padding: 6px 0;
+}
+.cal-left-col .left-header h6 {
+  font-weight: 600;
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+.cal-left-col .inventory-header {
+  border-bottom: 1px solid #e1e1e1;
+  line-height: 1;
+  padding: 8px 0;
+}
+.cal-left-col .inventory-header h6 {
+  font-weight: 600;
+  font-size: 1em;
+  margin-bottom: 5px;
+  margin-top: 0;
+}
+.cal-left-col .plan-name {
+  padding: 10px 0;
+  border-bottom: 1px solid #e1e1e1;
+  font-size: 0.8em;
+}
+.cal-right-col {
+  overflow: auto;
+}
+.single-day {
+  text-align: center;
+  width: 60px;
+  min-width: 60px;
+  border-left: 1px solid #e1e1e1;
+  border-right: 1px solid #e1e1e1;
+}
+.single-day .sd-header {
+  border-top: 1px solid #e1e1e1;
+  font-size: 0.7em;
+  padding: 2px 0;
+  background: linear-gradient(to bottom, #fefefe 0%, #e2e2e2 100%);
+}
+.single-day .sd-header .sd-day {
+  font-size: 1.1em;
+}
+.single-day .sd-header .sd-date {
+  font-weight: 600;
+  font-size: 1.8em;
+}
+.single-day .sd-header.weekend .sd-date {
+  color: #ff8500;
+}
+.single-day .sd-inventory {
+  border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
+  padding: 10px 0;
+}
+.single-day .sd-inventory_count {
+  padding: 1px 4px;
+  margin-bottom: 6px;
+  background-color: #378f9e;
+  color: #fff;
+  font-size: 1em;
+  display: inline-block;
+  border-radius: 2px;
+}
+.single-day .sd-inventory .sd-block {
+  font-size: 0.8em;
+}
+.single-day .sd-rate {
+  border-bottom: 1px solid #e1e1e1;
+  padding: 10px 0;
+  font-size: 0.8em;
+  font-weight: 600;
 }
 .author-avatar,
 .add-comment {
