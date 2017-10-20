@@ -100,6 +100,33 @@ $(document).ready(function() {
 	    });
 	}
 
+	if($('.location-select').length){
+		$('.country-select').multiselect({
+			includeSelectAllOption: true,
+	        maxHeight: 250,
+	        numberDisplayed: 4,
+	        nonSelectedText: 'Select a Country'
+	    });
+		$('.city-select').multiselect({
+			includeSelectAllOption: true,
+	        maxHeight: 250,
+	        numberDisplayed: 4,
+	        nonSelectedText: 'Select a City'
+	    });
+		$('.state-select').multiselect({
+			includeSelectAllOption: true,
+	        maxHeight: 250,
+	        numberDisplayed: 4,
+	        nonSelectedText: 'Select a State'
+	    });
+		$('.location-select').multiselect({
+			includeSelectAllOption: true,
+	        maxHeight: 250,
+	        numberDisplayed: 4,
+	        nonSelectedText: 'Select a Location'
+	    });
+	}
+
 
 
 	var inactive = $('#inactive-table').DataTable({

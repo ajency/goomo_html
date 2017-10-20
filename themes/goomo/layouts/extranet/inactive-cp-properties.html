@@ -97,37 +97,41 @@
                     <h6 class="sub-title bolder">Location</h6>
                     <hr class="m-t-0 m-b-5">
                     <div class="loc-filter">
-                      <select class="fnb-select select-variant form-control text-lighter m-b-25 p-l-0" name="">
-                          <option selected="" value="">--Select Country--</option>
-                          <option >India</option>
-                          <option>Singapore</option>
-                          <option>China</option>
-                          <option>Russia</option>
-                      </select>
+                      <div class="m-b-25">
+                        <select class="fnb-select select-variant form-control text-lighter m-b-25 country-select" name="" multiple="">
+                            <option >India</option>
+                            <option>Singapore</option>
+                            <option>China</option>
+                            <option>Russia</option>
+                        </select>
+                      </div>
 
-                      <select class="fnb-select select-variant form-control text-lighter m-b-25 p-l-0" name="">
-                          <option selected="" value="">--Select State--</option>
-                          <option>Delhi</option>
-                          <option >Goa</option>
-                          <option>Gujarat</option>
-                          <option>Bangalore</option>
-                      </select>
+                      <div class="m-b-25">
+                        <select class="fnb-select select-variant form-control text-lighter m-b-25 state-select" name="" multiple="">
+                            <option>Delhi</option>
+                            <option >Goa</option>
+                            <option>Gujarat</option>
+                            <option>Bangalore</option>
+                        </select>
+                      </div>
 
-                      <select class="fnb-select select-variant form-control text-lighter m-b-25 p-l-0" name="">
-                          <option selected="" value="">--Select City--</option>
-                          <option >Panjim</option>
-                          <option>Mapusa</option>
-                          <option>Madgaon</option>
-                          <option>Shivajinagar</option>
-                      </select>
+                      <div class="m-b-25">
+                        <select class="fnb-select select-variant form-control text-lighter m-b-25 city-select" name="" multiple="">
+                            <option >Panjim</option>
+                            <option>Mapusa</option>
+                            <option>Madgaon</option>
+                            <option>Shivajinagar</option>
+                        </select>
+                      </div>
 
-                      <select class="fnb-select select-variant form-control text-lighter m-b-25 p-l-0" name="">
-                          <option selected="" value="">--Select Location--</option>
-                          <option >Panjim</option>
-                          <option>Mapusa</option>
-                          <option>Madgaon</option>
-                          <option>Shivajinagar</option>
-                      </select>
+                      <div class="m-b-25">
+                        <select class="fnb-select select-variant form-control text-lighter m-b-25 location-select" name="" multiple="">
+                            <option >Panjim</option>
+                            <option>Mapusa</option>
+                            <option>Madgaon</option>
+                            <option>Shivajinagar</option>
+                        </select>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -241,42 +245,7 @@
                     </div>
                   </div>
 
-                  <div class="filter-section m-t-50">
-                    <h6 class="sub-title bolder">Checklist Complete</h6>
-                    <hr class="m-t-0 m-b-5">
-                    <!-- <div class="row">
-                        <div class="col-sm-6">
-                            <div class="checkbox">
-                              <label>
-                                  <input type="checkbox" value="" class="" checked="">
-                                  10 - 30
-                                </label>
-                            </div>
-                          </div>
-                        <div class="col-sm-6">
-                            <div class="checkbox">
-                              <label>
-                                  <input type="checkbox" value="" class="">
-                                  30 - 70
-                                </label>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="checkbox">
-                              <label>
-                                  <input type="checkbox" value="" class="">
-                                  70 - 90
-                                </label>
-                            </div>
-                        </div>
-                    </div> -->
-                    <div class="loc-filter">
-                      <select class="fnb-select select-variant form-control text-lighter">
-                        <option value="Yes">Yes</option>
-                        <option value="No">No</option>
-                      </select>
-                    </div>
-                  </div>
+
                 </div>
 
               </div>
@@ -363,9 +332,6 @@
               <th class="" style="min-width: 10%;">
                 Star Rating
               </th>
-              <th class="" style="min-width: 10%;" rowspan="1">
-                Checklist Complete
-              </th>
               <th class="" style="minwidth: 10%;" rowspan="1">
                 Submission Date
               </th>
@@ -450,7 +416,6 @@
               <td>Akhil Desai - <br><a href="tel:+919988446622" class="text-decor links-click">+91 9988446622</a><br><a href="mailto:ak@gmail.com" class="text-decor links-click">ak@gmail.com</a></td>
               <td><span class="text-secondary bolder">In Process</span></td>
               <td>5 Stars</td>
-              <td class="text-center">Yes</td>
               <td><b class="text-info">--</b></td>
               <td class="text-cente">Content Pending</td>
             </tr>
@@ -463,7 +428,6 @@
               <td>Akansha Desai - <br><a href="tel:+919988446622" class="text-decor links-click">+91 9988446622</a><br><a href="mailto:ak@gmail.com" class="text-decor links-click">ak@gmail.com</a></td>
               <td><span class="text-muted bolder">Pending Review</span></td>
               <td>3 Stars</td>
-              <td class="text-center">No</td>
               <td><b class="text-info">--</b></td>
               <td class="text-cente">Content Pending</td>
             </tr>
@@ -476,7 +440,6 @@
               <td>Archana Singh - <br><a href="tel:+919988446622" class="text-decor links-click">+91 9988446622</a><br><a href="mailto:asingh@gmail.com" class="text-decor links-click">asingh@gmail.com</a></td>
               <td><span class="text-secondary bolder">In Process</span></td>
               <td>2 Stars</td>
-              <td class="text-center">Yes</td>
               <td><b class="text-info">10/7/2017</b></td>
               <td class="text-cente">Content Pending</td>
             </tr>
@@ -488,12 +451,9 @@
               <td>Akansha Desai - <br><a href="tel:+919988446622" class="text-decor links-click">+91 9988446622</a><br><a href="mailto:ak@gmail.com" class="text-decor links-click">ak@gmail.com</a></td>
               <td><span class="text-muted bolder">Pending Review</span></td>
               <td>4 Stars</td>
-              <td class="text-center">Yes</td>
               <td><b class="text-info">10/7/2017</b></td>
               <td class="text-cente">Content Complete</td>
             </tr>
-
-
 
           </tbody>
         </table>
