@@ -273,6 +273,9 @@ span {
   background-color: #ff8500;
   color: #fff;
 }
+.fnb-btn.toggle-btn.active.primary {
+  background-color: #378f9e;
+}
 .social-btn {
   padding: 0.8em 2em;
   border: 0;
@@ -9853,6 +9856,22 @@ i.w-border {
 }
 .side-comment .right-of-avatar {
   width: auto;
+}
+.nav-tabs > li > a {
+  color: #555;
+  cursor: default;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin-right: 10px;
+  font-weight: 600;
+}
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:hover {
+  color: #fff;
+  cursor: default;
+  background-color: #f38530;
+  border: 1px solid #f48531;
 }
 .profile-stats {
   color: #fff;

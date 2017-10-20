@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-		<title>Rates :: Goomo by Ajency</title>
+		<title>Add Rates :: Goomo by Ajency</title>
 
 		
 		<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,500,700" rel="stylesheet">
@@ -270,7 +270,7 @@
 </ul>
 
 
-		  		<h5 class="nno-m-t main-heading  white m-t-0 margin-btm">Rates</h5>
+		  		<h5 class="nno-m-t main-heading  white m-t-0 margin-btm">Add Rates</h5>
 		  		<a href="https://www.goomo.com/hotels/detail/Hotel-Windsor-Bay-389069?checkin_date=2017-09-28&checkout_date=2017-09-29&hotel_id=389069&locality_id&location_id=12550&place_name=Goa%2C%20India&rooms=%5B%7B%22adults_count%22%3A1%2C%22children_age%22%3A%5B%5D%7D%5D" target="_blank" class="preview-header__link white btn fnb-btn white-border mini"> View Property on Goomo.com</a>
 		  	</div>
 		  </div>
@@ -477,7 +477,7 @@
 
 
 																			
-																			<h5 class="nno-m-t main-heading  white m-t-0 margin-btm">Rates</h5>
+																			<h5 class="nno-m-t main-heading  white m-t-0 margin-btm">Add Rates</h5>
 																		</div>
 
 																		<a href="https://www.goomo.com/hotels/detail/Hotel-Windsor-Bay-389069?checkin_date=2017-09-28&checkout_date=2017-09-29&hotel_id=389069&locality_id&location_id=12550&place_name=Goa%2C%20India&rooms=%5B%7B%22adults_count%22%3A1%2C%22children_age%22%3A%5B%5D%7D%5D" class="preview-header__link white btn fnb-btn white-border mini mobile-hide" target="_blank"> View Property on Goomo.com</a>
@@ -497,226 +497,689 @@
 			</div>
 		</div>
 
-		<h6 class="m-b-20">Bulk Update Rates</h6>
 		<div class="row">
-			<div class="col-sm-2">
-				<p class="text-info bolder">From date:</p>
-				<input type="text" class="from-date form-control fnb-input m-r-10 sub-dates" placeholder="From Date">
-			</div>
-			<div class="col-sm-2">
-				<p class="text-info bolder">To date:</p>
-				<input type="text" class="to-date form-control fnb-input m-r-10 sub-dates" placeholder="To Date">
-			</div>
-			<div class="col-sm-6">
-				<p class="text-info bolder">Days: <a href="#" class="small text-secondary">Select All</a></p>
-				<div class="btn-group small" data-toggle="buttons">
-				  <label class="btn btn-default fnb-btn toggle-btn">
-				    <input type="checkbox" autocomplete="off"> Mon
-				  </label>
-				  <label class="btn btn-default fnb-btn toggle-btn">
-				    <input type="checkbox" autocomplete="off"> Tue
-				  </label>
-				  <label class="btn btn-default fnb-btn toggle-btn">
-				    <input type="checkbox" autocomplete="off"> Wed
-				  </label>
-				  <label class="btn btn-default fnb-btn toggle-btn">
-				    <input type="checkbox" autocomplete="off"> Thu
-				  </label>
-				  <label class="btn btn-default fnb-btn toggle-btn">
-				    <input type="checkbox" autocomplete="off"> Fri
-				  </label>
-				  <label class="btn btn-default fnb-btn toggle-btn">
-				    <input type="checkbox" autocomplete="off"> Sat
-				  </label>
-				  <label class="btn btn-default fnb-btn toggle-btn">
-				    <input type="checkbox" autocomplete="off"> Sun
-				  </label>
+			<div class="col-sm-8">
+				<div class="row">
+					<div class="col-sm-6 m-b-20">
+						<p class="text-info bolder">Room Type:</p>
+						<select class="fnb-select select-variant form-control p-l-0" name="">
+						    <option value="">Select Room Type</option>
+						    <option selected="">Premier Room</option>
+						    <option>Grand Deluxe Room</option>
+						</select>
+					</div>
+					<div class="col-sm-6 m-b-20">
+						<p class="text-info bolder">Rate Plan:</p>
+						<select class="fnb-select select-variant form-control  p-l-0" name="">
+						    <option value="">Select Rate Plan</option>
+						    <option selected="">Rate Plan 1</option>
+						    <option>Rate Plan 2</option>
+						</select>
+					</div>
 				</div>
-				
-				
-			</div>
-		</div>
 
-		<div class="row m-t-30">
-			<div class="col-sm-4 m-b-20">
-				<p class="text-info bolder">Room Type:</p>
-				<select class="fnb-select select-variant form-control p-l-0" name="">
-				    <option value="">Select Room Type</option>
-				    <option selected="">Premier Room</option>
-				    <option>Grand Deluxe Room</option>
-				</select>
-			</div>
-			<div class="col-sm-4 m-b-20">
-				<p class="text-info bolder">Rate Plan:</p>
-				<select class="fnb-select select-variant form-control  p-l-0" name="">
-				    <option value="">Select Rate Plan</option>
-				    <option selected="">Rate Plan 1</option>
-				    <option>Rate Plan 2</option>
-				</select>
-			</div>
-		</div>
+				<div class="row m-t-10">
+					<div class="col-sm-6">
+						<p class="text-info bolder">From date:</p>
+						<input type="text" class="from-date form-control fnb-input m-r-10 sub-dates" placeholder="From Date">
+					</div>
+					<div class="col-sm-6">
+						<p class="text-info bolder">To date:</p>
+						<input type="text" class="to-date form-control fnb-input m-r-10 sub-dates" placeholder="To Date">
+					</div>
+				</div>
 
-		<div class="row m-t-10">
-			<div class="col-sm-4 m-b-20">
-				<p class="text-info bolder">Contract Type:</p>
-				<label for="b2c" class="m-r-15">
-				    <input value="" type="radio" class="fnb-radio" name="cancellation" id="b2c"
-				    checked="">
-				    <span class="p-l-5 text-medium">B2C</span>
-				</label>
-				<label for="b2b" class="m-r-15">
-				    <input value="" type="radio" class="fnb-radio" name="cancellation" id="b2b">
-				    <span class="p-l-5 text-medium">B2B</span>
-				</label>
+				<div class="row m-t-30">
+					<div class="col-sm-12">
+						<p class="text-info bolder">Days of the Week: <a href="#" class="small text-secondary">Select All</a></p>
+						<div class="btn-group small" data-toggle="buttons">
+						  <label class="btn btn-default fnb-btn toggle-btn">
+						    <input type="checkbox" autocomplete="off"> Mon
+						  </label>
+						  <label class="btn btn-default fnb-btn toggle-btn">
+						    <input type="checkbox" autocomplete="off"> Tue
+						  </label>
+						  <label class="btn btn-default fnb-btn toggle-btn">
+						    <input type="checkbox" autocomplete="off"> Wed
+						  </label>
+						  <label class="btn btn-default fnb-btn toggle-btn">
+						    <input type="checkbox" autocomplete="off"> Thu
+						  </label>
+						  <label class="btn btn-default fnb-btn toggle-btn">
+						    <input type="checkbox" autocomplete="off"> Fri
+						  </label>
+						  <label class="btn btn-default fnb-btn toggle-btn">
+						    <input type="checkbox" autocomplete="off"> Sat
+						  </label>
+						  <label class="btn btn-default fnb-btn toggle-btn">
+						    <input type="checkbox" autocomplete="off"> Sun
+						  </label>
+						</div>
+						
+						
+					</div>
+				</div>
+
+				
+
+				<div class="m-t-40">
+					<p class="text-info bolder">Linked Rates:</p>
+					<div class="row m-b-15">
+						<div class="col-sm-3">
+							<div class="btn-group" data-toggle="buttons" role="group" aria-label="...">
+						  		<label class="btn btn-default fnb-btn toggle-btn primary active">
+						            <input type="radio" name="linked" id="auto" checked=""> Auto
+						        </label>
+						        <label class="btn btn-default fnb-btn toggle-btn primary">
+						            <input type="radio" name="linked" id="manual" value="manual"> Manual
+						        </label>
+							</div>
+						</div>
+						<div class="col-sm-8">
+							Link rates on various platforms to Web rates or enter each manually
+						</div>
+					</div>
+				</div>
+				<div class="m-t-40">
+					<div class="row m-b-15">
+						<div class="col-sm-12">
+
+							
+							<ul class="nav nav-tabs" role="tablist">
+							    <li role="presentation" class="active"><a href="#web" aria-controls="web" role="tab" data-toggle="tab">Web</a></li>
+							    <li role="presentation"><a href="#mobile" aria-controls="mobile" role="tab" data-toggle="tab">Mobile (20%)</a></li>
+							    <li role="presentation"><a href="#fph" aria-controls="fph" role="tab" data-toggle="tab">FPH (20%)</a></li>
+							    <li role="presentation"><a href="#b2b" aria-controls="b2b" role="tab" data-toggle="tab">B2B (10%)</a></li>
+							</ul>
+
+							  
+							<div class="tab-content">
+							    <div role="tabpanel" class="tab-pane fade in active" id="web">
+							    	<div class="m-t-20">
+							    		<div class="row m-b-15 mobile-hide" style="background: #f5f5f5; padding: 5px 0; font-weight: 600;">
+							    			<div class="col-sm-2">
+							    				<div></div>
+							    			</div>
+							    			<div class="col-sm-3">
+							    				Single Rate
+							    			</div>
+							    			<div class="col-sm-3">
+							    				Double Rate
+							    			</div>
+							    			<div class="col-sm-3">
+							    				Triple Rate
+							    			</div>
+							    		</div>
+							    		<div class="row m-b-15">
+							    			<div class="col-sm-2">
+							    				Sell Rate <i class="fa fa-inr"></i>
+							    			</div>
+							    			<div class="col-sm-3">
+							    				<label class="desk-hide m-b-0 small">
+							    					Single Rate
+							    				</label>
+							    				<input type="number" class="form-control fnb-input m-r-10 sub-dates p-l-5" placeholder="Single Rate" value="2500">
+							    			</div>
+							    			<div class="col-sm-3">
+							    				<label class="desk-hide m-b-0 small">
+							    					Double Rate
+							    				</label>
+							    				<input type="number" class="form-control fnb-input m-r-10 sub-dates p-l-5" placeholder="Double Rate" value="3500">
+							    			</div>
+							    			<div class="col-sm-3">
+							    				<label class="desk-hide m-b-0 small">
+							    					Triple Rate
+							    				</label>
+							    				<input type="number" class="form-control fnb-input m-r-10 sub-dates p-l-5" placeholder="Triple Rate" value="4500">
+							    			</div>
+							    			<div class="col-sm-1 small">
+							    				<button class="btn fnb-btn outline" style="position: relative; left: -30px;">Calculate</button>
+							    			</div>
+							    		</div>
+							    		<div class="row m-b-15">
+							    			<div class="col-sm-2">
+							    				Net Rate <i class="fa fa-inr"></i>
+							    			</div>
+							    			<div class="col-sm-3">
+							    				<label class="desk-hide m-b-0 small">
+							    					Single Rate
+							    				</label>
+							    				<input type="number" disabled="" class="form-control fnb-input m-r-10 sub-dates p-l-5" placeholder="Single Rate" value="2000">
+							    			</div>
+							    			<div class="col-sm-3">
+							    				<label class="desk-hide m-b-0 small">
+							    					Double Rate
+							    				</label>
+							    				<input type="number" disabled="" class="form-control fnb-input m-r-10 sub-dates p-l-5" placeholder="Double Rate" value="3000">
+							    			</div>
+							    			<div class="col-sm-3">
+							    				<label class="desk-hide m-b-0 small">
+							    					Triple Rate
+							    				</label>
+							    				<input type="number" disabled="" class="form-control fnb-input m-r-10 sub-dates p-l-5" placeholder="Triple Rate" value="4000">
+							    			</div>
+							    		</div>
+							    		<div class="row m-b-15">
+							    			<div class="col-sm-2">
+							    				GST <i class="fa fa-percent"></i>
+							    			</div>
+							    			<div class="col-sm-3">
+							    				<label class="desk-hide m-b-0 small">
+							    					Single Rate GST
+							    				</label>
+							    				<input type="number" disabled="" class="form-control fnb-input m-r-10 sub-dates p-l-5" placeholder="0" value="120">
+							    			</div>
+							    			<div class="col-sm-3">
+							    				<label class="desk-hide m-b-0 small">
+							    					Double Rate GST
+							    				</label>
+							    				<input type="number" disabled="" class="form-control fnb-input m-r-10 sub-dates p-l-5" placeholder="0" value="220">
+							    			</div>
+							    			<div class="col-sm-3">
+							    				<label class="desk-hide m-b-0 small">
+							    					Triple Rate GST
+							    				</label>
+							    				<input type="number" disabled="" class="form-control fnb-input m-r-10 sub-dates p-l-5" placeholder="0" value="320">
+							    			</div>
+							    		</div>
+							    	</div>
+
+							    	<div class="m-t-50">
+							    		<div class="row m-b-15 mobile-hide">
+
+							    			<div class="col-sm-4">
+							    				Extra Adult Charges
+							    			</div>
+							    			<div class="col-sm-4">
+							    				Extra Child Charges<br>
+							    				(age range 5-18 yrs)
+							    			</div>
+							    			<div class="col-sm-4">
+							    				Infant Charges if any<br>
+							    				(age below 5 years)
+							    			</div>
+							    		</div>
+							    		<div class="row m-b-15">
+
+							    			<div class="col-sm-4">
+							    				<label class="desk-hide m-b-0 small">
+							    					Extra Adult Charges
+							    				</label>
+							    				<input type="number" class="form-control fnb-input m-r-10 sub-dates" placeholder="Extra Adult">
+							    			</div>
+							    			<div class="col-sm-4">
+							    				<label class="desk-hide m-b-0 small">
+							    					Extra Child Charges (age range 5-18 yrs)
+							    				</label>
+							    				<input type="number" class="form-control fnb-input m-r-10 sub-dates" placeholder="Extra Child">
+							    			</div>
+							    			<div class="col-sm-4">
+							    				<label class="desk-hide m-b-0 small">
+							    					Infant Charges if any (age below 5 years)
+							    				</label>
+							    				<input type="number" class="form-control fnb-input m-r-10 sub-dates" placeholder="Extra Infant">
+							    			</div>
+							    		</div>
+							    	</div>
+							    </div>
+							    <div role="tabpanel" class="tab-pane fade" id="mobile">
+							    	<div class="m-t-20">
+							    		<div class="alert alert-warning small">
+							    			<strong>Note:</strong> These rates are linked to web rates. You can modify the linked percentages from <a href="#" class="text-secondary">here</a>.
+							    		</div>
+							    		<div class="row m-b-15 mobile-hide" style="background: #f5f5f5; padding: 5px 0; font-weight: 600;">
+							    			<div class="col-sm-2">
+							    				<div></div>
+							    			</div>
+							    			<div class="col-sm-3">
+							    				Single Rate
+							    			</div>
+							    			<div class="col-sm-3">
+							    				Double Rate
+							    			</div>
+							    			<div class="col-sm-3">
+							    				Triple Rate
+							    			</div>
+							    		</div>
+							    		<div class="row m-b-15">
+							    			<div class="col-sm-2">
+							    				Sell Rate <i class="fa fa-inr"></i>
+							    			</div>
+							    			<div class="col-sm-3">
+							    				<label class="desk-hide m-b-0 small">
+							    					Single Rate
+							    				</label>
+							    				<input type="number" class="form-control fnb-input m-r-10 sub-dates p-l-5" disabled="" placeholder="Single Rate" value="2500">
+							    			</div>
+							    			<div class="col-sm-3">
+							    				<label class="desk-hide m-b-0 small">
+							    					Double Rate
+							    				</label>
+							    				<input type="number" class="form-control fnb-input m-r-10 sub-dates p-l-5" disabled="" placeholder="Double Rate" value="3500">
+							    			</div>
+							    			<div class="col-sm-3">
+							    				<label class="desk-hide m-b-0 small">
+							    					Triple Rate
+							    				</label>
+							    				<input type="number" class="form-control fnb-input m-r-10 sub-dates p-l-5" disabled="" placeholder="Triple Rate" value="4500">
+							    			</div>
+							    			<div class="col-sm-1 small">
+							    				
+							    			</div>
+							    		</div>
+							    		<div class="row m-b-15">
+							    			<div class="col-sm-2">
+							    				Net Rate <i class="fa fa-inr"></i>
+							    			</div>
+							    			<div class="col-sm-3">
+							    				<label class="desk-hide m-b-0 small">
+							    					Single Rate
+							    				</label>
+							    				<input type="number" disabled="" class="form-control fnb-input m-r-10 sub-dates p-l-5" placeholder="Single Rate" value="2000">
+							    			</div>
+							    			<div class="col-sm-3">
+							    				<label class="desk-hide m-b-0 small">
+							    					Double Rate
+							    				</label>
+							    				<input type="number" disabled="" class="form-control fnb-input m-r-10 sub-dates p-l-5" placeholder="Double Rate" value="3000">
+							    			</div>
+							    			<div class="col-sm-3">
+							    				<label class="desk-hide m-b-0 small">
+							    					Triple Rate
+							    				</label>
+							    				<input type="number" disabled="" class="form-control fnb-input m-r-10 sub-dates p-l-5" placeholder="Triple Rate" value="4000">
+							    			</div>
+							    		</div>
+							    		<div class="row m-b-15">
+							    			<div class="col-sm-2">
+							    				GST <i class="fa fa-percent"></i>
+							    			</div>
+							    			<div class="col-sm-3">
+							    				<label class="desk-hide m-b-0 small">
+							    					Single Rate GST
+							    				</label>
+							    				<input type="number" disabled="" class="form-control fnb-input m-r-10 sub-dates p-l-5" placeholder="0" value="120">
+							    			</div>
+							    			<div class="col-sm-3">
+							    				<label class="desk-hide m-b-0 small">
+							    					Double Rate GST
+							    				</label>
+							    				<input type="number" disabled="" class="form-control fnb-input m-r-10 sub-dates p-l-5" placeholder="0" value="220">
+							    			</div>
+							    			<div class="col-sm-3">
+							    				<label class="desk-hide m-b-0 small">
+							    					Triple Rate GST
+							    				</label>
+							    				<input type="number" disabled="" class="form-control fnb-input m-r-10 sub-dates p-l-5" placeholder="0" value="320">
+							    			</div>
+							    		</div>
+							    	</div>
+
+							    	<div class="m-t-50">
+							    		<div class="row m-b-15 mobile-hide">
+
+							    			<div class="col-sm-4">
+							    				Extra Adult Charges
+							    			</div>
+							    			<div class="col-sm-4">
+							    				Extra Child Charges<br>
+							    				(age range 5-18 yrs)
+							    			</div>
+							    			<div class="col-sm-4">
+							    				Infant Charges if any<br>
+							    				(age below 5 years)
+							    			</div>
+							    		</div>
+							    		<div class="row m-b-15">
+
+							    			<div class="col-sm-4">
+							    				<label class="desk-hide m-b-0 small">
+							    					Extra Adult Charges
+							    				</label>
+							    				<input type="number" disabled="" class="p-l-5 form-control fnb-input m-r-10 sub-dates" placeholder="Extra Adult">
+							    			</div>
+							    			<div class="col-sm-4">
+							    				<label class="desk-hide m-b-0 small">
+							    					Extra Child Charges (age range 5-18 yrs)
+							    				</label>
+							    				<input type="number" disabled="" class="p-l-5 form-control fnb-input m-r-10 sub-dates" placeholder="Extra Child">
+							    			</div>
+							    			<div class="col-sm-4">
+							    				<label class="desk-hide m-b-0 small">
+							    					Infant Charges if any (age below 5 years)
+							    				</label>
+							    				<input type="number" disabled="" class="p-l-5 form-control fnb-input m-r-10 sub-dates" placeholder="Extra Infant">
+							    			</div>
+							    		</div>
+							    	</div>
+							    </div>
+							    <div role="tabpanel" class="tab-pane fade" id="fph">
+							    	<div class="m-t-20">
+							    		<div class="alert alert-warning small">
+							    			<strong>Note:</strong> These rates are linked to web rates. You can modify the linked percentages from <a href="#" class="text-secondary">here</a>.
+							    		</div>
+							    		<div class="row m-b-15 mobile-hide" style="background: #f5f5f5; padding: 5px 0; font-weight: 600;">
+							    			<div class="col-sm-2">
+							    				<div></div>
+							    			</div>
+							    			<div class="col-sm-3">
+							    				Single Rate
+							    			</div>
+							    			<div class="col-sm-3">
+							    				Double Rate
+							    			</div>
+							    			<div class="col-sm-3">
+							    				Triple Rate
+							    			</div>
+							    		</div>
+							    		<div class="row m-b-15">
+							    			<div class="col-sm-2">
+							    				Sell Rate <i class="fa fa-inr"></i>
+							    			</div>
+							    			<div class="col-sm-3">
+							    				<label class="desk-hide m-b-0 small">
+							    					Single Rate
+							    				</label>
+							    				<input type="number" class="form-control fnb-input m-r-10 sub-dates p-l-5" disabled="" placeholder="Single Rate" value="2500">
+							    			</div>
+							    			<div class="col-sm-3">
+							    				<label class="desk-hide m-b-0 small">
+							    					Double Rate
+							    				</label>
+							    				<input type="number" class="form-control fnb-input m-r-10 sub-dates p-l-5" disabled="" placeholder="Double Rate" value="3500">
+							    			</div>
+							    			<div class="col-sm-3">
+							    				<label class="desk-hide m-b-0 small">
+							    					Triple Rate
+							    				</label>
+							    				<input type="number" class="form-control fnb-input m-r-10 sub-dates p-l-5" disabled="" placeholder="Triple Rate" value="4500">
+							    			</div>
+							    			<div class="col-sm-1 small">
+							    				
+							    			</div>
+							    		</div>
+							    		<div class="row m-b-15">
+							    			<div class="col-sm-2">
+							    				Net Rate <i class="fa fa-inr"></i>
+							    			</div>
+							    			<div class="col-sm-3">
+							    				<label class="desk-hide m-b-0 small">
+							    					Single Rate
+							    				</label>
+							    				<input type="number" disabled="" class="form-control fnb-input m-r-10 sub-dates p-l-5" placeholder="Single Rate" value="2000">
+							    			</div>
+							    			<div class="col-sm-3">
+							    				<label class="desk-hide m-b-0 small">
+							    					Double Rate
+							    				</label>
+							    				<input type="number" disabled="" class="form-control fnb-input m-r-10 sub-dates p-l-5" placeholder="Double Rate" value="3000">
+							    			</div>
+							    			<div class="col-sm-3">
+							    				<label class="desk-hide m-b-0 small">
+							    					Triple Rate
+							    				</label>
+							    				<input type="number" disabled="" class="form-control fnb-input m-r-10 sub-dates p-l-5" placeholder="Triple Rate" value="4000">
+							    			</div>
+							    		</div>
+							    		<div class="row m-b-15">
+							    			<div class="col-sm-2">
+							    				GST <i class="fa fa-percent"></i>
+							    			</div>
+							    			<div class="col-sm-3">
+							    				<label class="desk-hide m-b-0 small">
+							    					Single Rate GST
+							    				</label>
+							    				<input type="number" disabled="" class="form-control fnb-input m-r-10 sub-dates p-l-5" placeholder="0" value="120">
+							    			</div>
+							    			<div class="col-sm-3">
+							    				<label class="desk-hide m-b-0 small">
+							    					Double Rate GST
+							    				</label>
+							    				<input type="number" disabled="" class="form-control fnb-input m-r-10 sub-dates p-l-5" placeholder="0" value="220">
+							    			</div>
+							    			<div class="col-sm-3">
+							    				<label class="desk-hide m-b-0 small">
+							    					Triple Rate GST
+							    				</label>
+							    				<input type="number" disabled="" class="form-control fnb-input m-r-10 sub-dates p-l-5" placeholder="0" value="320">
+							    			</div>
+							    		</div>
+							    	</div>
+
+							    	<div class="m-t-50">
+							    		<div class="row m-b-15 mobile-hide">
+
+							    			<div class="col-sm-4">
+							    				Extra Adult Charges
+							    			</div>
+							    			<div class="col-sm-4">
+							    				Extra Child Charges<br>
+							    				(age range 5-18 yrs)
+							    			</div>
+							    			<div class="col-sm-4">
+							    				Infant Charges if any<br>
+							    				(age below 5 years)
+							    			</div>
+							    		</div>
+							    		<div class="row m-b-15">
+
+							    			<div class="col-sm-4">
+							    				<label class="desk-hide m-b-0 small">
+							    					Extra Adult Charges
+							    				</label>
+							    				<input type="number" disabled="" class="p-l-5 form-control fnb-input m-r-10 sub-dates" placeholder="Extra Adult">
+							    			</div>
+							    			<div class="col-sm-4">
+							    				<label class="desk-hide m-b-0 small">
+							    					Extra Child Charges (age range 5-18 yrs)
+							    				</label>
+							    				<input type="number" disabled="" class="p-l-5 form-control fnb-input m-r-10 sub-dates" placeholder="Extra Child">
+							    			</div>
+							    			<div class="col-sm-4">
+							    				<label class="desk-hide m-b-0 small">
+							    					Infant Charges if any (age below 5 years)
+							    				</label>
+							    				<input type="number" disabled="" class="p-l-5 form-control fnb-input m-r-10 sub-dates" placeholder="Extra Infant">
+							    			</div>
+							    		</div>
+							    	</div>
+							    </div>
+							    <div role="tabpanel" class="tab-pane fade" id="b2b">
+							    	<div class="m-t-20">
+							    		<div class="alert alert-warning small">
+							    			<strong>Note:</strong> These rates are linked to web rates. You can modify the linked percentages from <a href="#" class="text-secondary">here</a>.
+							    		</div>
+							    		<div class="row m-b-15 mobile-hide" style="background: #f5f5f5; padding: 5px 0; font-weight: 600;">
+							    			<div class="col-sm-2">
+							    				<div></div>
+							    			</div>
+							    			<div class="col-sm-3">
+							    				Single Rate
+							    			</div>
+							    			<div class="col-sm-3">
+							    				Double Rate
+							    			</div>
+							    			<div class="col-sm-3">
+							    				Triple Rate
+							    			</div>
+							    		</div>
+							    		<div class="row m-b-15">
+							    			<div class="col-sm-2">
+							    				Sell Rate <i class="fa fa-inr"></i>
+							    			</div>
+							    			<div class="col-sm-3">
+							    				<label class="desk-hide m-b-0 small">
+							    					Single Rate
+							    				</label>
+							    				<input type="number" class="form-control fnb-input m-r-10 sub-dates p-l-5" disabled="" placeholder="Single Rate" value="2500">
+							    			</div>
+							    			<div class="col-sm-3">
+							    				<label class="desk-hide m-b-0 small">
+							    					Double Rate
+							    				</label>
+							    				<input type="number" class="form-control fnb-input m-r-10 sub-dates p-l-5" disabled="" placeholder="Double Rate" value="3500">
+							    			</div>
+							    			<div class="col-sm-3">
+							    				<label class="desk-hide m-b-0 small">
+							    					Triple Rate
+							    				</label>
+							    				<input type="number" class="form-control fnb-input m-r-10 sub-dates p-l-5" disabled="" placeholder="Triple Rate" value="4500">
+							    			</div>
+							    			<div class="col-sm-1 small">
+							    				
+							    			</div>
+							    		</div>
+							    		<div class="row m-b-15">
+							    			<div class="col-sm-2">
+							    				Net Rate <i class="fa fa-inr"></i>
+							    			</div>
+							    			<div class="col-sm-3">
+							    				<label class="desk-hide m-b-0 small">
+							    					Single Rate
+							    				</label>
+							    				<input type="number" disabled="" class="form-control fnb-input m-r-10 sub-dates p-l-5" placeholder="Single Rate" value="2000">
+							    			</div>
+							    			<div class="col-sm-3">
+							    				<label class="desk-hide m-b-0 small">
+							    					Double Rate
+							    				</label>
+							    				<input type="number" disabled="" class="form-control fnb-input m-r-10 sub-dates p-l-5" placeholder="Double Rate" value="3000">
+							    			</div>
+							    			<div class="col-sm-3">
+							    				<label class="desk-hide m-b-0 small">
+							    					Triple Rate
+							    				</label>
+							    				<input type="number" disabled="" class="form-control fnb-input m-r-10 sub-dates p-l-5" placeholder="Triple Rate" value="4000">
+							    			</div>
+							    		</div>
+							    		<div class="row m-b-15">
+							    			<div class="col-sm-2">
+							    				GST <i class="fa fa-percent"></i>
+							    			</div>
+							    			<div class="col-sm-3">
+							    				<label class="desk-hide m-b-0 small">
+							    					Single Rate GST
+							    				</label>
+							    				<input type="number" disabled="" class="form-control fnb-input m-r-10 sub-dates p-l-5" placeholder="0" value="120">
+							    			</div>
+							    			<div class="col-sm-3">
+							    				<label class="desk-hide m-b-0 small">
+							    					Double Rate GST
+							    				</label>
+							    				<input type="number" disabled="" class="form-control fnb-input m-r-10 sub-dates p-l-5" placeholder="0" value="220">
+							    			</div>
+							    			<div class="col-sm-3">
+							    				<label class="desk-hide m-b-0 small">
+							    					Triple Rate GST
+							    				</label>
+							    				<input type="number" disabled="" class="form-control fnb-input m-r-10 sub-dates p-l-5" placeholder="0" value="320">
+							    			</div>
+							    		</div>
+							    	</div>
+
+							    	<div class="m-t-50">
+							    		<div class="row m-b-15 mobile-hide">
+
+							    			<div class="col-sm-4">
+							    				Extra Adult Charges
+							    			</div>
+							    			<div class="col-sm-4">
+							    				Extra Child Charges<br>
+							    				(age range 5-18 yrs)
+							    			</div>
+							    			<div class="col-sm-4">
+							    				Infant Charges if any<br>
+							    				(age below 5 years)
+							    			</div>
+							    		</div>
+							    		<div class="row m-b-15">
+
+							    			<div class="col-sm-4">
+							    				<label class="desk-hide m-b-0 small">
+							    					Extra Adult Charges
+							    				</label>
+							    				<input type="number" disabled="" class="p-l-5 form-control fnb-input m-r-10 sub-dates" placeholder="Extra Adult">
+							    			</div>
+							    			<div class="col-sm-4">
+							    				<label class="desk-hide m-b-0 small">
+							    					Extra Child Charges (age range 5-18 yrs)
+							    				</label>
+							    				<input type="number" disabled="" class="p-l-5 form-control fnb-input m-r-10 sub-dates" placeholder="Extra Child">
+							    			</div>
+							    			<div class="col-sm-4">
+							    				<label class="desk-hide m-b-0 small">
+							    					Infant Charges if any (age below 5 years)
+							    				</label>
+							    				<input type="number" disabled="" class="p-l-5 form-control fnb-input m-r-10 sub-dates" placeholder="Extra Infant">
+							    			</div>
+							    		</div>
+							    	</div>
+							    </div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="m-t-30">
+					<div class="row m-b-15">
+						<div class="col-sm-8">
+							Notes:
+							<textarea class="form-control fnb-textarea"></textarea>
+						</div>
+					</div>
+				</div>
+
+				<div class="text-left">
+					<button class="btn fnb-btn secondary-btn m-t-30">Update Rates</button>
+				</div>
 			</div>
+
 			<div class="col-sm-4">
-				<p class="text-info bolder">Rate Type:</p>
-				<select class="fnb-select select-variant form-control  p-l-0" name="">
-				    <option value="">Select Rate Type</option>
-				    <option selected="">Sell Rate</option>
-				    <option>Net Rate</option>
-				</select>
-			</div>
-		</div>
+				<div class="logs-block">
+					<div class="flex-row space-between">
+						<h6 class="bolder">Audit Logs</h6>
+						<a href="#" class="bolder text-secondary">View All</a>
+					</div>
+					<div class="single-log">
+						<div class="flex-row space-between">
+							<div class="bolder">
 
-		<div class="m-t-50">
-			<div class="row m-b-15 mobile-hide">
-				<div class="col-sm-2">
-					<div></div>
-				</div>
-				<div class="col-sm-2">
-					Single Rate
-				</div>
-				<div class="col-sm-2">
-					Double Rate
-				</div>
-				<div class="col-sm-2">
-					Triple Rate
-				</div>
-			</div>
-			<div class="row m-b-15">
-				<div class="col-sm-2">
-					Sell Rate <i class="fa fa-inr"></i>
-				</div>
-				<div class="col-sm-2">
-					<label class="desk-hide m-b-0 small">
-						Single Rate
-					</label>
-					<input type="number" class="form-control fnb-input m-r-10 sub-dates" placeholder="Single Rate">
-				</div>
-				<div class="col-sm-2">
-					<label class="desk-hide m-b-0 small">
-						Double Rate
-					</label>
-					<input type="number" class="form-control fnb-input m-r-10 sub-dates" placeholder="Double Rate">
-				</div>
-				<div class="col-sm-2">
-					<label class="desk-hide m-b-0 small">
-						Triple Rate
-					</label>
-					<input type="number" class="form-control fnb-input m-r-10 sub-dates" placeholder="Triple Rate">
-				</div>
-				<div class="col-sm-2">
-					<button class="btn fnb-btn outline">Calculate Net Price</button>
-				</div>
-			</div>
-			<div class="row m-b-15">
-				<div class="col-sm-2">
-					Net Rate <i class="fa fa-inr"></i>
-				</div>
-				<div class="col-sm-2">
-					<label class="desk-hide m-b-0 small">
-						Single Rate
-					</label>
-					<input type="number" disabled="" class="form-control fnb-input m-r-10 sub-dates" placeholder="Single Rate">
-				</div>
-				<div class="col-sm-2">
-					<label class="desk-hide m-b-0 small">
-						Double Rate
-					</label>
-					<input type="number" disabled="" class="form-control fnb-input m-r-10 sub-dates" placeholder="Double Rate">
-				</div>
-				<div class="col-sm-2">
-					<label class="desk-hide m-b-0 small">
-						Triple Rate
-					</label>
-					<input type="number" disabled="" class="form-control fnb-input m-r-10 sub-dates" placeholder="Triple Rate">
-				</div>
-			</div>
-			<div class="row m-b-15">
-				<div class="col-sm-2">
-					GST <i class="fa fa-percent"></i>
-				</div>
-				<div class="col-sm-2">
-					<label class="desk-hide m-b-0 small">
-						Single Rate GST
-					</label>
-					<input type="number" disabled="" class="form-control fnb-input m-r-10 sub-dates" placeholder="0">
-				</div>
-				<div class="col-sm-2">
-					<label class="desk-hide m-b-0 small">
-						Double Rate GST
-					</label>
-					<input type="number" disabled="" class="form-control fnb-input m-r-10 sub-dates" placeholder="0">
-				</div>
-				<div class="col-sm-2">
-					<label class="desk-hide m-b-0 small">
-						Triple Rate GST
-					</label>
-					<input type="number" disabled="" class="form-control fnb-input m-r-10 sub-dates" placeholder="0">
+								Sain Dsouza (Owner)
+							</div>
+							<span class="text-muted small">2 days ago</span>
+						</div>
+						<p class="small">
+							Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.
+						</p>
+					</div>
+					<div class="single-log">
+						<div class="flex-row space-between">
+							<div class="bolder">
+
+								Sain Dsouza (Owner)
+							</div>
+							<span class="text-muted small">2 days ago</span>
+						</div>
+						<p class="small">
+							Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.
+						</p>
+					</div>
+					<div class="single-log">
+						<div class="flex-row space-between">
+							<div class="bolder">
+
+								Sain Dsouza (Owner)
+							</div>
+							<span class="text-muted small">2 days ago</span>
+						</div>
+						<p class="small">
+							Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.
+						</p>
+					</div>
 				</div>
 			</div>
 		</div>
 
-		<div class="m-t-50">
-			<div class="row m-b-15 mobile-hide">
-
-				<div class="col-sm-3">
-					Extra Adult Charges
-				</div>
-				<div class="col-sm-3">
-					Extra Child Charges<br>
-					(age range 5-18 yrs)
-				</div>
-				<div class="col-sm-3">
-					Infant Charges if any<br>
-					(age below 5 years)
-				</div>
-			</div>
-			<div class="row m-b-15">
-
-				<div class="col-sm-3">
-					<label class="desk-hide m-b-0 small">
-						Extra Adult Charges
-					</label>
-					<input type="number" class="form-control fnb-input m-r-10 sub-dates" placeholder="Extra Adult">
-				</div>
-				<div class="col-sm-3">
-					<label class="desk-hide m-b-0 small">
-						Extra Child Charges (age range 5-18 yrs)
-					</label>
-					<input type="number" class="form-control fnb-input m-r-10 sub-dates" placeholder="Extra Child">
-				</div>
-				<div class="col-sm-3">
-					<label class="desk-hide m-b-0 small">
-						Infant Charges if any (age below 5 years)
-					</label>
-					<input type="number" class="form-control fnb-input m-r-10 sub-dates" placeholder="Extra Infant">
-				</div>
-			</div>
-		</div>
-		<div class="m-t-30">
-			<div class="row m-b-15">
-				<div class="col-sm-6">
-					Notes:
-					<textarea class="form-control fnb-textarea"></textarea>
-				</div>
-			</div>
-		</div>
-
-		<div class="text-left">
-			<button class="btn fnb-btn secondary-btn m-t-30">Update Rates</button>
-		</div>
 
 	</div>
 
