@@ -187,12 +187,30 @@
 		font-size: 1em;
 		color: lighten(@grey-darker, 20%);
 		text-decoration: none;
+		position: relative;
 		i{
 			// display: none;
 			margin-right: 15px;
 		}
 		&:hover{
 			color: @accent-secondary;
+		}
+
+		&[data-toggle="collapse"]{
+			&:after{
+				content: "\f078";
+				font-family: FontAwesome;
+				font-size: 10px;
+				position: absolute;
+				right: 0;
+				transition: all 0.3s ease;
+				font-weight: normal;
+			}
+			&.collapsed{
+				&:after{
+					transform: rotate(-90deg);
+				}
+			}
 		}
 	}
 	li.active{
