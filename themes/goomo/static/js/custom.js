@@ -386,3 +386,18 @@ $(document).ready(function() {
 	});
 
 });
+
+$(document).ready(function () {
+    popoverOptions = {
+        content: function () {
+            // Get the content from the hidden sibling.
+            return $(this).siblings('.my-popover-content').html();
+            return $('.my-popover-content').html();
+        },
+        trigger: 'click',
+        animation: false,
+        html: true, 
+        placement: 'bottom'
+    };
+    $('.action-panel').popover(popoverOptions);
+});

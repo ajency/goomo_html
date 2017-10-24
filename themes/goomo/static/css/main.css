@@ -14194,4 +14194,35 @@ dl dd {
   margin-top: 10px;
   color: #ff8500;
 }
+/* line 26, _common.less */
+.my-popover-content {
+  display: none;
+}
+/* line 30, _common.less */
+.listing-table .popover {
+  right: 20px;
+  padding: 10px;
+}
+/* line 35, _common.less */
+.booking-bucket {
+  box-shadow: none;
+  border-left: 1px solid #eee;
+}
+@media screen and (max-width: 768px) {
+  /* line 38, _common.less */
+  .booking-bucket {
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+    border-left: 0px;
+  }
+  /* line 41, _common.less */
+  .booking-bucket .buckets {
+    height: 80px;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 47, _common.less */
+  .commentable-section {
+    padding-right: 0px;
+  }
+}
 /*# sourceMappingURL=main.css.map */
