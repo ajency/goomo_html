@@ -401,3 +401,28 @@ $(document).ready(function () {
     };
     $('.action-panel').popover(popoverOptions);
 });
+
+$("#error-manual").hide();
+$(".btn").click(function () {
+	var id = $(this).attr("id");
+  if(id == "auto"){
+  $(this).attr("autofocus",true).siblings().attr("autofocus",false);
+  	$("#error-manual").hide();
+  	$("#error-auto").show();
+  }else{
+  $(this).attr("autofocus",true).siblings().attr("autofocus",false);
+  	$("#error-auto").hide();
+  	$("#error-manual").show();
+  }
+});
+
+$('.active').change(function() {
+   $(".rates-table").removeClass("hidden");
+
+
+});
+$('.inactive').change(function() {
+	 $(".rates-table").addClass("hidden");
+  
+
+});
