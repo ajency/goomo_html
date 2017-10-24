@@ -452,9 +452,11 @@
             <div class="modal-body">
               <div class="row">
                   <div class="col-md-4">
-                        <label class="label-size text-info">Tax</label>
+                        <label class="label-size text-info">Related to </label>
                       <select class="fnb-select select-variant form-control text-lighter" name="">
                               <option value="">--Select--</option>
+                              <option value="Hotel">Hotel</option>
+                              <option value="Rateplan">Rateplan</option>
                           </select>
                   </div>
                    <div class="col-md-4">
@@ -472,20 +474,24 @@
               <br>
   <div class="card card-dialog">
     <div class="card-body">
-      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
+     
             <div class="row">
                     <div class="col-sm-3 col-xs-6">
-                      <label class="label-size text-info">Related To</label>
+                      <label class="label-size text-info">Tax</label>
                       <select class="fnb-select select-variant form-control text-lighter" name="">
-                              <option value="">--Select--</option>
+                              <option value="">--Select Tax Type--</option>
+                              <option value="Hotel">Service Tax</option>
+                              <option value="Rateplan">Luxary Tax</option>
+                              <option value="Rateplan">Other Tax</option>
                           </select>
                         </div>
                        <div class="col-sm-3 col-xs-6">
                       <label class="label-size text-info">Tax On</label>
                        <select class="fnb-select select-variant form-control text-lighter" name="">
                               <option value="">--Select--</option>
+                               <option value="Hotel">Rack Rate</option>
+                              <option value="Rateplan">Sell Rate</option>
+                              <option value="Rateplan">Net Rate</option>
                           </select>
                      </div>
                        <div class="col-sm-3 col-xs-6">
@@ -516,16 +522,22 @@
             <span aria-hidden="true">&times;</span>
           </button>
             <div class="row">
-                    <div class="col-sm-3 col-xs-6">
+                  <div class="col-sm-3 col-xs-6">
                       <label class="label-size text-info">Tax</label>
                       <select class="fnb-select select-variant form-control text-lighter" name="">
-                              <option value="">--Select--</option>
+                              <option value="">--Select Tax Type--</option>
+                              <option value="Hotel">Service Tax</option>
+                              <option value="Rateplan">Luxary Tax</option>
+                              <option value="Rateplan">Other Tax</option>
                           </select>
                         </div>
                        <div class="col-sm-3 col-xs-6">
                       <label class="label-size text-info">Tax On</label>
                        <select class="fnb-select select-variant form-control text-lighter" name="">
                               <option value="">--Select--</option>
+                               <option value="Hotel">Rack Rate</option>
+                              <option value="Rateplan">Sell Rate</option>
+                              <option value="Rateplan">Net Rate</option>
                           </select>
                      </div>
                        <div class="col-sm-3 col-xs-6">
@@ -556,16 +568,22 @@
             <span aria-hidden="true">&times;</span>
           </button>
             <div class="row">
-                    <div class="col-sm-3 col-xs-6">
+               <div class="col-sm-3 col-xs-6">
                       <label class="label-size text-info">Tax</label>
                       <select class="fnb-select select-variant form-control text-lighter" name="">
-                              <option value="">--Select--</option>
+                              <option value="">--Select Tax Type--</option>
+                              <option value="Hotel">Service Tax</option>
+                              <option value="Rateplan">Luxary Tax</option>
+                              <option value="Rateplan">Other Tax</option>
                           </select>
                         </div>
                        <div class="col-sm-3 col-xs-6">
                       <label class="label-size text-info">Tax On</label>
                        <select class="fnb-select select-variant form-control text-lighter" name="">
                               <option value="">--Select--</option>
+                               <option value="Hotel">Rack Rate</option>
+                              <option value="Rateplan">Sell Rate</option>
+                              <option value="Rateplan">Net Rate</option>
                           </select>
                      </div>
                        <div class="col-sm-3 col-xs-6">
@@ -585,20 +603,19 @@
                   <div class="row"> 
                     <div class="col-sm-3 col-xs-6">
                       <label class="label-size text-info">From Amount</label>
-                      <select class="fnb-select select-variant form-control text-lighter" name="">
-                              <option value="">--Select--</option>
-                          </select>
+                     <input type="text" class=" form-control fnb-input m-r-10 sub-dates" placeholder="0">
                         </div>
                        <div class="col-sm-3 col-xs-6">
                       <label class="label-size text-info">To Amount</label>
-                       <select class="fnb-select select-variant form-control text-lighter" name="">
-                              <option value="">--Select--</option>
-                          </select>
+                       <input type="text" class=" form-control fnb-input m-r-10 sub-dates" placeholder="0">
                      </div>
                        <div class="col-sm-3 col-xs-6">
                       <label class="label-size text-info">Value Type</label>
                      <select class="fnb-select select-variant form-control text-lighter" name="">
                               <option value="">--Select--</option>
+                              <option selected="">Percentage</option>
+                              <option>Fixed</option>
+                             
                           </select>
                      </div>
                        <div class="col-sm-2 col-xs-6">

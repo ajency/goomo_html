@@ -150,6 +150,9 @@
       <li class="">
         <a href="/goomo_html/rates-availability/rate-plan/casa-candolim/">Rate Plans</a>
       </li>
+      <li class="">
+        <a href="/goomo_html/rates-availability/config/casa-candolim/">Channel Configuration</a>
+      </li>
     </ul>
   </li>
 
@@ -330,6 +333,7 @@
   <li class="">
     <a href="#"><i class="fa fa-bars"></i> <span>Dashboard</span></a>
   </li>
+
   <li class="">
     <a class=" form-toggle collapsed" data-toggle="collapse"  href="#property-bookingSubMenu" role="button">
       <i class="fa fa-calendar-check-o"></i> <span>Bookings</span></a>
@@ -357,6 +361,9 @@
       </li>
       <li class="">
         <a href="/goomo_html/rates-availability/rate-plan/casa-candolim/">Rate Plans</a>
+      </li>
+      <li class="">
+        <a href="/goomo_html/rates-availability/config/casa-candolim/">Channel Config</a>
       </li>
     </ul>
   </li>
@@ -578,19 +585,36 @@
 		</div>
 
 		<div class="row m-t-30">
-			<div class="col-sm-2">
+			<div class="col-sm-3">
 				<p class="text-info bolder">Available Inventory:</p>
 				<input type="number" class="form-control fnb-input m-r-10 sub-dates" placeholder="No. of Days">
 			</div>
+			<div class="col-sm-3">
+				<p class="text-info bolder">Total Rooms</p>
+				<h4>10</h4>
+			</div>
 		</div>
 
+			<div class="row m-t-30">
+			<div class="col-sm-3">
+				<p class="text-info bolder">Allotment to Goomo (25%)  </p>
+				<input type="number" class="form-control fnb-input m-r-10 sub-dates" placeholder="4">
+			</div>
+			<div class="col-sm-3">
+				<div class="alert alert-info m-0" role="alert">
+				<p class="text-info"><i class="fa fa-bell" aria-hidden="true"></i> Low alert on</p>
+				<h6 class="bolder m-0">2 Rooms</h6>
+			</div>
+			</div>
+		</div>
 		<div class="row m-t-30">
-			<div class="col-sm-2">
+			<div class="col-sm-3">
 				<p class="text-info bolder">MLOS:</p>
+				<span class="text-muted">Control the number of nights a guest can book.</span><br><br>
 				<input type="number" class="form-control fnb-input m-r-10 sub-dates" placeholder="No. of Days">
 			</div>
 			<div class="col-sm-3">
-				<p class="text-info dis-inline bolder">Cutoff:
+				<p class="text-info dis-inline bolder">Cut off Period:
 				</p>
 				<div class="btn-group small" data-toggle="buttons" role="group" aria-label="..." style="transform: scale(0.9);">
 			  		<label class="btn btn-default fnb-btn toggle-btn ">
@@ -600,6 +624,8 @@
 			            <input type="radio" name="policy" id="rateplan" checked=""> Days
 			        </label>
 				</div>
+				<span class="text-muted">Sets a time limit upon when a reservation is made, and the guest's actual arrival
+</span>
 				<input type="number" class="form-control fnb-input m-r-10 sub-dates" placeholder="2">
 			</div>
 		</div>
