@@ -333,8 +333,15 @@
   <li class="">
     <a href="#"><i class="fa fa-bars"></i> <span>Dashboard</span></a>
   </li>
+
   <li class="">
-    <a href="/goomo_html/bookings/all/casa-anjuna/"><i class="fa fa-calendar-check-o"></i> <span>Bookings</span></a>
+    <a class=" form-toggle collapsed" data-toggle="collapse"  href="#property-bookingSubMenu" role="button">
+      <i class="fa fa-calendar-check-o"></i> <span>Bookings</span></a>
+    <ul class="gs-steps collapse  edit-mode sub-steps" id="property-bookingSubMenu" role="tablist">
+      <li class="">
+        <a href="/goomo_html/bookings/all/casa-anjuna/">All Bookings</a>
+      </li>
+    </ul>
   </li>
 
   <li class="active">
@@ -354,6 +361,9 @@
       </li>
       <li class="">
         <a href="/goomo_html/rates-availability/rate-plan/casa-anjuna/">Rate Plans</a>
+      </li>
+      <li class="active">
+        <a href="/goomo_html/rates-availability/config/casa-anjuna/">Channel Config</a>
       </li>
     </ul>
   </li>
