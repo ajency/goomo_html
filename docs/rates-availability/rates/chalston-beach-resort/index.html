@@ -1213,15 +1213,15 @@
 
 								
 								<ul class="nav nav-tabs" role="tablist">
-								    <li role="presentation" class="active"><a href="#web" aria-controls="web" role="tab" data-toggle="tab">Web</a></li>
-								    <li role="presentation"><a href="#mobile" aria-controls="mobile" role="tab" data-toggle="tab">Mobile </a></li>
-								    <li role="presentation"><a href="#fph" aria-controls="fph" role="tab" data-toggle="tab">FPH</a></li>
-								    <li role="presentation"><a href="#b2b" aria-controls="b2b" role="tab" data-toggle="tab">B2B</a></li>
+								    <li role="presentation" class="active"><a href="#web1" aria-controls="web1" role="tab" data-toggle="tab">Web</a></li>
+								    <li role="presentation"><a href="#mobile1" aria-controls="mobile1" role="tab" data-toggle="tab">Mobile </a></li>
+								    <li role="presentation"><a href="#fph1" aria-controls="fph1" role="tab" data-toggle="tab">FPH</a></li>
+								    <li role="presentation"><a href="#b2b1" aria-controls="b2b1" role="tab" data-toggle="tab">B2B</a></li>
 								</ul>
 
 								  
 								<div class="tab-content">
-								    <div role="tabpanel" class="tab-pane fade in active" id="web">
+								    <div role="tabpanel" class="tab-pane fade in active" id="web1">
 								    	<div class="m-t-20">
 								    		<div class="row m-b-15 mobile-hide" style="background: #f5f5f5; padding: 5px 0; font-weight: 600;">
 								    			<div class="col-sm-2">
@@ -1349,11 +1349,30 @@
 								    		</div>
 								    	</div>
 								    </div>
-								    <div role="tabpanel" class="tab-pane fade" id="mobile">
-								    	<div class="m-t-20">
-								    		<div class="alert alert-warning small">
-								    			<strong>Note:</strong> These rates are linked to web rates. You can modify the linked percentages from <a href="#" class="text-secondary">here</a>.
-								    		</div>
+								    <div role="tabpanel" class="tab-pane fade" id="mobile1">
+								    		<ul class="list-inline m-t-20">
+				<li>Do you want to set rates for this channel?
+				</li>
+				<li>
+
+	<div class="form-check form-check-inline">
+	  <label class="form-check-label">
+	    <input class="form-check-input active" type="radio" name="inlineRadioOptions" id="active" value="option5" checked="checked">  Yes
+	  </label>
+	</div>
+				</li>
+					<li>
+
+	<div class="form-check form-check-inline">
+	  <label class="form-check-label">
+	    <input class="form-check-input inactive" type="radio" name="inlineRadioOptions" id="inactive" value="option6"> No
+	  </label>
+	</div>
+				</li>
+
+			</ul>
+			<div class="rates-table m-t-20">
+								    	
 								    		<div class="row m-b-15 mobile-hide" style="background: #f5f5f5; padding: 5px 0; font-weight: 600;">
 								    			<div class="col-sm-2">
 								    				<div></div>
@@ -1376,19 +1395,19 @@
 								    				<label class="desk-hide m-b-0 small">
 								    					Single Rate
 								    				</label>
-								    				<input type="number" class="form-control fnb-input m-r-10 sub-dates p-l-5" disabled="" placeholder="Single Rate" value="2500">
+								    				<input type="number" class="form-control fnb-input m-r-10 sub-dates p-l-5" placeholder="Single Rate" value="2500">
 								    			</div>
 								    			<div class="col-sm-3">
 								    				<label class="desk-hide m-b-0 small">
 								    					Double Rate
 								    				</label>
-								    				<input type="number" class="form-control fnb-input m-r-10 sub-dates p-l-5" disabled="" placeholder="Double Rate" value="3500">
+								    				<input type="number" class="form-control fnb-input m-r-10 sub-dates p-l-5" placeholder="Double Rate" value="3500">
 								    			</div>
 								    			<div class="col-sm-3">
 								    				<label class="desk-hide m-b-0 small">
 								    					Triple Rate
 								    				</label>
-								    				<input type="number" class="form-control fnb-input m-r-10 sub-dates p-l-5" disabled="" placeholder="Triple Rate" value="4500">
+								    				<input type="number" class="form-control fnb-input m-r-10 sub-dates p-l-5"  placeholder="Triple Rate" value="4500">
 								    			</div>
 								    			<div class="col-sm-1 small">
 								    				
@@ -1440,7 +1459,7 @@
 								    				<input type="number" disabled="" class="form-control fnb-input m-r-10 sub-dates p-l-5" placeholder="0" value="320">
 								    			</div>
 								    		</div>
-								    	</div>
+								    
 
 								    	<div class="m-t-50">
 								    		<div class="row m-b-15 mobile-hide">
@@ -1463,28 +1482,199 @@
 								    				<label class="desk-hide m-b-0 small">
 								    					Extra Adult Charges
 								    				</label>
-								    				<input type="number" disabled="" class="p-l-5 form-control fnb-input m-r-10 sub-dates" placeholder="Extra Adult">
+								    				<input type="number"  class="p-l-5 form-control fnb-input m-r-10 sub-dates" placeholder="Extra Adult">
 								    			</div>
 								    			<div class="col-sm-4">
 								    				<label class="desk-hide m-b-0 small">
 								    					Extra Child Charges (age range 5-18 yrs)
 								    				</label>
-								    				<input type="number" disabled="" class="p-l-5 form-control fnb-input m-r-10 sub-dates" placeholder="Extra Child">
+								    				<input type="number"  class="p-l-5 form-control fnb-input m-r-10 sub-dates" placeholder="Extra Child">
 								    			</div>
 								    			<div class="col-sm-4">
 								    				<label class="desk-hide m-b-0 small">
 								    					Infant Charges if any (age below 5 years)
 								    				</label>
-								    				<input type="number" disabled="" class="p-l-5 form-control fnb-input m-r-10 sub-dates" placeholder="Extra Infant">
+								    				<input type="number"  class="p-l-5 form-control fnb-input m-r-10 sub-dates" placeholder="Extra Infant">
+								    			</div>
+								    		</div>
+								    	</div>
+								    		</div>
+								    </div>
+								    <div role="tabpanel" class="tab-pane fade" id="fph1">
+								    			<ul class="list-inline m-t-20">
+				<li>Do you want to set rates for this channel?
+				</li>
+				<li>
+
+	<div class="form-check form-check-inline">
+	  <label class="form-check-label">
+	    <input class="form-check-input active" type="radio" name="inlineRadioOptions" id="active" value="option5" checked="checked">  Yes
+	  </label>
+	</div>
+				</li>
+					<li>
+
+	<div class="form-check form-check-inline">
+	  <label class="form-check-label">
+	    <input class="form-check-input inactive" type="radio" name="inlineRadioOptions" id="inactive" value="option6"> No
+	  </label>
+	</div>
+				</li>
+
+			</ul>
+			<div class="rates-table m-t-20">
+								    	
+								    		<div class="row m-b-15 mobile-hide" style="background: #f5f5f5; padding: 5px 0; font-weight: 600;">
+								    			<div class="col-sm-2">
+								    				<div></div>
+								    			</div>
+								    			<div class="col-sm-3">
+								    				Single Rate
+								    			</div>
+								    			<div class="col-sm-3">
+								    				Double Rate
+								    			</div>
+								    			<div class="col-sm-3">
+								    				Triple Rate
+								    			</div>
+								    		</div>
+								    		<div class="row m-b-15">
+								    			<div class="col-sm-2">
+								    				Sell Rate <i class="fa fa-inr"></i>
+								    			</div>
+								    			<div class="col-sm-3">
+								    				<label class="desk-hide m-b-0 small">
+								    					Single Rate
+								    				</label>
+								    				<input type="number" class="form-control fnb-input m-r-10 sub-dates p-l-5"  placeholder="Single Rate" value="2500">
+								    			</div>
+								    			<div class="col-sm-3">
+								    				<label class="desk-hide m-b-0 small">
+								    					Double Rate
+								    				</label>
+								    				<input type="number" class="form-control fnb-input m-r-10 sub-dates p-l-5" placeholder="Double Rate" value="3500">
+								    			</div>
+								    			<div class="col-sm-3">
+								    				<label class="desk-hide m-b-0 small">
+								    					Triple Rate
+								    				</label>
+								    				<input type="number" class="form-control fnb-input m-r-10 sub-dates p-l-5"  placeholder="Triple Rate" value="4500">
+								    			</div>
+								    			<div class="col-sm-1 small">
+								    				
+								    			</div>
+								    		</div>
+								    		<div class="row m-b-15">
+								    			<div class="col-sm-2">
+								    				Net Rate <i class="fa fa-inr"></i>
+								    			</div>
+								    			<div class="col-sm-3">
+								    				<label class="desk-hide m-b-0 small">
+								    					Single Rate
+								    				</label>
+								    				<input type="number" disabled="" class="form-control fnb-input m-r-10 sub-dates p-l-5" placeholder="Single Rate" value="2000">
+								    			</div>
+								    			<div class="col-sm-3">
+								    				<label class="desk-hide m-b-0 small">
+								    					Double Rate
+								    				</label>
+								    				<input type="number" disabled="" class="form-control fnb-input m-r-10 sub-dates p-l-5" placeholder="Double Rate" value="3000">
+								    			</div>
+								    			<div class="col-sm-3">
+								    				<label class="desk-hide m-b-0 small">
+								    					Triple Rate
+								    				</label>
+								    				<input type="number" disabled="" class="form-control fnb-input m-r-10 sub-dates p-l-5" placeholder="Triple Rate" value="4000">
+								    			</div>
+								    		</div>
+								    		<div class="row m-b-15">
+								    			<div class="col-sm-2">
+								    				GST <i class="fa fa-percent"></i>
+								    			</div>
+								    			<div class="col-sm-3">
+								    				<label class="desk-hide m-b-0 small">
+								    					Single Rate GST
+								    				</label>
+								    				<input type="number" disabled="" class="form-control fnb-input m-r-10 sub-dates p-l-5" placeholder="0" value="120">
+								    			</div>
+								    			<div class="col-sm-3">
+								    				<label class="desk-hide m-b-0 small">
+								    					Double Rate GST
+								    				</label>
+								    				<input type="number" disabled="" class="form-control fnb-input m-r-10 sub-dates p-l-5" placeholder="0" value="220">
+								    			</div>
+								    			<div class="col-sm-3">
+								    				<label class="desk-hide m-b-0 small">
+								    					Triple Rate GST
+								    				</label>
+								    				<input type="number" disabled="" class="form-control fnb-input m-r-10 sub-dates p-l-5" placeholder="0" value="320">
+								    			</div>
+								    		</div>
+								    	
+
+								    	<div class="m-t-50">
+								    		<div class="row m-b-15 mobile-hide">
+
+								    			<div class="col-sm-4">
+								    				Extra Adult Charges
+								    			</div>
+								    			<div class="col-sm-4">
+								    				Extra Child Charges<br>
+								    				(age range 5-18 yrs)
+								    			</div>
+								    			<div class="col-sm-4">
+								    				Infant Charges if any<br>
+								    				(age below 5 years)
+								    			</div>
+								    		</div>
+								    		<div class="row m-b-15">
+
+								    			<div class="col-sm-4">
+								    				<label class="desk-hide m-b-0 small">
+								    					Extra Adult Charges
+								    				</label>
+								    				<input type="number"  class="p-l-5 form-control fnb-input m-r-10 sub-dates" placeholder="Extra Adult">
+								    			</div>
+								    			<div class="col-sm-4">
+								    				<label class="desk-hide m-b-0 small">
+								    					Extra Child Charges (age range 5-18 yrs)
+								    				</label>
+								    				<input type="number"  class="p-l-5 form-control fnb-input m-r-10 sub-dates" placeholder="Extra Child">
+								    			</div>
+								    			<div class="col-sm-4">
+								    				<label class="desk-hide m-b-0 small">
+								    					Infant Charges if any (age below 5 years)
+								    				</label>
+								    				<input type="number"  class="p-l-5 form-control fnb-input m-r-10 sub-dates" placeholder="Extra Infant">
 								    			</div>
 								    		</div>
 								    	</div>
 								    </div>
-								    <div role="tabpanel" class="tab-pane fade" id="fph">
-								    	<div class="m-t-20">
-								    		<div class="alert alert-warning small">
-								    			<strong>Note:</strong> These rates are linked to web rates. You can modify the linked percentages from <a href="#" class="text-secondary">here</a>.
-								    		</div>
+								    </div>
+								    <div role="tabpanel" class="tab-pane fade" id="b2b1">
+								    			<ul class="list-inline m-t-20">
+				<li>Do you want to set rates for this channel?
+				</li>
+				<li>
+
+	<div class="form-check form-check-inline">
+	  <label class="form-check-label">
+	    <input class="form-check-input active" type="radio" name="inlineRadioOptions" id="active" value="option5" checked="checked">  Yes
+	  </label>
+	</div>
+				</li>
+					<li>
+
+	<div class="form-check form-check-inline">
+	  <label class="form-check-label">
+	    <input class="form-check-input inactive" type="radio" name="inlineRadioOptions" id="inactive" value="option6"> No
+	  </label>
+	</div>
+				</li>
+
+			</ul>
+			<div class="rates-table m-t-20">
+								    	
 								    		<div class="row m-b-15 mobile-hide" style="background: #f5f5f5; padding: 5px 0; font-weight: 600;">
 								    			<div class="col-sm-2">
 								    				<div></div>
@@ -1507,19 +1697,19 @@
 								    				<label class="desk-hide m-b-0 small">
 								    					Single Rate
 								    				</label>
-								    				<input type="number" class="form-control fnb-input m-r-10 sub-dates p-l-5" disabled="" placeholder="Single Rate" value="2500">
+								    				<input type="number" class="form-control fnb-input m-r-10 sub-dates p-l-5"  placeholder="Single Rate" value="2500">
 								    			</div>
 								    			<div class="col-sm-3">
 								    				<label class="desk-hide m-b-0 small">
 								    					Double Rate
 								    				</label>
-								    				<input type="number" class="form-control fnb-input m-r-10 sub-dates p-l-5" disabled="" placeholder="Double Rate" value="3500">
+								    				<input type="number" class="form-control fnb-input m-r-10 sub-dates p-l-5"  placeholder="Double Rate" value="3500">
 								    			</div>
 								    			<div class="col-sm-3">
 								    				<label class="desk-hide m-b-0 small">
 								    					Triple Rate
 								    				</label>
-								    				<input type="number" class="form-control fnb-input m-r-10 sub-dates p-l-5" disabled="" placeholder="Triple Rate" value="4500">
+								    				<input type="number" class="form-control fnb-input m-r-10 sub-dates p-l-5" placeholder="Triple Rate" value="4500">
 								    			</div>
 								    			<div class="col-sm-1 small">
 								    				
@@ -1571,7 +1761,7 @@
 								    				<input type="number" disabled="" class="form-control fnb-input m-r-10 sub-dates p-l-5" placeholder="0" value="320">
 								    			</div>
 								    		</div>
-								    	</div>
+								    
 
 								    	<div class="m-t-50">
 								    		<div class="row m-b-15 mobile-hide">
@@ -1594,153 +1784,23 @@
 								    				<label class="desk-hide m-b-0 small">
 								    					Extra Adult Charges
 								    				</label>
-								    				<input type="number" disabled="" class="p-l-5 form-control fnb-input m-r-10 sub-dates" placeholder="Extra Adult">
+								    				<input type="number"  class="p-l-5 form-control fnb-input m-r-10 sub-dates" placeholder="Extra Adult">
 								    			</div>
 								    			<div class="col-sm-4">
 								    				<label class="desk-hide m-b-0 small">
 								    					Extra Child Charges (age range 5-18 yrs)
 								    				</label>
-								    				<input type="number" disabled="" class="p-l-5 form-control fnb-input m-r-10 sub-dates" placeholder="Extra Child">
+								    				<input type="number"  class="p-l-5 form-control fnb-input m-r-10 sub-dates" placeholder="Extra Child">
 								    			</div>
 								    			<div class="col-sm-4">
 								    				<label class="desk-hide m-b-0 small">
 								    					Infant Charges if any (age below 5 years)
 								    				</label>
-								    				<input type="number" disabled="" class="p-l-5 form-control fnb-input m-r-10 sub-dates" placeholder="Extra Infant">
+								    				<input type="number"  class="p-l-5 form-control fnb-input m-r-10 sub-dates" placeholder="Extra Infant">
 								    			</div>
 								    		</div>
 								    	</div>
 								    </div>
-								    <div role="tabpanel" class="tab-pane fade" id="b2b">
-								    	<div class="m-t-20">
-								    		<div class="alert alert-warning small">
-								    			<strong>Note:</strong> These rates are linked to web rates. You can modify the linked percentages from <a href="#" class="text-secondary">here</a>.
-								    		</div>
-								    		<div class="row m-b-15 mobile-hide" style="background: #f5f5f5; padding: 5px 0; font-weight: 600;">
-								    			<div class="col-sm-2">
-								    				<div></div>
-								    			</div>
-								    			<div class="col-sm-3">
-								    				Single Rate
-								    			</div>
-								    			<div class="col-sm-3">
-								    				Double Rate
-								    			</div>
-								    			<div class="col-sm-3">
-								    				Triple Rate
-								    			</div>
-								    		</div>
-								    		<div class="row m-b-15">
-								    			<div class="col-sm-2">
-								    				Sell Rate <i class="fa fa-inr"></i>
-								    			</div>
-								    			<div class="col-sm-3">
-								    				<label class="desk-hide m-b-0 small">
-								    					Single Rate
-								    				</label>
-								    				<input type="number" class="form-control fnb-input m-r-10 sub-dates p-l-5" disabled="" placeholder="Single Rate" value="2500">
-								    			</div>
-								    			<div class="col-sm-3">
-								    				<label class="desk-hide m-b-0 small">
-								    					Double Rate
-								    				</label>
-								    				<input type="number" class="form-control fnb-input m-r-10 sub-dates p-l-5" disabled="" placeholder="Double Rate" value="3500">
-								    			</div>
-								    			<div class="col-sm-3">
-								    				<label class="desk-hide m-b-0 small">
-								    					Triple Rate
-								    				</label>
-								    				<input type="number" class="form-control fnb-input m-r-10 sub-dates p-l-5" disabled="" placeholder="Triple Rate" value="4500">
-								    			</div>
-								    			<div class="col-sm-1 small">
-								    				
-								    			</div>
-								    		</div>
-								    		<div class="row m-b-15">
-								    			<div class="col-sm-2">
-								    				Net Rate <i class="fa fa-inr"></i>
-								    			</div>
-								    			<div class="col-sm-3">
-								    				<label class="desk-hide m-b-0 small">
-								    					Single Rate
-								    				</label>
-								    				<input type="number" disabled="" class="form-control fnb-input m-r-10 sub-dates p-l-5" placeholder="Single Rate" value="2000">
-								    			</div>
-								    			<div class="col-sm-3">
-								    				<label class="desk-hide m-b-0 small">
-								    					Double Rate
-								    				</label>
-								    				<input type="number" disabled="" class="form-control fnb-input m-r-10 sub-dates p-l-5" placeholder="Double Rate" value="3000">
-								    			</div>
-								    			<div class="col-sm-3">
-								    				<label class="desk-hide m-b-0 small">
-								    					Triple Rate
-								    				</label>
-								    				<input type="number" disabled="" class="form-control fnb-input m-r-10 sub-dates p-l-5" placeholder="Triple Rate" value="4000">
-								    			</div>
-								    		</div>
-								    		<div class="row m-b-15">
-								    			<div class="col-sm-2">
-								    				GST <i class="fa fa-percent"></i>
-								    			</div>
-								    			<div class="col-sm-3">
-								    				<label class="desk-hide m-b-0 small">
-								    					Single Rate GST
-								    				</label>
-								    				<input type="number" disabled="" class="form-control fnb-input m-r-10 sub-dates p-l-5" placeholder="0" value="120">
-								    			</div>
-								    			<div class="col-sm-3">
-								    				<label class="desk-hide m-b-0 small">
-								    					Double Rate GST
-								    				</label>
-								    				<input type="number" disabled="" class="form-control fnb-input m-r-10 sub-dates p-l-5" placeholder="0" value="220">
-								    			</div>
-								    			<div class="col-sm-3">
-								    				<label class="desk-hide m-b-0 small">
-								    					Triple Rate GST
-								    				</label>
-								    				<input type="number" disabled="" class="form-control fnb-input m-r-10 sub-dates p-l-5" placeholder="0" value="320">
-								    			</div>
-								    		</div>
-								    	</div>
-
-								    	<div class="m-t-50">
-								    		<div class="row m-b-15 mobile-hide">
-
-								    			<div class="col-sm-4">
-								    				Extra Adult Charges
-								    			</div>
-								    			<div class="col-sm-4">
-								    				Extra Child Charges<br>
-								    				(age range 5-18 yrs)
-								    			</div>
-								    			<div class="col-sm-4">
-								    				Infant Charges if any<br>
-								    				(age below 5 years)
-								    			</div>
-								    		</div>
-								    		<div class="row m-b-15">
-
-								    			<div class="col-sm-4">
-								    				<label class="desk-hide m-b-0 small">
-								    					Extra Adult Charges
-								    				</label>
-								    				<input type="number" disabled="" class="p-l-5 form-control fnb-input m-r-10 sub-dates" placeholder="Extra Adult">
-								    			</div>
-								    			<div class="col-sm-4">
-								    				<label class="desk-hide m-b-0 small">
-								    					Extra Child Charges (age range 5-18 yrs)
-								    				</label>
-								    				<input type="number" disabled="" class="p-l-5 form-control fnb-input m-r-10 sub-dates" placeholder="Extra Child">
-								    			</div>
-								    			<div class="col-sm-4">
-								    				<label class="desk-hide m-b-0 small">
-								    					Infant Charges if any (age below 5 years)
-								    				</label>
-								    				<input type="number" disabled="" class="p-l-5 form-control fnb-input m-r-10 sub-dates" placeholder="Extra Infant">
-								    			</div>
-								    		</div>
-								    	</div>
 								    </div>
 								</div>
 							</div>
