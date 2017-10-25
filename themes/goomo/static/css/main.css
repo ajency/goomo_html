@@ -14252,4 +14252,14 @@ dl dd {
     padding-right: 0px;
   }
 }
+/* line 51, _common.less */
+.sd-inventory_count {
+  position: relative;
+}
+/* line 53, _common.less */
+.sd-inventory_count .plan-restrict {
+  position: absolute;
+  top: -5px;
+  font-size: 9px;
+}
 /*# sourceMappingURL=main.css.map */
