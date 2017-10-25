@@ -333,15 +333,8 @@
   <li class="">
     <a href="#"><i class="fa fa-bars"></i> <span>Dashboard</span></a>
   </li>
-
   <li class="">
-    <a class=" form-toggle collapsed" data-toggle="collapse"  href="#property-bookingSubMenu" role="button">
-      <i class="fa fa-calendar-check-o"></i> <span>Bookings</span></a>
-    <ul class="gs-steps collapse  edit-mode sub-steps" id="property-bookingSubMenu" role="tablist">
-      <li class="">
-        <a href="/goomo_html/bookings/all/casa-amora/">All Bookings</a>
-      </li>
-    </ul>
+    <a href="/goomo_html/bookings/all/casa-amora/"><i class="fa fa-calendar-check-o"></i> <span>Bookings</span></a>
   </li>
 
   <li class="active">
@@ -361,9 +354,6 @@
       </li>
       <li class="">
         <a href="/goomo_html/rates-availability/rate-plan/casa-amora/">Rate Plans</a>
-      </li>
-      <li class="">
-        <a href="/goomo_html/rates-availability/config/casa-amora/">Channel Config</a>
       </li>
     </ul>
   </li>
@@ -585,32 +575,33 @@
 		</div>
 
 		<div class="row m-t-30">
+			
 			<div class="col-sm-3">
-				<p class="text-info bolder">Available Inventory:</p>
-				<input type="number" class="form-control fnb-input m-r-10 sub-dates" placeholder="No. of Days">
+				<p class="text-info bolder">Allotment to Goomo (25%)  </p>
+				<input type="number" class="form-control fnb-input m-r-10 sub-dates" placeholder="4">
 			</div>
-			<div class="col-sm-3">
+			<div class="col-sm-2">
 				<p class="text-info bolder">Total Rooms</p>
 				<h4>10</h4>
 			</div>
 		</div>
 
 			<div class="row m-t-30">
+			
 			<div class="col-sm-3">
-				<p class="text-info bolder">Allotment to Goomo (25%)  </p>
-				<input type="number" class="form-control fnb-input m-r-10 sub-dates" placeholder="4">
-			</div>
-			<div class="col-sm-3">
-				<div class="alert alert-info m-0" role="alert">
-				<p class="text-info"><i class="fa fa-bell" aria-hidden="true"></i> Low alert on</p>
-				<h6 class="bolder m-0">2 Rooms</h6>
-			</div>
+				<p class="text-danger bolder"> Low alert on <i class="fa fa-bell" aria-hidden="true"></i></p>
+				 <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                      
+                        <input type="text" class="form-control fnb-input" id="inlineFormInputGroupUsername2" placeholder="2">
+                          <div class="input-group-addon">Rooms</div>
+                      </div>
+			
 			</div>
 		</div>
 		<div class="row m-t-30">
 			<div class="col-sm-3">
 				<p class="text-info bolder">MLOS:</p>
-				<span class="text-muted">Control the number of nights a guest can book.</span><br><br>
+				<span class="text-muted center-block">Control the number of nights a guest can book.</span><br>
 				<input type="number" class="form-control fnb-input m-r-10 sub-dates" placeholder="No. of Days">
 			</div>
 			<div class="col-sm-3">
@@ -624,7 +615,7 @@
 			            <input type="radio" name="policy" id="rateplan" checked=""> Days
 			        </label>
 				</div>
-				<span class="text-muted">Sets a time limit upon when a reservation is made, and the guest's actual arrival
+				<span class="text-muted center-block">Sets a time limit upon when a reservation is made, and the guest's actual arrival
 </span>
 				<input type="number" class="form-control fnb-input m-r-10 sub-dates" placeholder="2">
 			</div>
