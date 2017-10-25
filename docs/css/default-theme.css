@@ -74,7 +74,7 @@
   border: 1px solid #F2F2F0;
   border-left: 0;
   border-right: 0;
-  padding: 15px 0;
+  padding: 10px 0;
   margin-top: -1px;
 }
 .side-comment .comment,
@@ -197,4 +197,14 @@
   .side-comment .marker {
     display: block;
   }
+}
+
+
+.side-comment ul.comments ul{
+  list-style-type: disc;
+  padding-left: 20px;
+}
+.side-comment ul.comments ul li{
+  overflow: visible;
+  border-top: 0
 }

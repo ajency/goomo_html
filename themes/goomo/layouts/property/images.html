@@ -175,14 +175,27 @@
 		</div>
 	</div>
 
-<!-- Add photos modal -->
-{{ partial "add-photos.html" .}}
+	<!-- Add photos modal -->
+	{{ partial "add-photos.html" .}}
 
-<!-- Edit photos modal -->
-{{ partial "edit-gallery.html" .}}
+	<!-- Edit photos modal -->
+	{{ partial "edit-gallery.html" .}}
 
-<!-- Approve changes modal -->
-{{ partial "approve-modal.html" .}}
+	<!-- Approve changes modal -->
+	{{ partial "approve-modal.html" .}}
+
+	<script type="text/javascript">
+		var existingComments = [
+		  {
+		    "sectionId": "1",
+		    "comments": [
+		      {
+		        "comment": "<ul><li>Images can be added at property level and room level</li> <li>The rooms should be configured first to add images</li> <li>The images at the property level can also be assigned to the room</li> <li>Once the images are added they can be dragged to reorder</li> <li>Tags can be added to the images</li></ul> "
+		      }
+		    ]
+		  }
+		];
+	</script>
 
 
 {{ end }}
