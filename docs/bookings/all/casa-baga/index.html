@@ -333,8 +333,15 @@
   <li class="">
     <a href="#"><i class="fa fa-bars"></i> <span>Dashboard</span></a>
   </li>
+
   <li class="active">
-    <a href="/goomo_html/bookings/all/casa-baga/"><i class="fa fa-calendar-check-o"></i> <span>Bookings</span></a>
+    <a class=" form-toggle " data-toggle="collapse"  href="#property-bookingSubMenu" role="button">
+      <i class="fa fa-calendar-check-o"></i> <span>Bookings</span></a>
+    <ul class="gs-steps collapse in edit-mode sub-steps" id="property-bookingSubMenu" role="tablist">
+      <li class="active">
+        <a href="/goomo_html/bookings/all/casa-baga/">All Bookings</a>
+      </li>
+    </ul>
   </li>
 
   <li class="">
@@ -354,6 +361,9 @@
       </li>
       <li class="">
         <a href="/goomo_html/rates-availability/rate-plan/casa-baga/">Rate Plans</a>
+      </li>
+      <li class="">
+        <a href="/goomo_html/rates-availability/config/casa-baga/">Channel Config</a>
       </li>
     </ul>
   </li>
@@ -505,12 +515,12 @@
 		</div>
 		<div class="row">
 			<div class="col-sm-2 m-b-20">
-				 <select  class="fnb-select select-variant form-control text-lighter">
+				<select  class="fnb-select select-variant form-control text-lighter">
 				 	<option value="Yes">Date of</option>
-                    <option value="Yes">Booking Date</option>
-                    <option value="No">Check In Date</option>
-                        <option value="No">Check Out Date</option>
-                  </select>
+          <option value="Yes">Booking Date</option>
+          <option value="No">Check In Date</option>
+          <option value="No">Check Out Date</option>
+        </select>
 			</div>
 			<div class="col-sm-2 col-xs-4">
 				<input type="text" class="from-date form-control fnb-input m-r-10 sub-dates" placeholder="From Date">
@@ -556,23 +566,23 @@
                           <option value="mumbai">Casa Bella</option>
                           <option value="delhi">Casa Delux Room</option>
                           <option value="gujarat">Premium Room</option>
-                         
+
                       </datalist>
                     </div>
                       </div>
 
-                    
+
                     </div>
                   </div>
 
-                 
+
                 </div>
 
                 <div class="col-sm-12 col-md-4">
                   <div class="filter-section mb-4">
                     <h6 class="sub-title bolder">Status</h6>
                     <hr class="m-t-0 m-b-5">
-                
+
                     <div class="row mobile-flex">
                       <div class="col-sm-12 col-xs-12">
                           <div class="checkbox">
@@ -596,7 +606,7 @@
                         <div class="checkbox">
                           <label>
                               <input type="checkbox" value="" class="">
-                              Cancelled	
+                              Cancelled
                             </label>
                         </div>
                       </div>
@@ -604,19 +614,19 @@
                         <div class="checkbox">
                           <label>
                               <input type="checkbox" value="" class="">
-                              Arrival next 3 days	
+                              Arrival next 3 days
                             </label>
                         </div>
                       </div>
                     </div>
 
 
-               
+
                   </div>
                 </div>
 
                 <div class="col-sm-12 col-md-4">
-              
+
 
                   <div class="filter-section ">
                     <h6 class="sub-title bolder">Booking </h6>
@@ -630,13 +640,13 @@
 	                 <div class="col-sm-12 ">
                        <input type="text" class="form-control fnb-input" id="inlineFormInputGroupUsername2" placeholder="By Guest Name">
 	                </div>
-                
+
                   </div>
                 </div>
 
               </div>
 
-               
+
 
               <div class="row m-t-20">
                 <div class="col">
@@ -666,18 +676,18 @@
                   <h5 class="bolder m-b-5 titles">23</h5>
                   <p class="m-b-0 text-lighter">Total Booking</p>
                 </div>
-               
+
               </div>
               <div class="total-listing__count unclaimed flex-row space-between col-xs-6 col-md-12">
                 <div>
                   <h5 class="bolder m-b-5 titles">20,688</h5>
                   <p class="m-b-0 text-lighter">Pending Payment</p>
                 </div>
-              
+
               </div>
             </div>
 
-      
+
             <div class="star-bucket status-bucket stats-cols  dsk-separator booking-bucket">
               <p class="bolder">Status buckets</p>
               <div class="flex-row align-reset space-between">
@@ -730,7 +740,7 @@
                   Room Name
                 </th>
                 <th class="text-left "  rowspan="1">
-              
+
                   Arrival
                 </th>
                 <th class="text-left" style="" rowspan="1">
@@ -759,13 +769,13 @@
                 <td class="text-left"><b>₹ 2,400</b></td>
                 <td class="text-left"><span class="text-primary"> Confirmed</span> </td>
                 <td >
-                	
+
                   <i class="fa fa-ellipsis-v text-center action-panel center-block" aria-hidden="true"></i>
                    <div class="my-popover-content">
                    		<a href="#" class="text-primary"> <b><i class="fa fa-refresh" aria-hidden="true"></i> Re-Confirm</b></a><br><br>
                    		<a href="#" class="text-muted"> <b><i class="fa fa-envelope" aria-hidden="true"></i> Email Customer Voucher</b></a>
                    </div>
-                
+
                 </td>
               </tr>
             <tr>
@@ -812,7 +822,7 @@
                 <td>
                  <i class="fa fa-ellipsis-v text-center action-panel center-block" aria-hidden="true"></i>
                       <div class="my-popover-content">
-                   	
+
                    		<a href="#" class="text-muted"> <b><i class="fa fa-envelope" aria-hidden="true"></i> Email Customer Voucher</b></a>
                    </div>
                 </td>

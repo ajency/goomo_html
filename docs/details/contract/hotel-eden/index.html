@@ -333,8 +333,15 @@
   <li class="">
     <a href="#"><i class="fa fa-bars"></i> <span>Dashboard</span></a>
   </li>
+
   <li class="">
-    <a href="/goomo_html/bookings/all/hotel-eden/"><i class="fa fa-calendar-check-o"></i> <span>Bookings</span></a>
+    <a class=" form-toggle collapsed" data-toggle="collapse"  href="#property-bookingSubMenu" role="button">
+      <i class="fa fa-calendar-check-o"></i> <span>Bookings</span></a>
+    <ul class="gs-steps collapse  edit-mode sub-steps" id="property-bookingSubMenu" role="tablist">
+      <li class="">
+        <a href="/goomo_html/bookings/all/hotel-eden/">All Bookings</a>
+      </li>
+    </ul>
   </li>
 
   <li class="">
@@ -354,6 +361,9 @@
       </li>
       <li class="">
         <a href="/goomo_html/rates-availability/rate-plan/hotel-eden/">Rate Plans</a>
+      </li>
+      <li class="">
+        <a href="/goomo_html/rates-availability/config/hotel-eden/">Channel Config</a>
       </li>
     </ul>
   </li>
@@ -723,6 +733,25 @@
     </div>
   </div>
 </div>
+
+	<script type="text/javascript">
+		var existingComments = [
+		  {
+		    "sectionId": "1",
+		    "comments": [
+		      {
+		        "comment": "<p>The view for this page will be different  for Goomo Team and Property Owner</p>"
+		      },
+		      {
+		        "comment": "<p>Goomo Team View:</p> Finance Inputs<br>  <ul><li>Can view and edit Currency, Commission and NAV Vendor Code</li></ul> Bank Details<br> <ul><li>Can view and edit Bank Details</li></ul> Tax Rules<br> <ul><li>Can only view tax rules as it is at platform level</li><li>Tax rules can be created by Goomo team from the backend</li></ul> Contract<br><ul><li>Can view, generate and upload contract</li></ul>"
+		      },
+		      {
+		        "comment": "<p>Property Owner View:</p> Finance Inputs<br>  <ul><li>Can only view Currency, Commission</li></ul> Bank Details<br> <ul><li>Can view and edit Bank Details</li></ul> Tax Rules<br> <ul><li>Can only view tax rules as it is at platform level</li></ul> Contract<br><ul><li>Can view, generate and upload contract</li></ul>"
+		      }
+		    ]
+		  }
+		];
+	</script>
 
 
 
