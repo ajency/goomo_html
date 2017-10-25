@@ -61,6 +61,7 @@
   top: -22px;
   width: 200px;
   padding-bottom: 120px;
+  background-color: #fff;
 }
 .side-comment.active .comments-wrapper {
   -webkit-animation: fadein 0.2s;
