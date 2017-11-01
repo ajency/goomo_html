@@ -9893,6 +9893,9 @@ i.w-border {
   background-color: #f38530;
   border: 1px solid #f48531;
 }
+.transaction-table > thead > tr > th {
+  vertical-align: bottom;
+}
 .profile-stats {
   color: #fff;
   background: #378f9e;
