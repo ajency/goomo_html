@@ -9793,7 +9793,7 @@ i.w-border {
   background-color: #efefef;
 }
 .single-day.block .sd-inventory_count {
-  background-color: #afafaf;
+  background-color: #ff1100;
   color: #ececec;
 }
 .single-day.block .sd-rate {
@@ -9852,8 +9852,15 @@ i.w-border {
 .single-day .sd-rate:hover {
   background-color: #eaeaea;
 }
-.single-day .sd-rate .plan-restrict {
+.single-day .sd-inventory_count {
+  position: relative;
+}
+.single-day .plan-restrict {
   font-size: 1.1em;
+  position: absolute;
+  top: -5px;
+  font-size: 9px;
+  color: #ff8500;
 }
 .calender-legend .text-success {
   color: #469a6e;
@@ -9863,6 +9870,9 @@ i.w-border {
 }
 .calender-legend .text-muted {
   color: #afafaf;
+}
+.calender-legend .text-restrict {
+  color: #ff8500;
 }
 .tooltip_templates {
   display: none;
@@ -10541,13 +10551,5 @@ dl dd {
   .commentable-section {
     padding-right: 0px;
   }
-}
-.sd-inventory_count {
-  position: relative;
-}
-.sd-inventory_count .plan-restrict {
-  position: absolute;
-  top: -5px;
-  font-size: 9px;
 }
 /*# sourceMappingURL=main.css.map */

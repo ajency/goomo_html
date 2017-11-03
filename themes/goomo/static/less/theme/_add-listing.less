@@ -4405,7 +4405,7 @@ i.w-border{
 		background-color: #efefef;
 		.sd-inventory{
 			&_count{
-				background-color: #afafaf;
+				background-color: #ff1100;
 				color: #ececec;
 			}
 		}
@@ -4472,9 +4472,16 @@ i.w-border{
 			background-color: #eaeaea;
 		}
 
-		.plan-restrict{
-			font-size: 1.1em;
-		}
+	}
+	.sd-inventory_count{
+		position: relative;
+	}
+	.plan-restrict{
+		font-size: 1.1em;
+		position: absolute;
+	    top: -5px;
+	    font-size: 9px;
+	    color: @accent-secondary;
 	}
 }
 
@@ -4488,9 +4495,9 @@ i.w-border{
 	.text-muted{
 		color: #afafaf;
 	}
-	// .text-danger{
-	// 	color: #afafaf;
-	// }
+	.text-restrict{
+		color: @accent-secondary;
+	}
 }
 
 .tooltip_templates {
