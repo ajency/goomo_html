@@ -43,9 +43,20 @@
     </ul>
   </li>
 
-  <li class="{{ if $.Params.mainmenu.offer }}active{{end}}">
-    <a href="#"><i class="fa fa-certificate"></i> <span>Offers</span></a>
+  <li class="{{ if $.Params.mainmenu.offers }}active{{end}}">
+    <a class=" form-toggle {{ if not $.Params.mainmenu.offers }}collapsed{{end}}" data-toggle="collapse"  href="#property-offersSubMenu" role="button">
+      <i class="fa fa-certificate"></i> <span>Offers</span>
+    </a>
+    <ul class="gs-steps collapse {{ if $.Params.mainmenu.offers }}in{{end}} edit-mode sub-steps" id="property-offersSubMenu" role="tablist">
+      <li class="{{ if $.Params.mainmenu.addoffer }}active{{end}}">
+        <a href="/goomo_html/offers/add/{{ $.Params.slug }}">Add Offer</a>
+      </li>
+      <li class="{{ if $.Params.mainmenu.alloffer }}active{{end}}">
+        <a href="/goomo_html/offers/all/{{ $.Params.slug }}">All Offers</a>
+      </li>
+    </ul>
   </li>
+
   <li class="{{ if $.Params.mainmenu.checklist }}active{{end}}">
     <a href="/goomo_html/checklist/{{ $.Params.slug }}"><i class="fa fa-list"></i> <span>Property Checklist</span></a>
   </li>
