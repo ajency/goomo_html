@@ -9906,6 +9906,13 @@ i.w-border {
 .transaction-table > thead > tr > th {
   vertical-align: bottom;
 }
+.offers-table {
+  border-collapse: separate;
+  border-spacing: 0 10px;
+}
+.offers-table tbody tr {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+}
 .profile-stats {
   color: #fff;
   background: #378f9e;
