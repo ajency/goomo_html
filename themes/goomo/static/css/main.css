@@ -6641,6 +6641,131 @@ footer {
     overflow-y: auto;
   }
 }
+.offer-type {
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.offer-type li {
+  position: relative;
+  margin-right: 1.8em;
+  margin-bottom: 1.5em;
+  flex: 1 0 calc(25% - 1.8em);
+  max-width: calc(25% - 1.8em);
+}
+.offer-type .option {
+  justify-content: flex-end;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  height: 120px;
+  align-items: flex-start;
+}
+.offer-type .option .business-icon {
+  position: relative;
+  font-size: 40px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  border: 1px solid #bbbbbb;
+  border-radius: 50%;
+  width: 50px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  color: #bbbbbb;
+}
+.offer-type .option .fa {
+  display: none;
+}
+.offer-type .radio {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  outline: 0;
+  z-index: 1;
+  border: none;
+}
+.offer-type .radio:checked + .option {
+  box-shadow: 0px 0px 0px 2px #009688;
+}
+.offer-type .radio:checked + .option .fa {
+  position: absolute;
+  top: 5px;
+  right: 2px;
+  background-color: #fff;
+  color: #ff8500;
+  font-size: 1.2em;
+  height: 20px;
+  width: 25px;
+  text-align: center;
+}
+.offer-type .radio:checked + .option .business-label {
+  color: #378f9e;
+}
+.offer-type .radio:focus {
+  outline: 0;
+}
+.offer-type .radio:hover + .option .business-label {
+  color: #ff8500;
+}
+.offer-type .business-label {
+  margin-bottom: 5px;
+  max-width: 140px;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+@media screen and (max-width: 600px) {
+  .offer-type {
+    overflow-x: auto;
+    overflow-y: hidden;
+    margin-bottom: 12px;
+    margin-left: -15px;
+    padding: 15px;
+    margin-top: 10px;
+    padding-right: 0;
+    justify-content: space-around;
+  }
+  .offer-type li {
+    flex: 1 0 33.33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: inline-block;
+    vertical-align: top;
+    white-space: normal;
+    margin-right: 0;
+    max-width: 44%;
+    margin-bottom: 20px;
+  }
+  .offer-type .radio:checked + .option .fa {
+    top: -12px;
+    right: -7px;
+    font-size: 1em;
+    height: 25px;
+    width: 25px;
+    line-height: 25px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 2px rgba(0, 182, 170, 0.45);
+  }
+  .offer-type .option {
+    position: relative;
+  }
+  .offer-type .option .business-icon {
+    transform: scale(0.9);
+  }
+  .offer-type .business-label {
+    font-size: 0.95em;
+  }
+}
+@media screen and (max-width: 320px) {
+  .offer-type {
+    white-space: nowrap;
+    overflow-y: auto;
+  }
+}
 .contact-row {
   background-color: #f7f7f7;
   border: 1px solid #d8d8d8;
