@@ -10028,9 +10028,6 @@ i.w-border {
   background-color: #f38530;
   border: 1px solid #f48531;
 }
-.transaction-table > thead > tr > th {
-  vertical-align: bottom;
-}
 .offers-table {
   border-collapse: separate;
   border-spacing: 0 10px;
