@@ -396,10 +396,29 @@ $(document).ready(function () {
         },
         trigger: 'click',
         animation: false,
-        html: true, 
+        html: true,
         placement: 'bottom'
     };
     $('.action-panel').popover(popoverOptions);
+
+    $('body').on("change", "input[type=radio][name=offerType]", function() {
+            $('.offer_types').addClass('hidden')
+        if (this.value == '11') {
+            $('.basic_offer').removeClass('hidden')
+        } else if (this.value == '13') {
+            $('.early_bird').removeClass('hidden')
+        } else if (this.value == '16') {
+            $('.group_booking').removeClass('hidden')
+        } else if (this.value == '14') {
+            $('.long_stay').removeClass('hidden')
+        } else if (this.value == '12') {
+            $('.last_minute').removeClass('hidden')
+        } else if (this.value == '17') {
+            $('.weekday_weekend').removeClass('hidden')
+        } else if (this.value == '15') {
+            $('.free_nights').removeClass('hidden')
+        }
+    });
 });
 
 $("#error-manual").hide();
@@ -423,6 +442,6 @@ $('.active').change(function() {
 });
 $('.inactive').change(function() {
 	 $(".rates-table").addClass("hidden");
-  
+
 
 });
