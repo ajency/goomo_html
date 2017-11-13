@@ -6657,21 +6657,38 @@ footer {
   padding: 15px;
   height: 120px;
   align-items: flex-start;
-}
-.offer-type .option .business-icon {
   position: relative;
-  font-size: 40px;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 50px;
-  border: 1px solid #bbbbbb;
-  border-radius: 50%;
-  width: 50px;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  color: #bbbbbb;
+}
+.offer-type .option .offer-icon {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  filter: grayscale(1);
+  height: 35px;
+  width: 35px;
+}
+.offer-type .option .offer-icon.basic_offer {
+  background-image: url(/goomo_html/img/basic_offer.png);
+}
+.offer-type .option .offer-icon.last_min {
+  background-image: url(/goomo_html/img/last_min.png);
+}
+.offer-type .option .offer-icon.early_book {
+  background-image: url(/goomo_html/img/early_book.png);
+}
+.offer-type .option .offer-icon.day_deal {
+  background-image: url(/goomo_html/img/day_deal.png);
+}
+.offer-type .option .offer-icon.free_night {
+  background-image: url(/goomo_html/img/free_night.png);
+}
+.offer-type .option .offer-icon.group_book {
+  background-image: url(/goomo_html/img/group_book.png);
+}
+.offer-type .option .offer-icon.weekday-end {
+  background-image: url(/goomo_html/img/weekday-end.png);
 }
 .offer-type .option .fa {
   display: none;
@@ -8807,6 +8824,9 @@ i.w-border {
   display: inline-block;
   padding-left: 5px;
   font: normal normal normal 14px/1 FontAwesome;
+}
+.dataTable .no-sort .sort-icon {
+  display: none;
 }
 .dataTable select.form-control.multi-dd {
   display: none;
