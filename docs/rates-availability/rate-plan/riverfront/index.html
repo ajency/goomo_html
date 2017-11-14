@@ -735,7 +735,7 @@
                 <div class="update-sec sidebar-article user-overflow room-row m-b-30">
                    <h5 class="bolder m-t-35 prop-title">Rate Plan Details</h5>
 
-                    <div class="row field-gap c-gap">
+                    <div class="row field-gap c-gap plan-section">
                         <div class="col-sm-12 form-group m-b-20">
                             <label class="text-info ">Plan Name </label>
                             <input type="text" class="form-control fnb-input" placeholder="Enter Plan Name">
@@ -752,6 +752,29 @@
                                 <input type="text" class="to-date form-control fnb-input m-r-10 sub-dates" placeholder="To Date">
                               </div>
                             </div>
+                        </div>
+                        <div class="col-sm-12 c-gap form-group">
+                            <label class="text-info ">Blackout Dates </label>
+                            <div class="row blackoutRow">
+                              <div class="col-sm-6">
+                                <input type="text" class=" form-control fnb-input m-r-10 sub-dates" placeholder="From Date">
+                              </div>
+                              <div class="col-sm-6">
+                                <input type="text" class=" form-control fnb-input m-r-10 sub-dates" placeholder="To Date">
+                              </div>
+                            </div>
+
+                            <div class="row blackoutRowClone hidden">
+                              <div class="col-sm-6">
+                                <input type="text" class=" form-control fnb-input m-r-10 sub-dates" placeholder="From Date">
+                              </div>
+                              <div class="col-sm-6">
+                                <input type="text" class=" form-control fnb-input m-r-10 sub-dates" placeholder="To Date">
+                              </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 c-gap form-group text-right">
+                          <a href="#" class="text-secondary add-blackout">+ Add Blackout Dates</a>
                         </div>
                     </div>
                     <div class="row">

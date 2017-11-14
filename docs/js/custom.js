@@ -442,6 +442,15 @@ $('.active').change(function() {
 });
 $('.inactive').change(function() {
 	 $(".rates-table").addClass("hidden");
+});
 
+$('.page-sidebar').on('click', '.add-blackout', function(e) {
+  var contact_group, contact_group_clone, input;
+  e.preventDefault();
+  blackout_group = $(this).closest('.plan-section').find('.blackoutRowClone');
+  blackout_group_clone = blackout_group.clone();
+  blackout_group_clone.removeClass('blackoutRowClone hidden');
+  // input = blackout_group_clone.find('.fnb-input');
+  blackout_group_clone.insertBefore(blackout_group);
 
 });
