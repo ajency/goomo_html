@@ -652,12 +652,42 @@
 
    		       		<div class="well">
    			       		<h6 class="bolder ">GST Info</h6>
-   			       		<ul>
-   			       			<li class="m-b-5">- If the sell rate(INR) is greater than or equal to 0 and less than or equal to 1000, GST is 0%</li>
-   			       			<li class="m-b-5">- If the sell rate(INR) is greater than or equal to 1001 and less than or equal to 2500, GST is 12%</li>
-   			       			<li class="m-b-5">- If the sell rate(INR) is greater than or equal to 2501 and less than or equal to 7500, GST is 18%</li>
-   			       			<li class="m-b-5">- If the sell rate(INR) is greater than or equal to 7501, GST is 28%</li>
-   			       		</ul>
+   			       		<table class="table table-condensed">
+			       			<thead>
+				       			<tr>
+				       				<th class="text-center">Min. Sell Rate ( <i class="fa fa-inr"></i> )</th>
+				       				<th class="text-center">Max. Sell Rate ( <i class="fa fa-inr"></i> )</th>
+				       				<th class="text-center">GST</th>
+				       				<th class="text-left">Info</th>
+				       			</tr>
+			       			</thead>
+			       			<tbody>
+				       			<tr class="text-center">
+				       				<td style="border-top: 1px solid #ddd;">0</td>
+				       				<td style="border-top: 1px solid #ddd;">1000</td>
+				       				<td style="border-top: 1px solid #ddd;">0</td>
+				       				<td class="text-left" style="border-top: 1px solid #ddd;">If the sell rate(INR) is greater than or equal to 0 and less than or equal to 1000, GST is 0%</td>
+				       			</tr>
+				       			<tr class="text-center">
+				       				<td style="border-top: 1px solid #ddd;">1001</td>
+				       				<td style="border-top: 1px solid #ddd;">2500</td>
+				       				<td style="border-top: 1px solid #ddd;">12%</td>
+				       				<td class="text-left" style="border-top: 1px solid #ddd;">If the sell rate(INR) is greater than or equal to 1001 and less than or equal to 2500, GST is 12%</td>
+				       			</tr>
+				       			<tr class="text-center">
+				       				<td style="border-top: 1px solid #ddd;">2501</td>
+				       				<td style="border-top: 1px solid #ddd;">7500</td>
+				       				<td style="border-top: 1px solid #ddd;">18%</td>
+				       				<td class="text-left" style="border-top: 1px solid #ddd;">If the sell rate(INR) is greater than or equal to 2501 and less than or equal to 7500, GST is 18%</td>
+				       			</tr>
+				       			<tr class="text-center">
+				       				<td style="border-top: 1px solid #ddd;">7501</td>
+				       				<td style="border-top: 1px solid #ddd;">-</td>
+				       				<td style="border-top: 1px solid #ddd;">28%</td>
+				       				<td class="text-left" style="border-top: 1px solid #ddd;">If the sell rate(INR) is greater than or equal to 7501, GST is 28%</td>
+				       			</tr>
+			       			</tbody>
+			       		</table>
    		       		</div>
 				</div>
 
