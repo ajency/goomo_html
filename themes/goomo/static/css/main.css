@@ -10061,6 +10061,121 @@ i.w-border {
 .offers-table tbody tr {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
 }
+.timeline {
+  border-left: 2px solid #ff8500;
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+  margin: 20px auto;
+  margin-left: 115px;
+  position: relative;
+  padding: 0 39px 0;
+  list-style: none;
+  text-align: left;
+}
+.audit-log {
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
+  padding-bottom: 20px;
+  position: relative;
+}
+.audit-log:last-of-type {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border: none;
+}
+.audit-log:before,
+.audit-log:after {
+  position: absolute;
+  display: block;
+  top: 0;
+}
+.audit-log:before {
+  left: -193.5px;
+  content: attr(data-date);
+  text-align: right;
+  font-size: 0.9em;
+  min-width: 120px;
+  color: #929292;
+  font-weight: bold;
+}
+.audit-log:after {
+  box-shadow: 0 0 0 2px #ff8500;
+  left: -45.85px;
+  background: #fff;
+  border-radius: 50%;
+  height: 11px;
+  width: 11px;
+  content: "";
+  top: 2px;
+}
+.audit-head {
+  font-weight: 600;
+}
+.audit-body {
+  padding: 10px 15px;
+  margin: 10px 0;
+  background: #f5f5f5;
+  color: #808080;
+}
+.audit-body > ul {
+  color: #545454;
+  font-size: 0.9em;
+  margin-top: 5px;
+  letter-spacing: 0.3px;
+}
+.audit-body > ul ul {
+  margin-left: 15px;
+  line-height: 20px;
+}
+.audit-body > ul ul sublabel {
+  color: gray;
+}
+.audit-updated {
+  align-items: flex-start;
+}
+.audit-updated .audit-body {
+  flex-basis: 50%;
+  margin-right: 30px;
+  position: relative;
+}
+.audit-updated .audit-body:after {
+  content: '\f054';
+  font-family: FontAwesome;
+  position: absolute;
+  top: 35%;
+  right: -35px;
+  font-size: 16px;
+  color: #378f9e;
+}
+.audit-updated .audit-body:last-child {
+  margin-left: 30px;
+  margin-right: 0;
+}
+.audit-updated .audit-body:last-child:after {
+  display: none;
+}
+@media (max-width: 767px) {
+  .timeline {
+    margin-left: 0;
+    padding: 0 20px 0;
+  }
+  .audit-log:before {
+    text-align: left;
+    position: static;
+    margin-bottom: 5px;
+  }
+  .audit-log:after {
+    left: -26px;
+  }
+  .audit-updated .audit-body {
+    margin-right: 15px;
+  }
+  .audit-updated .audit-body:last-child {
+    margin-left: 15px;
+  }
+  .audit-updated .audit-body:after {
+    right: -20px;
+  }
+}
 .profile-stats {
   color: #fff;
   background: #378f9e;
