@@ -2695,6 +2695,9 @@ footer {
 .scale-down {
   transform: scale(0.6);
 }
+.boxshadow5 {
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.15);
+}
 .slide-nav {
   justify-content: flex-end;
   margin-top: -8px;

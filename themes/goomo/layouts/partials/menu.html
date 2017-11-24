@@ -2,8 +2,8 @@
 
 
 <ul class="gs-steps" role="tablist">
-  <li class="{{ if $.Params.mainmenu.dash }}active{{end}}">
-    <a href="#"><i class="fa fa-bars"></i> <span>Dashboard</span></a>
+  <li class="{{ if $.Params.mainmenu.dashboard }}active{{end}}">
+    <a href="/goomo_html/dashboard/{{ $.Params.slug }}"><i class="fa fa-bars"></i> <span>Dashboard</span></a>
   </li>
 
   <li class="{{ if $.Params.mainmenu.bookings }}active{{end}}">
