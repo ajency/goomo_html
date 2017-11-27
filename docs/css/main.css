@@ -10068,6 +10068,14 @@ i.w-border {
   font-weight: normal;
   font-size: 16px;
 }
+@media (max-width: 767px) {
+  .nav-bottom-bor.nav-tabs > li > a,
+  .nav-bottom-bor.nav-tabs > li > a:focus,
+  .nav-bottom-bor.nav-tabs > li > a:hover {
+    font-size: 12px;
+    padding: 10px 6px;
+  }
+}
 .nav-bottom-bor.nav-tabs > li.active > a,
 .nav-bottom-bor.nav-tabs > li.active > a:focus,
 .nav-bottom-bor.nav-tabs > li.active > a:hover {
