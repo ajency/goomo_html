@@ -2,7 +2,7 @@
 title: "Dashboard"
 date: 2017-09-26T12:57:20+05:30
 draft: false
-layout: dashboard
+layout: dashboard-new
 property: "Casa Anjuna"
 status: "In Process"
 url: /dashboard/casa-anjuna/
