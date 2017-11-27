@@ -4715,6 +4715,55 @@ i.w-border{
     border: 1px solid #f48531;
 }
 
+.nav-bottom-bor{
+	&.nav-tabs > li > a,
+	&.nav-tabs > li > a:focus,
+	&.nav-tabs > li > a:hover{
+		background-color: #fff;
+		border: 0;
+		border-bottom: 1px solid #dddddd;
+		color: gray;
+		border-top: 4px solid transparent;
+		font-weight: normal;
+    	font-size: 16px;
+	}
+	&.nav-tabs > li.active > a,
+	&.nav-tabs > li.active > a:focus,
+	&.nav-tabs > li.active > a:hover{
+		background-color: #fff;
+		border: 0;
+		border-bottom: 5px solid @accent-primary;
+		color: #555;
+	}
+}
+.nav-bottom-bor-second{
+	&.nav-tabs > li > a,
+	&.nav-tabs > li > a:focus,
+	&.nav-tabs > li > a:hover{
+		background-color: #fff;
+		border: 0;
+		border-bottom: 1px solid #dddddd;
+		color: #000;
+		border-top: 1px solid transparent;
+		font-weight: normal;
+    	font-size: 16px;
+	}
+	&.nav-tabs > li.active > a,
+	&.nav-tabs > li.active > a:focus,
+	&.nav-tabs > li.active > a:hover{
+		background-color: #fff;
+		border: 0;
+		border-bottom: 2px solid @accent-secondary;
+		color: @accent-secondary;
+		font-weight: 600;
+	}
+}
+.nav-bg-gray{
+	&.tab-content>.active{
+		background-color: #f5f5f5;
+	}
+}
+
 .transaction-table > thead > tr > th {
     // vertical-align: bottom;
 }

@@ -10057,6 +10057,48 @@ i.w-border {
   background-color: #f38530;
   border: 1px solid #f48531;
 }
+.nav-bottom-bor.nav-tabs > li > a,
+.nav-bottom-bor.nav-tabs > li > a:focus,
+.nav-bottom-bor.nav-tabs > li > a:hover {
+  background-color: #fff;
+  border: 0;
+  border-bottom: 1px solid #dddddd;
+  color: gray;
+  border-top: 4px solid transparent;
+  font-weight: normal;
+  font-size: 16px;
+}
+.nav-bottom-bor.nav-tabs > li.active > a,
+.nav-bottom-bor.nav-tabs > li.active > a:focus,
+.nav-bottom-bor.nav-tabs > li.active > a:hover {
+  background-color: #fff;
+  border: 0;
+  border-bottom: 5px solid #378f9e;
+  color: #555;
+}
+.nav-bottom-bor-second.nav-tabs > li > a,
+.nav-bottom-bor-second.nav-tabs > li > a:focus,
+.nav-bottom-bor-second.nav-tabs > li > a:hover {
+  background-color: #fff;
+  border: 0;
+  border-bottom: 1px solid #dddddd;
+  color: #000;
+  border-top: 1px solid transparent;
+  font-weight: normal;
+  font-size: 16px;
+}
+.nav-bottom-bor-second.nav-tabs > li.active > a,
+.nav-bottom-bor-second.nav-tabs > li.active > a:focus,
+.nav-bottom-bor-second.nav-tabs > li.active > a:hover {
+  background-color: #fff;
+  border: 0;
+  border-bottom: 2px solid #ff8500;
+  color: #ff8500;
+  font-weight: 600;
+}
+.nav-bg-gray.tab-content > .active {
+  background-color: #f5f5f5;
+}
 .offers-table {
   border-collapse: separate;
   border-spacing: 0 10px;
