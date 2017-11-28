@@ -572,8 +572,11 @@
 				<button class="btn fnb-btn outline">Show</button>
 			</div>
 			<div class="col-sm-4 col-xs-12">
-				<div class="pull-right">
-				<button class="btn fnb-btn transparent bold-btn full flex-row collapsed" data-toggle="collapse" data-target="#moreFiltersWrap" aria-expanded="false"><img src="/goomo_html/img/filter-bars.png" class="img-responsive p-r-5" width="30"> <span>Filter</span></button>
+        <div class="pull-right">
+  				<div class="flex-row">
+            <button class="btn fnb-btn outline bold-btn flex-row m-r-10"><span>Download CSV</span></button>
+    				<button class="btn fnb-btn transparent bold-btn full flex-row collapsed" data-toggle="collapse" data-target="#moreFiltersWrap" aria-expanded="false"><img src="/goomo_html/img/filter-bars.png" class="img-responsive p-r-5" width="30"> <span>Filter</span></button>
+          </div>
 				</div>
 			</div>
   
@@ -636,7 +639,7 @@
                     <hr class="m-t-0 m-b-5">
 
                     <div class="row mobile-flex">
-                      <div class="col-sm-12 col-xs-12">
+                      <div class="col-sm-6 col-xs-12">
                           <div class="checkbox">
                             <label>
                                 <input type="checkbox" value="" class="">
@@ -644,7 +647,7 @@
                               </label>
                           </div>
                         </div>
-                      <div class="col-sm-12 col-xs-12">
+                      <div class="col-sm-6 col-xs-12">
                           <div class="checkbox">
                             <label>
                                 <input type="checkbox" value="" class="">
@@ -654,7 +657,7 @@
                       </div>
                     </div>
                     <div class="row mobile-flex">
-                      <div class="col-sm-12 col-xs-12">
+                      <div class="col-sm-6 col-xs-12">
                         <div class="checkbox">
                           <label>
                               <input type="checkbox" value="" class="">
@@ -662,7 +665,7 @@
                             </label>
                         </div>
                       </div>
-                            <div class="col-sm-12 col-xs-12">
+                            <div class="col-sm-6 col-xs-12">
                         <div class="checkbox">
                           <label>
                               <input type="checkbox" value="" class="">
@@ -671,9 +674,48 @@
                         </div>
                       </div>
                     </div>
+                  </div>
 
+                  <div class="filter-section mb-4 m-t-30">
+                    <h6 class="sub-title bolder">Channel</h6>
+                    <hr class="m-t-0 m-b-5">
 
-
+                    <div class="row mobile-flex">
+                      <div class="col-sm-6 col-xs-12">
+                          <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="" class="">
+                               Web
+                              </label>
+                          </div>
+                        </div>
+                      <div class="col-sm-6 col-xs-12">
+                          <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="" class="">
+                                Mobile
+                              </label>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="row mobile-flex">
+                      <div class="col-sm-6 col-xs-12">
+                        <div class="checkbox">
+                          <label>
+                              <input type="checkbox" value="" class="">
+                              B2B
+                            </label>
+                        </div>
+                      </div>
+                            <div class="col-sm-6 col-xs-12">
+                        <div class="checkbox">
+                          <label>
+                              <input type="checkbox" value="" class="">
+                              Corporate
+                            </label>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
 
@@ -805,6 +847,9 @@
                  Status
                 </th>
                 <th class="text-left no-sort" style="" rowspan="1">
+                 Channel
+                </th>
+                <th class="text-left no-sort" style="" rowspan="1">
                  Express<br>Checkin
                 </th>
                 <th class="no-sort" rowspan="1">
@@ -817,12 +862,13 @@
 
               <tr>
                 <td class="text-left"><b><a href="/goomo_html/bookings/booking-details/chalston-beach-resort/">ARK00000DXL4</a></b></td>
-                <td class="text-left"><b>Aravind Bargur</b><br><sm class="text-muted">on Wed, 01 Oct 2017</sm></td>
+                <td class="text-left"><b>Aravind Bargur</b><br><sm class="text-muted">on Wed, 01 Oct 2017<br>at 12:15 PM</sm></td>
                 <td class="text-left"><b>Casa Room</b><br><sm class="text-muted">2 Guest - 1 Rooms</sm></td>
                 <td class="text-left"><b>05 October 2017</b></td>
                 <td class="text-left"><b>08 October 2017</b></td>
                 <td class="text-left"><b>₹ 2,400</b></td>
                 <td class="text-left"><span class="text-primary"> Confirmed</span> </td>
+                <td class="text-left">Web</td>
                 <td class="text-left">Yes</td>
                 <td >
 
@@ -836,12 +882,13 @@
               </tr>
             <tr>
                 <td class="text-left"><b><a href="/goomo_html/bookings/booking-details/chalston-beach-resort/">ARK00000DXL4</a></b></td>
-                <td class="text-left"><b>Aravind Bargur</b><br><sm class="text-muted">on Wed, 01 Oct 2017</sm></td>
+                <td class="text-left"><b>Aravind Bargur</b><br><sm class="text-muted">on Wed, 01 Oct 2017<br>at 12:15 PM</sm></td>
                 <td class="text-left"><b>Casa Room</b><br><sm class="text-muted">2 Guest - 1 Rooms</sm></td>
                 <td class="text-left"><b>05 October 2017</b></td>
                 <td class="text-left"><b>08 October 2017</b></td>
                 <td class="text-left"><b>₹ 2,400</b></td>
-                <td class="text-left"><span class="text-secondary"> Arrival next 3 days</span> </td>
+                <td class="text-left"><span class="text-secondary"> Arrival next <br>3 days</span> </td>
+                <td class="text-left">B2B</td>
                 <td class="text-left">No</td>
                 <td>
                  <i class="fa fa-ellipsis-v text-center action-panel center-block" aria-hidden="true"></i>
@@ -852,12 +899,13 @@
               </tr>
             	 <tr>
                 <td class="text-left"><b><a href="/goomo_html/bookings/booking-details/chalston-beach-resort/">ARK00000DXL4</a></b></td>
-                <td class="text-left"><b>Aravind Bargur</b><br><sm class="text-muted">on Wed, 01 Oct 2017</sm></td>
+                <td class="text-left"><b>Aravind Bargur</b><br><sm class="text-muted">on Wed, 01 Oct 2017<br>at 12:15 PM</sm></td>
                 <td class="text-left"><b>Casa Room</b><br><sm class="text-muted">2 Guest - 1 Rooms</sm></td>
                 <td class="text-left"><b>05 October 2017</b></td>
                 <td class="text-left"><b>08 October 2017</b></td>
                 <td class="text-left"><b>₹ 2,400</b></td>
                 <td class="text-left"><span class="text-primary"> Confirmed</span> </td>
+                <td class="text-left">Web</td>
                 <td class="text-left">No</td>
                 <td>
                   <i class="fa fa-ellipsis-v text-center action-panel center-block" aria-hidden="true"></i>
@@ -869,12 +917,13 @@
               </tr>
             <tr>
                 <td class="text-left"><b><a href="/goomo_html/bookings/booking-details/chalston-beach-resort/">ARK00000DXL4</a></b></td>
-                <td class="text-left"><b>Aravind Bargur</b><br><sm class="text-muted">on Wed, 01 Oct 2017</sm></td>
+                <td class="text-left"><b>Aravind Bargur</b><br><sm class="text-muted">on Wed, 01 Oct 2017<br>at 12:15 PM</sm></td>
                 <td class="text-left"><b>Casa Room</b><br><sm class="text-muted">2 Guest - 1 Rooms</sm></td>
                 <td class="text-left"><b>05 October 2017</b></td>
                 <td class="text-left"><b>08 October 2017</b></td>
                 <td class="text-left"><b>₹ 2,400</b></td>
-                <td class="text-left"><span class="text-secondary"> Arrival next 3 days</span> </td>
+                <td class="text-left"><span class="text-secondary"> Arrival next <br>3 days</span> </td>
+                <td class="text-left">Mobile</td>
                 <td class="text-left">No</td>
                 <td>
                  <i class="fa fa-ellipsis-v text-center action-panel center-block" aria-hidden="true"></i>
