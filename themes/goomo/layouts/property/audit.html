@@ -12,9 +12,32 @@
 			</div>
 		</div>
 
+		<div class="row m-b-30">
+			<div class="col-sm-4 col-xs-12">
+				<div class="filter-search m-b-20">
+					<div class="filter-search__field">
+		              <i class="fa fa-search text-lighter element-title" aria-hidden="true"></i>
+		              <input type="search" class="fnb-input" placeholder="Search" id="propNameSearch">
+		            </div>
+				</div>
+			</div>
+			<div class="col-sm-3 col-xs-12"></div>
+			<div class="col-sm-2 col-xs-6">
+				<p class="text-info bolder">From date:</p>
+				<input type="text" class="from-date form-control fnb-input m-r-10 sub-dates" placeholder="From Date">
+			</div>
+			<div class="col-sm-2 col-xs-6">
+				<p class="text-info bolder">To date:</p>
+				<input type="text" class="to-date form-control fnb-input m-r-10 sub-dates" placeholder="To Date">
+			</div>
+			<div class="col-sm-1 col-xs-12">
+				<button class="btn fnb-btn outline m-t-30">Show</button>
+			</div>
+		</div>
+
 		<ul class="timeline">
 			<li class="audit-log" data-date="26th Oct 2017">
-				<div class="audit-head">
+				<div class="audit-head" data-time="12:16 PM">
 					<span class="text-primary bolder">John Doe</span> updated Inventory
 				</div>
 				<div class="m-t-10 small">
@@ -36,7 +59,7 @@
 				</div>
 			</li>
 			<li class="audit-log" data-date="26th Oct 2017">
-				<div class="audit-head">
+				<div class="audit-head" data-time="10:04 AM">
 					<span class="text-primary bolder">John Doe</span> added Rates
 				</div>
 				<!-- <div class="m-t-10 small">
@@ -61,7 +84,7 @@
 				</div>
 			</li>
 			<li class="audit-log" data-date="24th Oct 2017">
-				<div class="audit-head">
+				<div class="audit-head" data-time="02:29 PM">
 					<span class="text-primary bolder">John Doe</span> updated Contract &amp; Finance
 				</div>
 				<!-- <div class="m-t-10 small">
@@ -84,7 +107,7 @@
 				</div>
 			</li>
 			<li class="audit-log" data-date="23rd Oct 2017">
-				<div class="audit-head">
+				<div class="audit-head" data-time="09:18 PM">
 					<span class="text-primary bolder">Vikas Khanna</span> updated Amenities &amp; Services
 				</div>
 				<!-- <div class="m-t-10 small">
@@ -107,7 +130,7 @@
 				</div>
 			</li>
 			<li class="audit-log" data-date="23rd Oct 2017">
-				<div class="audit-head">
+				<div class="audit-head" data-time="08:14 PM">
 					<span class="text-primary bolder">Vikas Khanna</span> updated Property
 				</div>
 				<!-- <div class="m-t-10 small">
@@ -128,7 +151,7 @@
 				</div>
 			</li>
 			<li class="audit-log" data-date="22nd Oct 2017">
-				<div class="audit-head">
+				<div class="audit-head" data-time="09:16 PM">
 					<span class="text-primary bolder">Vikas Khanna</span> added Property
 				</div>
 				<!-- <div class="m-t-10 small">

@@ -10147,7 +10147,7 @@ i.w-border {
   text-align: right;
   font-size: 0.9em;
   min-width: 120px;
-  color: #929292;
+  color: #757575;
   font-weight: bold;
 }
 .audit-log:after {
@@ -10162,6 +10162,18 @@ i.w-border {
 }
 .audit-head {
   font-weight: 600;
+}
+.audit-head:before {
+  left: -193.5px;
+  content: attr(data-time);
+  text-align: right;
+  font-size: 0.8em;
+  min-width: 120px;
+  color: #929292;
+  font-weight: bold;
+  position: absolute;
+  display: block;
+  top: 15px;
 }
 .audit-body {
   padding: 10px 15px;
@@ -10219,6 +10231,10 @@ i.w-border {
   }
   .audit-log:after {
     left: -26px;
+  }
+  .audit-head:before {
+    left: 15px;
+    top: 1px;
   }
   .audit-updated .audit-body {
     margin-right: 15px;
