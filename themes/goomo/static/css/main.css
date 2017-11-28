@@ -10265,6 +10265,18 @@ i.w-border {
 .imp-date .date-box .month {
   font-size: 0.7em;
 }
+.single-hotel {
+  cursor: pointer;
+  border-top: 1px solid #dcdcdc;
+  padding: 10px 5px;
+}
+.single-hotel:hover {
+  background-color: #f3f3f3;
+}
+.hotel-inventory {
+  padding: 15px;
+  background-color: #f5f5f5;
+}
 .profile-stats {
   color: #fff;
   background: #378f9e;
