@@ -62,6 +62,23 @@
 				</li>
 			</ul>
 		</li>
+		<li class="{{ if $.Params.sideReports }} active {{ end }}">
+			<a href="#" class=" form-toggle " id=""><i class="fa fa-line-chart"></i> Reports</a>
+			<ul class="gs-steps collapse in edit-mode sub-steps" role="tablist" id="" >
+				<li class="{{ if $.Params.bookings }} active {{ end }}">
+					<a href="/goomo_html/extranet/bookings" class="" id="">Booking Details</a>
+				</li>
+				<li class="{{ if $.Params.margin }} active {{ end }}">
+					<a href="/goomo_html/extranet/margin" class="" id="">Margin Report</a>
+				</li>
+				<li class="{{ if $.Params.inventory }} active {{ end }}">
+					<a href="/goomo_html/extranet/inventory" class="" id="">Inventory Status</a>
+				</li>
+				<li class="{{ if $.Params.rates }} active {{ end }}">
+					<a href="/goomo_html/extranet/rates" class="" id="">Rate Report</a>
+				</li>
+			</ul>
+		</li>
 	</ul>
 
 	<!-- {{ partial "menu.html" .}} -->
