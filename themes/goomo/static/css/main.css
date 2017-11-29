@@ -10104,6 +10104,41 @@ i.w-border {
   color: #ff8500;
   font-weight: 600;
 }
+.nav-large-white.nav-tabs > li {
+  flex-basis: 50%;
+}
+.nav-large-white.nav-tabs > li > a,
+.nav-large-white.nav-tabs > li > a:focus,
+.nav-large-white.nav-tabs > li > a:hover {
+  background-color: #f9f9f9;
+  border: 0;
+  color: #999a9c;
+  font-weight: normal;
+  font-size: 14px;
+  font-weight: 600;
+  box-shadow: inset 1px -1px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 0;
+  padding: 15px 15px;
+  margin: 0;
+}
+.nav-large-white.nav-tabs > li.active > a,
+.nav-large-white.nav-tabs > li.active > a:focus,
+.nav-large-white.nav-tabs > li.active > a:hover {
+  background-color: #fff;
+  border: 0;
+  color: #000;
+  box-shadow: none;
+}
+.nav-large-white.nav-tabs > li.active > a h5.sold,
+.nav-large-white.nav-tabs > li.active > a:focus h5.sold,
+.nav-large-white.nav-tabs > li.active > a:hover h5.sold {
+  color: red;
+}
+.nav-large-white.nav-tabs > li.active > a h5.unsold,
+.nav-large-white.nav-tabs > li.active > a:focus h5.unsold,
+.nav-large-white.nav-tabs > li.active > a:hover h5.unsold {
+  color: green;
+}
 .nav-bg-gray.tab-content > .active {
   background-color: #f5f5f5;
 }

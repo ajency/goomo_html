@@ -83,7 +83,44 @@
 
 				<h6 class="m-t-50 bolder text-color">How many Sold Outs / Unsold Rooms</h6>
 				<div style="overflow: auto">
-					<img src="{{"img/dash_calendar_blank.png" | absURL}}" class="img-responsive" style="min-width: 650px;">
+					<div class="flex-row align-top flex-wrap">
+						<img src="{{"img/dash_calendar_blank-only.png" | absURL}}" class="img-responsive" style="">
+						<div style="flex-basis: 60%;" class="p-l-10">
+						  <!-- Nav tabs -->
+						  <ul class="nav nav-tabs nav-large-white flex-row" role="tablist">
+						    <li role="presentation" class="active">
+						    	<a href="#soldout" aria-controls="soldout" role="tab" data-toggle="tab">
+						    		Sold Out Rooms
+						    		<h5 class="bolder m-t-0 m-b-0 sold">00</h5>
+						    	</a>
+						    </li>
+						    <li role="presentation">
+						    	<a href="#unsold" aria-controls="unsold" role="tab" data-toggle="tab">
+						    		Unsold Rooms
+						    		<h5 class="bolder m-t-0 m-b-0 unsold">00</h5>
+						    	</a>
+						    </li>
+						  </ul>
+
+						  <!-- Tab panes -->
+						  <div class="tab-content">
+						    <div role="tabpanel" class="tab-pane fade in active text-center" id="soldout">
+						    	<p class="m-t-50 text-muted">
+						    		Have quick access to your inventory with easy access to room data.
+						    	</p>
+						    	<a href="/goomo_html/rates-availability/inventory/{{ $.Params.slug }}" class="dis-block m-t-10 text-secondary text-decor m-l-15">Update your inventory to avoid sold out</a>
+						    </div>
+						    <div role="tabpanel" class="tab-pane fade text-center" id="unsold">
+						    	<p class="m-t-50 text-muted">
+						    		Have quick access to your inventory with easy access to room data.
+						    	</p>
+
+						    	<a href="/goomo_html/offers/add/{{ $.Params.slug }}" class="dis-block m-t-10 text-secondary text-decor m-l-15">Create offers to sell inventory</a>
+						    </div>
+						  </div>
+
+						</div>
+					</div>
 				</div>
 
 				<h6 class="m-t-50 bolder text-color">Whats Happening</h6>
