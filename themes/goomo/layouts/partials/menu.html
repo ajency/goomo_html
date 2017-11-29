@@ -55,7 +55,10 @@
         <a href="/goomo_html/offers/all/{{ $.Params.slug }}">All Offers</a>
       </li>
       <li class="{{ if $.Params.mainmenu.secret }}active{{end}}">
-        <a href="/goomo_html/offers/secret-deal/{{ $.Params.slug }}">Secret Deal</a>
+        <a href="/goomo_html/offers/secret-deal/{{ $.Params.slug }}">Add Secret Deal</a>
+      </li>
+      <li class="{{ if $.Params.mainmenu.secretall }}active{{end}}">
+        <a href="/goomo_html/offers/secret-deal-all/{{ $.Params.slug }}">All Secret Deals</a>
       </li>
     </ul>
   </li>
