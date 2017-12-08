@@ -10066,6 +10066,16 @@ i.w-border {
   background-color: #f38530;
   border: 1px solid #f48531;
 }
+@media (max-width: 767px) {
+  .nav-tabs > li > a {
+    margin-right: 5px;
+    padding: 10px 10px;
+    font-size: 12px;
+  }
+  .calculate-btn {
+    position: static !important;
+  }
+}
 .nav-bottom-bor.nav-tabs > li > a,
 .nav-bottom-bor.nav-tabs > li > a:focus,
 .nav-bottom-bor.nav-tabs > li > a:hover {
