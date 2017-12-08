@@ -4548,7 +4548,7 @@ i.w-border{
 	.inventory-header{
 		border-bottom: 1px solid #e1e1e1;
 		line-height: 1;
-		padding: 8px 0;
+		padding: 10px 0 11px;
 		h6{
 			font-weight: 600;
 			font-size: 1em;
@@ -4629,8 +4629,16 @@ i.w-border{
 		.sd-block{
 			font-size: 0.8em;
 			cursor: pointer;
+			margin: 0;
+			font-weight: 500;
 			&:hover{
 				color: @accent-secondary;
+			}
+			input{
+				margin-right: 0;
+				&:before{
+					top: -11px;
+				}
 			}
 		}
 	}

@@ -9912,7 +9912,7 @@ i.w-border {
 .cal-left-col .inventory-header {
   border-bottom: 1px solid #e1e1e1;
   line-height: 1;
-  padding: 8px 0;
+  padding: 10px 0 11px;
 }
 .cal-left-col .inventory-header h6 {
   font-weight: 600;
@@ -9984,9 +9984,17 @@ i.w-border {
 .single-day .sd-inventory .sd-block {
   font-size: 0.8em;
   cursor: pointer;
+  margin: 0;
+  font-weight: 500;
 }
 .single-day .sd-inventory .sd-block:hover {
   color: #ff8500;
+}
+.single-day .sd-inventory .sd-block input {
+  margin-right: 0;
+}
+.single-day .sd-inventory .sd-block input:before {
+  top: -11px;
 }
 .single-day .sd-rate {
   border-bottom: 1px solid #e1e1e1;
