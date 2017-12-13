@@ -163,7 +163,7 @@ $(document).ready(function() {
 		$('#statsCollapse').removeClass('in');
 	}
 	if ($(window).width() < 769){
-		$('.form-toggle').click(function(){
+		$('.form-toggle:not(.m-side-bar .form-toggle)').click(function(){
 			event.preventDefault();
 			$('.fly-out').addClass('active');
 		});
