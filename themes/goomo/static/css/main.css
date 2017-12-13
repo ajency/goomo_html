@@ -11660,6 +11660,12 @@ i.w-border {
           align-self: flex-start;
   margin-top: 1em;
 }
+@media screen and (max-width: 768px) {
+  .cut-off-row {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+  }
+}
 .profile-stats {
   color: #fff;
   background: #378f9e;
