@@ -1,0 +1,395 @@
+{{ define "main" }}
+	<div class="">
+
+		<div class="flex-row desk-hide">
+			<div class="back-btn">
+				<a href="/goomo_html/checklist/{{ $.Params.slug }}">
+					<i class="fa fa-chevron-left"></i>
+				</a>
+			</div>
+			<div class="back-title m-l-10 h4 bolder">
+				Back to Property Checklist
+			</div>
+		</div>
+
+
+		<div class="row">
+			<div class="col-sm-9">
+				
+				<div class="row bookingRow">
+					<div class="col-sm-6 bookingRow__col">
+						<h6 class="m-b-0 bolder text-color bookingRow__title">New Bookings</h6>
+						<p class="bolder default-size text-lighter m-t-20 m-b-20">Following bookings require your attention!</p>
+						<a href="/goomo_html/bookings/booking-details/{{ $.Params.slug }}" class="dark-link no-decor dis-block m-b-10" target="_blank">
+							<div class="content flex-row ">
+								<div class="content_data text-color"><b class="bolder text-darker">24 Dec</b><br>Check-in</div>
+								<div class="content_data text-color"><b class="bolder text-darker">03</b><br>No of Nights</div>
+				 				<div class="content_data text-color"><b class="bolder text-darker">Deluxe Room</b><br>Room</div>
+				 				<div class="content_data text-color"><b class="bolder text-darker">Rs. 5000</b><br>Booking Value</div>
+				 			</div>
+						</a>
+						<a href="#" class="dark-link no-decor dis-block m-b-10">
+							<div class="content flex-row ">
+								<div class="content_data text-color"><b class="bolder text-darker">23 Dec</b><br>Check-in</div>
+								<div class="content_data text-color"><b class="bolder text-darker">02</b><br>No of Nights</div>
+				 				<div class="content_data text-color"><b class="bolder text-darker">Standard Room</b><br>Room</div>
+				 				<div class="content_data text-color"><b class="bolder text-darker">Rs. 3000</b><br>Booking Value</div>
+				 			</div>
+						</a>
+						<a href="#" class="dark-link no-decor dis-block m-b-10">
+							<div class="content flex-row ">
+								<div class="content_data text-color"><b class="bolder text-darker">21 Dec</b><br>Check-in</div>
+								<div class="content_data text-color"><b class="bolder text-darker">01</b><br>No of Nights</div>
+				 				<div class="content_data text-color"><b class="bolder text-darker">Standard Room</b><br>Room</div>
+				 				<div class="content_data text-color"><b class="bolder text-darker">Rs. 8000</b><br>Booking Value</div>
+				 			</div>
+						</a>
+						<a href="/goomo_html/bookings/all/{{ $.Params.slug }}" class="text-secondary text-decor m-b-15 dis-block text-right p-r-5" target="_blank">View All</a>
+					</div>
+					<div class="col-sm-6 bookingRow__col">
+						<h6 class="m-b-0 bolder text-color bookingRow__title">Upcoming Check-in</h6>
+						<p class="bolder default-size text-lighter m-t-20 m-b-20">Arrivals in the next 3 days</p>
+						<a href="#" class="dark-link no-decor dis-block m-b-10">
+							<div class="content flex-row ">
+								<div class="content_data text-color"><b class="bolder text-darker">14 Dec</b><br>Check-in</div>
+								<div class="content_data text-color"><b class="bolder text-darker">02</b><br>No of Nights</div>
+				 				<div class="content_data text-color"><b class="bolder text-darker">Deluxe Room</b><br>Room</div>
+				 				<div class="content_data text-color"><b class="bolder text-darker">Rs. 5000</b><br>Booking Value</div>
+				 			</div>
+						</a>
+						<a href="#" class="dark-link no-decor dis-block m-b-10">
+							<div class="content flex-row ">
+								<div class="content_data text-color"><b class="bolder text-darker">14 Dec</b><br>Check-in</div>
+								<div class="content_data text-color"><b class="bolder text-darker">04</b><br>No of Nights</div>
+				 				<div class="content_data text-color"><b class="bolder text-darker">Standard Room</b><br>Room</div>
+				 				<div class="content_data text-color"><b class="bolder text-darker">Rs. 8000</b><br>Booking Value</div>
+				 			</div>
+						</a>
+						<a href="#" class="dark-link no-decor dis-block m-b-10">
+							<div class="content flex-row ">
+								<div class="content_data text-color"><b class="bolder text-darker">15 Dec</b><br>Check-in</div>
+								<div class="content_data text-color"><b class="bolder text-darker">02</b><br>No of Nights</div>
+				 				<div class="content_data text-color"><b class="bolder text-darker">Standard Room</b><br>Room</div>
+				 				<div class="content_data text-color"><b class="bolder text-darker">Rs. 3000</b><br>Booking Value</div>
+				 			</div>
+						</a>
+						<a href="/goomo_html/bookings/all/{{ $.Params.slug }}" class="text-secondary text-decor m-b-15 dis-block text-right p-r-5" target="_blank">View All</a>
+					</div>
+				</div>
+
+				<h6 class="m-t-50 m-b-20 bolder text-color flex-row">Inventory 
+					<div class="flex-row m-l-15 xx-small m-t-5">
+						<div class="p-l-10 p-r-10"><i class="fa fa-circle text-success p-r-5" aria-hidden="true"></i>Available</div>
+						<div><i class="fa fa-circle less-aval p-r-5" aria-hidden="true"></i>Not Available</div>
+					</div>
+				</h6>
+
+				<div class="row m-b-20">
+					<div class="col-sm-4 flex-row">
+						<p class="default-size p-r-20 bolder text-color m-t-10">Rooms</p>
+						<select class="form-control">
+							<option>All Rooms</option>
+							<option>Deluxe Rooms</option>
+							<option>Standard Rooms</option>
+						</select>
+					</div>
+				</div>
+
+				<div style="overflow: auto">
+					<!-- <img src="{{"img/dash_calendar.png" | absURL}}" class="img-responsive" style="min-width: 650px;"> -->
+
+					<div class="flex-row align-top flex-wrap">
+						<img src="{{"img/dash_calendar-only.png" | absURL}}" class="img-responsive" style="">
+					</div>
+
+				</div>
+
+			</div>
+
+
+			<div class="col-sm-3">
+				<div class="m-t-50">
+					<div class="market-manager-block">
+						<div class="market-manager-img">
+							<img src="{{"img/manager.jpg" | absURL}}" class="img-responsive">
+						</div>
+						<div class="market-manager-name">
+							<div>Vikas Khanna</div>
+							<small>(Market Manager)</small>
+						</div>
+						<div class="market-manager-number">
+							<div><a href="tel:+919988446622" class="text-decor links-click">+91 9988446622</a></div>
+							<small><a href="mailto:vikaskhanna@goomo.com" class="text-decor links-click">vikaskhanna@goomo.com</a></small>
+						</div>
+						<div>
+							Goomo's Market Manager is your go-to person for any questions or concerns.
+						</div>
+					</div>
+				</div>
+
+				<div class="m-t-15">
+					<a href="/goomo_html/offers/secret-deal/{{ $.Params.slug }}">
+						<img src="{{"img/secret_deal_box.png" | absURL}}" class="img-responsive">
+					</a>
+				</div>
+
+				<div class="m-t-20 p-b-15 p-t-15 p-r-15 p-l-15 boxshadow5">
+					<p class="bolder">Fulfillment Issues:</p>
+					<p class="bolder m-b-0">You have</p>
+					<h5 class="bolder m-t-0 "><a href="#" class="text-underline text-secondary">10 <small class="text-secondary">dishonoured bookings</small></a></h5>
+					<div>
+						as you did not <span class="bolder">Re-confirm</span> the bookings. We do not encourage dishonoured bookings, this will affect your ranking with us.
+					</div>
+				</div>
+
+				<div class="m-t-20 p-b-15 p-t-15 p-r-15 p-l-15 boxshadow5">
+					<img src="{{"img/cash_icon.png" | absURL}}">
+					<h5 class="text-primary bolder"><i class="fa fa-inr"></i> 7,01,600</h5>
+					<p>Total Revenue through Goomo (Last 15 Days)</p>
+
+					<div class="flex-row">
+						<div class="m-r-25">
+							<small>Received</small>
+							<h6 class="bolder m-t-0"><i class="fa fa-inr"></i> 1,02,000</h6>
+						</div>
+						<div>
+							<small>Pending</small>
+							<h6 class="bolder text-danger m-t-0"><i class="fa fa-inr"></i> 12,000</h6>
+						</div>
+					</div>
+				</div>
+
+				<div class="m-t-20 p-b-15 p-t-15 p-r-15 p-l-15 boxshadow5">
+					<p class="bolder m-b-0">Your City Rank</p>
+					<div class="flex-row">
+						<h5 class="bolder m-r-5">676</h5><small class="m-t-10">out of 800 Hotels</small>
+					</div>
+					<i class="fa fa-arrow-up text-primary"></i> Rank up from 677 to 676
+
+					<div class="text-right m-t-10">
+						<a href="#improve" class="text-secondary text-decor">Improve your Rank</a>
+					</div>
+				</div>
+
+				<div class="content-score-block m-t-20">
+					<h6 class="bolder">Content Score 20%</h6>
+					<div class="progress">
+					  <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+					    <span class="sr-only">20% Complete</span>
+					  </div>
+					</div>
+					<p class="text-muted bolder">
+						Getting more bookings is in your hands. Increasing your property page score to 100% can potentially lead to 18% more bookings.
+					</p>
+					<a href="/goomo_html/checklist/{{ $.Params.slug }}" class="text-secondary m-t-5 text-decor">Update your page</a>
+				</div>
+
+				<div class="m-t-20 p-b-15 p-t-15 p-r-15 p-l-15 boxshadow5">
+					<p class="bolder m-b-0">Upcoming important dates</p>
+					<div class="flex-row imp-date">
+						<div class="date-box">
+							<div class="month">OCT</div>
+							20
+						</div>
+						<div>
+							Diwali Season
+						</div>
+					</div>
+					<div class="flex-row imp-date">
+						<div class="date-box">
+							<div class="month">NOV</div>
+							14
+						</div>
+						<div>
+							Children's Day
+						</div>
+					</div>
+					<div class="text-right m-t-10">
+						<a href="#" class="text-secondary text-decor">View All</a>
+					</div>
+				</div>
+
+				<div class="m-t-20 p-b-15 p-t-15 p-r-15 p-l-15 boxshadow5">
+					<p class="bolder text-primary">What's new on Goomo</p>
+					<div class="flex-row">
+						<img src="{{"img/new_icon.png" | absURL}}" class="img-responsive m-r-5">
+						<div class="bolder">Increase the commission to Goomo to rank higher</div>
+					</div>
+					<div class="text-right m-t-10">
+						<a href="#" class="text-secondary text-decor">Click Here</a>
+					</div>
+				</div>
+
+				<div class="content-score-block m-t-20">
+					<div class="flex-row space-between">
+						<div>
+							<h6 class="bolder">Goomo Review Score</h6>
+							<h6><a href="#" class="text-secondary text-decor">View Review Summary</a></h6>
+						</div>
+						<img src="{{"img/3.0.png" | absURL}}" class="img-responsive m-l-20" width="50">
+					</div>
+				</div>
+
+				<div class="m-t-15">
+					<a href="#">
+						<img src="{{"img/google_play.png" | absURL}}" class="img-responsive">
+					</a>
+				</div>
+
+				<div class="m-t-20 p-b-15 p-t-15 p-r-15 p-l-15 boxshadow5" id="improve">
+					<p class="bolder m-b-0">How to improve my performance?</p>
+					<div class="flex-row align-top m-t-10">
+						<img src="{{"img/star_icon.png" | absURL}}" class="img-responsive m-r-5">
+						<div class="">Update your inventory to avoid sold outs</div>
+					</div>
+					<div class="flex-row align-top m-t-10">
+						<img src="{{"img/star_icon.png" | absURL}}" class="img-responsive m-r-5">
+						<div class="">Create attractive offers to sell unsold rooms</div>
+					</div>
+					<div class="flex-row align-top m-t-10">
+						<img src="{{"img/star_icon.png" | absURL}}" class="img-responsive m-r-5">
+						<div class="">Reduce Rates</div>
+					</div>
+					<div class="flex-row align-top m-t-10">
+						<img src="{{"img/star_icon.png" | absURL}}" class="img-responsive m-r-5">
+						<div class="">Improve your content score by filling more details of your property</div>
+					</div>
+					<div class="flex-row align-top m-t-10">
+						<img src="{{"img/star_icon.png" | absURL}}" class="img-responsive m-r-5">
+						<div class="">Give higher commission to Goomo and rank higher</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade fnb-modal" id="addCompetitor" tabindex="-1" role="dialog">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content text-center">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title text-left">Add Competitor</h4>
+		        <div class="text-left">
+		        	<small class="bolder"><span class="text-danger">Note:</span> Maximum of only 10 competitors are allowed</small>
+		        </div>
+		      </div>
+		      <hr>
+		      <div class="modal-body text-left">
+		      	<div class="input-group">
+		      	  	<span class="input-group-addon" id="basic-addon1" style="background: transparent;    border-top: 0;    border-left: 0;    border-radius: 0;">
+		      	  		<i class="fa fa-search"></i>
+		      	  	</span>
+		      		<input type="text" class="form-control fnb-input" placeholder="Search Hotels" name="">
+		      	</div>
+
+		      	<p class="bolder m-t-50">Select Hotels</p>
+		      	<div class="row mobile-flex">
+		      	  <div class="col-sm-6 col-xs-12">
+		      	      <div class="checkbox">
+		      	        <label>
+		      	            <input type="checkbox" value="" class="">
+		      	            Avion Hotel
+		      	          </label>
+		      	      </div>
+		      	  </div>
+		      	  <div class="col-sm-6 col-xs-12">
+		      	      <div class="checkbox">
+		      	        <label>
+		      	            <input type="checkbox" value="" class="">
+		      	            Avion Hotel
+		      	          </label>
+		      	      </div>
+		      	  </div>
+		      	</div>
+		      	<div class="row mobile-flex">
+		      	  <div class="col-sm-6 col-xs-12">
+		      	      <div class="checkbox">
+		      	        <label>
+		      	            <input type="checkbox" value="" class="">
+		      	            Ramee Guestline Hotel Juhu
+		      	          </label>
+		      	      </div>
+		      	  </div>
+		      	  <div class="col-sm-6 col-xs-12">
+		      	      <div class="checkbox">
+		      	        <label>
+		      	            <input type="checkbox" value="" class="">
+		      	            Ramee Guestline Hotel Juhu
+		      	          </label>
+		      	      </div>
+		      	  </div>
+		      	</div>
+		      	<div class="row mobile-flex">
+		      	  <div class="col-sm-6 col-xs-12">
+		      	      <div class="checkbox">
+		      	        <label>
+		      	            <input type="checkbox" value="" class="">
+		      	            The Orchid
+		      	          </label>
+		      	      </div>
+		      	  </div>
+		      	  <div class="col-sm-6 col-xs-12">
+		      	      <div class="checkbox">
+		      	        <label>
+		      	            <input type="checkbox" value="" class="">
+		      	            The Orchid
+		      	          </label>
+		      	      </div>
+		      	  </div>
+		      	</div>
+		      	<div class="row mobile-flex">
+		      	  <div class="col-sm-6 col-xs-12">
+		      	      <div class="checkbox">
+		      	        <label>
+		      	            <input type="checkbox" value="" class="">
+		      	            Hotel Royal Castle
+		      	          </label>
+		      	      </div>
+		      	  </div>
+		      	  <div class="col-sm-6 col-xs-12">
+		      	      <div class="checkbox">
+		      	        <label>
+		      	            <input type="checkbox" value="" class="">
+		      	            Hotel Royal Castle
+		      	          </label>
+		      	      </div>
+		      	  </div>
+		      	</div>
+		      	<div class="row mobile-flex">
+		      	  <div class="col-sm-6 col-xs-12">
+		      	      <div class="checkbox">
+		      	        <label>
+		      	            <input type="checkbox" value="" class="">
+		      	            Hotel Daisy Residency
+		      	          </label>
+		      	      </div>
+		      	  </div>
+		      	  <div class="col-sm-6 col-xs-12">
+		      	      <div class="checkbox">
+		      	        <label>
+		      	            <input type="checkbox" value="" class="">
+		      	            Hotel Daisy Residency
+		      	          </label>
+		      	      </div>
+		      	  </div>
+		      	</div>
+		      </div>
+		      <hr>
+		      <div class="modal-footer">
+		        <button type="button" class="btn fnb-btn outline" data-dismiss="modal">Close</button>
+		        <button type="button" class="btn fnb-btn secondary-btn" data-dismiss="modal">Add</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+	</div>
+
+	<script type="text/javascript">
+		var existingComments = [
+			{
+				"sectionId": "1",
+				"comments": []
+			}
+		];
+	</script>
+{{ end }}

@@ -2611,6 +2611,13 @@ footer {
 .text-decor {
   text-decoration: underline;
 }
+.no-decor {
+  text-decoration: none;
+}
+.no-decor:focus,
+.no-decor:active {
+  text-decoration: none;
+}
 .bat-color {
   color: #000;
 }
@@ -11665,6 +11672,36 @@ i.w-border {
     margin-top: 1.5em;
     margin-bottom: 1.5em;
   }
+}
+.bookingRow__title {
+  background-color: #d9edf7;
+  padding: 0.8em;
+}
+.bookingRow__col {
+  border: 1px solid #ddd;
+}
+.bookingRow__col:last-child {
+  border-left: 0;
+}
+.bookingRow .content {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  background-color: #fff !important;
+  padding: 0.8em 0;
+}
+@media screen and (max-width: 1400px) {
+  .bookingRow .content {
+    font-size: 0.9em;
+  }
+}
+.bookingRow .content_data {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 20%;
+      -ms-flex: 1 0 20%;
+          flex: 1 0 20%;
+  text-align: center;
+}
+.less-aval {
+  color: #fab700;
 }
 .profile-stats {
   color: #fff;
