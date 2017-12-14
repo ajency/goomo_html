@@ -454,3 +454,19 @@ $('.page-sidebar').on('click', '.add-blackout', function(e) {
   blackout_group_clone.insertBefore(blackout_group);
 
 });
+
+
+// Close popover on modal shown
+
+$('#block-room').on('shown.bs.modal', function () {
+  $('.popover').popover('hide');
+})
+
+
+
+
+
+
+
+
+

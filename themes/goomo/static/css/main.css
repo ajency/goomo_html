@@ -2731,6 +2731,9 @@ footer {
 .rating.rating-small .value:before {
   font-size: 1em;
 }
+.cursor-pointer {
+  cursor: pointer;
+}
 .default-size {
   font-size: 1em;
 }
@@ -11702,6 +11705,50 @@ i.w-border {
 }
 .less-aval {
   color: #fab700;
+}
+.booking-summary {
+  background-color: #eee;
+  margin: 0 -20px;
+  padding: 20px;
+}
+.booking-summary label {
+  display: block;
+}
+.booking-summary > div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-bottom: 0.8em;
+  padding-bottom: 0.8em;
+  border-bottom: 1px solid #ddd;
+}
+.booking-summary > div:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+.booking-summary > div > div {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 33.33%;
+      -ms-flex: 1 0 33.33%;
+          flex: 1 0 33.33%;
+  max-width: 33.33%;
+}
+.check-me .checkbox {
+  position: relative;
+  margin-right: 5px;
+}
+.check-me .checkbox:before {
+  top: -9px;
 }
 .profile-stats {
   color: #fff;

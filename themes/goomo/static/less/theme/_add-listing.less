@@ -5079,5 +5079,38 @@ i.w-border{
 }
 
 
+.booking-summary{
+	background-color: #eee;
+    margin: 0 -20px;
+    padding: 20px;
+	label{
+		display: block;
+	}
+	& > div{
+		display: flex;
+    	align-items: flex-start;
+    	justify-content: flex-start;
+   	    margin-bottom: 0.8em;
+   		padding-bottom: 0.8em;
+   		border-bottom: 1px solid #ddd;
+   		&:last-child{
+   			margin-bottom: 0;
+   			padding-bottom: 0;
+   			border-bottom: 0;
+   		}
+    	& > div{
+    		flex: 1 0 33.33%;
+    		max-width: 33.33%;
+    	}
+	}
+}
 
-
+.check-me{
+	.checkbox{
+		position: relative;
+    	margin-right: 5px;
+    	&:before{
+    		top: -9px;
+    	}
+	}
+}
