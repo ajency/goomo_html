@@ -357,6 +357,7 @@
     <a href="/goomo_html/dashboard/hotel-eden/"><i class="fa fa-bars"></i> <span>Dashboard</span></a>
   </li>
 
+
   <li class="active">
     <a class=" form-toggle " data-toggle="collapse"  href="#property-bookingSubMenu" role="button">
       <i class="fa fa-calendar-check-o"></i> <span>Bookings</span></a>
@@ -640,7 +641,7 @@
                           <div class="checkbox">
                             <label>
                                 <input type="checkbox" value="" class="">
-                               Confirmed
+                               New
                               </label>
                           </div>
                         </div>
@@ -648,7 +649,7 @@
                           <div class="checkbox">
                             <label>
                                 <input type="checkbox" value="" class="">
-                                Re-Confirmed
+                                Room Blocked
                               </label>
                           </div>
                       </div>
@@ -795,7 +796,7 @@
                 <div class="status-bucket__row">
                   <div class="buckets bucket-1">
                     <b class="m-b-0 sub-title">10</b>
-                    <p class="m-b-0 default-size text-primary">Confirmed</p>
+                    <p class="m-b-0 default-size text-primary">New</p>
                   </div>
                   <div class="buckets bucket-2">
                     <b class="m-b-0 t sub-title">-</b>
@@ -806,7 +807,7 @@
                 <div class="status-bucket__row">
                   <div class="buckets bucket-1">
                     <b class="m-b-0 te sub-title">-</b>
-                    <p class="m-b-0 te default-size text-lighter">Re-Confirmed</p>
+                    <p class="m-b-0 te default-size text-lighter">Room Blocked</p>
                   </div>
                 </div>
               </div>
@@ -864,15 +865,15 @@
                 <td class="text-left"><b>05 October 2017</b></td>
                 <td class="text-left"><b>08 October 2017</b></td>
                 <td class="text-left"><b>₹ 2,400</b></td>
-                <td class="text-left"><span class="text-primary"> Confirmed</span> </td>
+                <td class="text-left"><span class="text-primary"> New</span> </td>
                 <td class="text-left">Web</td>
                 <td class="text-left">Yes</td>
                 <td >
 
                   <i class="fa fa-ellipsis-v text-center action-panel center-block" aria-hidden="true"></i>
                    <div class="my-popover-content">
-                   		<a href="#" class="text-primary"> <b><i class="fa fa-refresh" aria-hidden="true"></i> Re-Confirm</b></a><br><br>
-                   		<a href="#" class="text-muted"> <b><i class="fa fa-envelope" aria-hidden="true"></i> Email Customer Voucher</b></a>
+                   		<a href="#" class="text-muted" data-toggle="modal" data-target="#block-room"> <b><i class="fa fa-ban p-r-5" aria-hidden="true"></i> Block Room</b></a><br><br>
+                   		<a href="#" class="text-muted"> <b><i class="fa fa-envelope p-r-5" aria-hidden="true"></i> Email Customer Voucher</b></a>
                    </div>
 
                 </td>
@@ -894,6 +895,23 @@
                    </div>
                 </td>
               </tr>
+               <tr>
+                <td class="text-left"><b><a href="/goomo_html/bookings/booking-details/hotel-eden/" target="_blank">ARK00000DXL4</a></b></td>
+                <td class="text-left"><b>Aravind Bargur</b><br><sm class="text-muted">on Wed, 01 Oct 2017<br>at 12:15 PM</sm></td>
+                <td class="text-left"><b>Casa Room</b><br><sm class="text-muted">2 Guest - 1 Rooms</sm></td>
+                <td class="text-left"><b>05 October 2017</b></td>
+                <td class="text-left"><b>08 October 2017</b></td>
+                <td class="text-left"><b>₹ 2,400</b></td>
+                <td class="text-left"><span class="text-lighter"> Room Blocked</span> </td>
+                <td class="text-left">B2B</td>
+                <td class="text-left">No</td>
+                <td>
+                 <i class="fa fa-ellipsis-v text-center action-panel center-block" aria-hidden="true"></i>
+                    <div class="my-popover-content">
+                      <a href="#" class="text-muted"> <b><i class="fa fa-envelope" aria-hidden="true"></i> Email Customer Voucher</b></a>
+                   </div>
+                </td>
+              </tr>
             	 <tr>
                 <td class="text-left"><b><a href="/goomo_html/bookings/booking-details/hotel-eden/" target="_blank">ARK00000DXL4</a></b></td>
                 <td class="text-left"><b>Aravind Bargur</b><br><sm class="text-muted">on Wed, 01 Oct 2017<br>at 12:15 PM</sm></td>
@@ -901,7 +919,7 @@
                 <td class="text-left"><b>05 October 2017</b></td>
                 <td class="text-left"><b>08 October 2017</b></td>
                 <td class="text-left"><b>₹ 2,400</b></td>
-                <td class="text-left"><span class="text-primary"> Confirmed</span> </td>
+                <td class="text-left"><span class="text-danger"> Cancelled</span> </td>
                 <td class="text-left">Web</td>
                 <td class="text-left">No</td>
                 <td>
@@ -919,7 +937,7 @@
                 <td class="text-left"><b>05 October 2017</b></td>
                 <td class="text-left"><b>08 October 2017</b></td>
                 <td class="text-left"><b>₹ 2,400</b></td>
-                <td class="text-left"><span class="text-secondary"> Arrival next <br>3 days</span> </td>
+                <td class="text-left"><span class="text-success"> Checked in</span> </td>
                 <td class="text-left">Mobile</td>
                 <td class="text-left">No</td>
                 <td>
@@ -930,12 +948,144 @@
                    </div>
                 </td>
               </tr>
+              <tr>
+                <td class="text-left"><b><a href="/goomo_html/bookings/booking-details/hotel-eden/" target="_blank">ARK00000DXL4</a></b></td>
+                <td class="text-left"><b>Aravind Bargur</b><br><sm class="text-muted">on Wed, 01 Oct 2017<br>at 12:15 PM</sm></td>
+                <td class="text-left"><b>Casa Room</b><br><sm class="text-muted">2 Guest - 1 Rooms</sm></td>
+                <td class="text-left"><b>05 October 2017</b></td>
+                <td class="text-left"><b>08 October 2017</b></td>
+                <td class="text-left"><b>₹ 2,400</b></td>
+                <td class="text-left"><span class="text-darker"> Past Booking</span> </td>
+                <td class="text-left">Mobile</td>
+                <td class="text-left">No</td>
+                <td>
+                 <i class="fa fa-ellipsis-v text-center action-panel center-block" aria-hidden="true"></i>
+                      <div class="my-popover-content">
+
+                      <a href="#" class="text-muted"> <b><i class="fa fa-envelope" aria-hidden="true"></i> Email Customer Voucher</b></a>
+                   </div>
+                </td>
+              </tr>
             </tbody>
           </table>
 
 				</div>
 		</div>
 	</div>
+
+
+
+<div class="modal fade fnb-modal" id="block-room" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content text-center">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title text-left element-title bolder">Booking Summary</h4>
+      </div>
+      
+      <div class="modal-body text-left">
+          
+      <div class="booking-summary">
+      <div>
+        <div class="m-t-5">
+          <label>
+            Booking ID :
+          </label>
+          ARK00000DXL4
+        </div>
+        <div class="m-t-5">
+          <label>
+            Guest Name :
+          </label>
+          Aravind Bargur
+        </div>
+        <div class="m-t-5">
+          <label>
+            Booked on :
+          </label>
+          Wed, 08 Dec 2017 at 12:15 PM
+        </div>
+        </div>
+        <div>
+        <div class="m-t-5">
+          <label>
+            Check In :
+          </label>
+          Tue, 25 Dec 2017
+        </div>
+        <div class="m-t-5">
+          <label>
+            Check Out :
+          </label>
+          Thur 27 Dec 2017
+        </div>
+        <div class="m-t-5">
+          <label>
+            Total Room :
+          </label>
+          1
+        </div>
+        </div>
+        <div>
+        <div class="m-t-5">
+          <label>
+            Total Guest :
+          </label>
+          2
+        </div>
+        <div class="m-t-5">
+          <label>
+            Booking Value :
+          </label>
+          Rs. 5947
+        </div>
+        <div class="m-t-5">
+          <label>
+            Goomo Commission :
+          </label>
+          Rs. 907
+        </div>
+        </div>
+        <div>
+        <div class="m-t-5">
+          <label>
+            Tax :
+          </label>
+        Rs. 200
+        </div>
+        <div class="m-t-5">
+          <label>
+            Property Receivable :
+          </label>
+        Rs. 5040
+        </div>
+        </div>
+      </div>
+        
+
+      <div class="bookign-note text-lighter m-t-15 m-b-15 x-small">
+        <p>* Please note the payment will be made to you 3 days before check in.</p>
+      </div>
+
+      <div class="check-me">
+        <label class="flex-row cursor-pointer">
+          <input type="checkbox" class="checkbox">
+          Yes, I have blocked rooms(s) for this booking
+        </label>
+      </div>
+        
+      </div>
+      <hr class="m-t-0">
+      <div class="modal-footer">
+        <button type="button" class="btn fnb-btn outline" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn fnb-btn secondary-btn" data-dismiss="modal">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
 
 
 

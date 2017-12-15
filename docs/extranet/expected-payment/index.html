@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="" class="">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>Booking Expected Payment :: Goomo by Ajency</title>
+
+		
+		<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,500,700" rel="stylesheet">
+		
+		<link rel="stylesheet" type="text/css" href="https://ajency.github.io/goomo_html/css/font-awesome/css/font-awesome.min.css">
+		
+		<link rel="stylesheet" type="text/css" href="https://ajency.github.io/goomo_html/js/datatables.net-select-dt/css/select.dataTables.css">
+		
+		<link rel="shortcut icon" href="https://ajency.github.io/goomo_html/img/favicon.png" type="image/x-icon" />
+		<link rel="stylesheet" href="https://ajency.github.io/goomo_html/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://ajency.github.io/goomo_html/css/jquery.flexdatalist.min.css">
+		<link rel="stylesheet" href="https://ajency.github.io/goomo_html/css/bootstrap-multiselect.min.css">
+		<link rel="stylesheet" href="https://ajency.github.io/goomo_html/js/bootstrap-daterangepicker/daterangepicker.css">
+		<link href="https://ajency.github.io/goomo_html/css/main.css" rel="stylesheet">
+	</head>
+	<body class="">
+
+		
+<header class="fnb-header">
+	<nav class="navbar navbar-default nav-extranet">
+		<div class="container-fluid">
+			
+			<div class="navbar-header mobile-head mobile-flex">
+				<div class="mobile-head__left mobile-flex">
+					<i class="fa fa-bars sideMenu" aria-hidden="true"></i>
+					<img src="https://ajency.github.io/goomo_html/img/goomo_logo.png" class="img-responsive desk-hide" width="80">
+				</div>
+				<div class="mobile-head__right mobile-flex">
+					<a href="" class="login">
+						<i class="fa fa-user-circle user-icon" aria-hidden="true"></i>
+					</a>
+				</div>
+			</div>
+			
+			<div class="collapse navbar-collapse m-side-bar" id="bs-example-navbar-collapse-1">
+				<ul class="mobile-top mobile-flex">
+					<li>
+						<p class="mobile-top__text">Sign in to get a personalised feed!</p>
+					</li>
+					<li>
+						<button type="button" class="fnb-btn outline">Login</button>
+					</li>
+				</ul>
+				<ul class="nav navbar-nav ">
+					<li>
+						<h5 class="dash-title">Extranet</h5>
+					</li>
+					<li>
+						
+
+
+
+<ul class="fnb-breadcrums flex-row">
+  <li class="fnb-breadcrums__section"><a href="https://ajency.github.io/goomo_html/listing"><p class="fnb-breadcrums__title">Dashboard</p></a></li>
+  <li class="fnb-breadcrums__section">
+  	<p class="fnb-breadcrums__title">></p>
+  </li>
+
+  
+  
+
+  
+    
+      
+      
+
+      
+      	<li><a href='/goomo_html/property/summary/'><p class="fnb-breadcrums__title">Extranet</p></a></li>
+      	<li class="fnb-breadcrums__section">
+  			<p class="fnb-breadcrums__title"> &nbsp;></p>
+  		</li>
+      
+
+      
+
+      
+
+  
+    
+      
+      
+
+      
+      	<li class="breadcrump_active"><p class="fnb-breadcrums__title">Expected Payment</p></li>
+  	  
+
+      
+
+      
+
+  
+    
+      
+
+  
+</ul>
+
+
+					</li>
+				</ul>
+
+				<ul class="nav navbar-nav navbar-right side-section">
+
+					<li class="mobile-hide">
+						<div class="dropdown login user-logged">
+							<i class="fa fa-user-circle user-icon" aria-hidden="true"></i>
+							<button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="drop-trigger">
+								<span class="ellipsis userName">Krish Dsouza</span>
+								<i class="fa fa-angle-down" aria-hidden="true"></i>
+							</button>
+							<ul class="dropdown-menu" aria-labelledby="dLabel">
+								<li>Sign Out</li>
+							</ul>
+						</div>
+
+					</li>
+
+				</ul>
+
+				<div class="desk-hide">
+					<div class="">
+
+	<label class="small-label">MAIN</label>
+	<ul class="gs-steps menu-top-level" role="tablist">
+		<li class="">
+			<a href=" # " class=" form-toggle " id=""><i class="fa fa-bars"></i> Dashboard </a>
+		</li>
+		<li class="">
+			<a href="#listingSubMenu" class=" form-toggle " id="" role="button" data-toggle="collapse"><i class="fa fa-list"></i> Properties</a>
+			<ul class="gs-steps collapse in edit-mode sub-steps" role="tablist" id="listingSubMenu" >
+				<li class="">
+					<a href="/goomo_html/extranet/active-properties" class="" id="">Active Properties</a>
+				</li>
+				<li class="">
+					<a href="/goomo_html/extranet/inactive-properties" class="" id="">Inactive Properties</a>
+				</li>
+				<li class="">
+					<a href="/goomo_html/extranet/inactive-cp-properties" class="sidebar-link-custom" id="" style="display: block">Inactive Properties <br> <span class="text-primary bolder">(Content Pending)</span></a>
+				</li>
+				<li>
+					<a href="#" class="" id="">My Properties</a>
+				</li>
+				<li>
+					<a href="#" class="" id="">Unclaimed Properties </a>
+				</li>
+				<li>
+					<a href="#" class="" id="">Under Review Properties </a>
+				</li>
+				<li class="">
+					<a href="/goomo_html/extranet/create" class="" id="">Create New </a>
+				</li>
+			</ul>
+		</li>
+		<li class="">
+			<a href=" # " class=" form-toggle " id=""><i class="fa fa-cog"></i> Configurations </a>
+			<ul class="gs-steps collapse in edit-mode sub-steps" role="tablist" id="" >
+				<li class="">
+					<a href="/goomo_html/extranet/regions" class="" id="">Regions</a>
+				</li>
+				<li class="">
+					<a href="/goomo_html/extranet/location/" class="" id="">Location Tags</a>
+				</li>
+				<li class="">
+					<a href="/goomo_html/extranet/chain/" class="" id="">Chain</a>
+				</li>
+				<li class="">
+					<a href="/goomo_html/extranet/commission/" class="" id="">Commission</a>
+				</li>
+				<li class="">
+					<a href="/goomo_html/extranet/tax-rules/" class="" id="">Tax Rules</a>
+				</li>
+				
+				<li class="">
+					<a href="/goomo_html/extranet/meal/" class="" id="">Meal Plans</a>
+				</li>
+			</ul>
+		</li>
+		<li class="">
+			<a href="#" class=" form-toggle " id=""><i class="fa fa-user"></i> Users</a>
+			<ul class="gs-steps collapse in edit-mode sub-steps" role="tablist" id="" >
+				<li class="">
+					<a href="/goomo_html/extranet/internal" class="" id="">Internal Users</a>
+				</li>
+				<li class="">
+					<a href="/goomo_html/extranet/add-internal" class="" id="">Add Internal Users</a>
+				</li>
+			</ul>
+		</li>
+		<li class="">
+			<a href="#" class=" form-toggle " id=""><i class="fa fa-line-chart"></i> Reports</a>
+			<ul class="gs-steps collapse in edit-mode sub-steps" role="tablist" id="" >
+				<li class="">
+					<a href="/goomo_html/extranet/bookings" class="" id="">Booking Details</a>
+				</li>
+				<li class="">
+					<a href="/goomo_html/extranet/margin" class="" id="">Margin Report</a>
+				</li>
+				<li class="">
+					<a href="/goomo_html/extranet/inventory" class="" id="">Inventory Status</a>
+				</li>
+				<li class="">
+					<a href="/goomo_html/extranet/rates" class="" id="">Rate Report</a>
+				</li>
+			</ul>
+		</li>
+		<li class=" active ">
+			<a href="#" class=" form-toggle " id=""><i class="fa fa-user"></i> Finance</a>
+			<ul class="gs-steps collapse in edit-mode sub-steps" role="tablist" id="" >
+				<li class=" active ">
+					<a href="/goomo_html/extranet/expected-payment" class="" id="">Expected Payment</a>
+				</li>
+			</ul>
+		</li>
+	</ul>
+
+	
+</div>
+				</div>
+
+
+			</div>
+			
+		</div>
+		
+	</nav>
+</header>
+
+
+		
+		<div class="container-fluid">
+				<div class="row">
+						<div class="col-xs-12 ">
+
+								<div class=" m-b-10">
+										<div class="row sidebar-row">
+												<div class="col-xs-12 col-sm-3 col-lg-2 dash-sidebar mobile-hide">
+													<div class="">
+
+	<label class="small-label">MAIN</label>
+	<ul class="gs-steps menu-top-level" role="tablist">
+		<li class="">
+			<a href=" # " class=" form-toggle " id=""><i class="fa fa-bars"></i> Dashboard </a>
+		</li>
+		<li class="">
+			<a href="#listingSubMenu" class=" form-toggle " id="" role="button" data-toggle="collapse"><i class="fa fa-list"></i> Properties</a>
+			<ul class="gs-steps collapse in edit-mode sub-steps" role="tablist" id="listingSubMenu" >
+				<li class="">
+					<a href="/goomo_html/extranet/active-properties" class="" id="">Active Properties</a>
+				</li>
+				<li class="">
+					<a href="/goomo_html/extranet/inactive-properties" class="" id="">Inactive Properties</a>
+				</li>
+				<li class="">
+					<a href="/goomo_html/extranet/inactive-cp-properties" class="sidebar-link-custom" id="" style="display: block">Inactive Properties <br> <span class="text-primary bolder">(Content Pending)</span></a>
+				</li>
+				<li>
+					<a href="#" class="" id="">My Properties</a>
+				</li>
+				<li>
+					<a href="#" class="" id="">Unclaimed Properties </a>
+				</li>
+				<li>
+					<a href="#" class="" id="">Under Review Properties </a>
+				</li>
+				<li class="">
+					<a href="/goomo_html/extranet/create" class="" id="">Create New </a>
+				</li>
+			</ul>
+		</li>
+		<li class="">
+			<a href=" # " class=" form-toggle " id=""><i class="fa fa-cog"></i> Configurations </a>
+			<ul class="gs-steps collapse in edit-mode sub-steps" role="tablist" id="" >
+				<li class="">
+					<a href="/goomo_html/extranet/regions" class="" id="">Regions</a>
+				</li>
+				<li class="">
+					<a href="/goomo_html/extranet/location/" class="" id="">Location Tags</a>
+				</li>
+				<li class="">
+					<a href="/goomo_html/extranet/chain/" class="" id="">Chain</a>
+				</li>
+				<li class="">
+					<a href="/goomo_html/extranet/commission/" class="" id="">Commission</a>
+				</li>
+				<li class="">
+					<a href="/goomo_html/extranet/tax-rules/" class="" id="">Tax Rules</a>
+				</li>
+				
+				<li class="">
+					<a href="/goomo_html/extranet/meal/" class="" id="">Meal Plans</a>
+				</li>
+			</ul>
+		</li>
+		<li class="">
+			<a href="#" class=" form-toggle " id=""><i class="fa fa-user"></i> Users</a>
+			<ul class="gs-steps collapse in edit-mode sub-steps" role="tablist" id="" >
+				<li class="">
+					<a href="/goomo_html/extranet/internal" class="" id="">Internal Users</a>
+				</li>
+				<li class="">
+					<a href="/goomo_html/extranet/add-internal" class="" id="">Add Internal Users</a>
+				</li>
+			</ul>
+		</li>
+		<li class="">
+			<a href="#" class=" form-toggle " id=""><i class="fa fa-line-chart"></i> Reports</a>
+			<ul class="gs-steps collapse in edit-mode sub-steps" role="tablist" id="" >
+				<li class="">
+					<a href="/goomo_html/extranet/bookings" class="" id="">Booking Details</a>
+				</li>
+				<li class="">
+					<a href="/goomo_html/extranet/margin" class="" id="">Margin Report</a>
+				</li>
+				<li class="">
+					<a href="/goomo_html/extranet/inventory" class="" id="">Inventory Status</a>
+				</li>
+				<li class="">
+					<a href="/goomo_html/extranet/rates" class="" id="">Rate Report</a>
+				</li>
+			</ul>
+		</li>
+		<li class=" active ">
+			<a href="#" class=" form-toggle " id=""><i class="fa fa-user"></i> Finance</a>
+			<ul class="gs-steps collapse in edit-mode sub-steps" role="tablist" id="" >
+				<li class=" active ">
+					<a href="/goomo_html/extranet/expected-payment" class="" id="">Expected Payment</a>
+				</li>
+			</ul>
+		</li>
+	</ul>
+
+	
+</div>
+												</div>
+												<div class="col-xs-12 col-sm-9 col-lg-10">
+
+													<div class="">
+														<div class="">
+															<div class="tab-content p-t-0  ">
+
+																
+
+	<div class="m-t-25 expected-payment">
+
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="flex-row space-between">
+					<div class="main-title">
+						<h3 class="no-m-t fly-out-heading-size text-info ">Booking Expected Payment</h3>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-12 m-t-35 regions-container">
+				<table id="location-table" class="table table-striped dataTable listing-table" cellspacing="0" width="100%">
+			          <thead>
+			            <tr>
+			              <th class="text-left no-sort" style="width: 150px;" rowspan="1">
+			                Hotel Code<br>
+			                <div class="filter-search__field flex-row tableSearch dis-inline">
+					            <i class="fa fa-search text-lighter" aria-hidden="true"></i>
+					            <input type="search" class="fnb-input" placeholder="Search" id="propNameSearch">
+					        </div>
+			              </th>
+			              <th class="text-left no-sort" style="width: 150px;" rowspan="1">
+			                Hotel Name<br>
+			                <div class="filter-search__field flex-row tableSearch dis-inline">
+					            <i class="fa fa-search text-lighter" aria-hidden="true"></i>
+					            <input type="search" class="fnb-input" placeholder="Search" id="propNameSearch">
+					        </div>
+			              </th>
+			              <th class="no-sort" style="min-width: 25%;">
+			                Country/State/ City/Location
+			                <select multiple class="form-control multi-dd">
+			                  <option value="Yes">Yes</option>
+			                  <option value="No">No</option>
+			                </select>
+			              </th>
+			              <th class="text-left no-sort"  rowspan="1">
+			                Market Manager
+			                <select multiple class="form-control multi-dd">
+			                  <option value="Vikas">Vikas Khanna</option>
+			                  <option value="Sujata">Sujata Patil</option>
+			                  <option value="frank">Frank Castle</option>
+			                </select>
+			              </th>
+			              <th class="text-left" style="" rowspan="1">
+			                Payment expected bookings
+			              </th>
+			               <th class="text-left" style="min-width: 65px;" rowspan="1">
+			               Total amount to be paid
+			              </th>
+			            </tr>
+			          </thead>
+		          	<tbody>
+
+		            <tr>
+		              <td class="text-left small"><b><a href="#" data-toggle="modal" data-target="#payment-modal">AD55768</a></b></td>
+		              <td class="text-left">Casa Anjuna</td>
+		              <td>India - Goa - Anjuna</td>
+		              <td class="text-left">Vikas Khanna</td>
+		              <td class="text-center"><b>6</b></td>
+		              <td class="text-center"><b>₹ 15000</b></td>
+		            </tr>
+		            <tr>
+		              <td class="text-left small"><b><a href="/goomo_html/bookings/booking-details/casa-colvale" target="_blank">AD56891</a></b></td>
+		              <td class="text-left">Casa Baga</td>
+		              <td>India - Goa - Baga</td>
+		              <td class="text-left">Sujata Patil</td>
+		              <td class="text-center"><b>8</b></td>
+		              <td class="text-center"><b>₹ 20000</b></td>
+		            </tr>
+		            <tr>
+		              <td class="text-left small"><b><a href="/goomo_html/bookings/booking-details/casa-colvale" target="_blank">AD61981</a></b></td>
+		              <td class="text-left">Casa Vagator</td>
+		              <td>India - Goa - Vagator</td>
+		              <td class="text-left">Frank Castle</td>
+		              <td class="text-center"><b>9</b></td>
+		              <td class="text-center"><b>₹ 25000</b></td>
+		            </tr>
+		        
+		          </tbody>
+        		</table>
+			</div>
+		</div>
+	</div>
+
+
+
+    <div class="modal fade fnb-modal payment-modal" id="payment-modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content text-center">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title text-left element-title bolder">Booking Summary</h4>
+          </div>
+
+          <hr class="m-b-0">
+          
+          <div class="modal-body text-left">
+              
+          <div class="booking-summary">
+          <div>
+            <div class="m-t-5 sub-title">
+              <label>
+                Property Name : 
+              </label>
+              Casa Anjuna
+            </div>
+            <div class="m-t-5 sub-title">
+              <label>
+                Contry/State/City/Location : 
+              </label>
+              India - Goa - Anjuna
+            </div>
+          </div>
+            
+          </div>
+            
+
+       <div class="tab-content">  
+
+		<div role="tabpanel" class="tab-pane active" id="pay-tab">
+
+          <div class="booking-note text-lighter text-center m-t-15 m-b-15">
+            <p class="m-b-0">Please Select the bookings you want to make "<b class="bat-color">Paid</b>" </p>
+          </div>
+
+          
+          <table class="table table-striped text-center payment-table m-t-30"> 
+          	<thead> 
+          		<tr> 
+          			<th class="text-center"><input type="checkbox" class="checkbox"> <div class="m-l-20">Booking ID</div> </th>
+          			<th class="text-center">Guest Name</th>
+          			<th class="text-center">Check-in</th>
+          			<th class="text-center">Room</th>
+          			<th class="text-center">Payment Receivable</th>
+          		</tr>
+          	</thead>
+          	<tbody>
+          		<tr>
+          			<td><input type="checkbox" class="checkbox property-check"> <b class="m-l-20">AXDZ1031</b></td>
+          			<td>Aravind Bargur</td>
+          			<td>20 Dec 2017<br> (<b>2</b> Nights)</td>
+          			<td><b>2</b> Rooms <br>(<b>5</b> Guests)</td>
+          			<td><b>Rs. 6000</b> <br>(Booking Value: <b>Rs.6100</b> - Goomo Commission <b>Rs.900</b>)</td>
+          		</tr>
+          		<tr>
+          			<td><input type="checkbox" class="checkbox property-check"> <b class="m-l-20">AXDZ1031</b></td>
+          			<td>Aravind Bargur</td>
+          			<td>20 Dec 2017<br> (<b>2</b> Nights)</td>
+          			<td><b>2</b> Rooms <br>(<b>5</b> Guests)</td>
+          			<td><b>Rs. 6000</b> <br>(Booking Value: <b>Rs.6100</b> - Goomo Commission <b>Rs.900</b>)</td>
+          		</tr>
+          		<tr>
+          			<td><input type="checkbox" class="checkbox property-check"> <b class="m-l-20">AXDZ1031</b></td>
+          			<td>Aravind Bargur</td>
+          			<td>20 Dec 2017<br> (<b>2</b> Nights)</td>
+          			<td><b>2</b> Rooms <br>(<b>5</b> Guests)</td>
+          			<td><b>Rs. 6000</b> <br>(Booking Value: <b>Rs.6100</b> - Goomo Commission <b>Rs.900</b>)</td>
+          		</tr>
+          	</tbody>
+          </table>
+
+		</div>
+		
+		<div role="tabpanel" class="tab-pane" id="make-pay">
+		<form class="flex-row flex-wrap row align-top pay-row">
+		  <div class="form-group col-sm-3 m-b-30">
+		    <label for="exampleInputEmail1" class="default-size text-lighter">Amount to be paid :</label>
+		    <div><b>Rs.10000 (3 Bookings)</b></div>
+		  </div>
+		  <div class="form-group col-sm-4 m-b-30">
+		    <label for="exampleInputPassword1" class="default-size text-lighter">Please enter the amount that you paid :</label>
+		    <div class="flex-row"><b>Rs</b> <input type="text" class="fnb-input m-l-10" style="width: 100%;"></div>
+		  </div>
+		  <div class="form-group col-sm-5 m-b-30">
+		    <label for="exampleInputFile" class="default-size text-lighter">Select the amount :</label>
+		    <select class="form-control fnb-select border-bottom default-size bolder">
+				<option selected>AF5241S - HDFC - Aravind Bargur</option>
+				<option>AF5241S - HDFC - Aravind Bargur</option>
+			</select>
+		  </div>
+		  <div class="form-group col-sm-3 m-b-0">
+		    <label for="exampleInputFile" class="default-size text-lighter">Payment Reference : </label>
+		    <div><input type="text" class="fnb-input" id="exampleInputPassword1"></div>
+		  </div>
+		  <div class="form-group col-sm-9 m-b-0">
+		    <label for="exampleInputFile" class="default-size text-lighter">Notes : </label>
+		    <div><textarea rows="1" class="fnb-input" style="width: 100%;"></textarea></div>
+		  </div>
+
+		</form>
+
+		<div class="text-darker m-t-20 m-b-5">
+            <p class="m-b-0"><b>Note:</b> On Save, all booking selected will be marked paid.</p>
+          </div>
+
+
+		</div>
+
+	</div>
+
+          </div>
+          <hr class="m-t-0">
+          <div class="modal-footer">
+            <button type="button" class="btn fnb-btn outline" data-dismiss="modal">Cancel</button>
+            <div role="tablist" class="dis-inline m-l-10 active" role="presentation"><button type="button" class="btn fnb-btn secondary-btn pay-save" href="#make-pay" aria-controls="make-pay" role="tab" data-toggle="tab">Next</button></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+															</div>
+														</div>
+													</div>
+
+												</div>
+										</div>
+								</div>
+
+						</div>
+				</div>
+				<div class="site-overlay"></div>
+		</div>
+		
+
+		
+<footer>
+	<div class="container">
+      <div class="goomoIcon">
+      <img src="https://ajency.github.io/goomo_html/img/goomo_logo.png" class="img-responsive center-block m-t-10 m-b-20" width="">
+      </div>
+      <div class="footerText">
+        <p class="copyright">
+          Copyright ©
+          
+          2017
+          
+          Goomo Group. All rights reserved.
+          
+        </p>
+      </div>
+    </div>
+</footer>
+
+
+		<script type="text/javascript" src="/goomo_html/js/jquery.min.js"></script>
+		
+		<script type="text/javascript" src="/goomo_html/js/bootstrap.min.js"></script>
+
+		
+		<script type="text/javascript" src="/goomo_html/js/datatables.net/js/jquery.dataTables.min.js"></script>
+		<script type="text/javascript" src="/goomo_html/js/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+		<script type="text/javascript" src="/goomo_html/js/datatables.net-select/js/dataTables.select.min.js"></script>
+
+		<script type="text/javascript" src="/goomo_html/js/bootstrap-multiselect.js"></script>
+
+		<script type="text/javascript" src="/goomo_html/js/moment.min.js"></script>	
+		<script type="text/javascript" src="/goomo_html/js/bootstrap-daterangepicker/daterangepicker.js"></script>	
+		
+
+		
+		<script type="text/javascript" src="/goomo_html/js/flex-datalist/jquery.flexdatalist.min.js"></script>
+
+		<script type="text/javascript" src="/goomo_html/js/custom.js"></script>
+	</body>
+</html>

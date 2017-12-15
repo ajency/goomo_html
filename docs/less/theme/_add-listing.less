@@ -5045,3 +5045,131 @@ i.w-border{
 	}
 }
 
+
+// Updated dashboard
+
+
+.bookingRow{
+	&__title{
+		background-color: #d9edf7;
+    	padding: 0.8em;
+	}
+	&__col{
+		border: 1px solid #ddd;
+		&:last-child{
+			border-left: 0;
+		}
+	}
+	.content{
+		box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+		background-color: #fff !important;
+		padding: 0.8em 0;
+		@media screen and (max-width: 1400px){
+			font-size: 0.9em
+		}
+		&_data{
+			flex: 1 0 20%;
+			text-align: center;
+		}
+	}
+}
+
+.less-aval{
+	color: #fab700;
+}
+
+
+.booking-summary{
+	background-color: #eee;
+    margin: 0 -20px;
+    padding: 20px;
+	label{
+		display: block;
+	}
+	& > div{
+		display: flex;
+    	align-items: flex-start;
+    	justify-content: flex-start;
+   	    margin-bottom: 0.8em;
+   		padding-bottom: 0.8em;
+   		border-bottom: 1px solid #ddd;
+   		&:last-child{
+   			margin-bottom: 0;
+   			padding-bottom: 0;
+   			border-bottom: 0;
+   		}
+    	& > div{
+    		flex: 1 0 33.33%;
+    		max-width: 33.33%;
+    	}
+	}
+}
+
+.check-me{
+	.checkbox{
+		position: relative;
+    	margin-right: 5px;
+    	&:before{
+    		top: -9px;
+    	}
+	}
+}
+
+
+.expected-payment{
+	.tableSearch{
+		// width: 204px;
+    	border: 0;
+    	border-bottom: 1px solid #ddd;
+	}
+	.fnb-input{
+		border: 0;
+	}
+}
+
+.payment-modal{
+	.booking-summary{
+		background-color: #fff;
+		label{
+			display: inline-block;
+		}
+		& > div{
+			& > div{
+				text-align: center;
+				max-width: inherit;
+			}
+		}
+	}
+	.booking-note{
+		background-color: #eeeeee73;
+    	padding: 1em;
+	}
+	.payment-table{
+		.checkbox{
+			margin: 0;
+			&:before{
+				top: 2px;
+			}
+		}
+	}
+	.pay-row{
+		background-color: #fffed6;
+    	padding: 1.5em 1em;
+    	label{
+    		color: #757575;
+    	}
+    	.fnb-input{
+    		outline: 0;
+    		&:focus,&:active{
+    			outline: 0;
+    		}
+    	}
+		.fnb-select{
+			font-size: 0.9em;
+    		margin-top: -10px;
+    		padding: 0;
+		}
+	}
+}
+
+

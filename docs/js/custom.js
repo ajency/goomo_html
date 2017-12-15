@@ -454,3 +454,25 @@ $('.page-sidebar').on('click', '.add-blackout', function(e) {
   blackout_group_clone.insertBefore(blackout_group);
 
 });
+
+
+// Close popover on modal shown
+
+$('#block-room').on('shown.bs.modal', function () {
+  $('.popover').popover('hide');
+})
+
+
+$('#payment-modal').on('hidden.bs.modal', function () {
+  $('#pay-tab').addClass('active');
+  $('#make-pay').removeClass('active');
+})
+
+$('.pay-save').click(function(){
+	$(this).text('Save');
+});
+
+
+
+
+

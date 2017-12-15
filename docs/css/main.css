@@ -2611,6 +2611,13 @@ footer {
 .text-decor {
   text-decoration: underline;
 }
+.no-decor {
+  text-decoration: none;
+}
+.no-decor:focus,
+.no-decor:active {
+  text-decoration: none;
+}
 .bat-color {
   color: #000;
 }
@@ -2723,6 +2730,9 @@ footer {
 .rating.rating-small .bg:before,
 .rating.rating-small .value:before {
   font-size: 1em;
+}
+.cursor-pointer {
+  cursor: pointer;
 }
 .default-size {
   font-size: 1em;
@@ -11665,6 +11675,126 @@ i.w-border {
     margin-top: 1.5em;
     margin-bottom: 1.5em;
   }
+}
+.bookingRow__title {
+  background-color: #d9edf7;
+  padding: 0.8em;
+}
+.bookingRow__col {
+  border: 1px solid #ddd;
+}
+.bookingRow__col:last-child {
+  border-left: 0;
+}
+.bookingRow .content {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  background-color: #fff !important;
+  padding: 0.8em 0;
+}
+@media screen and (max-width: 1400px) {
+  .bookingRow .content {
+    font-size: 0.9em;
+  }
+}
+.bookingRow .content_data {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 20%;
+      -ms-flex: 1 0 20%;
+          flex: 1 0 20%;
+  text-align: center;
+}
+.less-aval {
+  color: #fab700;
+}
+.booking-summary {
+  background-color: #eee;
+  margin: 0 -20px;
+  padding: 20px;
+}
+.booking-summary label {
+  display: block;
+}
+.booking-summary > div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-bottom: 0.8em;
+  padding-bottom: 0.8em;
+  border-bottom: 1px solid #ddd;
+}
+.booking-summary > div:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+.booking-summary > div > div {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 33.33%;
+      -ms-flex: 1 0 33.33%;
+          flex: 1 0 33.33%;
+  max-width: 33.33%;
+}
+.check-me .checkbox {
+  position: relative;
+  margin-right: 5px;
+}
+.check-me .checkbox:before {
+  top: -9px;
+}
+.expected-payment .tableSearch {
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+.expected-payment .fnb-input {
+  border: 0;
+}
+.payment-modal .booking-summary {
+  background-color: #fff;
+}
+.payment-modal .booking-summary label {
+  display: inline-block;
+}
+.payment-modal .booking-summary > div > div {
+  text-align: center;
+  max-width: inherit;
+}
+.payment-modal .booking-note {
+  background-color: #eeeeee73;
+  padding: 1em;
+}
+.payment-modal .payment-table .checkbox {
+  margin: 0;
+}
+.payment-modal .payment-table .checkbox:before {
+  top: 2px;
+}
+.payment-modal .pay-row {
+  background-color: #fffed6;
+  padding: 1.5em 1em;
+}
+.payment-modal .pay-row label {
+  color: #757575;
+}
+.payment-modal .pay-row .fnb-input {
+  outline: 0;
+}
+.payment-modal .pay-row .fnb-input:focus,
+.payment-modal .pay-row .fnb-input:active {
+  outline: 0;
+}
+.payment-modal .pay-row .fnb-select {
+  font-size: 0.9em;
+  margin-top: -10px;
+  padding: 0;
 }
 .profile-stats {
   color: #fff;

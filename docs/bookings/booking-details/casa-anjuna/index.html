@@ -357,6 +357,7 @@
     <a href="/goomo_html/dashboard/casa-anjuna/"><i class="fa fa-bars"></i> <span>Dashboard</span></a>
   </li>
 
+
   <li class="active">
     <a class=" form-toggle " data-toggle="collapse"  href="#property-bookingSubMenu" role="button">
       <i class="fa fa-calendar-check-o"></i> <span>Bookings</span></a>
@@ -716,7 +717,8 @@
 						Booking Status
 					</div>
 
-					<h6 class="bolder text-primary">Confirmed</h6>
+					<h6 class="bolder text-primary">New <a href="#" class="text-danger xx-small" data-toggle="modal" data-target="#block-room"> <b><i class="fa fa-ban p-l-5" aria-hidden="true"></i> Block Room</b></a>
+					</h6>
 
 					<div class="text-darker m-t-20">
 						Payment Status
@@ -743,6 +745,121 @@
 			</div>
 		</div>
 	</div>
+
+
+
+
+<div class="modal fade fnb-modal" id="block-room" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content text-center">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title text-left element-title bolder">Booking Summary</h4>
+      </div>
+      
+      <div class="modal-body text-left">
+          
+      <div class="booking-summary">
+      <div>
+        <div class="m-t-5">
+          <label>
+            Booking ID :
+          </label>
+          ARK00000DXL4
+        </div>
+        <div class="m-t-5">
+          <label>
+            Guest Name :
+          </label>
+          Aravind Bargur
+        </div>
+        <div class="m-t-5">
+          <label>
+            Booked on :
+          </label>
+          Wed, 08 Dec 2017 at 12:15 PM
+        </div>
+        </div>
+        <div>
+        <div class="m-t-5">
+          <label>
+            Check In :
+          </label>
+          Tue, 25 Dec 2017
+        </div>
+        <div class="m-t-5">
+          <label>
+            Check Out :
+          </label>
+          Thur 27 Dec 2017
+        </div>
+        <div class="m-t-5">
+          <label>
+            Total Room :
+          </label>
+          1
+        </div>
+        </div>
+        <div>
+        <div class="m-t-5">
+          <label>
+            Total Guest :
+          </label>
+          2
+        </div>
+        <div class="m-t-5">
+          <label>
+            Booking Value :
+          </label>
+          Rs. 5947
+        </div>
+        <div class="m-t-5">
+          <label>
+            Goomo Commission :
+          </label>
+          Rs. 907
+        </div>
+        </div>
+        <div>
+        <div class="m-t-5">
+          <label>
+            Tax :
+          </label>
+        Rs. 200
+        </div>
+        <div class="m-t-5">
+          <label>
+            Property Receivable :
+          </label>
+        Rs. 5040
+        </div>
+        </div>
+      </div>
+        
+
+      <div class="bookign-note text-lighter m-t-15 m-b-15 x-small">
+        <p>* Please note the payment will be made to you 3 days before check in.</p>
+      </div>
+
+      <div class="check-me">
+        <label class="flex-row cursor-pointer">
+          <input type="checkbox" class="checkbox">
+          Yes, I have blocked rooms(s) for this booking
+        </label>
+      </div>
+        
+      </div>
+      <hr class="m-t-0">
+      <div class="modal-footer">
+        <button type="button" class="btn fnb-btn outline" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn fnb-btn secondary-btn" data-dismiss="modal">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
 
 
 																	</div>
