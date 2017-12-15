@@ -463,8 +463,14 @@ $('#block-room').on('shown.bs.modal', function () {
 })
 
 
+$('#payment-modal').on('hidden.bs.modal', function () {
+  $('#pay-tab').addClass('active');
+  $('#make-pay').removeClass('active');
+})
 
-
+$('.pay-save').click(function(){
+	$(this).text('Save');
+});
 
 
 

@@ -11750,6 +11750,52 @@ i.w-border {
 .check-me .checkbox:before {
   top: -9px;
 }
+.expected-payment .tableSearch {
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+.expected-payment .fnb-input {
+  border: 0;
+}
+.payment-modal .booking-summary {
+  background-color: #fff;
+}
+.payment-modal .booking-summary label {
+  display: inline-block;
+}
+.payment-modal .booking-summary > div > div {
+  text-align: center;
+  max-width: inherit;
+}
+.payment-modal .booking-note {
+  background-color: #eeeeee73;
+  padding: 1em;
+}
+.payment-modal .payment-table .checkbox {
+  margin: 0;
+}
+.payment-modal .payment-table .checkbox:before {
+  top: 2px;
+}
+.payment-modal .pay-row {
+  background-color: #fffed6;
+  padding: 1.5em 1em;
+}
+.payment-modal .pay-row label {
+  color: #757575;
+}
+.payment-modal .pay-row .fnb-input {
+  outline: 0;
+}
+.payment-modal .pay-row .fnb-input:focus,
+.payment-modal .pay-row .fnb-input:active {
+  outline: 0;
+}
+.payment-modal .pay-row .fnb-select {
+  font-size: 0.9em;
+  margin-top: -10px;
+  padding: 0;
+}
 .profile-stats {
   color: #fff;
   background: #378f9e;
