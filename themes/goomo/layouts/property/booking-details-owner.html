@@ -167,7 +167,8 @@
 						Booking Status
 					</div>
 
-					<h6 class="bolder text-primary">Confirmed</h6>
+					<h6 class="bolder text-primary">New <a href="#" class="text-danger xx-small" data-toggle="modal" data-target="#block-room"> <b><i class="fa fa-ban p-l-5" aria-hidden="true"></i> Block Room</b></a>
+					</h6>
 
 					<div class="text-darker m-t-20">
 						Payment Status
@@ -196,4 +197,11 @@
 			</div>
 		</div>
 	</div>
+
+
+
+{{ partial "block-modal.html" .}}
+
+
+
 {{ end }}
