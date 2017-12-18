@@ -3,10 +3,10 @@
 {{ $url := replace .Permalink ( printf "%s" .Site.BaseURL) "" }}
 {{ $.Scratch.Add "path" .Site.BaseURL }}
 <ul class="fnb-breadcrums flex-row">
-  <li class="fnb-breadcrums__section"><a href="{{ .Site.BaseURL }}listing"><p class="fnb-breadcrums__title">Dashboard</p></a></li>
-  <li class="fnb-breadcrums__section">
+  <!-- <li class="fnb-breadcrums__section"><a href="{{ .Site.BaseURL }}listing"><p class="fnb-breadcrums__title">Dashboard</p></a></li> -->
+  <!-- <li class="fnb-breadcrums__section">
   	<p class="fnb-breadcrums__title">></p>
-  </li>
+  </li> -->
 
   {{ $len := (len (split $url "/")) }}
   {{ $last_index := sub $len 2 }}
