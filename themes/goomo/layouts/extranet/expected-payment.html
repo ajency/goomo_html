@@ -8,40 +8,141 @@
 					<div class="main-title">
 						<h3 class="no-m-t fly-out-heading-size text-info ">{{ .Title }}</h3>
 					</div>
+					 <button class="btn fnb-btn transparent bold-btn full flex-row"  data-toggle="collapse" data-target="#moreFiltersWrap"><img src="{{"img/filter-bars.png" | absURL}}" class="img-responsive p-r-5" width="30"> <span>Filter</span></button>
 				</div>
 			</div>
+
+
+	      <!-- Filters -->
+	      <div class="col-sm-12">
+	        <div class="more-filters-wrapper m-t-25 collapse" id="moreFiltersWrap">
+	          <div class="card">
+	            <div class="card-body">
+	              <div class="row">
+	                <div class="col-sm-6">
+	                <h5 class="m-b-20">Filter by</h5>
+	                </div>
+	                <div class="col-sm-6 text-right">
+	                  <button type="button" class="close" data-toggle="collapse" data-target="#moreFiltersWrap">
+	                        <span aria-hidden="true">&times;</span>
+	                      </button>
+	                </div>
+	              </div>
+
+	              <div class="row">
+	                <div class="col-12 col-md-4">
+	                  <div class="filter-section mb-4">
+	                    <h6 class="sub-title bolder">Location</h6>
+	                    <hr class="m-t-0 m-b-5">
+	                    <div class="loc-filter">
+	                      <div class="m-b-25">
+	                        <select class="fnb-select select-variant form-control text-lighter m-b-25 country-select" name="" multiple="">
+	                            <option >India</option>
+	                            <option>Singapore</option>
+	                            <option>China</option>
+	                            <option>Russia</option>
+	                        </select>
+	                      </div>
+
+	                      <div class="m-b-25">
+	                        <select class="fnb-select select-variant form-control text-lighter m-b-25 state-select" name="" multiple="">
+	                            <option>Delhi</option>
+	                            <option >Goa</option>
+	                            <option>Gujarat</option>
+	                            <option>Bangalore</option>
+	                        </select>
+	                      </div>
+
+	                      <div class="m-b-25">
+	                        <select class="fnb-select select-variant form-control text-lighter m-b-25 city-select" name="" multiple="">
+	                            <option >Panjim</option>
+	                            <option>Mapusa</option>
+	                            <option>Madgaon</option>
+	                            <option>Shivajinagar</option>
+	                        </select>
+	                      </div>
+
+	                      <div class="m-b-25">
+	                        <select class="fnb-select select-variant form-control text-lighter m-b-25 location-select" name="" multiple="">
+	                            <option >Panjim</option>
+	                            <option>Mapusa</option>
+	                            <option>Madgaon</option>
+	                            <option>Shivajinagar</option>
+	                        </select>
+	                      </div>
+	                    </div>
+	                  </div>
+	                </div>
+
+	                <div class="col-sm-12 col-md-4">
+	                  <div class="filter-section mb-4">
+	                    <h6 class="sub-title bolder">Market Manager</h6>
+	                    <hr class="m-t-0 m-b-5">
+	                    <div >
+	                      <input type="text" class="form-control fnb-input payment-add flexdatalist" multiple="multiple" placeholder="Type for suggestions &amp; select" list="locations" value="Sujata Patil">
+	                      <datalist id="locations">
+	                          <option value="goa">Sujata Patil</option>
+	                          <option value="mumbai">Allen Walker</option>
+	                          <option value="delhi">Delhi</option>
+	                          <option value="gujarat">Gujarat</option>
+	                          <option value="bangalore">Bangalore</option>
+	                      </datalist>
+	                    </div>
+	                  </div>
+
+	                </div>
+	              </div>
+
+
+	              <div class="row m-t-20">
+	                <div class="col">
+	                  <div class="pull-right">
+	                    <button class="btn outline fnb-btn btn-sm m-r-10">
+	                      Reset Filters
+	                    </button>
+	                    <button class="btn fnb-btn secondary-btn btn-sm" data-toggle="collapse" data-target="#moreFiltersWrap">
+	                      Apply Filters
+	                    </button>
+	                  </div>
+	                </div>
+	              </div>
+	            </div>
+	          </div>
+	        </div>
+	      </div>
+
 			<div class="col-sm-12 m-t-35 regions-container">
 				<table id="location-table" class="table table-striped dataTable listing-table" cellspacing="0" width="100%">
 			          <thead>
 			            <tr>
 			              <th class="text-left no-sort" style="width: 150px;" rowspan="1">
-			                Hotel Code<br>
-			                <div class="filter-search__field flex-row tableSearch dis-inline">
+			                Hotel Code
+			                <!-- <div class="filter-search__field flex-row tableSearch dis-inline">
 					            <i class="fa fa-search text-lighter" aria-hidden="true"></i>
 					            <input type="search" class="fnb-input" placeholder="Search" id="propNameSearch">
-					        </div>
+					        </div> -->
 			              </th>
 			              <th class="text-left no-sort" style="width: 150px;" rowspan="1">
-			                Hotel Name<br>
-			                <div class="filter-search__field flex-row tableSearch dis-inline">
+			                Hotel Name
+			                <!-- <div class="filter-search__field flex-row tableSearch dis-inline">
 					            <i class="fa fa-search text-lighter" aria-hidden="true"></i>
 					            <input type="search" class="fnb-input" placeholder="Search" id="propNameSearch">
-					        </div>
+					        </div> -->
 			              </th>
 			              <th class="no-sort" style="min-width: 25%;">
 			                Country/State/ City/Location
-			                <select multiple class="form-control multi-dd">
+			               <!--  <select multiple class="form-control multi-dd">
 			                  <option value="Yes">Yes</option>
 			                  <option value="No">No</option>
-			                </select>
+			                </select> -->
 			              </th>
 			              <th class="text-left no-sort"  rowspan="1">
 			                Market Manager
-			                <select multiple class="form-control multi-dd">
+			                <!-- <select multiple class="form-control multi-dd">
 			                  <option value="Vikas">Vikas Khanna</option>
 			                  <option value="Sujata">Sujata Patil</option>
 			                  <option value="frank">Frank Castle</option>
-			                </select>
+			                </select> -->
 			              </th>
 			              <th class="text-left" style="" rowspan="1">
 			                Payment expected bookings
