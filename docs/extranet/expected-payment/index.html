@@ -57,10 +57,8 @@
 
 
 <ul class="fnb-breadcrums flex-row">
-  <li class="fnb-breadcrums__section"><a href="https://ajency.github.io/goomo_html/listing"><p class="fnb-breadcrums__title">Dashboard</p></a></li>
-  <li class="fnb-breadcrums__section">
-  	<p class="fnb-breadcrums__title">></p>
-  </li>
+  
+  
 
   
   
@@ -354,40 +352,128 @@
 					<div class="main-title">
 						<h3 class="no-m-t fly-out-heading-size text-info ">Booking Expected Payment</h3>
 					</div>
+					 <button class="btn fnb-btn transparent bold-btn full flex-row"  data-toggle="collapse" data-target="#moreFiltersWrap"><img src="https://ajency.github.io/goomo_html/img/filter-bars.png" class="img-responsive p-r-5" width="30"> <span>Filter</span></button>
 				</div>
 			</div>
+
+
+	      
+	      <div class="col-sm-12">
+	        <div class="more-filters-wrapper m-t-25 collapse" id="moreFiltersWrap">
+	          <div class="card">
+	            <div class="card-body">
+	              <div class="row">
+	                <div class="col-sm-6">
+	                <h5 class="m-b-20">Filter by</h5>
+	                </div>
+	                <div class="col-sm-6 text-right">
+	                  <button type="button" class="close" data-toggle="collapse" data-target="#moreFiltersWrap">
+	                        <span aria-hidden="true">&times;</span>
+	                      </button>
+	                </div>
+	              </div>
+
+	              <div class="row">
+	                <div class="col-12 col-md-4">
+	                  <div class="filter-section mb-4">
+	                    <h6 class="sub-title bolder">Location</h6>
+	                    <hr class="m-t-0 m-b-5">
+	                    <div class="loc-filter">
+	                      <div class="m-b-25">
+	                        <select class="fnb-select select-variant form-control text-lighter m-b-25 country-select" name="" multiple="">
+	                            <option >India</option>
+	                            <option>Singapore</option>
+	                            <option>China</option>
+	                            <option>Russia</option>
+	                        </select>
+	                      </div>
+
+	                      <div class="m-b-25">
+	                        <select class="fnb-select select-variant form-control text-lighter m-b-25 state-select" name="" multiple="">
+	                            <option>Delhi</option>
+	                            <option >Goa</option>
+	                            <option>Gujarat</option>
+	                            <option>Bangalore</option>
+	                        </select>
+	                      </div>
+
+	                      <div class="m-b-25">
+	                        <select class="fnb-select select-variant form-control text-lighter m-b-25 city-select" name="" multiple="">
+	                            <option >Panjim</option>
+	                            <option>Mapusa</option>
+	                            <option>Madgaon</option>
+	                            <option>Shivajinagar</option>
+	                        </select>
+	                      </div>
+
+	                      <div class="m-b-25">
+	                        <select class="fnb-select select-variant form-control text-lighter m-b-25 location-select" name="" multiple="">
+	                            <option >Panjim</option>
+	                            <option>Mapusa</option>
+	                            <option>Madgaon</option>
+	                            <option>Shivajinagar</option>
+	                        </select>
+	                      </div>
+	                    </div>
+	                  </div>
+	                </div>
+
+	                <div class="col-sm-12 col-md-4">
+	                  <div class="filter-section mb-4">
+	                    <h6 class="sub-title bolder">Market Manager</h6>
+	                    <hr class="m-t-0 m-b-5">
+	                    <div >
+	                      <input type="text" class="form-control fnb-input payment-add flexdatalist" multiple="multiple" placeholder="Type for suggestions &amp; select" list="locations" value="Sujata Patil">
+	                      <datalist id="locations">
+	                          <option value="goa">Sujata Patil</option>
+	                          <option value="mumbai">Allen Walker</option>
+	                          <option value="delhi">Delhi</option>
+	                          <option value="gujarat">Gujarat</option>
+	                          <option value="bangalore">Bangalore</option>
+	                      </datalist>
+	                    </div>
+	                  </div>
+
+	                </div>
+	              </div>
+
+
+	              <div class="row m-t-20">
+	                <div class="col">
+	                  <div class="pull-right">
+	                    <button class="btn outline fnb-btn btn-sm m-r-10">
+	                      Reset Filters
+	                    </button>
+	                    <button class="btn fnb-btn secondary-btn btn-sm" data-toggle="collapse" data-target="#moreFiltersWrap">
+	                      Apply Filters
+	                    </button>
+	                  </div>
+	                </div>
+	              </div>
+	            </div>
+	          </div>
+	        </div>
+	      </div>
+
 			<div class="col-sm-12 m-t-35 regions-container">
 				<table id="location-table" class="table table-striped dataTable listing-table" cellspacing="0" width="100%">
 			          <thead>
 			            <tr>
 			              <th class="text-left no-sort" style="width: 150px;" rowspan="1">
-			                Hotel Code<br>
-			                <div class="filter-search__field flex-row tableSearch dis-inline">
-					            <i class="fa fa-search text-lighter" aria-hidden="true"></i>
-					            <input type="search" class="fnb-input" placeholder="Search" id="propNameSearch">
-					        </div>
+			                Hotel Code
+			                
 			              </th>
 			              <th class="text-left no-sort" style="width: 150px;" rowspan="1">
-			                Hotel Name<br>
-			                <div class="filter-search__field flex-row tableSearch dis-inline">
-					            <i class="fa fa-search text-lighter" aria-hidden="true"></i>
-					            <input type="search" class="fnb-input" placeholder="Search" id="propNameSearch">
-					        </div>
+			                Hotel Name
+			                
 			              </th>
 			              <th class="no-sort" style="min-width: 25%;">
 			                Country/State/ City/Location
-			                <select multiple class="form-control multi-dd">
-			                  <option value="Yes">Yes</option>
-			                  <option value="No">No</option>
-			                </select>
+			               
 			              </th>
 			              <th class="text-left no-sort"  rowspan="1">
 			                Market Manager
-			                <select multiple class="form-control multi-dd">
-			                  <option value="Vikas">Vikas Khanna</option>
-			                  <option value="Sujata">Sujata Patil</option>
-			                  <option value="frank">Frank Castle</option>
-			                </select>
+			                
 			              </th>
 			              <th class="text-left" style="" rowspan="1">
 			                Payment expected bookings
@@ -399,24 +485,24 @@
 			          </thead>
 		          	<tbody>
 
-		            <tr>
-		              <td class="text-left small"><b><a href="#" data-toggle="modal" data-target="#payment-modal">AD55768</a></b></td>
+		            <tr data-toggle="modal" data-target="#payment-modal">
+		              <td class="text-left small"><b>AD55768</b></td>
 		              <td class="text-left">Casa Anjuna</td>
 		              <td>India - Goa - Anjuna</td>
 		              <td class="text-left">Vikas Khanna</td>
 		              <td class="text-center"><b>6</b></td>
 		              <td class="text-center"><b>₹ 15000</b></td>
 		            </tr>
-		            <tr>
-		              <td class="text-left small"><b><a href="#" data-toggle="modal" data-target="#payment-modal">AD56891</a></b></td>
+		            <tr data-toggle="modal" data-target="#payment-modal">
+		              <td class="text-left small"><b>AD56891</b></td>
 		              <td class="text-left">Casa Baga</td>
 		              <td>India - Goa - Baga</td>
 		              <td class="text-left">Sujata Patil</td>
 		              <td class="text-center"><b>8</b></td>
 		              <td class="text-center"><b>₹ 20000</b></td>
 		            </tr>
-		            <tr>
-		              <td class="text-left small"><b><a href="#" data-toggle="modal" data-target="#payment-modal">AD61981</a></b></td>
+		            <tr data-toggle="modal" data-target="#payment-modal">
+		              <td class="text-left small"><b>AD61981</b></td>
 		              <td class="text-left">Casa Vagator</td>
 		              <td>India - Goa - Vagator</td>
 		              <td class="text-left">Frank Castle</td>
@@ -437,7 +523,7 @@
         <div class="modal-content text-center">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title text-left element-title bolder">Booking Summary</h4>
+            <h4 class="modal-title text-left element-title bolder text-darker pay-modal-title">Please Select the bookings you want to mark "<b class="bat-color">Paid</b>"</h4>
           </div>
 
           <hr class="m-b-0">
@@ -465,21 +551,19 @@
 
        <div class="tab-content">  
 
-		<div role="tabpanel" class="tab-pane active" id="pay-tab">
-
-          <div class="booking-note text-lighter text-center m-t-15 m-b-15">
-            <p class="m-b-0">Please Select the bookings you want to make "<b class="bat-color">Paid</b>" </p>
-          </div>
+		<div role="tabpanel" class="tab-pane active" id="pay-tab" style=" overflow: auto;">
 
           
-          <table class="table table-striped text-center payment-table m-t-30"> 
+
+          
+          <table class="table table-striped text-center payment-table m-t-30 table-responsive"> 
           	<thead> 
           		<tr> 
           			<th class="text-center"><input type="checkbox" class="checkbox"> <div class="m-l-20">Booking ID</div> </th>
           			<th class="text-center">Guest Name</th>
           			<th class="text-center">Check-in</th>
           			<th class="text-center">Room</th>
-          			<th class="text-center">Payment Receivable</th>
+          			<th class="text-center">Property Receivable</th>
           		</tr>
           	</thead>
           	<tbody>
@@ -510,35 +594,35 @@
 		</div>
 		
 		<div role="tabpanel" class="tab-pane" id="make-pay">
-		<form class="flex-row flex-wrap row align-top pay-row">
-		  <div class="form-group col-sm-3 m-b-30">
+		<form class="flex-row flex-wrap justify-center col-direction row pay-row">
+		  <div class="form-group col-sm-6 m-b-30">
 		    <label for="exampleInputEmail1" class="default-size text-lighter">Amount to be paid :</label>
-		    <div><b>Rs.10000 (3 Bookings)</b></div>
+		    <div class="dis-inline"><b>Rs.10000 (3 Bookings)</b></div>
 		  </div>
-		  <div class="form-group col-sm-4 m-b-30">
+		  <div class="form-group col-sm-6 m-b-30">
 		    <label for="exampleInputPassword1" class="default-size text-lighter">Please enter the amount that you paid :</label>
 		    <div class="flex-row"><b>Rs</b> <input type="text" class="fnb-input m-l-10" style="width: 100%;"></div>
 		  </div>
-		  <div class="form-group col-sm-5 m-b-30">
-		    <label for="exampleInputFile" class="default-size text-lighter">Select the amount :</label>
+		  <div class="form-group col-sm-6 m-b-30">
+		    <label for="exampleInputFile" class="default-size text-lighter">Select the Account :</label>
 		    <select class="form-control fnb-select border-bottom default-size bolder">
 				<option selected>AF5241S - HDFC - Aravind Bargur</option>
 				<option>AF5241S - HDFC - Aravind Bargur</option>
 			</select>
 		  </div>
-		  <div class="form-group col-sm-3 m-b-0">
+		  <div class="form-group col-sm-6 m-b-30">
 		    <label for="exampleInputFile" class="default-size text-lighter">Payment Reference : </label>
-		    <div><input type="text" class="fnb-input" id="exampleInputPassword1"></div>
+		    <div><input type="text" class="fnb-input fullwidth" id="exampleInputPassword1"></div>
 		  </div>
-		  <div class="form-group col-sm-9 m-b-0">
+		  <div class="form-group col-sm-6 m-b-0">
 		    <label for="exampleInputFile" class="default-size text-lighter">Notes : </label>
-		    <div><textarea rows="1" class="fnb-input" style="width: 100%;"></textarea></div>
+		    <div><textarea rows="2" class="fnb-input fullwidth"></textarea></div>
 		  </div>
 
 		</form>
 
-		<div class="text-darker m-t-20 m-b-5">
-            <p class="m-b-0"><b>Note:</b> On Save, all booking selected will be marked paid.</p>
+		<div class="text-darker m-t-30 m-b-5">
+            <p class="m-b-0 text-center bolder"><b class="bat-color bolder label-size">Note:</b> On Save, all booking selected will be marked paid.</p>
           </div>
 
 

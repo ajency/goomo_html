@@ -2677,6 +2677,9 @@ footer {
     font-size: 0.95em;
   }
 }
+.fullwidth {
+  width: 100%;
+}
 .overflow-hidden {
   overflow: hidden;
 }
@@ -11703,6 +11706,17 @@ i.w-border {
           flex: 1 0 20%;
   text-align: center;
 }
+@media screen and (max-width: 768px) {
+  .bookingRow .content {
+    font-size: 0.8em;
+  }
+  .bookingRow .content_data:first-child {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 0 13%;
+        -ms-flex: 1 0 13%;
+            flex: 1 0 13%;
+  }
+}
 .less-aval {
   color: #fab700;
 }
@@ -11767,6 +11781,13 @@ i.w-border {
   text-align: center;
   max-width: inherit;
 }
+.payment-modal .booking-summary > div > div:first-child {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 4%;
+      -ms-flex: 1 0 4%;
+          flex: 1 0 4%;
+  text-align: right;
+}
 .payment-modal .booking-note {
   background-color: #eeeeee73;
   padding: 1em;
@@ -11792,9 +11813,37 @@ i.w-border {
   outline: 0;
 }
 .payment-modal .pay-row .fnb-select {
-  font-size: 0.9em;
+  font-size: 0.95em;
   margin-top: -10px;
   padding: 0;
+  font-weight: 600;
+  color: #000;
+}
+.block-room-btn {
+  background-color: #469a70;
+  font-size: 0.8em;
+  margin-top: 0.5em;
+  color: #fff;
+}
+.block-room-btn:hover,
+.block-room-btn:active,
+.block-room-btn:focus {
+  color: #fff;
+}
+@media screen and (max-width: 768px) {
+  .pay-row .form-group {
+    width: 100%;
+  }
+  .booking-summary {
+    padding-top: 0;
+  }
+  .booking-summary > div > div {
+    text-align: left;
+    font-size: 0.95em;
+  }
+  .booking-summary > div > div:first-child {
+    margin-right: 10px;
+  }
 }
 .profile-stats {
   color: #fff;
