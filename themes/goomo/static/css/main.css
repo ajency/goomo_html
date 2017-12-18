@@ -11706,6 +11706,17 @@ i.w-border {
           flex: 1 0 20%;
   text-align: center;
 }
+@media screen and (max-width: 768px) {
+  .bookingRow .content {
+    font-size: 0.8em;
+  }
+  .bookingRow .content_data:first-child {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 0 13%;
+        -ms-flex: 1 0 13%;
+            flex: 1 0 13%;
+  }
+}
 .less-aval {
   color: #fab700;
 }
@@ -11818,6 +11829,21 @@ i.w-border {
 .block-room-btn:active,
 .block-room-btn:focus {
   color: #fff;
+}
+@media screen and (max-width: 768px) {
+  .pay-row .form-group {
+    width: 100%;
+  }
+  .booking-summary {
+    padding-top: 0;
+  }
+  .booking-summary > div > div {
+    text-align: left;
+    font-size: 0.95em;
+  }
+  .booking-summary > div > div:first-child {
+    margin-right: 10px;
+  }
 }
 .profile-stats {
   color: #fff;

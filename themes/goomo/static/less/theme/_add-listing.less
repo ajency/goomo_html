@@ -5074,6 +5074,20 @@ i.w-border{
 	}
 }
 
+
+@media screen and (max-width: @mobile){
+	.bookingRow{
+		.content{
+			font-size: 0.8em;
+			&_data{
+				&:first-child{
+					flex: 1 0 13%;
+				}
+			}
+		}
+	}
+}
+
 .less-aval{
 	color: #fab700;
 }
@@ -5190,5 +5204,23 @@ i.w-border{
     }
 }
 
-
+@media screen and (max-width: @mobile){
+	.pay-row{
+		.form-group{
+			width: 100%;
+		}
+	}
+	.booking-summary{
+		padding-top: 0;
+		& > div{
+			& > div{
+				text-align: left;
+				font-size: 0.95em;
+				&:first-child{
+					margin-right: 10px;
+				}
+			}
+		}
+	}
+}
 
