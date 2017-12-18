@@ -11796,6 +11796,17 @@ i.w-border {
   margin-top: -10px;
   padding: 0;
 }
+.block-room-btn {
+  background-color: #469a70;
+  font-size: 0.8em;
+  margin-top: 0.5em;
+  color: #fff;
+}
+.block-room-btn:hover,
+.block-room-btn:active,
+.block-room-btn:focus {
+  color: #fff;
+}
 .profile-stats {
   color: #fff;
   background: #378f9e;
