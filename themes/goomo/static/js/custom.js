@@ -466,10 +466,13 @@ $('#block-room').on('shown.bs.modal', function () {
 $('#payment-modal').on('hidden.bs.modal', function () {
   $('#pay-tab').addClass('active');
   $('#make-pay').removeClass('active');
+  $('.pay-modal-title').html('Please Select the bookings you want to mark "<b class="bat-color">Paid</b>"');
+  $('.pay-save').text('Next');
 })
 
 $('.pay-save').click(function(){
 	$(this).text('Save');
+	$('.pay-modal-title').text('Add the payment details');
 });
 
 

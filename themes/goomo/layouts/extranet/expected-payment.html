@@ -192,7 +192,7 @@
         <div class="modal-content text-center">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title text-left element-title bolder">Booking Summary</h4>
+            <h4 class="modal-title text-left element-title bolder text-darker pay-modal-title">Please Select the bookings you want to mark "<b class="bat-color">Paid</b>"</h4>
           </div>
 
           <hr class="m-b-0">
@@ -222,9 +222,9 @@
 
 		<div role="tabpanel" class="tab-pane active" id="pay-tab">
 
-          <div class="booking-note text-lighter text-center m-t-15 m-b-15">
+          <!-- <div class="booking-note text-lighter text-center m-t-15 m-b-15">
             <p class="m-b-0">Please Select the bookings you want to make "<b class="bat-color">Paid</b>" </p>
-          </div>
+          </div> -->
 
           
           <table class="table table-striped text-center payment-table m-t-30"> 
@@ -234,7 +234,7 @@
           			<th class="text-center">Guest Name</th>
           			<th class="text-center">Check-in</th>
           			<th class="text-center">Room</th>
-          			<th class="text-center">Payment Receivable</th>
+          			<th class="text-center">Property Receivable</th>
           		</tr>
           	</thead>
           	<tbody>
@@ -265,35 +265,35 @@
 		</div>
 		
 		<div role="tabpanel" class="tab-pane" id="make-pay">
-		<form class="flex-row flex-wrap row align-top pay-row">
-		  <div class="form-group col-sm-3 m-b-30">
+		<form class="flex-row flex-wrap justify-center col-direction row pay-row">
+		  <div class="form-group col-sm-6 m-b-30">
 		    <label for="exampleInputEmail1" class="default-size text-lighter">Amount to be paid :</label>
-		    <div><b>Rs.10000 (3 Bookings)</b></div>
+		    <div class="dis-inline"><b>Rs.10000 (3 Bookings)</b></div>
 		  </div>
-		  <div class="form-group col-sm-4 m-b-30">
+		  <div class="form-group col-sm-6 m-b-30">
 		    <label for="exampleInputPassword1" class="default-size text-lighter">Please enter the amount that you paid :</label>
 		    <div class="flex-row"><b>Rs</b> <input type="text" class="fnb-input m-l-10" style="width: 100%;"></div>
 		  </div>
-		  <div class="form-group col-sm-5 m-b-30">
-		    <label for="exampleInputFile" class="default-size text-lighter">Select the amount :</label>
+		  <div class="form-group col-sm-6 m-b-30">
+		    <label for="exampleInputFile" class="default-size text-lighter">Select the Account :</label>
 		    <select class="form-control fnb-select border-bottom default-size bolder">
 				<option selected>AF5241S - HDFC - Aravind Bargur</option>
 				<option>AF5241S - HDFC - Aravind Bargur</option>
 			</select>
 		  </div>
-		  <div class="form-group col-sm-3 m-b-0">
+		  <div class="form-group col-sm-6 m-b-30">
 		    <label for="exampleInputFile" class="default-size text-lighter">Payment Reference : </label>
-		    <div><input type="text" class="fnb-input" id="exampleInputPassword1"></div>
+		    <div><input type="text" class="fnb-input fullwidth" id="exampleInputPassword1"></div>
 		  </div>
-		  <div class="form-group col-sm-9 m-b-0">
+		  <div class="form-group col-sm-6 m-b-0">
 		    <label for="exampleInputFile" class="default-size text-lighter">Notes : </label>
-		    <div><textarea rows="1" class="fnb-input" style="width: 100%;"></textarea></div>
+		    <div><textarea rows="2" class="fnb-input fullwidth"></textarea></div>
 		  </div>
 
 		</form>
 
-		<div class="text-darker m-t-20 m-b-5">
-            <p class="m-b-0"><b>Note:</b> On Save, all booking selected will be marked paid.</p>
+		<div class="text-darker m-t-30 m-b-5">
+            <p class="m-b-0 text-center bolder"><b class="bat-color bolder label-size">Note:</b> On Save, all booking selected will be marked paid.</p>
           </div>
 
 

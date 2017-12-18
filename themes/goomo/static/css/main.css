@@ -2677,6 +2677,9 @@ footer {
     font-size: 0.95em;
   }
 }
+.fullwidth {
+  width: 100%;
+}
 .overflow-hidden {
   overflow: hidden;
 }
@@ -11767,6 +11770,13 @@ i.w-border {
   text-align: center;
   max-width: inherit;
 }
+.payment-modal .booking-summary > div > div:first-child {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 4%;
+      -ms-flex: 1 0 4%;
+          flex: 1 0 4%;
+  text-align: right;
+}
 .payment-modal .booking-note {
   background-color: #eeeeee73;
   padding: 1em;
@@ -11792,9 +11802,11 @@ i.w-border {
   outline: 0;
 }
 .payment-modal .pay-row .fnb-select {
-  font-size: 0.9em;
+  font-size: 0.95em;
   margin-top: -10px;
   padding: 0;
+  font-weight: 600;
+  color: #000;
 }
 .block-room-btn {
   background-color: #469a70;
