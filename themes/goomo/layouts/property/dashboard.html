@@ -79,7 +79,7 @@
 
 				<h6 class="m-t-50 m-b-20 bolder text-color flex-row">Inventory
 					<div class="flex-row m-l-15 xx-small m-t-5">
-						<div class="p-l-10 p-r-10"><i class="fa fa-circle text-success p-r-5" aria-hidden="true"></i>Available</div>
+						<div class="p-l-10 p-r-10"><i class="fa fa-circle text-danger p-r-5" aria-hidden="true"></i>Sold Out</div>
 						<div><i class="fa fa-circle less-aval p-r-5" aria-hidden="true"></i>Low Availability</div>
 					</div>
 				</h6>
@@ -98,7 +98,13 @@
 				<div style="overflow: auto">
 					<!-- <img src="{{"img/dash_calendar.png" | absURL}}" class="img-responsive" style="min-width: 650px;"> -->
 
-					<div class="flex-row align-top flex-wrap">
+					<div class="flex-row align-top">
+						<a href="/goomo_html/rates-availability/calendar/{{ $.Params.slug }}" target="_blank">
+							<img src="{{"img/dash_calendar-only.png" | absURL}}" class="img-responsive" style="">
+						</a>
+						<a href="/goomo_html/rates-availability/calendar/{{ $.Params.slug }}" target="_blank">
+							<img src="{{"img/dash_calendar-only.png" | absURL}}" class="img-responsive" style="">
+						</a>
 						<a href="/goomo_html/rates-availability/calendar/{{ $.Params.slug }}" target="_blank">
 							<img src="{{"img/dash_calendar-only.png" | absURL}}" class="img-responsive" style="">
 						</a>

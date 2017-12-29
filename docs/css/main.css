@@ -10392,7 +10392,7 @@ i.w-border {
   transition: all 0.3s ease-in;
 }
 .bookingRow .content:hover {
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   background-color: #ffffff;
   border-bottom: 1px solid rgba(0, 0, 0, 0.04);
   transform: translate3d(0, -1px, 0);
