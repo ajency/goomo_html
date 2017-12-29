@@ -9945,8 +9945,8 @@ i.w-border {
 }
 .single-day {
   text-align: center;
-  width: 60px;
-  min-width: 58px;
+  width: 74px;
+  min-width: 72px;
   border-left: 1px solid #e1e1e1;
   border-right: 1px solid #e1e1e1;
 }
@@ -10367,9 +10367,9 @@ i.w-border {
 }
 .bookingRow .content {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  background-color: #fff !important;
-  padding: 0.8em 0;
+  padding: 0.9em 0;
   position: relative;
+  transition: all 0.3s ease-in;
 }
 @media screen and (max-width: 1400px) {
   .bookingRow .content {
@@ -10391,9 +10391,15 @@ i.w-border {
   opacity: 0;
   transition: all 0.3s ease-in;
 }
+.bookingRow .content:hover {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  background-color: #ffffff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+  transform: translate3d(0, -1px, 0);
+}
 .bookingRow .content:hover:after {
   opacity: 1;
-  transform: translateX(15px);
+  transform: translateX(22px);
 }
 @media screen and (max-width: 768px) {
   .bookingRow .content {
