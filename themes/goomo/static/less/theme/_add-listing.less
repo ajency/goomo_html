@@ -5061,15 +5061,34 @@ i.w-border{
 		}
 	}
 	.content{
-		box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+		// box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+		border-bottom: 1px solid rgba(0, 0, 0, 0.10);
 		background-color: #fff !important;
 		padding: 0.8em 0;
+		position: relative;
 		@media screen and (max-width: 1400px){
 			font-size: 0.9em
 		}
 		&_data{
 			flex: 1 0 20%;
 			text-align: center;
+		}
+		&:after{
+			content: '\f18e';
+			font-family: FontAwesome;
+			font-size: 20px;
+			color: @accent-secondary;
+			position: absolute;
+			right: 0;
+			top: 10px;
+			opacity: 0;
+			transition: all 0.3s ease-in;
+		}
+		&:hover{
+			&:after{
+				opacity: 1;
+				transform: translateX(15px);
+			}
 		}
 	}
 }
