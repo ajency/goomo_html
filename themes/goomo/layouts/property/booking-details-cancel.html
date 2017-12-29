@@ -193,23 +193,21 @@
 
 			<div class="col-sm-4">
 
-
 				<div class="alert alert-success text-center m-t-20" style="background-color: #eaf6f3;border-color: #3d928e;border-width:2px;">
 					<div class="row">
-						<div class="col-sm-6">
+						<div class="col-sm-12">
 							<div class="text-darker">
 								Booking Status:
 							</div>
-							<h6 class="bolder text-primary m-t-5">New </h6>
+							<h6 class="bolder text-primary m-t-5">Room Booked </h6>
 						</div>
-						<div class="col-sm-6">
-							<h6 class="m-t-0">
-								<a href="#" class="btn fnb-btn block-room-btn" data-toggle="modal" data-target="#block-room"> <b><i class="fa fa-ban p-l-5" aria-hidden="true"></i> Block Room</b></a>
-							</h6>
+						<div class="col-sm-12">
+							<div class="text-muted">This booking has been confirmed and you are bound to honor this commitment. If due to some circumstance, you are unable to honor this booking, click the link below.</div>
+							<a href="#" class="text-decor text-secondary" data-toggle="modal" data-target="#cancelModal"> <b><i class="fa fa-ban p-l-5" aria-hidden="true"></i> Cancel</b></a>
 						</div>
 					</div>
 
-					<hr class="m-t-5 m-b-5">
+					<hr class="m-t-10 m-b-5">
 
 					<div class="text-darker m-t-10">
 						Payment Status
@@ -268,7 +266,7 @@
 
 
 
-{{ partial "block-modal.html" .}}
+{{ partial "cancel-modal.html" .}}
 
 
 {{ end }}

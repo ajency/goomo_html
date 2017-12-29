@@ -738,23 +738,21 @@
 
 			<div class="col-sm-4">
 
-
-				<div class="alert alert-success text-center m-t-20" style="background-color: #eaf6f3;">
+				<div class="alert alert-success text-center m-t-20" style="background-color: #eaf6f3;border-color: #3d928e;border-width:2px;">
 					<div class="row">
-						<div class="col-sm-6">
+						<div class="col-sm-12">
 							<div class="text-darker">
-								Booking Status
+								Booking Status:
 							</div>
-							<h6 class="bolder text-primary m-t-5">New </h6>
+							<h6 class="bolder text-primary m-t-5">Room Booked </h6>
 						</div>
-						<div class="col-sm-6">
-							<h6 class="m-t-0">
-								<a href="#" class="btn fnb-btn block-room-btn" data-toggle="modal" data-target="#block-room"> <b><i class="fa fa-ban p-l-5" aria-hidden="true"></i> Block Room</b></a>
-							</h6>
+						<div class="col-sm-12">
+							<div class="text-muted">This booking has been confirmed and you are bound to honor this commitment. If due to some circumstance, you are unable to honor this booking, click the link below.</div>
+							<a href="#" class="text-decor text-secondary" data-toggle="modal" data-target="#cancelModal"> <b><i class="fa fa-ban p-l-5" aria-hidden="true"></i> Cancel</b></a>
 						</div>
 					</div>
 
-					<hr class="m-t-5 m-b-5">
+					<hr class="m-t-10 m-b-5">
 
 					<div class="text-darker m-t-10">
 						Payment Status
@@ -813,111 +811,24 @@
 
 
 
-
-<div class="modal fade fnb-modal" id="block-room" tabindex="-1" role="dialog">
+<div class="modal fade fnb-modal" id="cancelModal" tabindex="-1" role="dialog">
   <div class="modal-dialog" role="document">
     <div class="modal-content text-center">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title text-left element-title bolder">Booking Summary</h4>
+        <h4 class="modal-title text-secondary">Cancel Booking</h4>
       </div>
-      
-      <div class="modal-body text-left">
-          
-      <div class="booking-summary">
-      <div>
-        <div class="m-t-5">
-          <label>
-            Booking ID :
-          </label>
-          ARK00000DXL4
-        </div>
-        <div class="m-t-5">
-          <label>
-            Guest Name :
-          </label>
-          Aravind Bargur
-        </div>
-        <div class="m-t-5">
-          <label>
-            Booked on :
-          </label>
-          Wed, 08 Dec 2017 at 12:15 PM
-        </div>
-        </div>
-        <div>
-        <div class="m-t-5">
-          <label>
-            Check In :
-          </label>
-          Tue, 25 Dec 2017
-        </div>
-        <div class="m-t-5">
-          <label>
-            Check Out :
-          </label>
-          Thur 27 Dec 2017
-        </div>
-        <div class="m-t-5">
-          <label>
-            Total Rooms :
-          </label>
-          1
-        </div>
-        </div>
-        <div>
-        <div class="m-t-5">
-          <label>
-            Total Guests :
-          </label>
-          2
-        </div>
-        <div class="m-t-5">
-          <label>
-            Booking Value :
-          </label>
-          Rs. 5947
-        </div>
-        <div class="m-t-5">
-          <label>
-            Goomo Commission :
-          </label>
-          Rs. 907
-        </div>
-        </div>
-        <div>
-        <div class="m-t-5">
-          <label>
-            Tax :
-          </label>
-        Rs. 200
-        </div>
-        <div class="m-t-5">
-          <label>
-            Property Receivable :
-          </label>
-        Rs. 5040
-        </div>
-        </div>
+      <hr>
+      <div class="modal-body">
+        <p class="p-t-20">
+        	By proceeding, you confirm that you accept any penalty arising as a result of this cancellation.<br><br>
+        	Are you sure you want to proceed?
+        </p>
       </div>
-        
-
-      <div class="bookign-note text-lighter m-t-15 m-b-15 x-small">
-        <p>* Please note the payment will be made to you 3 days before check in.</p>
-      </div>
-
-      <div class="check-me">
-        <label class="flex-row cursor-pointer">
-          <input type="checkbox" class="checkbox">
-          Yes, I have blocked rooms(s) for this booking
-        </label>
-      </div>
-        
-      </div>
-      <hr class="m-t-0">
-      <div class="modal-footer">
-        <button type="button" class="btn fnb-btn outline" data-dismiss="modal">Cancel</button>
-        <button type="button" class="btn fnb-btn secondary-btn" data-dismiss="modal">Save</button>
+      <hr>
+      <div class="modal-footer flex-row justify-center">
+        <button type="button" class="btn fnb-btn outline" data-dismiss="modal">No</button>
+        <button type="button" class="btn fnb-btn secondary-btn" data-dismiss="modal">Yes, Cancel</button>
       </div>
     </div>
   </div>
