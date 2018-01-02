@@ -299,6 +299,7 @@
 
 
 		  		<h5 class="nno-m-t main-heading  white m-t-0 margin-btm">All Bookings</h5>
+		  		<a href="#contactModal" data-toggle="modal" data-target="#contactModal" class="fnb-btn mini bold-btn white preview-header__link m-r-10 dis-block"><i class="fa fa-envelope-open-o m-r-5"></i> Contact Goomo</a>
 		  		<a href="https://www.goomo.com/hotels/detail/Hotel-Windsor-Bay-389069?checkin_date=2017-09-28&checkout_date=2017-09-29&hotel_id=389069&locality_id&location_id=12550&place_name=Goa%2C%20India&rooms=%5B%7B%22adults_count%22%3A1%2C%22children_age%22%3A%5B%5D%7D%5D" target="_blank" class="preview-header__link white btn fnb-btn white-border mini"> View Property on Goomo.com</a>
 		  	</div>
 		  </div>
@@ -907,6 +908,7 @@
                 <td>
                  <i class="fa fa-ellipsis-v text-center action-panel center-block" aria-hidden="true"></i>
                     <div class="my-popover-content">
+                      <a href="#" class="text-danger" data-toggle="modal" data-target="#cancelModal"> <b><i class="fa fa-ban p-r-5" aria-hidden="true"></i> Cancel</b></a><br><br>
                    		<a href="#" class="text-muted"> <b><i class="fa fa-envelope" aria-hidden="true"></i> Email Customer Voucher</b></a>
                    </div>
                 </td>
@@ -924,6 +926,7 @@
                 <td>
                  <i class="fa fa-ellipsis-v text-center action-panel center-block" aria-hidden="true"></i>
                     <div class="my-popover-content">
+                      <a href="#" class="text-danger" data-toggle="modal" data-target="#cancelModal"> <b><i class="fa fa-ban p-r-5" aria-hidden="true"></i> Cancel</b></a><br><br>
                       <a href="#" class="text-muted"> <b><i class="fa fa-envelope" aria-hidden="true"></i> Email Customer Voucher</b></a>
                    </div>
                 </td>
@@ -1095,6 +1098,28 @@
       <div class="modal-footer">
         <button type="button" class="btn fnb-btn outline" data-dismiss="modal">Cancel</button>
         <button type="button" class="btn fnb-btn secondary-btn" data-dismiss="modal">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade fnb-modal" id="cancelModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content text-center">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title text-secondary">Cancel Booking</h4>
+      </div>
+      <hr>
+      <div class="modal-body">
+        <p class="p-t-20">
+        	By proceeding, you confirm that you accept any penalty arising as a result of this cancellation.<br><br>
+        	Are you sure you want to proceed?
+        </p>
+      </div>
+      <hr>
+      <div class="modal-footer flex-row justify-center">
+        <button type="button" class="btn fnb-btn outline" data-dismiss="modal">No</button>
+        <button type="button" class="btn fnb-btn secondary-btn" data-dismiss="modal">Yes, Cancel</button>
       </div>
     </div>
   </div>

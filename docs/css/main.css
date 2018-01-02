@@ -2490,6 +2490,11 @@ footer {
 .flex-wrap {
   flex-wrap: wrap;
 }
+@media (min-width: 768px) {
+  .desk-no-wrap {
+    flex-wrap: nowrap;
+  }
+}
 .space-between {
   justify-content: space-between;
 }
