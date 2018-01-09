@@ -834,13 +834,27 @@
         <p>* Please note the payment will be made to you 3 days before check in.</p>
       </div>
 
-      <div class="check-me">
+      <div class="check-me" data-toggle="collapse" data-target="#Pcm">
         <label class="flex-row cursor-pointer">
           <input type="checkbox" class="checkbox">
           Yes, I have blocked rooms(s) for this booking
         </label>
       </div>
-        
+
+      <div id="Pcm" class="collapse">
+        <div class="row m-t-15 m-b-15">
+          <div class="col-sm-6">
+            <label class="text-info">Property Confirmation Number :</label>
+            <input class="form-control fnb-input" type="text" placeholder="Enter Confirmation Number" >
+          </div>
+          <div class="col-sm-6">
+            <label class="text-info required">Property confirmed by :</label>
+           <input class="form-control fnb-input" type="text" placeholder="Enter Name" required>
+          </div>
+        </div>
+      </div>  
+
+
       </div>
       <hr class="m-t-0">
       <div class="modal-footer">

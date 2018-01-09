@@ -991,7 +991,8 @@
 
                    		<a href="#" class="text-muted"> <b> Customer Voucher</b></a><br><br>
                       <a href="#" class="text-muted"> <b> Hotel Voucher</b></a><br><br>
-                      <a href="#" class="text-muted"> <b> Goomo Commission Invoice</b></a>
+                      <a href="#" class="text-muted"> <b> Goomo Commission Invoice</b></a><br><br>
+                      <a href="#paymentDetailsModal" data-toggle="modal" class="text-muted"> <b>Payment Details</b></a>
                    </div>
                 </td>
               </tr>
@@ -1015,7 +1016,8 @@
 
                       <a href="#" class="text-muted"> <b> Customer Voucher</b></a><br><br>
                       <a href="#" class="text-muted"> <b> Hotel Voucher</b></a><br><br>
-                      <a href="#" class="text-muted"> <b> Goomo Commission Invoice</b></a>
+                      <a href="#" class="text-muted"> <b> Goomo Commission Invoice</b></a><br><br>
+                      <a href="#paymentDetailsModal" data-toggle="modal" class="text-muted"> <b>Payment Details</b></a>
                    </div>
                 </td>
               </tr>
@@ -1126,18 +1128,72 @@
         <p>* Please note the payment will be made to you 3 days before check in.</p>
       </div>
 
-      <div class="check-me">
+      <div class="check-me" data-toggle="collapse" data-target="#Pcm">
         <label class="flex-row cursor-pointer">
           <input type="checkbox" class="checkbox">
           Yes, I have blocked rooms(s) for this booking
         </label>
       </div>
-        
+
+      <div id="Pcm" class="collapse">
+        <div class="row m-t-15 m-b-15">
+          <div class="col-sm-6">
+            <label class="text-info">Property Confirmation Number :</label>
+            <input class="form-control fnb-input" type="text" placeholder="Enter Confirmation Number" >
+          </div>
+          <div class="col-sm-6">
+            <label class="text-info required">Property confirmed by :</label>
+           <input class="form-control fnb-input" type="text" placeholder="Enter Name" required>
+          </div>
+        </div>
+      </div>  
+
+
       </div>
       <hr class="m-t-0">
       <div class="modal-footer">
         <button type="button" class="btn fnb-btn outline" data-dismiss="modal">Cancel</button>
         <button type="button" class="btn fnb-btn secondary-btn" data-dismiss="modal">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade fnb-modal" id="paymentDetailsModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content text-center">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title text-secondary">Payment Details</h4>
+      </div>
+      <hr>
+      <div class="modal-body">
+        <div class="booking-summary">
+          <div>
+            <div class="m-t-5">
+              <label>
+                Transaction ID :
+              </label>
+              PODF9234JSDO
+            </div>
+            <div class="m-t-5">
+              <label>
+                Amount :
+              </label>
+              Rs. 2400
+            </div>
+            <div class="m-t-5">
+              <label>
+                Payment Date :
+              </label>
+              Wed, 08 Dec 2017 at 12:15 PM
+            </div>
+            </div>
+          </div>
+      </div>
+      <hr>
+      <div class="modal-footer flex-row justify-center">
+        <button type="button" class="btn fnb-btn outline" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn fnb-btn primary-btn" data-dismiss="modal">Done</button>
       </div>
     </div>
   </div>
