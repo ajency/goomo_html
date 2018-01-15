@@ -1,0 +1,182 @@
+{{ define "main" }}
+
+	<div class="m-t-25">
+
+		<div class="row">
+			 <div class="col-sm-12">
+       			 <div class="page-title">
+       			   <div class="title_left">
+        			  <h3 class="no-m-t fly-out-heading-size text-info">{{ .Title }} <button class="btn fnb-btn secondary-btn btn-sm x-small add-modal" data-toggle="modal" data-target="#add_announcement_modal">+ Add New</button></h3>
+         			</div>
+        		 </div>
+     		 </div>
+
+     		 <div class="col-sm-12 m-t-40 regions-container">
+			 	<table id="location-table"  class="table table-striped dataTable listing-table" cellspacing="0" width="100%">
+					<thead>
+					 	<tr>
+							<th class="no-sort text-center" style="min-width: 10%;" >Type <select multiple class="form-control multi-dd">
+                 					<option value="Yes">General Update</option>
+                   					<option value="No">Important Update</option>
+            				    </select>
+            				</th>
+							<th class="no-sort text-center" style="min-width: 10%;" >Title </th>
+							<th class="no-sort text-center" style="min-width: 10%;" >Description </th>
+							<th class="no-sort text-center" style="min-width: 10%;" >Created Date </th>
+							<th class="no-sort text-center" style="min-width: 10%;" >Publish Date </th>
+							<th class="no-sort text-center" style="min-width: 10%;" >Status 
+								<select multiple class="form-control multi-dd">
+                 					<option value="Yes">Draft</option>
+                   					<option value="No">Published</option>
+                   					<option value="No">Archived</option>
+            				    </select>
+            				</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="col-sm-2 text-center">General Update</td>
+							<td class="col-sm-2 text-center">Goomo's partnership with Uniglobe</td>
+							<td class="col-sm-4 text-left"><span class="description_data">Goomo's partnership with Uniglobe is a showcase to the world that an OTA and a traditional travel agent can work together and grow together.</span>
+							</td>
+							<td class="col-sm-2 text-center">05/01/2018</td>
+							<td class="col-sm-1 text-center">05/01/2018</td>
+							<td class="col-sm-1 text-center">Published <i class="fa fa-pencil text-decor text-secondary" data-toggle="modal" data-target="#edit_announcement_modal" style="float: right;"></i> </td>
+						</tr>
+						<tr>
+							<td class="col-sm-2 text-center">General Update</td>
+							<td class="col-sm-2 text-center">Goomo's partnership with Uniglobe</td>
+							<td class="col-sm-4 text-left"><span class="description_data">Goomo's partnership with Uniglobe is a showcase to the world that an OTA and a traditional travel agent can work together and grow together. Uniglobe is a leading provider of travel management services with partner offices in more than 60 countries across six continents.
+							This partnership program opens a world of opportunities for independent agency owners to add sales and revenue potential while lowering business costs.</span>
+
+							 </td>
+							<td class="col-sm-2 text-center">05/01/2018</td>
+							<td class="col-sm-1 text-center"> </td>
+							<td class="col-sm-1 text-center">Draft <i class="fa fa-pencil text-decor text-secondary" data-toggle="modal" data-target="#edit_announcement_modal" style="float: right;"></i></td>
+						</tr>
+						<tr>
+							<td class="col-sm-2 text-center">Important Update</td>
+							<td class="col-sm-2 text-center">Goomo's partnership with Uniglobe</td>
+							<td class="col-sm-4 text-left"><span class="description_data">Goomo's partnership with Uniglobe is a showcase to the world that an OTA and a traditional travel agent can work together and grow together.</span>
+							</td>
+							<td class="col-sm-2 text-center">05/01/2018</td>
+							<td class="col-sm-1 text-center">05/01/2018</td>
+							<td class="col-sm-1 text-center">Archived <i class="fa fa-pencil text-decor text-secondary" data-toggle="modal" data-target="#edit_announcement_modal" style="float: right;"></i></td>
+						</tr>
+					</tbody>
+			 	</table>	
+     		 </div>	
+
+		</div>	
+
+	</div>
+	<div class="modal fade region-add-modal" id="add_announcement_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	    <div class="modal-dialog" role="document">
+	      <div class="modal-content">
+	        <form>
+	          <div class="modal-header">
+	            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	            <h6 class="modal-title">Add New Announcement</h6>
+	          </div>
+	          <div class="modal-body">
+
+
+	            <div class="form-group m-b-20">
+	              <label>Title<span class="text-danger">*</span></label>
+	               <input type="text" class="form-control fnb-input" name="" value="" placeholder="Enter Title">
+	            </div>
+
+	            <div class="form-group m-b-20">
+	              <label>Description<span class="text-danger">*</span></label>
+	              <textarea class="form-control fnb-input" id="Description_id" rows="3" placeholder="Enter Description"></textarea>
+	            </div>
+
+
+	            <div class="row m-b-10">
+	              <div class="col-sm-6">
+	                <div class="form-group">
+	                  <label>Type <span class="text-danger">*</span></label>
+	                  <select class="form-control fnb-select border-bottom">
+	                    <option value="" selected="">General Update</option>
+	                    <option value="">Important Update</option>
+	                    
+	                  </select>
+	                </div>
+	              </div>
+	              <div class="col-sm-6">
+	                <div class="form-group">
+	                  <label>Status <span class="text-danger">*</span></label>
+	                  <select class="form-control fnb-select border-bottom">
+	                    <option value="" selected="">Draft</option>
+	                    <option value="">Published</option>
+	                    <option value="">Archived</option>
+	                  </select>
+	                </div>
+	              </div>
+	            </div>
+
+	          </div>
+	          <div class="modal-footer">
+	            <button type="button" class="btn fnb-btn outline no-border" data-dismiss="modal">Cancel</button>
+	            <button type="submit" class="btn primary-btn fnb-btn no-radius">Save</button>
+	          </div>
+	        </form>
+	      </div>
+	    </div>
+  </div>
+  <div class="modal fade region-add-modal" id="edit_announcement_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	    <div class="modal-dialog" role="document">
+	      <div class="modal-content">
+	        <form>
+	          <div class="modal-header">
+	            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	            <h6 class="modal-title">Edit Announcement</h6>
+	          </div>
+	          <div class="modal-body">
+
+
+	            <div class="form-group m-b-20">
+	              <label>Title<span class="text-danger">*</span></label>
+	               <input type="text" class="form-control fnb-input" name="" value="" placeholder="Enter Title">
+	            </div>
+
+	            <div class="form-group m-b-20">
+	              <label>Description<span class="text-danger">*</span></label>
+	              <textarea class="form-control fnb-input" id="Description_id" rows="3" placeholder="Enter Description"></textarea>
+	            </div>
+
+
+	            <div class="row m-b-10">
+	              <div class="col-sm-6">
+	                <div class="form-group">
+	                  <label>Type <span class="text-danger">*</span></label>
+	                  <select class="form-control fnb-select border-bottom">
+	                    <option value="" selected="">General Update</option>
+	                    <option value="">Important Update</option>
+	                    
+	                  </select>
+	                </div>
+	              </div>
+	              <div class="col-sm-6">
+	                <div class="form-group">
+	                  <label>Status <span class="text-danger">*</span></label>
+	                  <select class="form-control fnb-select border-bottom">
+	                    <option value="" selected="">Draft</option>
+	                    <option value="">Published</option>
+	                    <option value="">Archived</option>
+	                  </select>
+	                </div>
+	              </div>
+	            </div>
+
+	          </div>
+	          <div class="modal-footer">
+	            <button type="button" class="btn fnb-btn outline no-border" data-dismiss="modal">Cancel</button>
+	            <button type="submit" class="btn primary-btn fnb-btn no-radius">Save</button>
+	          </div>
+	        </form>
+	      </div>
+	    </div>
+	</div>
+
+{{ end }}

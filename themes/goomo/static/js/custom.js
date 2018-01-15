@@ -476,6 +476,41 @@ $('.pay-save').click(function(){
 });
 
 
+// show more-data
 
+$(document).ready(function() {
 
+    var showChar = 120; 
+    var ellipsestext = "...";
+    var moretext = "view more";
+    var lesstext = "view less";
+    
+
+    $('.description_data').each(function() {
+        var content = $(this).html();
+ 
+        if(content.length > showChar) {
+ 
+            var c = content.substr(0, showChar);
+            var hidetxt = content.substr(showChar, content.length - showChar);
+            var html = c + '<span class="moreellipses">' + ellipsestext+ '&nbsp;</span><span class="morecontent"><span style="display:none">' + hidetxt + '</span>&nbsp;<a href="" class="morelink">' + moretext + '</a></span>';
+ 
+            $(this).html(html);
+        }
+ 
+    });
+ //To change text 
+     $(".morelink").click(function(){
+        if($(this).hasClass("any")) {
+            $(this).removeClass("any");
+            $(this).html(moretext);
+        } else {
+            $(this).addClass("any");
+            $(this).html(lesstext);
+        }
+        $(this).parent().prev().toggle();
+        $(this).prev().toggle();
+        return false;
+    });
+});
 
