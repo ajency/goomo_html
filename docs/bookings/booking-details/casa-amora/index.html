@@ -17,6 +17,7 @@
 		<link rel="stylesheet" href="https://ajency.github.io/goomo_html/css/default-theme.css">
 		<link rel="stylesheet" href="https://ajency.github.io/goomo_html/css/tooltipster.bundle.css">
 		<link rel="stylesheet" href="https://ajency.github.io/goomo_html/css/tooltipster-sideTip-borderless.min.css">
+		<link rel="stylesheet" href="https://ajency.github.io/goomo_html/css/tooltipster-sideTip-shadow.min.css">
 		<link href="https://ajency.github.io/goomo_html/css/main.css" rel="stylesheet">
 
 		<script type="text/javascript">
@@ -358,16 +359,10 @@
 
 
   <li class="active">
-    <a class=" form-toggle " data-toggle="collapse"  href="#property-bookingSubMenu" role="button">
-      <i class="fa fa-calendar-check-o"></i> <span>Bookings</span></a>
-    <ul class="gs-steps collapse in edit-mode sub-steps" id="property-bookingSubMenu" role="tablist">
-      <li class="">
-        <a href="/goomo_html/bookings/all/casa-amora/">All Bookings</a>
-      </li>
-      <li class="">
-        <a href="/goomo_html/bookings/transactions/casa-amora/">Transactions</a>
-      </li>
-    </ul>
+    <a href="/goomo_html/bookings/all/casa-amora/">
+      <i class="fa fa-calendar-check-o"></i> <span>Bookings</span>
+    </a>
+    
   </li>
 
   <li class="">
@@ -898,13 +893,27 @@
         <p>* Please note the payment will be made to you 3 days before check in.</p>
       </div>
 
-      <div class="check-me">
+      <div class="check-me" data-toggle="collapse" data-target="#Pcm">
         <label class="flex-row cursor-pointer">
           <input type="checkbox" class="checkbox">
           Yes, I have blocked rooms(s) for this booking
         </label>
       </div>
-        
+
+      <div id="Pcm" class="collapse">
+        <div class="row m-t-15 m-b-15">
+          <div class="col-sm-6">
+            <label class="text-info">Property Confirmation Number :</label>
+            <input class="form-control fnb-input" type="text" placeholder="Enter Confirmation Number" >
+          </div>
+          <div class="col-sm-6">
+            <label class="text-info required">Property confirmed by :</label>
+           <input class="form-control fnb-input" type="text" placeholder="Enter Name" required>
+          </div>
+        </div>
+      </div>  
+
+
       </div>
       <hr class="m-t-0">
       <div class="modal-footer">

@@ -17,6 +17,7 @@
 		<link rel="stylesheet" href="https://ajency.github.io/goomo_html/css/default-theme.css">
 		<link rel="stylesheet" href="https://ajency.github.io/goomo_html/css/tooltipster.bundle.css">
 		<link rel="stylesheet" href="https://ajency.github.io/goomo_html/css/tooltipster-sideTip-borderless.min.css">
+		<link rel="stylesheet" href="https://ajency.github.io/goomo_html/css/tooltipster-sideTip-shadow.min.css">
 		<link href="https://ajency.github.io/goomo_html/css/main.css" rel="stylesheet">
 
 		<script type="text/javascript">
@@ -358,16 +359,10 @@
 
 
   <li class="">
-    <a class=" form-toggle collapsed" data-toggle="collapse"  href="#property-bookingSubMenu" role="button">
-      <i class="fa fa-calendar-check-o"></i> <span>Bookings</span></a>
-    <ul class="gs-steps collapse  edit-mode sub-steps" id="property-bookingSubMenu" role="tablist">
-      <li class="">
-        <a href="/goomo_html/bookings/all/panjim-inn/">All Bookings</a>
-      </li>
-      <li class="">
-        <a href="/goomo_html/bookings/transactions/panjim-inn/">Transactions</a>
-      </li>
-    </ul>
+    <a href="/goomo_html/bookings/all/panjim-inn/">
+      <i class="fa fa-calendar-check-o"></i> <span>Bookings</span>
+    </a>
+    
   </li>
 
   <li class="active">
@@ -769,7 +764,7 @@
 					</div>
 					<div class="sd-inventory">
 						<div class="sd-inventory_count tooltipster" data-tooltip-content="#inventory_content">
-							09
+							00
 						</div>
 						<label class="sd-block">
 							<input type="checkbox" name="" checked=""> Sold Out
@@ -1000,7 +995,7 @@
 					</div>
 					<div class="sd-inventory">
 						<div class="sd-inventory_count tooltipster" data-tooltip-content="#inventory_content">
-							06
+							00
 						</div>
 						<label class="sd-block">
 							<input type="checkbox" name="" checked=""> Sold Out
@@ -1168,7 +1163,7 @@
 					</div>
 					<div class="sd-inventory">
 						<div class="sd-inventory_count tooltipster" data-tooltip-content="#inventory_content">
-							02
+							00
 						</div>
 						<label class="sd-block">
 							<input type="checkbox" name="" checked=""> Sold Out
@@ -1294,7 +1289,7 @@
 					</div>
 					<div class="sd-inventory">
 						<div class="sd-inventory_count tooltipster" data-tooltip-content="#inventory_content">
-							04
+							00
 						</div>
 						<label class="sd-block">
 							<input type="checkbox" name="" checked=""> Sold Out
@@ -1336,7 +1331,7 @@
 					</div>
 					<div class="sd-inventory">
 						<div class="sd-inventory_count tooltipster" data-tooltip-content="#inventory_content">
-							06
+							00
 						</div>
 						<label class="sd-block">
 							<input type="checkbox" name="" checked=""> Sold Out
@@ -1483,7 +1478,7 @@
 					</div>
 					<div class="sd-inventory">
 						<div class="sd-inventory_count tooltipster" data-tooltip-content="#inventory_content">
-							06
+							00
 						</div>
 						<label class="sd-block">
 							<input type="checkbox" name="" checked=""> Sold Out
@@ -1609,6 +1604,29 @@
 			Please note that Goomo.com is a technology platform provider and only facilitates transactions between hotels who list their inventory and customers desirous of making a hotel booking. Goomo charges commission from hotels on their inventory sold via www.goomo.com, and is not responsible for actual provision of hotel services to the customers.
 		</p>
 
+	</div>
+
+	<div class="modal fade fnb-modal" id="addInventoryModal" tabindex="-1" role="dialog">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content text-center">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title text-secondary">Update Inventory</h4>
+	      </div>
+	      <hr>
+	      <div class="modal-body">
+	        <p class="p-t-20">
+	        	You have changed the sold out status for this room. <br>Please update the available inventory for this day.
+	        </p>
+	      </div>
+	      <hr>
+	      <div class="modal-footer flex-row justify-center">
+	        <button type="button" class="btn fnb-btn outline" data-dismiss="modal">Cancel</button>
+	        
+	        <a href="/goomo_html/rates-availability/inventory/panjim-inn/" class="btn fnb-btn primary-btn">Update Now</a>
+	      </div>
+	    </div>
+	  </div>
 	</div>
 
 	<script type="text/javascript">

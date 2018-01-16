@@ -385,6 +385,13 @@ $(document).ready(function() {
 		interactive: true
 	});
 
+	$('.tooltipster-price').tooltipster({
+		theme: 'tooltipster-shadow',
+		contentCloning: true,
+		side: 'bottom',
+		interactive: true
+	});
+
 });
 
 $(document).ready(function () {
@@ -475,6 +482,18 @@ $('.pay-save').click(function(){
 	$('.pay-modal-title').text('Add the payment details');
 });
 
+
+$('body').on("change", ".sd-block input[type=checkbox]", function() {
+    if ($(this).is(':checked')) {
+        $(this).closest('.sd-inventory').find('.sd-inventory_count').text('00');
+        $(this).closest('.single-day').addClass('block')
+    } else  {
+        // $(this).closest('.sd-inventory').find('.sd-inventory_count').text('00');
+        // $(this).closest('.single-day').removeClass('block')
+        $('#addInventoryModal').modal('show');
+        console.log('unchecked');
+    }
+});
 
 
 

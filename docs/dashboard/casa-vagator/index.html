@@ -17,6 +17,7 @@
 		<link rel="stylesheet" href="https://ajency.github.io/goomo_html/css/default-theme.css">
 		<link rel="stylesheet" href="https://ajency.github.io/goomo_html/css/tooltipster.bundle.css">
 		<link rel="stylesheet" href="https://ajency.github.io/goomo_html/css/tooltipster-sideTip-borderless.min.css">
+		<link rel="stylesheet" href="https://ajency.github.io/goomo_html/css/tooltipster-sideTip-shadow.min.css">
 		<link href="https://ajency.github.io/goomo_html/css/main.css" rel="stylesheet">
 
 		<script type="text/javascript">
@@ -342,16 +343,10 @@
 
 
   <li class="">
-    <a class=" form-toggle collapsed" data-toggle="collapse"  href="#property-bookingSubMenu" role="button">
-      <i class="fa fa-calendar-check-o"></i> <span>Bookings</span></a>
-    <ul class="gs-steps collapse  edit-mode sub-steps" id="property-bookingSubMenu" role="tablist">
-      <li class="">
-        <a href="/goomo_html/bookings/all/casa-vagator/">All Bookings</a>
-      </li>
-      <li class="">
-        <a href="/goomo_html/bookings/transactions/casa-vagator/">Transactions</a>
-      </li>
-    </ul>
+    <a href="/goomo_html/bookings/all/casa-vagator/">
+      <i class="fa fa-calendar-check-o"></i> <span>Bookings</span>
+    </a>
+    
   </li>
 
   <li class="">
@@ -519,13 +514,13 @@
 
 
 		<div class="row">
-		
+
 			<div class="col-sm-9">
 
 				<div class="row bookingRow">
 					<div class="col-sm-6 ">
 						<h6 class="m-b-0 bolder text-color ">New Bookings</h6>
-						<p class="bolder default-size text-lighter m-t-5 m-b-10">Following bookings require your attention!</p>
+						<p class="bolder default-size text-lighter m-t-5 m-b-10">Please confirm the below bookings</p>
 						<a href="/goomo_html/bookings/booking-details/casa-vagator/" class="dark-link no-decor dis-block " target="_blank">
 							<div class="content flex-row ">
 								<div class="content_data text-color"><b class="bolder text-secondary">24 Dec</b> <span class="text-darker">(03 nights)</span><br>Check-in</div>
@@ -593,37 +588,25 @@
 							<option>Standard Rooms</option>
 						</select>
 					</div>
+					<div class="col-sm-4">
+						<div class="bolder text-color flex-row m-t-10">
+							<div class="m-r-10">Available: 60</div> | <div class="m-l-10">Sold Out: 10</div>
+						</div>
+					</div>
 				</div>
 
 				<div style="overflow: auto">
 					
 
 					<div class="flex-row flex-wrap desk-no-wrap align-top">
-						<a href="/goomo_html/rates-availability/calendar/casa-vagator/" target="_blank">
-							<img src="https://ajency.github.io/goomo_html/img/dash_calendar-only.png" class="img-responsive" style="">
+						<a href="/goomo_html/rates-availability/inventory/casa-vagator/" target="_blank">
+							<img src="https://ajency.github.io/goomo_html/img/dash_calendar-only.png" class="img-responsive" style="" title="Click to update inventory">
 						</a>
-						<a href="/goomo_html/rates-availability/calendar/casa-vagator/" target="_blank">
-							<img src="https://ajency.github.io/goomo_html/img/dash_calendar-only.png" class="img-responsive" style="">
-						</a>
-						<a href="/goomo_html/rates-availability/calendar/casa-vagator/" target="_blank">
-							<img src="https://ajency.github.io/goomo_html/img/dash_calendar-only.png" class="img-responsive" style="">
+						<a href="/goomo_html/rates-availability/inventory/casa-vagator/" target="_blank">
+							<img src="https://ajency.github.io/goomo_html/img/dash_calendar-only.png" class="img-responsive" style="" title="Click to update inventory">
 						</a>
 					</div>
 
-				</div>
-
-				<div class="alert alert-info m-t-30 p-b-20 p-t-20 p-r-20 p-l-20">
-					<div class="flex-row space-between">
-						<div class="flex-row">
-							<h3 class="m-r-15 m-t-5"><i class="fa fa-calendar bat-color"></i></h3>
-							<div>
-								<p class="bolder m-b-0 bat-color">Rates &amp; Availability</p>
-								<p class="text-muted m-b-0">Manage your Rates &amp; Inventory for the upcoming days.</p>
-							</div>
-						</div>
-
-						<a href="/goomo_html/rates-availability/calendar/casa-vagator/" class="btn fnb-btn outline">Click Here</a>
-					</div>
 				</div>
 
 				<h6 class="m-t-50 bolder text-color">How have my bookings been?</h6>
@@ -675,17 +658,17 @@
 
 
 			<div class="col-sm-3">
-		
+
 				<div style="background-color: #f2f2f2;height: 1600px;text-align: center;padding: 30px 0;">
-				    
+
 				        <span style="font-size: 17px;">To Be Defined</span>
-			    
+
 				
  				
 				</div>
 			</div>
-		
-		</div> 
+
+		</div>
 		
 
 		<div class="modal fade fnb-modal" id="addCompetitor" tabindex="-1" role="dialog">

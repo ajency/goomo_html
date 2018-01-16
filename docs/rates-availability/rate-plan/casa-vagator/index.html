@@ -17,6 +17,7 @@
 		<link rel="stylesheet" href="https://ajency.github.io/goomo_html/css/default-theme.css">
 		<link rel="stylesheet" href="https://ajency.github.io/goomo_html/css/tooltipster.bundle.css">
 		<link rel="stylesheet" href="https://ajency.github.io/goomo_html/css/tooltipster-sideTip-borderless.min.css">
+		<link rel="stylesheet" href="https://ajency.github.io/goomo_html/css/tooltipster-sideTip-shadow.min.css">
 		<link href="https://ajency.github.io/goomo_html/css/main.css" rel="stylesheet">
 
 		<script type="text/javascript">
@@ -358,16 +359,10 @@
 
 
   <li class="">
-    <a class=" form-toggle collapsed" data-toggle="collapse"  href="#property-bookingSubMenu" role="button">
-      <i class="fa fa-calendar-check-o"></i> <span>Bookings</span></a>
-    <ul class="gs-steps collapse  edit-mode sub-steps" id="property-bookingSubMenu" role="tablist">
-      <li class="">
-        <a href="/goomo_html/bookings/all/casa-vagator/">All Bookings</a>
-      </li>
-      <li class="">
-        <a href="/goomo_html/bookings/transactions/casa-vagator/">Transactions</a>
-      </li>
-    </ul>
+    <a href="/goomo_html/bookings/all/casa-vagator/">
+      <i class="fa fa-calendar-check-o"></i> <span>Bookings</span>
+    </a>
+    
   </li>
 
   <li class="active">
@@ -545,7 +540,7 @@
 
 											<div class="commentable-section" data-section-id="1">
 											
-	<div class="">
+	<div class="c-gap">
 
 		
 
@@ -556,24 +551,21 @@
 			<div class="col-sm-9">
 
 			<div class="row">
-				<div class="col-sm-12 text-right m-t-15">
+				<div class="col-sm-12 text-right m-b-20 m-t-15">
 					<a href="#" class="btn fnb-btn secondary-btn btn-sm open-sidebar p-l-15 p-r-15 no-radius form-toggle">Add Rate Plan</a>
 				</div>
 
 				<div class="col-sm-12">
-					<h5 class="text-primary m-b-0">Premier Room</h5>
-				</div>
-				<div class="col-sm-12">
 					<div class="rooms-section dsk-separator m-t-20 flex-row">
 						<div class="room-left rooms-col">
 							<div class="room-detail">
-								<h6 class="bolder m-t-0 m-b-5">Premier - Breakfast Plan</h6>
-								
+								<h6 class="bolder m-t-0 m-b-5">Rate Plan 1</h6>
+								<p class="text-lighter">Room Types: <span class="text-color">Premier, Grand Deluxe</span></p>
 							</div>
-							<div class="flex-row align-top">
+							<div class="flex-row">
 								<div class="m-r-30">
 									<p class="text-lighter m-b-5">Inclusions:</p>
-									<p class="text-color m-b-0">Breakfast</p>
+									<p class="text-color m-b-0">Room Only</p>
 								</div>
 								<div class="m-r-30">
 									<p class="text-lighter m-b-5">Validity:</p>
@@ -588,11 +580,11 @@
 						<div class="room-right rooms-col toggle-work">
 							 <div class="verified-toggle mobile-flex text-center">
 	                            <div class="toggle center-block">
-	                                <input name="primary_email" type="checkbox" class="toggle__check"  >
+	                                <input name="primary_email" type="checkbox" class="toggle__check" checked="" >
 	                                <b class="switch"></b>
 	                                <b class="track"></b>
 	                            </div>
-	                            <p class="m-b-0 toggle-state m-t-10 bolder">Inactive</p>
+	                            <p class="m-b-0 toggle-state active-state m-t-10 bolder">Active</p>
 	                        </div>
 	                        <a href="#" class="secondary-link text-center"><i class="fa fa-pencil" aria-hidden="true"></i> Edit Plan</a>
 						</div>
@@ -600,92 +592,17 @@
 					<div class="rooms-section dsk-separator m-t-30 flex-row">
 						<div class="room-left rooms-col">
 							<div class="room-detail">
-								<h6 class="bolder m-t-0 m-b-5">Premier - All Meals Plan</h6>
-								
+								<h6 class="bolder m-t-0 m-b-5">Rate Plan 2 </h6>
+								<p class="text-lighter">Room Types: <span class="text-color">Premier, Grand Deluxe</span></p>
 							</div>
 
-							<div class="flex-row align-top">
-								<div class="m-r-30">
-									<p class="text-lighter m-b-5">Inclusions:</p>
-									<p class="text-color m-b-0">All Meals</p>
-								</div>
-								<div class="m-r-30">
-									<p class="text-lighter m-b-5">Validity:</p>
-									<p class="text-color m-b-0">10/10/17 - 10/12/17</p>
-								</div>
-								<div>
-									<p class="text-lighter m-b-5">Channels:</p>
-									<p class="text-color m-b-0">B2B</p>
-								</div>
-							</div>
-						</div>
-						<div class="room-right rooms-col toggle-work">
-							 <div class="verified-toggle mobile-flex text-center">
-	                            <div class="toggle center-block">
-	                                <input name="primary_email" type="checkbox" class="toggle__check">
-	                                <b class="switch"></b>
-	                                <b class="track"></b>
-	                            </div>
-	                            <p class="m-b-0 toggle-state m-t-10 bolder">Inactive</p>
-	                        </div>
-	                        <a href="#" class="secondary-link text-center"><i class="fa fa-pencil" aria-hidden="true"></i> Edit Plan</a>
-						</div>
-					</div>
-				</div>
-
-				<hr>
-
-				<div class="col-sm-12">
-					<h5 class="text-primary m-b-0 m-t-50">Grand Deluxe Room</h5>
-				</div>
-				<div class="col-sm-12">
-					<div class="rooms-section dsk-separator m-t-20 flex-row">
-						<div class="room-left rooms-col">
-							<div class="room-detail">
-								<h6 class="bolder m-t-0 m-b-5">Grand Deluxe - Breakfast Plan</h6>
-								
-							</div>
-							<div class="flex-row align-top">
+							<div class="flex-row">
 								<div class="m-r-30">
 									<p class="text-lighter m-b-5">Inclusions:</p>
 									<p class="text-color m-b-0">Breakfast</p>
 								</div>
 								<div class="m-r-30">
 									<p class="text-lighter m-b-5">Validity:</p>
-									<p class="text-color m-b-0">15/10/17 - 24/12/17</p>
-								</div>
-								<div>
-									<p class="text-lighter m-b-5">Channels:</p>
-									<p class="text-color m-b-0">Web, Mobile, B2B</p>
-								</div>
-							</div>
-						</div>
-						<div class="room-right rooms-col toggle-work">
-							 <div class="verified-toggle mobile-flex text-center">
-	                            <div class="toggle center-block">
-	                                <input name="primary_email" type="checkbox" class="toggle__check"  >
-	                                <b class="switch"></b>
-	                                <b class="track"></b>
-	                            </div>
-	                            <p class="m-b-0 toggle-state m-t-10 bolder">Inactive</p>
-	                        </div>
-	                        <a href="#" class="secondary-link text-center"><i class="fa fa-pencil" aria-hidden="true"></i> Edit Plan</a>
-						</div>
-					</div>
-					<div class="rooms-section dsk-separator m-t-30 flex-row">
-						<div class="room-left rooms-col">
-							<div class="room-detail">
-								<h6 class="bolder m-t-0 m-b-5">Grand Deluxe - All Meals Plan</h6>
-								
-							</div>
-
-							<div class="flex-row align-top">
-								<div class="m-r-30">
-									<p class="text-lighter m-b-5">Inclusions:</p>
-									<p class="text-color m-b-0">All Meals</p>
-								</div>
-								<div class="m-r-30">
-									<p class="text-lighter m-b-5">Validity:</p>
 									<p class="text-color m-b-0">10/10/17 - 10/12/17</p>
 								</div>
 								<div>
@@ -697,16 +614,18 @@
 						<div class="room-right rooms-col toggle-work">
 							 <div class="verified-toggle mobile-flex text-center">
 	                            <div class="toggle center-block">
-	                                <input name="primary_email" type="checkbox" class="toggle__check">
+	                                <input name="primary_email" type="checkbox" class="toggle__check" checked="">
 	                                <b class="switch"></b>
 	                                <b class="track"></b>
 	                            </div>
-	                            <p class="m-b-0 toggle-state m-t-10 bolder">Inactive</p>
+	                            <p class="m-b-0 toggle-state active-state m-t-10 bolder">Active</p>
 	                        </div>
 	                        <a href="#" class="secondary-link text-center"><i class="fa fa-pencil" aria-hidden="true"></i> Edit Plan</a>
 						</div>
 					</div>
 				</div>
+
+
 			</div>
 
 

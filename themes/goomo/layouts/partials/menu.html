@@ -8,7 +8,10 @@
 
 
   <li class="{{ if $.Params.mainmenu.bookings }}active{{end}}">
-    <a class=" form-toggle {{ if not $.Params.mainmenu.bookings }}collapsed{{end}}" data-toggle="collapse"  href="#property-bookingSubMenu" role="button">
+    <a href="/goomo_html/bookings/all/{{ $.Params.slug }}">
+      <i class="fa fa-calendar-check-o"></i> <span>Bookings</span>
+    </a>
+    <!-- <a class=" form-toggle {{ if not $.Params.mainmenu.bookings }}collapsed{{end}}" data-toggle="collapse"  href="#property-bookingSubMenu" role="button">
       <i class="fa fa-calendar-check-o"></i> <span>Bookings</span></a>
     <ul class="gs-steps collapse {{ if $.Params.mainmenu.bookings }}in{{end}} edit-mode sub-steps" id="property-bookingSubMenu" role="tablist">
       <li class="{{ if $.Params.mainmenu.all }}active{{end}}">
@@ -17,7 +20,7 @@
       <li class="{{ if $.Params.mainmenu.transactions }}active{{end}}">
         <a href="/goomo_html/bookings/transactions/{{ $.Params.slug }}">Transactions</a>
       </li>
-    </ul>
+    </ul> -->
   </li>
 
   <li class="{{ if $.Params.mainmenu.ratesavail }}active{{end}}">
