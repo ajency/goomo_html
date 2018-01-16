@@ -10565,6 +10565,9 @@ i.w-border {
   color: white;
   text-align: center;
 }
+.main-containerlogin {
+  margin-top: 40px;
+}
 .buttonalign {
   margin-top: 20px;
   margin-bottom: 80px;
@@ -10604,16 +10607,19 @@ i.w-border {
   }
   .bgi {
     background-image: url(/goomo_html/img/login-rooms-background.jpg);
-    background-size: 100% 12%;
+    background-size: 100% 13%;
     background-repeat: no-repeat;
   }
   .welcometxt {
     color: white;
-    margin-bottom: 10%;
+    margin-bottom: 13%;
   }
   .headcont {
     padding-top: 0 !important;
     padding-bottom: 0 !important;
+  }
+  .logbox1 {
+    padding: 10px;
   }
 }
 .profile-stats {
