@@ -5247,3 +5247,156 @@ i.w-border{
 	}
 }
 
+.hide_data{
+	display: none;
+	font-size: 0.95em;
+
+}
+
+.morecontent{
+	font-size: 1.08em;
+
+
+}
+
+.logincont{
+	width: 700px;
+	margin: auto;
+	box-shadow:0 5px 15px rgba(0,0,0,.5);
+	display: flex;
+	background-color: white;
+	.loginblock{
+ 		flex: 1;
+ 	}
+}
+
+.logbox1{
+	h4{
+		font-size: 1.6em;
+	}
+}
+
+.loginbox1{
+	border-right: 1px solid #eee;
+	padding-bottom: 60px;
+	padding-top: 50px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.loginbox2{
+	padding-left: 30px;
+	padding-top: 40px;
+	padding-right: 30px;
+	padding-bottom: 20px;
+}
+
+.bgi{
+	&:before{
+		background-image: url(/goomo_html/img/login-rooms-background.jpg);
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		content: '';
+		position: absolute;
+		width: 100%;
+		top: 0;
+		left: 0;
+		height: 35vh;
+		box-shadow: inset 0 0 100px 200px rgba(0, 0, 0, 0.3);
+	}
+
+}
+
+.welcometxt{
+	color: white;
+	text-align: center;
+}
+.main-containerlogin{
+	margin-top: 40px;
+	position: relative;
+}
+
+.buttonalign{
+	margin-top: 20px;
+	margin-bottom: 80px;
+
+}
+.headcont{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+@media screen and (max-width: @mobile){
+	.main-containerlogin{
+	 	padding-right: 0!important;
+	    padding-left: 0!important;
+	    margin-right: 0!important;
+	    margin-left: 0!important;
+		margin-top: 0 !important;
+		// background-color: white;
+	}
+	.logincont{
+		margin-top: 0 !important;
+		padding: 0 !important;
+		width: 100%;
+		box-shadow: none;
+		margin: 0!important;
+		flex-wrap: wrap;
+		.loginblock{
+			flex: auto;
+		}
+	}
+
+	.boxdown{
+
+	    // transform: translateY(100%);
+
+	}
+	.main-login {
+	    // transform: translateY(-100%);
+
+	}
+	.loginbox2{
+		order: 1;
+		padding-top: 10px;
+		h4{
+			text-align: center;
+		}
+	}
+	.loginbox1{
+		padding: 20px;
+		// margin-top: 10% !important;
+		border-right: 0;
+		border-bottom: 1px solid #eee;
+		order: 2;
+		text-align: center;
+		margin-top: 20px;
+		margin-left: -15px;
+		margin-right: -15px;
+		background: #efefef;
+	}
+	.bgi{
+		&:before{
+			height: 15vh;
+		}
+
+	}
+	.welcometxt{
+		color:white;
+		margin-bottom: 30px;
+		font-size: 2em;
+	}
+	.headcont{
+		padding-top: 0 !important;
+		padding-bottom: 0 !important;
+
+	}
+	.logbox1{
+		padding: 10px;
+	}
+
+	.buttonalign{
+		margin-bottom: 0;
+	}
+
+}
