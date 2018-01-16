@@ -10535,7 +10535,7 @@ i.w-border {
   font-size: 1.08em;
 }
 .logincont {
-  width: 678px;
+  width: 700px;
   margin: auto;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   display: flex;
@@ -10544,22 +10544,34 @@ i.w-border {
 .logincont .loginblock {
   flex: 1;
 }
+.logbox1 h4 {
+  font-size: 1.6em;
+}
 .loginbox1 {
   border-right: 1px solid #eee;
-  margin-bottom: 60px;
-  margin-top: 40px;
-  margin-left: 40px;
+  padding-bottom: 60px;
+  padding-top: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 .loginbox2 {
-  padding-left: 40px;
+  padding-left: 30px;
   padding-top: 40px;
-  padding-right: 40px;
+  padding-right: 30px;
   padding-bottom: 20px;
 }
-.bgi {
+.bgi:before {
   background-image: url(/goomo_html/img/login-rooms-background.jpg);
-  background-size: 100% 300px;
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
+  content: '';
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 35vh;
+  box-shadow: inset 0 0 100px 200px rgba(0, 0, 0, 0.3);
 }
 .welcometxt {
   color: white;
@@ -10567,6 +10579,7 @@ i.w-border {
 }
 .main-containerlogin {
   margin-top: 40px;
+  position: relative;
 }
 .buttonalign {
   margin-top: 20px;
@@ -10583,36 +10596,43 @@ i.w-border {
     margin-right: 0!important;
     margin-left: 0!important;
     margin-top: 0 !important;
-    background-color: white;
   }
   .logincont {
     margin-top: 0 !important;
     padding: 0 !important;
     width: 100%;
     box-shadow: none;
-    display: block;
     margin: 0!important;
+    flex-wrap: wrap;
   }
-  .boxdown {
-    transform: translateY(100%);
+  .logincont .loginblock {
+    flex: auto;
   }
-  .main-login {
-    transform: translateY(-100%);
+  .loginbox2 {
+    order: 1;
+    padding-top: 10px;
+  }
+  .loginbox2 h4 {
+    text-align: center;
   }
   .loginbox1 {
-    padding: 0 !important;
-    margin-top: 10% !important;
+    padding: 20px;
     border-right: 0;
     border-bottom: 1px solid #eee;
+    order: 2;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: -15px;
+    margin-right: -15px;
+    background: #efefef;
   }
-  .bgi {
-    background-image: url(/goomo_html/img/login-rooms-background.jpg);
-    background-size: 100% 13%;
-    background-repeat: no-repeat;
+  .bgi:before {
+    height: 15vh;
   }
   .welcometxt {
     color: white;
-    margin-bottom: 13%;
+    margin-bottom: 30px;
+    font-size: 2em;
   }
   .headcont {
     padding-top: 0 !important;
@@ -10620,6 +10640,9 @@ i.w-border {
   }
   .logbox1 {
     padding: 10px;
+  }
+  .buttonalign {
+    margin-bottom: 0;
   }
 }
 .profile-stats {
@@ -11268,3 +11291,4 @@ dl dd {
     padding-right: 0px;
   }
 }
+/*# sourceMappingURL=main.css.map */
