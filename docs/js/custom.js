@@ -532,3 +532,11 @@ $(document).ready(function() {
     });
 });
 
+//mark all as read
+$(document).ready(function() 
+{
+	$('.readall').click(function(){
+		$('.myread').css('background-color', '#eee');
+	});
+
+});

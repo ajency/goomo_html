@@ -10645,6 +10645,14 @@ i.w-border {
     margin-bottom: 0;
   }
 }
+.notification-container {
+  border: 1px solid #eee;
+}
+.notification-border-bottom {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
 .profile-stats {
   color: #fff;
   background: #378f9e;
@@ -11291,4 +11299,3 @@ dl dd {
     padding-right: 0px;
   }
 }
-/*# sourceMappingURL=main.css.map */
