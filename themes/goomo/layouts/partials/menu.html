@@ -104,6 +104,9 @@
       <li class="{{ if $.Params.mainmenu.audit }}active{{end}}">
         <a href="/goomo_html/details/audit/{{ $.Params.slug }}">Audit Logs</a>
       </li>
+       <li class="{{ if $.Params.mainmenu.thirdparty }}active{{end}}">
+        <a href="/goomo_html/details/thirdpartyconfig/{{ $.Params.slug }}">Third Party Config</a>
+      </li>
     </ul>
   </li>
 </ul>
