@@ -1,43 +1,63 @@
 {{ define "main" }}
 <div class="bgi p-b-50">
   <div class="container main-containerlogin">
-
   	<h2 class="welcometxt m-t-30 m-b-50">Welcome Back to Goomo!</h2>
 		<div class="logincont">
-      <div class="loginblock loginbox1 boxdown">
-        <div class="text-muted logbox1">
-         	<h4 class="m-b-20">Haven't registered yet?</h4>
-            <ul class="p-l-20" style="list-style-type:disc">
-    	        <li> <h6>Register for Free</h6>
-               We do not have a fee on sign up
-               or subscription charges</li>
+      <div class="row changediv">
+        <div class="col-sm-6 ">
+           <div class="loginblock loginbox1 ">
+              <div class="logbox1">
+                  <h4 class="m-b-20 ">Haven't registered yet?</h4>
+                  <ul class="p-l-20 li-disc">
+                    <li> <h6>Register for Free</h6>
+                      <span class="text-muted">We do not have a fee on sign up
+                              or subscription charges</span></li>
 
-              <li><h6>Large Global Audience</h6>
-                 Your property
-                 will be marketed to audience worldwide</li>
-              <li><h6>Manage your property anytime, anywhere</h6>
-              </li>
-            </ul>
+                    <li><h6>Large Global Audience</h6>
+                       <span class="text-muted">Your property
+                       will be marketed to audience worldwide</span></li>
+                    <li><h6>Manage your property anytime, anywhere</h6>
+                    </li>
+                  </ul>
+              </div>
+            </div>
         </div>
-      </div>
 
-      <div class="loginblock main-login loginbox2">
-        <h4 class="text-muted m-b-20"> Sign in to <span style="color: black;">Goomo</span> </h4>
-        <form action="#">
-        	<div class="form-group m-b-20 ">
-          		<input type="text" class="form-control fnb-input" name="" value="" placeholder="Username">
-     		</div>
-     		<div class="form-group m-b-20 ">
-          		<input type="password" class="form-control fnb-input" name="" value="" placeholder="Password">
-     		</div>
-     		<div>Did you <a href="#" class="text-secondary">forget your password?</a></div>
-     		<button type="submit" class="btn secondary-btn fnb-btn no-radius buttonalign btn-block" data-toggle="modal" data-target="#login_model" style="">Sign in</button>
-        </form>
+        <div class="col-sm-6" style="overflow: hidden;">
+          <div class="loginblock loginbox2 ">
+            <h4 class="text-muted m-b-20"> Sign in to <span style="color: black;">Goomo</span> </h4>
+            <form action="#">
+              	<div class="form-group m-b-20 ">
+                		<input type="text" class="form-control fnb-input" name="" value="" placeholder="Username">
+           		  </div>
+           		  <div class="form-group m-b-20 ">
+                		<input type="password" class="form-control fnb-input" name="" value="" placeholder="Password">
+           		  </div>
+     		       <div>Did you <a href="#" id="fp" class="text-secondary ">forget your password?</a></div>
+     		       <button type="submit" class="btn secondary-btn fnb-btn no-radius buttonalign btn-block" data-toggle="modal" data-target="#login_model" style="">Sign in</button>
+            </form>
+          </div>
+          
+          <div class="loginblock loginbox3 hidedata2">
+             <h4 class="text-muted m-b-10"> Forgot Password </h4>
+               <form action="#">
+                 <p class="text-muted">Enter your email address. You will receive an email with a link to reset your password.</p>
+                 <div class="form-group m-b-20 ">
+                   <input type="text" class="form-control fnb-input" name="" value="" placeholder="Email address">
+                 </div>
+                 <div class="form-group m-b-0 m-t-20 text-center">
+                    <button class="btn secondary-btn fnb-btn no-radius btn-block" type="button" id="forgot-password-form-btn"><i class="fa fa-unlock p-r-5" aria-hidden="true"></i> Send password reset link <i class="fa fa-circle-o-notch fa-spin hidden"></i></button>
+                 </div>
+               </form>
+               <div class="form-group m-b-0">
+                  <div class="text-primary back-login2 heavier text-center cursor-pointer m-t-20"><i class="fa fa-angle-left p-r-5 cursor-pointer" aria-hidden="true"></i> Back to Log In</div>
+               </div>
+          </div>
+        </div>  
       </div>
     </div>
   </div>
 </div>
-
 
 <div class="modal fade fnb-modal" id="login_model" tabindex="-1" role="dialog">
   <div class="modal-dialog" role="document">
@@ -57,7 +77,7 @@
 		    <div class="row">
 			     <div class="col-sm-6 col-sm-offset-3">
 				    <div class="form-group m-b-10 p-l-50 p-r-50">
-				    	<input type="password" class="form-control fnb-input" name="" value="" placeholder="Enter OTP">
+				    	<input type="password" class="form-control fnb-input" name="" value="" placeholder="Enter Otp">
 				    </div>
 			    </div> 
 		    </div>

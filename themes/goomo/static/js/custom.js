@@ -540,3 +540,14 @@ $(document).ready(function()
 	});
 
 });
+
+
+
+//forgot password
+$('#fp').click(function(){
+	$('.loginbox3').addClass('active');
+});
+
+$('.back-login2').click(function(){
+	$('.loginbox3').removeClass('active');
+});

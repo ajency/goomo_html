@@ -5327,6 +5327,10 @@ i.w-border{
 	padding-bottom: 20px;
 }
 @media screen and (max-width: @mobile){
+	.hidedata2.active{
+	 -webkit-transform: translate3d(0,0, 0);
+      transform: translate3d(0, 0, 0);
+	}
 	.main-containerlogin{
 	 	padding-right: 0!important;
 	    padding-left: 0!important;
@@ -5347,15 +5351,6 @@ i.w-border{
 		}
 	}
 
-	.boxdown{
-
-	    // transform: translateY(100%);
-
-	}
-	.main-login {
-	    // transform: translateY(-100%);
-
-	}
 	.loginbox2{
 		order: 1;
 		padding-top: 10px;
@@ -5363,8 +5358,9 @@ i.w-border{
 			text-align: center;
 		}
 	}
+	
 	.loginbox1{
-		padding: 20px;
+		padding: 10px;
 		// margin-top: 10% !important;
 		border-right: 0;
 		border-bottom: 1px solid #eee;
@@ -5374,6 +5370,7 @@ i.w-border{
 		margin-left: -15px;
 		margin-right: -15px;
 		background: #efefef;
+
 	}
 	.bgi{
 		&:before{
@@ -5398,8 +5395,31 @@ i.w-border{
 	.buttonalign{
 		margin-bottom: 0;
 	}
+	
+	.changediv{
+		display: flex;
+		flex-direction: column-reverse;
+		width: 850px;
+	}
+	.loginbox3{
+		padding: 20px;
+		text-align: center;
+		margin-top: 80px;
+		margin-left: 15px;
+		margin-right: 15px;
+		}
+	.li-disc{
+		list-style-type:none !important;
+	}	
 
 }
+.loginbox3{
+	padding-left: 30px;
+	padding-top: 20px;
+	padding-right: 30px;
+	padding-bottom: 40px;
+}
+
 .notification-container{
 	border : 1px solid #eee;
 }
@@ -5407,4 +5427,33 @@ i.w-border{
 	border-bottom: 1px solid #eee;
 	padding-bottom: 10px;
 	padding-top: 10px;
+}
+.fdown{
+	padding-bottom: 150px;
+}
+
+.hidedata{
+	display: none;
+}
+
+.hidedata2{
+	
+	 position: absolute;
+	 background-color:#fff ;
+	-webkit-transition: all 0.6s cubic-bezier(0.44, -0.25, 0.75, 1);
+	transition: all 0.6s cubic-bezier(0.44, -0.25, 0.75, 1);
+	-webkit-transform: translate3d(700px,-349px, 0);
+	transform: translate3d(800px,-349px, 0);
+}
+
+.hidedata2.active{
+	width: 100%;
+	-webkit-transform: translate3d(-25px, -349px, 0);
+    transform: translate3d(-25px, -349px, 0);
+}
+.txtblack{
+	color: black;
+}
+.li-disc{
+	list-style-type:disc;
 }
