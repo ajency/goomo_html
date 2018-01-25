@@ -1,0 +1,275 @@
+{{ define "main" }}
+<div class="m-t-25">
+	<div class="row">
+		<div class="col-sm-12">
+   			 <div class="page-title">
+   			   <div class="title_left">
+    			  <h3 class="no-m-t fly-out-heading-size text-info">{{ .Title }}</h3>
+     		   </div>
+    		 </div>
+ 		 </div>
+ 		 	
+	 		 <div class="container-fluid">
+		 		 <h6 class="m-b-20">Filter</h6>
+		 		 <div class="row m-b-20">
+		 		 	<form>
+			 		 	<div class="col-sm-4">
+					 		<div class="form-group">
+					            <label>Location</label>
+					            <select class="form-control fnb-select border-bottom">
+						            <option value="">Select</option>
+						            <option value="">Option1</option>
+						            <option value="">Option2</option>
+					            </select>
+				          	</div>
+			 		 	</div>
+			 		 	<div class="col-sm-4">
+			 		 		<div class="form-group">
+					            <label>City</label>
+					            <select class="form-control fnb-select border-bottom">
+						            <option value="">Select</option>
+						            <option value="">Option1</option>
+						            <option value="">Option2</option>
+					            </select>
+				          	</div>
+			 		 	</div>
+			 		 	<div class="col-sm-4 text-center">
+			 		 		<button class="btn fnb-btn transparent no-border">Reset</button>
+			 		 		<button class="btn fnb-btn secondary-btn">Apply</button>
+			 		 	</div>
+		 		 	</form>
+		 		 </div>
+		 		 <h6 class="m-b-20">Weightage</h6>
+		 		 <div class="row">
+		 		 	<form>
+			 		 	<div class="col-sm-4">
+			 		 		<div class="form-group m-b-20">
+				              <label>Inventory Level</label>
+				              <input type="text" class="form-control fnb-input" name="" value="" placeholder="Enter Title">
+				            </div>
+				            <div class="form-group m-b-20">
+				              <label>Offers</label>
+				              <input type="text" class="form-control fnb-input" name="" value="" placeholder="Enter Title">
+				            </div>
+				            <div class="form-group m-b-20">
+				              <label>Bookings</label>
+				              <input type="text" class="form-control fnb-input" name="" value="" placeholder="Enter Title">
+				            </div>
+			 		 	</div>
+			 		 	<div class="col-sm-4">
+			 		 		<div class="form-group m-b-20">
+				              <label>Rate Parity</label>
+				              <input type="text" class="form-control fnb-input" name="" value="" placeholder="Enter Title">
+				            </div>
+				            <div class="form-group m-b-20">
+				              <label>Goomo Commission</label>
+				              <input type="text" class="form-control fnb-input" name="" value="" placeholder="Enter Title">
+				            </div>
+				            <div class="form-group m-b-20">
+				              <label>Past Perfomance</label>
+				              <input type="text" class="form-control fnb-input" name="" value="" placeholder="Enter Title">
+				            </div>
+			 		 	</div>
+			 		 	<div class="col-sm-4">
+			 		 		<div class="form-group m-b-20">
+				              <label>Content Score</label>
+				              <input type="text" class="form-control fnb-input" name="" value="" placeholder="Enter Title">
+				            </div>
+				            <div class="form-group m-b-20">
+				              <label>Views</label>
+				              <input type="text" class="form-control fnb-input" name="" value="" placeholder="Enter Title">
+				            </div>
+				            <div class="form-group m-b-20">
+				              <label>Conversion</label>
+				              <input type="text" class="form-control fnb-input" name="" value="" placeholder="Enter Title">
+				            </div>
+				            <div class="text-right">
+				            	<button class="btn fnb-btn secondary-btn">Update Weights</button>
+				            </div>
+			 		 	</div>
+		 		 	</form>
+		 		 </div>
+	 		 </div>
+			
+	 		 <div class="col-sm-12 m-t-40 regions-container" style="overflow: auto;white-space: nowrap;">
+	 		 	<table id="internal-table" class="table table-striped  no-wrap internal-table" cellspacing="0" width="100%">
+	 		 		<thead>
+	 		 			<tr>
+		 		 			<th class="text-center">Property Name</th>
+	                      	<th class="text-center">Inventory Level</th>
+	                      	<th class="text-center">Rate Parity</th>
+	                      	<th class="text-center">Content Score</th>
+	                      	<th class="text-center">Offers</th>
+	                      	<th class="text-center">Goomo Commission</th>
+	                      	<th class="text-center">Views</th>
+	                      	<th class="text-center">Bookings</th>
+	                      	<th class="text-center">Post Performance</th>
+	                      	<th class="text-center">Conversion</th>
+	                      	<th class="text-center">Weighted Rank</th>
+	                      	<th class="text-center">Locality Rank</th>
+	                      	<th class="text-center">City Rank</th>
+	                      	<th class="text-center">Action</th>
+	 		 			</tr>
+	 		 		</thead>
+	 		 		<tbody>
+	 		 			<tr>
+	 		 				<td class="text-center">Casa Britona</td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
+	 		 				<td class="text-center">10</td>
+		 		 			<td class="text-center">
+		 		 				Goomo Rank:<span class="oldrank1">8</span><span class="oldrank hidden"><input type="text" style="width: 20px"> </span> <span class="suggest1 hidden">10</span>
+		 		 				<br/>Suggested:<span class="suggestedrank1">10</span> 
+		 		 			</td>
+		 		 			<td class="text-center">
+		 		 				Goomo Rank: <span class="oldrank1">8</span> <span class="oldrank hidden"><input type="text" style="width: 20px"> </span><span class="suggest1 hidden">10</span>
+		 		 				<br/>Suggested: <span class="suggestedrank2">10</span> 
+		 		 			</td>
+	 		 				<td class="text-center">
+	 		 					<a class="editrank">Edit</a> 
+	 		 					<span  class=" editrankfields hidden">
+	 		 						<i  class="glyphicon glyphicon-ok updaterank"></i> &nbsp
+	 		 						<i  class="glyphicon glyphicon-remove updaterank"></i>
+	 		 					</span>
+	 		 					<br/>
+	 		 					<a class="applyrank">Apply</a>
+	 		 				</td>
+	 		 			</tr>
+
+	 		 			<tr>
+	 		 				<td class="text-center">Casa Vagator</td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
+	 		 				<td class="text-center">3</td>
+	 		 				<td class="text-center">
+		 		 				Goomo Rank:<span class="oldrank1">1</span><span class="oldrank hidden"><input type="text" style="width: 20px"> </span> <span class="suggest1 hidden">2</span>
+		 		 				<br/>Suggested:<span class="suggestedrank1">2</span> 
+		 		 			</td>
+		 		 			<td class="text-center">
+		 		 				Goomo Rank: <span class="oldrank1">1</span> <span class="oldrank hidden"><input type="text" style="width: 20px"> </span><span class="suggest1 hidden">2</span>
+		 		 				<br/>Suggested: <span class="suggestedrank2">2</span> 
+		 		 			</td>
+	 		 				<td class="text-center">
+	 		 					<a class="editrank">Edit</a> 
+	 		 					<span  class=" editrankfields hidden">
+	 		 						<i  class="glyphicon glyphicon-ok updaterank"></i> &nbsp
+	 		 						<i  class="glyphicon glyphicon-remove updaterank"></i>
+	 		 					</span>
+	 		 					<br/>
+	 		 					<a class="applyrank">Apply</a>
+	 		 				</td>
+	 		 			</tr>
+	 		 			<tr>
+	 		 				<td class="text-center">Casa Bella</td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
+	 		 				<td class="text-center">2</td>
+	 		 				<td class="text-center">
+		 		 				Goomo Rank:<span class="oldrank1">8</span><span class="oldrank hidden"><input type="text" style="width: 20px"> </span> <span class="suggest1 hidden">10</span>
+		 		 				<br/>Suggested:<span class="suggestedrank1">10</span> 
+		 		 			</td>
+		 		 			<td class="text-center">
+		 		 				Goomo Rank: <span class="oldrank1">8</span> <span class="oldrank hidden"><input type="text" style="width: 20px"> </span><span class="suggest1 hidden">10</span>
+		 		 				<br/>Suggested: <span class="suggestedrank2">10</span> 
+		 		 			</td>
+	 		 				<td class="text-center">
+	 		 					<a class="editrank">Edit</a> 
+	 		 					<span  class=" editrankfields hidden">
+	 		 						<i  class="glyphicon glyphicon-ok updaterank"></i> &nbsp
+	 		 						<i  class="glyphicon glyphicon-remove updaterank"></i>
+	 		 					</span>
+	 		 					<br/>
+	 		 					<a class="applyrank">Apply</a>
+	 		 				</td>
+	 		 			</tr>
+	 		 			<tr>
+	 		 				<td class="text-center">Panjim Inn</td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
+	 		 				<td class="text-center">1</td>
+	 		 				<td class="text-center">
+		 		 				Goomo Rank:<span class="oldrank1">8</span><span class="oldrank hidden"><input type="text" style="width: 20px"> </span> <span class="suggest1 hidden">10</span>
+		 		 				<br/>Suggested:<span class="suggestedrank1">10</span> 
+		 		 			</td>
+		 		 			<td class="text-center">
+		 		 				Goomo Rank: <span class="oldrank1">8</span> <span class="oldrank hidden"><input type="text" style="width: 20px"> </span><span class="suggest1 hidden">10</span>
+		 		 				<br/>Suggested: <span class="suggestedrank2">10</span> 
+		 		 			</td>
+	 		 				<td class="text-center">
+	 		 					<a class="editrank">Edit</a> 
+	 		 					<span  class=" editrankfields hidden">
+	 		 						<i  class="glyphicon glyphicon-ok updaterank"></i> &nbsp
+	 		 						<i  class="glyphicon glyphicon-remove updaterank"></i>
+	 		 					</span>
+	 		 					<br/>
+	 		 					<a class="applyrank">Apply</a>
+	 		 				</td>
+	 		 			</tr>
+	 		 			<tr>
+	 		 				<td class="text-center">Rivasa comfort</td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
+	 		 				<td class="text-center">10</td>
+	 		 				<td class="text-center">
+		 		 				Goomo Rank:<span class="oldrank1">8</span><span class="oldrank hidden"><input type="text" style="width: 20px"> </span> <span class="suggest1 hidden">10</span>
+		 		 				<br/>Suggested:<span class="suggestedrank1">10</span> 
+		 		 			</td>
+		 		 			<td class="text-center">
+		 		 				Goomo Rank: <span class="oldrank1">8</span> <span class="oldrank hidden"><input type="text" style="width: 20px"> </span><span class="suggest1 hidden">10</span>
+		 		 				<br/>Suggested: <span class="suggestedrank2">10</span> 
+		 		 			</td>
+	 		 				<td class="text-center">
+	 		 					<a class="editrank">Edit</a> 
+	 		 					<span  class=" editrankfields hidden">
+	 		 						<i  class="glyphicon glyphicon-ok updaterank"></i> &nbsp
+	 		 						<i  class="glyphicon glyphicon-remove updaterank"></i>
+	 		 					</span>
+	 		 					<br/>
+	 		 					<a class="applyrank">Apply</a>
+	 		 				</td>
+	 		 			</tr>
+	 		 		</tbody>
+	 		 	</table>
+
+	 		 </div>
+
+	</div>
+</div>		
+
+
+{{ end }}

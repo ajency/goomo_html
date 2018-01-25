@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="" class="">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>Manage Ranking :: Goomo by Ajency</title>
+
+		
+		<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,500,700" rel="stylesheet">
+		
+		<link rel="stylesheet" type="text/css" href="https://ajency.github.io/goomo_html/css/font-awesome/css/font-awesome.min.css">
+		
+		<link rel="stylesheet" type="text/css" href="https://ajency.github.io/goomo_html/js/datatables.net-select-dt/css/select.dataTables.css">
+		
+		<link rel="shortcut icon" href="https://ajency.github.io/goomo_html/img/favicon.png" type="image/x-icon" />
+		<link rel="stylesheet" href="https://ajency.github.io/goomo_html/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://ajency.github.io/goomo_html/css/jquery.flexdatalist.min.css">
+		<link rel="stylesheet" href="https://ajency.github.io/goomo_html/css/bootstrap-multiselect.min.css">
+		<link rel="stylesheet" href="https://ajency.github.io/goomo_html/js/bootstrap-daterangepicker/daterangepicker.css">
+		<link href="https://ajency.github.io/goomo_html/css/main.css" rel="stylesheet">
+	</head>
+	<body class="">
+
+		
+<header class="fnb-header">
+	<nav class="navbar navbar-default nav-extranet">
+		<div class="container-fluid">
+			
+			<div class="navbar-header mobile-head mobile-flex">
+				<div class="mobile-head__left mobile-flex">
+					<i class="fa fa-bars sideMenu" aria-hidden="true"></i>
+					<img src="https://ajency.github.io/goomo_html/img/goomo_logo.png" class="img-responsive desk-hide" width="80">
+				</div>
+				<div class="mobile-head__right mobile-flex">
+					<a href="" class="login">
+						<i class="fa fa-user-circle user-icon" aria-hidden="true"></i>
+					</a>
+				</div>
+			</div>
+			
+			<div class="collapse navbar-collapse m-side-bar" id="bs-example-navbar-collapse-1">
+				<ul class="mobile-top mobile-flex">
+					<li>
+						<p class="mobile-top__text">Sign in to get a personalised feed!</p>
+					</li>
+					<li>
+						<button type="button" class="fnb-btn outline">Login</button>
+					</li>
+				</ul>
+				<ul class="nav navbar-nav ">
+					<li>
+						<h5 class="dash-title">Extranet</h5>
+					</li>
+					<li>
+						
+
+
+
+<ul class="fnb-breadcrums flex-row">
+  
+  
+
+  
+  
+
+  
+    
+      
+      
+
+      
+      	<li><a href='/goomo_html/property/summary/'><p class="fnb-breadcrums__title">Extranet</p></a></li>
+      	<li class="fnb-breadcrums__section">
+  			<p class="fnb-breadcrums__title"> &nbsp;></p>
+  		</li>
+      
+
+      
+
+      
+
+  
+    
+      
+      
+
+      
+      	<li class="breadcrump_active"><p class="fnb-breadcrums__title">Ranking</p></li>
+  	  
+
+      
+
+      
+
+  
+    
+      
+
+  
+</ul>
+
+
+					</li>
+				</ul>
+
+				<ul class="nav navbar-nav navbar-right side-section">
+
+					<li class="mobile-hide">
+						<div class="dropdown login user-logged">
+							<i class="fa fa-user-circle user-icon" aria-hidden="true"></i>
+							<button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="drop-trigger">
+								<span class="ellipsis userName">Krish Dsouza</span>
+								<i class="fa fa-angle-down" aria-hidden="true"></i>
+							</button>
+							<ul class="dropdown-menu" aria-labelledby="dLabel">
+								<li>Sign Out</li>
+							</ul>
+						</div>
+
+					</li>
+
+				</ul>
+
+				<div class="desk-hide">
+					<div class="">
+
+	<label class="small-label">MAIN</label>
+	<ul class="gs-steps menu-top-level" role="tablist">
+		<li class="">
+			<a href=" # " class=" form-toggle " id=""><i class="fa fa-bars"></i> Dashboard </a>
+		</li>
+		<li class="">
+			<a href="#listingSubMenu" class=" form-toggle " id="" role="button" data-toggle="collapse"><i class="fa fa-list"></i> Properties</a>
+			<ul class="gs-steps collapse in edit-mode sub-steps" role="tablist" id="listingSubMenu" >
+				<li class="">
+					<a href="/goomo_html/extranet/active-properties" class="" id="">Active Properties</a>
+				</li>
+				<li class="">
+					<a href="/goomo_html/extranet/inactive-properties" class="" id="">Inactive Properties</a>
+				</li>
+				<li class="">
+					<a href="/goomo_html/extranet/inactive-cp-properties" class="sidebar-link-custom" id="" style="display: block">Inactive Properties <br> <span class="text-primary bolder">(Content Pending)</span></a>
+				</li>
+				<li>
+					<a href="#" class="" id="">My Properties</a>
+				</li>
+				<li>
+					<a href="#" class="" id="">Unclaimed Properties </a>
+				</li>
+				<li>
+					<a href="#" class="" id="">Under Review Properties </a>
+				</li>
+				<li class="">
+					<a href="/goomo_html/extranet/create" class="" id="">Create New </a>
+				</li>
+			</ul>
+		</li>
+		<li class="">
+			<a href=" # " class=" form-toggle " id=""><i class="fa fa-cog"></i> Configurations </a>
+			<ul class="gs-steps collapse in edit-mode sub-steps" role="tablist" id="" >
+				<li class="">
+					<a href="/goomo_html/extranet/regions" class="" id="">Regions</a>
+				</li>
+				<li class="">
+					<a href="/goomo_html/extranet/location/" class="" id="">Location Tags</a>
+				</li>
+				<li class="">
+					<a href="/goomo_html/extranet/chain/" class="" id="">Chain</a>
+				</li>
+				<li class="">
+					<a href="/goomo_html/extranet/commission/" class="" id="">Commission</a>
+				</li>
+				<li class="">
+					<a href="/goomo_html/extranet/tax-rules/" class="" id="">Tax Rules</a>
+				</li>
+				
+				<li class="">
+					<a href="/goomo_html/extranet/meal/" class="" id="">Meal Plans</a>
+				</li>
+				<li class="">
+					<a href="/goomo_html/extranet/announcements/" class="" id="">Announcements/Updates</a>
+				</li>
+			</ul>
+		</li>
+		<li class="">
+			<a href="#" class=" form-toggle " id=""><i class="fa fa-user"></i> Users</a>
+			<ul class="gs-steps collapse in edit-mode sub-steps" role="tablist" id="" >
+				<li class="">
+					<a href="/goomo_html/extranet/internal" class="" id="">Internal Users</a>
+				</li>
+				<li class="">
+					<a href="/goomo_html/extranet/add-internal" class="" id="">Add Internal Users</a>
+				</li>
+			</ul>
+		</li>
+		<li class=" active ">
+			<a href="#" class=" form-toggle " id=""><i class="fa fa-trophy"></i> Ranking</a>
+			<ul class="gs-steps collapse in edit-mode sub-steps" role="tablist" id="" >
+				<li class=" active ">
+					<a href="/goomo_html/extranet/ranking" class="" id="">Manage Ranking</a>
+				</li>
+			</ul>
+		</li>
+		<li class="">
+			<a href="#" class=" form-toggle " id=""><i class="fa fa-line-chart"></i> Reports</a>
+			<ul class="gs-steps collapse in edit-mode sub-steps" role="tablist" id="" >
+				<li class="">
+					<a href="/goomo_html/extranet/bookings" class="" id="">Booking Details</a>
+				</li>
+				<li class="">
+					<a href="/goomo_html/extranet/margin" class="" id="">Margin Report</a>
+				</li>
+				<li class="">
+					<a href="/goomo_html/extranet/inventory" class="" id="">Inventory Status</a>
+				</li>
+				<li class="">
+					<a href="/goomo_html/extranet/rates" class="" id="">Rate Report</a>
+				</li>
+			</ul>
+		</li>
+		
+	</ul>
+
+	
+</div>
+				</div>
+
+
+			</div>
+			
+		</div>
+		
+	</nav>
+</header>
+
+
+		
+		<div class="container-fluid">
+				<div class="row">
+						<div class="col-xs-12 ">
+
+								<div class=" m-b-10">
+										<div class="row sidebar-row">
+												<div class="col-xs-12 col-sm-3 col-lg-2 dash-sidebar mobile-hide">
+													<div class="">
+
+	<label class="small-label">MAIN</label>
+	<ul class="gs-steps menu-top-level" role="tablist">
+		<li class="">
+			<a href=" # " class=" form-toggle " id=""><i class="fa fa-bars"></i> Dashboard </a>
+		</li>
+		<li class="">
+			<a href="#listingSubMenu" class=" form-toggle " id="" role="button" data-toggle="collapse"><i class="fa fa-list"></i> Properties</a>
+			<ul class="gs-steps collapse in edit-mode sub-steps" role="tablist" id="listingSubMenu" >
+				<li class="">
+					<a href="/goomo_html/extranet/active-properties" class="" id="">Active Properties</a>
+				</li>
+				<li class="">
+					<a href="/goomo_html/extranet/inactive-properties" class="" id="">Inactive Properties</a>
+				</li>
+				<li class="">
+					<a href="/goomo_html/extranet/inactive-cp-properties" class="sidebar-link-custom" id="" style="display: block">Inactive Properties <br> <span class="text-primary bolder">(Content Pending)</span></a>
+				</li>
+				<li>
+					<a href="#" class="" id="">My Properties</a>
+				</li>
+				<li>
+					<a href="#" class="" id="">Unclaimed Properties </a>
+				</li>
+				<li>
+					<a href="#" class="" id="">Under Review Properties </a>
+				</li>
+				<li class="">
+					<a href="/goomo_html/extranet/create" class="" id="">Create New </a>
+				</li>
+			</ul>
+		</li>
+		<li class="">
+			<a href=" # " class=" form-toggle " id=""><i class="fa fa-cog"></i> Configurations </a>
+			<ul class="gs-steps collapse in edit-mode sub-steps" role="tablist" id="" >
+				<li class="">
+					<a href="/goomo_html/extranet/regions" class="" id="">Regions</a>
+				</li>
+				<li class="">
+					<a href="/goomo_html/extranet/location/" class="" id="">Location Tags</a>
+				</li>
+				<li class="">
+					<a href="/goomo_html/extranet/chain/" class="" id="">Chain</a>
+				</li>
+				<li class="">
+					<a href="/goomo_html/extranet/commission/" class="" id="">Commission</a>
+				</li>
+				<li class="">
+					<a href="/goomo_html/extranet/tax-rules/" class="" id="">Tax Rules</a>
+				</li>
+				
+				<li class="">
+					<a href="/goomo_html/extranet/meal/" class="" id="">Meal Plans</a>
+				</li>
+				<li class="">
+					<a href="/goomo_html/extranet/announcements/" class="" id="">Announcements/Updates</a>
+				</li>
+			</ul>
+		</li>
+		<li class="">
+			<a href="#" class=" form-toggle " id=""><i class="fa fa-user"></i> Users</a>
+			<ul class="gs-steps collapse in edit-mode sub-steps" role="tablist" id="" >
+				<li class="">
+					<a href="/goomo_html/extranet/internal" class="" id="">Internal Users</a>
+				</li>
+				<li class="">
+					<a href="/goomo_html/extranet/add-internal" class="" id="">Add Internal Users</a>
+				</li>
+			</ul>
+		</li>
+		<li class=" active ">
+			<a href="#" class=" form-toggle " id=""><i class="fa fa-trophy"></i> Ranking</a>
+			<ul class="gs-steps collapse in edit-mode sub-steps" role="tablist" id="" >
+				<li class=" active ">
+					<a href="/goomo_html/extranet/ranking" class="" id="">Manage Ranking</a>
+				</li>
+			</ul>
+		</li>
+		<li class="">
+			<a href="#" class=" form-toggle " id=""><i class="fa fa-line-chart"></i> Reports</a>
+			<ul class="gs-steps collapse in edit-mode sub-steps" role="tablist" id="" >
+				<li class="">
+					<a href="/goomo_html/extranet/bookings" class="" id="">Booking Details</a>
+				</li>
+				<li class="">
+					<a href="/goomo_html/extranet/margin" class="" id="">Margin Report</a>
+				</li>
+				<li class="">
+					<a href="/goomo_html/extranet/inventory" class="" id="">Inventory Status</a>
+				</li>
+				<li class="">
+					<a href="/goomo_html/extranet/rates" class="" id="">Rate Report</a>
+				</li>
+			</ul>
+		</li>
+		
+	</ul>
+
+	
+</div>
+												</div>
+												<div class="col-xs-12 col-sm-9 col-lg-10">
+
+													<div class="">
+														<div class="">
+															<div class="tab-content p-t-0  ">
+
+																
+<div class="m-t-25">
+	<div class="row">
+		<div class="col-sm-12">
+   			 <div class="page-title">
+   			   <div class="title_left">
+    			  <h3 class="no-m-t fly-out-heading-size text-info">Manage Ranking</h3>
+     		   </div>
+    		 </div>
+ 		 </div>
+ 		 	
+	 		 <div class="container-fluid">
+		 		 <h6 class="m-b-20">Filter</h6>
+		 		 <div class="row m-b-20">
+		 		 	<form>
+			 		 	<div class="col-sm-4">
+					 		<div class="form-group">
+					            <label>Location</label>
+					            <select class="form-control fnb-select border-bottom">
+						            <option value="">Select</option>
+						            <option value="">Option1</option>
+						            <option value="">Option2</option>
+					            </select>
+				          	</div>
+			 		 	</div>
+			 		 	<div class="col-sm-4">
+			 		 		<div class="form-group">
+					            <label>City</label>
+					            <select class="form-control fnb-select border-bottom">
+						            <option value="">Select</option>
+						            <option value="">Option1</option>
+						            <option value="">Option2</option>
+					            </select>
+				          	</div>
+			 		 	</div>
+			 		 	<div class="col-sm-4 text-center">
+			 		 		<button class="btn fnb-btn transparent no-border">Reset</button>
+			 		 		<button class="btn fnb-btn secondary-btn">Apply</button>
+			 		 	</div>
+		 		 	</form>
+		 		 </div>
+		 		 <h6 class="m-b-20">Weightage</h6>
+		 		 <div class="row">
+		 		 	<form>
+			 		 	<div class="col-sm-4">
+			 		 		<div class="form-group m-b-20">
+				              <label>Inventory Level</label>
+				              <input type="text" class="form-control fnb-input" name="" value="" placeholder="Enter Title">
+				            </div>
+				            <div class="form-group m-b-20">
+				              <label>Offers</label>
+				              <input type="text" class="form-control fnb-input" name="" value="" placeholder="Enter Title">
+				            </div>
+				            <div class="form-group m-b-20">
+				              <label>Bookings</label>
+				              <input type="text" class="form-control fnb-input" name="" value="" placeholder="Enter Title">
+				            </div>
+			 		 	</div>
+			 		 	<div class="col-sm-4">
+			 		 		<div class="form-group m-b-20">
+				              <label>Rate Parity</label>
+				              <input type="text" class="form-control fnb-input" name="" value="" placeholder="Enter Title">
+				            </div>
+				            <div class="form-group m-b-20">
+				              <label>Goomo Commission</label>
+				              <input type="text" class="form-control fnb-input" name="" value="" placeholder="Enter Title">
+				            </div>
+				            <div class="form-group m-b-20">
+				              <label>Past Perfomance</label>
+				              <input type="text" class="form-control fnb-input" name="" value="" placeholder="Enter Title">
+				            </div>
+			 		 	</div>
+			 		 	<div class="col-sm-4">
+			 		 		<div class="form-group m-b-20">
+				              <label>Content Score</label>
+				              <input type="text" class="form-control fnb-input" name="" value="" placeholder="Enter Title">
+				            </div>
+				            <div class="form-group m-b-20">
+				              <label>Views</label>
+				              <input type="text" class="form-control fnb-input" name="" value="" placeholder="Enter Title">
+				            </div>
+				            <div class="form-group m-b-20">
+				              <label>Conversion</label>
+				              <input type="text" class="form-control fnb-input" name="" value="" placeholder="Enter Title">
+				            </div>
+				            <div class="text-right">
+				            	<button class="btn fnb-btn secondary-btn">Update Weights</button>
+				            </div>
+			 		 	</div>
+		 		 	</form>
+		 		 </div>
+	 		 </div>
+			
+	 		 <div class="col-sm-12 m-t-40 regions-container" style="overflow: auto;white-space: nowrap;">
+	 		 	<table id="internal-table" class="table table-striped  no-wrap internal-table" cellspacing="0" width="100%">
+	 		 		<thead>
+	 		 			<tr>
+		 		 			<th class="text-center">Property Name</th>
+	                      	<th class="text-center">Inventory Level</th>
+	                      	<th class="text-center">Rate Parity</th>
+	                      	<th class="text-center">Content Score</th>
+	                      	<th class="text-center">Offers</th>
+	                      	<th class="text-center">Goomo Commission</th>
+	                      	<th class="text-center">Views</th>
+	                      	<th class="text-center">Bookings</th>
+	                      	<th class="text-center">Post Performance</th>
+	                      	<th class="text-center">Conversion</th>
+	                      	<th class="text-center">Weighted Rank</th>
+	                      	<th class="text-center">Locality Rank</th>
+	                      	<th class="text-center">City Rank</th>
+	                      	<th class="text-center">Action</th>
+	 		 			</tr>
+	 		 		</thead>
+	 		 		<tbody>
+	 		 			<tr>
+	 		 				<td class="text-center">Casa Britona</td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
+	 		 				<td class="text-center">10</td>
+		 		 			<td class="text-center">
+		 		 				Goomo Rank:<span class="oldrank1">8</span><span class="oldrank hidden"><input type="text" style="width: 20px"> </span> <span class="suggest1 hidden">10</span>
+		 		 				<br/>Suggested:<span class="suggestedrank1">10</span> 
+		 		 			</td>
+		 		 			<td class="text-center">
+		 		 				Goomo Rank: <span class="oldrank1">8</span> <span class="oldrank hidden"><input type="text" style="width: 20px"> </span><span class="suggest1 hidden">10</span>
+		 		 				<br/>Suggested: <span class="suggestedrank2">10</span> 
+		 		 			</td>
+	 		 				<td class="text-center">
+	 		 					<a class="editrank">Edit</a> 
+	 		 					<span  class=" editrankfields hidden">
+	 		 						<i  class="glyphicon glyphicon-ok updaterank"></i> &nbsp
+	 		 						<i  class="glyphicon glyphicon-remove updaterank"></i>
+	 		 					</span>
+	 		 					<br/>
+	 		 					<a class="applyrank">Apply</a>
+	 		 				</td>
+	 		 			</tr>
+
+	 		 			<tr>
+	 		 				<td class="text-center">Casa Vagator</td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
+	 		 				<td class="text-center">3</td>
+	 		 				<td class="text-center">
+		 		 				Goomo Rank:<span class="oldrank1">1</span><span class="oldrank hidden"><input type="text" style="width: 20px"> </span> <span class="suggest1 hidden">2</span>
+		 		 				<br/>Suggested:<span class="suggestedrank1">2</span> 
+		 		 			</td>
+		 		 			<td class="text-center">
+		 		 				Goomo Rank: <span class="oldrank1">1</span> <span class="oldrank hidden"><input type="text" style="width: 20px"> </span><span class="suggest1 hidden">2</span>
+		 		 				<br/>Suggested: <span class="suggestedrank2">2</span> 
+		 		 			</td>
+	 		 				<td class="text-center">
+	 		 					<a class="editrank">Edit</a> 
+	 		 					<span  class=" editrankfields hidden">
+	 		 						<i  class="glyphicon glyphicon-ok updaterank"></i> &nbsp
+	 		 						<i  class="glyphicon glyphicon-remove updaterank"></i>
+	 		 					</span>
+	 		 					<br/>
+	 		 					<a class="applyrank">Apply</a>
+	 		 				</td>
+	 		 			</tr>
+	 		 			<tr>
+	 		 				<td class="text-center">Casa Bella</td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
+	 		 				<td class="text-center">2</td>
+	 		 				<td class="text-center">
+		 		 				Goomo Rank:<span class="oldrank1">8</span><span class="oldrank hidden"><input type="text" style="width: 20px"> </span> <span class="suggest1 hidden">10</span>
+		 		 				<br/>Suggested:<span class="suggestedrank1">10</span> 
+		 		 			</td>
+		 		 			<td class="text-center">
+		 		 				Goomo Rank: <span class="oldrank1">8</span> <span class="oldrank hidden"><input type="text" style="width: 20px"> </span><span class="suggest1 hidden">10</span>
+		 		 				<br/>Suggested: <span class="suggestedrank2">10</span> 
+		 		 			</td>
+	 		 				<td class="text-center">
+	 		 					<a class="editrank">Edit</a> 
+	 		 					<span  class=" editrankfields hidden">
+	 		 						<i  class="glyphicon glyphicon-ok updaterank"></i> &nbsp
+	 		 						<i  class="glyphicon glyphicon-remove updaterank"></i>
+	 		 					</span>
+	 		 					<br/>
+	 		 					<a class="applyrank">Apply</a>
+	 		 				</td>
+	 		 			</tr>
+	 		 			<tr>
+	 		 				<td class="text-center">Panjim Inn</td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
+	 		 				<td class="text-center">1</td>
+	 		 				<td class="text-center">
+		 		 				Goomo Rank:<span class="oldrank1">8</span><span class="oldrank hidden"><input type="text" style="width: 20px"> </span> <span class="suggest1 hidden">10</span>
+		 		 				<br/>Suggested:<span class="suggestedrank1">10</span> 
+		 		 			</td>
+		 		 			<td class="text-center">
+		 		 				Goomo Rank: <span class="oldrank1">8</span> <span class="oldrank hidden"><input type="text" style="width: 20px"> </span><span class="suggest1 hidden">10</span>
+		 		 				<br/>Suggested: <span class="suggestedrank2">10</span> 
+		 		 			</td>
+	 		 				<td class="text-center">
+	 		 					<a class="editrank">Edit</a> 
+	 		 					<span  class=" editrankfields hidden">
+	 		 						<i  class="glyphicon glyphicon-ok updaterank"></i> &nbsp
+	 		 						<i  class="glyphicon glyphicon-remove updaterank"></i>
+	 		 					</span>
+	 		 					<br/>
+	 		 					<a class="applyrank">Apply</a>
+	 		 				</td>
+	 		 			</tr>
+	 		 			<tr>
+	 		 				<td class="text-center">Rivasa comfort</td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
+	 		 				<td class="text-center">10</td>
+	 		 				<td class="text-center">
+		 		 				Goomo Rank:<span class="oldrank1">8</span><span class="oldrank hidden"><input type="text" style="width: 20px"> </span> <span class="suggest1 hidden">10</span>
+		 		 				<br/>Suggested:<span class="suggestedrank1">10</span> 
+		 		 			</td>
+		 		 			<td class="text-center">
+		 		 				Goomo Rank: <span class="oldrank1">8</span> <span class="oldrank hidden"><input type="text" style="width: 20px"> </span><span class="suggest1 hidden">10</span>
+		 		 				<br/>Suggested: <span class="suggestedrank2">10</span> 
+		 		 			</td>
+	 		 				<td class="text-center">
+	 		 					<a class="editrank">Edit</a> 
+	 		 					<span  class=" editrankfields hidden">
+	 		 						<i  class="glyphicon glyphicon-ok updaterank"></i> &nbsp
+	 		 						<i  class="glyphicon glyphicon-remove updaterank"></i>
+	 		 					</span>
+	 		 					<br/>
+	 		 					<a class="applyrank">Apply</a>
+	 		 				</td>
+	 		 			</tr>
+	 		 		</tbody>
+	 		 	</table>
+
+	 		 </div>
+
+	</div>
+</div>		
+
+
+
+
+															</div>
+														</div>
+													</div>
+
+												</div>
+										</div>
+								</div>
+
+						</div>
+				</div>
+				<div class="site-overlay"></div>
+		</div>
+		
+
+		
+<footer>
+	<div class="container">
+      <div class="goomoIcon">
+      <img src="https://ajency.github.io/goomo_html/img/goomo_logo.png" class="img-responsive center-block m-t-10 m-b-20" width="">
+      </div>
+      <div class="footerText">
+        <p class="copyright">
+          Copyright ©
+          
+          2017
+          
+          Goomo Group. All rights reserved.
+          
+        </p>
+      </div>
+    </div>
+</footer>
+
+
+		<script type="text/javascript" src="/goomo_html/js/jquery.min.js"></script>
+		
+		<script type="text/javascript" src="/goomo_html/js/bootstrap.min.js"></script>
+
+		
+		<script type="text/javascript" src="/goomo_html/js/datatables.net/js/jquery.dataTables.min.js"></script>
+		<script type="text/javascript" src="/goomo_html/js/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+		<script type="text/javascript" src="/goomo_html/js/datatables.net-select/js/dataTables.select.min.js"></script>
+
+		<script type="text/javascript" src="/goomo_html/js/bootstrap-multiselect.js"></script>
+
+		<script type="text/javascript" src="/goomo_html/js/moment.min.js"></script>	
+		<script type="text/javascript" src="/goomo_html/js/bootstrap-daterangepicker/daterangepicker.js"></script>	
+		
+
+		
+		<script type="text/javascript" src="/goomo_html/js/flex-datalist/jquery.flexdatalist.min.js"></script>
+
+		<script type="text/javascript" src="/goomo_html/js/custom.js"></script>
+	</body>
+</html>

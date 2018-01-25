@@ -71,6 +71,14 @@
 				</li>
 			</ul>
 		</li>
+		<li class="{{ if $.Params.manageRanking }} active {{ end }}">
+			<a href="#" class=" form-toggle " id=""><i class="fa fa-trophy"></i> Ranking</a>
+			<ul class="gs-steps collapse in edit-mode sub-steps" role="tablist" id="" >
+				<li class="{{ if $.Params.ranking }} active {{ end }}">
+					<a href="/goomo_html/extranet/ranking" class="" id="">Manage Ranking</a>
+				</li>
+			</ul>
+		</li>
 		<li class="{{ if $.Params.sideReports }} active {{ end }}">
 			<a href="#" class=" form-toggle " id=""><i class="fa fa-line-chart"></i> Reports</a>
 			<ul class="gs-steps collapse in edit-mode sub-steps" role="tablist" id="" >

@@ -1,0 +1,150 @@
+{{ define "main" }}
+<div class="row m-l-10 m-t-20">
+	<div class="col-sm-9 p-l-20 m-t-20">
+		<!-- <div class="row bor1 flex-row">
+			<div class="col-sm-8 col-xs-8 ">
+				<h6 class=""> Basic Property Details</h6>
+				<p class="text-muted">All the basic details that are required to create a property </p>
+			</div>
+			<div class="col-sm-2 col-xs-2 ">
+				<h6 class=" m-t-20">10/10</h6>
+			</div>
+			<div class="col-sm-2 col-xs-2 ">
+				 <img src="{{"img/green-check.png" | absURL}}" class="img-responsive  " width="">
+			</div>
+		</div> -->
+		<div class="row bor1 flex-row">
+			<div class="col-sm-8 col-xs-8 ">
+				<h6 class=""> Address & Contact</h6>
+				<p class="text-muted">Property Address and Contact Details - 5  <span><img src="{{"img/green-check.png" | absURL}}"  width=""></span></p>
+				<p class="text-muted"> Website - 2</p>
+				<p class="text-muted"> Landmarks -3 </p>
+			</div>
+			<div class="col-sm-2 col-xs-2 ">
+				<h6 class=" m-t-20">5/10</h6>
+			</div>
+			<div class="col-sm-2 col-xs-2">
+				<span class="m-t-20"> <a href="/goomo_html/details/address/{{ $.Params.slug }}">Improve</a></span>
+			</div>
+		</div>
+		<div class="row bor1 flex-row">
+			<div class="col-sm-8 col-xs-8 ">
+				<h6 class=""> Amenities & Services</h6>
+			</div>
+			<div class="col-sm-2 col-xs-2 ">
+				<h6 class=" m-t-20">10/10</h6>
+			</div>
+			<div class="col-sm-2 col-xs-2 ">
+				 <img src="{{"img/green-check.png" | absURL}}" class="img-responsive " width="">
+			</div>
+		</div>
+		<div class="row bor1 flex-row">
+			<div class="col-sm-8 col-xs-8 ">
+				<h6 class="">Images</h6>
+				<p class="text-muted">Minimum 5 images under each property, rooms - 5 <span><img src="{{"img/green-check.png" | absURL}}"  width=""></span></p>
+				<p class="text-muted">Additional 5  images for property - 10<span><img src="{{"img/green-check.png" | absURL}}"  width=""></span></p>
+				<p class="text-muted">Additional 5  images for property - 10</p>
+			</div>
+			<div class="col-sm-2 col-xs-2 ">
+				<h6 class=" m-t-20">15/20</h6>
+			</div>
+			<div class="col-sm-2 col-xs-2 ">
+				 <span class="m-t-20"><a href="/goomo_html/details/images/{{ $.Params.slug }}">Improve</a></span>
+			</div>
+		</div>
+		<div class="row bor1 flex-row">
+			<div class="col-sm-8 col-xs-8 ">
+				<h6 class="">Policies</h6>
+			</div>
+			<div class="col-sm-2 col-xs-2 ">
+				<h6 class=" m-t-20">5/5</h6>
+			</div>
+			<div class="col-sm-2 col-xs-2 ">
+				 <img src="{{"img/green-check.png" | absURL}}" class="img-responsive " width="">
+			</div>
+		</div>
+		<div class="row bor1 flex-row">
+			<div class="col-sm-8 col-xs-8 ">
+				<h6 class="">Room Details </h6>
+				<p class="text-muted"> Basic room details for all the rooms - 5<span><img src="{{"img/green-check.png" | absURL}}"  width=""></span></p>
+				<p class="text-muted">Basic + Additional details for all the rooms - 10</p>
+			</div>
+			<div class="col-sm-2 col-xs-2 ">
+				<h6 class=" m-t-20">5/10</h6>
+			</div>
+			<div class="col-sm-2 col-xs-2 ">
+				 <span class="m-t-20"><a href="/goomo_html/details/rooms/{{ $.Params.slug }}">Improve</a></span>
+			</div>
+		</div>
+		<div class="row bor1 flex-row">
+			<div class="col-sm-8 col-xs-8 ">
+				<h6 class="">Inventory Details</h6>
+				<p class="text-muted">Inventory for the current month -5 </p>
+				<p class="text-muted">Inventory for the current month + next 2 months - 15<span><img src="{{"img/green-check.png" | absURL}}"  width=""></span></p>
+			</div>
+			<div class="col-sm-2 col-xs-2 ">
+				<h6 class=" m-t-20">15/15</h6>
+			</div>
+			<div class="col-sm-2 col-xs-2 ">
+				 <img src="{{"img/green-check.png" | absURL}}" class="img-responsive " width="">
+			</div>
+		</div>
+		<div class="row bor1 flex-row">
+			<div class="col-sm-8 col-xs-8 ">
+				<h6 class="">Rates</h6>
+				<p class="text-muted">Rates for the current month -5 </p>
+				<p class="text-muted">Rates for the current month + next 2 months - 15 <span><img src="{{"img/green-check.png" | absURL}}"  width=""></span></p>
+			</div>
+			<div class="col-sm-2 col-xs-2 ">
+				<h6 class=" m-t-20">15/15</h6>
+			</div>
+			<div class="col-sm-2 col-xs-2 ">
+				 <img src="{{"img/green-check.png" | absURL}}" class="img-responsive " width="">
+			</div>
+		</div>
+		<div class="row bor1 flex-row">
+			<div class="col-sm-8 col-xs-8 ">
+				<h6 class="">Bank Details</h6>
+			</div>
+			<div class="col-sm-2 col-xs-2 ">
+				<h6 class=" m-t-20">5/5</h6>
+			</div>
+			<div class="col-sm-2 col-xs-2 ">
+				 <img src="{{"img/green-check.png" | absURL}}" class="img-responsive " width="">
+			</div>
+		</div>
+	</div>
+	<div class="col-sm-3 p-l-30 p-r-30">
+		<div class="row">
+			<div class="content-score-block m-t-20">
+				<h6 class="bolder text-center">Your Content Score 80%</h6>
+				<div class="progress">
+				  <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+				    <span class="sr-only">80% Complete</span>
+				  </div>
+				</div>
+				<p class="text-muted bolder text-center">
+					Good
+				</p>
+				
+			</div>
+		</div>
+		<div class="row m-t-20">
+			<div class="contentscoreblock">
+				<div>
+					<h6 class="bolder text-center">Benefits of High Content Score</h6>
+				</div>
+				<div class="text-muted">
+					<ul class="disc2">
+						<li>Higher Ranking on Goomo</li>
+						<li>Better Performance</li>
+						<li>Increase in Revenue</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</div>
+
+{{ end }}

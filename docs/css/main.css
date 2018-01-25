@@ -10703,6 +10703,28 @@ i.w-border {
 .li-disc {
   list-style-type: disc;
 }
+.bor1 {
+  border-top: 1px solid #eee;
+  border-right: 1px solid #eee;
+  border-left: 1px solid #eee;
+}
+.bor1:last-child {
+  border-bottom: 1px solid #eee;
+}
+.disc2 {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+@media screen and (max-width: 768px) {
+  .disc2 {
+    list-style-type: none;
+    text-align: center;
+  }
+}
+.contentscoreblock {
+  padding: 10px;
+  background-color: #f8f7f7;
+}
 .profile-stats {
   color: #fff;
   background: #378f9e;

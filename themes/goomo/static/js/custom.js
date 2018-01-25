@@ -551,3 +551,38 @@ $('#fp').click(function(){
 $('.back-login2').click(function(){
 	$('.loginbox3').removeClass('active');
 });
+
+
+//edit rank
+$(document).ready(function(){
+
+    $('.editrank').click(function(){
+    	$(this).addClass('hidden');
+    	$(this).closest('tr').find('.oldrank1').addClass('hidden');
+    	$(this).closest('tr').find('.suggest1').addClass('hidden');
+    	$(this).closest('tr').find('.editrankfields').removeClass('hidden');
+    	$(this).closest('tr').find('.oldrank').removeClass('hidden');
+    	$(this).closest('tr').find('.updaterank').removeClass('hidden');
+    });
+});
+
+$(document).ready(function(){
+    $('.updaterank').click(function(){
+    	$(this).addClass('hidden');
+    	$(this).closest('tr').find('.updaterank').addClass('hidden');
+    	$(this).closest('tr').find('.oldrank').addClass('hidden');
+    	$(this).closest('tr').find('.suggest1').addClass('hidden');
+    	$(this).closest('tr').find('.editrank').removeClass('hidden');
+    	$(this).closest('tr').find('.oldrank1').removeClass('hidden');
+     });
+});
+$(document).ready(function(){
+    $('.applyrank').click(function(){
+    	$(this).closest('tr').find('.oldrank').addClass('hidden');
+    	$(this).closest('tr').find('.oldrank1').addClass('hidden');
+    	$(this).closest('tr').find('.updaterank').addClass('hidden');
+    	$(this).closest('tr').find('.editrank').removeClass('hidden');
+    	$(this).closest('tr').find('.suggest1').removeClass('hidden');
+    });
+});
+
