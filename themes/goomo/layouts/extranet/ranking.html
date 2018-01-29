@@ -18,8 +18,8 @@
 					            <label>Location</label>
 					            <select class="form-control fnb-select border-bottom">
 						            <option value="">Select</option>
-						            <option value="">Option1</option>
-						            <option value="">Option2</option>
+						            <option value="">North Goa</option>
+						            <option value="">South Goa</option>
 					            </select>
 				          	</div>
 			 		 	</div>
@@ -28,8 +28,8 @@
 					            <label>City</label>
 					            <select class="form-control fnb-select border-bottom">
 						            <option value="">Select</option>
-						            <option value="">Option1</option>
-						            <option value="">Option2</option>
+						            <option value="">Calangute</option>
+						            <option value="">Baga</option>
 					            </select>
 				          	</div>
 			 		 	</div>
@@ -45,45 +45,53 @@
 			 		 	<div class="col-sm-4">
 			 		 		<div class="form-group m-b-20">
 				              <label>Inventory Level</label>
-				              <input type="text" class="form-control fnb-input" name="" value="" placeholder="Enter Title">
+				              <input type="text" class="form-control fnb-input" name="" value="" placeholder="Enter value">
 				            </div>
 				            <div class="form-group m-b-20">
 				              <label>Offers</label>
-				              <input type="text" class="form-control fnb-input" name="" value="" placeholder="Enter Title">
+				              <input type="text" class="form-control fnb-input" name="" value="" placeholder="Enter value">
 				            </div>
 				            <div class="form-group m-b-20">
 				              <label>Bookings</label>
-				              <input type="text" class="form-control fnb-input" name="" value="" placeholder="Enter Title">
+				              <input type="text" class="form-control fnb-input" name="" value="" placeholder="Enter value">
+				            </div>
+				            <div class="form-group m-b-20">
+				              <label>Rating</label>
+				              <input type="text" class="form-control fnb-input" name="" value="" placeholder="Enter value">
 				            </div>
 			 		 	</div>
 			 		 	<div class="col-sm-4">
 			 		 		<div class="form-group m-b-20">
 				              <label>Rate Parity</label>
-				              <input type="text" class="form-control fnb-input" name="" value="" placeholder="Enter Title">
+				              <input type="text" class="form-control fnb-input" name="" value="" placeholder="Enter value">
 				            </div>
 				            <div class="form-group m-b-20">
 				              <label>Goomo Commission</label>
-				              <input type="text" class="form-control fnb-input" name="" value="" placeholder="Enter Title">
+				              <input type="text" class="form-control fnb-input" name="" value="" placeholder="Enter value">
 				            </div>
 				            <div class="form-group m-b-20">
 				              <label>Past Perfomance</label>
-				              <input type="text" class="form-control fnb-input" name="" value="" placeholder="Enter Title">
+				              <input type="text" class="form-control fnb-input" name="" value="" placeholder="Enter value">
+				            </div>
+				             <div class="form-group m-b-20">
+				              <label>Reviews</label>
+				              <input type="text" class="form-control fnb-input" name="" value="" placeholder="Enter value">
 				            </div>
 			 		 	</div>
 			 		 	<div class="col-sm-4">
 			 		 		<div class="form-group m-b-20">
 				              <label>Content Score</label>
-				              <input type="text" class="form-control fnb-input" name="" value="" placeholder="Enter Title">
+				              <input type="text" class="form-control fnb-input" name="" value="" placeholder="Enter value">
 				            </div>
 				            <div class="form-group m-b-20">
 				              <label>Views</label>
-				              <input type="text" class="form-control fnb-input" name="" value="" placeholder="Enter Title">
+				              <input type="text" class="form-control fnb-input" name="" value="" placeholder="Enter value">
 				            </div>
 				            <div class="form-group m-b-20">
 				              <label>Conversion</label>
-				              <input type="text" class="form-control fnb-input" name="" value="" placeholder="Enter Title">
+				              <input type="text" class="form-control fnb-input" name="" value="" placeholder="Enter value">
 				            </div>
-				            <div class="text-right">
+				            <div class="text-right m-b-20">
 				            	<button class="btn fnb-btn secondary-btn">Update Weights</button>
 				            </div>
 			 		 	</div>
@@ -91,29 +99,33 @@
 		 		 </div>
 	 		 </div>
 			
-	 		 <div class="col-sm-12 m-t-40 regions-container" style="overflow: auto;white-space: nowrap;">
+	 		 <div class="col-sm-12 m-t-40 p-r-30 regions-container" style="overflow: auto;white-space: nowrap;">
 	 		 	<table id="internal-table" class="table table-striped  no-wrap internal-table" cellspacing="0" width="100%">
 	 		 		<thead>
 	 		 			<tr>
-		 		 			<th class="text-center">Property Name</th>
-	                      	<th class="text-center">Inventory Level</th>
-	                      	<th class="text-center">Rate Parity</th>
-	                      	<th class="text-center">Content Score</th>
-	                      	<th class="text-center">Offers</th>
-	                      	<th class="text-center">Goomo Commission</th>
-	                      	<th class="text-center">Views</th>
-	                      	<th class="text-center">Bookings</th>
-	                      	<th class="text-center">Post Performance</th>
-	                      	<th class="text-center">Conversion</th>
-	                      	<th class="text-center">Weighted Rank</th>
-	                      	<th class="text-center">Locality Rank</th>
-	                      	<th class="text-center">City Rank</th>
-	                      	<th class="text-center">Action</th>
+		 		 			<th class="text-center no-sort">Property Name</th>
+	                      	<th class="text-center no-sort">Inventory Level</th>
+	                      	<th class="text-center no-sort">Rate Parity</th>
+	                      	<th class="text-center no-sort">Content Score</th>
+	                      	<th class="text-center no-sort">Offers</th>
+	                      	<th class="text-center no-sort">Goomo Commission</th>
+	                      	<th class="text-center no-sort">Views</th>
+	                      	<th class="text-center no-sort">Bookings</th>
+	                      	<th class="text-center no-sort">Past Performance</th>
+	                      	<th class="text-center no-sort">Conversion</th>
+	                      	<th class="text-center no-sort">Ratings</th>
+	                      	<th class="text-center no-sort">Review</th>
+	                      	<th class="text-center no-sort">Weighted Rank</th>
+	                      	<th class="text-center no-sort">Locality Rank</th>
+	                      	<th class="text-center no-sort">City Rank</th>
+	                      	<th class="text-center no-sort">Action</th>
 	 		 			</tr>
 	 		 		</thead>
 	 		 		<tbody>
 	 		 			<tr>
-	 		 				<td class="text-center">Casa Britona</td>
+	 		 				<td class="text-center"><a href="#" class="text-info bolder" target="_blank"> Casa Britona </a></td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
 	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
 	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
 	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
@@ -144,7 +156,9 @@
 	 		 			</tr>
 
 	 		 			<tr>
-	 		 				<td class="text-center">Casa Vagator</td>
+	 		 				<td class="text-center"><a href="#" class="text-info bolder" target="_blank"> Casa Vagator</a></td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
 	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
 	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
 	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
@@ -174,7 +188,9 @@
 	 		 				</td>
 	 		 			</tr>
 	 		 			<tr>
-	 		 				<td class="text-center">Casa Bella</td>
+	 		 				<td class="text-center"><a href="#" class="text-info bolder" target="_blank"> Casa Bella</a></td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
 	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
 	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
 	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
@@ -204,7 +220,9 @@
 	 		 				</td>
 	 		 			</tr>
 	 		 			<tr>
-	 		 				<td class="text-center">Panjim Inn</td>
+	 		 				<td class="text-center"><a href="#" class="text-info bolder" target="_blank"> Panjim Inn</a></td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
 	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
 	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
 	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
@@ -234,7 +252,9 @@
 	 		 				</td>
 	 		 			</tr>
 	 		 			<tr>
-	 		 				<td class="text-center">Rivasa comfort</td>
+	 		 				<td class="text-center"><a href="#" class="text-info bolder" target="_blank"> Rivasa comfort</a></td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
+	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
 	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
 	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
 	 		 				<td class="text-center">Count: 20 <br/>Rank: 10</td>
