@@ -10704,12 +10704,10 @@ i.w-border {
   list-style-type: disc;
 }
 .bor1 {
-  border-top: 1px solid #eee;
-  border-right: 1px solid #eee;
-  border-left: 1px solid #eee;
+  border-bottom: 1px solid #eee;
 }
 .bor1:last-child {
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid transparent;
 }
 .disc2 {
   list-style-type: disc;
@@ -11371,3 +11369,4 @@ dl dd {
     padding-right: 0px;
   }
 }
+/*# sourceMappingURL=main.css.map */
