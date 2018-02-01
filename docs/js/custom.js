@@ -586,3 +586,22 @@ $(document).ready(function(){
     });
 });
 
+ 
+$(document).ready(function(){
+$('#whatsnew2').modal({backdrop: 'static' });
+});
+
+$(document).ready(function(){
+    $('#blockcheck').click(function(){
+        if($(this).is(":checked")){
+            $('.modalx').removeAttr("disabled");
+       	  // $('.whatsnew2').removeAttr("backdrop",false);
+         //  $("#whatsnew2").attr({backdrop: true});
+        }
+        else if($(this).is(":not(:checked)")){
+           // $('#whatsnew2').modal({backdrop: false});
+           console.log("uncheck");
+            $('.modalx').attr("disabled",true);
+        }
+    });
+});
