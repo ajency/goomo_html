@@ -10714,6 +10714,15 @@ i.w-border {
   padding-left: 20px;
 }
 @media screen and (max-width: 768px) {
+  .bookingsbeenbox {
+    display: block !important;
+  }
+  .bookingsbeenitems {
+    margin-top: 0;
+    margin-bottom: 20px;
+    margin-right: 0;
+    margin-left: 0;
+  }
   .disc2 {
     list-style-type: none;
     text-align: center;
@@ -10722,6 +10731,15 @@ i.w-border {
 .contentscoreblock {
   padding: 10px;
   background-color: #f8f7f7;
+}
+.flex1 {
+  display: flex;
+}
+.flex1 .flex1item {
+  flex: 1;
+}
+.bookingsbeenbox {
+  display: flex;
 }
 .profile-stats {
   color: #fff;
