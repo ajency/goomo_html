@@ -10741,6 +10741,21 @@ i.w-border {
 .bookingsbeenbox {
   display: flex;
 }
+.yourrank {
+  background-color: #f7f7f6;
+}
+.colorrankbar {
+  color: #378f9e;
+}
+.colorrankbar1 {
+  color: #ff8500;
+}
+.progress-bar1 {
+  background-color: #378f9e;
+}
+.progress-bar2 {
+  background-color: #ff8500;
+}
 .profile-stats {
   color: #fff;
   background: #378f9e;
