@@ -591,17 +591,38 @@ $(document).ready(function(){
 $('#whatsnew2').modal({backdrop: 'static' });
 });
 
+// $(document).ready(function(){
+//     $('#blockcheck').click(function(){
+//         if($(this).is(":checked")){
+//             $('.modalx').removeAttr("disabled");
+//        	  // $('#whatsnew2').removeAttr('backdrop','static');
+//          //  $("#whatsnew2").attr({backdrop: true});
+//         }
+//         else if($(this).is(":not(:checked)")){
+//            // $('#whatsnew2').modal({backdrop: false});
+//            console.log("uncheck");
+//             $('.modalx').attr("disabled",true);
+//         }
+//     });
+// });
 $(document).ready(function(){
-    $('#blockcheck').click(function(){
-        if($(this).is(":checked")){
-            $('.modalx').removeAttr("disabled");
-       	  // $('.whatsnew2').removeAttr("backdrop",false);
-         //  $("#whatsnew2").attr({backdrop: true});
-        }
-        else if($(this).is(":not(:checked)")){
-           // $('#whatsnew2').modal({backdrop: false});
-           console.log("uncheck");
-            $('.modalx').attr("disabled",true);
-        }
-    });
-});
+	 $('#btnread2').click(function(){
+	 	$(this).addClass('hidden');
+	 	$('#readhide2').removeClass('hidden');
+	 	if ($('#btnread1').hasClass('hidden') && $('#btnread2').hasClass('hidden'))
+	 		{
+	 		 	$('#whatsnew2').modal('hide');
+	 		}
+	 });
+	 
+	 $('#btnread1').click(function(){
+	 	$(this).addClass('hidden');
+	 	$('#readhide1').removeClass('hidden');
+	 	if ($('#btnread1').hasClass('hidden') && $('#btnread2').hasClass('hidden'))
+	 		{
+	 			$('#whatsnew2').modal('hide');
+	 		}
+	 	 });
+
+	 });
+	
